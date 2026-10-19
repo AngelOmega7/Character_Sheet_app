@@ -90,6 +90,9 @@
       "dynamic_fields": {},
       "family": "tiger_type",
       "rank": 1,
+      "eligible_types": [
+        "Tiger"
+      ],
       "eligible_sizes": []
     },
     {
@@ -120,6 +123,9 @@
       "dynamic_fields": {},
       "family": "tiger_type",
       "rank": 2,
+      "eligible_types": [
+        "Tiger"
+      ],
       "eligible_sizes": []
     },
     {
@@ -150,6 +156,9 @@
       "dynamic_fields": {},
       "family": "tiger_type",
       "rank": 3,
+      "eligible_types": [
+        "Tiger"
+      ],
       "eligible_sizes": []
     },
     {
@@ -180,6 +189,9 @@
       "dynamic_fields": {},
       "family": "tiger_type",
       "rank": 4,
+      "eligible_types": [
+        "Tiger"
+      ],
       "eligible_sizes": []
     },
     {
@@ -210,6 +222,9 @@
       "dynamic_fields": {},
       "family": "tiger_type",
       "rank": 5,
+      "eligible_types": [
+        "Tiger"
+      ],
       "eligible_sizes": []
     },
     {
@@ -243,6 +258,9 @@
       },
       "family": "lion_type",
       "rank": 1,
+      "eligible_types": [
+        "Lion"
+      ],
       "eligible_sizes": []
     },
     {
@@ -273,6 +291,9 @@
       "dynamic_fields": {},
       "family": "lion_type",
       "rank": 2,
+      "eligible_types": [
+        "Lion"
+      ],
       "eligible_sizes": []
     },
     {
@@ -303,6 +324,9 @@
       "dynamic_fields": {},
       "family": "lion_type",
       "rank": 3,
+      "eligible_types": [
+        "Lion"
+      ],
       "eligible_sizes": []
     },
     {
@@ -333,6 +357,9 @@
       "dynamic_fields": {},
       "family": "lion_type",
       "rank": 4,
+      "eligible_types": [
+        "Lion"
+      ],
       "eligible_sizes": []
     },
     {
@@ -363,6 +390,9 @@
       "dynamic_fields": {},
       "family": "lion_type",
       "rank": 5,
+      "eligible_types": [
+        "Lion"
+      ],
       "eligible_sizes": []
     },
     {
@@ -396,6 +426,9 @@
       },
       "family": "wolf_type",
       "rank": 1,
+      "eligible_types": [
+        "Wolf"
+      ],
       "eligible_sizes": []
     },
     {
@@ -426,6 +459,9 @@
       "dynamic_fields": {},
       "family": "wolf_type",
       "rank": 2,
+      "eligible_types": [
+        "Wolf"
+      ],
       "eligible_sizes": []
     },
     {
@@ -456,6 +492,9 @@
       "dynamic_fields": {},
       "family": "wolf_type",
       "rank": 3,
+      "eligible_types": [
+        "Wolf"
+      ],
       "eligible_sizes": []
     },
     {
@@ -486,6 +525,9 @@
       "dynamic_fields": {},
       "family": "wolf_type",
       "rank": 4,
+      "eligible_types": [
+        "Wolf"
+      ],
       "eligible_sizes": []
     },
     {
@@ -516,6 +558,9 @@
       "dynamic_fields": {},
       "family": "wolf_type",
       "rank": 5,
+      "eligible_types": [
+        "Wolf"
+      ],
       "eligible_sizes": []
     },
     {
@@ -549,6 +594,9 @@
       },
       "family": "insect_type",
       "rank": 1,
+      "eligible_types": [
+        "Insect"
+      ],
       "eligible_sizes": []
     },
     {
@@ -579,6 +627,9 @@
       "dynamic_fields": {},
       "family": "insect_type",
       "rank": 2,
+      "eligible_types": [
+        "Insect"
+      ],
       "eligible_sizes": []
     },
     {
@@ -609,6 +660,9 @@
       "dynamic_fields": {},
       "family": "insect_type",
       "rank": 3,
+      "eligible_types": [
+        "Insect"
+      ],
       "eligible_sizes": []
     },
     {
@@ -639,6 +693,9 @@
       "dynamic_fields": {},
       "family": "insect_type",
       "rank": 4,
+      "eligible_types": [
+        "Insect"
+      ],
       "eligible_sizes": []
     },
     {
@@ -669,6 +726,9 @@
       "dynamic_fields": {},
       "family": "insect_type",
       "rank": 5,
+      "eligible_types": [
+        "Insect"
+      ],
       "eligible_sizes": []
     },
     {
@@ -702,6 +762,9 @@
       },
       "family": "gorilla_type",
       "rank": 1,
+      "eligible_types": [
+        "Gorilla"
+      ],
       "eligible_sizes": []
     },
     {
@@ -732,6 +795,9 @@
       "dynamic_fields": {},
       "family": "gorilla_type",
       "rank": 2,
+      "eligible_types": [
+        "Gorilla"
+      ],
       "eligible_sizes": []
     },
     {
@@ -762,6 +828,9 @@
       "dynamic_fields": {},
       "family": "gorilla_type",
       "rank": 3,
+      "eligible_types": [
+        "Gorilla"
+      ],
       "eligible_sizes": []
     },
     {
@@ -792,6 +861,9 @@
       "dynamic_fields": {},
       "family": "gorilla_type",
       "rank": 4,
+      "eligible_types": [
+        "Gorilla"
+      ],
       "eligible_sizes": []
     },
     {
@@ -822,6 +894,9 @@
       "dynamic_fields": {},
       "family": "gorilla_type",
       "rank": 5,
+      "eligible_types": [
+        "Gorilla"
+      ],
       "eligible_sizes": []
     },
     {
@@ -855,6 +930,9 @@
       },
       "family": "raptor_type",
       "rank": 1,
+      "eligible_types": [
+        "Raptor"
+      ],
       "eligible_sizes": []
     },
     {
@@ -885,6 +963,9 @@
       "dynamic_fields": {},
       "family": "raptor_type",
       "rank": 2,
+      "eligible_types": [
+        "Raptor"
+      ],
       "eligible_sizes": []
     },
     {
@@ -915,6 +996,9 @@
       "dynamic_fields": {},
       "family": "raptor_type",
       "rank": 3,
+      "eligible_types": [
+        "Raptor"
+      ],
       "eligible_sizes": []
     },
     {
@@ -945,6 +1029,9 @@
       "dynamic_fields": {},
       "family": "raptor_type",
       "rank": 4,
+      "eligible_types": [
+        "Raptor"
+      ],
       "eligible_sizes": []
     },
     {
@@ -975,6 +1062,9 @@
       "dynamic_fields": {},
       "family": "raptor_type",
       "rank": 5,
+      "eligible_types": [
+        "Raptor"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1008,6 +1098,9 @@
       },
       "family": "t_rex_type",
       "rank": 1,
+      "eligible_types": [
+        "T-Rex"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1038,6 +1131,9 @@
       "dynamic_fields": {},
       "family": "t_rex_type",
       "rank": 2,
+      "eligible_types": [
+        "T-Rex"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1068,6 +1164,9 @@
       "dynamic_fields": {},
       "family": "t_rex_type",
       "rank": 3,
+      "eligible_types": [
+        "T-Rex"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1098,6 +1197,9 @@
       "dynamic_fields": {},
       "family": "t_rex_type",
       "rank": 4,
+      "eligible_types": [
+        "T-Rex"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1128,6 +1230,9 @@
       "dynamic_fields": {},
       "family": "t_rex_type",
       "rank": 5,
+      "eligible_types": [
+        "T-Rex"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1161,6 +1266,9 @@
       },
       "family": "mammal_type",
       "rank": 1,
+      "eligible_types": [
+        "Mammal"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1191,6 +1299,9 @@
       "dynamic_fields": {},
       "family": "mammal_type",
       "rank": 2,
+      "eligible_types": [
+        "Mammal"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1221,6 +1332,9 @@
       "dynamic_fields": {},
       "family": "mammal_type",
       "rank": 3,
+      "eligible_types": [
+        "Mammal"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1251,6 +1365,9 @@
       "dynamic_fields": {},
       "family": "mammal_type",
       "rank": 4,
+      "eligible_types": [
+        "Mammal"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1281,6 +1398,9 @@
       "dynamic_fields": {},
       "family": "mammal_type",
       "rank": 5,
+      "eligible_types": [
+        "Mammal"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1314,6 +1434,9 @@
       },
       "family": "dinosaur_land_type",
       "rank": 1,
+      "eligible_types": [
+        "Dinosaur, Land"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1344,6 +1467,9 @@
       "dynamic_fields": {},
       "family": "dinosaur_land_type",
       "rank": 2,
+      "eligible_types": [
+        "Dinosaur, Land"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1374,6 +1500,9 @@
       "dynamic_fields": {},
       "family": "dinosaur_land_type",
       "rank": 3,
+      "eligible_types": [
+        "Dinosaur, Land"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1404,6 +1533,9 @@
       "dynamic_fields": {},
       "family": "dinosaur_land_type",
       "rank": 4,
+      "eligible_types": [
+        "Dinosaur, Land"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1434,6 +1566,9 @@
       "dynamic_fields": {},
       "family": "dinosaur_land_type",
       "rank": 5,
+      "eligible_types": [
+        "Dinosaur, Land"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1467,6 +1602,9 @@
       },
       "family": "dinosaur_flying_type",
       "rank": 1,
+      "eligible_types": [
+        "Dinosaur, Flying"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1497,6 +1635,9 @@
       "dynamic_fields": {},
       "family": "dinosaur_flying_type",
       "rank": 2,
+      "eligible_types": [
+        "Dinosaur, Flying"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1527,6 +1668,9 @@
       "dynamic_fields": {},
       "family": "dinosaur_flying_type",
       "rank": 3,
+      "eligible_types": [
+        "Dinosaur, Flying"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1557,6 +1701,9 @@
       "dynamic_fields": {},
       "family": "dinosaur_flying_type",
       "rank": 4,
+      "eligible_types": [
+        "Dinosaur, Flying"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1587,6 +1734,9 @@
       "dynamic_fields": {},
       "family": "dinosaur_flying_type",
       "rank": 5,
+      "eligible_types": [
+        "Dinosaur, Flying"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1620,6 +1770,9 @@
       },
       "family": "reptile_type",
       "rank": 1,
+      "eligible_types": [
+        "Reptile"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1650,6 +1803,9 @@
       "dynamic_fields": {},
       "family": "reptile_type",
       "rank": 2,
+      "eligible_types": [
+        "Reptile"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1680,6 +1836,9 @@
       "dynamic_fields": {},
       "family": "reptile_type",
       "rank": 3,
+      "eligible_types": [
+        "Reptile"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1710,6 +1869,9 @@
       "dynamic_fields": {},
       "family": "reptile_type",
       "rank": 4,
+      "eligible_types": [
+        "Reptile"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1740,159 +1902,9 @@
       "dynamic_fields": {},
       "family": "reptile_type",
       "rank": 5,
-      "eligible_sizes": []
-    },
-    {
-      "id": "abilities:bloxtype_1",
-      "name": "BLOXType 1",
-      "kind": "record",
-      "source": {
-        "sheet": "Zoid Abilities",
-        "row": 58
-      },
-      "fields": {
-        "name": "BLOXType 1",
-        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
-        "bonus_levels": 5,
-        "zoid_sizes": null,
-        "all_stats_bonus": null,
-        "armor_bonus": null,
-        "to_hit_bonus": null,
-        "speed_bonus": null,
-        "range_bonus": null,
-        "reaction_bonus": null,
-        "damage_bonus": null,
-        "shield_bonus": null,
-        "equipment_defense_bonus": null,
-        "damage_type": null,
-        "base_defense_bonus": null
-      },
-      "dynamic_fields": {},
-      "description_formulas": {
-        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"BLOX\",N8+5,\"\")"
-      },
-      "family": "blox_type",
-      "rank": 1,
-      "eligible_sizes": []
-    },
-    {
-      "id": "abilities:blox_type_2",
-      "name": "BLOX Type 2",
-      "kind": "record",
-      "source": {
-        "sheet": "Zoid Abilities",
-        "row": 59
-      },
-      "fields": {
-        "name": "BLOX Type 2",
-        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
-        "bonus_levels": 10,
-        "zoid_sizes": null,
-        "all_stats_bonus": null,
-        "armor_bonus": null,
-        "to_hit_bonus": null,
-        "speed_bonus": null,
-        "range_bonus": null,
-        "reaction_bonus": null,
-        "damage_bonus": null,
-        "shield_bonus": null,
-        "equipment_defense_bonus": null,
-        "damage_type": null,
-        "base_defense_bonus": null
-      },
-      "dynamic_fields": {},
-      "family": "blox_type",
-      "rank": 2,
-      "eligible_sizes": []
-    },
-    {
-      "id": "abilities:blox_type_3",
-      "name": "BLOX Type 3",
-      "kind": "record",
-      "source": {
-        "sheet": "Zoid Abilities",
-        "row": 60
-      },
-      "fields": {
-        "name": "BLOX Type 3",
-        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
-        "bonus_levels": 15,
-        "zoid_sizes": null,
-        "all_stats_bonus": null,
-        "armor_bonus": null,
-        "to_hit_bonus": null,
-        "speed_bonus": null,
-        "range_bonus": null,
-        "reaction_bonus": null,
-        "damage_bonus": null,
-        "shield_bonus": null,
-        "equipment_defense_bonus": null,
-        "damage_type": null,
-        "base_defense_bonus": null
-      },
-      "dynamic_fields": {},
-      "family": "blox_type",
-      "rank": 3,
-      "eligible_sizes": []
-    },
-    {
-      "id": "abilities:blox_type_4",
-      "name": "BLOX Type 4",
-      "kind": "record",
-      "source": {
-        "sheet": "Zoid Abilities",
-        "row": 61
-      },
-      "fields": {
-        "name": "BLOX Type 4",
-        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
-        "bonus_levels": 20,
-        "zoid_sizes": null,
-        "all_stats_bonus": null,
-        "armor_bonus": null,
-        "to_hit_bonus": null,
-        "speed_bonus": null,
-        "range_bonus": null,
-        "reaction_bonus": null,
-        "damage_bonus": null,
-        "shield_bonus": null,
-        "equipment_defense_bonus": null,
-        "damage_type": null,
-        "base_defense_bonus": null
-      },
-      "dynamic_fields": {},
-      "family": "blox_type",
-      "rank": 4,
-      "eligible_sizes": []
-    },
-    {
-      "id": "abilities:blox_type_5",
-      "name": "BLOX Type 5",
-      "kind": "record",
-      "source": {
-        "sheet": "Zoid Abilities",
-        "row": 62
-      },
-      "fields": {
-        "name": "BLOX Type 5",
-        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
-        "bonus_levels": 25,
-        "zoid_sizes": null,
-        "all_stats_bonus": null,
-        "armor_bonus": null,
-        "to_hit_bonus": null,
-        "speed_bonus": null,
-        "range_bonus": null,
-        "reaction_bonus": null,
-        "damage_bonus": null,
-        "shield_bonus": null,
-        "equipment_defense_bonus": null,
-        "damage_type": null,
-        "base_defense_bonus": null
-      },
-      "dynamic_fields": {},
-      "family": "blox_type",
-      "rank": 5,
+      "eligible_types": [
+        "Reptile"
+      ],
       "eligible_sizes": []
     },
     {
@@ -1923,6 +1935,7 @@
       "dynamic_fields": {},
       "family": "small_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [
         "Small"
       ]
@@ -1955,6 +1968,7 @@
       "dynamic_fields": {},
       "family": "small_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [
         "Small"
       ]
@@ -1987,6 +2001,7 @@
       "dynamic_fields": {},
       "family": "small_expert",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [
         "Small"
       ]
@@ -2019,6 +2034,7 @@
       "dynamic_fields": {},
       "family": "small_expert",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [
         "Small"
       ]
@@ -2051,6 +2067,7 @@
       "dynamic_fields": {},
       "family": "medium_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [
         "Medium"
       ]
@@ -2083,6 +2100,7 @@
       "dynamic_fields": {},
       "family": "medium_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [
         "Medium"
       ]
@@ -2115,6 +2133,7 @@
       "dynamic_fields": {},
       "family": "medium_expert",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [
         "Medium"
       ]
@@ -2147,6 +2166,7 @@
       "dynamic_fields": {},
       "family": "medium_expert",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [
         "Medium"
       ]
@@ -2179,6 +2199,7 @@
       "dynamic_fields": {},
       "family": "medium_under_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [
         "Medium",
         "Small"
@@ -2212,6 +2233,7 @@
       "dynamic_fields": {},
       "family": "medium_under_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [
         "Medium",
         "Small"
@@ -2245,6 +2267,7 @@
       "dynamic_fields": {},
       "family": "medium_under_expert",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [
         "Medium",
         "Small"
@@ -2278,6 +2301,7 @@
       "dynamic_fields": {},
       "family": "medium_under_expert",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [
         "Medium",
         "Small"
@@ -2318,6 +2342,7 @@
       "dynamic_fields": {},
       "family": "large_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large"
       ]
@@ -2350,6 +2375,7 @@
       "dynamic_fields": {},
       "family": "large_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large"
       ]
@@ -2382,6 +2408,7 @@
       "dynamic_fields": {},
       "family": "large_expert",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large"
       ]
@@ -2414,6 +2441,7 @@
       "dynamic_fields": {},
       "family": "large_expert",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large"
       ]
@@ -2446,6 +2474,7 @@
       "dynamic_fields": {},
       "family": "large_large_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large Large"
       ]
@@ -2478,6 +2507,7 @@
       "dynamic_fields": {},
       "family": "large_large_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large Large"
       ]
@@ -2510,6 +2540,7 @@
       "dynamic_fields": {},
       "family": "large_large_expert",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large Large"
       ]
@@ -2542,6 +2573,7 @@
       "dynamic_fields": {},
       "family": "large_large_expert",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large Large"
       ]
@@ -2574,6 +2606,7 @@
       "dynamic_fields": {},
       "family": "large_large_over_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large Large",
         "Extra Large"
@@ -2607,6 +2640,7 @@
       "dynamic_fields": {},
       "family": "large_large_over_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large Large",
         "Extra Large"
@@ -2640,6 +2674,7 @@
       "dynamic_fields": {},
       "family": "large_large_over_expert",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large Large",
         "Extra Large"
@@ -2673,6 +2708,7 @@
       "dynamic_fields": {},
       "family": "large_large_over_expert",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [
         "Large Large",
         "Extra Large"
@@ -2706,6 +2742,7 @@
       "dynamic_fields": {},
       "family": "extra_large_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [
         "Extra Large"
       ]
@@ -2738,6 +2775,7 @@
       "dynamic_fields": {},
       "family": "extra_large_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [
         "Extra Large"
       ]
@@ -2770,6 +2808,7 @@
       "dynamic_fields": {},
       "family": "extra_large_expert",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [
         "Extra Large"
       ]
@@ -2802,6 +2841,7 @@
       "dynamic_fields": {},
       "family": "extra_large_expert",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [
         "Extra Large"
       ]
@@ -2834,6 +2874,7 @@
       "dynamic_fields": {},
       "family": "melee_multi_attack",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -2865,6 +2906,7 @@
       "dynamic_fields": {},
       "family": "melee_multi_attack",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -2896,6 +2938,7 @@
       "dynamic_fields": {},
       "family": "melee_multi_attack",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -2927,6 +2970,7 @@
       "dynamic_fields": {},
       "family": "melee_multi_attack",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -2958,6 +3002,7 @@
       "dynamic_fields": {},
       "family": "ranged_multi_attack",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -2989,6 +3034,7 @@
       "dynamic_fields": {},
       "family": "ranged_multi_attack",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -3020,6 +3066,7 @@
       "dynamic_fields": {},
       "family": "ranged_multi_attack",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -3051,6 +3098,7 @@
       "dynamic_fields": {},
       "family": "ranged_multi_attack",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -3064,7 +3112,7 @@
       },
       "fields": {
         "name": "Laser Expert 1",
-        "description": "Weapons that deal energy damage gain 1 to Hit. ",
+        "description": "Weapons with the Laser tag gain 1 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3076,12 +3124,25 @@
         "damage_bonus": null,
         "shield_bonus": null,
         "equipment_defense_bonus": null,
-        "damage_type": "Energy",
+        "damage_type": "Laser",
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "laser_expert",
       "rank": 1,
+      "eligible_types": [],
+      "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Laser",
+          "reason": "Owner: Laser Expert matches Laser tags only"
+        },
+        "description": {
+          "original": "Weapons that deal energy damage gain 1 to Hit. ",
+          "corrected": "Weapons with the Laser tag gain 1 to Hit.",
+          "reason": "Owner-confirmed Expert rules and tag matching"
+        }
+      },
       "eligible_sizes": []
     },
     {
@@ -3094,7 +3155,7 @@
       },
       "fields": {
         "name": "Laser Expert 2",
-        "description": "Weapons that deal energy damage gain 2 to Hit. ",
+        "description": "Weapons with the Laser tag gain 2 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3106,12 +3167,25 @@
         "damage_bonus": null,
         "shield_bonus": null,
         "equipment_defense_bonus": null,
-        "damage_type": "Energy",
+        "damage_type": "Laser",
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "laser_expert",
       "rank": 2,
+      "eligible_types": [],
+      "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Laser",
+          "reason": "Owner: Laser Expert matches Laser tags only"
+        },
+        "description": {
+          "original": "Weapons that deal energy damage gain 2 to Hit. ",
+          "corrected": "Weapons with the Laser tag gain 2 to Hit.",
+          "reason": "Owner-confirmed Expert rules and tag matching"
+        }
+      },
       "eligible_sizes": []
     },
     {
@@ -3124,7 +3198,7 @@
       },
       "fields": {
         "name": "Laser Expert 3",
-        "description": "Weapons that deal energy damage gain 3 to Hit. ",
+        "description": "Weapons with the Laser tag gain 3 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3136,17 +3210,23 @@
         "damage_bonus": null,
         "shield_bonus": null,
         "equipment_defense_bonus": null,
-        "damage_type": "Energy",
+        "damage_type": "Laser",
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "laser_expert",
       "rank": 3,
+      "eligible_types": [],
       "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Laser",
+          "reason": "Owner: Laser Expert matches Laser tags only"
+        },
         "description": {
           "original": "Weapons that deal energy damage gain 3 to Hit and gain advantage. ",
-          "corrected": "Weapons that deal energy damage gain 3 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "corrected": "Weapons with the Laser tag gain 3 to Hit.",
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3161,7 +3241,7 @@
       },
       "fields": {
         "name": "Laser Expert 4",
-        "description": "Weapons that deal energy damage gain 4 to Hit. ",
+        "description": "Weapons with the Laser tag gain 4 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3173,17 +3253,23 @@
         "damage_bonus": null,
         "shield_bonus": null,
         "equipment_defense_bonus": null,
-        "damage_type": "Energy",
+        "damage_type": "Laser",
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "laser_expert",
       "rank": 4,
+      "eligible_types": [],
       "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Laser",
+          "reason": "Owner: Laser Expert matches Laser tags only"
+        },
         "description": {
           "original": "Weapons that deal energy damage gain 4 to Hit and gain advantage. ",
-          "corrected": "Weapons that deal energy damage gain 4 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "corrected": "Weapons with the Laser tag gain 4 to Hit.",
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3216,6 +3302,7 @@
       "dynamic_fields": {},
       "family": "missile_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3246,6 +3333,7 @@
       "dynamic_fields": {},
       "family": "missile_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3276,11 +3364,12 @@
       "dynamic_fields": {},
       "family": "missile_expert",
       "rank": 3,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Weapons that deal explosive damage gain 3 to Hit and gain advantage. ",
           "corrected": "Weapons that deal explosive damage gain 3 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3313,11 +3402,12 @@
       "dynamic_fields": {},
       "family": "missile_expert",
       "rank": 4,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Weapons that deal explosive damage gain 4 to Hit and gain advantage. ",
           "corrected": "Weapons that deal explosive damage gain 4 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3350,6 +3440,7 @@
       "dynamic_fields": {},
       "family": "particle_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3380,6 +3471,7 @@
       "dynamic_fields": {},
       "family": "particle_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3410,11 +3502,12 @@
       "dynamic_fields": {},
       "family": "particle_expert",
       "rank": 3,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Weapons that deal particle damage gain 3 to Hit and gain advantage. ",
           "corrected": "Weapons that deal particle damage gain 3 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3447,11 +3540,12 @@
       "dynamic_fields": {},
       "family": "particle_expert",
       "rank": 4,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Weapons that deal particle damage gain 4 to Hit and gain advantage. ",
           "corrected": "Weapons that deal particle damage gain 4 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3484,6 +3578,7 @@
       "dynamic_fields": {},
       "family": "melee_expert",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3514,6 +3609,7 @@
       "dynamic_fields": {},
       "family": "melee_expert",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3544,11 +3640,12 @@
       "dynamic_fields": {},
       "family": "melee_expert",
       "rank": 3,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Melee weapons gain 3 to Hit and gain advantage. ",
           "corrected": "Melee weapons gain 3 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3581,11 +3678,12 @@
       "dynamic_fields": {},
       "family": "melee_expert",
       "rank": 4,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Melee weapons gain 4 to Hit and gain advantage. ",
           "corrected": "Melee weapons gain 4 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3618,11 +3716,12 @@
       "dynamic_fields": {},
       "family": "rifle_expert",
       "rank": 1,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Ranged weapons that deal piercing damage gain 1 to Hit. ",
           "corrected": "Ranged weapons that deal Bullet damage gain 1 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3655,11 +3754,12 @@
       "dynamic_fields": {},
       "family": "rifle_expert",
       "rank": 2,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Ranged weapons that deal piercing damage gain 2 to Hit. ",
           "corrected": "Ranged weapons that deal Bullet damage gain 2 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3692,11 +3792,12 @@
       "dynamic_fields": {},
       "family": "rifle_expert",
       "rank": 3,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Ranged weapons that deal piercing damage gain 3 to Hit and gain advantage. ",
           "corrected": "Ranged weapons that deal Bullet damage gain 3 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3729,11 +3830,12 @@
       "dynamic_fields": {},
       "family": "rifle_expert",
       "rank": 4,
+      "eligible_types": [],
       "corrections": {
         "description": {
           "original": "Ranged weapons that deal piercing damage gain 4 to Hit and gain advantage. ",
           "corrected": "Ranged weapons that deal Bullet damage gain 4 to Hit. ",
-          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+          "reason": "Owner-confirmed Expert rules and tag matching"
         }
       },
       "eligible_sizes": []
@@ -3766,6 +3868,7 @@
       "dynamic_fields": {},
       "family": "anti_air_pro",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3796,6 +3899,7 @@
       "dynamic_fields": {},
       "family": "anti_air_pro",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3826,6 +3930,7 @@
       "dynamic_fields": {},
       "family": "anti_air_pro",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3856,6 +3961,7 @@
       "dynamic_fields": {},
       "family": "anti_air_pro",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3886,6 +3992,7 @@
       "dynamic_fields": {},
       "family": "fleet_footed",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3916,6 +4023,7 @@
       "dynamic_fields": {},
       "family": "fleet_footed",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3946,6 +4054,7 @@
       "dynamic_fields": {},
       "family": "fleet_footed",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -3976,6 +4085,7 @@
       "dynamic_fields": {},
       "family": "fleet_footed",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4006,6 +4116,7 @@
       "dynamic_fields": {},
       "family": "honed",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4036,6 +4147,7 @@
       "dynamic_fields": {},
       "family": "honed",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4066,6 +4178,7 @@
       "dynamic_fields": {},
       "family": "honed",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4096,6 +4209,7 @@
       "dynamic_fields": {},
       "family": "honed",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4126,6 +4240,7 @@
       "dynamic_fields": {},
       "family": "comeback",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "damage_bonus": {
@@ -4166,6 +4281,7 @@
       "dynamic_fields": {},
       "family": "comeback",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "damage_bonus": {
@@ -4206,6 +4322,7 @@
       "dynamic_fields": {},
       "family": "comeback",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "damage_bonus": {
@@ -4246,6 +4363,7 @@
       "dynamic_fields": {},
       "family": "comeback",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "damage_bonus": {
@@ -4286,6 +4404,7 @@
       "dynamic_fields": {},
       "family": "iron_defense",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4316,6 +4435,7 @@
       "dynamic_fields": {},
       "family": "iron_defense",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4346,6 +4466,7 @@
       "dynamic_fields": {},
       "family": "iron_defense",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4376,6 +4497,7 @@
       "dynamic_fields": {},
       "family": "iron_defense",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4406,6 +4528,7 @@
       "dynamic_fields": {},
       "family": "sniper",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "long_range_to_hit_bonus": 1
     },
@@ -4437,6 +4560,7 @@
       "dynamic_fields": {},
       "family": "sniper",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "long_range_to_hit_bonus": 2
     },
@@ -4468,6 +4592,7 @@
       "dynamic_fields": {},
       "family": "sniper",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [],
       "long_range_to_hit_bonus": 3
     },
@@ -4499,6 +4624,7 @@
       "dynamic_fields": {},
       "family": "sniper",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [],
       "long_range_to_hit_bonus": 4
     },
@@ -4530,6 +4656,7 @@
       "dynamic_fields": {},
       "family": "true_tank",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4560,6 +4687,7 @@
       "dynamic_fields": {},
       "family": "true_tank",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4590,6 +4718,7 @@
       "dynamic_fields": {},
       "family": "true_tank",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4620,6 +4749,7 @@
       "dynamic_fields": {},
       "family": "true_tank",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4650,6 +4780,7 @@
       "dynamic_fields": {},
       "family": "armor_breaker",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -4681,6 +4812,7 @@
       "dynamic_fields": {},
       "family": "armor_breaker",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -4712,6 +4844,7 @@
       "dynamic_fields": {},
       "family": "armor_breaker",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -4743,6 +4876,7 @@
       "dynamic_fields": {},
       "family": "armor_breaker",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -4774,6 +4908,7 @@
       "dynamic_fields": {},
       "family": "evasion_master",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "description": {
@@ -4811,6 +4946,7 @@
       "dynamic_fields": {},
       "family": "evasion_master",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "description": {
@@ -4848,6 +4984,7 @@
       "dynamic_fields": {},
       "family": "evasion_master",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "description": {
@@ -4885,6 +5022,7 @@
       "dynamic_fields": {},
       "family": "evasion_master",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "description": {
@@ -4922,6 +5060,7 @@
       "dynamic_fields": {},
       "family": "shield_master",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4952,6 +5091,7 @@
       "dynamic_fields": {},
       "family": "shield_master",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -4982,6 +5122,7 @@
       "dynamic_fields": {},
       "family": "shield_master",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -5012,6 +5153,7 @@
       "dynamic_fields": {},
       "family": "shield_master",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": []
     },
     {
@@ -5042,6 +5184,7 @@
       "dynamic_fields": {},
       "family": "smoke_master",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -5073,6 +5216,7 @@
       "dynamic_fields": {},
       "family": "smoke_master",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -5104,6 +5248,7 @@
       "dynamic_fields": {},
       "family": "smoke_master",
       "rank": 3,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -5135,6 +5280,7 @@
       "dynamic_fields": {},
       "family": "smoke_master",
       "rank": 4,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -5166,6 +5312,7 @@
       "dynamic_fields": {},
       "family": "weapon_breaker",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -5197,6 +5344,7 @@
       "dynamic_fields": {},
       "family": "weapon_breaker",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -5228,6 +5376,7 @@
       "dynamic_fields": {},
       "family": "economized_shooting",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "corrections": {
         "description": {
@@ -5265,6 +5414,7 @@
       "dynamic_fields": {},
       "family": "counter_attack",
       "rank": 1,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     },
@@ -5296,88 +5446,135 @@
       "dynamic_fields": {},
       "family": "counter_attack",
       "rank": 2,
+      "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
     }
   ],
   "excluded_rows": [
     {
+      "row": 58,
+      "id": "abilities:bloxtype_1",
+      "name": "BLOXType 1",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 59,
+      "id": "abilities:blox_type_2",
+      "name": "BLOX Type 2",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 60,
+      "id": "abilities:blox_type_3",
+      "name": "BLOX Type 3",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 61,
+      "id": "abilities:blox_type_4",
+      "name": "BLOX Type 4",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 62,
+      "id": "abilities:blox_type_5",
+      "name": "BLOX Type 5",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
       "row": 163,
+      "id": "abilities:wimp",
       "name": "Wimp",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 164,
+      "id": "abilities:wimp_2",
       "name": "Wimp 2",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 165,
+      "id": "abilities:wimp_3",
       "name": "Wimp 3",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 166,
+      "id": "abilities:wimp_4",
       "name": "Wimp 4",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 167,
+      "id": "abilities:cross_eyed",
       "name": "Cross Eyed",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 168,
+      "id": "abilities:cross_eyed_2",
       "name": "Cross Eyed 2",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 169,
+      "id": "abilities:cross_eyed_3",
       "name": "Cross Eyed 3",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 170,
+      "id": "abilities:cross_eyed_4",
       "name": "Cross Eyed 4",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 171,
+      "id": "abilities:slowpoke",
       "name": "Slowpoke",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 172,
+      "id": "abilities:slowpoke_2",
       "name": "Slowpoke 2",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 173,
+      "id": "abilities:slowpoke_3",
       "name": "Slowpoke 3",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 174,
+      "id": "abilities:slowpoke_4",
       "name": "Slowpoke 4",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 175,
+      "id": "abilities:bad_armor",
       "name": "Bad Armor",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 176,
+      "id": "abilities:bad_armor_2",
       "name": "Bad Armor 2",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 177,
+      "id": "abilities:bad_armor_3",
       "name": "Bad Armor 3",
       "reason": "Owner retired this ability family and all ranks"
     },
     {
       "row": 178,
+      "id": "abilities:bad_armor_4",
       "name": "Bad Armor 4",
       "reason": "Owner retired this ability family and all ranks"
     },

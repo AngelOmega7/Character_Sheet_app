@@ -38,6 +38,21 @@ def _nonnegative_integer(value: int, name: str) -> None:
 
 
 @dataclass(frozen=True)
+class WeaponCondition:
+    """Persistent condition independent of a form's current reference heat rating."""
+    heat: int = 0
+    broken: bool = False
+    last_roll: int | None = None
+
+    def __post_init__(self):
+        _nonnegative_integer(self.heat, "Heat")
+        if type(self.broken) is not bool:
+            raise RuleError("Broken state must be a Boolean")
+        if self.last_roll is not None and (type(self.last_roll) is not int or not 1 <= self.last_roll <= 20):
+            raise RuleError("Last d20 roll must be an integer from 1 to 20, or empty")
+
+
+@dataclass(frozen=True)
 class WeaponState:
     heat_rating: int | None = None
     heat: int = 0

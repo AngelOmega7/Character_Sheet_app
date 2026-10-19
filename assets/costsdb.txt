@@ -1,0 +1,3540 @@
+     Barigator
+
+Cost:  10,000G
+Core/Parts required:  Zoid Core H1
+Zoid Required:  None
+
+HP:    70      SP:  180     DF:   15
+EP:    15      MM:  80      AM:   65
+GEP:   2       IV:  980     DCP:  30
+
+SR:    800
+CLV:   2
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 40, HR: 85%, TG: 1-2 S, EP: 2, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 35, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Berserk Fuhrer
+
+Cost:  150,000G
+Core/Parts required:  Zoid Core UX, Bestial Data
+Zoid Required:  None
+
+HP:    380     SP:  340     DF:   100
+EP:    40      MM:  70      AM:   70
+GEP:   5       IV:  790     DCP:  330
+
+SR:    450
+CLV:   20
+CP:    45
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 280, HR: 60%, TG: 1-1 S, EP: 6, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 250, HR: 85%, TG: 1-3 A, EP: 25, WP: 0, ATR:  / / /P/   
+*EFFECT*
+Imbuilt Weapon 3: Shield Strength: 400, TG: SELF, EP: 5, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 230, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / /L/ /G
+
+
+     Berserk Fuhrer Z
+
+Cost:  50,000G
+Core/Parts required:  Zoid Core UX, ZF Unit
+Zoid Required:  Berserk Fuhrer
+
+HP:    530     SP:  600      DF:   150
+EP:    50      MM:  80       AM:   75
+GEP:   20      IV:  1100     DCP:  500
+
+SR:    500
+CLV:   28
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 240, HR: 90%, TG: 1-3 B, EP: 10, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 250, HR: 85%, TG: 1-3 A, EP: 25, WP: 0, ATR:  / / /P/  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 350, HR: 75%, TG: 1-1 S, EP: 10, WP: 0, ATR:  / /L/ /G
+
+
+     Black Rhymos
+
+Cost:  30,000G
+Core/Parts required:  Zoid Core GR
+Zoid Required:  None
+
+HP:    150     SP:  180     DF:   22
+EP:    15      MM:  50      AM:   85
+GEP:   2       IV:  530     DCP:  100
+
+SR:    350
+CLV:   3
+CP:    40
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 25, HR: 70%, TG: 1-3 V, EP: 5, WP: 0, ATR: None, 
+*EFFECT*
+Imbuilt Weapon 2: AT: 80, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 73, HR: 63%, TG: 1-1 S, EP: 2, WP: 0, ATR:  / / / /G
+
+
+     Blade Liger
+
+Cost:  32,000G
+Core/Parts required:  Normal OS
+Zoid Required:  Shield Liger
+
+HP:    280     SP:  305     DF:   50
+EP:    30      MM:  75      AM:   65
+GEP:   3       IV:  705     DCP:  200
+
+SR:    400
+CLV:   13
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 140, HR: 75%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Shield Strength: 200, TG: SELF, EP: 3, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 220, HR: 70%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / /L/ /G
+
+
+     Blade Liger AB
+
+Cost:  10,000G
+Core/Parts required:  AB Unit
+Zoid Required:  Blade Liger
+
+HP:    300     SP:  320     DF:   50
+EP:    35      MM:  85      AM:   65
+GEP:   3       IV:  720     DCP:  250
+
+SR:    400
+CLV:   16
+CP:    45
+SIZE:  L
+
+Unfixed weapons: None
+
+Imbuilt Weapon 1: AT: 160, HR: 75%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 230, HR: 95%, TG: 1-3 S, EP: 8, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: Shield Strength: 200, TG: SELF, EP: 3, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 230, HR: 75%, TG: 1-1 S, EP: 2, WP: 0, ATR:  / /L/ /G
+
+
+     Blitz Tiger
+
+Cost:  400,000G
+Core/Parts required:  Zoid Core BT
+Zoid Required:  None
+
+HP:    400     SP:  320     DF:   150
+EP:    40      MM:  70      AM:   65
+GEP:   5       IV:  820     DCP:  320
+
+SR:    500
+CLV:   20
+CP:    30
+SIZE:  L
+
+Unfixed weapons: None
+
+Imbuilt Weapon 1: AT: 180, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G  
+*EFFECT*
+Imbuilt Weapon 2: AT: 360, HR: 83%, TG: 1-1 S, EP: 28, WP: 0, ATR:  / / / /G  
+*EFFECT*
+Imbuilt Weapon 3: AT: 120, HR: 63%, TG: 1-3 W, EP: 14, WP: 0, ATR: None  
+*EFFECT*
+Imbuilt Weapon 4: AT: 250, HR: 70%, TG: 1-1 S, EP: 0, WP: 0, ATR:  / / / /G
+
+
+     Bloodler
+
+Cost:  50,000G
+Core/Parts required:  None
+Zoid Required:  Redler
+
+HP:    250     SP:  3500     DF:   30
+EP:    30      MM:  20       AM:   45
+GEP:   2       IV:  4100     DCP:  230
+
+SR:    600
+CLV:   15
+CP:    30
+SIZE:  M
+
+Unfixed weapons: None
+
+Imbuilt Weapon 1: AT: 180, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G 
+*EFFECT*
+Imbuilt Weapon 2: AT: 90, HR: 92%, TG: 1-3 N, EP: 10, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: Avoid: +120, TG: SELF, EP: 0, WP: 5,  USE: Passive  
+*EFFECT*
+Imbuilt Weapon 4: AT: 250, HR: 70%, TG: 1-1 S, EP: 5, WP: 0, ATR:  / /L/ /G  
+*EFFECT*
+
+
+     Bloody Demon
+
+Cost:  160,000G
+Core/Parts required:  Zoid Core GS
+Zoid Required:  None
+
+HP:    500     SP:  90      DF:   80
+EP:    40      MM:  35      AM:   85
+GEP:   3       IV:  390     DCP:  230
+
+SR:    300
+CLV:   20
+CP:    50
+SIZE:  XL
+
+Unfixed weapons: None
+
+Imbuilt Weapon 1: AT: 240, HR: 65%, TG: 1-3 A, EP: 20, WP: 0, ATR:  / / /P/  
+*EFFECT*
+Imbuilt Weapon 2: AT: 100, HR: 85%, TG: 1-3 N, EP: 8, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 80, HR: 65%, TG: 1-1 W, EP: 5, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 4: AT: 250, HR: 68%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     Brachios
+
+Cost:  15,000G
+Core/Parts required:  Zoid Core ZN
+Zoid Required:  None
+
+HP:    130     SP:  140     DF:   20
+EP:    20      MM:  40      AM:   75
+GEP:   2       IV:  440     DCP:  65
+
+SR:    300
+CLV:   3
+CP:    35
+SIZE:  M
+
+Unfixed weapons: None
+
+Imbuilt Weapon 1: AT: 50, HR: 88%, TG: 1-3 V, EP: 4, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: EP: +100, TG: SELF, EP: 0, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 65, HR: 62%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Buster Eagle
+
+Cost:  30,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    210     SP:  2000    DF:   40
+EP:    30      MM:  30      AM:   55
+GEP:   3       IV:  2400    DCP:  170
+
+SR:    400
+CLV:   11
+CP:    30
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 280, HR: 50%, TG: 2-3 S, EP: 10, WP: 0, ATR: B/ / / / 
+*EFFECT*
+Imbuilt Weapon 2: AT: 60, HR: 92%, TG: 1-3 B, EP: 8, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 180, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G 
+*EFFECT*
+
+
+     Cannon Tortoise
+
+Cost:  10,000G
+Core/Parts required:  Zoid Core H1
+Zoid Required:  None
+
+HP:    90      SP:  100     DF:   25
+EP:    15      MM:  40      AM:   90
+GEP:   2       IV:  400     DCP:  40
+
+SR:    300
+CLV:   2
+CP:    25
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 35, HR: 80%, TG: 1-3 V, EP: 3, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 40, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Cannon Tortoise BC
+
+Cost:  5,000G
+Core/Parts required:  Big Calibre BC Set
+Zoid Required:  Cannon Tortoise
+
+HP:    100     SP:  80      DF:   25
+EP:    15      MM:  35      AM:   90
+GEP:   2       IV:  1280    DCP:  50
+
+SR:    1200
+CLV:   3
+CP:    15
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 35, HR: 80%, TG: 1-3 V, EP: 3, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 45, HR: 85%, TG: 1-3 S, EP: 5, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 55, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Cannory Molga
+
+Cost:  2,000G
+Core/Parts required:  Cannory Unit
+Zoid Required:  Molga
+
+HP:    50      SP:  180     DF:   23
+EP:    15      MM:  60      AM:   90
+GEP:   2       IV:  480     DCP:  30
+
+SR:    300
+CLV:   2
+CP:    15
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 20, HR: 80%, TG: 1-1 W, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 50, HR: 80%, TG: 1-3 S, EP: 1, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 30, HR: 60%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Climber Wolf
+
+Cost:  5,000G
+Core/Parts required:  Climb Engine
+Zoid Required:  Command Wolf
+
+HP:    130     SP:  200     DF:   20
+EP:    20      MM:  70      AM:   60
+GEP:   3       IV:  1000    DCP:  100
+
+SR:    800
+CLV:   8
+CP:    30
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 50, HR: 92%, TG: 1-3 V, EP: 4, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 85, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Command Wolf
+
+Cost:  25,000G
+Core/Parts required:  Zoid Core H1
+Zoid Required:  None
+
+HP:    120     SP:  210     DF:   20
+EP:    18      MM:  70      AM:   60
+GEP:   2       IV:  1010    DCP:  90
+
+SR:    800
+CLV:   4
+CP:    30
+SIZE:  M
+
+Unfixed weapons:  2-Set Beam Cannon
+AT: 70, HR: 90%, TG: 1-3 S, EP: 3, WP: 13, ATR:  / / /P/  Command Wolf only
+
+Imbuilt Weapon 1: None
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Avoid: +30, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 60, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Command Wolf AC
+
+Cost:  8,000G
+Core/Parts required:  Attack Unit
+Zoid Required:  Command Wolf
+
+HP:    170     SP:  200     DF:   23
+EP:    23      MM:  70      AM:   60
+GEP:   3       IV:  1000    DCP:  150
+
+SR:    800
+CLV:   8
+CP:    30
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 95, HR: 90%, TG: 2-3 S, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Avoid: +40, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 85, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Command Wolf IS
+
+Cost:  10,000G
+Core/Parts required:  Destroy Rifle
+Zoid Required:  Command Wolf
+
+HP:    180     SP:  200     DF:   33
+EP:    25      MM:  75      AM:   60
+GEP:   3       IV:  1000    DCP:  150
+
+SR:    800
+CLV:   11
+CP:    25
+SIZE:  M
+
+Unfixed weapons:  Long Range Rifle
+AT: 130, HR: 99%, TG: 2-3 S, EP: 6, WP: 18, ATR: B/ / / /  Command Wolf IS only
+
+Imbuilt Weapon 1: None
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Avoid: +40, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 120, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Command Wolf Urban Combat
+
+Cost:  5,000G
+Core/Parts required:  Rocket Cannon
+Zoid Required:  Command Wolf
+
+HP:    140     SP:  195     DF:   23
+EP:    20      MM:  60      AM:   60
+GEP:   2       IV:  795     DCP:  100
+
+SR:    600
+CLV:   5
+CP:    25
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 50, HR: 65%, TG: 1-3 V, EP: 3, WP: 0, ATR:  /M/ / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Avoid: +30, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 85, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Cyclops Type 1
+
+Cost:  240,000G
+Core/Parts required:  Zoid Core CR
+Zoid Required:  None
+
+HP:    400     SP:  180     DF:   130
+EP:    50      MM:  65      AM:   90
+GEP:   3       IV:  280     DCP:  280
+
+SR:    100
+CLV:   25
+CP:    60
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 300, HR: 50%, TG: 1-2 S, EP: 5, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Avoid: +100, TG: SELF, EP: 2, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 500, HR: 50%, TG: 1-1 S, EP: 10, WP: 0, ATR:  / / / /G
+
+
+     Cyclops Type 2
+
+Cost:  240,000G
+Core/Parts required:  Zoid Core CR
+Zoid Required:  None
+
+HP:    380     SP:  180     DF:   130
+EP:    50      MM:  65      AM:   95
+GEP:   3       IV:  280     DCP:  300
+
+SR:    100
+CLV:   25
+CP:    60
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 300, HR: 50%, TG: 1-2 S, EP: 5, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Avoid: +100, TG: SELF, EP: 2, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 350, HR: 60%, TG: 1-1 S, EP: 10, WP: 0, ATR:  / / / /G
+
+
+     Dark Horn
+
+Cost:  10,000G
+Core/Parts required:  None
+Zoid Required:  Red Horn
+
+HP:    300     SP:  130     DF:   70
+EP:    30      MM:  50      AM:   90
+GEP:   3       IV:  530     DCP:  200
+
+SR:    400
+CLV:   13
+CP:    55
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 220, HR: 80%, TG: 1-3 S, EP: 10, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 100, HR: 90%, TG: 1-2 S, EP: 12, WP: 0, ATR:  /M/ / / 
+*EFFECT*
+Imbuilt Weapon 3: AT: 90, HR: 83%, TG: 1-2 W, EP: 12, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 4: AT: 200, HR: 63%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Dark Horn HS
+
+Cost:  5,000G
+Core/Parts required:  HS Set
+Zoid Required:  Dark Horn
+
+HP:    320     SP:  130     DF:   70
+EP:    30      MM:  50      AM:   90
+GEP:   3       IV:  530     DCP:  200
+
+SR:    400
+CLV:   14
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 220, HR: 80%, TG: 1-2 S, EP: 10, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 100, HR: 80%, TG: 1-3 N, EP: 14, WP: 0, ATR: B/ / /P/
+Imbuilt Weapon 3: AT: 230, HR: 85%, TG: 1-3 S, EP: 17, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 4: AT: 200, HR: 63%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Dark Poison
+
+Cost:  6,000G
+Core/Parts required:  None
+Zoid Required:  Molga
+
+HP:    130     SP:  250     DF:   30
+EP:    20      MM:  60      AM:   90
+GEP:   2       IV:  550     DCP:  100
+
+SR:    300
+CLV:   8
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 50, HR: 80%, TG: 1-2 S, EP: 1, WP: 0, ATR:  /M/ / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 90, HR: 85%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Dark Spiner
+
+Cost:  80,000G
+Core/Parts required:  Zoid Core SP
+Zoid Required:  None
+
+HP:    310     SP:  240     DF:   85
+EP:    37      MM:  60      AM:   65
+GEP:   4       IV:  1040    DCP:  260
+
+SR:    800
+CLV:   18
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 140, HR: 95%, TG: 1-2 N, EP: 6, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 130, HR: 80%, TG: 1-3 S, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 130, HR: 70%, TG: 1-3 B, EP: 10, WP: 0, ATR: None 
+*EFFECT*
+Imbuilt Weapon 4: AT: 100, HR: 62%, TG: 1-1 S, EP: 5, WP: 0, ATR:  / / / /G 
+*EFFECT*
+
+
+     Dark Spiner KD
+
+Cost:  10,000G
+Core/Parts required:  KS Combine Data
+Zoid Required:  Dark Spiner
+
+HP:    380     SP:  260     DF:   150
+EP:    35      MM:  65      AM:   65
+GEP:   4       IV:  560     DCP:  300
+
+SR:    300
+CLV:   21
+CP:    60
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 260, HR: 90%, TG: 1-3 S, EP: 14, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 2: AT: 130, HR: 85%, TG: 1-1 W, EP: 12, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 3: HR: +50, TG: ALLEY-A, EP: 2, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 200, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Death Saurer
+
+Cost:  300,000G
+Core/Parts required:  Zoid Core DZ
+Zoid Required:  None
+
+HP:    1000    SP:  90      DF:   200
+EP:    100     MM:  40      AM:   95
+GEP:   10      IV:  590     DCP:  1000
+
+SR:    500
+CLV:   30
+CP:    70
+SIZE:  XL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 400, HR: 85%, TG: 1-3 A, EP: 40, WP: 0, ATR:  / / /P/ 
+*EFFECT*
+Imbuilt Weapon 2: AT: 320, HR: 90%, TG: 1-3 S, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 230, HR: 65%, TG: 1-1 W, EP: 5, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 4: AT: 350, HR: 68%, TG: 1-1 S, EP: 5, WP: 0, ATR:  / / / /G
+
+
+     Death Stinger
+
+Cost:  180,000G
+Core/Parts required:  Zoid Core DS
+Zoid Required:  None
+
+HP:    600     SP:  185     DF:   150
+EP:    50      MM:  75      AM:   90
+GEP:   5       IV:  585     DCP:  400
+
+SR:    400
+CLV:   27
+CP:    60
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 220, HR: 80%, TG: 1-3 S, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 200, HR: 90%, TG: 1-3 B, EP: 20, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 160, HR: 96%, TG: 1-3 V, EP: 12, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 4: AT: 300, HR: 75%, TG: 1-1 S, EP: 5, WP: 0, ATR:  / / / /G
+
+
+     Death Meteor
+
+Cost:  200,000G
+Core/Parts required:  None
+Zoid Required:  Death Saurer
+
+HP:    1500    SP:  90      DF:   250
+EP:    120     MM:  40      AM:   95
+GEP:   20      IV:  590     DCP:  1500
+
+SR:    500
+CLV:   32
+CP:    70
+SIZE:  XL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 480, HR: 85%, TG: 1-3 A, EP: 50, WP: 0, ATR:  / / /P/ 
+*EFFECT*
+Imbuilt Weapon 2: AT: 320, HR: 70%, TG: 1-1 N, EP: 5, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 3: AT: 300, HR: 65%, TG: 1-1 W, EP: 6, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 4: AT: 500, HR: 68%, TG: 1-1 S, EP: 10, WP: 0, ATR:  / / / /G
+
+
+     DemonsHead
+
+Cost:  9,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    150     SP:  80      DF:   35
+EP:    27      MM:  40      AM:   70
+GEP:   3       IV:  180     DCP:  150
+
+SR:    100
+CLV:   7
+CP:    30
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 85, HR: 65%, TG: 1-1 S, EP: 0, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 140, HR: 70%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 3: AT: 130, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 4: AT: 150, HR: 63%, TG: 1-1 S, EP: 2, WP: 0, ATR:  / / / /G
+
+
+     Diablo Tiger
+
+Cost:  240,000G
+Core/Parts required:  Zoid Core DT
+Zoid Required:  None
+
+HP:    350     SP:  240     DF:   150
+EP:    35      MM:  90      AM:   65
+GEP:   7       IV:  540     DCP:  320
+
+SR:    300
+CLV:   25
+CP:    20
+SIZE:  M
+
+Unfixed weapons:  Self Recovery Unit
+HP: +50, TG: SELF, EP: 3, WP: 15, USE: Passive
+
+Imbuilt Weapon 1: AT: 180, HR: 90%, TG: 1-3 V, EP: 14, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 350, HR: 75%, TG: 1-1 S, EP: 6, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 3: Avoid: +80, TG: SELF, EP: 10, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 400, HR: 65%, TG: 1-1 S, EP: 10, WP: 0, ATR:  / / / /G
+
+
+     DiBison
+
+Cost:  66,000G
+Core/Parts required:  Zoid Core H2
+Zoid Required:  None
+
+HP:    300     SP:  130     DF:   50
+EP:    30      MM:  50      AM:   70
+GEP:   3       IV:  830     DCP:  250
+
+SR:    700
+CLV:   14
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 85, HR: 92%, TG: 1-3 B, EP: 10, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 140, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 230, HR: 78%, TG: 1-3 B, EP: 20, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 4: AT: 180, HR: 63%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     DiploGuns
+
+Cost:  9,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    150     SP:  200     DF:   35
+EP:    27      MM:  15      AM:   60
+GEP:   3       IV:  300     DCP:  150
+
+SR:    100
+CLV:   7
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 120, HR: 88%, TG: 1-3 S, EP: 6, WP: 0, ATR: B/ / / / 
+*EFFECT*
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: SP: +500, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 80, HR: 70%, TG: 1-1 S, EP: 0, WP: 0, ATR:  / / / /G 
+*EFFECT*
+
+
+     Double Arm Lizard
+
+Cost:  23,000G
+Core/Parts required:  DA Combine Data
+Zoid Required:  None
+
+HP:    240     SP:  130     DF:   55
+EP:    30      MM:  60      AM:   60
+GEP:   3       IV:  730     DCP:  150
+
+SR:    600
+CLV:   12
+CP:    30
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 90, HR: 80%, TG: 1-2 N, EP: 2, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 210, HR: 93%, TG: 1-3 S, EP: 6, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 250, HR: 90%, TG: 1-1 S, EP: 10, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 4: AT: 180, HR: 65%, TG: 1-1 S, EP: 2, WP: 0, ATR:  / / / /G
+
+
+     Double Sworder
+
+Cost:  2,000G
+Core/Parts required:  None
+Zoid Required:  Saicurtis
+
+HP:    50      SP:  180     DF:   17
+EP:    10      MM:  100     AM:   60
+GEP:   2       IV:  2180    DCP:  30
+
+SR:    2000
+CLV:   2
+CP:    12
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 18, HR: 80%, TG: 1-3 W, EP: 1, WP: 0, ATR: B/ / / / 
+*EFFECT*
+Imbuilt Weapon 2: AT: 40, HR: 85%, TG: 1-2 S, EP: 2, WP: 0, ATR:  / / /P/ 
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 35, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G 
+*EFFECT*
+
+
+     Elephander
+
+Cost:  70,000G
+Core/Parts required:  Zoid Core GR
+Zoid Required:  None
+
+HP:    350     SP:  130     DF:   100
+EP:    35      MM:  50      AM:   75
+GEP:   5       IV:  930     DCP:  220
+
+SR:    800
+CLV:   14
+CP:    70
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 80, HR: 85%, TG: 1-2 N, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 250, HR: 85%, TG: 1-3 S, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 100, HR: 92%, TG: 1-3 V, EP: 12, WP: 0, ATR:  / /L/ / 
+*EFFECT*
+Imbuilt Weapon 4: AT: 230, HR: 70%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     Elephander AG
+
+Cost:  10,000G
+Core/Parts required:  AG Unit
+Zoid Required:  Elephander
+
+HP:    350     SP:  130     DF:   100
+EP:    35      MM:  50      AM:   75
+GEP:   5       IV:  730     DCP:  250
+
+SR:    600
+CLV:   16
+CP:    70
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 80, HR: 85%, TG: 1-2 N, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 150, HR: 96%, TG: 1-3 V, EP: 14, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 3: AT: 150, HR: 60%, TG: 1-2 W, EP: 10, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 4: AT: 250, HR: 70%, TG: 1-1 S, EP: 5, WP: 0, ATR:  / / / /G
+
+
+     FlyScissors
+
+Cost:  9,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    150     SP:  2800    DF:   30
+EP:    27      MM:  15      AM:   40
+GEP:   3       IV:  3100    DCP:  150
+
+SR:    300
+CLV:   7
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 160, HR: 60%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G  
+*EFFECT*
+Imbuilt Weapon 2: AT: 85, HR: 75%, TG: 1-1 S, EP: 0, WP: 0, ATR:  / / / /G  
+*EFFECT*
+Imbuilt Weapon 3: AT: 120, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G  
+*EFFECT*
+Imbuilt Weapon 4: AT: 120, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G  
+*EFFECT*
+
+
+     Gator
+
+Cost:  6,000G
+Core/Parts required:  Zoid Core ZN
+Zoid Required:  None
+
+HP:    40      SP:  200     DF:   15
+EP:    10      MM:  50      AM:   60
+GEP:   2       IV:  1400    DCP:  20
+
+SR:    1200
+CLV:   1
+CP:    18
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 23, HR: 90%, TG: 1-2 S, EP: 2, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: SR= 500, TG: ALLEY-S, EP: 2, WP: 0, USE: Active 
+*EFFECT*
+Imbuilt Weapon 4: AT: 20, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GenoBreaker
+
+Cost:  40,000G
+Core/Parts required:  None
+Zoid Required:  GenoSaurer
+
+HP:    400     SP:  345     DF:   100
+EP:    40      MM:  70      AM:   70
+GEP:   5       IV:  645     DCP:  320
+
+SR:    300
+CLV:   17
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  F-Round Shield
+DF: +70, AM: +80, TG: SELF, EP: 0, WP: 15, USE: Passive 
+*EFFECT*  / / / /G
+
+Imbuilt Weapon 1: AT: 250, HR: 60%, TG: 1-1 S, EP: 5, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 300, HR: 95%, TG: 1-3 V, EP: 25, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 250, HR: 70%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / /L/ /G
+Imbuilt Weapon 4: AT: 200, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GenoFlame
+
+Cost:  30,000G
+Core/Parts required:  None
+Zoid Required:  GenoSaurer
+
+HP:    450     SP:  260     DF:   120
+EP:    45      MM:  65      AM:   80
+GEP:   4       IV:  560     DCP:  400
+
+SR:    300
+CLV:   24
+CP:    45
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 360, HR: 90%, TG: 1-3 S, EP: 12, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 250, HR: 85%, TG: 1-3 A, EP: 20, WP: 0, ATR:  / / /P/ 
+*EFFECT*
+Imbuilt Weapon 3: Shield Strength: 400, TG: SELF, EP: 5, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 230, HR: 75%, TG: 1-1 S, EP: 4, WP: 0, ATR:  / / / /G
+
+
+     GenoHydra
+
+Cost:  130,000G
+Core/Parts required:  Zoid Core GH
+Zoid Required:  None
+
+HP:    370     SP:  340     DF:   85
+EP:    40      MM:  70      AM:   70
+GEP:   5       IV:  740     DCP:  310
+
+SR:    400
+CLV:   24
+CP:    35
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 90, HR: 83%, TG: 1-2 W, EP: 12, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 250, HR: 65%, TG: 1-1 S, EP: 8, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 3: AT: 250, HR: 85%, TG: 1-3 A, EP: 25, WP: 0, ATR:  / / /P/  
+*EFFECT*
+Imbuilt Weapon 4: AT: 150, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GenoHydra KA
+
+Cost:  50,000G
+Core/Parts required:  KA Unit
+Zoid Required:  GenoHydra
+
+HP:    430     SP:  350     DF:   120
+EP:    40      MM:  75      AM:   75
+GEP:   5       IV:  750     DCP:  320
+
+SR:    400
+CLV:   26
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 300, HR: 80%, TG: 1-3 B, EP: 20, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 250, HR: 85%, TG: 1-3 A, EP: 25, WP: 0, ATR:  / / /P/  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 230, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     GenoSaurer
+
+Cost:  80,000G
+Core/Parts required:  Zoid Core GS, Normal OS
+Zoid Required:  None
+
+HP:    320     SP:  260     DF:   80
+EP:    35      MM:  65      AM:   65
+GEP:   4       IV:  560     DCP:  250
+
+SR:    300
+CLV:   15
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 130, HR: 95%, TG: 1-2 S, EP: 7, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 2: AT: 200, HR: 90%, TG: 1-3 B, EP: 15, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 75, HR: 94%, TG: 1-3 V, EP: 12, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 4: AT: 200, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GenoScissors
+
+Cost:  10,000G
+Core/Parts required:  Scissors Parts
+Zoid Required:  GenoSaurer
+
+HP:    380     SP:  320     DF:   100
+EP:    40      MM:  65      AM:   65
+GEP:   5       IV:  670     DCP:  330
+
+SR:    350
+CLV:   18
+CP:    35
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 300, HR: 60%, TG: 1-1 S, EP: 6, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 300, HR: 95%, TG: 1-3 V, EP: 25, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 150, HR: 85%, TG: 1-2 S, EP: 8, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 4: AT: 200, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GenoTrooper
+
+Cost:  10,000G
+Core/Parts required:  Flight Parts
+Zoid Required:  GenoSaurer
+
+HP:    370     SP:  2100    DF:   90
+EP:    40      MM:  20      AM:   60
+GEP:   5       IV:  2550    DCP:  330
+
+SR:    450
+CLV:   18
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 80, HR: 85%, TG: 1-3 V, EP: 2, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 300, HR: 95%, TG: 1-3 V, EP: 25, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 120, HR: 96%, TG: 1-3 V, EP: 18, WP: 0, ATR:  / /L//  
+*EFFECT*
+Imbuilt Weapon 4: AT: 200, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G 
+*EFFECT*
+
+
+     Gilvader
+
+Cost:  500,000G
+Core/Parts required:  Zoid Core GV
+Zoid Required:  None
+
+HP:    1200    SP:  4000    DF:   180
+EP:    70      MM:  15      AM:   75
+GEP:   15      IV:  5000    DCP:  800
+
+SR:    1000
+CLV:   32
+CP:    60
+SIZE:  XL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 200, HR: 85%, TG: 1-3 B, EP: 18, WP: 0, ATR:  / / /P/ 
+*EFFECT*
+Imbuilt Weapon 2: AT: 350, HR: 75%, TG: 1-2 S, EP: 10, WP: 0, ATR:  / / /P/ 
+*EFFECT*
+Imbuilt Weapon 3: AT: 500, HR: 70%, TG: 1-3 A, EP: 60, WP: 0, ATR: None 
+*EFFECT*
+Imbuilt Weapon 4: AT: 230, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G 
+*EFFECT*
+
+
+     Godos
+
+Cost:  10,000G
+Core/Parts required:  Zoid Core H1
+Zoid Required:  None
+
+HP:    80      SP:  150     DF:   15
+EP:    12      MM:  80      AM:   60
+GEP:   2       IV:  250     DCP:  50
+
+SR:    100
+CLV:   2
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 38, HR: 85%, TG: 1-2 S, EP: 2, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 35, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Gojulas
+
+Cost:  70,000G
+Core/Parts required:  Zoid Core ZG
+Zoid Required:  None
+
+HP:    350     SP:  75      DF:   70
+EP:    28      MM:  50      AM:   75
+GEP:   3       IV:  275     DCP:  200
+
+SR:    200
+CLV:   18
+CP:    60
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 150, HR: 70%, TG: 1-1 S, EP: 0, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 100, HR: 85%, TG: 1-2 S, EP: 4, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 200, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Gojulas Giga
+
+Cost:  120,000G
+Core/Parts required:  Zoid Core GG, GG Bestial Data
+Zoid Required:  None
+
+HP:    500     SP:  180     DF:   150
+EP:    45      MM:  60      AM:   80
+GEP:   6       IV:  580     DCP:  450
+
+SR:    400
+CLV:   22
+CP:    60
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 280, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 280, HR: 65%, TG: 1-1 W, EP: 4, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 3: AT: Shield Strength: 300, TG: SELF, EP: 5, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 320, HR: 65%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     Gojulas Giga Cannon
+
+Cost:  20,000G
+Core/Parts required:  GC Combine Data
+Zoid Required:  Gojulas Giga
+
+HP:    700     SP:  75      DF:   150
+EP:    50      MM:  60      AM:   80
+GEP:   5       IV:  475     DCP:  500
+
+SR:    400
+CLV:   24
+CP:    50
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 300, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 280, HR: 65%, TG: 1-1 W, EP: 4, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 3: AT: 380, HR: 75%, TG: 1-3 S, EP: 13, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 4: AT: 320, HR: 65%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     Gojulas G Orga
+
+Cost:  80,000G
+Core/Parts required:  Normal OS
+Zoid Required:  Gojulas
+
+HP:    500     SP:  125     DF:   120
+EP:    50      MM:  45      AM:   85
+GEP:   5       IV:  475     DCP:  350
+
+SR:    350
+CLV:   20
+CP:    60
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 180, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 180, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 350, HR: 60%, TG: 2-3 S, EP: 10, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 4: AT: 200, HR: 68%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     Gojulas Gunner
+
+Cost:  20,000G
+Core/Parts required:  GC Set
+Zoid Required:  Gojulas
+
+HP:    350     SP:  60      DF:   75
+EP:    33      MM:  45      AM:   75
+GEP:   3       IV:  360     DCP:  250
+
+SR:    300
+CLV:   20
+CP:    55
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 180, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 180, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 300, HR: 80%, TG: 2-3 S, EP: 14, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 4: AT: 200, HR: 68%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     Gojulox
+
+Cost:  62,000G
+Core/Parts required:  GX Combine Data
+Zoid Required:  None
+
+HP:    480     SP:  130     DF:   180
+EP:    60      MM:  50      AM:   70
+GEP:   6       IV:  630     DCP:  480
+
+SR:    500
+CLV:   20
+CP:    60
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 150, HR: 83%, TG: 1-1 S, EP: 2, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 240, HR: 88%, TG: 1-3 V, EP: 12, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 210, HR: 95%, TG: 1-2 N, EP: 14, WP: 0, ATR: B/ / / /  
+*EFFECT
+Imbuilt Weapon 4: AT: 320, HR: 93%, TG: 1-1 S, EP: 5, WP: 0, ATR:  / /L/ /G
+
+
+     Goldos
+
+Cost:  55,000G
+Core/Parts required:  Zoid Core H1
+Zoid Required:  None
+
+HP:    250     SP:  80      DF:   27
+EP:    25      MM:  40      AM:   60
+GEP:   3       IV:  1080    DCP:  120
+
+SR:    1000
+CLV:   8
+CP:    60
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 80, HR: 85%, TG: 1-2 S, EP: 3, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 70, HR: 90%, TG: 1-3 S, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: SR= 1000, TG: ALLEY-S, EP: 2, WP: 0, USE: Active 
+*EFFECT*
+Imbuilt Weapon 4: AT: 80, HR: 63%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Goldos Long Rang Attacker
+
+Cost:  10,000G
+Core/Parts required:  GC Set
+Zoid Required:  Goldos
+
+HP:    250     SP:  60      DF:   47
+EP:    25      MM:  35      AM:   60
+GEP:   3       IV:  1060    DCP:  140
+
+SR:    1000
+CLV:   10
+CP:    20
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 140, HR: 70%, TG: 1-2 S, EP: 4, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 140, HR: 90%, TG: 2-3 S, EP: 4, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: SR= 1000, TG: ALLEY-S, EP: 2, WP: 0, USE: Active 
+*EFFECT*
+Imbuilt Weapon 4: AT: 150, HR: 63%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GravityBison
+
+Cost:  96,000G
+Core/Parts required:  Zoid Core H2
+Zoid Required:  None
+
+HP:    320     SP:  120     DF:   65
+EP:    35      MM:  55      AM:   75
+GEP:   4       IV:  920     DCP:  270
+
+SR:    800
+CLV:   16
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 100, HR: 92%, TG: 1-3 B, EP: 12, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 160, HR: 70%, TG: 1-3 S, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 180, HR: 68%, TG: 1-3 B, EP: 15, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 4: AT: 210, HR: 63%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     Griffon
+
+Cost:  45,000G
+Core/Parts required:  GF Combine Data
+Zoid Required:  None
+
+HP:    400     SP:  1500    DF:   60
+EP:    40      MM:  20      AM:   45
+GEP:   4       IV:  1900    DCP:  200
+
+SR:    400
+CLV:   15
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 230, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G  
+*EFFECT*
+Imbuilt Weapon 2: AT: 130, HR: 92%, TG: 1-3 B, EP: 10, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 320, HR: 65%, TG: 1-1 S, EP: 5, WP: 0, ATR:  / / / /G  
+*EFFECT*
+
+
+     GunSniper
+
+Cost:  12,000G
+Core/Parts required:  Zoid Core H2, Limiter OS
+Zoid Required:  None
+
+HP:    130     SP:  200     DF:   20
+EP:    20      MM:  60      AM:   50
+GEP:   2       IV:  1400    DCP:  95
+
+SR:    1200
+CLV:   5
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 40, HR: 90%, TG: 1-3 N, EP: 3, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 30, HR: 92%, TG: 1-3 B, EP: 8, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 70, HR: 95%, TG: 2-3 S, EP: 2, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 4: AT: 65, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GunSniper Weasel
+
+Cost:  5,000G
+Core/Parts required:  WW Unit
+Zoid Required:  GunSniper
+
+HP:    150     SP:  160     DF:   35
+EP:    25      MM:  60      AM:   60
+GEP:   2       IV:  960     DCP:  100
+
+SR:    800
+CLV:   6
+CP:    10
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 180, HR: 90%, TG: 1-3 N, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 50, HR: 92%, TG: 1-3 B, EP: 8, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 60, HR: 80%, TG: 1-2 W, EP: 5, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 4: AT: 120, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GunSniper LS
+
+Cost:  30,000G
+Core/Parts required:  LM Set
+Zoid Required:  GunSpiper Weasel
+
+HP:    180     SP:  120     DF:   40
+EP:    30      MM:  70      AM:   60
+GEP:   2       IV:  720     DCP:  150
+
+SR:    600
+CLV:   12
+CP:    5
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 65, HR: 92%, TG: 1-3 B, EP: 8, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 70, HR: 80%, TG: 1-2 W, EP: 6, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: AT: 160, HR: 80%, TG: 1-3 A, EP: 16, WP: 0, ATR:  /M/ / /  
+*EFFECT
+Imbuilt Weapon 4: AT: 120, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GunSniper NS
+
+Cost:  40,000G
+Core/Parts required:  None
+Zoid Required:  GunSniper
+
+HP:    160     SP:  200     DF:   40
+EP:    30      MM:  80      AM:   60
+GEP:   2       IV:  3200    DCP:  160
+
+SR:    3000
+CLV:   12
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 80, HR: 90%, TG: 1-3 N, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 65, HR: 92%, TG: 1-3 B, EP: 8, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 160, HR: 95%, TG: 2-3 S, EP: 2, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 4: AT: 120, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GunBlaster
+
+Cost:  80,000G
+Core/Parts required:  Zoid Core GB
+Zoid Required:  None
+
+HP:    400     SP:  120     DF:   120
+EP:    50      MM:  30      AM:   90
+GEP:   3       IV:  620     DCP:  300
+
+SR:    500
+CLV:   19
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 230, HR: 90%, TG: 1-3 V, EP: 20, WP: 0, ATR: B/ /L/P/  
+*EFFECT*
+Imbuilt Weapon 2: HR: +50, TG: ALLEY-A, EP: 3, WP: 3, USE: Active  
+*EFFECT*
+Imbuilt Weapon 3: Shield Strength: 300, TG: SELF, EP: 5, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 180, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     GunTiger
+
+Cost:  6,000G
+Core/Parts required:  Zoid Core SS
+Zoid Required:  None
+
+HP:    85      SP:  270     DF:   15
+EP:    20      MM:  90      AM:   40
+GEP:   2       IV:  770     DCP:  70
+
+SR:    500
+CLV:   3
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 35, HR: 85%, TG: 1-1 S, EP: 0, WP: 0, ATR:  / / / /G
+Imbuilt Weapon 2: AT: 65, HR: 80%, TG: 1-2 S, EP: 7, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: SP: +300, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 40, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Guysack
+
+Cost:  10,000
+Core/Parts required:  Zoid Core IS
+Zoid Required:  None
+
+HP:    60      SP:  120     DF:   15
+EP:    15      MM:  100     AM:   60
+GEP:   2       IV:  1320    DCP:  40
+
+SR:    1200
+CLV:   4
+CP:    18
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 40, HR: 90%, TG: 1-3 S, EP: 5, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Avoid: +30, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 37, HR: 67%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / /L/ /G
+
+
+     Guysack Stinger
+
+Cost:  30,000G
+Core/Parts required:  None
+Zoid Required:  Guysack
+
+HP:    180     SP:  120     DF:   35
+EP:    25      MM:  80      AM:   70
+GEP:   2       IV:  1620    DCP:  180
+
+SR:    1500
+CLV:   10
+CP:    40
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 120, HR: 83%, TG: 1-2 S, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: AT: 30, HR: 70%, TG: 1-3 W, EP: 8, WP: 0, ATR: None  
+*EFFECT*
+Imbuilt Weapon 4: AT: 140, HR: 67%, TG: 1-1 S, EP: 3, WP: 0, ATR:  / / / /G
+
+
+     HammerHead
+
+Cost:  40,000G
+Core/Parts required:  Zoid Core WT
+Zoid Required:  None
+
+HP:    200     SP:  1000    DF:   30
+EP:    25      MM:  20      AM:   70
+GEP:   2       IV:  1300    DCP:  150
+
+SR:    300
+CLV:   10
+CP:    30
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 140, HR: 83%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 170, HR: 80%, TG: 1-3 S, EP: 8, WP: 0, ATR:  / / /P/  
+*EFFECT*
+Imbuilt Weapon 3: AT: 65, HR: 92%, TG: 1-3 B, EP: 8, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 4: AT: 120, HR: 72%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G  
+*EFFECT*
+
+
+     HammerHead VL
+
+Cost:  5,000G
+Core/Parts required:  VL Unit
+Zoid Required:  HammerHead
+
+HP:    200     SP:  1000    DF:   50
+EP:    30      MM:  20      AM:   70
+GEP:   2       IV:  1300    DCP:  180
+
+SR:    300
+CLV:   12
+CP:    25
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 140, HR: 83%, TG: 1-3 S, EP: 0, WP: 0, ATR: B/ / / / 
+*EFFECT*
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: HR: +50, TG: ALLEY-A, EP: 2, WP: 0, USE: Active  
+*EFFECT*
+Imbuilt Weapon 4: AT: 200, HR: 63%, TG: 1-1 S, EP: 2, WP: 0, ATR:  / / / /G  
+*EFFECT*
+
+
+     HammerRock
+
+Cost:  12,000G
+Core/Parts required:  Zoid Core SS
+Zoid Required:  None
+
+HP:    110     SP:  180     DF:   25
+EP:    20      MM:  60      AM:   80
+GEP:   2       IV:  380     DCP:  90
+
+SR:    200
+CLV:   6
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 30, HR: 85%, TG: 1-3 V, EP: 1, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 65, HR: 85%, TG: 1-2 S, EP: 3, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 60, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     HellCat
+
+Cost:  20,000G
+Core/Parts required:  Zoid Core ZN
+Zoid Required:  None
+
+HP:    100     SP:  190     DF:   18
+EP:    15      MM:  80      AM:   50
+GEP:   2       IV:  1990    DCP:  60
+
+SR:    1800
+CLV:   7
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  2-Set Beam Cannon
+AT: 60, HR: 85%, TG: 1-3 S, EP: 3, WP: 8, ATR:  / / /P/  HellCat only
+
+Imbuilt Weapon 1: AT: 30, HR: 85%, TG: 1-1 N, EP: 2, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Avoid: +50, TG: SELF, EP: 3, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 60, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Iguan
+
+Cost:  3,000G
+Core/Parts required:  None
+Zoid Required:  Godos
+
+HP:    80      SP:  200     DF:   17
+EP:    12      MM:  80      AM:   55
+GEP:   2       IV:  250     DCP:  50
+
+SR:    50
+CLV:   2
+CP:    18
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 30, HR: 85%, TG: 1-2 S, EP: 1, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: MM: +50, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 40, HR: 70%, TG: 1-1 S, EP: 10, WP: 0, ATR:  / / / /G
+
+
+     Iron Drill
+
+Cost:  55,000G
+Core/Parts required:  None
+Zoid Required:  Iron Kong
+
+HP:    350     SP:  150     DF:   100
+EP:    40      MM:  55      AM:   65
+GEP:   4       IV:  1350    DCP:  200
+
+SR:    1200
+CLV:   15
+CP:    55
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 260, HR: 88%, TG: 1-3 S, EP: 12, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 220, HR: 75%, TG: 1-1 S, EP: 2, WP: 0, ATR:  / / / /G
+
+
+     Iron Kong
+
+Cost:  50,000G
+Core/Parts required:  Zoid Core ZN
+Zoid Required:  None
+
+HP:    240     SP:  150     DF:   50
+EP:    25      MM:  60      AM:   65
+GEP:   3       IV:  750     DCP:  160
+
+SR:    600
+CLV:   10
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 70, HR: 94%, TG: 1-3 V, EP: 8, WP: 0, ATR:  /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 60, HR: 65%, TG: 1-3 B, EP: 10, WP: 0, ATR:  /M/ / /
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 150, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Iron Kong PK
+
+Cost:  60,000G
+Core/Parts required:  PK Unit
+Zoid Required:  Iron Kong
+
+HP:    330     SP:  170     DF:   120
+EP:    35      MM:  60      AM:   75
+GEP:   4       IV:  1170    DCP:  230
+
+SR:    1000
+CLV:   15
+CP:    60
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 120, HR: 88%, TG: 1-3 N, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 60, HR: 65%, TG: 1-3 B, EP: 8, WP: 0, ATR:  /M/ / /
+Imbuilt Weapon 3: AT: 130, HR: 92%, TG: 1-3 V, EP: 12, WP: 0, ATR:  / /L/ /
+Imbuilt Weapon 4: AT: 230, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Iron Kong Maneuver
+
+Cost:  30,000G
+Core/Parts required:  MS Unit
+Zoid Required:  Iron Kong
+
+HP:    260     SP:  180     DF:   60
+EP:    30      MM:  70      AM:   65
+GEP:   3       IV:  780     DCP:  180
+
+SR:    600
+CLV:   12
+CP:    45
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 100, HR: 94%, TG: 1-3 V, EP: 8, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 60, HR: 65%, TG: 1-3 B, EP: 8, WP: 0, ATR:  /M/ / /
+Imbuilt Weapon 3: MM: +50, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 200, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR:  / / / /G
+
+
+     Iron Kong SS
+
+Cost:  50,000G
+Core/Parts required:  PB Unit
+Zoid Required:  Iron Kong
+
+HP:    300     SP:  160     DF:   100
+EP:    35      MM:  65      AM:   65
+GEP:   4       IV:  960     DCP:  220
+
+SR:    800
+CLV:   14
+CP:    55
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 90, HR: 83%, TG: 1-2 N, EP: 10, WP: 0, ATR:  / / /P/
+Imbuilt Weapon 2: AT: 60, HR: 83%, TG: 1-3 B, EP: 8, WP: 0, ATR: /M/ / /
+Imbuilt Weapon 3: AT: 130, HR: 92%, TG: 1-3 V, EP: 12, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 4: AT: 220, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Jagd Fuhrer
+
+Cost:  10,000G
+Core/Parts required:  Jagd Unit
+Zoid Required:  Berserk Fuhrer
+***CAU upgrade***
+
+HP:    420     SP:  290     DF:   130
+EP:    40      MM:  65      AM:   80
+GEP:   5       IV:  740     DCP:  320
+
+SR:    450
+CLV:   24
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+Imbuilt Weapon 1: AT: 350, HR: 60%, TG: 2-3 S, EP: 10, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 250, HR: 85%, TG: 1-3 A, EP: 25, WP: 0, ATR: / / /P/  
+*EFFECT*
+Imbuilt Weapon 3: AT: 170, HR: 90%, TG: 1-3 B, EP: 15, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 4: AT: 210, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR: / /L/ /G
+
+
+     Jagd Stinger
+
+Cost:  40,000G
+Core/Parts required:  None
+Zoid Required:  Death Stinger
+
+HP:    700     SP:  320     DF:   160
+EP:    60      MM:  75      AM:   90
+GEP:   5       IV:  720     DCP:  450
+
+SR:    400
+CLV:   29
+CP:    60
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 220, HR: 80%, TG: 1-3 S, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 350, HR: 90%, TG: 1-3 B, EP: 30, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: AT: 240, HR: 96%, TG: 1-3 S, EP: 7, WP: 0, ATR: / / /P/
+Imbuilt Weapon 4: AT: 300, HR: 75%, TG: 1-1 1, EP: 5, WP: 0, ATR: / / / /G
+
+
+     Kelberos
+
+Cost:  15,000G
+Core/Parts required:  None
+Zoid Required:  Command Wolf
+
+HP:    200     SP:  190     DF:   40
+EP:    25      MM:  65      AM:   65
+GEP:   3       IV:  1390    DCP:  150
+
+SR:    1200
+CLV:   16
+CP:    30
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 220, HR: 90%, TG: 1-2 S, EP: 12, WP: 0, ATR: / / /P/
+Imbuilt Weapon 2: AT: 80, HR: 85%, TG: 1-2 S, EP: 14, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: Avoid: +40, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 180, HR: 65%, TG: 1-1 S, EP: 2, WP: 0, ATR: / / / /G
+
+
+     Killer Dome
+
+Cost:  9,000G
+Core/Parts required:  Zoid Core SS
+Zoid Required:  None
+
+HP:    80      SP:  150     DF:   23
+EP:    10      MM:  40      AM:   90
+GEP:   2       IV:  3150    DCP:  60
+
+SR:    3000
+CLV:   4
+CP:    15
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 45, HR: 85%, TG: 1-3 V, EP: 3, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 2: AT: 25, HR: 85%, TG: 1-1 W, EP: 6, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 3: HR: +50, TG: SELF, EP: 2, WP: 0, USE: Active  
+*EFFECT*
+Imbuilt Weapon 4: AT: 35, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Kimera Dragon
+
+Cost:  46,000G
+Core/Parts required:  CD Combine Data
+Zoid Required:  None
+
+HP:    320     SP:  1200    DF:   60
+EP:    40      MM:  10      AM:   60
+GEP:   5       IV:  1400    DCP:  300
+
+SR:    200
+CLV:   13
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 180, HR: 88%, TG: 1-3 S, EP: 10, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 70, HR: 90%, TG: 1-3 B, EP: 10, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 360, HR: 75%, TG: 1-1 S, EP: 30, WP: 0, ATR: / / / /G  
+*EFFECT*
+Imbuilt Weapon 4: AT: 190, HR: 95%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     King Gojulas
+
+Cost:  700,000G
+Core/Parts required:  Zoid Core KG
+Zoid Required:  Gojulas
+
+HP:    2000    SP:  140     DF:   300
+EP:    150     MM:  20      AM:   90
+GEP:   20      IV:  940     DCP:  1500
+
+SR:    800
+CLV:   40
+CP:    150
+SIZE:  XL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 350, HR: 80%, TG: 1-3 W, EP: 20, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 360, HR: 70%, TG: 1-1 N, EP: 7, WP: 0, ATR: / / / /G
+Imbuilt Weapon 3: AT: 300, HR: 65%, TG: 1-1 W, EP: 12, WP: 0, ATR: / / / /G
+Imbuilt Weapon 4: AT: 620, HR: 63%, TG: 1-1 S, EP: 10, WP: 0, ATR: / / / /G
+
+
+     Konig Wolf
+
+Cost:  42,000G
+Core/Parts required:  Zoid Core KW, Bestial Data
+Zoid Required:  None
+
+HP:    250     SP:  290     DF:   55
+EP:    35      MM:  90      AM:   60
+GEP:   3       IV:  790     DCP:  200
+
+SR:    500
+CLV:   14
+CP:    45
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 190, HR: 75%, TG: 1-1 S, EP: 2, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2:
+Imbuilt Weapon 3: HR: +100, TG: SELF, EP: 1, WP: 0, USE: Active  
+*EFFECT*
+Imbuilt Weapon 4: AT: 180, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Konig Wolf DSR
+
+Cost:  15,000G
+Core/Parts required:  DSR Unit
+Zoid Required:  Konig Wolf
+
+HP:    280     SP:  290     DF:   55
+EP:    38      MM:  85      AM:   60
+GEP:   3       IV:  790     DCP:  200
+
+SR:    500
+CLV:   16
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  5-Set Missile Pod
+AT: 120, HR: 97%, TG: 1-3 V, EP: 10, WP: 0, ATR: /M/ / /  Konig Wolf only
+
+Imbuilt Weapon 1: AT: 190, HR: 75%, TG: 1-1 S, EP: 2, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: AT: 300, HR: 99%, TG: 2-3 S, EP: 10, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: HR: +50, TG: SELF, EP: 1, WP: 0, USE: Active  
+*EFFECT*
+Imbuilt Weapon 4: AT: 180, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     LeoBlaze
+
+Cost:  8,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    140     SP:  220     DF:   35
+EP:    25      MM:  70      AM:   55
+GEP:   3       IV:  520     DCP:  140
+
+SR:    300
+CLV:   6
+CP:    30
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 100, HR: 85%, TG: 1-1 S, EP: 2, WP: 0, ATR: / /L/ /G
+Imbuilt Weapon 2: AT: 130, HR: 63%, TG: 1-1 S, EP: 3, WP: 0, ATR: / / / /G
+Imbuilt Weapon 3: Shield Strength: 100, TG: SELF, EP: 3, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 80, HR: 67%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     Liger Aero
+
+Cost:  18,000G
+Core/Parts required:  None
+Zoid Required:  Shield Liger
+
+HP:    230     SP:  280     DF:   45
+EP:    25      MM:  95      AM:   50
+GEP:   2       IV:  780     DCP:  150
+
+SR:    500
+CLV:   13
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 170, HR: 85%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Shield Strength: 300, TG: SELF, EP: 5, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 200, HR: 85%, TG: 1-1 S, EP: 2, WP: 0, ATR: / /L/ /G
+
+
+     Liger Zero
+
+Cost:  75,000G
+Core/Parts required:  Zoid Core UX, Bestial Data
+Zoid Required:  None
+
+HP:    260     SP:  307     DF:   55
+EP:    35      MM:  75      AM:   65
+GEP:   3       IV:  657     DCP:  210
+
+SR:    350
+CLV:   15
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 160, HR: 75%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: SP: +300, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 240, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR: / /L/ /G
+
+
+     Liger Zero Jager
+
+Cost:  15,000
+Core/Parts required:  Jager Unit
+Zoid Required:  Liger Zero
+***CAU upgrade***
+
+HP:    280     SP:  330     DF:   55
+EP:    35      MM:  90      AM:   70
+GEP:   3       IV:  830     DCP:  240
+
+SR:    500
+CLV:   17
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 160, HR: 75%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 95, HR: 85%, TG: 1-3 V, EP: 2, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: SP: +500, TG: SELF, EP: 2, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 240, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR: / /L/ /G
+
+
+     Liger Zero Schneider
+
+Cost:  15,000G
+Core/Parts required:  Schneider Unit
+Zoid Required:  Liger Zero
+***CAU upgrade***
+
+HP:    290     SP:  310     DF:   65
+EP:    35      MM:  80      AM:   70
+GEP:   2       IV:  710     DCP:  230
+
+SR:    400
+CLV:   17
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 160, HR: 75%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 400, HR: 50%, TG: 1-1 S, EP: 30, WP: 0, ATR: / /L/ /G
+Imbuilt Weapon 3: Shield Strength: 200, TG: SELF, EP: 3, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 270, HR: 70%, TG: 1-1 S, EP: 6, WP: 0, ATR: / /L/ /G
+
+
+     Liger Zero Panzer
+
+Cost:  20,000G
+Core/Parts required:  Panzer Unit
+Zoid Required:  Liger Zero
+***CAU upgrade***
+
+HP:    300     SP:  285     DF:   80
+EP:    35      MM:  75      AM:   80
+GEP:   2       IV:  485     DCP:  250
+
+SR:    200
+CLV:   20
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 200, HR: 90%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 250, HR: 90%, TG: 1-3 B, EP: 20, WP: 0, ATR: B/ / /P/
+Imbuilt Weapon 3: AT: 300, HR: 80%, TG: 1-3 A, EP: 25, WP: 0, ATR: /M/ / / 
+*EFFECT*
+Imbuilt Weapon 4: AT: 240, HR: 60%, TG: 1-1 S, EP: 3, WP: 0, ATR: / /L/ /G
+
+
+     Liger Zero Imperial Form
+
+Cost:  5,000G
+Core/Parts required:  None
+Zoid Required:  Liger Zero
+***CAU upgrade***
+
+HP:    260     SP:  307     DF:   55
+EP:    35      MM:  75      AM:   60
+GEP:   3       IV:  707     DCP:  210
+
+SR:    400
+CLV:   15
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 160, HR: 75%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: SP: +300, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 210, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR: / /L/ /G
+
+
+     Liger Zero X-Armor
+
+Cost:  16,000G
+Core/Parts required:  X Unit
+Zoid Required:  Liger Zero
+***CAU upgrade***
+
+HP:    280     SP:  315     DF:   60
+EP:    35      MM:  75      AM:   70
+GEP:   3       IV:  615     DCP:  230
+
+SR:    300
+CLV:   18
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 160, HR: 75%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 180, HR: 70%, TG: 1-1 S, EP: 5, WP: 0, ATR: / / / /G  
+*EFFECT*
+Imbuilt Weapon 3: AT: 150, HR: 70%, TG: 1-3 B, EP: 18, WP: 0, ATR: None  
+*EFFECT*
+Imbuilt Weapon 4: AT: 220, HR: 75%, TG: 1-1 S, EP: 2, WP: 0, ATR: / /L/ /G
+
+
+     Lightning Saix
+
+Cost:  40,000G
+Core/Parts required:  Zoid Core GR, Limiter OS
+Zoid Required:  None
+
+HP:    230     SP:  325     DF:   34
+EP:    25      MM:  90      AM:   60
+GEP:   2       IV:  525     DCP:  180
+
+SR:    200
+CLV:   12
+CP:    30
+SIZE:  M
+
+Unfixed weapons:  Pulse Laser Cannon
+AT: 110, HR: 90%, TG: 1-3 V, EP: 6, WP: 20, ATR: / /L/ /  Lightning Saix only
+
+Imbuilt Weapon 1: AT: 55, HR: 85%, TG: 1-3 B, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 130, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Lightning Saix BS
+
+Cost:  10,000G
+Core/Parts required:  None
+Zoid Required:  Lightning Saix
+
+HP:    230     SP:  310     DF:   34
+EP:    25      MM:  85      AM:   60
+GEP:   2       IV:  510     DCP:  180
+
+SR:    200
+CLV:   13
+CP:    25
+SIZE:  M
+
+Unfixed weapons:  Pulse Laser Cannon
+AT: 130, HR: 95%, TG: 1-3 V, EP: 8, WP: 22, ATR: / /L/ /  Lightning Saix BS only
+
+Imbuilt Weapon 1: AT: 55, HR: 85%, TG: 1-3 B, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 130, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Lord Gale
+
+Cost:  27,000G
+Core/Parts required:  LG Head Parts, LG Combine Data
+Zoid Required:  None
+
+HP:    250     SP:  300     DF:   55
+EP:    30      MM:  80      AM:   55
+GEP:   3       IV:  800     DCP:  170
+
+SR:    500
+CLV:   12
+CP:    25
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 280, HR: 80%, TG: 1-1 S, EP: 12, WP: 0, ATR: / / / /G  
+*EFFECT*
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 180, HR: 80%, TG: 1-1 S, EP: 2, WP: 0, ATR: / / / /G
+
+
+     Mad Thunder
+
+Cost:  150,000G
+Core/Parts required:  Zoid Core MT
+Zoid Required:  None
+
+HP:    800     SP:  100     DF:   250
+EP:    70      MM:  30      AM:   95
+GEP:   15      IV:  400     DCP:  600
+
+SR:    300
+CLV:   25
+CP:    90
+SIZE:  XL
+
+Unfixed weapons:  Anti Charge Particle Shield
+DF: +200, TG: SELF, EP: 0, WP: 30, USE: Passive  / / /P/
+
+Imbuilt Weapon 1: AT: 300, HR: 90%, TG: 1-3 S, EP: 8, WP: 0, ATR: / / /P/
+Imbuilt Weapon 2: AT: 200, HR: 60%, TG: 1-2 S, EP: 2, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 450, HR: 65%, TG: 1-1 S, EP: 35, WP: 0, ATR: / / / /G
+Imbuilt Weapon 4: AT: 250, HR: 70%, TG: 1-1 S, EP: 5, WP: 0, ATR: / / / /G
+
+
+     Matrix Dragon
+
+Cost:  42,000G
+Core/Parts required:  MD Combine Data
+Zoid Required:  None
+
+HP:    300     SP:  1800    DF:   60
+EP:    40      MM:  40      AM:   50
+GEP:   5       IV:  2100    DCP:  300
+
+SR:    300
+CLV:   13
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 120, HR: 95%, TG: 1-2 N, EP: 8, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 210, HR: 83%, TG: 1-1 S, EP: 4, WP: 0, ATR: / / / /G  
+*EFFECT*
+Imbuilt Weapon 3: Shield Strength: 200, TG: SELF, EP: 3, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 350, HR: 85%, TG: 1-1 S, EP: 30, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Merda
+
+Cost:  5,000G
+Core/Parts required:  Zoid Core ZN
+Zoid Required:  None
+
+HP:    30      SP:  500     DF:   18
+EP:    6       MM:  40      AM:   50
+GEP:   1       IV:  550     DCP:  20
+
+SR:    50
+CLV:   1
+CP:    15
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 25, HR: 75%, TG: 1-3 S, EP: 2, WP: 0, ATR: /M/ / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: SP: +250, TG: SELF, EP: 4, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 20, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Molga
+
+Cost:  6,000G
+Core/Parts required:  Zoid Core ZN
+Zoid Required:  None
+
+HP:    50      SP:  200     DF:   23
+EP:    10      MM:  60      AM:   90
+GEP:   2       IV:  400     DCP:  20
+
+SR:    200
+CLV:   1
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 20, HR: 80%, TG: 1-3 W, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 25, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Mosasledge
+
+Cost:  8,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    140     SP:  100     DF:   35
+EP:    25      MM:  20      AM:   60
+GEP:   3       IV:  200     DCP:  120
+
+SR:    100
+CLV:   6
+CP:    30
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 45, HR: 75%, TG: 1-3 V, EP: 3, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 130, HR: 70%, TG: 1-1 S, EP: 3, WP: 0, ATR: / / / /G
+Imbuilt Weapon 3: SP: +300, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 100, HR: 65%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     NightWise
+
+Cost:  8,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    140     SP:  3100    DF:   27
+EP:    25      MM:  10      AM:   40
+GEP:   3       IV:  5100    DCP:  120
+
+SR:    2000
+CLV:   6
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 65, HR: 92%, TG: 1-3 B, EP: 8, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: SR: +1000, TG: SELF, EP: 0, WP: 0, USE: Active
+Imbuilt Weapon 3: SP: +500, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 75, HR: 75%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Proto Saber
+
+Cost:  18,000G
+Core/Parts required:  None
+Zoid Required:  Sabre Tiger
+
+HP:    260     SP:  250     DF:   50
+EP:    30      MM:  70      AM:   60
+GEP:   3       IV:  550     DCP:  210
+
+SR:    300
+CLV:   13
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  2-Set Beam Cannon
+AT: 200, HR: 90%, TG: 1-3 S, EP: 7, WP: 17, ATR: / / /P/  Proto Saber only
+
+Imbuilt Weapon 1: AT: 170, HR: 85%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 100, HR: 88%, TG: 1-3 V, EP: 8, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 3: AT: 80, HR: 85%, TG: 1-2 N, EP: 1, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 4: AT: 180, HR: 87%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     ProtoBreaker
+
+Cost:  10,000G
+Core/Parts required:  None
+Zoid Required:  GenoSaurer
+
+HP:    350     SP:  330     DF:   100
+EP:    40      MM:  65      AM:   60
+GEP:   4       IV:  630     DCP:  250
+
+SR:    300
+CLV:   16
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 230, HR: 60%, TG: 1-1 S, EP: 4, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: AT: 200, HR: 90%, TG: 1-3 B, EP: 25, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: AT: 75, HR: 94%, TG: 1-3 V, EP: 12, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 4: AT: 200, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Psycho GenoSaurer
+
+Cost:  5,000G
+Core/Parts required:  None
+Zoid Required:  GenoSaurer
+
+HP:    320     SP:  260     DF:   80
+EP:    35      MM:  65      AM:   65
+GEP:   4       IV:  560     DCP:  250
+
+SR:    300
+CLV:   15
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 80, HR: 85%, TG: 1-3 S, EP: 2, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 200, HR: 90%, TG: 1-3 B, EP: 15, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: AT: 75, HR: 94%, TG: 1-3 V, EP: 12, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 4: AT: 200, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Pteras
+
+Cost:  7,000G
+Core/Parts required:  Zoid Core FL
+Zoid Required:  None
+
+HP:    55      SP:  2000    DF:   20
+EP:    15      MM:  10      AM:   50
+GEP:   2       IV:  3000    DCP:  40
+
+SR:    1000
+CLV:   2
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 30, HR: 90%, TG: 1-3 V, EP: 1, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 40, HR: 90%, TG: 1-2 S, EP: 1, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 30, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Pteras Bomber
+
+Cost:  3,000G
+Core/Parts required:  Bomber Unit
+Zoid Required:  Pteras
+
+HP:    60      SP:  1200    DF:   20
+EP:    15      MM:  10      AM:   50
+GEP:   2       IV:  2700    DCP:  40
+
+SR:    1500
+CLV:   4
+CP:    13
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 30, HR: 90%, TG: 1-3 V, EP: 1, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 50, HR: 90%, TG: 1-2 S, EP: 1, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 65, HR: 85%, TG: 1-3 S, EP: 1, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 4: AT: 50, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Pteras Radome
+
+Cost:  5,000G
+Core/Parts required:  Radome Unit
+Zoid Required:  Pteras
+
+HP:    140     SP:  2100    DF:   20
+EP:    15      MM:  15      AM:   40
+GEP:   2       IV:  4100    DCP:  100
+
+SR:    2000
+CLV:   5
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 30, HR: 90%, TG: 1-3 V, EP: 1, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 50, HR: 90%, TG: 1-2 S, EP: 1, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: HR: +50, TG: ALLEY-A, EP: 2, WP: 0, USE: Active  
+*EFFECT*
+Imbuilt Weapon 4: AT: 55, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Raynos
+
+Cost:  32,000G
+Core/Parts required:  Zoid Core FL
+Zoid Required:  None
+
+HP:    160     SP:  3300    DF:   20
+EP:    20      MM:  15      AM:   55
+GEP:   2       IV:  4800    DCP:  120
+
+SR:    1500
+CLV:   8
+CP:    25
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 90, HR: 90%, TG: 1-2 S, EP: 3, WP: 0, ATR: / / /P/  
+*EFFECT*
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: HR: +30, TG: SELF, EP: 2, WP: 0, USE: Active  
+*EFFECT*
+Imbuilt Weapon 4: AT: 75, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     RedHorn
+
+Cost:  48,00G
+Core/Parts required:  Zoid Core ZN
+Zoid Required:  None
+
+HP:    240     SP:  130     DF:   30
+EP:    25      MM:  55      AM:   90
+GEP:   3       IV:  430     DCP:  150
+
+SR:    300
+CLV:   8
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 130, HR: 80%, TG: 1-3 S, EP: 5, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 65, HR: 90%, TG: 1-3 V, EP: 3, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 110, HR: 85%, TG: 1-2 S, EP: 6, WP: 0, ATR: / / /P/  
+*EFFECT*
+Imbuilt Weapon 4: AT: 140, HR: 63%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     RedHorn BG
+
+Cost:  12,000G
+Core/Parts required:  BG Unit
+Zoid Required:  RedHorn
+
+HP:    240     SP:  130     DF:   40
+EP:    25      MM:  50      AM:   90
+GEP:   3       IV:  430     DCP:  160
+
+SR:    300
+CLV:   10
+CP:    45
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 130, HR: 80%, TG: 1-3 S, EP: 5, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 65, HR: 90%, TG: 1-3 V, EP: 3, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 90, HR: 83%, TG: 1-2 N, EP: 10, WP: 0, ATR: / / /P/
+Imbuilt Weapon 4: AT: 170, HR: 63%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Redler
+
+Cost:  10,000G
+Core/Parts required:  Zoid Core FL
+Zoid Required:  None
+
+HP:    80      SP:  3000    DF:   18
+EP:    15      MM:  10      AM:   30
+GEP:   2       IV:  3300    DCP:  60
+
+SR:    300
+CLV:   5
+CP:    20
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 50, HR: 75%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G  
+*EFFECT
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 75, HR: 70%, TG: 1-1 S, EP: 3, WP: 0, ATR: /L/ / /G  
+*EFFECT*
+
+
+     Redler Buster Cannon
+
+Cost:  5,000G
+Core/Parts required:  BC Unit
+Zoid Required:  Redler
+
+HP:    120     SP:  3300    DF:   20
+EP:    20      MM:  10      AM:   35
+GEP:   2       IV:  3600    DCP:  120
+
+SR:    300
+CLV:   9
+CP:    18
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 130, HR: 85%, TG: 1-3 S, EP: 10, WP: 0, ATR: / / /P/  
+*EFFECT*
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: SP: +500, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 100, HR: 75%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Redler Interceptor
+
+Cost:  30,000G
+Core/Parts required:  None
+Zoid Required:  Redler
+
+HP:    200     SP:  3000    DF:   25
+EP:    25      MM:  20      AM:   40
+GEP:   2       IV:  3450    DCP:  180
+
+SR:    450
+CLV:   10
+CP:    15
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 90, HR: 90%, TG: 1-3 S, EP: 8, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: SP: +400, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 130, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Rev Hunter
+
+Cost:  7,000G
+Core/Parts required:  None
+Zoid Required:  Rev Raptor
+
+HP:    200     SP:  250     DF:   40
+EP:    27      MM:  65      AM:   50
+GEP:   2       IV:  1150    DCP:  170
+
+SR:    900
+CLV:   11
+CP:    25
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 160, HR: 85%, TG: 1-1 S, EP: 2, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 120, HR: 85%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Rev Raptor
+
+Cost:  12,000G
+Core/Parts required:  Zoid Core GR, Limiter OS
+Zoid Required:  None
+
+HP:    120     SP:  210     DF:   20
+EP:    20      MM:  65      AM:   50
+GEP:   2       IV:  1010    DCP:  100
+
+SR:    800
+CLV:   5
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 70, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 60, HR: 75%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     Rev Raptor Pile Bunker
+
+Cost:  4,000G
+Core/Parts required:  PB Unit
+Zoid Required:  Rev Raptor
+
+HP:    150     SP:  205     DF:   25
+EP:    20      MM:  60      AM:   60
+GEP:   2       IV:  805     DCP:  120
+
+SR:    600
+CLV:   7
+CP:    10
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 130, HR: 63%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: AT: 150, HR: 65%, TG: 1-1 S, EP: 3, WP: 0, ATR: / / / /G
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 100, HR: 75%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     Saber Tiger
+
+Cost:  5,000G
+Core/Parts required:  None
+Zoid Required:  Sabre Tiger
+
+HP:    220     SP:  240     DF:   30
+EP:    25      MM:  75      AM:   65
+GEP:   3       IV:  640     DCP:  160
+
+SR:    400
+CLV:   8
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  2-Set Beam Cannon
+AT: 120, HR: 90%, TG: 1-3 S, EP: 6, WP: 15, ATR: / / /P/  Saber Tiger type only
+
+Imbuilt Weapon 1: AT: 120, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 120, HR: 85%, TG: 1-2 S, EP: 3, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: AT: 45, HR: 85%, TG: 1-1 N, EP: 2, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 4: AT: 140, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Saber Tiger AT
+
+Cost:  6,000G
+Core/Parts required:  Assault Unit
+Zoid Required:  Saber Tiger
+
+HP:    230     SP:  250     DF:   35
+EP:    25      MM:  75      AM:   65
+GEP:   3       IV:  650     DCP:  170
+
+SR:    400
+CLV:   10
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 120, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 75, HR: 92%, TG: 1-3 B, EP: 10, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 160, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Saber Tiger RS
+
+Cost:  20,000G
+Core/Parts required:  None
+Zoid Required:  Saber Tiger
+
+HP:    250     SP:  240     DF:   45
+EP:    25      MM:  80      AM:   65
+GEP:   3       IV:  740     DCP:  200
+
+SR:    500
+CLV:   13
+CP:    50
+SIZE:  L
+
+Unfixed weapons:  2-Set Beam Cannon
+AT: 120, HR: 90%, TG: 1-3 S, EP: 6, WP: 15, ATR: / / /P/  Saber Tiger type only
+
+Imbuilt Weapon 1: AT: 120, HR: 80%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 60, HR: 85%, TG: 1-2 S, EP: 3, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 160, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Saber Tiger SS
+
+Cost:  10,000G
+Core/Parts required:  BG Unit
+Zoid Required:  Saber Tiger
+
+HP:    220     SP:  240     DF:   40
+EP:    25      MM:  80      AM:   65
+GEP:   3       IV:  740     DCP:  180
+
+SR:    500
+CLV:   11
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 120, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 60, HR: 85%, TG: 1-2 S, EP: 3, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: AT: 90, HR: 83%, TG: 1-2 N, EP: 10, WP: 0, ATR: / / /P/
+Imbuilt Weapon 4: AT: 160, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Saber Tiger TS
+
+Cost:  2,000G
+Core/Parts required:  Tiger's Soul
+Zoid Required:  Saber Tiger AT
+
+HP:    230     SP:  250     DF:   40
+EP:    25      MM:  75      AM:   65
+GEP:   3       IV:  650     DCP:  160
+
+SR:    400
+CLV:   8
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 140, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 160, HR: 90%, TG: 1-2 S, EP: 2, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 160, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     SaberLion
+
+Cost:  6,000G
+Core/Parts required:  Zoid Core SS
+Zoid Required:  None
+
+HP:    90      SP:  255     DF:   15
+EP:    20      MM:  90      AM:   40
+GEP:   2       IV:  755     DCP:  70
+
+SR:    500
+CLV:   3
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 35, HR: 85%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: AT: 70, HR: 65%, TG: 1-1 S, EP: 6, WP: 0, ATR: / / / /G
+Imbuilt Weapon 3: AVOID: +30, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 40, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Sabre Tiger
+
+Cost:  35,000G
+Core/Parts required:  Zoid Core ZN
+Zoid Required:  None
+
+HP:    200     SP:  200     DF:   20
+EP:    23      MM:  75      AM:   60
+GEP:   3       IV:  500     DCP:  130
+
+SR:    300
+CLV:   6
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  2-Set Beam Cannon
+AT: 120, HR: 90%, TG: 1-3 S, EP: 6, WP: 15, ATR: / / /P/  Saber Tiger type only
+
+Imbuilt Weapon 1: AT: 80, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 60, HR: 85%, TG: 1-2 S, EP: 3, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: AT: 45, HR: 85%, TG: 1-1 N, EP: 2, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 4: AT: 130, HR: 67%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Saicurtis
+
+Cost:  18,000G
+Core/Parts required:  Zoid Core IS
+Zoid Required:  None
+
+HP:    50      SP:  390     DF:   15
+EP:    10      MM:  80      AM:   60
+GEP:   2       IV:  1890    DCP:  20
+
+SR:    1500
+CLV:   2
+CP:    12
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 40, HR: 85%, TG: 1-2 S, EP: 3, WP: 0, ATR: / / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 30, HR: 85%, TG: 1-3 V, EP: 4, WP: 0, ATR: / / /P/  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 30, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Salamander
+
+Cost:  90,000G
+Core/Parts required:  Zoid Core SL
+Zoid Required:  None
+
+HP:    450     SP:  2000    DF:   65
+EP:    30      MM:  20      AM:   55
+GEP:   3       IV:  3000    DCP:  400
+
+SR:    1000
+CLV:   20
+CP:    50
+SIZE:  LL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 200, HR: 96%, TG: 1-3 V, EP: 13, WP: 0, ATR: / /L/ /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 160, HR: 85%, TG: 1-3 W, EP: 6, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 220, HR: 60%, TG: 1-1 N, EP: 8, WP: 0, ATR: None  
+*EFFECT*
+
+
+     Shadow Fox
+
+Cost:  38,000G
+Core/Parts required:  Zoid Core H2
+Zoid Required:  None
+
+HP:    220     SP:  290     DF:   40
+EP:    30      MM:  90      AM:   60
+GEP:   3       IV:  1290    DCP:  170
+
+SR:    1000
+CLV:   12
+CP:    35
+SIZE:  M
+
+Unfixed weapons:  Pierce Armor Laser Vulcan
+AT: 90, HR: 87%, TG: 1-3 W, EP: 10, WP: 16, ATR: / /L/ /  Shadow Fox only
+
+*HELP NEEDED*  What is the name of that evasion equipment in slot 4?
+AVOID: +50, TG: SELF, EP: 3, WP: 5, USE: Active
+
+Imbuilt Weapon 1: AT: 180, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: AVOID: +50, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 220, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR: / /L/ /G
+
+
+     ShellKern
+
+Cost:  9,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    150     SP:  80      DF:   37
+EP:    27      MM:  50      AM:   85
+GEP:   3       IV:  180     DCP:  150
+
+SR:    100
+CLV:   7
+CP:    30
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 30, HR: 60%, TG: 1-2 S, EP: 7, WP: 0, ATR: None  
+*EFFECT*
+Imbuilt Weapon 2: AT: 150, HR: 65%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 90, HR: 75%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     Shield Liger
+
+Cost:  38,000G
+Core/Parts required:  Zoid Core H1
+Zoid Required:  None
+
+HP:    210     SP:  250     DF:   25
+EP:    25      MM:  75      AM:   60
+GEP:   3       IV:  550     DCP:  150
+
+SR:    300
+CLV:   7
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 100, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: Shield Strength: 150,  TG: SELF, EP: 2, WP: 0, ATR: Active
+Imbuilt Weapon 4: AT: 150, HR: 67%, TG: 1-1 S, EP: 2, WP: 0, ATR: / /L/ /G
+
+
+     Shield Liger DCS
+
+Cost:  10,000G
+Core/Parts required:  DCS Unit
+Zoid Required:  Shield Liger
+
+HP:    210     SP:  250     DF:   25
+EP:    25      MM:  50      AM:   60
+GEP:   3       IV:  550     DCP:  140
+
+SR:    300
+CLV:   8
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 100, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 140, HR: 90%, TG: 1-3 S, EP: 5, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: Shield Strength: 150,  TG: SELF, EP: 2, WP: 0, ATR: Active
+Imbuilt Weapon 4: AT: 150, HR: 67%, TG: 1-1 S, EP: 2, WP: 0, ATR: / /L/ /G
+
+
+     Shield Liger DCS-J
+
+Cost:  25,000G
+Core/Parts required:  None
+Zoid Required:  Shield Liger DCS
+
+HP:    250     SP:  285     DF:   45
+EP:    27      MM:  60      AM:   65
+GEP:   2       IV:  585     DCP:  180
+
+SR:    300
+CLV:   13
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 140, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 230, HR: 90%, TG: 1-3 S, EP: 10, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: Shield Strength: 200,  TG: SELF, EP: 3, WP: 0, ATR: Active
+Imbuilt Weapon 4: AT: 200, HR: 65%, TG: 1-1 S, EP: 2, WP: 0, ATR: / /L/ /G
+
+
+     Shutulm Fuhrer
+
+Cost:  10,000G
+Core/Parts required:  Shutulm Unit
+Zoid Required:  Berserk Fuhrer
+***CAU upgrade***
+
+HP:    420     SP:  360     DF:   130
+EP:    40      MM:  75      AM:   75
+GEP:   5       IV:  810     DCP:  390
+
+SR:    450
+CLV:   23
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 360, HR: 60%, TG: 1-1 S, EP: 8, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: AT: 250, HR: 85%, TG: 1-3 A, EP: 25, WP: 0, ATR: / / /P/  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 250, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR: / /L/ /G
+
+
+     Sinker
+
+Cost:  7,000G
+Core/Parts required:  Zoid Core WT
+Zoid Required:  None
+
+HP:    60      SP:  900     DF:   20
+EP:    15      MM:  15      AM:   60
+GEP:   2       IV:  1200    DCP:  30
+
+SR:    300
+CLV:   2
+CP:    15
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 45, HR: 85%, TG: 1-2 S, EP: 2, WP: 0, ATR: / / /P/  
+*EFFECT*
+Imbuilt Weapon 2: AT: 40, HR: 95%, TG: 1-3 S, EP: 2, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 40, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     SnipeMaster
+
+Cost:  12,000G
+Core/Parts required:  None
+Zoid Required:  GunSniper
+
+HP:    150     SP:  195     DF:   30
+EP:    20      MM:  65      AM:   55
+GEP:   2       IV:  1695    DCP:  110
+
+SR:    1500
+CLV:   8
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 100, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: AT: 80, HR: 97%, TG: 2-3 S, EP: 3, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 85, HR: 65%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     SnipeMaster A-Shield
+
+Cost:  5,000G
+Core/Parts required:  AS Unit
+Zoid Required:  SnipeMaster
+
+HP:    170     SP:  190     DF:   35
+EP:    20      MM:  70      AM:   80
+GEP:   2       IV:  200     DCP:  150
+
+SR:    10 (Not a typo)
+CLV:   10
+CP:    10
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 160, HR: 75%, TG: 1-1 S, EP: 3, WP: 0, ATR: / / / /G
+Imbuilt Weapon 2: AT: 100, HR: 97%, TG: 2-3 S, EP: 3, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: AT: 150, HR: 83%, TG: 1-3 S, EP: 8, WP: 0, ATR: / / /P/
+Imbuilt Weapon 4: AT: 95, HR: 65%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     SnipeMaster FB
+
+Cost:  5,000G
+Core/Parts required:  FB Unit
+Zoid Required:  SnipeMaster
+
+HP:    170     SP:  205     DF:   32
+EP:    20      MM:  80      AM:   65
+GEP:   2       IV:  1705    DCP:  150
+
+SR:    1500
+CLV:   10
+CP:    10
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 80, HR: 90%, TG: 1-3 S, EP: 2, WP: 0, ATR: / / /P/
+Imbuilt Weapon 2: AT: 100, HR: 97%, TG: 2-3 S, EP: 3, WP: 0, ATR: / / /P/
+Imbuilt Weapon 3: MM: +50, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 95, HR: 65%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     Spark Liger
+
+Cost:  30,000G
+Core/Parts required:  Spark Unit
+Zoid Required:  Shield Liger
+
+HP:    240     SP:  250     DF:   45
+EP:    27      MM:  65      AM:   60
+GEP:   2       IV:  500     DCP:  160
+
+SR:    250
+CLV:   15
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 140, HR: 70%, TG: 1-2 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 180, HR: 75%, TG: 1-1 S, EP: 2, WP: 0, ATR: / /L/ /G
+Imbuilt Weapon 3: AT: 25, HR: 70%, TG: 1-2 S, EP: 10, WP: 0, ATR: None  
+*EFFECT*
+Imbuilt Weapon 4: AT: 190, HR: 65%, TG: 1-1 S, EP: 2, WP: 0, ATR: / /L/ /G
+
+
+     Stealth Viper
+
+Cost:  10,000G
+Core/Parts required:  Zoid Core H1
+Zoid Required:  None
+
+HP:    80      SP:  180     DF:   5
+EP:    15      MM:  80      AM:   65
+GEP:   2       IV:  980     DCP:  60
+
+SR:    800
+CLV:   3
+CP:    15
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 30, HR: 85%, TG: 1-3 V, EP: 1, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 2: AT: 40, HR: 85%, TG: 1-1 S, EP: 0, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 30, HR: 85%, TG: 1-1 W, EP: 3, WP: 0, ATR: / /L/ /
+Imbuilt Weapon 4: AT: 35, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Storm Sworder F
+
+Cost:  10,000G
+Core/Parts required:  Bomber Unit
+Zoid Required:  Storm Sworder
+
+HP:    220     SP:  3100    DF:   35
+EP:    30      MM:  18      AM:   50
+GEP:   2       IV:  3700    DCP:  160
+
+SR:    600
+CLV:   14
+CP:    40
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 65, HR: 85%, TG: 1-3 B, EP: 4, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 150, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Storm Sworder
+
+Cost:  50,000G
+Core/Parts required:  Zoid Core FL, Limiter OS
+Zoid Required:  None
+
+HP:    220     SP:  3200    DF:   40
+EP:    30      MM:  20      AM:   55
+GEP:   2       IV:  3800    DCP:  180
+
+SR:    600
+CLV:   13
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 75, HR: 85%, TG: 1-2 N, EP: 8, WP: 0, ATR: / /L/ /  
+*EFFECT*
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 190, HR: 70%, TG: 1-1 S, EP: 3, WP: 0, ATR: / /L/ /G  
+*EFFECT*
+
+
+     Storm Sworder FX
+
+Cost:  40,000G
+Core/Parts required:  None
+Zoid Required:  Storm Sworder
+
+HP:    280     SP:  4000    DF:   55
+EP:    35      MM:  20      AM:   50
+GEP:   4       IV:  4650    DCP:  230
+
+SR:    650
+CLV:   17
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 230, HR: 88%, TG: 1-3 S, EP: 6, WP: 0, ATR: B/ / / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 150, HR: 88%, TG: 1-3 B, EP: 15, WP: 0, ATR: / / /P/  
+*EFFECT*
+Imbuilt Weapon 3: Shield Strength: 300, TG: SELF, EP: 5, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 200, HR: 95%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*
+
+
+     Trinity Liger
+
+Cost:  100,000G
+Core/Parts required:  Zoid Core TL
+Zoid Required:  None
+
+HP:    300     SP:  315     DF:   55
+EP:    35      MM:  75      AM:   65
+GEP:   4       IV:  815     DCP:  220
+
+SR:    500
+CLV:   20
+CP:    30
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 200, HR: 85%, TG: 1-2 S, EP: 6, WP: 0, ATR: / / /P/
+Imbuilt Weapon 2: HR: +100, TG: ALLEY-A, EP: 2, WP: 0, USE: Active  
+*EFFECT*
+Imbuilt Weapon 3: MM: +50, TG: SELF, EP: 1, WP: 0, USE: Active
+Imbuilt Weapon 4: AT: 230, HR: 70%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G
+
+
+     Trinity Liger BA
+
+Cost:  50,000G
+Core/Parts required:  BA Unit
+Zoid Required:  Trinity Liger
+
+HP:    350     SP:  295     DF:   55
+EP:    35      MM:  80      AM:   65
+GEP:   4       IV:  795     DCP:  250
+
+SR:    500
+CLV:   22
+CP:    25
+SIZE:  L
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 280, HR: 85%, TG: 1-2 S, EP: 6, WP: 0, ATR: / / /P/
+Imbuilt Weapon 2: AT: 200, HR: 85%, TG: 1-3 N, EP: 8, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 180, HR: 90%, TG: 1-3 B, EP: 16, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 4: AT: 250, HR: 75%, TG: 1-1 S, EP: 2, WP: 0, ATR: / / / /G
+
+
+     Ultimate Phalanx
+
+Cost:  380,000G
+Core/Parts required:  None
+Zoid Required:  Ultrasaurus
+
+HP:    1500    SP:  40      DF:   200
+EP:    100     MM:  20      AM:   90
+GEP:   10      IV:  440     DCP:  800
+
+SR:    400
+CLV:   30
+CP:    180
+SIZE:  XL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 200, HR: 94%, TG: 1-3 B, EP: 10, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 400, HR: 60%, TG: 2-3 N, EP: 25, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 180, HR: 75%, TG: 1-2 N, EP: 15, WP: 0, ATR: / / /P/
+Imbuilt Weapon 4: AT: 300, HR: 50%, TG: 1-1 S, EP: 5, WP: 0, ATR: / / / /G
+
+
+     Ultrasaurus
+
+Cost:  280,000G
+Core/Parts required:  Zoid Core US
+Zoid Required:  None
+
+HP:    1300    SP:  50      DF:   200
+EP:    80      MM:  20      AM:   90
+GEP:   8       IV:  450     DCP:  600
+
+SR:    400
+CLV:   28
+CP:    200
+SIZE:  XL
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 200, HR: 94%, TG: 1-3 B, EP: 10, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 2: AT: 280, HR: 60%, TG: 2-3 N, EP: 20, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 300, HR: 50%, TG: 1-1 S, EP: 5, WP: 0, ATR: / / / /G
+
+
+     Unenlagia
+
+Cost:  8,000G
+Core/Parts required:  Zoid Core BX
+Zoid Required:  None
+
+HP:    140     SP:  195     DF:   35
+EP:    25      MM:  60      AM:   50
+GEP:   3       IV:  795     DCP:  140
+
+SR:    600
+CLV:   6
+CP:    30
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 100, HR: 73%, TG: 1-1 S, EP: 3, WP: 0, ATR: /L/ / /G
+Imbuilt Weapon 2: AT: 65, HR: 80%, TG: 1-2 N, EP: 4, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 3: AT: 100, HR: 93%, TG: 2-3 S, EP: 3, WP: 0, ATR: B/ / / /
+Imbuilt Weapon 4: AT: 80, HR: 65%, TG: 1-1 S, EP: 0, WP: 0, ATR: / / / /G
+
+
+     Wardick
+
+Cost:  60,000G
+Core/Parts required:  Zoid Core WS, Limiter OS
+Zoid Required:  None
+
+HP:    250     SP:  70      DF:   65
+EP:    35      MM:  50      AM:   75
+GEP:   2       IV:  570     DCP:  220
+
+SR:    500
+CLV:   14
+CP:    35
+SIZE:  M
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 180, HR: 85%, TG: 1-2 S, EP: 7, WP: 0, ATR: / / /P/
+Imbuilt Weapon 2: AT: 60, HR: 92%, TG: 1-3 B, EP: 8, WP: 0, ATR: /M/ / /  
+*EFFECT*
+Imbuilt Weapon 3: AT: 150, HR: 85%, TG: 1-2 S, EP: 15, WP: 0, ATR: None  
+*EFFECT*
+Imbuilt Weapon 4: AT: 150, HR: 75%, TG: 1-1 S, EP: 2, WP: 0, ATR: / / / /G
+
+
+     Zabat
+
+Cost:  8,000G
+Core/Parts required:  Zoid Core FL
+Zoid Required:  None
+
+HP:    60      SP:  2800    DF:   20
+EP:    10      MM:  20      AM:   20
+GEP:   2       IV:  5800    DCP:  40
+
+SR:    3000
+CLV:   3
+CP:    20
+SIZE:  S
+
+Unfixed weapons:  None
+
+Imbuilt Weapon 1: AT: 27, HR: 90%, TG: 1-3 V, EP: 3, WP: 0, ATR: / /L/ /  
+*EFFECT*
+Imbuilt Weapon 2: None
+Imbuilt Weapon 3: None
+Imbuilt Weapon 4: AT: 65, HR: 75%, TG: 1-1 S, EP: 1, WP: 0, ATR: / / / /G  
+*EFFECT*

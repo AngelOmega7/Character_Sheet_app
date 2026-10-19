@@ -12,8 +12,8 @@ class WeaponExpertTests(unittest.TestCase):
         catalog = Catalog()
         zoid = catalog.find("zoids", "Saberlion")
         for column in (16, 22, 33, 44):
-            zoid["fields"][catalog.tables["zoids"]["columns"][column - 1]] = "Melee, Energy, Anti-Air"
-        catalog.find("armaments", "Particle Cannon")["fields"]["damage_type"] = "Ranged, Energy, Anti-Air"
+            zoid["fields"][catalog.tables["zoids"]["columns"][column - 1]] = "Melee, Laser, Anti-Air"
+        catalog.find("armaments", "Particle Cannon")["fields"]["damage_type"] = "Ranged, Laser, Anti-Air"
         build = CharacterBuild("Saberlion", equipment=("Particle Cannon",) * 4)
         baseline = calculate_stats(build, catalog)
         abilities = ("Laser Expert 4", "Melee Expert 3", "Anti-Air Pro 4")
@@ -26,19 +26,19 @@ class WeaponExpertTests(unittest.TestCase):
         catalog = Catalog()
         zoid = catalog.find("zoids", "Saberlion")
         key = catalog.tables["zoids"]["columns"][15]
-        zoid["fields"][key] = "Melee, Energy"
+        zoid["fields"][key] = "Melee, Laser"
         build = CharacterBuild("Saberlion", abilities=("Laser Expert 2",))
         baseline = calculate_stats(build, catalog)
         without_tag = calculate_stats(replace(build, abilities=("Laser Expert 2", "Anti-Air Pro 4")), catalog)
         self.assertEqual(without_tag["weapons"][0]["to_hit"], baseline["weapons"][0]["to_hit"])
-        zoid["fields"][key] = "Melee, Energy, Anti-Air"
+        zoid["fields"][key] = "Melee, Laser, Anti-Air"
         inactive = calculate_stats(replace(build, inactive_abilities=("Anti-Air Pro 4",)), catalog)
         self.assertEqual(inactive["weapons"][0]["to_hit"], baseline["weapons"][0]["to_hit"])
 
     def test_expert_selection_is_per_weapon_and_ignores_inactive_abilities(self):
         catalog = Catalog()
         zoid = catalog.find("zoids", "Saberlion")
-        zoid["fields"][catalog.tables["zoids"]["columns"][15]] = "Melee, Energy"
+        zoid["fields"][catalog.tables["zoids"]["columns"][15]] = "Melee, Laser"
         build = CharacterBuild("Saberlion", equipment=("Particle Cannon", None, None, None))
         baseline = calculate_stats(build, catalog)
         actual = calculate_stats(replace(build, abilities=("Laser Expert 4", "Melee Expert 2"), inactive_abilities=("Anti-Air Pro 4",)), catalog)
@@ -49,7 +49,7 @@ class WeaponExpertTests(unittest.TestCase):
     def test_tied_experts_do_not_stack_with_each_other(self):
         catalog = Catalog()
         zoid = catalog.find("zoids", "Saberlion")
-        zoid["fields"][catalog.tables["zoids"]["columns"][15]] = "Melee, Energy"
+        zoid["fields"][catalog.tables["zoids"]["columns"][15]] = "Melee, Laser"
         build = CharacterBuild("Saberlion")
         baseline = calculate_stats(build, catalog)
         actual = calculate_stats(replace(build, abilities=("Laser Expert 2", "Melee Expert 2")), catalog)
@@ -75,15 +75,16 @@ class WeaponExpertTests(unittest.TestCase):
 
     def test_corrected_anti_air_tag_receives_expert_bonus(self):
         catalog = Catalog()
-        base = CharacterBuild("Griffin", pilot_level=100)
+        base = CharacterBuild("Saberlion", pilot_level=100)
+        catalog.find("zoids", "Saberlion")["fields"][catalog.tables["zoids"]["columns"][15]] = clean_weapon_tags("Melee, Anti-Ait")
         baseline = calculate_stats(base, catalog)
         expert = calculate_stats(replace(base, abilities=("Anti-Air Pro",)), catalog)
-        index = next(i for i, w in enumerate(baseline["weapons"]) if w["name"] and "Buster Claw" in w["name"])
+        index = 0
         self.assertIn("anti-air", weapon_tags(baseline["weapons"][index]["damage_type"]))
         self.assertEqual(expert["weapons"][index]["to_hit"], baseline["weapons"][index]["to_hit"] + 2)
 
     def test_all_expert_families_apply_to_every_eligible_slot(self):
-        for ability, tags, bonus in (("Laser Expert 4", "Energy, Ranged", 4), ("Missile Expert 3", "Ranged, Explosive", 3), ("Particle Expert 2", "Ranged, Particle", 2), ("Melee Expert", "Melee, Piercing", 1), ("Rifle Expert 4", " Bullet, Energy, RANGED ", 4), ("Anti-Air Pro 4", "Ranged, Anti-Air", 5)):
+        for ability, tags, bonus in (("Laser Expert 4", "Laser, Ranged", 4), ("Missile Expert 3", "Ranged, Explosive", 3), ("Particle Expert 2", "Ranged, Particle", 2), ("Melee Expert", "Melee, Piercing", 1), ("Rifle Expert 4", " Bullet, Laser, RANGED ", 4), ("Anti-Air Pro 4", "Ranged, Anti-Air", 5)):
             with self.subTest(ability=ability):
                 catalog = Catalog()
                 zoid = catalog.find("zoids", "Saberlion")

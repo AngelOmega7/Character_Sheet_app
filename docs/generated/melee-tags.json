@@ -1,5 +1,5 @@
 {
-  "weapon_entries": 211,
+  "weapon_entries": 174,
   "literal_tags": {
     "Anti-Air": [
       {
@@ -22,149 +22,6 @@
           "sheet": "Zoid List",
           "row": 91,
           "column": 44
-        }
-      },
-      {
-        "id": "zoids:nightwise",
-        "zoid_or_item": "Nightwise",
-        "weapon": "Crusher Claw:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 107,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:buster_eagle",
-        "zoid_or_item": "Buster Eagle",
-        "weapon": "Buster Claw:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 108,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "X-Scissor:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "X Claws:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "Smash Tail:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "Strike Claw:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:diplo_gun",
-        "zoid_or_item": "Diplo Gun",
-        "weapon": "Diplo Cutter:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 111,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:jet_falcon",
-        "zoid_or_item": "Jet Falcon",
-        "weapon": "Buster Claw:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 114,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:fuzor_dragon",
-        "zoid_or_item": "Fuzor Dragon",
-        "weapon": "Tail Saw:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 117,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:chimera_dragon",
-        "zoid_or_item": "Chimera Dragon",
-        "weapon": "Hells Gate:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 118,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:griffin",
-        "zoid_or_item": "Griffin",
-        "weapon": "Killer Beak:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 121,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:griffin",
-        "zoid_or_item": "Griffin",
-        "weapon": "Buster Claw:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 121,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:lord_gale",
-        "zoid_or_item": "Lord Gale",
-        "weapon": "X-Scissor:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 122,
-          "column": 16
         }
       },
       {
@@ -317,7 +174,7 @@
       {
         "id": "zoids:liger_zero",
         "zoid_or_item": "Liger Zero",
-        "weapon": "Strike Laster Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -328,7 +185,7 @@
       {
         "id": "zoids:zero_jager_cau",
         "zoid_or_item": "Zero Jager (CAU)",
-        "weapon": "Strike Laser Claws:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -339,7 +196,7 @@
       {
         "id": "zoids:zero_panzer_cau",
         "zoid_or_item": "Zero Panzer (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -350,7 +207,7 @@
       {
         "id": "zoids:zero_empire_cau",
         "zoid_or_item": "Zero Empire (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -361,7 +218,7 @@
       {
         "id": "zoids:zero_x_cau",
         "zoid_or_item": "Zero X (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -405,7 +262,7 @@
       {
         "id": "zoids:shadow_fox",
         "zoid_or_item": "Shadow Fox",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -427,7 +284,7 @@
       {
         "id": "zoids:berserk_fury",
         "zoid_or_item": "Berserk Fury",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -438,7 +295,7 @@
       {
         "id": "zoids:sturm_fury_cau",
         "zoid_or_item": "Sturm Fury (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -449,7 +306,7 @@
       {
         "id": "zoids:jagd_fury_cau",
         "zoid_or_item": "Jagd Fury (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -460,67 +317,12 @@
       {
         "id": "zoids:berserk_fury_z_cau",
         "zoid_or_item": "Berserk Fury Z (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
           "row": 63,
           "column": 33
-        }
-      },
-      {
-        "id": "zoids:leo_blaze",
-        "zoid_or_item": "Leo Blaze",
-        "weapon": "Strike Laser Claw: ",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 104,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:unenlagia",
-        "zoid_or_item": "Unenlagia",
-        "weapon": "Strike Laser Claw: ",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 105,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:zero_phoenix",
-        "zoid_or_item": "Zero Phoenix",
-        "weapon": "Strike Laser Claw:",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 115,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:zero_falcon",
-        "zoid_or_item": "Zero Falcon",
-        "weapon": "Strike Laser Claw: ",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 116,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:gojulox",
-        "zoid_or_item": "Gojulox",
-        "weapon": "Strike Laser Claw:",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 119,
-          "column": 44
         }
       },
       {
@@ -577,7 +379,7 @@
         "source": {
           "sheet": "Zoid List",
           "row": 3,
-          "column": 33
+          "column": 44
         }
       },
       {
@@ -748,7 +550,7 @@
       {
         "id": "zoids:liger_zero",
         "zoid_or_item": "Liger Zero",
-        "weapon": "Strike Laster Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -781,7 +583,7 @@
       {
         "id": "zoids:zero_jager_cau",
         "zoid_or_item": "Zero Jager (CAU)",
-        "weapon": "Strike Laser Claws:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -792,7 +594,7 @@
       {
         "id": "zoids:zero_panzer_cau",
         "zoid_or_item": "Zero Panzer (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -803,7 +605,7 @@
       {
         "id": "zoids:zero_empire_cau",
         "zoid_or_item": "Zero Empire (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -825,7 +627,7 @@
       {
         "id": "zoids:zero_x_cau",
         "zoid_or_item": "Zero X (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -1056,7 +858,7 @@
       {
         "id": "zoids:shadow_fox",
         "zoid_or_item": "Shadow Fox",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -1386,7 +1188,7 @@
       {
         "id": "zoids:berserk_fury",
         "zoid_or_item": "Berserk Fury",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -1408,7 +1210,7 @@
       {
         "id": "zoids:sturm_fury_cau",
         "zoid_or_item": "Sturm Fury (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -1419,7 +1221,7 @@
       {
         "id": "zoids:jagd_fury_cau",
         "zoid_or_item": "Jagd Fury (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -1430,7 +1232,7 @@
       {
         "id": "zoids:berserk_fury_z_cau",
         "zoid_or_item": "Berserk Fury Z (CAU)",
-        "weapon": "Strike Laser Claw:",
+        "weapon": "Strike Laser Claw",
         "tags": "Melee, Energy",
         "source": {
           "sheet": "Zoid List",
@@ -2118,413 +1920,6 @@
           "sheet": "Zoid List",
           "row": 103,
           "column": 33
-        }
-      },
-      {
-        "id": "zoids:leo_blaze",
-        "zoid_or_item": "Leo Blaze",
-        "weapon": "Strike Laser Claw: ",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 104,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:leo_blaze",
-        "zoid_or_item": "Leo Blaze",
-        "weapon": "Zan Blade:",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 104,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:leo_blaze",
-        "zoid_or_item": "Leo Blaze",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 104,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:unenlagia",
-        "zoid_or_item": "Unenlagia",
-        "weapon": "Strike Laser Claw: ",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 105,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:unenlagia",
-        "zoid_or_item": "Unenlagia",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 105,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:mosasledge",
-        "zoid_or_item": "Mosasledge",
-        "weapon": "Tail Saw:",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 106,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:mosasledge",
-        "zoid_or_item": "Mosasledge",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 106,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:nightwise",
-        "zoid_or_item": "Nightwise",
-        "weapon": "Crusher Claw:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 107,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:buster_eagle",
-        "zoid_or_item": "Buster Eagle",
-        "weapon": "Buster Claw:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 108,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "X-Scissor:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "X Claws:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "Smash Tail:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "Strike Claw:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:shell_karn",
-        "zoid_or_item": "Shell Karn",
-        "weapon": "Hammer Knuckle:",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 110,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:shell_karn",
-        "zoid_or_item": "Shell Karn",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 110,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:diplo_gun",
-        "zoid_or_item": "Diplo Gun",
-        "weapon": "Diplo Cutter:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 111,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:demon_s_head",
-        "zoid_or_item": "Demon's Head",
-        "weapon": "Magnet Claw:",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 112,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:demon_s_head",
-        "zoid_or_item": "Demon's Head",
-        "weapon": "Magnezer Spear:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 112,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:demon_s_head",
-        "zoid_or_item": "Demon's Head",
-        "weapon": "Magnezer Tail:",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 112,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:demon_s_head",
-        "zoid_or_item": "Demon's Head",
-        "weapon": "Magnezer Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 112,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:jet_falcon",
-        "zoid_or_item": "Jet Falcon",
-        "weapon": "Buster Claw:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 114,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:jet_falcon",
-        "zoid_or_item": "Jet Falcon",
-        "weapon": "Smash Claw:",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 114,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:zero_phoenix",
-        "zoid_or_item": "Zero Phoenix",
-        "weapon": "Strike Laser Claw:",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 115,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:zero_falcon",
-        "zoid_or_item": "Zero Falcon",
-        "weapon": "Strike Laser Claw: ",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 116,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:zero_falcon",
-        "zoid_or_item": "Zero Falcon",
-        "weapon": "Smash Claw: ",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 116,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:fuzor_dragon",
-        "zoid_or_item": "Fuzor Dragon",
-        "weapon": "Tail Saw:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 117,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:fuzor_dragon",
-        "zoid_or_item": "Fuzor Dragon",
-        "weapon": "Dragon Tooth:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 117,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:chimera_dragon",
-        "zoid_or_item": "Chimera Dragon",
-        "weapon": "Hells Gate:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 118,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:chimera_dragon",
-        "zoid_or_item": "Chimera Dragon",
-        "weapon": "Hammer Knuckle:",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 118,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:gojulox",
-        "zoid_or_item": "Gojulox",
-        "weapon": "Magnezer Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 119,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:gojulox",
-        "zoid_or_item": "Gojulox",
-        "weapon": "Strike Laser Claw:",
-        "tags": "Melee, Energy",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 119,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:2_arm_lizard",
-        "zoid_or_item": "2-Arm Lizard",
-        "weapon": "Zan Blade:",
-        "tags": "Melee",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 120,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:2_arm_lizard",
-        "zoid_or_item": "2-Arm Lizard",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 120,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:griffin",
-        "zoid_or_item": "Griffin",
-        "weapon": "Killer Beak:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 121,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:griffin",
-        "zoid_or_item": "Griffin",
-        "weapon": "Buster Claw:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 121,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:lord_gale",
-        "zoid_or_item": "Lord Gale",
-        "weapon": "X-Scissor:",
-        "tags": "Melee, Anti-Air",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 122,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:lord_gale",
-        "zoid_or_item": "Lord Gale",
-        "weapon": "Magnezer Spear:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 122,
-          "column": 22
         }
       },
       {
@@ -3641,171 +3036,6 @@
         }
       },
       {
-        "id": "zoids:leo_blaze",
-        "zoid_or_item": "Leo Blaze",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 104,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:unenlagia",
-        "zoid_or_item": "Unenlagia",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 105,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:mosasledge",
-        "zoid_or_item": "Mosasledge",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 106,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:nightwise",
-        "zoid_or_item": "Nightwise",
-        "weapon": "Crusher Claw:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 107,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:buster_eagle",
-        "zoid_or_item": "Buster Eagle",
-        "weapon": "Buster Claw:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 108,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:flyscissors",
-        "zoid_or_item": "Flyscissors",
-        "weapon": "X-Scissor:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 109,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:shell_karn",
-        "zoid_or_item": "Shell Karn",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 110,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:demon_s_head",
-        "zoid_or_item": "Demon's Head",
-        "weapon": "Magnezer Spear:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 112,
-          "column": 22
-        }
-      },
-      {
-        "id": "zoids:demon_s_head",
-        "zoid_or_item": "Demon's Head",
-        "weapon": "Magnezer Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 112,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:fuzor_dragon",
-        "zoid_or_item": "Fuzor Dragon",
-        "weapon": "Dragon Tooth:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 117,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:chimera_dragon",
-        "zoid_or_item": "Chimera Dragon",
-        "weapon": "Hells Gate:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 118,
-          "column": 33
-        }
-      },
-      {
-        "id": "zoids:gojulox",
-        "zoid_or_item": "Gojulox",
-        "weapon": "Magnezer Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 119,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:2_arm_lizard",
-        "zoid_or_item": "2-Arm Lizard",
-        "weapon": "Bite Fang:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 120,
-          "column": 44
-        }
-      },
-      {
-        "id": "zoids:griffin",
-        "zoid_or_item": "Griffin",
-        "weapon": "Killer Beak:",
-        "tags": "Melee, Anti-Air, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 121,
-          "column": 16
-        }
-      },
-      {
-        "id": "zoids:lord_gale",
-        "zoid_or_item": "Lord Gale",
-        "weapon": "Magnezer Spear:",
-        "tags": "Melee, Piercing",
-        "source": {
-          "sheet": "Zoid List",
-          "row": 122,
-          "column": 22
-        }
-      },
-      {
         "id": "zoids:death_stinger",
         "zoid_or_item": "Death Stinger",
         "weapon": "SB Scissors:",
@@ -3937,7 +3167,7 @@
       "source": {
         "sheet": "Zoid List",
         "row": 3,
-        "column": 33
+        "column": 44
       }
     },
     {
@@ -4108,7 +3338,7 @@
     {
       "id": "zoids:liger_zero",
       "zoid_or_item": "Liger Zero",
-      "weapon": "Strike Laster Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4141,7 +3371,7 @@
     {
       "id": "zoids:zero_jager_cau",
       "zoid_or_item": "Zero Jager (CAU)",
-      "weapon": "Strike Laser Claws:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4152,7 +3382,7 @@
     {
       "id": "zoids:zero_panzer_cau",
       "zoid_or_item": "Zero Panzer (CAU)",
-      "weapon": "Strike Laser Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4163,7 +3393,7 @@
     {
       "id": "zoids:zero_empire_cau",
       "zoid_or_item": "Zero Empire (CAU)",
-      "weapon": "Strike Laser Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4185,7 +3415,7 @@
     {
       "id": "zoids:zero_x_cau",
       "zoid_or_item": "Zero X (CAU)",
-      "weapon": "Strike Laser Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4416,7 +3646,7 @@
     {
       "id": "zoids:shadow_fox",
       "zoid_or_item": "Shadow Fox",
-      "weapon": "Strike Laser Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4746,7 +3976,7 @@
     {
       "id": "zoids:berserk_fury",
       "zoid_or_item": "Berserk Fury",
-      "weapon": "Strike Laser Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4768,7 +3998,7 @@
     {
       "id": "zoids:sturm_fury_cau",
       "zoid_or_item": "Sturm Fury (CAU)",
-      "weapon": "Strike Laser Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4779,7 +4009,7 @@
     {
       "id": "zoids:jagd_fury_cau",
       "zoid_or_item": "Jagd Fury (CAU)",
-      "weapon": "Strike Laser Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -4790,7 +4020,7 @@
     {
       "id": "zoids:berserk_fury_z_cau",
       "zoid_or_item": "Berserk Fury Z (CAU)",
-      "weapon": "Strike Laser Claw:",
+      "weapon": "Strike Laser Claw",
       "tags": "Melee, Energy",
       "source": {
         "sheet": "Zoid List",
@@ -5478,413 +4708,6 @@
         "sheet": "Zoid List",
         "row": 103,
         "column": 33
-      }
-    },
-    {
-      "id": "zoids:leo_blaze",
-      "zoid_or_item": "Leo Blaze",
-      "weapon": "Strike Laser Claw: ",
-      "tags": "Melee, Energy",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 104,
-        "column": 16
-      }
-    },
-    {
-      "id": "zoids:leo_blaze",
-      "zoid_or_item": "Leo Blaze",
-      "weapon": "Zan Blade:",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 104,
-        "column": 22
-      }
-    },
-    {
-      "id": "zoids:leo_blaze",
-      "zoid_or_item": "Leo Blaze",
-      "weapon": "Bite Fang:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 104,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:unenlagia",
-      "zoid_or_item": "Unenlagia",
-      "weapon": "Strike Laser Claw: ",
-      "tags": "Melee, Energy",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 105,
-        "column": 16
-      }
-    },
-    {
-      "id": "zoids:unenlagia",
-      "zoid_or_item": "Unenlagia",
-      "weapon": "Bite Fang:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 105,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:mosasledge",
-      "zoid_or_item": "Mosasledge",
-      "weapon": "Tail Saw:",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 106,
-        "column": 22
-      }
-    },
-    {
-      "id": "zoids:mosasledge",
-      "zoid_or_item": "Mosasledge",
-      "weapon": "Bite Fang:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 106,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:nightwise",
-      "zoid_or_item": "Nightwise",
-      "weapon": "Crusher Claw:",
-      "tags": "Melee, Anti-Air, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 107,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:buster_eagle",
-      "zoid_or_item": "Buster Eagle",
-      "weapon": "Buster Claw:",
-      "tags": "Melee, Anti-Air, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 108,
-        "column": 33
-      }
-    },
-    {
-      "id": "zoids:flyscissors",
-      "zoid_or_item": "Flyscissors",
-      "weapon": "X-Scissor:",
-      "tags": "Melee, Anti-Air, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 109,
-        "column": 16
-      }
-    },
-    {
-      "id": "zoids:flyscissors",
-      "zoid_or_item": "Flyscissors",
-      "weapon": "X Claws:",
-      "tags": "Melee, Anti-Air",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 109,
-        "column": 22
-      }
-    },
-    {
-      "id": "zoids:flyscissors",
-      "zoid_or_item": "Flyscissors",
-      "weapon": "Smash Tail:",
-      "tags": "Melee, Anti-Air",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 109,
-        "column": 33
-      }
-    },
-    {
-      "id": "zoids:flyscissors",
-      "zoid_or_item": "Flyscissors",
-      "weapon": "Strike Claw:",
-      "tags": "Melee, Anti-Air",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 109,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:shell_karn",
-      "zoid_or_item": "Shell Karn",
-      "weapon": "Hammer Knuckle:",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 110,
-        "column": 22
-      }
-    },
-    {
-      "id": "zoids:shell_karn",
-      "zoid_or_item": "Shell Karn",
-      "weapon": "Bite Fang:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 110,
-        "column": 33
-      }
-    },
-    {
-      "id": "zoids:diplo_gun",
-      "zoid_or_item": "Diplo Gun",
-      "weapon": "Diplo Cutter:",
-      "tags": "Melee, Anti-Air",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 111,
-        "column": 33
-      }
-    },
-    {
-      "id": "zoids:demon_s_head",
-      "zoid_or_item": "Demon's Head",
-      "weapon": "Magnet Claw:",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 112,
-        "column": 16
-      }
-    },
-    {
-      "id": "zoids:demon_s_head",
-      "zoid_or_item": "Demon's Head",
-      "weapon": "Magnezer Spear:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 112,
-        "column": 22
-      }
-    },
-    {
-      "id": "zoids:demon_s_head",
-      "zoid_or_item": "Demon's Head",
-      "weapon": "Magnezer Tail:",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 112,
-        "column": 33
-      }
-    },
-    {
-      "id": "zoids:demon_s_head",
-      "zoid_or_item": "Demon's Head",
-      "weapon": "Magnezer Fang:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 112,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:jet_falcon",
-      "zoid_or_item": "Jet Falcon",
-      "weapon": "Buster Claw:",
-      "tags": "Melee, Anti-Air",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 114,
-        "column": 22
-      }
-    },
-    {
-      "id": "zoids:jet_falcon",
-      "zoid_or_item": "Jet Falcon",
-      "weapon": "Smash Claw:",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 114,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:zero_phoenix",
-      "zoid_or_item": "Zero Phoenix",
-      "weapon": "Strike Laser Claw:",
-      "tags": "Melee, Energy",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 115,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:zero_falcon",
-      "zoid_or_item": "Zero Falcon",
-      "weapon": "Strike Laser Claw: ",
-      "tags": "Melee, Energy",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 116,
-        "column": 22
-      }
-    },
-    {
-      "id": "zoids:zero_falcon",
-      "zoid_or_item": "Zero Falcon",
-      "weapon": "Smash Claw: ",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 116,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:fuzor_dragon",
-      "zoid_or_item": "Fuzor Dragon",
-      "weapon": "Tail Saw:",
-      "tags": "Melee, Anti-Air",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 117,
-        "column": 22
-      }
-    },
-    {
-      "id": "zoids:fuzor_dragon",
-      "zoid_or_item": "Fuzor Dragon",
-      "weapon": "Dragon Tooth:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 117,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:chimera_dragon",
-      "zoid_or_item": "Chimera Dragon",
-      "weapon": "Hells Gate:",
-      "tags": "Melee, Anti-Air, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 118,
-        "column": 33
-      }
-    },
-    {
-      "id": "zoids:chimera_dragon",
-      "zoid_or_item": "Chimera Dragon",
-      "weapon": "Hammer Knuckle:",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 118,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:gojulox",
-      "zoid_or_item": "Gojulox",
-      "weapon": "Magnezer Fang:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 119,
-        "column": 16
-      }
-    },
-    {
-      "id": "zoids:gojulox",
-      "zoid_or_item": "Gojulox",
-      "weapon": "Strike Laser Claw:",
-      "tags": "Melee, Energy",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 119,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:2_arm_lizard",
-      "zoid_or_item": "2-Arm Lizard",
-      "weapon": "Zan Blade:",
-      "tags": "Melee",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 120,
-        "column": 33
-      }
-    },
-    {
-      "id": "zoids:2_arm_lizard",
-      "zoid_or_item": "2-Arm Lizard",
-      "weapon": "Bite Fang:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 120,
-        "column": 44
-      }
-    },
-    {
-      "id": "zoids:griffin",
-      "zoid_or_item": "Griffin",
-      "weapon": "Killer Beak:",
-      "tags": "Melee, Anti-Air, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 121,
-        "column": 16
-      }
-    },
-    {
-      "id": "zoids:griffin",
-      "zoid_or_item": "Griffin",
-      "weapon": "Buster Claw:",
-      "tags": "Melee, Anti-Air",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 121,
-        "column": 33
-      }
-    },
-    {
-      "id": "zoids:lord_gale",
-      "zoid_or_item": "Lord Gale",
-      "weapon": "X-Scissor:",
-      "tags": "Melee, Anti-Air",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 122,
-        "column": 16
-      }
-    },
-    {
-      "id": "zoids:lord_gale",
-      "zoid_or_item": "Lord Gale",
-      "weapon": "Magnezer Spear:",
-      "tags": "Melee, Piercing",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 122,
-        "column": 22
       }
     },
     {

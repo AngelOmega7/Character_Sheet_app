@@ -140,7 +140,8 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         return sum((n(a, index) for a in abilities), Decimal(0))
 
     zoid_type, size = col(zoid, 3), col(zoid, 4)
-    bonus_levels = next((n(a, 3) for a in abilities if a and contains(zoid_type, a["name"])), Decimal(0))
+    bonus_levels = max((n(a, 3) for a in abilities if a and str(zoid_type).strip().casefold()
+                        in {t.strip().casefold() for t in a.get("eligible_types", [])}), default=Decimal(0))
     effective_level = number(build.pilot_level) + bonus_levels
     if effective_level != int(effective_level):
         raise RuleError("Effective pilot level must be an integer")
@@ -151,7 +152,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     matching_size = next((a for a in abilities if a and str(size).strip().casefold() in {s.casefold() for s in a["eligible_sizes"]}), None)
     all_stats = n(matching_size, 5)
 
-    org = {key: Decimal(0) for key in ("health", "armor", "speed", "range", "to_hit", "damage", "shield", "white_shield")}
+    org = {key: Decimal(0) for key in ("health", "armor", "speed", "range", "to_hit", "damage", "shield")}
     if build.organoid_enabled:
         colors = {"White": 2, "Red": 7, "Blue": 12, "Black": 17}
         if build.organoid_color not in colors:
@@ -161,9 +162,8 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         for offset, stat in enumerate(("health", "armor", "speed", "range", "to_hit")):
             org[stat] = n(record, start + offset)
         org["damage"] = org["to_hit"]  # Dashboard H23 reads F rather than H.
-        org["white_shield"] = n(record, 22)
-        shield_record = record if build.organoid_color == "White" else catalog.find("organoids", str(build.pilot_level))
-        org["shield"] = n(shield_record, 22 + list(colors).index(build.organoid_color))
+        if build.organoid_color == "White":
+            org["shield"] = n(record, 22)
 
     u = build.upgrades
     capacity = n(zoid, 12) + u.capacity * 10
@@ -217,11 +217,9 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         "reaction": sheet_round(pilot["reaction"] + active_bonus(10, (27, 38)) + total(10)),
         "range": pilot["range"] + active_bonus(9, (28, 39)),
     }
-    shields = equipment_bonus(14)
-    shields += n(zoid, 24) if build.fixed_active[0] else 0
-    shields += n(zoid, 35) if build.fixed_active[1] else 0
-    shields += org["shield"] if build.fixed_active[3] else 0
-    shields += org["white_shield"]
+    # The source only has shield fields for fixed units 2 and 3.
+    # Each belongs to its own unit, just like removable units 5–8.
+    shields = active_bonus(14, (24, 35)) + org["shield"]
     if shields > 0:
         shields += total(12)
     shields -= build.shield_adjustment
@@ -275,7 +273,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         weapon["heat_capacity_bonus"] = heat_capacity_bonus if weapon["heat_rating"] is not None else 0
         weapon["maximum_heat"] = weapon["heat_rating"] + weapon["heat_capacity_bonus"] if weapon["heat_rating"] is not None else None
     return {
-        "ruleset": "owner-corrected-v11", "zoid_id": zoid["id"],
+        "ruleset": "owner-corrected-v13", "zoid_id": zoid["id"],
         "size_bonus": all_stats,
         "bonus_levels": bonus_levels, "effective_level": effective_level,
         "base": base, "pilot": pilot, "current": current,

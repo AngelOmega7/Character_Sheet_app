@@ -8,21 +8,14 @@ RANGE_BANDS = ("close", "normal", "long")
 
 
 def range_band_for_distance(distance, maximum_range):
-    """Classify distance; exactly half maximum range is explicitly Normal.
-
-    Very short-range overlap between Close and Long still needs a game rule.
-    """
+    """Close takes priority through 60m; Normal extends to half maximum range."""
     distance, maximum_range = number(distance), number(maximum_range)
     if distance < 0 or maximum_range <= 0:
         raise RuleError("Distance must be nonnegative and maximum range positive")
     half = maximum_range / 2
-    if distance == half:
-        return "normal"
-    if distance <= 60 and distance > half:
-        raise RuleError("Close and Long Range overlap for this maximum range; select the band explicitly")
-    if distance > half:
-        return "long"
-    return "close" if distance <= 60 else "normal"
+    if distance <= 60:
+        return "close"
+    return "normal" if distance <= half else "long"
 
 
 def calculate_attack(

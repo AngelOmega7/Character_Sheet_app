@@ -1,12 +1,12 @@
 # Offline character app: initial conversion specification
 
-Status: source inventory, local reference catalogs, and initial stat/combat rules implemented. UI and complete feature integration pending. See [Data and rules](data-and-rules.md) for verified coverage and formula issues requiring owner decisions.
+Status: reference catalogs, stat/combat rules, pilot/feat tracking, Flet character/combat editor, and versioned SQLite save/load implemented. Export/import/backups are deferred by owner. Purchasing/building awaits the owner's costs/parts table; Transport awaits owner-defined rules and is required before Step 7 completion. See [Roadmap](roadmap.md) for the current seven-step rollout and [Rules review](rules-review.md) for the completed type/tag/weapon review.
 
 Owner-supplied scripts have now been reviewed. See [Apps Script migration](apps-script-migration.md) for source behavior and owner-confirmed extensions: over-capacity use works once then breaks the weapon, health repair costs 10g per point restored, and weapon repair costs 10,000g per broken weapon. Initial combat and repair rules are implemented and independently testable. GIF display is an optional visual feature deferred from the first playable version.
 
 ## Architecture
 
-The installed app has no Google Sheets connection. Development tooling reads a local XLSX snapshot. Convert curated reference tables to versioned JSON, implement game rules as pure Python functions, present results in Flet, and save character state in SQLite in the platform app-data directory. Package images locally. Provide JSON character import/export for manual transfer between devices.
+The installed app has no Google Sheets connection. Development tooling reads a local XLSX snapshot. Curated reference tables become versioned JSON, rules are Python functions, Flet presents the interface, and SQLite stores character state in the platform app-data directory. Images are bundled locally. JSON character transfer/backups are deferred for now.
 
 The generated workbook_inventory.json is an audit artifact, not yet a normalized game database. It preserves cell addresses, raw values, cached formula results, formula metadata, exported validations, named ranges, and table definitions.
 
@@ -57,17 +57,17 @@ Inspect remaining blank cells, equipment heat/vent controls, personality, invent
 4. Preserve first-match behavior in IFS and ability checks; do not assume all matching bonuses stack.
 5. Separate base stats, derived totals, and mutable combat resources. A UI refresh must not reset damage or heat.
 6. Fixed-weapon attack formulas include a carry-load check and a 0.6 multiplier when overloaded. Match each formula's rounding order and modifiers; do not generalize equipment formulas without checking them.
-7. There are eight RANDBETWEEN(1,20) attack formulas. Proposed app behavior: explicit Roll buttons, with results retained until rolled again. Confirm this deliberate replacement of spreadsheet volatile recalculation.
+7. There are eight RANDBETWEEN(1,20) attack formulas. Owner-confirmed replacement: each successful Use rolls exactly one d20 and displays the raw result in its weapon card, retained until that weapon is used again. Refreshing, previewing, and saving never reroll.
 8. Source upgrade notes specify five points per slot, +30 speed, +1 reaction, +5 defense, +10 weapon weight, +20 fixed-weapon damage, and +1 fixed-weapon to-hit per point. Verify stored point-versus-bonus semantics: the snapshot contains 20 in E12. Do not interpret it as 20 upgrade points.
-9. Upgrade notes exclude non-weapons such as smoke units and shields, and describe sharing upgrades across CAS forms. Define shared identities rather than duplicating inconsistent upgrades.
+9. Upgrade notes exclude non-weapons such as smoke units and shields, and describe sharing upgrades across CAS forms. Implemented in owned-Zoid management: share frame upgrades within an owned base/CAU family and weapon points by matching base-weapon identity across slots; keep other form weapons separate. CAU forms are obtained individually, and each base can be owned once per pilot. BLOX Zoids and BLOX Type abilities are retired. Hover Cargo/Gustav/Whale King have a separate Transport reference section; their transport/storage mechanics are deferred.
 10. Preserve source descriptions even when a rule is manually adjudicated. Distinguish automated effects from descriptive-only rules in the final feature checklist.
 
 ## Items requiring verification
 
 - Seven formula cells use __xludf.DUMMYFUNCTION export wrappers; they include Google-specific percentage/display behavior. Review source formula text and cached results before translation.
-- Named range Assist exports as #REF!. Determine whether anything uses it and whether this is a source defect or export artifact.
+- Named range Assist exports as #REF!. Resolved: Assist slots use equipment below the Armaments ASSIST heading; Weapon and Assist slots accept equipment from the whole sheet. The UI and save validator use the validated equipment API.
 - Shared formula followers have no formula text of their own. Expand using relative-reference rules before building a complete dependency graph.
-- Owner supplied Heat Script.txt and Gifs Script.txt. Required resource actions and confirmed overheating rules are documented in apps-script-migration.md. Weapon repair costs 10,000g and resets heat to zero; Rest resets heat without restoring health or repairing broken weapons. Use-versus-roll interaction still needs confirmation.
+- Owner supplied Heat Script.txt and Gifs Script.txt. Resource actions and overheating rules are documented in apps-script-migration.md. Weapon repair costs 10,000g and resets heat; Rest active loadout resets current-slot heat without healing or repairing. Owner confirmed that each successful Use rolls a d20, displayed in that weapon card. The last raw result is retained independently of read-only attack previews and recalculation.
 - Some dropdowns contain headings or joke/placeholder options. Confirm intended choices rather than copying them into valid game records.
 - Formula-derived descriptions and character-dependent reference-table cells need explicit treatment.
 - Embedded media and linked images still require asset extraction and mapping.
@@ -84,7 +84,7 @@ Use transactional writes. Character export/import must validate schema versions 
 2. **Rules core:** implement one verified Saberlion/pilot calculation path, then modifiers, load, Organoid, equipment, and upgrades.
 3. **Parity fixtures:** compare source results for each pilot style, relevant level boundaries, abilities, equipment activation, overloaded state, and CAS upgrades. The single cached snapshot is not sufficient proof of parity.
 4. **Flet UI:** pilot, Zoid/combat, equipment, upgrades, and character selection screens, with responsive phone/desktop layouts.
-5. **Persistence:** save/reopen, multiple characters, manual transfer, and versioned migrations.
+5. **Persistence:** save/reopen, multiple characters, and versioned migrations; manual transfer/backups are currently deferred by owner.
 6. **Offline builds:** build and exercise Android and Windows packages; test without connectivity, including assets, save paths, and restart persistence.
 
 Completion means verified feature parity for agreed behavior, working local saves, and tested platform builds—not merely loading workbook values into a screen.

@@ -1,0 +1,78 @@
+base form
+	/first CAU
+	/second CAU
+	/etc.
+
+Blade Liger
+	/Blade Liger AB
+Cannon Tortoise
+	/Cannon Tortoise BC
+Command Wolf
+	/Climber Wolf
+	/Command Wolf AC
+	/Command Wolf IS
+	/Command Wolf UC (renamed from Command Wolf Town)
+Dark Horn
+	/Dark Horn HS
+Dark Spiner
+	/Killer Spiner
+Elephander
+	/Elephander AG
+Geno Saurer
+	/Geno Breaker
+	/Geno Flame
+	/Geno Scissors
+	/Geno Trooper
+Gojulas
+	/Gojulas Gunner
+Gojulas Giga
+	/Gojulas Giga Cannon
+Gun Sniper
+	/Gun Sniper NS
+Gun Sniper Weasel
+	/Gun Sniper LS
+Guysack
+	/Guysack Stinger
+Hammer Head
+	/Hammer Head VL
+Iron Kong
+	/Iron Drill
+	/Iron Kong Maneuver
+	/Iron Kong PK
+	/Iron Kong SS
+Molga
+	/Cannonry Molga (renamed from Molga Cannonry)
+Pteras
+	/Pteras Bomber
+	/Pteras Radome
+Red Horn
+	/Red Horn BG
+Redler
+	/Redler BC
+	/Redler Interceptor
+Rev Raptor
+	/Rev Raptor Pilebunker
+	/Rev Hunter
+Shield Liger
+	/Shield Liger DCS
+	/Shield Liger DCS-J (requires the Shield Liger DCS to be installed first and then replaces it)
+Snipe Master
+	/Sniper Master AS
+	/Sniper Master FB
+Storm Sworder
+	/Stormsworder F
+	/Stormsworder FX
+Trinity Liger
+	/Trinity Liger BA
+Zaber Fang
+	/Zaber Fang AT
+	/Zaber Fang RS
+	/Zaber Fang SS
+	/Zaber Fang TS (requires Zaber Fang AT to be installed first and then replaces it)
+
+
+
+
+
+
+

@@ -7,7 +7,8 @@ Reviewed against local `abilities.json`, descriptions, and implemented Python pa
 | Family | Current behavior / gap | Decision or correction needed |
 |---|---|---|
 | **Resolved: Expert stacking** | All six families affect every eligible slot using order-independent tag matching. Advantage text is removed. Rifle Expert requires Ranged + Bullet. | Each weapon receives the largest applicable active Expert bonus, plus active Anti-Air Pro if it has the Anti-Air tag. Other Expert ties apply once; selection is independent per weapon and ability slot order. |
-| Type abilities | Zoid type is substring-matched to ability names; broader Mammal/Dinosaur category relationships are not explicitly modeled. | Define applicable types/categories if broad proficiency abilities should include named subtypes. |
+| **Resolved: Type abilities** | Explicit `eligible_types` metadata replaces substring matching. | Owner confirmed exact listed game types: Mammal does not cover Lion/Tiger/Wolf/Gorilla, and Dinosaur, Land does not cover Raptor/T-Rex. Matching ignores case and surrounding whitespace. |
+| **Resolved: Laser Expert** | All ranks require the Laser tag. | Ranged Energy becomes Laser. Retained melee Energy does not qualify for Laser Expert. |
 
 ## Player-managed abilities: tracking only
 
@@ -21,10 +22,14 @@ Owner confirmed these abilities need only active/inactive ownership tracking and
 | Weapon Breaker | Critical melee hits can destroy target weapons | Player managed |
 | Counter Attack | React to an enemy rolling a natural 1 | Player managed |
 
-Related feat: **Demolitionist** should vent every weapon rather than only the selected weapon. It remains descriptive and needs integration with the combat controller.
+Related feat: **Demolitionist** is tracked as player-managed. The player manually clicks Vent for each applicable weapon; no automatic multi-weapon Vent integration is required.
+
+All seven feats now have saved tracking slots and visible descriptions in the Pilot feats panel. Phalanx Fire/Scrappy do not trigger automatic advantage rolls; Demolitionist does not alter Vent. Physical/Social and pilot notes are also tracking-only. Mental keeps its existing calculation rule.
 
 ## Completed in the current milestone
 
+- Flet ability management: learn new families inactive, permanently replace owned lower ranks, assign/deactivate six active slots, enforce one active size ability, and display inactive ownership and descriptions. Validated character transitions preserve health/resources and save ownership pilot-wide through Zoid/CAU switches.
+- Flet Organoid color/level/activation controls recalculate stats immediately. Selected settings are validated even while deactivated, persist with the pilot, and preserve current health. Only White generates shields using Organoid level. Weapon-card previews now include selected range and current-health context, alongside persistent Use/Vent/Rest/repair actions.
 - Laser, Missile, Particle, Melee, Rifle Expert and Anti-Air Pro bonuses now reach all eight qualifying weapon slots. Expert ranks 3/4 no longer grant or describe advantage.
 - Use the strongest applicable active bonus among Laser, Missile, Particle, Melee, and Rifle Expert. **Anti-Air Pro is an exception:** add its bonus on top when active and the weapon has the Anti-Air tag, even if no other Expert applies. Other bonus sources (pilot, size, activated Organoid, equipment, fixed upgrades, contextual Sniper) retain their own rules.
 - Melee tags are tracking labels with no automatic damage/status mechanics. Tags still determine which Expert abilities qualify; Piercing, Electrical, etc. do not independently apply extra effects.
@@ -43,4 +48,4 @@ Related feat: **Demolitionist** should vent every weapon rather than only the se
 
 ## Range input follow-up
 
-Use mutually exclusive Close / Normal / Long choices for ranged attacks only. Exactly half maximum range is confirmed **Normal**. `range_band_for_distance()` and optional attack distance implement this boundary. Other overlapping Close/Long distances for very short maximum ranges require explicit selection instead of guessing. Legacy weapons missing Ranged/Melee tags still need data cleanup.
+Use mutually exclusive Close / Normal / Long choices for ranged attacks only. Close is <=60m and takes priority. Normal is >60m and <=half maximum range; Long is >60m and >half maximum range. `range_band_for_distance()` and optional attack distance implement these boundaries, including short maximum ranges. Ranged Piercing becomes Ranged + Bullet. Ranged Energy becomes Laser; explicit class/prose tags are restored, and Zaber Fang RS's cannon is Ranged + Laser. See `rules-review.md` for the completed classification audit and Zaber Fang's restored fixed weapons.

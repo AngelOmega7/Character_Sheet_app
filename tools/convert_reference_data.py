@@ -7,6 +7,42 @@ from decimal import Decimal
 
 ROOT = Path(__file__).resolve().parents[1]
 DICE_DAMAGE = re.compile(r"\b(\d+)\s*[dD]\s*(\d+)\b")
+CAU_BASES = {
+    "Zero Jager (CAU)": "Liger Zero", "Zero Schneider (CAU)": "Liger Zero",
+    "Zero Panzer (CAU)": "Liger Zero", "Zero X (CAU)": "Liger Zero",
+    "Zero Empire (CAU)": "Liger Zero", "Konig Wolf DSR (CAU)": "Konig Wolf",
+    "Sturm Fury (CAU)": "Berserk Fury", "Jagd Fury (CAU)": "Berserk Fury",
+    "Berserk Fury Z (CAU)": "Berserk Fury",
+}
+TRANSPORT_NAMES = {"Hover Cargo", "Gustav", "Whale King"}
+
+
+def add_ownership_metadata(records, keys):
+    """Explicit CAU families and stable weapon identities, independent of slots."""
+    by_name = {r["name"]: r for r in records}
+    aliases = {"strike_laster_claw": "strike_laser_claw", "strike_laser_claws": "strike_laser_claw"}
+
+    def weapons(record):
+        result = []
+        for name_column, damage_column in ((13, 15), (19, 21), (30, 32), (41, 43)):
+            name = record["fields"][keys[name_column - 1]]
+            damage = record["fields"][keys[damage_column - 1]]
+            key = slug(name) if name and damage is not None else None
+            if record["name"] == "Liger Zero" or CAU_BASES.get(record["name"]) == "Liger Zero":
+                key = aliases.get(key, key)
+            result.append(key)
+        return result
+
+    for record in records:
+        if "(CAU)" in record["name"] and record["name"] not in CAU_BASES:
+            raise ValueError(f"Unmapped CAU form: {record['name']}")
+        base = by_name[CAU_BASES.get(record["name"], record["name"])]
+        record["ownership_base_id"] = base["id"]
+        base_weapons = weapons(base)
+        record["fixed_weapon_ids"] = [
+            f"{base['id'] if key in base_weapons else record['id']}:weapon:{key}" if key else None
+            for key in weapons(record)
+        ]
 
 
 def flatten_damage(text, numeric=False):
@@ -46,7 +82,50 @@ def clean_weapon_tags(text):
                 tag = "Electrical"
             if tag.casefold() not in {existing.casefold() for existing in tags}:
                 tags.append(tag)
+    classes = {tag.casefold() for tag in tags}
+    if "ranged" in classes and "melee" not in classes:
+        renamed = {"piercing": "Bullet", "energy": "Laser"}
+        converted = []
+        for tag in tags:
+            tag = renamed.get(tag.casefold(), tag)
+            if tag.casefold() not in {existing.casefold() for existing in converted}:
+                converted.append(tag)
+        tags = converted
     return ", ".join(tags)
+
+
+def correct_zaber_fang(record, keys):
+    """Owner-restored fixed weapon layout; retain original field provenance."""
+    fields = record["fields"]
+    original = dict(fields)
+
+    def correct(index, value, source_index=None):
+        key = keys[index - 1]
+        prior = record.get("corrections", {}).get(key, {})
+        correction = {"original": prior.get("original", original[key]), "corrected": value,
+                      "reason": "Owner restored Laser Machine Gun in slot 3, moved Killer Saber to slot 4, and classified 20mm as Particle"}
+        if source_index is not None:
+            correction["copied_from_field"] = keys[source_index - 1]
+        record.setdefault("corrections", {})[key] = correction
+        fields[key] = value
+
+    for target, source in zip((41, 42, 43, 44, 45), (30, 31, 32, 33, 34)):
+        correct(target, original[keys[source - 1]], source)
+    correct(88, original[keys[86]], 87)
+    correct(30, "Laser Machine Gun")
+    correct(31, original[keys[41]], 42)
+    correct(32, original[keys[42]], 43)
+    correct(33, "Ranged, Laser, Close Range")
+    correct(34, original[keys[22]], 23)
+    correct(87, original[keys[87]], 88)
+    correct(22, "Ranged, Particle")
+    notes = record.get("damage_notes", {})
+    slot3, slot4 = keys[31], keys[42]
+    note3, note4 = notes.pop(slot3, None), notes.pop(slot4, None)
+    if note3 is not None:
+        notes[slot4] = note3
+    if note4 is not None:
+        notes[slot3] = note4
 
 
 def slug(value):
@@ -71,7 +150,7 @@ def value(cell):
 
 def build():
     source = ROOT / "docs/generated/workbook_inventory.json"
-    inventory = json.loads(source.read_text())
+    inventory = json.loads(source.read_text(encoding="utf-8"))
     sheets = {s["name"]: {c["address"]: c for c in s["cells"]} for s in inventory["sheets"]}
     tables = {t["name"]: t for t in inventory["tables"]}
     definitions = [
@@ -111,6 +190,8 @@ def build():
         elif dataset == "zoids":
             keys[:12] = ["name", "base_zoid", "type", "size", "required_level", "health", "armor", "defense", "speed", "reaction", "range", "carry_capacity"]
         records, excluded = [], []
+        assist_row = next((int(address[1:]) for address, cell in cells.items()
+                           if re.fullmatch(r"A\d+", address) and str(cell.get("value", "")).strip().casefold() == "assist"), None) if dataset == "armaments" else None
         for row in range(start + 1, end + 1):
             row_cells = [cells.get(f"{column(i)}{row}", {}) for i in range(1, len(keys) + 1)]
             if not any(row_cells):
@@ -127,14 +208,23 @@ def build():
             if dataset == "armaments" and row in (3, 4, 5, 6):
                 kind = "dynamic"
                 name = f"Zoid equipment slot {row - 2}"
-            if dataset == "abilities" and name and re.sub(r"\s+\d+$", "", name).casefold().replace("-", " ") in {"wimp", "cross eyed", "slowpoke", "bad armor"}:
-                excluded.append({"row": row, "name": name, "reason": "Owner retired this ability family and all ranks"})
+            if dataset == "zoids" and str(fields["type"]).strip().casefold() == "blox":
+                excluded.append({"row": row, "id": f"zoids:{slug(name)}", "name": name, "reason": "Owner retired BLOX Zoids"})
+                continue
+            if dataset == "abilities" and name and re.sub(r"\s+\d+$", "", name.replace("BLOXType", "BLOX Type")).casefold().replace("-", " ") in {"wimp", "cross eyed", "slowpoke", "bad armor", "blox type"}:
+                excluded.append({"row": row, "id": f"abilities:{slug(name)}", "name": name, "reason": "Owner retired this ability family and all ranks"})
                 continue
             record = {
                 "id": f"{dataset}:{(slug(name) or 'none') if name is not None else 'row_' + str(row)}",
                 "name": name, "kind": kind, "source": {"sheet": sheet, "row": row},
                 "fields": fields, "dynamic_fields": {},
             }
+            if dataset == "armaments":
+                if assist_row is None:
+                    raise ValueError("Armaments ASSIST heading is missing")
+                record["assist_eligible"] = row > assist_row and kind not in {"heading", "placeholder"}
+            if dataset == "feats" and kind == "record":
+                record["handling"] = "player_managed"
             for key, cell in zip(keys, row_cells):
                 if "formula" not in cell:
                     continue
@@ -155,6 +245,16 @@ def build():
                 else:
                     record["dynamic_fields"][key] = expression
                     fields[key] = None  # Never freeze a character-dependent cached value.
+            name_columns = {13, 19, 30, 41, 47, 54, 61, 66} if dataset == "zoids" else {1} if dataset == "armaments" else set()
+            for index in name_columns:
+                key = keys[index - 1]
+                original = fields[key]
+                if isinstance(original, str) and original.strip().rstrip(":").strip().casefold() in {"strike laster claw", "strike laser claw", "strike laser claws"}:
+                    fields[key] = "Strike Laser Claw"
+                    if original != fields[key]:
+                        record.setdefault("corrections", {})[key] = {"original": original, "corrected": fields[key], "reason": "Owner standardized weapon name"}
+                    if dataset == "armaments":
+                        record["name"] = fields[key]
             damage_columns = {15, 21, 32, 43, 49, 55, 62, 67} if dataset == "zoids" else {2} if dataset == "armaments" else set()
             effect_columns = {14, 20, 31, 42, 48, 56, 69} if dataset == "zoids" else {4} if dataset == "armaments" else set()
             for index in sorted(damage_columns | effect_columns):
@@ -174,22 +274,28 @@ def build():
             for index in tag_columns:
                 key = keys[index - 1]
                 original = fields[key]
-                if not isinstance(original, str):
+                if key in record["dynamic_fields"]:
                     continue
-                cleaned = clean_weapon_tags(original)
+                ranged = dataset == "armaments" and str(fields["weapon_class"]).strip().casefold() == "ranged"
+                if dataset == "zoids":
+                    name_col, effect_col = {16: (13, 14), 22: (19, 20), 33: (30, 31),
+                                           44: (41, 42), 50: (47, 48), 58: (54, 56)}[index]
+                    damage_col = {16: 15, 22: 21, 33: 32, 44: 43, 50: 49, 58: 55}[index]
+                    prose = " ".join(str(fields[keys[c - 1]] or "") for c in (name_col, effect_col))
+                    damage = fields[keys[damage_col - 1]]
+                    ranged = bool(fields[keys[name_col - 1]]) and isinstance(damage, (int, float)) and damage > 0 and bool(re.search(r"\bRanged\b", prose, re.I))
+                    ranged = ranged or (name in {"Command Wolf IS", "Zaber Fang RS"} and index == 50)
+                if original is None and not ranged:
+                    continue
+                if original is not None and not isinstance(original, str):
+                    raise ValueError(f"Unexpected weapon tags: {record['id']}.{key}: {original!r}")
+                cleaned = clean_weapon_tags(original or "")
+                if ranged and not re.search(r"\bMelee\b", cleaned, re.I):
+                    cleaned = clean_weapon_tags("Ranged, " + cleaned)
                 if cleaned != original:
                     fields[key] = cleaned
-                    record.setdefault("corrections", {})[key] = {"original": original, "corrected": cleaned, "reason": "Owner-approved tag cleanup"}
-                original_source = original
-                original = cleaned
-                ranged = bool(re.search(r"\bRanged\b", original, re.I)) or (dataset == "armaments" and str(fields["weapon_class"]).strip().casefold() == "ranged")
-                if ranged and not re.search(r"\bMelee\b", original, re.I):
-                    converted = re.sub(r"\bPiercing\b", "Bullet", original, flags=re.I)
-                    if converted != original:
-                        if not re.search(r"\bRanged\b", converted, re.I):
-                            converted = "Ranged, " + converted
-                        fields[key] = converted
-                        record.setdefault("corrections", {})[key] = {"original": original_source, "corrected": converted, "reason": "Owner tag cleanup and ranged Piercing to Bullet"}
+                    record.setdefault("corrections", {})[key] = {"original": original, "corrected": cleaned,
+                        "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"}
             records.append(record)
             if dataset == "abilities" and kind == "record":
                 # BLOXType 1 is a source spelling inconsistency in the BLOX Type family.
@@ -197,6 +303,8 @@ def build():
                 match = re.fullmatch(r"(.+?)\s+(\d+)", family_name)
                 record["family"] = slug(match[1] if match else family_name)
                 record["rank"] = int(match[2]) if match else 1
+                type_match = re.fullmatch(r"(.+?)\s+Type", match[1] if match else family_name, re.I)
+                record["eligible_types"] = [type_match[1].strip()] if type_match else []
                 expert_families = {"laser_expert", "missile_expert", "particle_expert", "melee_expert", "rifle_expert"}
                 if record["family"] in expert_families:
                     original = fields["description"]
@@ -204,9 +312,14 @@ def build():
                     if record["family"] == "rifle_expert":
                         description = re.sub(r"\bpiercing\b", "Bullet", description, flags=re.I)
                         fields["damage_type"] = "Ranged, Bullet"
+                    if record["family"] == "laser_expert":
+                        record.setdefault("corrections", {})["damage_type"] = {
+                            "original": fields["damage_type"], "corrected": "Laser", "reason": "Owner: Laser Expert matches Laser tags only"}
+                        fields["damage_type"] = "Laser"
+                        description = f"Weapons with the Laser tag gain {record['rank']} to Hit."
                     fields["description"] = description
                     if description != original:
-                        record.setdefault("corrections", {})["description"] = {"original": original, "corrected": description, "reason": "Owner removed Expert advantage and renamed ranged Piercing"}
+                        record.setdefault("corrections", {})["description"] = {"original": original, "corrected": description, "reason": "Owner-confirmed Expert rules and tag matching"}
                 sizes = fields["zoid_sizes"]
                 record["eligible_sizes"] = [s.strip() for s in sizes.split(",")] if isinstance(sizes, str) else []
                 if name == "Medium Under Expert 4":
@@ -237,15 +350,31 @@ def build():
             for key, val in fields.items():
                 if isinstance(val, str) and val.startswith(("#REF!", "#VALUE!", "#N/A")):
                     issues.append({"dataset": dataset, "id": record["id"], "field": key, "error": val})
+        if dataset == "zoids":
+            correct_zaber_fang(next(r for r in records if r["name"] == "Zaber Fang"), keys)
+            transports = []
+            for record in records:
+                if record["name"] in TRANSPORT_NAMES:
+                    original_id = record["id"]
+                    record["id"] = f"transports:{slug(record['name'])}"
+                    record["legacy_zoid_id"] = original_id
+                    transports.append(record)
+                    excluded.append({"row": record["source"]["row"], "id": original_id, "name": record["name"], "reason": "Moved to Transport catalog"})
+            records = [r for r in records if r["name"] not in TRANSPORT_NAMES]
+            transport_data = {"schema_version": 1, "columns": keys, "source_headers": headers,
+                              "records": transports, "excluded_rows": []}
+            (output / "transports.json").write_text(json.dumps(transport_data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+            counts["transports"] = dict(records=len(transports), selectable=len(transports), excluded_empty_rows=0, excluded_retired_rows=0)
+            add_ownership_metadata(records, keys)
         ids = [r["id"] for r in records]
         if len(ids) != len(set(ids)):
             raise ValueError(f"Duplicate normalized IDs in {dataset}")
         data = {"schema_version": 1, "columns": keys, "source_headers": headers, "records": records, "excluded_rows": excluded}
-        (output / f"{dataset}.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
-        counts[dataset] = dict(records=len(records), selectable=sum(r["kind"] == "record" for r in records), excluded_empty_rows=sum(r["reason"] == "empty" for r in excluded), excluded_retired_rows=sum(r["reason"] != "empty" for r in excluded))
-    manifest = {"schema_version": 1, "data_version": "weapon-tags-v7", "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "datasets": counts, "review_items": issues}
-    (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    (ROOT / "docs/generated/damage-conversions.json").write_text(json.dumps(damage_conversions, indent=2) + "\n")
+        (output / f"{dataset}.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+        counts[dataset] = dict(records=len(records), selectable=sum(r["kind"] == "record" for r in records), excluded_empty_rows=sum(r["reason"] == "empty" for r in excluded), excluded_retired_rows=sum(r["reason"].startswith("Owner retired") for r in excluded), moved_rows=sum(r["reason"].startswith("Moved to") for r in excluded))
+    manifest = {"schema_version": 1, "data_version": "laser-and-types-v11", "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "datasets": counts, "review_items": issues}
+    (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
+    (ROOT / "docs/generated/damage-conversions.json").write_text(json.dumps(damage_conversions, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(counts, indent=2))
     print(f"Converted {len(damage_conversions)} legacy damage fields/descriptions")
 

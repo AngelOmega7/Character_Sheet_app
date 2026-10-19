@@ -42,7 +42,7 @@ class AbilityOwnershipTests(unittest.TestCase):
             validate_loadout(AbilityLoadout(("Small Expert",), ("Small Expert 2",)), self.catalog)
 
     def test_general_rank_rules_cover_numbered_unnumbered_and_source_spelling(self):
-        for lower, higher in (("Lion Type 1", "Lion Type 2"), ("Melee Expert", "Melee Expert 2"), ("Fleet Footed", "FLeet Footed 4"), ("BLOXType 1", "BLOX Type 2")):
+        for lower, higher in (("Lion Type 1", "Lion Type 2"), ("Melee Expert", "Melee Expert 2"), ("Fleet Footed", "FLeet Footed 4")):
             with self.subTest(family=lower):
                 state = learn_ability(AbilityLoadout((lower,)), higher, self.catalog)
                 self.assertEqual(state.active, (self.catalog.find("abilities", higher)["id"],))

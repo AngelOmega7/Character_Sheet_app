@@ -63,7 +63,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false
     },
     {
       "id": "armaments:zoid_equipment_slot_1",
@@ -98,7 +99,8 @@
         "effect": "vlookup(Zoid!C4,Zoid_DB[],48,FALSE())",
         "to_hit": "vlookup(Zoid!C4,Zoid_DB[],51,FALSE())",
         "weight": "vlookup(Zoid!C4,Zoid_DB[],52,FALSE())"
-      }
+      },
+      "assist_eligible": false
     },
     {
       "id": "armaments:zoid_equipment_slot_2",
@@ -134,7 +136,8 @@
         "to_hit": "vlookup(Zoid!C4,Zoid_DB[],57,FALSE())",
         "weight": "vlookup(Zoid!C4,Zoid_DB[],59,FALSE())",
         "weapon_class": "vlookup(Zoid!C4,Zoid_DB[],55,FALSE)"
-      }
+      },
+      "assist_eligible": false
     },
     {
       "id": "armaments:zoid_equipment_slot_3",
@@ -164,7 +167,8 @@
       },
       "dynamic_fields": {
         "name": "vlookup(Zoid!C4,Zoid_DB[],61,FALSE())"
-      }
+      },
+      "assist_eligible": false
     },
     {
       "id": "armaments:zoid_equipment_slot_4",
@@ -200,7 +204,8 @@
         "defense": "vlookup(Zoid!C4,Zoid_DB[],71,FALSE())",
         "weight": "vlookup(Zoid!C4,Zoid_DB[],70,FALSE())",
         "activation": "vlookup(Zoid!C4,Zoid_DB[],72,FALSE())"
-      }
+      },
+      "assist_eligible": false
     },
     {
       "id": "armaments:weapons",
@@ -228,7 +233,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false
     },
     {
       "id": "armaments:particle_cannon",
@@ -256,7 +262,8 @@
         "weapon_class": "Ranged",
         "heat": 3
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false
     },
     {
       "id": "armaments:heavy_particle_cannon",
@@ -284,7 +291,8 @@
         "weapon_class": "Ranged",
         "heat": 3
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false
     },
     {
       "id": "armaments:hyper_particle_cannon",
@@ -297,7 +305,7 @@
       "fields": {
         "name": "Hyper Particle Cannon",
         "damage": 100,
-        "damage_type": "Particle",
+        "damage_type": "Ranged, Particle",
         "effect": "Particle cannon. Fires a 30m wide particle beam. Each Zoid in the path of the ",
         "to_hit": 16,
         "defense": null,
@@ -312,7 +320,15 @@
         "weapon_class": "Ranged",
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Particle",
+          "corrected": "Ranged, Particle",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:plasma_particle_cannon",
@@ -325,7 +341,7 @@
       "fields": {
         "name": "Plasma Particle Cannon",
         "damage": 130,
-        "damage_type": "Particle",
+        "damage_type": "Ranged, Particle",
         "effect": "shoots dense particle blasts. Targets up to four opponents.",
         "to_hit": 17,
         "defense": null,
@@ -340,7 +356,15 @@
         "weapon_class": "Ranged",
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Particle",
+          "corrected": "Ranged, Particle",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:photon_paticle_cannon",
@@ -353,7 +377,7 @@
       "fields": {
         "name": "Photon Paticle Cannon",
         "damage": 180,
-        "damage_type": "Particle",
+        "damage_type": "Ranged, Particle",
         "effect": "shoots a piercing particle beam. If damage exceeds health threshold it punctures through the Zoid to hit whatever is behind it for the remaining damage.",
         "to_hit": 18,
         "defense": null,
@@ -368,7 +392,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Particle",
+          "corrected": "Ranged, Particle",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:charge_particle_cannon",
@@ -381,7 +413,7 @@
       "fields": {
         "name": "Charge Particle Cannon",
         "damage": 200,
-        "damage_type": "Particle",
+        "damage_type": "Ranged, Particle",
         "effect": "Fires two narrow particle beams. Targets up to two opponents. If damage exceeds the remaining health of the targeted Zoids it punctures through the zoid and continues on for the remaining damage. damage is split between the two beams.",
         "to_hit": 18,
         "defense": null,
@@ -396,7 +428,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Particle",
+          "corrected": "Ranged, Particle",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:external_charge_particle_cannon",
@@ -409,7 +449,7 @@
       "fields": {
         "name": "External Charge Particle Cannon",
         "damage": 200,
-        "damage_type": "Particle",
+        "damage_type": "Ranged, Particle",
         "effect": "can target up to four opponents. Each shot deals 50 damage. ",
         "to_hit": 17,
         "defense": null,
@@ -424,7 +464,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Particle",
+          "corrected": "Ranged, Particle",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:focus_charge_particle_cannon",
@@ -437,7 +485,7 @@
       "fields": {
         "name": "Focus Charge Particle Cannon",
         "damage": 300,
-        "damage_type": "Particle",
+        "damage_type": "Ranged, Particle",
         "effect": "Fires a narrow particle beam. If damage exceeds health threshold it punctures through the Zoid to hit whatever is behind it for the remaining damage.",
         "to_hit": 19,
         "defense": null,
@@ -452,7 +500,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Particle",
+          "corrected": "Ranged, Particle",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:spread_charge_particle_cannon",
@@ -465,7 +521,7 @@
       "fields": {
         "name": "Spread Charge Particle Cannon",
         "damage": 250,
-        "damage_type": "Particle, Anti-Air",
+        "damage_type": "Ranged, Particle, Anti-Air",
         "effect": "Fires a 45m wide particle beam. Each Zoid in the path of the beam must make a reaction save against the attack roll. Successful saves take no damage. Must recharge for three turns. ",
         "to_hit": 17,
         "defense": null,
@@ -480,7 +536,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Particle, Anti-Air",
+          "corrected": "Ranged, Particle, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:great_charge_particle_cannon",
@@ -493,7 +557,7 @@
       "fields": {
         "name": "Great Charge Particle Cannon",
         "damage": 350,
-        "damage_type": "Particle, Anti-Air",
+        "damage_type": "Ranged, Particle, Anti-Air",
         "effect": "Fires a 60m wide particle beam. Each Zoid in the path of the beam must make a reaction save against the attack roll. Successful saves take no damage. Must recharge for three turns.",
         "to_hit": 19,
         "defense": null,
@@ -508,7 +572,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Particle, Anti-Air",
+          "corrected": "Ranged, Particle, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:mini_laser",
@@ -521,7 +593,7 @@
       "fields": {
         "name": "Mini Laser",
         "damage": 50,
-        "damage_type": "Energy, Puncture",
+        "damage_type": "Ranged, Laser, Puncture",
         "effect": "Small energy gun. Target a single opponent. If damage exceeds health threshold it punctures through the Zoid to hit whatever is behind it.",
         "to_hit": 18,
         "defense": null,
@@ -536,7 +608,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Puncture",
+          "corrected": "Ranged, Laser, Puncture",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:2_set_laser",
@@ -549,7 +629,7 @@
       "fields": {
         "name": "2-Set Laser",
         "damage": 80,
-        "damage_type": "Energy",
+        "damage_type": "Ranged, Laser",
         "effect": "Double barrel energy cannon. Can target up to two Zoids. Damage is split between targets. ",
         "to_hit": 18,
         "defense": null,
@@ -564,7 +644,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Ranged, Laser",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:3_set_laser",
@@ -577,7 +665,7 @@
       "fields": {
         "name": "3-Set Laser",
         "damage": 110,
-        "damage_type": "Energy",
+        "damage_type": "Ranged, Laser",
         "effect": "Triple barrel energy cannon. Can target up to three Zoids. Damage is split between targets. ",
         "to_hit": 18,
         "defense": null,
@@ -592,7 +680,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Ranged, Laser",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:4_set_laser",
@@ -605,7 +701,7 @@
       "fields": {
         "name": "4-Set Laser",
         "damage": 150,
-        "damage_type": "Energy",
+        "damage_type": "Ranged, Laser",
         "effect": "Quad barrel energy cannon. Can target up to four Zoids. Damage is split between targets. ",
         "to_hit": 19,
         "defense": null,
@@ -620,7 +716,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Ranged, Laser",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:anti_air_laser",
@@ -633,7 +737,7 @@
       "fields": {
         "name": "Anti-Air Laser",
         "damage": 50,
-        "damage_type": "Energy, Anti-Air",
+        "damage_type": "Ranged, Laser, Anti-Air",
         "effect": "Fires an energy beam. Targets a single opponent.",
         "to_hit": 18,
         "defense": null,
@@ -648,7 +752,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air",
+          "corrected": "Ranged, Laser, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:2_set_anti_air_laser",
@@ -661,7 +773,7 @@
       "fields": {
         "name": "2-Set Anti-Air Laser",
         "damage": 80,
-        "damage_type": "Energy, Anti-Air",
+        "damage_type": "Ranged, Laser, Anti-Air",
         "effect": "Double barrel energy cannon. Can target up to two zoids. Damage is split between targets. ",
         "to_hit": 18,
         "defense": null,
@@ -676,7 +788,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air",
+          "corrected": "Ranged, Laser, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:3_set_anti_air_laser",
@@ -689,7 +809,7 @@
       "fields": {
         "name": "3-Set Anti-Air Laser",
         "damage": 110,
-        "damage_type": "Energy, Anti-Air",
+        "damage_type": "Ranged, Laser, Anti-Air",
         "effect": "Triple barrel energy cannon. Can target up to three zoids. Damage is split between targets. ",
         "to_hit": 18,
         "defense": null,
@@ -704,7 +824,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air",
+          "corrected": "Ranged, Laser, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:4_set_anti_air_laser",
@@ -717,7 +845,7 @@
       "fields": {
         "name": "4-Set Anti-Air Laser",
         "damage": 150,
-        "damage_type": "Energy, Anti-Air",
+        "damage_type": "Ranged, Laser, Anti-Air",
         "effect": "Quad barrel energy cannon. Can target up to four zoids. Damage is split between targets. ",
         "to_hit": 19,
         "defense": null,
@@ -732,7 +860,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air",
+          "corrected": "Ranged, Laser, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:laser_machine_gun",
@@ -745,7 +881,7 @@
       "fields": {
         "name": "Laser Machine Gun",
         "damage": 60,
-        "damage_type": "Energy, Anti-Air",
+        "damage_type": "Ranged, Laser, Anti-Air",
         "effect": "Small energy machine gun. Target up to two opponents. Damage is split between targets. ",
         "to_hit": 17,
         "defense": null,
@@ -760,7 +896,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air",
+          "corrected": "Ranged, Laser, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:pulse_laser_gun",
@@ -773,7 +917,7 @@
       "fields": {
         "name": "Pulse Laser Gun",
         "damage": 90,
-        "damage_type": "Energy, Anti-Air",
+        "damage_type": "Ranged, Laser, Anti-Air",
         "effect": "Fires a bust of energy beams. Targets a single opponent. ",
         "to_hit": 17,
         "defense": null,
@@ -788,7 +932,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air",
+          "corrected": "Ranged, Laser, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:beam_needle",
@@ -801,7 +953,7 @@
       "fields": {
         "name": "Beam Needle",
         "damage": 120,
-        "damage_type": "Energy, Anti-Air",
+        "damage_type": "Ranged, Laser, Anti-Air",
         "effect": "Fires two bursts of energy bolts. Targets up to two opponents. ",
         "to_hit": 17,
         "defense": null,
@@ -816,7 +968,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air",
+          "corrected": "Ranged, Laser, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:gatling_beam",
@@ -829,7 +989,7 @@
       "fields": {
         "name": "Gatling Beam",
         "damage": 140,
-        "damage_type": "Energy, Anti-Air, Close Range",
+        "damage_type": "Ranged, Laser, Anti-Air, Close Range",
         "effect": "Rapid fire energy gun. Targets an horizontal area 30m by 90m. ",
         "to_hit": 17,
         "defense": null,
@@ -844,7 +1004,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air, Close Range",
+          "corrected": "Ranged, Laser, Anti-Air, Close Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:beam_rifle",
@@ -857,7 +1025,7 @@
       "fields": {
         "name": "Beam Rifle",
         "damage": 100,
-        "damage_type": "Energy",
+        "damage_type": "Ranged, Laser",
         "effect": "Precision energy rifle. Fires a single energy bolt. Targets a single opponent.",
         "to_hit": 18,
         "defense": null,
@@ -872,7 +1040,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Ranged, Laser",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:assault_beam_cannon",
@@ -885,7 +1061,7 @@
       "fields": {
         "name": "Assault Beam Cannon",
         "damage": 75,
-        "damage_type": "Energy",
+        "damage_type": "Ranged, Laser",
         "effect": "Energy cannon. Fires a single energy bolts. Targets a single opponent. ",
         "to_hit": 17,
         "defense": null,
@@ -900,7 +1076,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Ranged, Laser",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:beam_cannon",
@@ -913,7 +1097,7 @@
       "fields": {
         "name": "Beam Cannon",
         "damage": 140,
-        "damage_type": "Energy",
+        "damage_type": "Ranged, Laser",
         "effect": "Fires a single energy bolts targets a single opponent. ",
         "to_hit": 16,
         "defense": null,
@@ -928,7 +1112,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy",
+          "corrected": "Ranged, Laser",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:ray_storm",
@@ -941,7 +1133,7 @@
       "fields": {
         "name": "Ray Storm",
         "damage": 140,
-        "damage_type": "Energy, Anti-Air",
+        "damage_type": "Ranged, Laser, Anti-Air",
         "effect": "Large energy cannon.  Fires four energy bolts. Targets up to two opponents. Each shot does 36. ",
         "to_hit": 18,
         "defense": null,
@@ -956,7 +1148,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Anti-Air",
+          "corrected": "Ranged, Laser, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:rolling_cannon",
@@ -985,11 +1185,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Penetrating",
           "corrected": "Ranged, Bullet, Penetrating",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1004,7 +1205,7 @@
       "fields": {
         "name": "Hybrid Cannon",
         "damage": 200,
-        "damage_type": "Energy, Long Range",
+        "damage_type": "Ranged, Laser, Long Range",
         "effect": "Single barrel energy cannon. Fires a single bolt. Targets a single opponent. Minimum range of 100m.",
         "to_hit": 18,
         "defense": null,
@@ -1019,7 +1220,15 @@
         "weapon_class": "Ranged",
         "heat": 3
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Energy, Long Range",
+          "corrected": "Ranged, Laser, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:accelerated_cannons",
@@ -1032,7 +1241,7 @@
       "fields": {
         "name": "Accelerated Cannons",
         "damage": 90,
-        "damage_type": "Explosive, Long Range",
+        "damage_type": "Ranged, Explosive, Long Range",
         "effect": "Targets a single opponent. Minimum range of 105m. ",
         "to_hit": 13,
         "defense": null,
@@ -1047,7 +1256,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Long Range",
+          "corrected": "Ranged, Explosive, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:double_cannon",
@@ -1060,7 +1277,7 @@
       "fields": {
         "name": "Double Cannon",
         "damage": 120,
-        "damage_type": "Explosive, Long Range",
+        "damage_type": "Ranged, Explosive, Long Range",
         "effect": "Double barrel cannon. Targets a single opponent. Minimum range of 120m. ",
         "to_hit": 13,
         "defense": null,
@@ -1075,7 +1292,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Long Range",
+          "corrected": "Ranged, Explosive, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:2_set_high_speed_cannon",
@@ -1088,7 +1313,7 @@
       "fields": {
         "name": "2-Set High Speed Cannon",
         "damage": 140,
-        "damage_type": "Explosive, Long Range",
+        "damage_type": "Ranged, Explosive, Long Range",
         "effect": "Double barrel cannon. Targets a single opponent. Minimum range of 150m",
         "to_hit": 12,
         "defense": null,
@@ -1103,7 +1328,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Long Range",
+          "corrected": "Ranged, Explosive, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:triple_cannon",
@@ -1116,7 +1349,7 @@
       "fields": {
         "name": "Triple Cannon",
         "damage": 150,
-        "damage_type": "Explosive",
+        "damage_type": "Ranged, Explosive",
         "effect": "Triple barrel cannon. Targets a single opponent. ",
         "to_hit": null,
         "defense": null,
@@ -1131,7 +1364,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive",
+          "corrected": "Ranged, Explosive",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:hyper_cannon",
@@ -1160,11 +1401,12 @@
         "heat": 1
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1195,11 +1437,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Close Range",
           "corrected": "Ranged, Bullet, Close Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1230,11 +1473,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Close Range",
           "corrected": "Ranged, Bullet, Close Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1265,11 +1509,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1284,7 +1529,7 @@
       "fields": {
         "name": "Linear Cannon",
         "damage": 220,
-        "damage_type": "Explosive",
+        "damage_type": "Ranged, Explosive",
         "effect": "Single fire cannon. Targets a single opponent. ",
         "to_hit": 12,
         "defense": null,
@@ -1299,7 +1544,15 @@
         "weapon_class": "Ranged",
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive",
+          "corrected": "Ranged, Explosive",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:assault_cannon",
@@ -1312,7 +1565,7 @@
       "fields": {
         "name": "Assault Cannon",
         "damage": 250,
-        "damage_type": "Explosive",
+        "damage_type": "Ranged, Explosive",
         "effect": "Double barrel cannon. Targets a single opponent. ",
         "to_hit": 13,
         "defense": null,
@@ -1327,7 +1580,15 @@
         "weapon_class": "Ranged",
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive",
+          "corrected": "Ranged, Explosive",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:assault_rifle",
@@ -1356,11 +1617,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1391,11 +1653,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Long Range",
           "corrected": "Ranged, Bullet, Long Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1410,7 +1673,7 @@
       "fields": {
         "name": "Buster Cannon",
         "damage": 400,
-        "damage_type": "Explosive, Long Range",
+        "damage_type": "Ranged, Explosive, Long Range",
         "effect": "Large single barrel cannon. Targets a single opponent. Minimum range of 225m",
         "to_hit": null,
         "defense": null,
@@ -1425,7 +1688,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Long Range",
+          "corrected": "Ranged, Explosive, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:ultra_cannon",
@@ -1438,7 +1709,7 @@
       "fields": {
         "name": "Ultra Cannon",
         "damage": 600,
-        "damage_type": "Explosive",
+        "damage_type": "Ranged, Explosive",
         "effect": "Large single barrel cannon. Targets a single opponent. ",
         "to_hit": null,
         "defense": null,
@@ -1453,7 +1724,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive",
+          "corrected": "Ranged, Explosive",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:shock_gun",
@@ -1482,11 +1761,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1517,11 +1797,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1552,11 +1833,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Close Range",
           "corrected": "Ranged, Bullet, Close Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1587,11 +1869,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Penetrating, Anti-Air, Long Range",
           "corrected": "Ranged, Bullet, Penetrating, Anti-Air, Long Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1622,11 +1905,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Penetrating, Long Range",
           "corrected": "Ranged, Bullet, Penetrating, Long Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1657,11 +1941,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Penetrating, Long Range",
           "corrected": "Ranged, Bullet, Penetrating, Long Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1692,11 +1977,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1727,11 +2013,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Anti-Air",
           "corrected": "Ranged, Bullet, Anti-Air",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1762,11 +2049,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1797,11 +2085,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1832,11 +2121,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1867,11 +2157,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Anti-Air",
           "corrected": "Ranged, Bullet, Anti-Air",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1902,11 +2193,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing",
           "corrected": "Ranged, Bullet",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1937,11 +2229,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Anti-Air",
           "corrected": "Ranged, Bullet, Anti-Air",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -1972,11 +2265,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Close Range",
           "corrected": "Ranged, Bullet, Close Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2007,11 +2301,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Anti-Air, Close Range",
           "corrected": "Ranged, Bullet, Anti-Air, Close Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2042,11 +2337,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Close Range",
           "corrected": "Ranged, Bullet, Close Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2077,11 +2373,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Anti-Air, Close Range",
           "corrected": "Ranged, Bullet, Anti-Air, Close Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2112,11 +2409,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Piercing, Anti-Air, Close Range",
           "corrected": "Ranged, Bullet, Anti-Air, Close Range",
-          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2131,7 +2429,7 @@
       "fields": {
         "name": "2-Set Missile:",
         "damage": 50,
-        "damage_type": "Explosive, Homing",
+        "damage_type": "Ranged, Explosive, Homing",
         "effect": "Fires two missiles. Targets a single opponent. Homing",
         "to_hit": 18,
         "defense": null,
@@ -2146,7 +2444,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing",
+          "corrected": "Ranged, Explosive, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:4_set_missile",
@@ -2159,7 +2465,7 @@
       "fields": {
         "name": "4-Set Missile:",
         "damage": 50,
-        "damage_type": "Explosive, Homing",
+        "damage_type": "Ranged, Explosive, Homing",
         "effect": "Fires four missiles. Can target up to two Zoids. Damage is split between them. ",
         "to_hit": 18,
         "defense": null,
@@ -2174,7 +2480,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing",
+          "corrected": "Ranged, Explosive, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:6_set_missile",
@@ -2187,7 +2501,7 @@
       "fields": {
         "name": "6-Set Missile:",
         "damage": 70,
-        "damage_type": "Explosive, Homing",
+        "damage_type": "Ranged, Explosive, Homing",
         "effect": "Fires six missiles. Can target up to three Zoids. Damage is split between them.",
         "to_hit": 18,
         "defense": null,
@@ -2202,7 +2516,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing",
+          "corrected": "Ranged, Explosive, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:8_set_missile",
@@ -2215,7 +2537,7 @@
       "fields": {
         "name": "8-Set Missile:",
         "damage": 80,
-        "damage_type": "Explosive, Homing",
+        "damage_type": "Ranged, Explosive, Homing",
         "effect": "Fires eight missiles. Can target up to four Zoids. Damage is split between them.",
         "to_hit": 18,
         "defense": null,
@@ -2230,7 +2552,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing",
+          "corrected": "Ranged, Explosive, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:16_set_missile",
@@ -2243,7 +2573,7 @@
       "fields": {
         "name": "16-Set Missile:",
         "damage": 120,
-        "damage_type": "Explosive, Homing",
+        "damage_type": "Ranged, Explosive, Homing",
         "effect": "Fires sixteen missiles. Can target up to eight Zoids. Damage is split between them.",
         "to_hit": 18,
         "defense": null,
@@ -2258,7 +2588,15 @@
         "weapon_class": "Ranged",
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing",
+          "corrected": "Ranged, Explosive, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:anti_air_2_set_missile",
@@ -2271,7 +2609,7 @@
       "fields": {
         "name": "Anti-Air 2-Set Missile:",
         "damage": 60,
-        "damage_type": "Explosive, Anti-Air, Homing",
+        "damage_type": "Ranged, Explosive, Anti-Air, Homing",
         "effect": "Fires two missiles. Targets a single opponent.",
         "to_hit": 18,
         "defense": null,
@@ -2286,7 +2624,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Anti-Air, Homing",
+          "corrected": "Ranged, Explosive, Anti-Air, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:anti_air_4_set_missile",
@@ -2299,7 +2645,7 @@
       "fields": {
         "name": "Anti-Air 4-Set Missile:",
         "damage": 60,
-        "damage_type": "Explosive, Anti-Air, Homing",
+        "damage_type": "Ranged, Explosive, Anti-Air, Homing",
         "effect": "Fires four missiles. Can target up to two Zoids. Damage is split between them.",
         "to_hit": 18,
         "defense": null,
@@ -2314,7 +2660,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Anti-Air, Homing",
+          "corrected": "Ranged, Explosive, Anti-Air, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:anti_air_8_set_missile",
@@ -2327,7 +2681,7 @@
       "fields": {
         "name": "Anti-Air 8-Set Missile:",
         "damage": 90,
-        "damage_type": "Explosive, Anti-Air, Homing",
+        "damage_type": "Ranged, Explosive, Anti-Air, Homing",
         "effect": "Fires eight missiles. Can target up to four Zoids. Damage is split between them.",
         "to_hit": 18,
         "defense": null,
@@ -2342,7 +2696,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Anti-Air, Homing",
+          "corrected": "Ranged, Explosive, Anti-Air, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:anti_air_16_set_missile",
@@ -2355,7 +2717,7 @@
       "fields": {
         "name": "Anti-Air 16-Set Missile:",
         "damage": 120,
-        "damage_type": "Explosive, Anti-Air, Homing",
+        "damage_type": "Ranged, Explosive, Anti-Air, Homing",
         "effect": "Fires sixteen missiles. Can target up to eight Zoids. Damage is split between them.",
         "to_hit": 18,
         "defense": null,
@@ -2370,7 +2732,15 @@
         "weapon_class": "Ranged",
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Anti-Air, Homing",
+          "corrected": "Ranged, Explosive, Anti-Air, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:long_range_missile",
@@ -2383,7 +2753,7 @@
       "fields": {
         "name": "Long-Range Missile:",
         "damage": 110,
-        "damage_type": "Explosive, Homing, Long Range",
+        "damage_type": "Ranged, Explosive, Homing, Long Range",
         "effect": "Single missile. Targets a single opponent. Minimum range of 800m",
         "to_hit": null,
         "defense": null,
@@ -2398,7 +2768,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing, Long Range",
+          "corrected": "Ranged, Explosive, Homing, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:large_missile",
@@ -2411,7 +2789,7 @@
       "fields": {
         "name": "Large Missile:",
         "damage": 130,
-        "damage_type": "Explosive, Homing, Long Range",
+        "damage_type": "Ranged, Explosive, Homing, Long Range",
         "effect": "Fires a single missile. Minimum range of 400m.",
         "to_hit": 18,
         "defense": null,
@@ -2426,7 +2804,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing, Long Range",
+          "corrected": "Ranged, Explosive, Homing, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:napalm_missile",
@@ -2439,7 +2825,7 @@
       "fields": {
         "name": "Napalm Missile:",
         "damage": 120,
-        "damage_type": "Fire, Defense",
+        "damage_type": "Ranged, Fire, Defense",
         "effect": "Fires a canister that sets a horizontal line 30m by 90m on fire. Lasts for three turns. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage. For every 10 damage dealt the opponents defense drops by 1. Defense drop lasts until repaired.",
         "to_hit": 17,
         "defense": null,
@@ -2454,7 +2840,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Fire, Defense",
+          "corrected": "Ranged, Fire, Defense",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:neutron_missile",
@@ -2467,7 +2861,7 @@
       "fields": {
         "name": "Neutron Missile:",
         "damage": 150,
-        "damage_type": "Explosive, Homing",
+        "damage_type": "Ranged, Explosive, Homing",
         "effect": "Large missile. Targets an area 90m by 90m. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage. ",
         "to_hit": null,
         "defense": null,
@@ -2482,7 +2876,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing",
+          "corrected": "Ranged, Explosive, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:reaction_missile",
@@ -2495,7 +2897,7 @@
       "fields": {
         "name": "Reaction Missile:",
         "damage": 300,
-        "damage_type": "Explosive, Homing",
+        "damage_type": "Ranged, Explosive, Homing",
         "effect": "Large missile. Targets an area 90m by 90m. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage. ",
         "to_hit": null,
         "defense": null,
@@ -2510,7 +2912,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing",
+          "corrected": "Ranged, Explosive, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:hyper_missile",
@@ -2523,7 +2933,7 @@
       "fields": {
         "name": "Hyper Missile:",
         "damage": 250,
-        "damage_type": "Explosive, Homing",
+        "damage_type": "Ranged, Explosive, Homing",
         "effect": "Large missile. Targets an area 90m by 90m. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage. ",
         "to_hit": 18,
         "defense": null,
@@ -2538,7 +2948,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive, Homing",
+          "corrected": "Ranged, Explosive, Homing",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:spread_missile",
@@ -2551,7 +2969,7 @@
       "fields": {
         "name": "Spread Missile:",
         "damage": 130,
-        "damage_type": "Explosive",
+        "damage_type": "Ranged, Explosive",
         "effect": "A single missile divides into multiple smaller missiles. Targets 4 targets within an area 90m by 90m.",
         "to_hit": null,
         "defense": null,
@@ -2566,7 +2984,15 @@
         "weapon_class": "Ranged",
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Explosive",
+          "corrected": "Ranged, Explosive",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:sonic_cannon",
@@ -2579,7 +3005,7 @@
       "fields": {
         "name": "Sonic Cannon:",
         "damage": 100,
-        "damage_type": "Sonic",
+        "damage_type": "Ranged, Sonic",
         "effect": "Shoots a focused line of sonic damage. Targets a single opponent. Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. Ranged, Pilot ",
         "to_hit": null,
         "defense": null,
@@ -2594,7 +3020,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Sonic",
+          "corrected": "Ranged, Sonic",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:super_sonic_cannon",
@@ -2607,7 +3041,7 @@
       "fields": {
         "name": "Super Sonic Cannon:",
         "damage": 150,
-        "damage_type": "Sonic",
+        "damage_type": "Ranged, Sonic",
         "effect": "Shoots a focused line of sonic damage. Targets a single opponent. Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. ",
         "to_hit": null,
         "defense": null,
@@ -2622,7 +3056,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Sonic",
+          "corrected": "Ranged, Sonic",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:acid_cannon",
@@ -2635,7 +3077,7 @@
       "fields": {
         "name": "Acid Cannon:",
         "damage": 100,
-        "damage_type": "Acid, Defense",
+        "damage_type": "Ranged, Acid, Defense",
         "effect": "Fires a canister of acid. Targets a single opponent. For every 10 points of damage dealt the defense of the targeted Zoid lowers by 1. Ranged, Defense",
         "to_hit": null,
         "defense": null,
@@ -2650,7 +3092,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Acid, Defense",
+          "corrected": "Ranged, Acid, Defense",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:concentrate_acid_cannon",
@@ -2663,7 +3113,7 @@
       "fields": {
         "name": "Concentrate Acid Cannon:",
         "damage": 200,
-        "damage_type": "Acid, Defense",
+        "damage_type": "Ranged, Acid, Defense",
         "effect": "Fires a single canister of acid. Targets a single opponent. For every 10 points of damage dealt the defense of the targeted Zoid lowers by 1. ",
         "to_hit": null,
         "defense": null,
@@ -2678,7 +3128,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Acid, Defense",
+          "corrected": "Ranged, Acid, Defense",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:spark_cannon",
@@ -2691,7 +3149,7 @@
       "fields": {
         "name": "Spark Cannon:",
         "damage": 50,
-        "damage_type": "Electrical",
+        "damage_type": "Ranged, Electrical",
         "effect": null,
         "to_hit": null,
         "defense": null,
@@ -2707,11 +3165,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Electric",
-          "corrected": "Electrical",
-          "reason": "Owner-approved tag cleanup"
+          "corrected": "Ranged, Electrical",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2726,7 +3185,7 @@
       "fields": {
         "name": "Super Spark Cannon:",
         "damage": 50,
-        "damage_type": "Electrical",
+        "damage_type": "Ranged, Electrical",
         "effect": "Fires an arc of electricity. Targets a single opponent. Must be within 75 meters. Opponents damaged by this attack must make a percentile roll. if the roll is a 49 or lower the Zoid is frozen. At the end of their turn they may roll again to unfreeze. ",
         "to_hit": null,
         "defense": null,
@@ -2742,11 +3201,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Electric, Freeze",
-          "corrected": "Electrical",
-          "reason": "Owner-approved tag cleanup"
+          "corrected": "Ranged, Electrical",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2761,7 +3221,7 @@
       "fields": {
         "name": "Extra Electro Magnetic Cannon:",
         "damage": 120,
-        "damage_type": "Electrical",
+        "damage_type": "Ranged, Electrical",
         "effect": "Fires an arc of electricity. Targets up to two opponents. The second opponent must be within 60m of the first opponent. Must be within 75m. Opponents damaged by this attack must make a percentile roll. if the roll is a 49 or lower the Zoid is frozen. At the end of their turn they may roll again to unfreeze. ",
         "to_hit": 16,
         "defense": null,
@@ -2777,11 +3237,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Electric, Freeze",
-          "corrected": "Electrical",
-          "reason": "Owner-approved tag cleanup"
+          "corrected": "Ranged, Electrical",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2796,7 +3257,7 @@
       "fields": {
         "name": "Ele Shot:",
         "damage": 140,
-        "damage_type": "Electrical",
+        "damage_type": "Ranged, Electrical",
         "effect": "Fires an arc of electricity. Targets up to two opponents. Second target must be within 75m of the first. Must be within 75m. On a Hit opponents must roll a percentile die. A roll of 49 or lower will cause the Zoid to freeze. At the end of their next turn they can roll again for a chance to unfreeze",
         "to_hit": 17,
         "defense": null,
@@ -2812,11 +3273,12 @@
         "heat": null
       },
       "dynamic_fields": {},
+      "assist_eligible": false,
       "corrections": {
         "damage_type": {
           "original": "Electric, Freeze",
-          "corrected": "Electrical",
-          "reason": "Owner-approved tag cleanup"
+          "corrected": "Ranged, Electrical",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       }
     },
@@ -2831,7 +3293,7 @@
       "fields": {
         "name": "Poison Gas Cannon:",
         "damage": 40,
-        "damage_type": "Poison",
+        "damage_type": "Ranged, Poison",
         "effect": "launches a gas projectile that targets the pilot. Covers an area 30m square. DC:16. Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. ",
         "to_hit": 16,
         "defense": null,
@@ -2846,7 +3308,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Poison",
+          "corrected": "Ranged, Poison",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:poison_mist_cannon_targets_an_horizontal_area_30m_by_60m_dc_17_ranged_pilot",
@@ -2859,7 +3329,7 @@
       "fields": {
         "name": "Poison Mist Cannon: targets an horizontal area 30m by 60m. DC: 17. Ranged, Pilot",
         "damage": 90,
-        "damage_type": "Poison",
+        "damage_type": "Ranged, Poison",
         "effect": "Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. ",
         "to_hit": null,
         "defense": null,
@@ -2874,7 +3344,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Poison",
+          "corrected": "Ranged, Poison",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:poison_cloud_cannon_targets_a_horizontal_area_30m_by_90m_ranged_pilot",
@@ -2887,7 +3365,7 @@
       "fields": {
         "name": "Poison Cloud Cannon: targets a horizontal area 30m by 90m. Ranged, Pilot",
         "damage": 120,
-        "damage_type": "Poison",
+        "damage_type": "Ranged, Poison",
         "effect": "Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. ",
         "to_hit": null,
         "defense": null,
@@ -2902,7 +3380,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Poison",
+          "corrected": "Ranged, Poison",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:gravity_cannon",
@@ -2915,7 +3401,7 @@
       "fields": {
         "name": "Gravity Cannon:",
         "damage": null,
-        "damage_type": null,
+        "damage_type": "Ranged",
         "effect": null,
         "to_hit": null,
         "defense": null,
@@ -2930,7 +3416,15 @@
         "weapon_class": "Ranged",
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": null,
+          "corrected": "Ranged",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      }
     },
     {
       "id": "armaments:assist",
@@ -2958,7 +3452,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": false
     },
     {
       "id": "armaments:extension_armor",
@@ -2986,7 +3481,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_extension_armor",
@@ -3014,7 +3510,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:multiple_armor",
@@ -3042,7 +3539,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_multiple_armor",
@@ -3070,7 +3568,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:super_heavy_armor",
@@ -3098,7 +3597,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_super_heavy_armor",
@@ -3126,7 +3626,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:chobam_armor",
@@ -3154,7 +3655,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:enhanced_chobam_armor",
@@ -3182,7 +3684,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:full_armor_system",
@@ -3210,7 +3713,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:laser_diffusion_equipment",
@@ -3238,7 +3742,8 @@
         "weapon_class": null,
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:anti_laser_armor",
@@ -3266,7 +3771,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:anti_charge_particle_shield",
@@ -3294,7 +3800,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:e_protector",
@@ -3322,7 +3829,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:rare_metal_armor",
@@ -3350,7 +3858,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:fused_armor",
@@ -3378,7 +3887,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:enhanced_fused_armor",
@@ -3406,7 +3916,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:f_round_shield",
@@ -3434,7 +3945,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:small_e_shield_generator",
@@ -3462,7 +3974,8 @@
         "weapon_class": null,
         "heat": 3
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:e_shield_generator",
@@ -3490,7 +4003,8 @@
         "weapon_class": null,
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_e_shield_generator",
@@ -3518,7 +4032,8 @@
         "weapon_class": null,
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:smokescreen_generator",
@@ -3546,7 +4061,8 @@
         "weapon_class": null,
         "heat": 3
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_smokescreen_generator",
@@ -3574,7 +4090,8 @@
         "weapon_class": null,
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:optical_camouflage",
@@ -3602,7 +4119,8 @@
         "weapon_class": null,
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:enhanced_optical_camouflage",
@@ -3630,7 +4148,8 @@
         "weapon_class": null,
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:stealth_system",
@@ -3658,7 +4177,8 @@
         "weapon_class": null,
         "heat": 2
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:electro_magnetic_jammer",
@@ -3686,7 +4206,8 @@
         "weapon_class": null,
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:ecm",
@@ -3714,7 +4235,8 @@
         "weapon_class": null,
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:electron_disruptor_equipment",
@@ -3742,7 +4264,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:micro_sensor",
@@ -3770,7 +4293,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:enhanced_micro_sensor",
@@ -3798,7 +4322,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:laser_sensor",
@@ -3826,7 +4351,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:enhanced_laser_sensor",
@@ -3854,7 +4380,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:composite_sensor",
@@ -3882,7 +4409,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:enhanced_composite_sensor",
@@ -3910,7 +4438,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:infra_red_scope",
@@ -3938,7 +4467,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:infra_red_scanner",
@@ -3966,7 +4496,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:radar",
@@ -3994,7 +4525,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_radar",
@@ -4022,7 +4554,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:radar_system",
@@ -4050,7 +4583,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:enhanced_radar_system",
@@ -4078,7 +4612,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:all_weather_radar",
@@ -4106,7 +4641,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:3d_radar",
@@ -4134,7 +4670,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:radome_unit",
@@ -4162,7 +4699,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:magnetism_detector",
@@ -4190,7 +4728,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_magnetism_detector",
@@ -4218,7 +4757,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:gps_magnetism_detector",
@@ -4246,7 +4786,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_gps_magnetism_detector",
@@ -4274,7 +4815,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:sonic_detector",
@@ -4302,7 +4844,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:large_sonic_detector",
@@ -4330,7 +4873,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:turbo_charger",
@@ -4358,7 +4902,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:after_burner",
@@ -4386,7 +4931,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:thruster",
@@ -4414,7 +4960,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:high_mobility_thruster",
@@ -4442,7 +4989,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:accelerator_equipment",
@@ -4470,7 +5018,8 @@
         "weapon_class": null,
         "heat": 1
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:core_enhance_unit",
@@ -4498,7 +5047,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:ion_projector",
@@ -4526,7 +5076,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:i_field_generator",
@@ -4554,7 +5105,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:self_recovery_unit",
@@ -4582,7 +5134,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:zos_prototype",
@@ -4610,7 +5163,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:zos_enhanced_type",
@@ -4638,7 +5192,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     },
     {
       "id": "armaments:zos_mass_produced",
@@ -4666,7 +5221,8 @@
         "weapon_class": null,
         "heat": null
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "assist_eligible": true
     }
   ],
   "excluded_rows": [

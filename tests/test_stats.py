@@ -206,7 +206,10 @@ class StatsTests(unittest.TestCase):
                 active = calculate_stats(enabled, self.catalog)
                 for stat in ("health", "armor", "speed", "range"):
                     self.assertGreater(active["pilot"][stat], baseline["pilot"][stat])
-                self.assertGreater(active["shields"], baseline["shields"])
+                if color == "White":
+                    self.assertGreater(active["shields"], baseline["shields"])
+                else:
+                    self.assertEqual(active["shields"], baseline["shields"])
                 for slot in (0, 4):
                     self.assertGreater(active["weapons"][slot]["to_hit"], baseline["weapons"][slot]["to_hit"])
                     self.assertGreater(active["weapons"][slot]["damage_bonus"], baseline["weapons"][slot]["damage_bonus"])
@@ -271,7 +274,7 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(len(ids), len(set(ids)))
             for r in table["records"]:
                 self.assertGreater(r["source"]["row"], 1)
-        self.assertEqual(len(catalog.tables["zoids"]["records"]), 157)
+        self.assertEqual(len(catalog.tables["zoids"]["records"]), 135)
         self.assertEqual(len(catalog.tables["organoids"]["records"]), 41)
 
     def test_formula_constants_and_unresolved_dynamic_fields(self):

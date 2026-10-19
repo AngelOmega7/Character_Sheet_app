@@ -21,7 +21,8 @@
         "name": "Phalanx Fire",
         "description": "When attacking an enemy Zoid with a ranged weapon, gain advantage on the attack roll if an ally has dealt damage to that enemy Zoid this round."
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "handling": "player_managed"
     },
     {
       "id": "feats:scrappy",
@@ -35,7 +36,8 @@
         "name": "Scrappy",
         "description": "If there are no ally Zoids within 60m of you, while there are two or more enemy Zoids within 60m of you, gain advantage on all attack rolls you make."
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "handling": "player_managed"
     },
     {
       "id": "feats:mobile",
@@ -49,7 +51,8 @@
         "name": "Mobile",
         "description": "When you use your action to dash, you do not provoke attacks of opportunity for the rest of the round."
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "handling": "player_managed"
     },
     {
       "id": "feats:overtuned",
@@ -63,7 +66,8 @@
         "name": "Overtuned",
         "description": "Your non-weapon Zoid Equipment lasts for twice the number of rounds."
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "handling": "player_managed"
     },
     {
       "id": "feats:pit_stop",
@@ -77,7 +81,8 @@
         "name": "Pit Stop",
         "description": "It only takes you half as many rounds to complete a CAS swap during combat."
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "handling": "player_managed"
     },
     {
       "id": "feats:deadshot",
@@ -91,7 +96,8 @@
         "name": "Deadshot",
         "description": "You may forgo your movement on your turn to fire all ranged weapons at your maximum range without penalty."
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "handling": "player_managed"
     },
     {
       "id": "feats:demolitionist",
@@ -105,7 +111,8 @@
         "name": "Demolitionist",
         "description": "When you vent heat, you vent the heat of every weapon, rather than a single weapon."
       },
-      "dynamic_fields": {}
+      "dynamic_fields": {},
+      "handling": "player_managed"
     },
     {
       "id": "feats:none",

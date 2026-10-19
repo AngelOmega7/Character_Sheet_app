@@ -20,15 +20,15 @@ The owner clarified that heat ratings are safe-use capacities. A Heat 3 weapon c
 
 `repair_weapon()` requires current and maximum health. Before spending gold on an affordable broken-weapon repair, it raises `RepairConfirmationRequired` when health is below 75%. The exception carries the weapon price, remaining gold, full health-repair price, and a display message. No resource state changes at this stage.
 
-The future Flet UI must display **Cancel** and **Repair anyway**, default dismissal to cancellation, and retry with `confirmed=True` only after explicit acceptance for this action. Confirmation must not be saved as a preference. If health, gold, or weapon state changes while the dialog is open, refresh the quote and request confirmation again. Insufficient gold still prevents a confirmed repair. Intact weapons incur no charge and do not need confirmation. This gate is implemented in the rules; the visual dialog awaits the UI implementation.
+The Flet UI now displays **Cancel** and **Repair anyway**, with dismissal leaving the action unapplied. It retries with `confirmed=True` only for that accepted action. Confirmation is never saved as a preference. If the pilot, form, resources, weapon, or other character state changed while the quote was open, acceptance is rejected and the user must click Repair again for a fresh quote. Insufficient gold still prevents a confirmed repair. Intact weapons incur no charge and are not cooled as a repair shortcut.
 
 Example: at 50/100 health with 10,100g, warn that weapon repair costs 10,000g, leaves 100g, and restoring health costs 500g. Explicitly state that remaining gold will not cover full health repair.
 
-Implemented in `zoids_app/combat.py`: weapon use, vent, rest, health repair calculations, and paid single-weapon repairs. The UI and persistence integration are pending. The health repair helper supports an explicit point amount and rejects unaffordable requests atomically. Partial repairs and integer-only resource inputs are provisional interface/data choices, not additional owner-confirmed game rules.
+Implemented in `zoids_app/combat.py`: weapon use, vent, rest, health repair calculations, and paid single-weapon repairs. `combat_controller.py` integrates atomic actions with owned chassis and equipment-copy state, and rolls one d20 after a successful Use is accepted. Current schema v7 retains heat, broken status, and the most recent raw die result by shared fixed-weapon identity or removable-copy ID, alongside new pilot tracking fields. Heat capacity stays derived from the current form and active abilities, rather than saved as a stale total. The health repair helper supports an explicit point amount and rejects unaffordable requests atomically.
 
 `repair_weapon()` checks the supplied Pilot gold balance, deducts 10,000g, and returns the repaired weapon with zero heat and its broken status cleared. Insufficient funds reject the action without modifying state. Intact weapons are left unchanged without charge. `restore_repaired_weapon()` is the underlying state transition, not the purchase entry point.
 
-Remaining repair decision: whether the Repair UI selects health/weapons individually or repairs everything together. A combined repair transaction must calculate its complete cost before modifying gold or resources.
+The current UI repairs health and individual broken weapons separately. Health points may be specified, or left blank for full repair. Combined repair-all is not implemented.
 
 ## Required: heat and resource actions
 
@@ -69,11 +69,11 @@ Fixed-weapon heat labels read Zoid_DB columns 85–88. Removable equipment reads
 - The attack formulas also use these checkboxes to enable volatile d20 rolls. Script clearing of non-heat attack checkboxes may clear their displayed rolls. App roll outcomes should be retained independently of checkbox state.
 - No event wiring is present in the GIF script itself. Whether it was run manually or by an installed trigger does not affect combat rules.
 
-### Combat UI interaction still to confirm
+### Current combat UI interaction
 
 Heat capacity and overheating behavior are now confirmed above. The original script remains documented here as the source baseline, not the full app rule set.
 
-Proposed interaction: a Roll/Use button rolls once and adds one heat counter for eligible equipment; Vent subtracts one; Rest clears heat. Repair restores health at 10g per point and repairs broken weapons at 10,000g each. Confirm whether heat should instead be tracked with a separate Use control, particularly for non-attacking equipment.
+Owner-confirmed interaction: **Use** rolls one d20 and records one use/heat where applicable, including unrated and utility equipment. The unmodified result appears in a **Last d20** box inside that weapon card; it is not an automatic hit. The final overheating use rolls, then breaks the weapon; subsequent rejected uses never roll. Attack previews remain read-only with range/health context. Vent subtracts one heat. **Rest active loadout** clears current-slot heat only. Repair restores health at 10g per point or repairs one broken weapon at 10,000g. Vent, Rest, repair, previews, and save/reload preserve the last roll without rerolling; the next successful Use replaces it.
 
 ### Required verification cases
 

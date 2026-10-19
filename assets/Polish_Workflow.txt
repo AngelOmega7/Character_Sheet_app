@@ -1,0 +1,72 @@
+We have a few more steps we need to complete before we're finished. I'll list them here in the order they need to be accomplished.
+
+
+
+1. UI Polish
+
+We need separate cards into a couple different pages. The Pilot, Organoid and Owned-Zoid hangar can all go on the first page called "Overview". Lets add a tracked for the currently equipped Zoid's required level to Owned-Zoid Hangar's card.
+
+Combat resources and the 8 cards for the Fixed and Removable Weapon slots can go on a page called "Combat". Also, lets make the weapon and equipment cards on the combat page only show up if there is equipment in that slot. Otherwise, the card can be hidden to streamline the UI. We can also hide the dice rolls on equipment that doesn't have a numerical damage value. For example, the Liger Zero's Ion Boosters do not have a damage value, as they are equipment, not weapons, and do not need the dice roller included. Additionally, we don't need the "Activated" checkbox on weapons that retain their dice roll function. Let's move the tracker for Pilot gold from the Combat Resources card to the Pilot notes - tracking card.
+
+On a new page, called "Upgrades" we'll have the cards for Chassis & weapon upgrades, Pilot equipment inventory, and Removable equipment.
+
+We'll put the cards for Abilities, Pilot feats - player managed, and Pilot notes - tracking on a page called "Pilot"
+
+We'll move the Transport Card to its own page, called "Transport".
+
+The Calculated Stats card should be displayed on every page except the Transport page.
+
+I also want to add a warning when closing the app or switching between saved characters that asks if you want to save the current character.
+
+2. Transport Rules
+
+The first change is that the Dragon Nest Zoid was supposed to be included with the transport Zoids that were pulled out from the main Zoid list earlier. Lets make that correction, and update its name to "Dragoon Nest".
+
+For the Transport page, I want to have a dropdown where the transport type can be selected of the following options: None, Gustav, Hover Cargo, Dragoon Nest and Whale King. This page needs to list the selected Transport Zoid's Health, Armor, Defense, Speed, Reaction, Range and Shield in a card. It also needs to list this Zoid's Hangar Capacity and Hangar Size. I'll write out here the appropriate values in the following format: Name/Hangar Capacity/Hangar Size.
+
+	Gustav/2/Medium
+	Hover/6/Large
+	Dragoon Nest/12/Large Large
+	Whale King/24/Extra Large
+
+What I want the Transport page to do is to track all Zoids a Pilot owns, whether they are currently equipped or not. It should keep all owned Zoids listed in one card. In another card, I want it to track how many are loaded into the transport Zoid. Only Zoids who size are equal to or less than the Transport's Hangar Size can be loaded, and only a number of Zoids up to the Transport's Hangar Capacity may be loaded.
+
+There should be one more card called Transport Notes: with a text box that is empty by default to keep notes in.
+
+3. Purchasing Rules
+
+I am including two files in C:\Zoids\Zoids TTRPG\Repo\zoids-character-app\assets named zoid_cost.csv and armament_cost.csv. These provide the monetary value of the Zoids and Weapons and Equipment that will be needed for our purchasing rules. zoid_cost.csv also includes columns for Zoid Core and Parts.
+
+First, the starting gold of a pilot at character creation should be set to 10,000g. The pilot can then purchase their first starting Zoid with that money. They should be asked to purchase a starting Zoid from a list of Zoids whose cost is less than or equal to 10,000g. This should then become their first owned Zoid.
+
+When a pilot attempts to add a new Zoid to their list of Owned Zoids, the app should first check their current gold, and compare it to the cost for that Zoid pulled from zoid_cost.csv. If their current gold is greater than or equal to the cost, it should then check whether the general inventory tracker contains the Zoid Core from zoid_cost.csv and the Parts from zoid_cost.csv, if applicable. Next, it should check the Base Zoid column and see if they character currently owns a Zoid of the same name. Lastly, it should check the Zi Database tracker and see if the Zoid's name is in there. If all of those checks pass, then it should ask for confirmation. If the player answers yes, it should subtract the cost from Pilot gold and remove 1 of each Zoid Core and Parts required by the Zoid from the General inventory tracker. It should also remove 1 Base Zoid from the owned Zoids list.
+	If the checks don't pass, ask for a GM Override confirmation before adding the Zoid to the list of Owned Zoids.
+
+We also need to set the rules for purchasing upgrades. Lets first change the upgrade text entry fields of the upgrades to a counter that can tick up and down from 0 to 5. Next, we'll set the cost of each upgrade to be the base upgrade cost multiplied by the number of upgrades. For chassis upgrades, the base cost is 5,000g. For weapons upgrades, the base cost is 10,000g. For example, the first upgrade to a weapon's damage costs 10,000g. The second upgrade costs 20,000g, and the third costs 30,000g, etc.
+
+4. Additional Changes
+
+Anywhere that the word "Lion" is used, I want to replace it with "Liger". This includes Zoid Types and abilities. The only exception to this is the name of the Zoid "Saberlion", though I still want its type changed to "Liger".
+
+The Pulse Laser Cannon of the Lightning Saix and Lightning Saix BS needs to be changed from a unique removable weapon to a fixed weapon in Slot 2, and made upgradeable.
+
+The Laser Vulcan Gun of the Shadow Fox needs to be changed to a fixed and upgradeable weapon in slot 3.
+
+The Long Range Rifle of the Command Wolf IS needs to be changed into a fixed weapon in slot 3.
+
+Remove the limit on having only 1 of each Zoid type.
+
+5. Pilot Style and Organoid Color Additions
+
+I want to add a Pilot Style called "NPC" that adds no bonuses to any stats. This is for use with unimportant characters that aren't supposed to be as powerful as regular characters.
+
+I also want to add an Organoid Color called "None" that disables the Organoid from being activated. This should be the default option at character creation.
+
+6. CAU Expansion
+I want to package some of the Zoids that are currently listed as normal Zoids into CAU forms. I've provide a list of changes in C:\Zoids\Zoids TTRPG\Repo\zoids-character-app\assets in a file called CAU_expand.txt
+
+A zoid with a CAU form cannot be used as the Base Zoid for adding a new Zoid to the Owned Zoids list, though some CAUs can be the base for upgraded CAUs. CAU's can be permanently detached from a Zoid and refund half of their purchase cost and any parts used to build them.
+
+7. App Packaging
+
+Once all of the above steps are completed and any errors resolved, then we can move on to Packaging the app.

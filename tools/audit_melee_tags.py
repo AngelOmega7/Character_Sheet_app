@@ -11,7 +11,7 @@ def audit():
     tags = defaultdict(list)
     records = []
     for dataset, pairs in (("zoids", ((13, 16), (19, 22), (30, 33), (41, 44), (47, 50), (54, 58))), ("armaments", ((1, 3),))):
-        table = json.loads((ROOT / f"zoids_app/data/{dataset}.json").read_text())
+        table = json.loads((ROOT / f"zoids_app/data/{dataset}.json").read_text(encoding="utf-8"))
         for record in table["records"]:
             for name_column, tag_column in pairs:
                 raw = record["fields"][table["columns"][tag_column - 1]]
@@ -26,12 +26,12 @@ def audit():
                 for tag in {t.strip() for t in raw.split(",")}:
                     tags[tag].append(entry)
     output = ROOT / "docs/generated"
-    (output / "melee-tags.json").write_text(json.dumps({"weapon_entries": len(records), "literal_tags": dict(sorted(tags.items())), "weapons": records}, indent=2) + "\n")
+    (output / "melee-tags.json").write_text(json.dumps({"weapon_entries": len(records), "literal_tags": dict(sorted(tags.items())), "weapons": records}, indent=2) + "\n", encoding="utf-8", newline="\n")
     lines = ["# Melee weapon tag inventory", "", f"{len(records)} explicitly melee-tagged weapon entries (shared weapons on different Zoids count separately).", "", "Current tags after owner-approved conversion. Original spellings are retained in catalog correction metadata and the source inventory. Untagged weapons are not inferred to be melee.", "", "| Tag | Entries | Example |", "|---|---:|---|"]
     for tag, entries in sorted(tags.items()):
         e = entries[0]
         lines.append(f"| {tag} | {len(entries)} | {e['zoid_or_item']} — {e['weapon']} |")
-    (output / "melee-tags.md").write_text("\n".join(lines) + "\n")
+    (output / "melee-tags.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
     print("\n".join(lines))
 
 

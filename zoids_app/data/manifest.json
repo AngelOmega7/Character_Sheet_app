@@ -1,61 +1,76 @@
 {
   "schema_version": 1,
-  "data_version": "weapon-tags-v7",
+  "data_version": "laser-and-types-v11",
   "source_sha256": "b132ebf2b1513c1e315753ea667f6362bc71bbc6d04d0b21ec69b6d4a15d59bf",
   "datasets": {
-    "zoids": {
-      "records": 157,
-      "selectable": 157,
-      "excluded_empty_rows": 5,
+    "transports": {
+      "records": 3,
+      "selectable": 3,
+      "excluded_empty_rows": 0,
       "excluded_retired_rows": 0
+    },
+    "zoids": {
+      "records": 135,
+      "selectable": 135,
+      "excluded_empty_rows": 5,
+      "excluded_retired_rows": 19,
+      "moved_rows": 3
     },
     "armaments": {
       "records": 157,
       "selectable": 150,
       "excluded_empty_rows": 1,
-      "excluded_retired_rows": 0
+      "excluded_retired_rows": 0,
+      "moved_rows": 0
     },
     "abilities": {
-      "records": 166,
-      "selectable": 165,
+      "records": 161,
+      "selectable": 160,
       "excluded_empty_rows": 1,
-      "excluded_retired_rows": 16
+      "excluded_retired_rows": 21,
+      "moved_rows": 0
     },
     "feats": {
       "records": 8,
       "selectable": 7,
       "excluded_empty_rows": 0,
-      "excluded_retired_rows": 0
+      "excluded_retired_rows": 0,
+      "moved_rows": 0
     },
     "tank": {
       "records": 100,
       "selectable": 100,
       "excluded_empty_rows": 0,
-      "excluded_retired_rows": 0
+      "excluded_retired_rows": 0,
+      "moved_rows": 0
     },
     "fighter": {
       "records": 100,
       "selectable": 100,
       "excluded_empty_rows": 0,
-      "excluded_retired_rows": 0
+      "excluded_retired_rows": 0,
+      "moved_rows": 0
     },
     "scout": {
       "records": 100,
       "selectable": 100,
       "excluded_empty_rows": 0,
-      "excluded_retired_rows": 0
+      "excluded_retired_rows": 0,
+      "moved_rows": 0
     },
     "almighty": {
       "records": 100,
       "selectable": 100,
       "excluded_empty_rows": 0,
-      "excluded_retired_rows": 0
+      "excluded_retired_rows": 0,
+      "moved_rows": 0
     },
     "organoids": {
       "records": 41,
       "selectable": 41,
       "excluded_empty_rows": 0,
-      "excluded_retired_rows": 0
+      "excluded_retired_rows": 0,
+      "moved_rows": 0
     }
   },
   "review_items": [
