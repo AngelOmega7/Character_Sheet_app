@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "name",
+    "description"
+  ],
+  "source_headers": [
+    "Column 1",
+    "Column 2"
+  ],
+  "records": [
+    {
+      "id": "feats:phalanx_fire",
+      "name": "Phalanx Fire",
+      "kind": "record",
+      "source": {
+        "sheet": "Feats",
+        "row": 2
+      },
+      "fields": {
+        "name": "Phalanx Fire",
+        "description": "When attacking an enemy Zoid with a ranged weapon, gain advantage on the attack roll if an ally has dealt damage to that enemy Zoid this round."
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "feats:scrappy",
+      "name": "Scrappy",
+      "kind": "record",
+      "source": {
+        "sheet": "Feats",
+        "row": 3
+      },
+      "fields": {
+        "name": "Scrappy",
+        "description": "If there are no ally Zoids within 60m of you, while there are two or more enemy Zoids within 60m of you, gain advantage on all attack rolls you make."
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "feats:mobile",
+      "name": "Mobile",
+      "kind": "record",
+      "source": {
+        "sheet": "Feats",
+        "row": 4
+      },
+      "fields": {
+        "name": "Mobile",
+        "description": "When you use your action to dash, you do not provoke attacks of opportunity for the rest of the round."
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "feats:overtuned",
+      "name": "Overtuned",
+      "kind": "record",
+      "source": {
+        "sheet": "Feats",
+        "row": 5
+      },
+      "fields": {
+        "name": "Overtuned",
+        "description": "Your non-weapon Zoid Equipment lasts for twice the number of rounds."
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "feats:pit_stop",
+      "name": "Pit Stop",
+      "kind": "record",
+      "source": {
+        "sheet": "Feats",
+        "row": 6
+      },
+      "fields": {
+        "name": "Pit Stop",
+        "description": "It only takes you half as many rounds to complete a CAS swap during combat."
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "feats:deadshot",
+      "name": "Deadshot",
+      "kind": "record",
+      "source": {
+        "sheet": "Feats",
+        "row": 7
+      },
+      "fields": {
+        "name": "Deadshot",
+        "description": "You may forgo your movement on your turn to fire all ranged weapons at your maximum range without penalty."
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "feats:demolitionist",
+      "name": "Demolitionist",
+      "kind": "record",
+      "source": {
+        "sheet": "Feats",
+        "row": 8
+      },
+      "fields": {
+        "name": "Demolitionist",
+        "description": "When you vent heat, you vent the heat of every weapon, rather than a single weapon."
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "feats:none",
+      "name": "- - - - - -",
+      "kind": "placeholder",
+      "source": {
+        "sheet": "Feats",
+        "row": 9
+      },
+      "fields": {
+        "name": "- - - - - -",
+        "description": "- - - - - -"
+      },
+      "dynamic_fields": {}
+    }
+  ],
+  "excluded_rows": []
+}

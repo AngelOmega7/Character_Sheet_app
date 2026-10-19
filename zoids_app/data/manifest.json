@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "data_version": "weapon-tags-v7",
+  "source_sha256": "b132ebf2b1513c1e315753ea667f6362bc71bbc6d04d0b21ec69b6d4a15d59bf",
+  "datasets": {
+    "zoids": {
+      "records": 157,
+      "selectable": 157,
+      "excluded_empty_rows": 5,
+      "excluded_retired_rows": 0
+    },
+    "armaments": {
+      "records": 157,
+      "selectable": 150,
+      "excluded_empty_rows": 1,
+      "excluded_retired_rows": 0
+    },
+    "abilities": {
+      "records": 166,
+      "selectable": 165,
+      "excluded_empty_rows": 1,
+      "excluded_retired_rows": 16
+    },
+    "feats": {
+      "records": 8,
+      "selectable": 7,
+      "excluded_empty_rows": 0,
+      "excluded_retired_rows": 0
+    },
+    "tank": {
+      "records": 100,
+      "selectable": 100,
+      "excluded_empty_rows": 0,
+      "excluded_retired_rows": 0
+    },
+    "fighter": {
+      "records": 100,
+      "selectable": 100,
+      "excluded_empty_rows": 0,
+      "excluded_retired_rows": 0
+    },
+    "scout": {
+      "records": 100,
+      "selectable": 100,
+      "excluded_empty_rows": 0,
+      "excluded_retired_rows": 0
+    },
+    "almighty": {
+      "records": 100,
+      "selectable": 100,
+      "excluded_empty_rows": 0,
+      "excluded_retired_rows": 0
+    },
+    "organoids": {
+      "records": 41,
+      "selectable": 41,
+      "excluded_empty_rows": 0,
+      "excluded_retired_rows": 0
+    }
+  },
+  "review_items": [
+    {
+      "dataset": "armaments",
+      "id": "armaments:none",
+      "kind": "placeholder"
+    },
+    {
+      "dataset": "armaments",
+      "id": "armaments:zoid_equipment_slot_1",
+      "kind": "dynamic"
+    },
+    {
+      "dataset": "armaments",
+      "id": "armaments:zoid_equipment_slot_2",
+      "kind": "dynamic"
+    },
+    {
+      "dataset": "armaments",
+      "id": "armaments:zoid_equipment_slot_3",
+      "kind": "dynamic"
+    },
+    {
+      "dataset": "armaments",
+      "id": "armaments:zoid_equipment_slot_4",
+      "kind": "dynamic"
+    },
+    {
+      "dataset": "armaments",
+      "id": "armaments:weapons",
+      "kind": "heading"
+    },
+    {
+      "dataset": "armaments",
+      "id": "armaments:assist",
+      "kind": "heading"
+    },
+    {
+      "dataset": "abilities",
+      "id": "abilities:none",
+      "kind": "placeholder"
+    },
+    {
+      "dataset": "feats",
+      "id": "feats:none",
+      "kind": "placeholder"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "dataset": "zoids",
+    "id": "zoids:zaber_fang_old",
+    "source": "Zoid List!AW2",
+    "field": "damage_5_49",
+    "original": "12D10",
+    "converted": 120
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:zaber_fang",
+    "source": "Zoid List!AW3",
+    "field": "damage_5_49",
+    "original": "12D10 ",
+    "converted": 120
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:zaber_fang_rs",
+    "source": "Zoid List!AW4",
+    "field": "damage_5_49",
+    "original": "12D10",
+    "converted": 120
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:proto_zaber",
+    "source": "Zoid List!AE8",
+    "field": "effect_4_31",
+    "original": "Shoulder mounted machine gun. Targets up to two Zoids. Two bursts that deals 5D8 piercing. ",
+    "converted": "Shoulder mounted machine gun. Targets up to two Zoids. Two bursts that deals 40 piercing. "
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:proto_zaber",
+    "source": "Zoid List!AW8",
+    "field": "damage_5_49",
+    "original": "20D10",
+    "converted": 200
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:atak_kat",
+    "source": "Zoid List!N11",
+    "field": "effect_2_14",
+    "original": "Chest mounted energy gun. Can target up to two Zoids. Shoots two energy bolts dealing 3D6 energy",
+    "converted": "Chest mounted energy gun. Can target up to two Zoids. Shoots two energy bolts dealing 18 energy"
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:shadow_fox",
+    "source": "Zoid List!AW37",
+    "field": "damage_5_49",
+    "original": "Shoots three bursts of 3D10 ",
+    "converted": 30
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:gravity_bison",
+    "source": "Zoid List!N47",
+    "field": "effect_2_14",
+    "original": "Forward facing missile pods. Targets up to two opponents. Two missiles each dealing 5D10 explosive ",
+    "converted": "Forward facing missile pods. Targets up to two opponents. Two missiles each dealing 50 explosive "
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:elephander",
+    "source": "Zoid List!N51",
+    "field": "effect_2_14",
+    "original": "Head mounted energy gun. Targets up to two opponents. Shoots two beams that each deal 5D8 energy",
+    "converted": "Head mounted energy gun. Targets up to two opponents. Shoots two beams that each deal 40 energy"
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:elephander_ag",
+    "source": "Zoid List!N52",
+    "field": "effect_2_14",
+    "original": "Head mounted energy gun. Targets up to two opponents. Shoots two beams that each deal 5D8 energy",
+    "converted": "Head mounted energy gun. Targets up to two opponents. Shoots two beams that each deal 40 energy"
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:elephander_ag",
+    "source": "Zoid List!AE52",
+    "field": "effect_4_31",
+    "original": "Back mounted energy gatling. Targets up to three opponents. Shoots three bursts of 5D10 energy. ",
+    "converted": "Back mounted energy gatling. Targets up to three opponents. Shoots three bursts of 50 energy. "
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:geno_trooper",
+    "source": "Zoid List!AE58",
+    "field": "effect_4_31",
+    "original": "Back mounted laser cannons. Targets up to two opponents. Fires two beams of 6D10 energy ",
+    "converted": "Back mounted laser cannons. Targets up to two opponents. Fires two beams of 60 energy "
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:berserk_fury_z_cau",
+    "source": "Zoid List!N63",
+    "field": "effect_2_14",
+    "original": "Back mounted missile pod. Targets up to four Zoids. Shoots four clusters of missiles dealing 6D10 explosive",
+    "converted": "Back mounted missile pod. Targets up to four Zoids. Shoots four clusters of missiles dealing 60 explosive"
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:dark_spiner",
+    "source": "Zoid List!N66",
+    "field": "effect_2_14",
+    "original": "Back mounted machine gun. Targets up to two opponents. Shoots two bursts of 6D12 piercing. ",
+    "converted": "Back mounted machine gun. Targets up to two opponents. Shoots two bursts of 72 piercing. "
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:gun_sniper",
+    "source": "Zoid List!N68",
+    "field": "effect_2_14",
+    "original": "Hand mounted energy guns. Targets up to two opponents. Shoots two burts of 2D10 energy.",
+    "converted": "Hand mounted energy guns. Targets up to two opponents. Shoots two burts of 20 energy."
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:gun_sniper_weasel",
+    "source": "Zoid List!N69",
+    "field": "effect_2_14",
+    "original": "Left arm mounted energy gun. Targets up to two opponents. Shoots two bursts of 9D10 energy",
+    "converted": "Left arm mounted energy gun. Targets up to two opponents. Shoots two bursts of 90 energy"
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:gun_sniper_ns",
+    "source": "Zoid List!N71",
+    "field": "effect_2_14",
+    "original": "Wrist mounted energy guns. Targets up to two opponents. Shoots two energy beams that deal 4D10 energy ",
+    "converted": "Wrist mounted energy guns. Targets up to two opponents. Shoots two energy beams that deal 40 energy "
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:ultra_phalanx",
+    "source": "Zoid List!AE80",
+    "field": "effect_4_31",
+    "original": "Chest mounted mortar. Targets up to two opponents.  Shoots two mortar rounds dealing 9D10 explosive. ",
+    "converted": "Chest mounted mortar. Targets up to two opponents.  Shoots two mortar rounds dealing 90 explosive. "
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:ultra_phalanx",
+    "source": "Zoid List!AF80",
+    "field": "damage_3_32",
+    "original": "18D10 explosive",
+    "converted": 180
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:ultra_phalanx",
+    "source": "Zoid List!AQ80",
+    "field": "damage_4_43",
+    "original": "30D10 piercing",
+    "converted": 300
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:fuzor_dragon",
+    "source": "Zoid List!N117",
+    "field": "effect_2_14",
+    "original": "Hand mounted guns. Targets up to two Zoids. Shoots two bursts of 6D10 piercing",
+    "converted": "Hand mounted guns. Targets up to two Zoids. Shoots two bursts of 60 piercing"
+  },
+  {
+    "dataset": "zoids",
+    "id": "zoids:pteramander",
+    "source": "Zoid List!N154",
+    "field": "effect_2_14",
+    "original": "Wing tip mounted energy guns. Can target up to two Zoids. Shoots two bursts of 10D10 energy",
+    "converted": "Wing tip mounted energy guns. Can target up to two Zoids. Shoots two bursts of 100 energy"
+  },
+  {
+    "dataset": "armaments",
+    "id": "armaments:external_charge_particle_cannon",
+    "source": "Armaments!D14",
+    "field": "effect",
+    "original": "can target up to four opponents. Each shot deals 5D10 damage. ",
+    "converted": "can target up to four opponents. Each shot deals 50 damage. "
+  },
+  {
+    "dataset": "armaments",
+    "id": "armaments:ray_storm",
+    "source": "Armaments!D33",
+    "field": "effect",
+    "original": "Large energy cannon.  Fires four energy bolts. Targets up to two opponents. Each shot does 3D12. ",
+    "converted": "Large energy cannon.  Fires four energy bolts. Targets up to two opponents. Each shot does 36. "
+  }
+]

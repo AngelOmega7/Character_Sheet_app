@@ -1,0 +1,61 @@
+{
+  "source": "Original workbook cached results, not Python-generated expectations",
+  "build": {
+    "zoid": "Saberlion",
+    "pilot_style": "FIGHTER",
+    "pilot_level": 1,
+    "mental": 3,
+    "abilities": [
+      "Lion Type 1"
+    ]
+  },
+  "upgrades": {
+    "damage": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "upgrade_provenance": "Zoid Upgrades!E12 contains +20 damage (one +20 point); other snapshot upgrade cells are empty.",
+  "expected": {
+    "base": {
+      "health": 90.0,
+      "armor": 18.0,
+      "defense": 8.0,
+      "speed": 255.0,
+      "reaction": 18.0,
+      "range": 500.0
+    },
+    "pilot": {
+      "health": 144.0,
+      "armor": 21.0,
+      "defense": 8.0,
+      "speed": 255.0,
+      "reaction": 24.0,
+      "range": 625.0
+    },
+    "current": {
+      "armor": 21.0,
+      "defense": 8.0,
+      "speed": 255.0,
+      "reaction": 24.0,
+      "range": 625.0
+    },
+    "bonus_levels": 5.0,
+    "carry_capacity": 20.0,
+    "carry_load": 0.0,
+    "standard_weapon_range": 312.5,
+    "shields": 0.0,
+    "weapon_to_hit": [
+      21,
+      16,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

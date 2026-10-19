@@ -1,0 +1,1822 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "level",
+    "health",
+    "armor",
+    "react",
+    "perception",
+    "to_hit"
+  ],
+  "source_headers": [
+    "Level",
+    "Health",
+    "Armor",
+    "React",
+    "Perception",
+    "To Hit"
+  ],
+  "records": [
+    {
+      "id": "scout:1",
+      "name": "1",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 208
+      },
+      "fields": {
+        "level": 1,
+        "health": 0.5,
+        "armor": 0.1,
+        "react": 0.1,
+        "perception": 0.1,
+        "to_hit": 0.1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:2",
+      "name": "2",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 209
+      },
+      "fields": {
+        "level": 2,
+        "health": 0.51,
+        "armor": 0.13,
+        "react": 0.13,
+        "perception": 0.12,
+        "to_hit": 0.11
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:3",
+      "name": "3",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 210
+      },
+      "fields": {
+        "level": 3,
+        "health": 0.52,
+        "armor": 0.16,
+        "react": 0.16,
+        "perception": 0.14,
+        "to_hit": 0.12
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:4",
+      "name": "4",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 211
+      },
+      "fields": {
+        "level": 4,
+        "health": 0.53,
+        "armor": 0.19,
+        "react": 0.19,
+        "perception": 0.16,
+        "to_hit": 0.13
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:5",
+      "name": "5",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 212
+      },
+      "fields": {
+        "level": 5,
+        "health": 0.54,
+        "armor": 0.22,
+        "react": 0.22,
+        "perception": 0.18,
+        "to_hit": 0.14
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:6",
+      "name": "6",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 213
+      },
+      "fields": {
+        "level": 6,
+        "health": 0.55,
+        "armor": 0.25,
+        "react": 0.25,
+        "perception": 0.2,
+        "to_hit": 0.15
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:7",
+      "name": "7",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 214
+      },
+      "fields": {
+        "level": 7,
+        "health": 0.56,
+        "armor": 0.28,
+        "react": 0.28,
+        "perception": 0.22,
+        "to_hit": 0.16
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:8",
+      "name": "8",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 215
+      },
+      "fields": {
+        "level": 8,
+        "health": 0.57,
+        "armor": 0.31,
+        "react": 0.31,
+        "perception": 0.24,
+        "to_hit": 0.17
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:9",
+      "name": "9",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 216
+      },
+      "fields": {
+        "level": 9,
+        "health": 0.58,
+        "armor": 0.34,
+        "react": 0.34,
+        "perception": 0.26,
+        "to_hit": 0.18
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:10",
+      "name": "10",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 217
+      },
+      "fields": {
+        "level": 10,
+        "health": 0.59,
+        "armor": 0.37,
+        "react": 0.37,
+        "perception": 0.28,
+        "to_hit": 0.19
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:11",
+      "name": "11",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 218
+      },
+      "fields": {
+        "level": 11,
+        "health": 0.6,
+        "armor": 0.4,
+        "react": 0.4,
+        "perception": 0.3,
+        "to_hit": 0.2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:12",
+      "name": "12",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 219
+      },
+      "fields": {
+        "level": 12,
+        "health": 0.61,
+        "armor": 0.43,
+        "react": 0.43,
+        "perception": 0.32,
+        "to_hit": 0.21
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:13",
+      "name": "13",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 220
+      },
+      "fields": {
+        "level": 13,
+        "health": 0.62,
+        "armor": 0.47,
+        "react": 0.47,
+        "perception": 0.34,
+        "to_hit": 0.22
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:14",
+      "name": "14",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 221
+      },
+      "fields": {
+        "level": 14,
+        "health": 0.63,
+        "armor": 0.5,
+        "react": 0.5,
+        "perception": 0.36,
+        "to_hit": 0.23
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:15",
+      "name": "15",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 222
+      },
+      "fields": {
+        "level": 15,
+        "health": 0.64,
+        "armor": 0.53,
+        "react": 0.53,
+        "perception": 0.38,
+        "to_hit": 0.24
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:16",
+      "name": "16",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 223
+      },
+      "fields": {
+        "level": 16,
+        "health": 0.65,
+        "armor": 0.56,
+        "react": 0.56,
+        "perception": 0.4,
+        "to_hit": 0.25
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:17",
+      "name": "17",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 224
+      },
+      "fields": {
+        "level": 17,
+        "health": 0.66,
+        "armor": 0.59,
+        "react": 0.59,
+        "perception": 0.42,
+        "to_hit": 0.26
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:18",
+      "name": "18",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 225
+      },
+      "fields": {
+        "level": 18,
+        "health": 0.66,
+        "armor": 0.62,
+        "react": 0.62,
+        "perception": 0.44,
+        "to_hit": 0.27
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:19",
+      "name": "19",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 226
+      },
+      "fields": {
+        "level": 19,
+        "health": 0.67,
+        "armor": 0.65,
+        "react": 0.65,
+        "perception": 0.46,
+        "to_hit": 0.28
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:20",
+      "name": "20",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 227
+      },
+      "fields": {
+        "level": 20,
+        "health": 0.68,
+        "armor": 0.68,
+        "react": 0.68,
+        "perception": 0.48,
+        "to_hit": 0.29
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:21",
+      "name": "21",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 228
+      },
+      "fields": {
+        "level": 21,
+        "health": 0.69,
+        "armor": 0.71,
+        "react": 0.71,
+        "perception": 0.5,
+        "to_hit": 0.3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:22",
+      "name": "22",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 229
+      },
+      "fields": {
+        "level": 22,
+        "health": 0.7,
+        "armor": 0.74,
+        "react": 0.74,
+        "perception": 0.52,
+        "to_hit": 0.31
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:23",
+      "name": "23",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 230
+      },
+      "fields": {
+        "level": 23,
+        "health": 0.71,
+        "armor": 0.77,
+        "react": 0.77,
+        "perception": 0.54,
+        "to_hit": 0.32
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:24",
+      "name": "24",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 231
+      },
+      "fields": {
+        "level": 24,
+        "health": 0.72,
+        "armor": 0.8,
+        "react": 0.8,
+        "perception": 0.56,
+        "to_hit": 0.33
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:25",
+      "name": "25",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 232
+      },
+      "fields": {
+        "level": 25,
+        "health": 0.73,
+        "armor": 0.83,
+        "react": 0.83,
+        "perception": 0.58,
+        "to_hit": 0.34
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:26",
+      "name": "26",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 233
+      },
+      "fields": {
+        "level": 26,
+        "health": 0.74,
+        "armor": 0.86,
+        "react": 0.86,
+        "perception": 0.6,
+        "to_hit": 0.35
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:27",
+      "name": "27",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 234
+      },
+      "fields": {
+        "level": 27,
+        "health": 0.75,
+        "armor": 0.89,
+        "react": 0.89,
+        "perception": 0.62,
+        "to_hit": 0.36
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:28",
+      "name": "28",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 235
+      },
+      "fields": {
+        "level": 28,
+        "health": 0.76,
+        "armor": 0.92,
+        "react": 0.92,
+        "perception": 0.64,
+        "to_hit": 0.37
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:29",
+      "name": "29",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 236
+      },
+      "fields": {
+        "level": 29,
+        "health": 0.77,
+        "armor": 0.95,
+        "react": 0.95,
+        "perception": 0.66,
+        "to_hit": 0.38
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:30",
+      "name": "30",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 237
+      },
+      "fields": {
+        "level": 30,
+        "health": 0.78,
+        "armor": 0.98,
+        "react": 0.98,
+        "perception": 0.68,
+        "to_hit": 0.39
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:31",
+      "name": "31",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 238
+      },
+      "fields": {
+        "level": 31,
+        "health": 0.79,
+        "armor": 1.01,
+        "react": 1.01,
+        "perception": 0.7,
+        "to_hit": 0.4
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:32",
+      "name": "32",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 239
+      },
+      "fields": {
+        "level": 32,
+        "health": 0.8,
+        "armor": 1.04,
+        "react": 1.04,
+        "perception": 0.72,
+        "to_hit": 0.41
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:33",
+      "name": "33",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 240
+      },
+      "fields": {
+        "level": 33,
+        "health": 0.81,
+        "armor": 1.07,
+        "react": 1.07,
+        "perception": 0.74,
+        "to_hit": 0.42
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:34",
+      "name": "34",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 241
+      },
+      "fields": {
+        "level": 34,
+        "health": 0.82,
+        "armor": 1.1,
+        "react": 1.1,
+        "perception": 0.76,
+        "to_hit": 0.43
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:35",
+      "name": "35",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 242
+      },
+      "fields": {
+        "level": 35,
+        "health": 0.83,
+        "armor": 1.13,
+        "react": 1.13,
+        "perception": 0.78,
+        "to_hit": 0.44
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:36",
+      "name": "36",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 243
+      },
+      "fields": {
+        "level": 36,
+        "health": 0.84,
+        "armor": 1.16,
+        "react": 1.16,
+        "perception": 0.8,
+        "to_hit": 0.45
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:37",
+      "name": "37",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 244
+      },
+      "fields": {
+        "level": 37,
+        "health": 0.85,
+        "armor": 1.19,
+        "react": 1.19,
+        "perception": 0.82,
+        "to_hit": 0.46
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:38",
+      "name": "38",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 245
+      },
+      "fields": {
+        "level": 38,
+        "health": 0.86,
+        "armor": 1.22,
+        "react": 1.22,
+        "perception": 0.84,
+        "to_hit": 0.47
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:39",
+      "name": "39",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 246
+      },
+      "fields": {
+        "level": 39,
+        "health": 0.87,
+        "armor": 1.25,
+        "react": 1.25,
+        "perception": 0.86,
+        "to_hit": 0.48
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:40",
+      "name": "40",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 247
+      },
+      "fields": {
+        "level": 40,
+        "health": 0.88,
+        "armor": 1.28,
+        "react": 1.28,
+        "perception": 0.88,
+        "to_hit": 0.49
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:41",
+      "name": "41",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 248
+      },
+      "fields": {
+        "level": 41,
+        "health": 0.89,
+        "armor": 1.31,
+        "react": 1.31,
+        "perception": 0.9,
+        "to_hit": 0.5
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:42",
+      "name": "42",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 249
+      },
+      "fields": {
+        "level": 42,
+        "health": 0.9,
+        "armor": 1.34,
+        "react": 1.34,
+        "perception": 0.92,
+        "to_hit": 0.51
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:43",
+      "name": "43",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 250
+      },
+      "fields": {
+        "level": 43,
+        "health": 0.91,
+        "armor": 1.37,
+        "react": 1.37,
+        "perception": 0.94,
+        "to_hit": 0.52
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:44",
+      "name": "44",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 251
+      },
+      "fields": {
+        "level": 44,
+        "health": 0.92,
+        "armor": 1.4,
+        "react": 1.4,
+        "perception": 0.96,
+        "to_hit": 0.53
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:45",
+      "name": "45",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 252
+      },
+      "fields": {
+        "level": 45,
+        "health": 0.93,
+        "armor": 1.43,
+        "react": 1.43,
+        "perception": 0.98,
+        "to_hit": 0.54
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:46",
+      "name": "46",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 253
+      },
+      "fields": {
+        "level": 46,
+        "health": 0.94,
+        "armor": 1.46,
+        "react": 1.46,
+        "perception": 1,
+        "to_hit": 0.55
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:47",
+      "name": "47",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 254
+      },
+      "fields": {
+        "level": 47,
+        "health": 0.95,
+        "armor": 1.49,
+        "react": 1.49,
+        "perception": 1.02,
+        "to_hit": 0.56
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:48",
+      "name": "48",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 255
+      },
+      "fields": {
+        "level": 48,
+        "health": 0.96,
+        "armor": 1.52,
+        "react": 1.52,
+        "perception": 1.04,
+        "to_hit": 0.57
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:49",
+      "name": "49",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 256
+      },
+      "fields": {
+        "level": 49,
+        "health": 0.97,
+        "armor": 1.55,
+        "react": 1.55,
+        "perception": 1.06,
+        "to_hit": 0.58
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:50",
+      "name": "50",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 257
+      },
+      "fields": {
+        "level": 50,
+        "health": 0.98,
+        "armor": 1.58,
+        "react": 1.58,
+        "perception": 1.08,
+        "to_hit": 0.59
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:51",
+      "name": "51",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 258
+      },
+      "fields": {
+        "level": 51,
+        "health": 0.99,
+        "armor": 1.61,
+        "react": 1.61,
+        "perception": 1.1,
+        "to_hit": 0.6
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:52",
+      "name": "52",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 259
+      },
+      "fields": {
+        "level": 52,
+        "health": 1,
+        "armor": 1.65,
+        "react": 1.65,
+        "perception": 1.12,
+        "to_hit": 0.61
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:53",
+      "name": "53",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 260
+      },
+      "fields": {
+        "level": 53,
+        "health": 1.01,
+        "armor": 1.68,
+        "react": 1.68,
+        "perception": 1.14,
+        "to_hit": 0.62
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:54",
+      "name": "54",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 261
+      },
+      "fields": {
+        "level": 54,
+        "health": 1.02,
+        "armor": 1.71,
+        "react": 1.71,
+        "perception": 1.16,
+        "to_hit": 0.63
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:55",
+      "name": "55",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 262
+      },
+      "fields": {
+        "level": 55,
+        "health": 1.03,
+        "armor": 1.74,
+        "react": 1.74,
+        "perception": 1.18,
+        "to_hit": 0.64
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:56",
+      "name": "56",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 263
+      },
+      "fields": {
+        "level": 56,
+        "health": 1.04,
+        "armor": 1.77,
+        "react": 1.77,
+        "perception": 1.2,
+        "to_hit": 0.65
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:57",
+      "name": "57",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 264
+      },
+      "fields": {
+        "level": 57,
+        "health": 1.05,
+        "armor": 1.8,
+        "react": 1.8,
+        "perception": 1.22,
+        "to_hit": 0.66
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:58",
+      "name": "58",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 265
+      },
+      "fields": {
+        "level": 58,
+        "health": 1.06,
+        "armor": 1.83,
+        "react": 1.83,
+        "perception": 1.24,
+        "to_hit": 0.67
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:59",
+      "name": "59",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 266
+      },
+      "fields": {
+        "level": 59,
+        "health": 1.07,
+        "armor": 1.86,
+        "react": 1.86,
+        "perception": 1.26,
+        "to_hit": 0.68
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:60",
+      "name": "60",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 267
+      },
+      "fields": {
+        "level": 60,
+        "health": 1.08,
+        "armor": 1.89,
+        "react": 1.89,
+        "perception": 1.28,
+        "to_hit": 0.69
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:61",
+      "name": "61",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 268
+      },
+      "fields": {
+        "level": 61,
+        "health": 1.09,
+        "armor": 1.92,
+        "react": 1.92,
+        "perception": 1.3,
+        "to_hit": 0.7
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:62",
+      "name": "62",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 269
+      },
+      "fields": {
+        "level": 62,
+        "health": 1.1,
+        "armor": 1.95,
+        "react": 1.95,
+        "perception": 1.32,
+        "to_hit": 0.71
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:63",
+      "name": "63",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 270
+      },
+      "fields": {
+        "level": 63,
+        "health": 1.11,
+        "armor": 1.98,
+        "react": 1.98,
+        "perception": 1.34,
+        "to_hit": 0.72
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:64",
+      "name": "64",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 271
+      },
+      "fields": {
+        "level": 64,
+        "health": 1.12,
+        "armor": 2.01,
+        "react": 2.01,
+        "perception": 1.36,
+        "to_hit": 0.73
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:65",
+      "name": "65",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 272
+      },
+      "fields": {
+        "level": 65,
+        "health": 1.13,
+        "armor": 2.04,
+        "react": 2.04,
+        "perception": 1.38,
+        "to_hit": 0.74
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:66",
+      "name": "66",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 273
+      },
+      "fields": {
+        "level": 66,
+        "health": 1.14,
+        "armor": 2.07,
+        "react": 2.07,
+        "perception": 1.4,
+        "to_hit": 0.75
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:67",
+      "name": "67",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 274
+      },
+      "fields": {
+        "level": 67,
+        "health": 1.15,
+        "armor": 2.1,
+        "react": 2.1,
+        "perception": 1.42,
+        "to_hit": 0.76
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:68",
+      "name": "68",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 275
+      },
+      "fields": {
+        "level": 68,
+        "health": 1.16,
+        "armor": 2.13,
+        "react": 2.13,
+        "perception": 1.44,
+        "to_hit": 0.77
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:69",
+      "name": "69",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 276
+      },
+      "fields": {
+        "level": 69,
+        "health": 1.17,
+        "armor": 2.16,
+        "react": 2.16,
+        "perception": 1.46,
+        "to_hit": 0.78
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:70",
+      "name": "70",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 277
+      },
+      "fields": {
+        "level": 70,
+        "health": 1.18,
+        "armor": 2.19,
+        "react": 2.19,
+        "perception": 1.48,
+        "to_hit": 0.79
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:71",
+      "name": "71",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 278
+      },
+      "fields": {
+        "level": 71,
+        "health": 1.19,
+        "armor": 2.22,
+        "react": 2.22,
+        "perception": 1.5,
+        "to_hit": 0.8
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:72",
+      "name": "72",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 279
+      },
+      "fields": {
+        "level": 72,
+        "health": 1.2,
+        "armor": 2.25,
+        "react": 2.25,
+        "perception": 1.52,
+        "to_hit": 0.81
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:73",
+      "name": "73",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 280
+      },
+      "fields": {
+        "level": 73,
+        "health": 1.21,
+        "armor": 2.28,
+        "react": 2.28,
+        "perception": 1.54,
+        "to_hit": 0.82
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:74",
+      "name": "74",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 281
+      },
+      "fields": {
+        "level": 74,
+        "health": 1.22,
+        "armor": 2.31,
+        "react": 2.31,
+        "perception": 1.56,
+        "to_hit": 0.83
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:75",
+      "name": "75",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 282
+      },
+      "fields": {
+        "level": 75,
+        "health": 1.23,
+        "armor": 2.34,
+        "react": 2.34,
+        "perception": 1.58,
+        "to_hit": 0.84
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:76",
+      "name": "76",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 283
+      },
+      "fields": {
+        "level": 76,
+        "health": 1.24,
+        "armor": 2.37,
+        "react": 2.37,
+        "perception": 1.6,
+        "to_hit": 0.85
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:77",
+      "name": "77",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 284
+      },
+      "fields": {
+        "level": 77,
+        "health": 1.25,
+        "armor": 2.4,
+        "react": 2.4,
+        "perception": 1.62,
+        "to_hit": 0.86
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:78",
+      "name": "78",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 285
+      },
+      "fields": {
+        "level": 78,
+        "health": 1.26,
+        "armor": 2.43,
+        "react": 2.43,
+        "perception": 1.64,
+        "to_hit": 0.87
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:79",
+      "name": "79",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 286
+      },
+      "fields": {
+        "level": 79,
+        "health": 1.27,
+        "armor": 2.46,
+        "react": 2.46,
+        "perception": 1.66,
+        "to_hit": 0.88
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:80",
+      "name": "80",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 287
+      },
+      "fields": {
+        "level": 80,
+        "health": 1.28,
+        "armor": 2.49,
+        "react": 2.49,
+        "perception": 1.68,
+        "to_hit": 0.89
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:81",
+      "name": "81",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 288
+      },
+      "fields": {
+        "level": 81,
+        "health": 1.29,
+        "armor": 2.52,
+        "react": 2.52,
+        "perception": 1.7,
+        "to_hit": 0.9
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:82",
+      "name": "82",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 289
+      },
+      "fields": {
+        "level": 82,
+        "health": 1.3,
+        "armor": 2.55,
+        "react": 2.55,
+        "perception": 1.72,
+        "to_hit": 0.91
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:83",
+      "name": "83",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 290
+      },
+      "fields": {
+        "level": 83,
+        "health": 1.31,
+        "armor": 2.58,
+        "react": 2.58,
+        "perception": 1.74,
+        "to_hit": 0.92
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:84",
+      "name": "84",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 291
+      },
+      "fields": {
+        "level": 84,
+        "health": 1.32,
+        "armor": 2.61,
+        "react": 2.61,
+        "perception": 1.76,
+        "to_hit": 0.93
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:85",
+      "name": "85",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 292
+      },
+      "fields": {
+        "level": 85,
+        "health": 1.33,
+        "armor": 2.64,
+        "react": 2.64,
+        "perception": 1.78,
+        "to_hit": 0.94
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:86",
+      "name": "86",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 293
+      },
+      "fields": {
+        "level": 86,
+        "health": 1.34,
+        "armor": 2.67,
+        "react": 2.67,
+        "perception": 1.8,
+        "to_hit": 0.95
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:87",
+      "name": "87",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 294
+      },
+      "fields": {
+        "level": 87,
+        "health": 1.35,
+        "armor": 2.7,
+        "react": 2.7,
+        "perception": 1.82,
+        "to_hit": 0.96
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:88",
+      "name": "88",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 295
+      },
+      "fields": {
+        "level": 88,
+        "health": 1.36,
+        "armor": 2.73,
+        "react": 2.73,
+        "perception": 1.84,
+        "to_hit": 0.97
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:89",
+      "name": "89",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 296
+      },
+      "fields": {
+        "level": 89,
+        "health": 1.37,
+        "armor": 2.76,
+        "react": 2.76,
+        "perception": 1.86,
+        "to_hit": 0.98
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:90",
+      "name": "90",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 297
+      },
+      "fields": {
+        "level": 90,
+        "health": 1.38,
+        "armor": 2.79,
+        "react": 2.79,
+        "perception": 1.88,
+        "to_hit": 0.99
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:91",
+      "name": "91",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 298
+      },
+      "fields": {
+        "level": 91,
+        "health": 1.39,
+        "armor": 2.82,
+        "react": 2.82,
+        "perception": 1.9,
+        "to_hit": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:92",
+      "name": "92",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 299
+      },
+      "fields": {
+        "level": 92,
+        "health": 1.4,
+        "armor": 2.85,
+        "react": 2.85,
+        "perception": 1.92,
+        "to_hit": 1.01
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:93",
+      "name": "93",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 300
+      },
+      "fields": {
+        "level": 93,
+        "health": 1.41,
+        "armor": 2.88,
+        "react": 2.88,
+        "perception": 1.94,
+        "to_hit": 1.02
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:94",
+      "name": "94",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 301
+      },
+      "fields": {
+        "level": 94,
+        "health": 1.42,
+        "armor": 2.91,
+        "react": 2.91,
+        "perception": 1.96,
+        "to_hit": 1.03
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:95",
+      "name": "95",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 302
+      },
+      "fields": {
+        "level": 95,
+        "health": 1.43,
+        "armor": 2.94,
+        "react": 2.94,
+        "perception": 1.98,
+        "to_hit": 1.04
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:96",
+      "name": "96",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 303
+      },
+      "fields": {
+        "level": 96,
+        "health": 1.44,
+        "armor": 2.97,
+        "react": 2.97,
+        "perception": 2,
+        "to_hit": 1.05
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:97",
+      "name": "97",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 304
+      },
+      "fields": {
+        "level": 97,
+        "health": 1.45,
+        "armor": 3,
+        "react": 3,
+        "perception": 2.02,
+        "to_hit": 1.06
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:98",
+      "name": "98",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 305
+      },
+      "fields": {
+        "level": 98,
+        "health": 1.46,
+        "armor": 3.03,
+        "react": 3.03,
+        "perception": 2.04,
+        "to_hit": 1.07
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:99",
+      "name": "99",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 306
+      },
+      "fields": {
+        "level": 99,
+        "health": 1.47,
+        "armor": 3.06,
+        "react": 3.06,
+        "perception": 2.06,
+        "to_hit": 1.08
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "scout:100",
+      "name": "100",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 307
+      },
+      "fields": {
+        "level": 100,
+        "health": 1.48,
+        "armor": 3.09,
+        "react": 3.09,
+        "perception": 2.08,
+        "to_hit": 1.09
+      },
+      "dynamic_fields": {}
+    }
+  ],
+  "excluded_rows": []
+}

@@ -1,0 +1,1822 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "level",
+    "health",
+    "armor",
+    "react",
+    "perception",
+    "to_hit"
+  ],
+  "source_headers": [
+    "Level",
+    "Health",
+    "Armor",
+    "React",
+    "Perception",
+    "To Hit"
+  ],
+  "records": [
+    {
+      "id": "almighty:1",
+      "name": "1",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 310
+      },
+      "fields": {
+        "level": 1,
+        "health": 0.5,
+        "armor": 0.1,
+        "react": 0.1,
+        "perception": 0.1,
+        "to_hit": 0.1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:2",
+      "name": "2",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 311
+      },
+      "fields": {
+        "level": 2,
+        "health": 0.52,
+        "armor": 0.12,
+        "react": 0.12,
+        "perception": 0.12,
+        "to_hit": 0.12
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:3",
+      "name": "3",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 312
+      },
+      "fields": {
+        "level": 3,
+        "health": 0.54,
+        "armor": 0.14,
+        "react": 0.14,
+        "perception": 0.14,
+        "to_hit": 0.14
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:4",
+      "name": "4",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 313
+      },
+      "fields": {
+        "level": 4,
+        "health": 0.56,
+        "armor": 0.16,
+        "react": 0.16,
+        "perception": 0.16,
+        "to_hit": 0.16
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:5",
+      "name": "5",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 314
+      },
+      "fields": {
+        "level": 5,
+        "health": 0.58,
+        "armor": 0.18,
+        "react": 0.18,
+        "perception": 0.18,
+        "to_hit": 0.18
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:6",
+      "name": "6",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 315
+      },
+      "fields": {
+        "level": 6,
+        "health": 0.6,
+        "armor": 0.2,
+        "react": 0.2,
+        "perception": 0.2,
+        "to_hit": 0.2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:7",
+      "name": "7",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 316
+      },
+      "fields": {
+        "level": 7,
+        "health": 0.62,
+        "armor": 0.22,
+        "react": 0.22,
+        "perception": 0.22,
+        "to_hit": 0.22
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:8",
+      "name": "8",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 317
+      },
+      "fields": {
+        "level": 8,
+        "health": 0.64,
+        "armor": 0.24,
+        "react": 0.24,
+        "perception": 0.24,
+        "to_hit": 0.24
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:9",
+      "name": "9",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 318
+      },
+      "fields": {
+        "level": 9,
+        "health": 0.66,
+        "armor": 0.26,
+        "react": 0.26,
+        "perception": 0.26,
+        "to_hit": 0.26
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:10",
+      "name": "10",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 319
+      },
+      "fields": {
+        "level": 10,
+        "health": 0.68,
+        "armor": 0.28,
+        "react": 0.28,
+        "perception": 0.28,
+        "to_hit": 0.28
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:11",
+      "name": "11",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 320
+      },
+      "fields": {
+        "level": 11,
+        "health": 0.7,
+        "armor": 0.3,
+        "react": 0.3,
+        "perception": 0.3,
+        "to_hit": 0.3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:12",
+      "name": "12",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 321
+      },
+      "fields": {
+        "level": 12,
+        "health": 0.72,
+        "armor": 0.32,
+        "react": 0.32,
+        "perception": 0.32,
+        "to_hit": 0.32
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:13",
+      "name": "13",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 322
+      },
+      "fields": {
+        "level": 13,
+        "health": 0.74,
+        "armor": 0.34,
+        "react": 0.34,
+        "perception": 0.34,
+        "to_hit": 0.34
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:14",
+      "name": "14",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 323
+      },
+      "fields": {
+        "level": 14,
+        "health": 0.76,
+        "armor": 0.36,
+        "react": 0.36,
+        "perception": 0.36,
+        "to_hit": 0.36
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:15",
+      "name": "15",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 324
+      },
+      "fields": {
+        "level": 15,
+        "health": 0.78,
+        "armor": 0.38,
+        "react": 0.38,
+        "perception": 0.38,
+        "to_hit": 0.38
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:16",
+      "name": "16",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 325
+      },
+      "fields": {
+        "level": 16,
+        "health": 0.8,
+        "armor": 0.4,
+        "react": 0.4,
+        "perception": 0.4,
+        "to_hit": 0.4
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:17",
+      "name": "17",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 326
+      },
+      "fields": {
+        "level": 17,
+        "health": 0.82,
+        "armor": 0.42,
+        "react": 0.42,
+        "perception": 0.42,
+        "to_hit": 0.42
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:18",
+      "name": "18",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 327
+      },
+      "fields": {
+        "level": 18,
+        "health": 0.84,
+        "armor": 0.44,
+        "react": 0.44,
+        "perception": 0.44,
+        "to_hit": 0.44
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:19",
+      "name": "19",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 328
+      },
+      "fields": {
+        "level": 19,
+        "health": 0.86,
+        "armor": 0.46,
+        "react": 0.46,
+        "perception": 0.46,
+        "to_hit": 0.46
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:20",
+      "name": "20",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 329
+      },
+      "fields": {
+        "level": 20,
+        "health": 0.88,
+        "armor": 0.48,
+        "react": 0.48,
+        "perception": 0.48,
+        "to_hit": 0.48
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:21",
+      "name": "21",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 330
+      },
+      "fields": {
+        "level": 21,
+        "health": 0.9,
+        "armor": 0.5,
+        "react": 0.5,
+        "perception": 0.5,
+        "to_hit": 0.5
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:22",
+      "name": "22",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 331
+      },
+      "fields": {
+        "level": 22,
+        "health": 0.92,
+        "armor": 0.52,
+        "react": 0.52,
+        "perception": 0.52,
+        "to_hit": 0.52
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:23",
+      "name": "23",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 332
+      },
+      "fields": {
+        "level": 23,
+        "health": 0.94,
+        "armor": 0.54,
+        "react": 0.54,
+        "perception": 0.54,
+        "to_hit": 0.54
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:24",
+      "name": "24",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 333
+      },
+      "fields": {
+        "level": 24,
+        "health": 0.96,
+        "armor": 0.56,
+        "react": 0.56,
+        "perception": 0.56,
+        "to_hit": 0.56
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:25",
+      "name": "25",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 334
+      },
+      "fields": {
+        "level": 25,
+        "health": 0.98,
+        "armor": 0.58,
+        "react": 0.58,
+        "perception": 0.58,
+        "to_hit": 0.58
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:26",
+      "name": "26",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 335
+      },
+      "fields": {
+        "level": 26,
+        "health": 1,
+        "armor": 0.6,
+        "react": 0.6,
+        "perception": 0.6,
+        "to_hit": 0.6
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:27",
+      "name": "27",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 336
+      },
+      "fields": {
+        "level": 27,
+        "health": 1.02,
+        "armor": 0.62,
+        "react": 0.62,
+        "perception": 0.62,
+        "to_hit": 0.62
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:28",
+      "name": "28",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 337
+      },
+      "fields": {
+        "level": 28,
+        "health": 1.04,
+        "armor": 0.64,
+        "react": 0.64,
+        "perception": 0.64,
+        "to_hit": 0.64
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:29",
+      "name": "29",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 338
+      },
+      "fields": {
+        "level": 29,
+        "health": 1.06,
+        "armor": 0.66,
+        "react": 0.66,
+        "perception": 0.66,
+        "to_hit": 0.66
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:30",
+      "name": "30",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 339
+      },
+      "fields": {
+        "level": 30,
+        "health": 1.08,
+        "armor": 0.68,
+        "react": 0.68,
+        "perception": 0.68,
+        "to_hit": 0.68
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:31",
+      "name": "31",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 340
+      },
+      "fields": {
+        "level": 31,
+        "health": 1.1,
+        "armor": 0.7,
+        "react": 0.7,
+        "perception": 0.7,
+        "to_hit": 0.7
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:32",
+      "name": "32",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 341
+      },
+      "fields": {
+        "level": 32,
+        "health": 1.12,
+        "armor": 0.72,
+        "react": 0.72,
+        "perception": 0.72,
+        "to_hit": 0.72
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:33",
+      "name": "33",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 342
+      },
+      "fields": {
+        "level": 33,
+        "health": 1.14,
+        "armor": 0.74,
+        "react": 0.74,
+        "perception": 0.74,
+        "to_hit": 0.74
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:34",
+      "name": "34",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 343
+      },
+      "fields": {
+        "level": 34,
+        "health": 1.16,
+        "armor": 0.76,
+        "react": 0.76,
+        "perception": 0.76,
+        "to_hit": 0.76
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:35",
+      "name": "35",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 344
+      },
+      "fields": {
+        "level": 35,
+        "health": 1.18,
+        "armor": 0.78,
+        "react": 0.78,
+        "perception": 0.78,
+        "to_hit": 0.78
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:36",
+      "name": "36",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 345
+      },
+      "fields": {
+        "level": 36,
+        "health": 1.2,
+        "armor": 0.8,
+        "react": 0.8,
+        "perception": 0.8,
+        "to_hit": 0.8
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:37",
+      "name": "37",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 346
+      },
+      "fields": {
+        "level": 37,
+        "health": 1.22,
+        "armor": 0.82,
+        "react": 0.82,
+        "perception": 0.82,
+        "to_hit": 0.82
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:38",
+      "name": "38",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 347
+      },
+      "fields": {
+        "level": 38,
+        "health": 1.24,
+        "armor": 0.84,
+        "react": 0.84,
+        "perception": 0.84,
+        "to_hit": 0.84
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:39",
+      "name": "39",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 348
+      },
+      "fields": {
+        "level": 39,
+        "health": 1.26,
+        "armor": 0.86,
+        "react": 0.86,
+        "perception": 0.86,
+        "to_hit": 0.86
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:40",
+      "name": "40",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 349
+      },
+      "fields": {
+        "level": 40,
+        "health": 1.28,
+        "armor": 0.88,
+        "react": 0.88,
+        "perception": 0.88,
+        "to_hit": 0.88
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:41",
+      "name": "41",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 350
+      },
+      "fields": {
+        "level": 41,
+        "health": 1.3,
+        "armor": 0.9,
+        "react": 0.9,
+        "perception": 0.9,
+        "to_hit": 0.9
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:42",
+      "name": "42",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 351
+      },
+      "fields": {
+        "level": 42,
+        "health": 1.32,
+        "armor": 0.92,
+        "react": 0.92,
+        "perception": 0.92,
+        "to_hit": 0.92
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:43",
+      "name": "43",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 352
+      },
+      "fields": {
+        "level": 43,
+        "health": 1.34,
+        "armor": 0.94,
+        "react": 0.94,
+        "perception": 0.94,
+        "to_hit": 0.94
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:44",
+      "name": "44",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 353
+      },
+      "fields": {
+        "level": 44,
+        "health": 1.36,
+        "armor": 0.96,
+        "react": 0.96,
+        "perception": 0.96,
+        "to_hit": 0.96
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:45",
+      "name": "45",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 354
+      },
+      "fields": {
+        "level": 45,
+        "health": 1.38,
+        "armor": 0.98,
+        "react": 0.98,
+        "perception": 0.98,
+        "to_hit": 0.98
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:46",
+      "name": "46",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 355
+      },
+      "fields": {
+        "level": 46,
+        "health": 1.4,
+        "armor": 1,
+        "react": 1,
+        "perception": 1,
+        "to_hit": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:47",
+      "name": "47",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 356
+      },
+      "fields": {
+        "level": 47,
+        "health": 1.42,
+        "armor": 1.02,
+        "react": 1.02,
+        "perception": 1.02,
+        "to_hit": 1.02
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:48",
+      "name": "48",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 357
+      },
+      "fields": {
+        "level": 48,
+        "health": 1.44,
+        "armor": 1.04,
+        "react": 1.04,
+        "perception": 1.04,
+        "to_hit": 1.04
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:49",
+      "name": "49",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 358
+      },
+      "fields": {
+        "level": 49,
+        "health": 1.46,
+        "armor": 1.06,
+        "react": 1.06,
+        "perception": 1.06,
+        "to_hit": 1.06
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:50",
+      "name": "50",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 359
+      },
+      "fields": {
+        "level": 50,
+        "health": 1.48,
+        "armor": 1.08,
+        "react": 1.08,
+        "perception": 1.08,
+        "to_hit": 1.08
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:51",
+      "name": "51",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 360
+      },
+      "fields": {
+        "level": 51,
+        "health": 1.5,
+        "armor": 1.1,
+        "react": 1.1,
+        "perception": 1.1,
+        "to_hit": 1.1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:52",
+      "name": "52",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 361
+      },
+      "fields": {
+        "level": 52,
+        "health": 1.52,
+        "armor": 1.12,
+        "react": 1.12,
+        "perception": 1.12,
+        "to_hit": 1.12
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:53",
+      "name": "53",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 362
+      },
+      "fields": {
+        "level": 53,
+        "health": 1.54,
+        "armor": 1.14,
+        "react": 1.14,
+        "perception": 1.14,
+        "to_hit": 1.14
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:54",
+      "name": "54",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 363
+      },
+      "fields": {
+        "level": 54,
+        "health": 1.56,
+        "armor": 1.16,
+        "react": 1.16,
+        "perception": 1.16,
+        "to_hit": 1.16
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:55",
+      "name": "55",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 364
+      },
+      "fields": {
+        "level": 55,
+        "health": 1.58,
+        "armor": 1.18,
+        "react": 1.18,
+        "perception": 1.18,
+        "to_hit": 1.18
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:56",
+      "name": "56",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 365
+      },
+      "fields": {
+        "level": 56,
+        "health": 1.6,
+        "armor": 1.2,
+        "react": 1.2,
+        "perception": 1.2,
+        "to_hit": 1.2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:57",
+      "name": "57",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 366
+      },
+      "fields": {
+        "level": 57,
+        "health": 1.62,
+        "armor": 1.22,
+        "react": 1.22,
+        "perception": 1.22,
+        "to_hit": 1.22
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:58",
+      "name": "58",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 367
+      },
+      "fields": {
+        "level": 58,
+        "health": 1.64,
+        "armor": 1.24,
+        "react": 1.24,
+        "perception": 1.24,
+        "to_hit": 1.24
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:59",
+      "name": "59",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 368
+      },
+      "fields": {
+        "level": 59,
+        "health": 1.66,
+        "armor": 1.26,
+        "react": 1.26,
+        "perception": 1.26,
+        "to_hit": 1.26
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:60",
+      "name": "60",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 369
+      },
+      "fields": {
+        "level": 60,
+        "health": 1.68,
+        "armor": 1.28,
+        "react": 1.28,
+        "perception": 1.28,
+        "to_hit": 1.28
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:61",
+      "name": "61",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 370
+      },
+      "fields": {
+        "level": 61,
+        "health": 1.7,
+        "armor": 1.3,
+        "react": 1.3,
+        "perception": 1.3,
+        "to_hit": 1.3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:62",
+      "name": "62",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 371
+      },
+      "fields": {
+        "level": 62,
+        "health": 1.72,
+        "armor": 1.32,
+        "react": 1.32,
+        "perception": 1.32,
+        "to_hit": 1.32
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:63",
+      "name": "63",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 372
+      },
+      "fields": {
+        "level": 63,
+        "health": 1.74,
+        "armor": 1.34,
+        "react": 1.34,
+        "perception": 1.34,
+        "to_hit": 1.34
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:64",
+      "name": "64",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 373
+      },
+      "fields": {
+        "level": 64,
+        "health": 1.76,
+        "armor": 1.36,
+        "react": 1.36,
+        "perception": 1.36,
+        "to_hit": 1.36
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:65",
+      "name": "65",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 374
+      },
+      "fields": {
+        "level": 65,
+        "health": 1.78,
+        "armor": 1.38,
+        "react": 1.38,
+        "perception": 1.38,
+        "to_hit": 1.38
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:66",
+      "name": "66",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 375
+      },
+      "fields": {
+        "level": 66,
+        "health": 1.8,
+        "armor": 1.4,
+        "react": 1.4,
+        "perception": 1.4,
+        "to_hit": 1.4
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:67",
+      "name": "67",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 376
+      },
+      "fields": {
+        "level": 67,
+        "health": 1.82,
+        "armor": 1.42,
+        "react": 1.42,
+        "perception": 1.42,
+        "to_hit": 1.42
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:68",
+      "name": "68",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 377
+      },
+      "fields": {
+        "level": 68,
+        "health": 1.84,
+        "armor": 1.44,
+        "react": 1.44,
+        "perception": 1.44,
+        "to_hit": 1.44
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:69",
+      "name": "69",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 378
+      },
+      "fields": {
+        "level": 69,
+        "health": 1.86,
+        "armor": 1.46,
+        "react": 1.46,
+        "perception": 1.46,
+        "to_hit": 1.46
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:70",
+      "name": "70",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 379
+      },
+      "fields": {
+        "level": 70,
+        "health": 1.88,
+        "armor": 1.48,
+        "react": 1.48,
+        "perception": 1.48,
+        "to_hit": 1.48
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:71",
+      "name": "71",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 380
+      },
+      "fields": {
+        "level": 71,
+        "health": 1.9,
+        "armor": 1.5,
+        "react": 1.5,
+        "perception": 1.5,
+        "to_hit": 1.5
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:72",
+      "name": "72",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 381
+      },
+      "fields": {
+        "level": 72,
+        "health": 1.92,
+        "armor": 1.52,
+        "react": 1.52,
+        "perception": 1.52,
+        "to_hit": 1.52
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:73",
+      "name": "73",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 382
+      },
+      "fields": {
+        "level": 73,
+        "health": 1.94,
+        "armor": 1.54,
+        "react": 1.54,
+        "perception": 1.54,
+        "to_hit": 1.54
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:74",
+      "name": "74",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 383
+      },
+      "fields": {
+        "level": 74,
+        "health": 1.96,
+        "armor": 1.56,
+        "react": 1.56,
+        "perception": 1.56,
+        "to_hit": 1.56
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:75",
+      "name": "75",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 384
+      },
+      "fields": {
+        "level": 75,
+        "health": 1.98,
+        "armor": 1.58,
+        "react": 1.58,
+        "perception": 1.58,
+        "to_hit": 1.58
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:76",
+      "name": "76",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 385
+      },
+      "fields": {
+        "level": 76,
+        "health": 2,
+        "armor": 1.6,
+        "react": 1.6,
+        "perception": 1.6,
+        "to_hit": 1.6
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:77",
+      "name": "77",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 386
+      },
+      "fields": {
+        "level": 77,
+        "health": 2.02,
+        "armor": 1.62,
+        "react": 1.62,
+        "perception": 1.62,
+        "to_hit": 1.62
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:78",
+      "name": "78",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 387
+      },
+      "fields": {
+        "level": 78,
+        "health": 2.04,
+        "armor": 1.64,
+        "react": 1.64,
+        "perception": 1.64,
+        "to_hit": 1.64
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:79",
+      "name": "79",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 388
+      },
+      "fields": {
+        "level": 79,
+        "health": 2.06,
+        "armor": 1.66,
+        "react": 1.66,
+        "perception": 1.66,
+        "to_hit": 1.66
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:80",
+      "name": "80",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 389
+      },
+      "fields": {
+        "level": 80,
+        "health": 2.08,
+        "armor": 1.68,
+        "react": 1.68,
+        "perception": 1.68,
+        "to_hit": 1.68
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:81",
+      "name": "81",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 390
+      },
+      "fields": {
+        "level": 81,
+        "health": 2.1,
+        "armor": 1.7,
+        "react": 1.7,
+        "perception": 1.7,
+        "to_hit": 1.7
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:82",
+      "name": "82",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 391
+      },
+      "fields": {
+        "level": 82,
+        "health": 2.12,
+        "armor": 1.72,
+        "react": 1.72,
+        "perception": 1.72,
+        "to_hit": 1.72
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:83",
+      "name": "83",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 392
+      },
+      "fields": {
+        "level": 83,
+        "health": 2.14,
+        "armor": 1.74,
+        "react": 1.74,
+        "perception": 1.74,
+        "to_hit": 1.74
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:84",
+      "name": "84",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 393
+      },
+      "fields": {
+        "level": 84,
+        "health": 2.16,
+        "armor": 1.76,
+        "react": 1.76,
+        "perception": 1.76,
+        "to_hit": 1.76
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:85",
+      "name": "85",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 394
+      },
+      "fields": {
+        "level": 85,
+        "health": 2.18,
+        "armor": 1.78,
+        "react": 1.78,
+        "perception": 1.78,
+        "to_hit": 1.78
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:86",
+      "name": "86",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 395
+      },
+      "fields": {
+        "level": 86,
+        "health": 2.2,
+        "armor": 1.8,
+        "react": 1.8,
+        "perception": 1.8,
+        "to_hit": 1.8
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:87",
+      "name": "87",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 396
+      },
+      "fields": {
+        "level": 87,
+        "health": 2.22,
+        "armor": 1.82,
+        "react": 1.82,
+        "perception": 1.82,
+        "to_hit": 1.82
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:88",
+      "name": "88",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 397
+      },
+      "fields": {
+        "level": 88,
+        "health": 2.24,
+        "armor": 1.84,
+        "react": 1.84,
+        "perception": 1.84,
+        "to_hit": 1.84
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:89",
+      "name": "89",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 398
+      },
+      "fields": {
+        "level": 89,
+        "health": 2.26,
+        "armor": 1.86,
+        "react": 1.86,
+        "perception": 1.86,
+        "to_hit": 1.86
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:90",
+      "name": "90",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 399
+      },
+      "fields": {
+        "level": 90,
+        "health": 2.28,
+        "armor": 1.88,
+        "react": 1.88,
+        "perception": 1.88,
+        "to_hit": 1.88
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:91",
+      "name": "91",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 400
+      },
+      "fields": {
+        "level": 91,
+        "health": 2.3,
+        "armor": 1.9,
+        "react": 1.9,
+        "perception": 1.9,
+        "to_hit": 1.9
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:92",
+      "name": "92",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 401
+      },
+      "fields": {
+        "level": 92,
+        "health": 2.32,
+        "armor": 1.92,
+        "react": 1.92,
+        "perception": 1.92,
+        "to_hit": 1.92
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:93",
+      "name": "93",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 402
+      },
+      "fields": {
+        "level": 93,
+        "health": 2.34,
+        "armor": 1.94,
+        "react": 1.94,
+        "perception": 1.94,
+        "to_hit": 1.94
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:94",
+      "name": "94",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 403
+      },
+      "fields": {
+        "level": 94,
+        "health": 2.36,
+        "armor": 1.96,
+        "react": 1.96,
+        "perception": 1.96,
+        "to_hit": 1.96
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:95",
+      "name": "95",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 404
+      },
+      "fields": {
+        "level": 95,
+        "health": 2.38,
+        "armor": 1.98,
+        "react": 1.98,
+        "perception": 1.98,
+        "to_hit": 1.98
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:96",
+      "name": "96",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 405
+      },
+      "fields": {
+        "level": 96,
+        "health": 2.4,
+        "armor": 2,
+        "react": 2,
+        "perception": 2,
+        "to_hit": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:97",
+      "name": "97",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 406
+      },
+      "fields": {
+        "level": 97,
+        "health": 2.42,
+        "armor": 2.02,
+        "react": 2.02,
+        "perception": 2.02,
+        "to_hit": 2.02
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:98",
+      "name": "98",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 407
+      },
+      "fields": {
+        "level": 98,
+        "health": 2.44,
+        "armor": 2.04,
+        "react": 2.04,
+        "perception": 2.04,
+        "to_hit": 2.04
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:99",
+      "name": "99",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 408
+      },
+      "fields": {
+        "level": 99,
+        "health": 2.46,
+        "armor": 2.06,
+        "react": 2.06,
+        "perception": 2.06,
+        "to_hit": 2.06
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "almighty:100",
+      "name": "100",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 409
+      },
+      "fields": {
+        "level": 100,
+        "health": 2.48,
+        "armor": 2.08,
+        "react": 2.08,
+        "perception": 2.08,
+        "to_hit": 2.08
+      },
+      "dynamic_fields": {}
+    }
+  ],
+  "excluded_rows": []
+}

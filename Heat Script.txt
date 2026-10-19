@@ -1,0 +1,113 @@
+function onEdit(e) {
+  // 1. SAFETY CHECKS: Ensure the edit event has valid data
+  if (!e || !e.range || !e.value) return;
+  
+  const sheet = e.source.getActiveSheet();
+  const range = e.range;
+  
+  // MERGED CELL FIX: Force range (e.g., "A25:A29") to just the first cell ("A25") as a text string
+  const editedCell = range.getA1Notation().split(":")[0];
+  
+  // Only change counters/values if a checkbox was toggled to TRUE (checked)
+  if (e.value !== "TRUE") return;
+
+  // ==========================================
+  // SCRIPT 1: Zoid Data Capture (A6 -> E14)
+  // ==========================================
+  const targetSheetName = "Zoid"; 
+  if (sheet.getName() === targetSheetName && editedCell === "A6") {
+    // 1. Get the current value sitting in D14
+    const sourceValue = sheet.getRange("D14").getValue();
+    
+    // 2. Paste that value permanently into E14
+    sheet.getRange("E14").setValue(sourceValue);
+    
+    // 3. Automatically uncheck the checkbox in A6 so it's ready to be used again
+    range.setValue(false);
+    return; // Exit early since this task is done
+  }
+
+  // ==========================================
+  // SCRIPT 2: Master Reset Button (A4)
+  // ==========================================
+  if (editedCell === "A4") {
+    const counterCells = ["F29", "F34", "F39", "F44", "E53", "E60", "E67", "E74"];
+    const addCheckboxes = ["A25", "A30", "A35", "A40", "A47", "A54", "A61", "A68"];
+    
+    counterCells.forEach(cell => sheet.getRange(cell).setValue(0));
+    addCheckboxes.forEach(cell => sheet.getRange(cell).setValue(false));
+    
+    range.setValue(false);
+    return; // Exit early since this task is done
+  }
+
+  // ==========================================
+  // SCRIPT 3: Counter Grid (Addition & Subtraction)
+  // ==========================================
+  // MAPS: Links each checkbox to its respective counter cell
+  const addCheckboxMap = {
+    "A25": "F29", "A30": "F34", "A35": "F39", "A40": "F44",
+    "A47": "E53", "A54": "E60", "A61": "E67", "A68": "E74"
+  };
+
+  const subCheckboxMap = {
+    "G29": "F29", "G34": "F34", "G39": "F39", "G44": "F44",
+    "F53": "E53", "F60": "E60", "F67": "E67", "F74": "E74"
+  };
+
+  let counterCell = null;
+  let modifier = 0;
+  let shouldResetSub = false;
+
+  // Match against the coordinate maps
+  if (addCheckboxMap[editedCell]) {
+    counterCell = addCheckboxMap[editedCell];
+    
+    // CONDITION CHECK: Get the cell directly above the counter cell
+    const counterRange = sheet.getRange(counterCell);
+    const rowAbove = counterRange.getRow() - 1;
+    const col = counterRange.getColumn();
+    
+    // Fetch the text evaluated by your VLOOKUP formula
+    const cellAboveValue = sheet.getRange(rowAbove, col).getValue().toString().trim();
+    
+    // Regular expression: Matches "Heat:" followed by an optional space and a 1, 2, or 3
+    if (/Heat:\s*[1-3]/.test(cellAboveValue)) {
+      modifier = 1;
+    } else {
+      // Condition failed: force uncheck and stop
+      range.setValue(false);
+      return;
+    }
+    
+  } else if (subCheckboxMap[editedCell]) {
+    counterCell = subCheckboxMap[editedCell];
+    shouldResetSub = true; 
+    
+    // FETCH CURRENT COUNT: Check the value before subtracting
+    const scoreCell = sheet.getRange(counterCell);
+    const currentCount = scoreCell.getValue() || 0;
+    
+    // PROTECTION: Only subtract if the current value is greater than 0
+    if (currentCount > 0) {
+      modifier = -1;
+    } else {
+      // Already at 0: bypass math, auto-reset the checkbox, and exit
+      range.setValue(false);
+      return;
+    }
+  }
+
+  // Update the counter if all validation steps passed
+  if (counterCell && modifier !== 0) {
+    const scoreCell = sheet.getRange(counterCell);
+    const currentCount = scoreCell.getValue() || 0;
+    scoreCell.setValue(currentCount + modifier);
+    
+    // Auto-reset back to FALSE only for subtraction checkboxes
+    if (shouldResetSub) {
+      range.setValue(false);
+    }
+  }
+}
+

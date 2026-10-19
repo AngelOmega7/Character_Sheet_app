@@ -1,0 +1,5389 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "name",
+    "description",
+    "bonus_levels",
+    "zoid_sizes",
+    "all_stats_bonus",
+    "armor_bonus",
+    "to_hit_bonus",
+    "speed_bonus",
+    "range_bonus",
+    "reaction_bonus",
+    "damage_bonus",
+    "shield_bonus",
+    "equipment_defense_bonus",
+    "damage_type",
+    "base_defense_bonus"
+  ],
+  "source_headers": [
+    "Skills 1",
+    "Descriptions 2",
+    "Levels 3",
+    "If in Zoid Size 4",
+    "All Stats 5",
+    "Armor 6",
+    "To Hit Increase 7",
+    "Speed 8",
+    "Range 9",
+    "Reaction 10",
+    "Damage Bonus 11",
+    "Shield Increase 12",
+    "Equiped Defense 13",
+    "Damage Type 14",
+    "Zoids base Defense 15"
+  ],
+  "records": [
+    {
+      "id": "abilities:none",
+      "name": "- - - - - - - - - -",
+      "kind": "placeholder",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 2
+      },
+      "fields": {
+        "name": "- - - - - - - - - -",
+        "description": "- - - - - - - - - - -",
+        "bonus_levels": 0,
+        "zoid_sizes": 0,
+        "all_stats_bonus": 0,
+        "armor_bonus": 0,
+        "to_hit_bonus": 0,
+        "speed_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "damage_bonus": 0,
+        "shield_bonus": 0,
+        "equipment_defense_bonus": 0,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "abilities:tiger_type_1",
+      "name": "Tiger Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 3
+      },
+      "fields": {
+        "name": "Tiger Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid Type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "tiger_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:tiger_type_2",
+      "name": "Tiger Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 4
+      },
+      "fields": {
+        "name": "Tiger Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "tiger_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:tiger_type_3",
+      "name": "Tiger Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 5
+      },
+      "fields": {
+        "name": "Tiger Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "tiger_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:tiger_type_4",
+      "name": "Tiger Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 6
+      },
+      "fields": {
+        "name": "Tiger Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "tiger_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:tiger_type_5",
+      "name": "Tiger Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 7
+      },
+      "fields": {
+        "name": "Tiger Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "tiger_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:lion_type_1",
+      "name": "Lion Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 8
+      },
+      "fields": {
+        "name": "Lion Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Lion\",N8+5,\"\")"
+      },
+      "family": "lion_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:lion_type_2",
+      "name": "Lion Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 9
+      },
+      "fields": {
+        "name": "Lion Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "lion_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:lion_type_3",
+      "name": "Lion Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 10
+      },
+      "fields": {
+        "name": "Lion Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "lion_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:lion_type_4",
+      "name": "Lion Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 11
+      },
+      "fields": {
+        "name": "Lion Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "lion_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:lion_type_5",
+      "name": "Lion Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 12
+      },
+      "fields": {
+        "name": "Lion Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "lion_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:wolf_type_1",
+      "name": "Wolf Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 13
+      },
+      "fields": {
+        "name": "Wolf Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Wolf\",N8+5,\"\")"
+      },
+      "family": "wolf_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:wolf_type_2",
+      "name": "Wolf Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 14
+      },
+      "fields": {
+        "name": "Wolf Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "wolf_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:wolf_type_3",
+      "name": "Wolf Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 15
+      },
+      "fields": {
+        "name": "Wolf Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "wolf_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:wolf_type_4",
+      "name": "Wolf Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 16
+      },
+      "fields": {
+        "name": "Wolf Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "wolf_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:wolf_type_5",
+      "name": "Wolf Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 17
+      },
+      "fields": {
+        "name": "Wolf Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "wolf_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:insect_type_1",
+      "name": "Insect Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 18
+      },
+      "fields": {
+        "name": "Insect Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Insect\",N8+5,\"\")"
+      },
+      "family": "insect_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:insect_type_2",
+      "name": "Insect Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 19
+      },
+      "fields": {
+        "name": "Insect Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "insect_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:insect_type_3",
+      "name": "Insect Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 20
+      },
+      "fields": {
+        "name": "Insect Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "insect_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:insect_type_4",
+      "name": "Insect Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 21
+      },
+      "fields": {
+        "name": "Insect Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "insect_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:insect_type_5",
+      "name": "Insect Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 22
+      },
+      "fields": {
+        "name": "Insect Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "insect_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:gorilla_type_1",
+      "name": "Gorilla Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 23
+      },
+      "fields": {
+        "name": "Gorilla Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Gorilla\",N8+5,\"\")"
+      },
+      "family": "gorilla_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:gorilla_type_2",
+      "name": "Gorilla Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 24
+      },
+      "fields": {
+        "name": "Gorilla Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "gorilla_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:gorilla_type_3",
+      "name": "Gorilla Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 25
+      },
+      "fields": {
+        "name": "Gorilla Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "gorilla_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:gorilla_type_4",
+      "name": "Gorilla Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 26
+      },
+      "fields": {
+        "name": "Gorilla Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "gorilla_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:gorilla_type_5",
+      "name": "Gorilla Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 27
+      },
+      "fields": {
+        "name": "Gorilla Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "gorilla_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:raptor_type_1",
+      "name": "Raptor Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 28
+      },
+      "fields": {
+        "name": "Raptor Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Raptor\",N8+5,\"\")"
+      },
+      "family": "raptor_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:raptor_type_2",
+      "name": "Raptor Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 29
+      },
+      "fields": {
+        "name": "Raptor Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "raptor_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:raptor_type_3",
+      "name": "Raptor Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 30
+      },
+      "fields": {
+        "name": "Raptor Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "raptor_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:raptor_type_4",
+      "name": "Raptor Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 31
+      },
+      "fields": {
+        "name": "Raptor Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "raptor_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:raptor_type_5",
+      "name": "Raptor Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 32
+      },
+      "fields": {
+        "name": "Raptor Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "raptor_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:t_rex_type_1",
+      "name": "T-Rex Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 33
+      },
+      "fields": {
+        "name": "T-Rex Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"T-Rex\",N8+5,\"\")"
+      },
+      "family": "t_rex_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:t_rex_type_2",
+      "name": "T-Rex Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 34
+      },
+      "fields": {
+        "name": "T-Rex Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "t_rex_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:t_rex_type_3",
+      "name": "T-Rex Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 35
+      },
+      "fields": {
+        "name": "T-Rex Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "t_rex_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:t_rex_type_4",
+      "name": "T-Rex Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 36
+      },
+      "fields": {
+        "name": "T-Rex Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "t_rex_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:t_rex_type_5",
+      "name": "T-Rex Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 37
+      },
+      "fields": {
+        "name": "T-Rex Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "t_rex_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:mammal_type_1",
+      "name": "Mammal Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 38
+      },
+      "fields": {
+        "name": "Mammal Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Mammal\",N8+5,\"\")"
+      },
+      "family": "mammal_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:mammal_type_2",
+      "name": "Mammal Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 39
+      },
+      "fields": {
+        "name": "Mammal Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "mammal_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:mammal_type_3",
+      "name": "Mammal Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 40
+      },
+      "fields": {
+        "name": "Mammal Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "mammal_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:mammal_type_4",
+      "name": "Mammal Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 41
+      },
+      "fields": {
+        "name": "Mammal Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "mammal_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:mammal_type_5",
+      "name": "Mammal Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 42
+      },
+      "fields": {
+        "name": "Mammal Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "mammal_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_land_type_1",
+      "name": "Dinosaur, Land Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 43
+      },
+      "fields": {
+        "name": "Dinosaur, Land Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Dinosaur, Land\",N8+5,\"\")"
+      },
+      "family": "dinosaur_land_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_land_type_2",
+      "name": "Dinosaur, Land Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 44
+      },
+      "fields": {
+        "name": "Dinosaur, Land Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "dinosaur_land_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_land_type_3",
+      "name": "Dinosaur, Land Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 45
+      },
+      "fields": {
+        "name": "Dinosaur, Land Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "dinosaur_land_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_land_type_4",
+      "name": "Dinosaur, Land Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 46
+      },
+      "fields": {
+        "name": "Dinosaur, Land Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "dinosaur_land_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_land_type_5",
+      "name": "Dinosaur, Land Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 47
+      },
+      "fields": {
+        "name": "Dinosaur, Land Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "dinosaur_land_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_flying_type_1",
+      "name": "Dinosaur, Flying Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 48
+      },
+      "fields": {
+        "name": "Dinosaur, Flying Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Dinosaur, Flying\",N8+5,\"\")"
+      },
+      "family": "dinosaur_flying_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_flying_type_2",
+      "name": "Dinosaur, Flying Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 49
+      },
+      "fields": {
+        "name": "Dinosaur, Flying Type 2 ",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "dinosaur_flying_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_flying_type_3",
+      "name": "Dinosaur, Flying Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 50
+      },
+      "fields": {
+        "name": "Dinosaur, Flying Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "dinosaur_flying_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_flying_type_4",
+      "name": "Dinosaur, Flying Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 51
+      },
+      "fields": {
+        "name": "Dinosaur, Flying Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "dinosaur_flying_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:dinosaur_flying_type_5",
+      "name": "Dinosaur, Flying Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 52
+      },
+      "fields": {
+        "name": "Dinosaur, Flying Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "dinosaur_flying_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:reptile_type_1",
+      "name": "Reptile Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 53
+      },
+      "fields": {
+        "name": "Reptile Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N53=\"Reptile\",N58+5,\"\")"
+      },
+      "family": "reptile_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:reptile_type_2",
+      "name": "Reptile Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 54
+      },
+      "fields": {
+        "name": "Reptile Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "reptile_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:reptile_type_3",
+      "name": "Reptile Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 55
+      },
+      "fields": {
+        "name": "Reptile Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "reptile_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:reptile_type_4",
+      "name": "Reptile Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 56
+      },
+      "fields": {
+        "name": "Reptile Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "reptile_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:reptile_type_5",
+      "name": "Reptile Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 57
+      },
+      "fields": {
+        "name": "Reptile Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "reptile_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:bloxtype_1",
+      "name": "BLOXType 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 58
+      },
+      "fields": {
+        "name": "BLOXType 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"BLOX\",N8+5,\"\")"
+      },
+      "family": "blox_type",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:blox_type_2",
+      "name": "BLOX Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 59
+      },
+      "fields": {
+        "name": "BLOX Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "blox_type",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:blox_type_3",
+      "name": "BLOX Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 60
+      },
+      "fields": {
+        "name": "BLOX Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "blox_type",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:blox_type_4",
+      "name": "BLOX Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 61
+      },
+      "fields": {
+        "name": "BLOX Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "blox_type",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:blox_type_5",
+      "name": "BLOX Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 62
+      },
+      "fields": {
+        "name": "BLOX Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "blox_type",
+      "rank": 5,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:small_expert",
+      "name": "Small Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 63
+      },
+      "fields": {
+        "name": "Small Expert",
+        "description": "When piloting a Small sized Zoid stats are increased by 10%",
+        "bonus_levels": null,
+        "zoid_sizes": "Small",
+        "all_stats_bonus": 0.1,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "small_expert",
+      "rank": 1,
+      "eligible_sizes": [
+        "Small"
+      ]
+    },
+    {
+      "id": "abilities:small_expert_2",
+      "name": "Small Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 64
+      },
+      "fields": {
+        "name": "Small Expert 2",
+        "description": "When piloting a Small sized Zoid stats are increased by 15%",
+        "bonus_levels": null,
+        "zoid_sizes": "Small",
+        "all_stats_bonus": 0.15,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "small_expert",
+      "rank": 2,
+      "eligible_sizes": [
+        "Small"
+      ]
+    },
+    {
+      "id": "abilities:small_expert_3",
+      "name": "Small Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 65
+      },
+      "fields": {
+        "name": "Small Expert 3",
+        "description": "When piloting a Small sized Zoid stats are increased by 20%",
+        "bonus_levels": null,
+        "zoid_sizes": "Small",
+        "all_stats_bonus": 0.2,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "small_expert",
+      "rank": 3,
+      "eligible_sizes": [
+        "Small"
+      ]
+    },
+    {
+      "id": "abilities:small_expert_4",
+      "name": "Small Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 66
+      },
+      "fields": {
+        "name": "Small Expert 4",
+        "description": "When piloting a Small sized Zoid stats are increased by 25%",
+        "bonus_levels": null,
+        "zoid_sizes": "Small",
+        "all_stats_bonus": 0.25,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "small_expert",
+      "rank": 4,
+      "eligible_sizes": [
+        "Small"
+      ]
+    },
+    {
+      "id": "abilities:medium_expert",
+      "name": "Medium Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 67
+      },
+      "fields": {
+        "name": "Medium Expert",
+        "description": "When piloting a Medium sized Zoid stats are increased by 10%",
+        "bonus_levels": null,
+        "zoid_sizes": "Medium",
+        "all_stats_bonus": 0.1,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "medium_expert",
+      "rank": 1,
+      "eligible_sizes": [
+        "Medium"
+      ]
+    },
+    {
+      "id": "abilities:medium_expert_2",
+      "name": "Medium Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 68
+      },
+      "fields": {
+        "name": "Medium Expert 2",
+        "description": "When piloting a Medium sized Zoid stats are increased by 15%",
+        "bonus_levels": null,
+        "zoid_sizes": "Medium",
+        "all_stats_bonus": 0.15,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "medium_expert",
+      "rank": 2,
+      "eligible_sizes": [
+        "Medium"
+      ]
+    },
+    {
+      "id": "abilities:medium_expert_3",
+      "name": "Medium Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 69
+      },
+      "fields": {
+        "name": "Medium Expert 3",
+        "description": "When piloting a Medium sized Zoid stats are increased by 20%",
+        "bonus_levels": null,
+        "zoid_sizes": "Medium",
+        "all_stats_bonus": 0.2,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "medium_expert",
+      "rank": 3,
+      "eligible_sizes": [
+        "Medium"
+      ]
+    },
+    {
+      "id": "abilities:medium_expert_4",
+      "name": "Medium Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 70
+      },
+      "fields": {
+        "name": "Medium Expert 4",
+        "description": "When piloting a Medium sized Zoid stats are increased by 25%",
+        "bonus_levels": null,
+        "zoid_sizes": "Medium",
+        "all_stats_bonus": 0.25,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "medium_expert",
+      "rank": 4,
+      "eligible_sizes": [
+        "Medium"
+      ]
+    },
+    {
+      "id": "abilities:medium_under_expert",
+      "name": "Medium Under Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 71
+      },
+      "fields": {
+        "name": "Medium Under Expert",
+        "description": "When piloting a Medium or Small sized Zoid stats are increased by 10%",
+        "bonus_levels": null,
+        "zoid_sizes": "Medium, Small",
+        "all_stats_bonus": 0.1,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "medium_under_expert",
+      "rank": 1,
+      "eligible_sizes": [
+        "Medium",
+        "Small"
+      ]
+    },
+    {
+      "id": "abilities:medium_under_expert_2",
+      "name": "Medium Under Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 72
+      },
+      "fields": {
+        "name": "Medium Under Expert 2",
+        "description": "When piloting a Medium or Small sized Zoid stats are increased by 15%",
+        "bonus_levels": null,
+        "zoid_sizes": "Medium, Small",
+        "all_stats_bonus": 0.15,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "medium_under_expert",
+      "rank": 2,
+      "eligible_sizes": [
+        "Medium",
+        "Small"
+      ]
+    },
+    {
+      "id": "abilities:medium_under_expert_3",
+      "name": "Medium Under Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 73
+      },
+      "fields": {
+        "name": "Medium Under Expert 3",
+        "description": "When piloting a Medium or Small sized Zoid stats are increased by 20%",
+        "bonus_levels": null,
+        "zoid_sizes": "Medium, Small",
+        "all_stats_bonus": 0.2,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "medium_under_expert",
+      "rank": 3,
+      "eligible_sizes": [
+        "Medium",
+        "Small"
+      ]
+    },
+    {
+      "id": "abilities:medium_under_expert_4",
+      "name": "Medium Under Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 74
+      },
+      "fields": {
+        "name": "Medium Under Expert 4",
+        "description": "When piloting a Medium or Small sized Zoid stats are increased by 25%",
+        "bonus_levels": null,
+        "zoid_sizes": "Medium, Small",
+        "all_stats_bonus": 0.25,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "medium_under_expert",
+      "rank": 4,
+      "eligible_sizes": [
+        "Medium",
+        "Small"
+      ],
+      "corrections": {
+        "all_stats_bonus": {
+          "original": 25,
+          "corrected": 0.25,
+          "reason": "Owner confirmed 25%, not 2500%"
+        }
+      }
+    },
+    {
+      "id": "abilities:large_expert",
+      "name": "Large Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 75
+      },
+      "fields": {
+        "name": "Large Expert",
+        "description": "When piloting a Large sized Zoid stats are increased by 10%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large",
+        "all_stats_bonus": 0.1,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_expert",
+      "rank": 1,
+      "eligible_sizes": [
+        "Large"
+      ]
+    },
+    {
+      "id": "abilities:large_expert_2",
+      "name": "Large Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 76
+      },
+      "fields": {
+        "name": "Large Expert 2",
+        "description": "When piloting a Large sized Zoid stats are increased by 15%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large",
+        "all_stats_bonus": 0.15,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_expert",
+      "rank": 2,
+      "eligible_sizes": [
+        "Large"
+      ]
+    },
+    {
+      "id": "abilities:large_expert_3",
+      "name": "Large Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 77
+      },
+      "fields": {
+        "name": "Large Expert 3",
+        "description": "When piloting a Large sized Zoid stats are increased by 20%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large",
+        "all_stats_bonus": 0.2,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_expert",
+      "rank": 3,
+      "eligible_sizes": [
+        "Large"
+      ]
+    },
+    {
+      "id": "abilities:large_expert_4",
+      "name": "Large Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 78
+      },
+      "fields": {
+        "name": "Large Expert 4",
+        "description": "When piloting a Large sized Zoid stats are increased by 25%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large",
+        "all_stats_bonus": 0.25,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_expert",
+      "rank": 4,
+      "eligible_sizes": [
+        "Large"
+      ]
+    },
+    {
+      "id": "abilities:large_large_expert",
+      "name": "Large Large Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 79
+      },
+      "fields": {
+        "name": "Large Large Expert",
+        "description": "When piloting a Large Large sized Zoid stats are increased by 10%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large Large",
+        "all_stats_bonus": 0.1,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_large_expert",
+      "rank": 1,
+      "eligible_sizes": [
+        "Large Large"
+      ]
+    },
+    {
+      "id": "abilities:large_large_expert_2",
+      "name": "Large Large Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 80
+      },
+      "fields": {
+        "name": "Large Large Expert 2",
+        "description": "When piloting a Large Large sized Zoid stats are increased by 15%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large Large",
+        "all_stats_bonus": 0.15,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_large_expert",
+      "rank": 2,
+      "eligible_sizes": [
+        "Large Large"
+      ]
+    },
+    {
+      "id": "abilities:large_large_expert_3",
+      "name": "Large Large Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 81
+      },
+      "fields": {
+        "name": "Large Large Expert 3",
+        "description": "When piloting a Large Large sized Zoid stats are increased by 20%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large Large",
+        "all_stats_bonus": 0.2,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_large_expert",
+      "rank": 3,
+      "eligible_sizes": [
+        "Large Large"
+      ]
+    },
+    {
+      "id": "abilities:large_large_expert_4",
+      "name": "Large Large Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 82
+      },
+      "fields": {
+        "name": "Large Large Expert 4",
+        "description": "When piloting a Large Large sized Zoid stats are increased by 25%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large Large",
+        "all_stats_bonus": 0.25,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_large_expert",
+      "rank": 4,
+      "eligible_sizes": [
+        "Large Large"
+      ]
+    },
+    {
+      "id": "abilities:large_large_over_expert",
+      "name": "Large Large Over Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 83
+      },
+      "fields": {
+        "name": "Large Large Over Expert",
+        "description": "When piloting a Large Large or Extra Large sized Zoid stats are increased by 10%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large Large, Extra Large",
+        "all_stats_bonus": 0.1,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_large_over_expert",
+      "rank": 1,
+      "eligible_sizes": [
+        "Large Large",
+        "Extra Large"
+      ]
+    },
+    {
+      "id": "abilities:large_large_over_expert_2",
+      "name": "Large Large Over Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 84
+      },
+      "fields": {
+        "name": "Large Large Over Expert 2",
+        "description": "When piloting a Large Large or Extra Large sized Zoid stats are increased by 15%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large Large, Extra Large",
+        "all_stats_bonus": 0.15,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_large_over_expert",
+      "rank": 2,
+      "eligible_sizes": [
+        "Large Large",
+        "Extra Large"
+      ]
+    },
+    {
+      "id": "abilities:large_large_over_expert_3",
+      "name": "Large Large Over Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 85
+      },
+      "fields": {
+        "name": "Large Large Over Expert 3",
+        "description": "When piloting a Large Large or Extra Large sized Zoid stats are increased by 20%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large Large, Extra Large",
+        "all_stats_bonus": 0.2,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_large_over_expert",
+      "rank": 3,
+      "eligible_sizes": [
+        "Large Large",
+        "Extra Large"
+      ]
+    },
+    {
+      "id": "abilities:large_large_over_expert_4",
+      "name": "Large Large Over Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 86
+      },
+      "fields": {
+        "name": "Large Large Over Expert 4",
+        "description": "When piloting a Large Large or Extra Large sized Zoid stats are increased by 25%",
+        "bonus_levels": null,
+        "zoid_sizes": "Large Large, Extra Large",
+        "all_stats_bonus": 0.25,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "large_large_over_expert",
+      "rank": 4,
+      "eligible_sizes": [
+        "Large Large",
+        "Extra Large"
+      ]
+    },
+    {
+      "id": "abilities:extra_large_expert",
+      "name": "Extra Large Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 87
+      },
+      "fields": {
+        "name": "Extra Large Expert",
+        "description": "When piloting a Extra Large sized Zoid stats are increased by 10%",
+        "bonus_levels": null,
+        "zoid_sizes": "Extra Large",
+        "all_stats_bonus": 0.1,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "extra_large_expert",
+      "rank": 1,
+      "eligible_sizes": [
+        "Extra Large"
+      ]
+    },
+    {
+      "id": "abilities:extra_large_expert_2",
+      "name": "Extra Large Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 88
+      },
+      "fields": {
+        "name": "Extra Large Expert 2",
+        "description": "When piloting a Extra Large sized Zoid stats are increased by 15%",
+        "bonus_levels": null,
+        "zoid_sizes": "Extra Large",
+        "all_stats_bonus": 0.15,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "extra_large_expert",
+      "rank": 2,
+      "eligible_sizes": [
+        "Extra Large"
+      ]
+    },
+    {
+      "id": "abilities:extra_large_expert_3",
+      "name": "Extra Large Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 89
+      },
+      "fields": {
+        "name": "Extra Large Expert 3",
+        "description": "When piloting a Extra Large sized Zoid stats are increased by 20%",
+        "bonus_levels": null,
+        "zoid_sizes": "Extra Large",
+        "all_stats_bonus": 0.2,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "extra_large_expert",
+      "rank": 3,
+      "eligible_sizes": [
+        "Extra Large"
+      ]
+    },
+    {
+      "id": "abilities:extra_large_expert_4",
+      "name": "Extra Large Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 90
+      },
+      "fields": {
+        "name": "Extra Large Expert 4",
+        "description": "When piloting a Extra Large sized Zoid stats are increased by 25%",
+        "bonus_levels": null,
+        "zoid_sizes": "Extra Large",
+        "all_stats_bonus": 0.25,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "extra_large_expert",
+      "rank": 4,
+      "eligible_sizes": [
+        "Extra Large"
+      ]
+    },
+    {
+      "id": "abilities:melee_multi_attack",
+      "name": "Melee Multi Attack",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 91
+      },
+      "fields": {
+        "name": "Melee Multi Attack",
+        "description": "Gain an extra melee attack per turn",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "melee_multi_attack",
+      "rank": 1,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:melee_multi_attack_2",
+      "name": "Melee Multi Attack 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 92
+      },
+      "fields": {
+        "name": "Melee Multi Attack 2",
+        "description": "Gain a second extra melee attack per turn",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "melee_multi_attack",
+      "rank": 2,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:melee_multi_attack_3",
+      "name": "Melee Multi Attack 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 93
+      },
+      "fields": {
+        "name": "Melee Multi Attack 3",
+        "description": "Gain a third extra melee attack per turn",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "melee_multi_attack",
+      "rank": 3,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:melee_multi_attack_4",
+      "name": "Melee Multi Attack 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 94
+      },
+      "fields": {
+        "name": "Melee Multi Attack 4",
+        "description": "Gain a fourth extra melee attack per turn",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "melee_multi_attack",
+      "rank": 4,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:ranged_multi_attack_1",
+      "name": "Ranged Multi Attack 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 95
+      },
+      "fields": {
+        "name": "Ranged Multi Attack 1",
+        "description": "Gain an extra ranged attack per turn. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "ranged_multi_attack",
+      "rank": 1,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:ranged_multi_attack_2",
+      "name": "Ranged Multi Attack 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 96
+      },
+      "fields": {
+        "name": "Ranged Multi Attack 2",
+        "description": "Gain a second extra ranged attack per turn. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "ranged_multi_attack",
+      "rank": 2,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:ranged_multi_attack_3",
+      "name": "Ranged Multi Attack 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 97
+      },
+      "fields": {
+        "name": "Ranged Multi Attack 3",
+        "description": "Gain a third extra ranged attack per turn. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "ranged_multi_attack",
+      "rank": 3,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:ranged_multi_attack_4",
+      "name": "Ranged Multi Attack 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 98
+      },
+      "fields": {
+        "name": "Ranged Multi Attack 4",
+        "description": "Gain a fourth ranged attack roll per turn. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "ranged_multi_attack",
+      "rank": 4,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:laser_expert_1",
+      "name": "Laser Expert 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 99
+      },
+      "fields": {
+        "name": "Laser Expert 1",
+        "description": "Weapons that deal energy damage gain 1 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 1,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Energy",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "laser_expert",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:laser_expert_2",
+      "name": "Laser Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 100
+      },
+      "fields": {
+        "name": "Laser Expert 2",
+        "description": "Weapons that deal energy damage gain 2 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 2,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Energy",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "laser_expert",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:laser_expert_3",
+      "name": "Laser Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 101
+      },
+      "fields": {
+        "name": "Laser Expert 3",
+        "description": "Weapons that deal energy damage gain 3 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 3,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Energy",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "laser_expert",
+      "rank": 3,
+      "corrections": {
+        "description": {
+          "original": "Weapons that deal energy damage gain 3 to Hit and gain advantage. ",
+          "corrected": "Weapons that deal energy damage gain 3 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:laser_expert_4",
+      "name": "Laser Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 102
+      },
+      "fields": {
+        "name": "Laser Expert 4",
+        "description": "Weapons that deal energy damage gain 4 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 4,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Energy",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "laser_expert",
+      "rank": 4,
+      "corrections": {
+        "description": {
+          "original": "Weapons that deal energy damage gain 4 to Hit and gain advantage. ",
+          "corrected": "Weapons that deal energy damage gain 4 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:missile_expert_1",
+      "name": "Missile Expert 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 103
+      },
+      "fields": {
+        "name": "Missile Expert 1",
+        "description": "Weapons that deal explosive damage gain 1 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 1,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Explosive",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "missile_expert",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:missile_expert_2",
+      "name": "Missile Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 104
+      },
+      "fields": {
+        "name": "Missile Expert 2",
+        "description": "Weapons that deal explosive damage gain 2 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 2,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Explosive",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "missile_expert",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:missile_expert_3",
+      "name": "Missile Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 105
+      },
+      "fields": {
+        "name": "Missile Expert 3",
+        "description": "Weapons that deal explosive damage gain 3 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 3,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Explosive",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "missile_expert",
+      "rank": 3,
+      "corrections": {
+        "description": {
+          "original": "Weapons that deal explosive damage gain 3 to Hit and gain advantage. ",
+          "corrected": "Weapons that deal explosive damage gain 3 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:missile_expert_4",
+      "name": "Missile Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 106
+      },
+      "fields": {
+        "name": "Missile Expert 4",
+        "description": "Weapons that deal explosive damage gain 4 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 4,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Explosive",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "missile_expert",
+      "rank": 4,
+      "corrections": {
+        "description": {
+          "original": "Weapons that deal explosive damage gain 4 to Hit and gain advantage. ",
+          "corrected": "Weapons that deal explosive damage gain 4 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:particle_expert_1",
+      "name": "Particle Expert 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 107
+      },
+      "fields": {
+        "name": "Particle Expert 1",
+        "description": "Weapons that deal particle damage gain 1 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 1,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Particle",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "particle_expert",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:particle_expert_2",
+      "name": "Particle Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 108
+      },
+      "fields": {
+        "name": "Particle Expert 2",
+        "description": "Weapons that deal particle damage gain 2 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 2,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Particle",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "particle_expert",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:particle_expert_3",
+      "name": "Particle Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 109
+      },
+      "fields": {
+        "name": "Particle Expert 3",
+        "description": "Weapons that deal particle damage gain 3 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 3,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Particle",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "particle_expert",
+      "rank": 3,
+      "corrections": {
+        "description": {
+          "original": "Weapons that deal particle damage gain 3 to Hit and gain advantage. ",
+          "corrected": "Weapons that deal particle damage gain 3 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:particle_expert_4",
+      "name": "Particle Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 110
+      },
+      "fields": {
+        "name": "Particle Expert 4",
+        "description": "Weapons that deal particle damage gain 4 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 4,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Particle",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "particle_expert",
+      "rank": 4,
+      "corrections": {
+        "description": {
+          "original": "Weapons that deal particle damage gain 4 to Hit and gain advantage. ",
+          "corrected": "Weapons that deal particle damage gain 4 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:melee_expert",
+      "name": "Melee Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 111
+      },
+      "fields": {
+        "name": "Melee Expert ",
+        "description": "Melee weapons gain 1 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 1,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Melee",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "melee_expert",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:melee_expert_2",
+      "name": "Melee Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 112
+      },
+      "fields": {
+        "name": "Melee Expert 2",
+        "description": "Melee weapons gain 2 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 2,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Melee",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "melee_expert",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:melee_expert_3",
+      "name": "Melee Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 113
+      },
+      "fields": {
+        "name": "Melee Expert 3",
+        "description": "Melee weapons gain 3 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 3,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Melee",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "melee_expert",
+      "rank": 3,
+      "corrections": {
+        "description": {
+          "original": "Melee weapons gain 3 to Hit and gain advantage. ",
+          "corrected": "Melee weapons gain 3 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:melee_expert_4",
+      "name": "Melee Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 114
+      },
+      "fields": {
+        "name": "Melee Expert 4",
+        "description": "Melee weapons gain 4 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 4,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Melee",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "melee_expert",
+      "rank": 4,
+      "corrections": {
+        "description": {
+          "original": "Melee weapons gain 4 to Hit and gain advantage. ",
+          "corrected": "Melee weapons gain 4 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:rifle_expert",
+      "name": "Rifle Expert",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 115
+      },
+      "fields": {
+        "name": "Rifle Expert ",
+        "description": "Ranged weapons that deal Bullet damage gain 1 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 1,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Ranged, Bullet",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "rifle_expert",
+      "rank": 1,
+      "corrections": {
+        "description": {
+          "original": "Ranged weapons that deal piercing damage gain 1 to Hit. ",
+          "corrected": "Ranged weapons that deal Bullet damage gain 1 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:rifle_expert_2",
+      "name": "Rifle Expert 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 116
+      },
+      "fields": {
+        "name": "Rifle Expert 2",
+        "description": "Ranged weapons that deal Bullet damage gain 2 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 2,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Ranged, Bullet",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "rifle_expert",
+      "rank": 2,
+      "corrections": {
+        "description": {
+          "original": "Ranged weapons that deal piercing damage gain 2 to Hit. ",
+          "corrected": "Ranged weapons that deal Bullet damage gain 2 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:rifle_expert_3",
+      "name": "Rifle Expert 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 117
+      },
+      "fields": {
+        "name": "Rifle Expert 3",
+        "description": "Ranged weapons that deal Bullet damage gain 3 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 3,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Ranged, Bullet",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "rifle_expert",
+      "rank": 3,
+      "corrections": {
+        "description": {
+          "original": "Ranged weapons that deal piercing damage gain 3 to Hit and gain advantage. ",
+          "corrected": "Ranged weapons that deal Bullet damage gain 3 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:rifle_expert_4",
+      "name": "Rifle Expert 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 118
+      },
+      "fields": {
+        "name": "Rifle Expert 4",
+        "description": "Ranged weapons that deal Bullet damage gain 4 to Hit. ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 4,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Ranged, Bullet",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "rifle_expert",
+      "rank": 4,
+      "corrections": {
+        "description": {
+          "original": "Ranged weapons that deal piercing damage gain 4 to Hit and gain advantage. ",
+          "corrected": "Ranged weapons that deal Bullet damage gain 4 to Hit. ",
+          "reason": "Owner removed Expert advantage and renamed ranged Piercing"
+        }
+      },
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:anti_air_pro",
+      "name": "Anti-Air Pro",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 119
+      },
+      "fields": {
+        "name": "Anti-Air Pro",
+        "description": "If the weapon possess the Anti-Air tag gain +2 to Hit",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 2,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Anti-Air",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "anti_air_pro",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:anti_air_pro_2",
+      "name": "Anti-Air Pro 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 120
+      },
+      "fields": {
+        "name": "Anti-Air Pro 2",
+        "description": "If the weapon possess the Anti-Air tag gain +3 to Hit",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 3,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Anti-Air",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "anti_air_pro",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:anti_air_pro_3",
+      "name": "Anti-Air Pro 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 121
+      },
+      "fields": {
+        "name": "Anti-Air Pro 3 ",
+        "description": "If the weapon possess the Anti-Air tag gain +4 to Hit",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 4,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Anti-Air",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "anti_air_pro",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:anti_air_pro_4",
+      "name": "Anti-Air Pro 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 122
+      },
+      "fields": {
+        "name": "Anti-Air Pro 4",
+        "description": "If the weapon possess the Anti-Air tag gain +5 to Hit",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": 5,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": "Anti-Air",
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "anti_air_pro",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:fleet_footed",
+      "name": "Fleet Footed",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 123
+      },
+      "fields": {
+        "name": "Fleet Footed",
+        "description": "Your Zoid gains +50 to speed.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": 50,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "fleet_footed",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:fleet_footed_2",
+      "name": "Fleet Footed 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 124
+      },
+      "fields": {
+        "name": "Fleet Footed 2",
+        "description": "Your Zoid gains +100 to speed.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": 100,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "fleet_footed",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:fleet_footed_3",
+      "name": "Fleet Footed 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 125
+      },
+      "fields": {
+        "name": "Fleet Footed 3",
+        "description": "Your Zoid gains +150 to speed.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": 150,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "fleet_footed",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:fleet_footed_4",
+      "name": "FLeet Footed 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 126
+      },
+      "fields": {
+        "name": "FLeet Footed 4",
+        "description": "Your Zoid gains +200 to speed.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": 200,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "fleet_footed",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:honed",
+      "name": "Honed",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 127
+      },
+      "fields": {
+        "name": "Honed",
+        "description": "Your Zoid gains +5 to reaction",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": 5,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "honed",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:honed_2",
+      "name": "Honed 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 128
+      },
+      "fields": {
+        "name": "Honed 2",
+        "description": "Your Zoid gains +10 to reaction",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": 10,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "honed",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:honed_3",
+      "name": "Honed 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 129
+      },
+      "fields": {
+        "name": "Honed 3",
+        "description": "Your Zoid gains +15 to reaction",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": 15,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "honed",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:honed_4",
+      "name": "Honed 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 130
+      },
+      "fields": {
+        "name": "Honed 4",
+        "description": "Your Zoid gains +20 to reaction",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": 20,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "honed",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:comeback",
+      "name": "Comeback",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 131
+      },
+      "fields": {
+        "name": "Comeback",
+        "description": "While active and current health is 20% or less of maximum health, attacks gain 20% damage.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": 0.2,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "comeback",
+      "rank": 1,
+      "eligible_sizes": [],
+      "corrections": {
+        "damage_bonus": {
+          "original": "+20%",
+          "corrected": 0.2
+        },
+        "description": {
+          "original": "If your health is below 1/5 your attacks do one extra die more of damage.",
+          "reason": "Owner replaced legacy dice damage with rank-based flat-damage percentages at <=20% health"
+        }
+      }
+    },
+    {
+      "id": "abilities:comeback_2",
+      "name": "Comeback 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 132
+      },
+      "fields": {
+        "name": "Comeback 2",
+        "description": "While active and current health is 20% or less of maximum health, attacks gain 30% damage.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": 0.3,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "comeback",
+      "rank": 2,
+      "eligible_sizes": [],
+      "corrections": {
+        "damage_bonus": {
+          "original": "=25%",
+          "corrected": 0.3
+        },
+        "description": {
+          "original": "If your health is below 1/5 your attacks do two extra dice more of damage.",
+          "reason": "Owner replaced legacy dice damage with rank-based flat-damage percentages at <=20% health"
+        }
+      }
+    },
+    {
+      "id": "abilities:comeback_3",
+      "name": "Comeback 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 133
+      },
+      "fields": {
+        "name": "Comeback 3",
+        "description": "While active and current health is 20% or less of maximum health, attacks gain 40% damage.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": 0.4,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "comeback",
+      "rank": 3,
+      "eligible_sizes": [],
+      "corrections": {
+        "damage_bonus": {
+          "original": "+30%",
+          "corrected": 0.4
+        },
+        "description": {
+          "original": "If your health is below 1/5 your attacks do an extra three dice more of damage.",
+          "reason": "Owner replaced legacy dice damage with rank-based flat-damage percentages at <=20% health"
+        }
+      }
+    },
+    {
+      "id": "abilities:comeback_4",
+      "name": "Comeback 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 134
+      },
+      "fields": {
+        "name": "Comeback 4",
+        "description": "While active and current health is 20% or less of maximum health, attacks gain 50% damage.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": 0.5,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "comeback",
+      "rank": 4,
+      "eligible_sizes": [],
+      "corrections": {
+        "damage_bonus": {
+          "original": "+35%",
+          "corrected": 0.5
+        },
+        "description": {
+          "original": "If your health is below 1/5 your attacks do four extra dice more of damage",
+          "reason": "Owner replaced legacy dice damage with rank-based flat-damage percentages at <=20% health"
+        }
+      }
+    },
+    {
+      "id": "abilities:iron_defense",
+      "name": "Iron Defense",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 135
+      },
+      "fields": {
+        "name": "Iron Defense",
+        "description": "Gain +5 to Zoids Defense ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": 5
+      },
+      "dynamic_fields": {},
+      "family": "iron_defense",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:iron_defense_2",
+      "name": "Iron Defense 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 136
+      },
+      "fields": {
+        "name": "Iron Defense 2",
+        "description": "Gain +10 to Zoids Defense ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": 10
+      },
+      "dynamic_fields": {},
+      "family": "iron_defense",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:iron_defense_3",
+      "name": "Iron Defense 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 137
+      },
+      "fields": {
+        "name": "Iron Defense 3",
+        "description": "Gain +15 to Zoids Defense ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": 15
+      },
+      "dynamic_fields": {},
+      "family": "iron_defense",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:iron_defense_4",
+      "name": "Iron Defense 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 138
+      },
+      "fields": {
+        "name": "Iron Defense 4",
+        "description": "Gain +20 to Zoids Defense ",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": 20
+      },
+      "dynamic_fields": {},
+      "family": "iron_defense",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:sniper_1",
+      "name": "Sniper 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 139
+      },
+      "fields": {
+        "name": "Sniper 1",
+        "description": "Gain +1 to Hit on attacks beyond 1/2 your Zoids max Range",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "sniper",
+      "rank": 1,
+      "eligible_sizes": [],
+      "long_range_to_hit_bonus": 1
+    },
+    {
+      "id": "abilities:sniper_2",
+      "name": "Sniper 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 140
+      },
+      "fields": {
+        "name": "Sniper 2",
+        "description": "Gain +2 to Hit on attacks beyond 1/2 your Zoids max Range",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "sniper",
+      "rank": 2,
+      "eligible_sizes": [],
+      "long_range_to_hit_bonus": 2
+    },
+    {
+      "id": "abilities:sniper_3",
+      "name": "Sniper 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 141
+      },
+      "fields": {
+        "name": "Sniper 3",
+        "description": "Gain +3 to Hit on attacks beyond 1/2 your Zoids max Range",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "sniper",
+      "rank": 3,
+      "eligible_sizes": [],
+      "long_range_to_hit_bonus": 3
+    },
+    {
+      "id": "abilities:sniper_4",
+      "name": "Sniper 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 142
+      },
+      "fields": {
+        "name": "Sniper 4",
+        "description": "Gain +4 to Hit on attacks beyond 1/2 your Zoids max Range",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "sniper",
+      "rank": 4,
+      "eligible_sizes": [],
+      "long_range_to_hit_bonus": 4
+    },
+    {
+      "id": "abilities:true_tank",
+      "name": "True Tank",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 143
+      },
+      "fields": {
+        "name": "True Tank",
+        "description": "Defensive equpiment gains an additional +5 efficiancy",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": 5,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "true_tank",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:true_tank_2",
+      "name": "True Tank 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 144
+      },
+      "fields": {
+        "name": "True Tank 2",
+        "description": "Defensive equpiment gains an additional +10 efficiancy",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": 10,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "true_tank",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:true_tank_3",
+      "name": "True Tank 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 145
+      },
+      "fields": {
+        "name": "True Tank 3",
+        "description": "Defensive equpiment gains an additional +15 efficiancy",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": 15,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "true_tank",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:true_tank_4",
+      "name": "True Tank 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 146
+      },
+      "fields": {
+        "name": "True Tank 4",
+        "description": "Defensive equpiment gains an additional +20 efficiancy",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": 20,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "true_tank",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:armor_breaker",
+      "name": "Armor Breaker",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 147
+      },
+      "fields": {
+        "name": "Armor Breaker",
+        "description": "When using a weapon that lowers the defense of the Zoid lowers the defense by an additional 2.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "armor_breaker",
+      "rank": 1,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:armor_breaker_2",
+      "name": "Armor Breaker 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 148
+      },
+      "fields": {
+        "name": "Armor Breaker 2",
+        "description": "When using a weapon that lowers the defense of the Zoid lowers the defense by an additional 4.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "armor_breaker",
+      "rank": 2,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:armor_breaker_3",
+      "name": "Armor Breaker 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 149
+      },
+      "fields": {
+        "name": "Armor Breaker 3",
+        "description": "When using a weapon that lowers the defense of the Zoid lowers the defense by an additional 6.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "armor_breaker",
+      "rank": 3,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:armor_breaker_4",
+      "name": "Armor Breaker 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 150
+      },
+      "fields": {
+        "name": "Armor Breaker 4",
+        "description": "When using a weapon that lowers the defense of the Zoid lowers the defense by an additional 8.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "armor_breaker",
+      "rank": 4,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:evasion_master",
+      "name": "Evasion Master",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 151
+      },
+      "fields": {
+        "name": "Evasion Master",
+        "description": "While active, each enabled item that boosts Reaction also adds 1 Armor.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "evasion_master",
+      "rank": 1,
+      "eligible_sizes": [],
+      "corrections": {
+        "description": {
+          "original": "Equipment that boosts Reaction gains a +2 boost",
+          "reason": "Owner changed effect to armor per reaction-boosting item"
+        }
+      },
+      "armor_per_reaction_item": 1
+    },
+    {
+      "id": "abilities:evasion_master_2",
+      "name": "Evasion Master 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 152
+      },
+      "fields": {
+        "name": "Evasion Master 2",
+        "description": "While active, each enabled item that boosts Reaction also adds 2 Armor.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "evasion_master",
+      "rank": 2,
+      "eligible_sizes": [],
+      "corrections": {
+        "description": {
+          "original": "Equipment that boosts Reaction gains a +4 boost",
+          "reason": "Owner changed effect to armor per reaction-boosting item"
+        }
+      },
+      "armor_per_reaction_item": 2
+    },
+    {
+      "id": "abilities:evasion_master_3",
+      "name": "Evasion Master 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 153
+      },
+      "fields": {
+        "name": "Evasion Master 3",
+        "description": "While active, each enabled item that boosts Reaction also adds 3 Armor.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "evasion_master",
+      "rank": 3,
+      "eligible_sizes": [],
+      "corrections": {
+        "description": {
+          "original": "Equipment that boosts Reaction gains a +6 boost",
+          "reason": "Owner changed effect to armor per reaction-boosting item"
+        }
+      },
+      "armor_per_reaction_item": 3
+    },
+    {
+      "id": "abilities:evasion_master_4",
+      "name": "Evasion Master 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 154
+      },
+      "fields": {
+        "name": "Evasion Master 4",
+        "description": "While active, each enabled item that boosts Reaction also adds 4 Armor.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "evasion_master",
+      "rank": 4,
+      "eligible_sizes": [],
+      "corrections": {
+        "description": {
+          "original": "Equipment that boosts Reaction gains a +8 boost",
+          "reason": "Owner changed effect to armor per reaction-boosting item"
+        }
+      },
+      "armor_per_reaction_item": 4
+    },
+    {
+      "id": "abilities:shield_master",
+      "name": "Shield Master",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 155
+      },
+      "fields": {
+        "name": "Shield Master",
+        "description": "Durabilatiy of shields increases by 25",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": 25,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "shield_master",
+      "rank": 1,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:shield_master_2",
+      "name": "Shield Master 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 156
+      },
+      "fields": {
+        "name": "Shield Master 2",
+        "description": "Durabilatiy of shields increases by 50",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": 50,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "shield_master",
+      "rank": 2,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:shield_master_3",
+      "name": "Shield Master 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 157
+      },
+      "fields": {
+        "name": "Shield Master 3",
+        "description": "Durabilatiy of shields increases by 75",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": 75,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "shield_master",
+      "rank": 3,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:shield_master_4",
+      "name": "Shield Master 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 158
+      },
+      "fields": {
+        "name": "Shield Master 4",
+        "description": "Durabilatiy of shields increases by 100",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": 100,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "shield_master",
+      "rank": 4,
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:smoke_master",
+      "name": "Smoke Master",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 159
+      },
+      "fields": {
+        "name": "Smoke Master",
+        "description": "Smoke units cover an additonal 15m",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "smoke_master",
+      "rank": 1,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:smoke_master_2",
+      "name": "Smoke Master 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 160
+      },
+      "fields": {
+        "name": "Smoke Master 2",
+        "description": "Smoke units cover an additonal 20m",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "smoke_master",
+      "rank": 2,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:smoke_master_3",
+      "name": "Smoke Master 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 161
+      },
+      "fields": {
+        "name": "Smoke Master 3",
+        "description": "Smoke units cover an additonal 30m",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "smoke_master",
+      "rank": 3,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:smoke_master_4",
+      "name": "Smoke Master 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 162
+      },
+      "fields": {
+        "name": "Smoke Master 4",
+        "description": "Smoke units cover an additonal 40m",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "smoke_master",
+      "rank": 4,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:weapon_breaker_1",
+      "name": "Weapon Breaker 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 179
+      },
+      "fields": {
+        "name": "Weapon Breaker 1",
+        "description": "When you score a critical hit with a melee weapon, one of the target's weapons is destroyed at random.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "weapon_breaker",
+      "rank": 1,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:weapon_breaker_2",
+      "name": "Weapon Breaker 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 180
+      },
+      "fields": {
+        "name": "Weapon Breaker 2",
+        "description": "When you score a critical hit with a melee weapon, one of the target's weapons is destroyed. You may choose the weapon.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "weapon_breaker",
+      "rank": 2,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:economized_shooting",
+      "name": "Economized Shooting",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 181
+      },
+      "fields": {
+        "name": "Economized Shooting",
+        "description": "While active, increase maximum heat of every heat-rated weapon by 1.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "economized_shooting",
+      "rank": 1,
+      "eligible_sizes": [],
+      "corrections": {
+        "description": {
+          "original": "You may fire an overheating weapon once without breaking it.",
+          "reason": "Owner replaced one-use exception with heat capacity bonus"
+        }
+      },
+      "heat_capacity_bonus": 1
+    },
+    {
+      "id": "abilities:counter_attack",
+      "name": "Counter Attack",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 182
+      },
+      "fields": {
+        "name": "Counter Attack",
+        "description": "When an enemy rolls a 1 on an attack against you, you may make a single weapon attack against that enemy as a reaction.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "counter_attack",
+      "rank": 1,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    },
+    {
+      "id": "abilities:counter_attack_2",
+      "name": "Counter Attack 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 183
+      },
+      "fields": {
+        "name": "Counter Attack 2",
+        "description": "When an enemy rolls a 5 on an attack against you, you may make a single weapon attack against that enemy as a reaction, regardless of whether the enemy attack hit you.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "counter_attack",
+      "rank": 2,
+      "eligible_sizes": [],
+      "handling": "player_managed"
+    }
+  ],
+  "excluded_rows": [
+    {
+      "row": 163,
+      "name": "Wimp",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 164,
+      "name": "Wimp 2",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 165,
+      "name": "Wimp 3",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 166,
+      "name": "Wimp 4",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 167,
+      "name": "Cross Eyed",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 168,
+      "name": "Cross Eyed 2",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 169,
+      "name": "Cross Eyed 3",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 170,
+      "name": "Cross Eyed 4",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 171,
+      "name": "Slowpoke",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 172,
+      "name": "Slowpoke 2",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 173,
+      "name": "Slowpoke 3",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 174,
+      "name": "Slowpoke 4",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 175,
+      "name": "Bad Armor",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 176,
+      "name": "Bad Armor 2",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 177,
+      "name": "Bad Armor 3",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 178,
+      "name": "Bad Armor 4",
+      "reason": "Owner retired this ability family and all ranks"
+    },
+    {
+      "row": 184,
+      "reason": "empty"
+    }
+  ]
+}

@@ -1,0 +1,4678 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "name",
+    "damage",
+    "damage_type",
+    "effect",
+    "to_hit",
+    "defense",
+    "armor",
+    "to_hit_bonus",
+    "range_bonus",
+    "reaction_bonus",
+    "speed_bonus",
+    "weight",
+    "activation",
+    "shields",
+    "weapon_class",
+    "heat"
+  ],
+  "source_headers": [
+    "1",
+    "Damage 2",
+    "Damage Type 3",
+    "Effect 4",
+    "Hit 5",
+    "Defense 6",
+    "Armor 7",
+    "To Hit Increase 8",
+    "Range 9",
+    "Reaction 10",
+    "Speed 11",
+    "Weight",
+    "Active/Passive",
+    "Shields",
+    "Ranged/Melee",
+    "Heat"
+  ],
+  "records": [
+    {
+      "id": "armaments:none",
+      "name": "- - - - -",
+      "kind": "placeholder",
+      "source": {
+        "sheet": "Armaments",
+        "row": 2
+      },
+      "fields": {
+        "name": "- - - - -",
+        "damage": 0,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:zoid_equipment_slot_1",
+      "name": "Zoid equipment slot 1",
+      "kind": "dynamic",
+      "source": {
+        "sheet": "Armaments",
+        "row": 3
+      },
+      "fields": {
+        "name": null,
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {
+        "name": "vlookup(Zoid!C4,Zoid_DB[],47,FALSE())",
+        "damage": "vlookup(Zoid!C4,Zoid_DB[],49,FALSE)",
+        "damage_type": "vlookup(Zoid!C4,Zoid_DB[],50,FALSE())",
+        "effect": "vlookup(Zoid!C4,Zoid_DB[],48,FALSE())",
+        "to_hit": "vlookup(Zoid!C4,Zoid_DB[],51,FALSE())",
+        "weight": "vlookup(Zoid!C4,Zoid_DB[],52,FALSE())"
+      }
+    },
+    {
+      "id": "armaments:zoid_equipment_slot_2",
+      "name": "Zoid equipment slot 2",
+      "kind": "dynamic",
+      "source": {
+        "sheet": "Armaments",
+        "row": 4
+      },
+      "fields": {
+        "name": null,
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {
+        "name": "vlookup(Zoid!C4,Zoid_DB[],54,FALSE())",
+        "damage": "vlookup(Zoid!C4,Zoid_DB[],55,FALSE())",
+        "damage_type": "vlookup(Zoid!C4,Zoid_DB[],58,FALSE())",
+        "effect": "vlookup(Zoid!C4,Zoid_DB[],56,FALSE())",
+        "to_hit": "vlookup(Zoid!C4,Zoid_DB[],57,FALSE())",
+        "weight": "vlookup(Zoid!C4,Zoid_DB[],59,FALSE())",
+        "weapon_class": "vlookup(Zoid!C4,Zoid_DB[],55,FALSE)"
+      }
+    },
+    {
+      "id": "armaments:zoid_equipment_slot_3",
+      "name": "Zoid equipment slot 3",
+      "kind": "dynamic",
+      "source": {
+        "sheet": "Armaments",
+        "row": 5
+      },
+      "fields": {
+        "name": null,
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {
+        "name": "vlookup(Zoid!C4,Zoid_DB[],61,FALSE())"
+      }
+    },
+    {
+      "id": "armaments:zoid_equipment_slot_4",
+      "name": "Zoid equipment slot 4",
+      "kind": "dynamic",
+      "source": {
+        "sheet": "Armaments",
+        "row": 6
+      },
+      "fields": {
+        "name": null,
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {
+        "name": "vlookup(Zoid!C4,Zoid_DB[],66,FALSE())",
+        "damage": "vlookup(Zoid!C4,Zoid_DB[],67,FALSE())",
+        "effect": "vlookup(Zoid!C4,Zoid_DB[],69,FALSE)",
+        "to_hit": "vlookup(Zoid!C4,Zoid_DB[],68,FALSE())",
+        "defense": "vlookup(Zoid!C4,Zoid_DB[],71,FALSE())",
+        "weight": "vlookup(Zoid!C4,Zoid_DB[],70,FALSE())",
+        "activation": "vlookup(Zoid!C4,Zoid_DB[],72,FALSE())"
+      }
+    },
+    {
+      "id": "armaments:weapons",
+      "name": "WEAPONS",
+      "kind": "heading",
+      "source": {
+        "sheet": "Armaments",
+        "row": 7
+      },
+      "fields": {
+        "name": "WEAPONS",
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:particle_cannon",
+      "name": "Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 8
+      },
+      "fields": {
+        "name": "Particle Cannon",
+        "damage": 65,
+        "damage_type": "Ranged, Particle",
+        "effect": "fires dense particle beams in a 15m wide straight line. Each Zoid in the path must make a reaction against your attack roll or take damage.",
+        "to_hit": 16,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 20,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:heavy_particle_cannon",
+      "name": "Heavy Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 9
+      },
+      "fields": {
+        "name": "Heavy Particle Cannon",
+        "damage": 85,
+        "damage_type": "Ranged, Particle",
+        "effect": "larger particle cannon. Each shot is a 30m wide particle beam. Each Zoid in the path must make a reaction against your attack roll or take damage.",
+        "to_hit": 16,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 25,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:hyper_particle_cannon",
+      "name": "Hyper Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 10
+      },
+      "fields": {
+        "name": "Hyper Particle Cannon",
+        "damage": 100,
+        "damage_type": "Particle",
+        "effect": "Particle cannon. Fires a 30m wide particle beam. Each Zoid in the path of the ",
+        "to_hit": 16,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 27,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:plasma_particle_cannon",
+      "name": "Plasma Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 11
+      },
+      "fields": {
+        "name": "Plasma Particle Cannon",
+        "damage": 130,
+        "damage_type": "Particle",
+        "effect": "shoots dense particle blasts. Targets up to four opponents.",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 35,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:photon_paticle_cannon",
+      "name": "Photon Paticle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 12
+      },
+      "fields": {
+        "name": "Photon Paticle Cannon",
+        "damage": 180,
+        "damage_type": "Particle",
+        "effect": "shoots a piercing particle beam. If damage exceeds health threshold it punctures through the Zoid to hit whatever is behind it for the remaining damage.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 30,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:charge_particle_cannon",
+      "name": "Charge Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 13
+      },
+      "fields": {
+        "name": "Charge Particle Cannon",
+        "damage": 200,
+        "damage_type": "Particle",
+        "effect": "Fires two narrow particle beams. Targets up to two opponents. If damage exceeds the remaining health of the targeted Zoids it punctures through the zoid and continues on for the remaining damage. damage is split between the two beams.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 50,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:external_charge_particle_cannon",
+      "name": "External Charge Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 14
+      },
+      "fields": {
+        "name": "External Charge Particle Cannon",
+        "damage": 200,
+        "damage_type": "Particle",
+        "effect": "can target up to four opponents. Each shot deals 50 damage. ",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 40,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:focus_charge_particle_cannon",
+      "name": "Focus Charge Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 15
+      },
+      "fields": {
+        "name": "Focus Charge Particle Cannon",
+        "damage": 300,
+        "damage_type": "Particle",
+        "effect": "Fires a narrow particle beam. If damage exceeds health threshold it punctures through the Zoid to hit whatever is behind it for the remaining damage.",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 50,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:spread_charge_particle_cannon",
+      "name": "Spread Charge Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 16
+      },
+      "fields": {
+        "name": "Spread Charge Particle Cannon",
+        "damage": 250,
+        "damage_type": "Particle, Anti-Air",
+        "effect": "Fires a 45m wide particle beam. Each Zoid in the path of the beam must make a reaction save against the attack roll. Successful saves take no damage. Must recharge for three turns. ",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 60,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:great_charge_particle_cannon",
+      "name": "Great Charge Particle Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 17
+      },
+      "fields": {
+        "name": "Great Charge Particle Cannon",
+        "damage": 350,
+        "damage_type": "Particle, Anti-Air",
+        "effect": "Fires a 60m wide particle beam. Each Zoid in the path of the beam must make a reaction save against the attack roll. Successful saves take no damage. Must recharge for three turns.",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 80,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:mini_laser",
+      "name": "Mini Laser",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 18
+      },
+      "fields": {
+        "name": "Mini Laser",
+        "damage": 50,
+        "damage_type": "Energy, Puncture",
+        "effect": "Small energy gun. Target a single opponent. If damage exceeds health threshold it punctures through the Zoid to hit whatever is behind it.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 5,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:2_set_laser",
+      "name": "2-Set Laser",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 19
+      },
+      "fields": {
+        "name": "2-Set Laser",
+        "damage": 80,
+        "damage_type": "Energy",
+        "effect": "Double barrel energy cannon. Can target up to two Zoids. Damage is split between targets. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 11,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:3_set_laser",
+      "name": "3-Set Laser",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 20
+      },
+      "fields": {
+        "name": "3-Set Laser",
+        "damage": 110,
+        "damage_type": "Energy",
+        "effect": "Triple barrel energy cannon. Can target up to three Zoids. Damage is split between targets. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 23,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:4_set_laser",
+      "name": "4-Set Laser",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 21
+      },
+      "fields": {
+        "name": "4-Set Laser",
+        "damage": 150,
+        "damage_type": "Energy",
+        "effect": "Quad barrel energy cannon. Can target up to four Zoids. Damage is split between targets. ",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 26,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:anti_air_laser",
+      "name": "Anti-Air Laser",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 22
+      },
+      "fields": {
+        "name": "Anti-Air Laser",
+        "damage": 50,
+        "damage_type": "Energy, Anti-Air",
+        "effect": "Fires an energy beam. Targets a single opponent.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 6,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:2_set_anti_air_laser",
+      "name": "2-Set Anti-Air Laser",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 23
+      },
+      "fields": {
+        "name": "2-Set Anti-Air Laser",
+        "damage": 80,
+        "damage_type": "Energy, Anti-Air",
+        "effect": "Double barrel energy cannon. Can target up to two zoids. Damage is split between targets. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:3_set_anti_air_laser",
+      "name": "3-Set Anti-Air Laser",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 24
+      },
+      "fields": {
+        "name": "3-Set Anti-Air Laser",
+        "damage": 110,
+        "damage_type": "Energy, Anti-Air",
+        "effect": "Triple barrel energy cannon. Can target up to three zoids. Damage is split between targets. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 20,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:4_set_anti_air_laser",
+      "name": "4-Set Anti-Air Laser",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 25
+      },
+      "fields": {
+        "name": "4-Set Anti-Air Laser",
+        "damage": 150,
+        "damage_type": "Energy, Anti-Air",
+        "effect": "Quad barrel energy cannon. Can target up to four zoids. Damage is split between targets. ",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 25,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:laser_machine_gun",
+      "name": "Laser Machine Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 26
+      },
+      "fields": {
+        "name": "Laser Machine Gun",
+        "damage": 60,
+        "damage_type": "Energy, Anti-Air",
+        "effect": "Small energy machine gun. Target up to two opponents. Damage is split between targets. ",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 8,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:pulse_laser_gun",
+      "name": "Pulse Laser Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 27
+      },
+      "fields": {
+        "name": "Pulse Laser Gun",
+        "damage": 90,
+        "damage_type": "Energy, Anti-Air",
+        "effect": "Fires a bust of energy beams. Targets a single opponent. ",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 12,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:beam_needle",
+      "name": "Beam Needle",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 28
+      },
+      "fields": {
+        "name": "Beam Needle",
+        "damage": 120,
+        "damage_type": "Energy, Anti-Air",
+        "effect": "Fires two bursts of energy bolts. Targets up to two opponents. ",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:gatling_beam",
+      "name": "Gatling Beam",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 29
+      },
+      "fields": {
+        "name": "Gatling Beam",
+        "damage": 140,
+        "damage_type": "Energy, Anti-Air, Close Range",
+        "effect": "Rapid fire energy gun. Targets an horizontal area 30m by 90m. ",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 23,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:beam_rifle",
+      "name": "Beam Rifle",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 30
+      },
+      "fields": {
+        "name": "Beam Rifle",
+        "damage": 100,
+        "damage_type": "Energy",
+        "effect": "Precision energy rifle. Fires a single energy bolt. Targets a single opponent.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 14,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:assault_beam_cannon",
+      "name": "Assault Beam Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 31
+      },
+      "fields": {
+        "name": "Assault Beam Cannon",
+        "damage": 75,
+        "damage_type": "Energy",
+        "effect": "Energy cannon. Fires a single energy bolts. Targets a single opponent. ",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 12,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:beam_cannon",
+      "name": "Beam Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 32
+      },
+      "fields": {
+        "name": "Beam Cannon",
+        "damage": 140,
+        "damage_type": "Energy",
+        "effect": "Fires a single energy bolts targets a single opponent. ",
+        "to_hit": 16,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 25,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:ray_storm",
+      "name": "Ray Storm",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 33
+      },
+      "fields": {
+        "name": "Ray Storm",
+        "damage": 140,
+        "damage_type": "Energy, Anti-Air",
+        "effect": "Large energy cannon.  Fires four energy bolts. Targets up to two opponents. Each shot does 36. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 32,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:rolling_cannon",
+      "name": "Rolling Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 34
+      },
+      "fields": {
+        "name": "Rolling Cannon",
+        "damage": 160,
+        "damage_type": "Ranged, Bullet, Penetrating",
+        "effect": "Large cannon. If the damage exceeds the remaining health of the target Zoid it will pierce through the Zoid. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 35,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Penetrating",
+          "corrected": "Ranged, Bullet, Penetrating",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:hybrid_cannon",
+      "name": "Hybrid Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 35
+      },
+      "fields": {
+        "name": "Hybrid Cannon",
+        "damage": 200,
+        "damage_type": "Energy, Long Range",
+        "effect": "Single barrel energy cannon. Fires a single bolt. Targets a single opponent. Minimum range of 100m.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 40,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:accelerated_cannons",
+      "name": "Accelerated Cannons",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 36
+      },
+      "fields": {
+        "name": "Accelerated Cannons",
+        "damage": 90,
+        "damage_type": "Explosive, Long Range",
+        "effect": "Targets a single opponent. Minimum range of 105m. ",
+        "to_hit": 13,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:double_cannon",
+      "name": "Double Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 37
+      },
+      "fields": {
+        "name": "Double Cannon",
+        "damage": 120,
+        "damage_type": "Explosive, Long Range",
+        "effect": "Double barrel cannon. Targets a single opponent. Minimum range of 120m. ",
+        "to_hit": 13,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 18,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:2_set_high_speed_cannon",
+      "name": "2-Set High Speed Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 38
+      },
+      "fields": {
+        "name": "2-Set High Speed Cannon",
+        "damage": 140,
+        "damage_type": "Explosive, Long Range",
+        "effect": "Double barrel cannon. Targets a single opponent. Minimum range of 150m",
+        "to_hit": 12,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 25,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:triple_cannon",
+      "name": "Triple Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 39
+      },
+      "fields": {
+        "name": "Triple Cannon",
+        "damage": 150,
+        "damage_type": "Explosive",
+        "effect": "Triple barrel cannon. Targets a single opponent. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 28,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:hyper_cannon",
+      "name": "Hyper Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 40
+      },
+      "fields": {
+        "name": "Hyper Cannon",
+        "damage": 350,
+        "damage_type": "Ranged, Bullet",
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 30,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:impact_cannon",
+      "name": "Impact Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 41
+      },
+      "fields": {
+        "name": "Impact Cannon",
+        "damage": 60,
+        "damage_type": "Ranged, Bullet, Close Range",
+        "effect": "Single barrel cannon. Targets a single opponent. Max range of 210m",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 8,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Close Range",
+          "corrected": "Ranged, Bullet, Close Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:accelerated_impact_cannon",
+      "name": "Accelerated Impact Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 42
+      },
+      "fields": {
+        "name": "Accelerated Impact Cannon",
+        "damage": 120,
+        "damage_type": "Ranged, Bullet, Close Range",
+        "effect": "Single barrel cannon. Targets a single opponent. Max range of 300m",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 12,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Close Range",
+          "corrected": "Ranged, Bullet, Close Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:3_set_impact_cannon",
+      "name": "3-Set Impact Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 43
+      },
+      "fields": {
+        "name": "3-Set Impact Cannon",
+        "damage": 160,
+        "damage_type": "Ranged, Bullet",
+        "effect": "Triple barrel cannon. Targets a single opponent. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 18,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:linear_cannon",
+      "name": "Linear Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 44
+      },
+      "fields": {
+        "name": "Linear Cannon",
+        "damage": 220,
+        "damage_type": "Explosive",
+        "effect": "Single fire cannon. Targets a single opponent. ",
+        "to_hit": 12,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 20,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:assault_cannon",
+      "name": "Assault Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 45
+      },
+      "fields": {
+        "name": "Assault Cannon",
+        "damage": 250,
+        "damage_type": "Explosive",
+        "effect": "Double barrel cannon. Targets a single opponent. ",
+        "to_hit": 13,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 23,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:assault_rifle",
+      "name": "Assault Rifle",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 46
+      },
+      "fields": {
+        "name": "Assault Rifle",
+        "damage": 120,
+        "damage_type": "Ranged, Bullet",
+        "effect": "Large assault rifle. Fires a single precious shot. Targets a single opponent. ",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 21,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:long_range_rifle",
+      "name": "Long-Range Rifle",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 47
+      },
+      "fields": {
+        "name": "Long-Range Rifle",
+        "damage": 180,
+        "damage_type": "Ranged, Bullet, Long Range",
+        "effect": "Fires a single precious shot. Targets a single opponent. Minimum range of 300m. ",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 18,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Long Range",
+          "corrected": "Ranged, Bullet, Long Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:buster_cannon",
+      "name": "Buster Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 48
+      },
+      "fields": {
+        "name": "Buster Cannon",
+        "damage": 400,
+        "damage_type": "Explosive, Long Range",
+        "effect": "Large single barrel cannon. Targets a single opponent. Minimum range of 225m",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 35,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:ultra_cannon",
+      "name": "Ultra Cannon",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 49
+      },
+      "fields": {
+        "name": "Ultra Cannon",
+        "damage": 600,
+        "damage_type": "Explosive",
+        "effect": "Large single barrel cannon. Targets a single opponent. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 40,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:shock_gun",
+      "name": "Shock Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 50
+      },
+      "fields": {
+        "name": "Shock Gun",
+        "damage": 60,
+        "damage_type": "Ranged, Bullet",
+        "effect": "Single barrel cannon. Targets a single opponent.",
+        "to_hit": 16,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 8,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:rail_gun",
+      "name": "Rail Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 51
+      },
+      "fields": {
+        "name": "Rail Gun",
+        "damage": 130,
+        "damage_type": "Ranged, Bullet",
+        "effect": "Rail cannon. Targets a single opponent. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 20,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:close_range_rail_gun",
+      "name": "Close-Range Rail Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 52
+      },
+      "fields": {
+        "name": "Close-Range Rail Gun",
+        "damage": 150,
+        "damage_type": "Ranged, Bullet, Close Range",
+        "effect": "Rail cannon. Targets a single opponent. Maximum range of 150m. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 23,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Close Range",
+          "corrected": "Ranged, Bullet, Close Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:high_speed_rail_gun",
+      "name": "High Speed Rail Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 53
+      },
+      "fields": {
+        "name": "High Speed Rail Gun",
+        "damage": 120,
+        "damage_type": "Ranged, Bullet, Penetrating, Anti-Air, Long Range",
+        "effect": "Faster rail cannon. Targets a single opponent. If damage exceeds the remaining health of the target the railgun continues in a straight line for the remaining damage. ",
+        "to_hit": 14,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 25,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Penetrating, Anti-Air, Long Range",
+          "corrected": "Ranged, Bullet, Penetrating, Anti-Air, Long Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:super_speed_rail_gun",
+      "name": "Super Speed Rail Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 54
+      },
+      "fields": {
+        "name": "Super Speed Rail Gun",
+        "damage": 150,
+        "damage_type": "Ranged, Bullet, Penetrating, Long Range",
+        "effect": "Faster rail cannon. Targets a single opponent. If damage exceeds the remaining health of the target the railgun continues in a straight line for the remaining damage. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 27,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Penetrating, Long Range",
+          "corrected": "Ranged, Bullet, Penetrating, Long Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:hyper_rail_gun",
+      "name": "Hyper Rail Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 55
+      },
+      "fields": {
+        "name": "Hyper Rail Gun",
+        "damage": 180,
+        "damage_type": "Ranged, Bullet, Penetrating, Long Range",
+        "effect": "Targets a single opponent. If damage exceeds the remaining health of the target the railgun continues in a straight line for the remaining damage. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 30,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Penetrating, Long Range",
+          "corrected": "Ranged, Bullet, Penetrating, Long Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:machine_gun",
+      "name": "Machine Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 56
+      },
+      "fields": {
+        "name": "Machine Gun",
+        "damage": 30,
+        "damage_type": "Ranged, Bullet",
+        "effect": "Small machine gun. Target a single opponent.",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 4,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:anti_air_machine_gun",
+      "name": "Anti-Air Machine Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 57
+      },
+      "fields": {
+        "name": "Anti-Air Machine Gun",
+        "damage": 40,
+        "damage_type": "Ranged, Bullet, Anti-Air",
+        "effect": "Small machine gun. Target a single opponent.",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 5,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Anti-Air",
+          "corrected": "Ranged, Bullet, Anti-Air",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:heavy_machine_gun",
+      "name": "Heavy Machine Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 58
+      },
+      "fields": {
+        "name": "Heavy Machine Gun",
+        "damage": 80,
+        "damage_type": "Ranged, Bullet",
+        "effect": "First a single burst. Targets a single opponent ",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 7,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:hyper_machine_gun",
+      "name": "Hyper Machine Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 59
+      },
+      "fields": {
+        "name": "Hyper Machine Gun",
+        "damage": 80,
+        "damage_type": "Ranged, Bullet",
+        "effect": "Fires a burst in a vertical line 30m by 90m. Opponents in the line must make a reaction against your attack roll. Successful saves  take no damage.",
+        "to_hit": 19,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 10,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:vulcan_gun",
+      "name": "Vulcan Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 60
+      },
+      "fields": {
+        "name": "Vulcan Gun",
+        "damage": 40,
+        "damage_type": "Ranged, Bullet",
+        "effect": "Shoots in a 15m wide by 60m straight line. Opponents in the line must make a reaction against your attack roll. Successful saves  take no damage.",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 3,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:anti_air_vulcan",
+      "name": "Anti-Air Vulcan:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 61
+      },
+      "fields": {
+        "name": "Anti-Air Vulcan:",
+        "damage": 50,
+        "damage_type": "Ranged, Bullet, Anti-Air",
+        "effect": "Fires a burst in a vertical line 30m by 90m. Opponents in the line must make a reaction against your attack roll. Successful saves  take no damage.",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 3,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Anti-Air",
+          "corrected": "Ranged, Bullet, Anti-Air",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:mega_vulcan",
+      "name": "Mega Vulcan:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 62
+      },
+      "fields": {
+        "name": "Mega Vulcan:",
+        "damage": 60,
+        "damage_type": "Ranged, Bullet",
+        "effect": "Fires a burst in a vertical line 30m by 105m. Opponents in the line must make a reaction against your attack roll. Successful saves  take no damage.",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 8,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:anti_air_mega_vulcan",
+      "name": "Anti-Air Mega Vulcan:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 63
+      },
+      "fields": {
+        "name": "Anti-Air Mega Vulcan:",
+        "damage": 70,
+        "damage_type": "Ranged, Bullet, Anti-Air",
+        "effect": "Machine gun. Fires in a vertical line 30m by 90m. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage ",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 8,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Anti-Air",
+          "corrected": "Ranged, Bullet, Anti-Air",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:gatling_cannon",
+      "name": "Gatling Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 64
+      },
+      "fields": {
+        "name": "Gatling Cannon:",
+        "damage": 40,
+        "damage_type": "Ranged, Bullet, Close Range",
+        "effect": "small gatling gun. Targets a horizontal area 15m wide by 45m long. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage ",
+        "to_hit": 14,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 10,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Close Range",
+          "corrected": "Ranged, Bullet, Close Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:anti_air_gatling",
+      "name": "Anti-Air Gatling:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 65
+      },
+      "fields": {
+        "name": "Anti-Air Gatling:",
+        "damage": 50,
+        "damage_type": "Ranged, Bullet, Anti-Air, Close Range",
+        "effect": "rapid fire gatling gun. Target a horizontal area 15m wide by 60 long. Any Zoids in that area must make a reaction against your attack. Successful saves take no damage. ",
+        "to_hit": 14,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 12,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Anti-Air, Close Range",
+          "corrected": "Ranged, Bullet, Anti-Air, Close Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:heavy_gatling",
+      "name": "Heavy Gatling:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 66
+      },
+      "fields": {
+        "name": "Heavy Gatling:",
+        "damage": 60,
+        "damage_type": "Ranged, Bullet, Close Range",
+        "effect": "larger gatling gun. Target a horizontal area 30m wide by 90m long. Any Zoids in that area must make a reaction save against your attack roll. Successful saves take no damage. ",
+        "to_hit": 14,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 13,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Close Range",
+          "corrected": "Ranged, Bullet, Close Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:accelerated_gatling",
+      "name": "Accelerated Gatling:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 67
+      },
+      "fields": {
+        "name": "Accelerated Gatling:",
+        "damage": 120,
+        "damage_type": "Ranged, Bullet, Anti-Air, Close Range",
+        "effect": "hi-speed gatling gun. ",
+        "to_hit": 12,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Anti-Air, Close Range",
+          "corrected": "Ranged, Bullet, Anti-Air, Close Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:high_speed_gatling",
+      "name": "High Speed Gatling:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 68
+      },
+      "fields": {
+        "name": "High Speed Gatling:",
+        "damage": 75,
+        "damage_type": "Ranged, Bullet, Anti-Air, Close Range",
+        "effect": "Targets a horizontal area 30m wide by 75m long.",
+        "to_hit": 14,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Piercing, Anti-Air, Close Range",
+          "corrected": "Ranged, Bullet, Anti-Air, Close Range",
+          "reason": "Owner tag cleanup and ranged Piercing to Bullet"
+        }
+      }
+    },
+    {
+      "id": "armaments:2_set_missile",
+      "name": "2-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 69
+      },
+      "fields": {
+        "name": "2-Set Missile:",
+        "damage": 50,
+        "damage_type": "Explosive, Homing",
+        "effect": "Fires two missiles. Targets a single opponent. Homing",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 10,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:4_set_missile",
+      "name": "4-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 70
+      },
+      "fields": {
+        "name": "4-Set Missile:",
+        "damage": 50,
+        "damage_type": "Explosive, Homing",
+        "effect": "Fires four missiles. Can target up to two Zoids. Damage is split between them. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:6_set_missile",
+      "name": "6-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 71
+      },
+      "fields": {
+        "name": "6-Set Missile:",
+        "damage": 70,
+        "damage_type": "Explosive, Homing",
+        "effect": "Fires six missiles. Can target up to three Zoids. Damage is split between them.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 18,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:8_set_missile",
+      "name": "8-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 72
+      },
+      "fields": {
+        "name": "8-Set Missile:",
+        "damage": 80,
+        "damage_type": "Explosive, Homing",
+        "effect": "Fires eight missiles. Can target up to four Zoids. Damage is split between them.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 20,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:16_set_missile",
+      "name": "16-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 73
+      },
+      "fields": {
+        "name": "16-Set Missile:",
+        "damage": 120,
+        "damage_type": "Explosive, Homing",
+        "effect": "Fires sixteen missiles. Can target up to eight Zoids. Damage is split between them.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 26,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:anti_air_2_set_missile",
+      "name": "Anti-Air 2-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 74
+      },
+      "fields": {
+        "name": "Anti-Air 2-Set Missile:",
+        "damage": 60,
+        "damage_type": "Explosive, Anti-Air, Homing",
+        "effect": "Fires two missiles. Targets a single opponent.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 10,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:anti_air_4_set_missile",
+      "name": "Anti-Air 4-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 75
+      },
+      "fields": {
+        "name": "Anti-Air 4-Set Missile:",
+        "damage": 60,
+        "damage_type": "Explosive, Anti-Air, Homing",
+        "effect": "Fires four missiles. Can target up to two Zoids. Damage is split between them.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:anti_air_8_set_missile",
+      "name": "Anti-Air 8-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 76
+      },
+      "fields": {
+        "name": "Anti-Air 8-Set Missile:",
+        "damage": 90,
+        "damage_type": "Explosive, Anti-Air, Homing",
+        "effect": "Fires eight missiles. Can target up to four Zoids. Damage is split between them.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 22,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:anti_air_16_set_missile",
+      "name": "Anti-Air 16-Set Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 77
+      },
+      "fields": {
+        "name": "Anti-Air 16-Set Missile:",
+        "damage": 120,
+        "damage_type": "Explosive, Anti-Air, Homing",
+        "effect": "Fires sixteen missiles. Can target up to eight Zoids. Damage is split between them.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:long_range_missile",
+      "name": "Long-Range Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 78
+      },
+      "fields": {
+        "name": "Long-Range Missile:",
+        "damage": 110,
+        "damage_type": "Explosive, Homing, Long Range",
+        "effect": "Single missile. Targets a single opponent. Minimum range of 800m",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_missile",
+      "name": "Large Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 79
+      },
+      "fields": {
+        "name": "Large Missile:",
+        "damage": 130,
+        "damage_type": "Explosive, Homing, Long Range",
+        "effect": "Fires a single missile. Minimum range of 400m.",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 18,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:napalm_missile",
+      "name": "Napalm Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 80
+      },
+      "fields": {
+        "name": "Napalm Missile:",
+        "damage": 120,
+        "damage_type": "Fire, Defense",
+        "effect": "Fires a canister that sets a horizontal line 30m by 90m on fire. Lasts for three turns. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage. For every 10 damage dealt the opponents defense drops by 1. Defense drop lasts until repaired.",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 10,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:neutron_missile",
+      "name": "Neutron Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 81
+      },
+      "fields": {
+        "name": "Neutron Missile:",
+        "damage": 150,
+        "damage_type": "Explosive, Homing",
+        "effect": "Large missile. Targets an area 90m by 90m. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 30,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:reaction_missile",
+      "name": "Reaction Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 82
+      },
+      "fields": {
+        "name": "Reaction Missile:",
+        "damage": 300,
+        "damage_type": "Explosive, Homing",
+        "effect": "Large missile. Targets an area 90m by 90m. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 80,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:hyper_missile",
+      "name": "Hyper Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 83
+      },
+      "fields": {
+        "name": "Hyper Missile:",
+        "damage": 250,
+        "damage_type": "Explosive, Homing",
+        "effect": "Large missile. Targets an area 90m by 90m. Opponents in the area must make a reaction save against the attack roll. Successful saves take no damage. ",
+        "to_hit": 18,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 30,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:spread_missile",
+      "name": "Spread Missile:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 84
+      },
+      "fields": {
+        "name": "Spread Missile:",
+        "damage": 130,
+        "damage_type": "Explosive",
+        "effect": "A single missile divides into multiple smaller missiles. Targets 4 targets within an area 90m by 90m.",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:sonic_cannon",
+      "name": "Sonic Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 85
+      },
+      "fields": {
+        "name": "Sonic Cannon:",
+        "damage": 100,
+        "damage_type": "Sonic",
+        "effect": "Shoots a focused line of sonic damage. Targets a single opponent. Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. Ranged, Pilot ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 10,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:super_sonic_cannon",
+      "name": "Super Sonic Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 86
+      },
+      "fields": {
+        "name": "Super Sonic Cannon:",
+        "damage": 150,
+        "damage_type": "Sonic",
+        "effect": "Shoots a focused line of sonic damage. Targets a single opponent. Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:acid_cannon",
+      "name": "Acid Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 87
+      },
+      "fields": {
+        "name": "Acid Cannon:",
+        "damage": 100,
+        "damage_type": "Acid, Defense",
+        "effect": "Fires a canister of acid. Targets a single opponent. For every 10 points of damage dealt the defense of the targeted Zoid lowers by 1. Ranged, Defense",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 20,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:concentrate_acid_cannon",
+      "name": "Concentrate Acid Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 88
+      },
+      "fields": {
+        "name": "Concentrate Acid Cannon:",
+        "damage": 200,
+        "damage_type": "Acid, Defense",
+        "effect": "Fires a single canister of acid. Targets a single opponent. For every 10 points of damage dealt the defense of the targeted Zoid lowers by 1. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 23,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:spark_cannon",
+      "name": "Spark Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 89
+      },
+      "fields": {
+        "name": "Spark Cannon:",
+        "damage": 50,
+        "damage_type": "Electrical",
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 15,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Electric",
+          "corrected": "Electrical",
+          "reason": "Owner-approved tag cleanup"
+        }
+      }
+    },
+    {
+      "id": "armaments:super_spark_cannon",
+      "name": "Super Spark Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 90
+      },
+      "fields": {
+        "name": "Super Spark Cannon:",
+        "damage": 50,
+        "damage_type": "Electrical",
+        "effect": "Fires an arc of electricity. Targets a single opponent. Must be within 75 meters. Opponents damaged by this attack must make a percentile roll. if the roll is a 49 or lower the Zoid is frozen. At the end of their turn they may roll again to unfreeze. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 23,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Electric, Freeze",
+          "corrected": "Electrical",
+          "reason": "Owner-approved tag cleanup"
+        }
+      }
+    },
+    {
+      "id": "armaments:extra_electro_magnetic_cannon",
+      "name": "Extra Electro Magnetic Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 91
+      },
+      "fields": {
+        "name": "Extra Electro Magnetic Cannon:",
+        "damage": 120,
+        "damage_type": "Electrical",
+        "effect": "Fires an arc of electricity. Targets up to two opponents. The second opponent must be within 60m of the first opponent. Must be within 75m. Opponents damaged by this attack must make a percentile roll. if the roll is a 49 or lower the Zoid is frozen. At the end of their turn they may roll again to unfreeze. ",
+        "to_hit": 16,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 23,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Electric, Freeze",
+          "corrected": "Electrical",
+          "reason": "Owner-approved tag cleanup"
+        }
+      }
+    },
+    {
+      "id": "armaments:ele_shot",
+      "name": "Ele Shot:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 92
+      },
+      "fields": {
+        "name": "Ele Shot:",
+        "damage": 140,
+        "damage_type": "Electrical",
+        "effect": "Fires an arc of electricity. Targets up to two opponents. Second target must be within 75m of the first. Must be within 75m. On a Hit opponents must roll a percentile die. A roll of 49 or lower will cause the Zoid to freeze. At the end of their next turn they can roll again for a chance to unfreeze",
+        "to_hit": 17,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 25,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "damage_type": {
+          "original": "Electric, Freeze",
+          "corrected": "Electrical",
+          "reason": "Owner-approved tag cleanup"
+        }
+      }
+    },
+    {
+      "id": "armaments:poison_gas_cannon",
+      "name": "Poison Gas Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 93
+      },
+      "fields": {
+        "name": "Poison Gas Cannon:",
+        "damage": 40,
+        "damage_type": "Poison",
+        "effect": "launches a gas projectile that targets the pilot. Covers an area 30m square. DC:16. Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. ",
+        "to_hit": 16,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 12,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:poison_mist_cannon_targets_an_horizontal_area_30m_by_60m_dc_17_ranged_pilot",
+      "name": "Poison Mist Cannon: targets an horizontal area 30m by 60m. DC: 17. Ranged, Pilot",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 94
+      },
+      "fields": {
+        "name": "Poison Mist Cannon: targets an horizontal area 30m by 60m. DC: 17. Ranged, Pilot",
+        "damage": 90,
+        "damage_type": "Poison",
+        "effect": "Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 13,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:poison_cloud_cannon_targets_a_horizontal_area_30m_by_90m_ranged_pilot",
+      "name": "Poison Cloud Cannon: targets a horizontal area 30m by 90m. Ranged, Pilot",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 95
+      },
+      "fields": {
+        "name": "Poison Cloud Cannon: targets a horizontal area 30m by 90m. Ranged, Pilot",
+        "damage": 120,
+        "damage_type": "Poison",
+        "effect": "Pilot must make a constitution saving throw. On a failed save reaction, and Hit are halved. May make a constitution saving throw at the start of their next turn. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 14,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:gravity_cannon",
+      "name": "Gravity Cannon:",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 96
+      },
+      "fields": {
+        "name": "Gravity Cannon:",
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Ranged",
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:assist",
+      "name": "ASSIST",
+      "kind": "heading",
+      "source": {
+        "sheet": "Armaments",
+        "row": 97
+      },
+      "fields": {
+        "name": "ASSIST",
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:extension_armor",
+      "name": "Extension Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 98
+      },
+      "fields": {
+        "name": "Extension Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increase defense by 5 and armor by 5.",
+        "to_hit": 0,
+        "defense": 5,
+        "armor": 5,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_extension_armor",
+      "name": "Large Extension Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 99
+      },
+      "fields": {
+        "name": "Large Extension Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases armor by 10 and increases defense by 10. ",
+        "to_hit": 0,
+        "defense": 10,
+        "armor": 10,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 10,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:multiple_armor",
+      "name": "Multiple Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 100
+      },
+      "fields": {
+        "name": "Multiple Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases defense by 4. ",
+        "to_hit": 0,
+        "defense": 4,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 15,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_multiple_armor",
+      "name": "Large Multiple Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 101
+      },
+      "fields": {
+        "name": "Large Multiple Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases defense by 20 and armor by 6.",
+        "to_hit": 0,
+        "defense": 20,
+        "armor": 6,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 20,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:super_heavy_armor",
+      "name": "Super-Heavy Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 102
+      },
+      "fields": {
+        "name": "Super-Heavy Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases defense by 10.",
+        "to_hit": 0,
+        "defense": 10,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 25,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_super_heavy_armor",
+      "name": "Large Super-Heavy Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 103
+      },
+      "fields": {
+        "name": "Large Super-Heavy Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids armor by 8 and your defense by 70.",
+        "to_hit": 0,
+        "defense": 70,
+        "armor": 8,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 30,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:chobam_armor",
+      "name": "Chobam Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 104
+      },
+      "fields": {
+        "name": "Chobam Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids armor by 6 and your defense by 30.",
+        "to_hit": 0,
+        "defense": 30,
+        "armor": 6,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 20,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:enhanced_chobam_armor",
+      "name": "Enhanced Chobam Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 105
+      },
+      "fields": {
+        "name": "Enhanced Chobam Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids armor by 6 and your defense by 50.",
+        "to_hit": 0,
+        "defense": 50,
+        "armor": 6,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 30,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:full_armor_system",
+      "name": "Full Armor System",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 106
+      },
+      "fields": {
+        "name": "Full Armor System",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids armor by 18 and your defense by 50.",
+        "to_hit": 0,
+        "defense": 50,
+        "armor": 18,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 40,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:laser_diffusion_equipment",
+      "name": "Laser Diffusion Equipment",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 107
+      },
+      "fields": {
+        "name": "Laser Diffusion Equipment",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids defense by 100. Reduces energy damage taken by half.",
+        "to_hit": 0,
+        "defense": 100,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:anti_laser_armor",
+      "name": "Anti-Laser Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 108
+      },
+      "fields": {
+        "name": "Anti-Laser Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids defense by 100 and armor by 10. Reduces energy damage taken by half.",
+        "to_hit": 0,
+        "defense": 100,
+        "armor": 10,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 10,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:anti_charge_particle_shield",
+      "name": "Anti Charge Particle Shield",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 109
+      },
+      "fields": {
+        "name": "Anti Charge Particle Shield",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids defense by 200. Reduces particle damage by half. ",
+        "to_hit": 0,
+        "defense": 200,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 30,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:e_protector",
+      "name": "E-Protector",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 110
+      },
+      "fields": {
+        "name": "E-Protector",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids defense by 60. Reduces damage from energy and particle by half. ",
+        "to_hit": 0,
+        "defense": 60,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 15,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:rare_metal_armor",
+      "name": "Rare Metal Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 111
+      },
+      "fields": {
+        "name": "Rare Metal Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids defense by 80 and armor by 8. Reduces damage from energy and particle by half. ",
+        "to_hit": 0,
+        "defense": 80,
+        "armor": 8,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 20,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:fused_armor",
+      "name": "Fused Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 112
+      },
+      "fields": {
+        "name": "Fused Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids defense by 60 and armor by 10. Reduces all damage by half.",
+        "to_hit": 0,
+        "defense": 60,
+        "armor": 10,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 30,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:enhanced_fused_armor",
+      "name": "Enhanced Fused Armor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 113
+      },
+      "fields": {
+        "name": "Enhanced Fused Armor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids defense by 150 and armor by 20. Reduces all damage taken by half.",
+        "to_hit": 0,
+        "defense": 150,
+        "armor": 20,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 50,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:f_round_shield",
+      "name": "F-Round Shield",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 114
+      },
+      "fields": {
+        "name": "F-Round Shield",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your Zoids defense by 70 and armor by 16. Reduces rifle damage by half. ",
+        "to_hit": 0,
+        "defense": 70,
+        "armor": 16,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 15,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:small_e_shield_generator",
+      "name": "Small E-Shield Generator",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 115
+      },
+      "fields": {
+        "name": "Small E-Shield Generator",
+        "damage": null,
+        "damage_type": null,
+        "effect": "A small domed energy shield that blocks 100 damage before dispersing.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 3,
+        "activation": "Active",
+        "shields": 100,
+        "weapon_class": null,
+        "heat": 3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:e_shield_generator",
+      "name": "E-Shield Generator",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 116
+      },
+      "fields": {
+        "name": "E-Shield Generator",
+        "damage": null,
+        "damage_type": null,
+        "effect": "A domed energy shield that blocks 200 damage before dispersing.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Active",
+        "shields": 200,
+        "weapon_class": null,
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_e_shield_generator",
+      "name": "Large E-Shield Generator",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 117
+      },
+      "fields": {
+        "name": "Large E-Shield Generator",
+        "damage": null,
+        "damage_type": null,
+        "effect": "A large domed energy shield that blocks 300 damage before dispersing.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 10,
+        "activation": "Active",
+        "shields": 300,
+        "weapon_class": null,
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:smokescreen_generator",
+      "name": "Smokescreen Generator",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 118
+      },
+      "fields": {
+        "name": "Smokescreen Generator",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Deploys thick smoke in 45m centered on you. While in the smoke attacks against you have disadvantage. Lasts for three turns. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 1,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": 3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_smokescreen_generator",
+      "name": "Large Smokescreen Generator",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 119
+      },
+      "fields": {
+        "name": "Large Smokescreen Generator",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Deploys thick smoke in 60m centered on you. Attacks have disadvantage against this zoid while in the smoke. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 3,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:optical_camouflage",
+      "name": "Optical Camouflage",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 120
+      },
+      "fields": {
+        "name": "Optical Camouflage",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Turns the Zoid nearly invisible. Gain disadvantage on attacks against you while active. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:enhanced_optical_camouflage",
+      "name": "Enhanced Optical Camouflage",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 121
+      },
+      "fields": {
+        "name": "Enhanced Optical Camouflage",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Turns the Zoid nearly invisible. Gain disadvantage on attacks against you while active. Lasts six turns.",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": 0,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:stealth_system",
+      "name": "Stealth System",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 122
+      },
+      "fields": {
+        "name": "Stealth System",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Turns the Zoid nearly invisible. Gain disadvantage on attacks against you while active. Nullifies opponents Anti-Air attack bonus against the equipped Zoid. Lasts three turns.",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": 0,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": 2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:electro_magnetic_jammer",
+      "name": "Electro-Magnetic Jammer",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 123
+      },
+      "fields": {
+        "name": "Electro-Magnetic Jammer",
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": 0,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:ecm",
+      "name": "ECM",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 124
+      },
+      "fields": {
+        "name": "ECM",
+        "damage": null,
+        "damage_type": null,
+        "effect": "System that disrupts enemies targeting systems againt you and your ally's. Attacks have disadvantage against you. Lasts three turns.",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": 0,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 3,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:electron_disruptor_equipment",
+      "name": "Electron Disruptor Equipment",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 125
+      },
+      "fields": {
+        "name": "Electron Disruptor Equipment",
+        "damage": null,
+        "damage_type": null,
+        "effect": null,
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": 0,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:micro_sensor",
+      "name": "Micro Sensor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 126
+      },
+      "fields": {
+        "name": "Micro Sensor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "A sensor that increases the Zoids range by 200. Lasts three turns. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 200,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 3,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:enhanced_micro_sensor",
+      "name": "Enhanced Micro Sensor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 127
+      },
+      "fields": {
+        "name": "Enhanced Micro Sensor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "A sensor that increases the Zoids range by 300.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 300,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:laser_sensor",
+      "name": "Laser Sensor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 128
+      },
+      "fields": {
+        "name": "Laser Sensor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "A laser sensor that increases the Zoids range by 400. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 400,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 6,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:enhanced_laser_sensor",
+      "name": "Enhanced Laser Sensor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 129
+      },
+      "fields": {
+        "name": "Enhanced Laser Sensor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "An enhanced laser sensor that increases the Zoids range by 500.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 500,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 8,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:composite_sensor",
+      "name": "Composite Sensor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 130
+      },
+      "fields": {
+        "name": "Composite Sensor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "A sensor that increases range by 300  and increases hit by 4 ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 4,
+        "range_bonus": 300,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:enhanced_composite_sensor",
+      "name": "Enhanced Composite Sensor",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 131
+      },
+      "fields": {
+        "name": "Enhanced Composite Sensor",
+        "damage": null,
+        "damage_type": null,
+        "effect": "A sensor that increase range by 500 and increases hit rate by 6. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 6,
+        "range_bonus": 500,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 3,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:infra_red_scope",
+      "name": "Infra-Red Scope",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 132
+      },
+      "fields": {
+        "name": "Infra-Red Scope",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Scope that increases your to Hit by 20. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 20,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 3,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:infra_red_scanner",
+      "name": "Infra-Red Scanner",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 133
+      },
+      "fields": {
+        "name": "Infra-Red Scanner",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Scanner that increases your to Hit by 12. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 12,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 2,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:radar",
+      "name": "Radar",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 134
+      },
+      "fields": {
+        "name": "Radar",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Radar that increases your to Hit by 14. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 7,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 2,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_radar",
+      "name": "Large Radar",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 135
+      },
+      "fields": {
+        "name": "Large Radar",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Larger radar that increases your to Hit by 16. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 15,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 4,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:radar_system",
+      "name": "Radar System",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 136
+      },
+      "fields": {
+        "name": "Radar System",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Radar that increases your to Hit by 10. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 10,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 6,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:enhanced_radar_system",
+      "name": "Enhanced Radar System",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 137
+      },
+      "fields": {
+        "name": "Enhanced Radar System",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Radar that increases hit rate for self and ally’s by 16. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 16,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 8,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:all_weather_radar",
+      "name": "All-Weather Radar",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 138
+      },
+      "fields": {
+        "name": "All-Weather Radar",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Radar that increases hit rate for self by 20. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 20,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:3d_radar",
+      "name": "3D Radar",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 139
+      },
+      "fields": {
+        "name": "3D Radar",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Radar that increases hit rate for self and a ally by 14. Advantage against flying Zoids. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 14,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 3,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:radome_unit",
+      "name": "Radome Unit",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 140
+      },
+      "fields": {
+        "name": "Radome Unit",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Radar unit that increases ally's to Hit by 20. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 20,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 10,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:magnetism_detector",
+      "name": "Magnetism Detector",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 141
+      },
+      "fields": {
+        "name": "Magnetism Detector",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Sensor that uses magnets that increases the detection range one of  your ally's Zoids by 800. Lasts for three turns. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 800,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_magnetism_detector",
+      "name": "Large Magnetism Detector",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 142
+      },
+      "fields": {
+        "name": "Large Magnetism Detector",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Sensor that uses magnets that increases the range of your ally's Zoids by 1,600. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 1600,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 7,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:gps_magnetism_detector",
+      "name": "GPS Magnetism Detector",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 143
+      },
+      "fields": {
+        "name": "GPS Magnetism Detector",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Sensor that uses magnets that increases the detection range of your and your ally's Zoids by 800. Lasts for three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 800,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 10,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_gps_magnetism_detector",
+      "name": "Large GPS Magnetism Detector",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 144
+      },
+      "fields": {
+        "name": "Large GPS Magnetism Detector",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Sensor that uses magnets that increases the detection range of your ally's Zoids by 1600.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 1600,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 12,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:sonic_detector",
+      "name": "Sonic Detector",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 145
+      },
+      "fields": {
+        "name": "Sonic Detector",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Sensor using sound that increases the range of your and your ally's Zoids by 600. Lasts three rounds.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 600,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:large_sonic_detector",
+      "name": "Large Sonic Detector",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 146
+      },
+      "fields": {
+        "name": "Large Sonic Detector",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Sensor using sound that increases the range of your and your ally's Zoids by 900. Lasts for three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 900,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 10,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:turbo_charger",
+      "name": "Turbo Charger",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 147
+      },
+      "fields": {
+        "name": "Turbo Charger",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Boosters that increases your speed by 200. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 200,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 5,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:after_burner",
+      "name": "After Burner",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 148
+      },
+      "fields": {
+        "name": "After Burner",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Boosters that increases your speed by 1,000. Lasts three turns. Must recharge for three turns. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 1000,
+        "weight": 5,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:thruster",
+      "name": "Thruster",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 149
+      },
+      "fields": {
+        "name": "Thruster",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Thrusters that increases reaction by 10. Lasts for three turns. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 10,
+        "speed_bonus": 0,
+        "weight": 10,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:high_mobility_thruster",
+      "name": "High Mobility Thruster",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 150
+      },
+      "fields": {
+        "name": "High Mobility Thruster",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Thrusters that increases reaction by 15. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 15,
+        "speed_bonus": 0,
+        "weight": 10,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:accelerator_equipment",
+      "name": "Accelerator Equipment",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 151
+      },
+      "fields": {
+        "name": "Accelerator Equipment",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Boosters to increase speed by 1,000 and reaction by 20. Lasts three turns.",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 20,
+        "speed_bonus": 1000,
+        "weight": 10,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:core_enhance_unit",
+      "name": "Core Enhance Unit",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 152
+      },
+      "fields": {
+        "name": "Core Enhance Unit",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases Zoids maximum health by 100. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 3,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:ion_projector",
+      "name": "Ion Projector",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 153
+      },
+      "fields": {
+        "name": "Ion Projector",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Heals the equipped Zoid by 100. Must recharge for two turns. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 12,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:i_field_generator",
+      "name": "I-Field Generator",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 154
+      },
+      "fields": {
+        "name": "I-Field Generator",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Heals your ally's Zoids within 210m centered on yourself and your own Zoid for 100. Must recharge for three turns. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 15,
+        "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:self_recovery_unit",
+      "name": "Self Recovery Unit",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 155
+      },
+      "fields": {
+        "name": "Self Recovery Unit",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Heals the equipped Zoid at the end of every turn for 50. ",
+        "to_hit": 0,
+        "defense": 0,
+        "armor": 0,
+        "to_hit_bonus": 0,
+        "range_bonus": 0,
+        "reaction_bonus": 0,
+        "speed_bonus": 0,
+        "weight": 15,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:zos_prototype",
+      "name": "ZOS Prototype",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 156
+      },
+      "fields": {
+        "name": "ZOS Prototype",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your actions by +1. Lasts for three turns. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:zos_enhanced_type",
+      "name": "ZOS Enhanced Type",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 157
+      },
+      "fields": {
+        "name": "ZOS Enhanced Type",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your actions by +2. Lasts for three turns. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "armaments:zos_mass_produced",
+      "name": "ZOS Mass Produced",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 158
+      },
+      "fields": {
+        "name": "ZOS Mass Produced",
+        "damage": null,
+        "damage_type": null,
+        "effect": "Increases your actions by +1. Lasts for three turns. ",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": null,
+        "activation": null,
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {}
+    }
+  ],
+  "excluded_rows": [
+    {
+      "row": 159,
+      "reason": "empty"
+    }
+  ]
+}

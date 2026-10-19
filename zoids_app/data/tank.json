@@ -1,0 +1,1822 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "level",
+    "health",
+    "armor",
+    "react",
+    "perception",
+    "to_hit"
+  ],
+  "source_headers": [
+    "Level",
+    "Health",
+    "Armor",
+    "React",
+    "Perception",
+    "To Hit"
+  ],
+  "records": [
+    {
+      "id": "tank:1",
+      "name": "1",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 2
+      },
+      "fields": {
+        "level": 1,
+        "health": 0.5,
+        "armor": 0.1,
+        "react": 0.1,
+        "perception": 0.1,
+        "to_hit": 0.1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:2",
+      "name": "2",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 3
+      },
+      "fields": {
+        "level": 2,
+        "health": 0.53,
+        "armor": 0.13,
+        "react": 0.11,
+        "perception": 0.12,
+        "to_hit": 0.11
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:3",
+      "name": "3",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 4
+      },
+      "fields": {
+        "level": 3,
+        "health": 0.56,
+        "armor": 0.16,
+        "react": 0.12,
+        "perception": 0.14,
+        "to_hit": 0.12
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:4",
+      "name": "4",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 5
+      },
+      "fields": {
+        "level": 4,
+        "health": 0.59,
+        "armor": 0.19,
+        "react": 0.13,
+        "perception": 0.16,
+        "to_hit": 0.13
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:5",
+      "name": "5",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 6
+      },
+      "fields": {
+        "level": 5,
+        "health": 0.62,
+        "armor": 0.22,
+        "react": 0.14,
+        "perception": 0.18,
+        "to_hit": 0.14
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:6",
+      "name": "6",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 7
+      },
+      "fields": {
+        "level": 6,
+        "health": 0.65,
+        "armor": 0.25,
+        "react": 0.15,
+        "perception": 0.2,
+        "to_hit": 0.15
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:7",
+      "name": "7",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 8
+      },
+      "fields": {
+        "level": 7,
+        "health": 0.68,
+        "armor": 0.28,
+        "react": 0.16,
+        "perception": 0.22,
+        "to_hit": 0.16
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:8",
+      "name": "8",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 9
+      },
+      "fields": {
+        "level": 8,
+        "health": 0.71,
+        "armor": 0.31,
+        "react": 0.17,
+        "perception": 0.24,
+        "to_hit": 0.17
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:9",
+      "name": "9",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 10
+      },
+      "fields": {
+        "level": 9,
+        "health": 0.74,
+        "armor": 0.34,
+        "react": 0.18,
+        "perception": 0.26,
+        "to_hit": 0.18
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:10",
+      "name": "10",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 11
+      },
+      "fields": {
+        "level": 10,
+        "health": 0.77,
+        "armor": 0.37,
+        "react": 0.19,
+        "perception": 0.28,
+        "to_hit": 0.19
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:11",
+      "name": "11",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 12
+      },
+      "fields": {
+        "level": 11,
+        "health": 0.8,
+        "armor": 0.4,
+        "react": 0.2,
+        "perception": 0.3,
+        "to_hit": 0.2
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:12",
+      "name": "12",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 13
+      },
+      "fields": {
+        "level": 12,
+        "health": 0.83,
+        "armor": 0.43,
+        "react": 0.21,
+        "perception": 0.32,
+        "to_hit": 0.21
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:13",
+      "name": "13",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 14
+      },
+      "fields": {
+        "level": 13,
+        "health": 0.86,
+        "armor": 0.47,
+        "react": 0.22,
+        "perception": 0.34,
+        "to_hit": 0.22
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:14",
+      "name": "14",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 15
+      },
+      "fields": {
+        "level": 14,
+        "health": 0.89,
+        "armor": 0.5,
+        "react": 0.23,
+        "perception": 0.36,
+        "to_hit": 0.23
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:15",
+      "name": "15",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 16
+      },
+      "fields": {
+        "level": 15,
+        "health": 0.92,
+        "armor": 0.53,
+        "react": 0.24,
+        "perception": 0.38,
+        "to_hit": 0.24
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:16",
+      "name": "16",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 17
+      },
+      "fields": {
+        "level": 16,
+        "health": 0.95,
+        "armor": 0.56,
+        "react": 0.25,
+        "perception": 0.4,
+        "to_hit": 0.25
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:17",
+      "name": "17",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 18
+      },
+      "fields": {
+        "level": 17,
+        "health": 0.98,
+        "armor": 0.59,
+        "react": 0.26,
+        "perception": 0.42,
+        "to_hit": 0.26
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:18",
+      "name": "18",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 19
+      },
+      "fields": {
+        "level": 18,
+        "health": 1.01,
+        "armor": 0.62,
+        "react": 0.27,
+        "perception": 0.44,
+        "to_hit": 0.27
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:19",
+      "name": "19",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 20
+      },
+      "fields": {
+        "level": 19,
+        "health": 1.04,
+        "armor": 0.65,
+        "react": 0.28,
+        "perception": 0.46,
+        "to_hit": 0.28
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:20",
+      "name": "20",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 21
+      },
+      "fields": {
+        "level": 20,
+        "health": 1.07,
+        "armor": 0.68,
+        "react": 0.29,
+        "perception": 0.48,
+        "to_hit": 0.29
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:21",
+      "name": "21",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 22
+      },
+      "fields": {
+        "level": 21,
+        "health": 1.1,
+        "armor": 0.71,
+        "react": 0.3,
+        "perception": 0.5,
+        "to_hit": 0.3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:22",
+      "name": "22",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 23
+      },
+      "fields": {
+        "level": 22,
+        "health": 1.13,
+        "armor": 0.74,
+        "react": 0.31,
+        "perception": 0.52,
+        "to_hit": 0.31
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:23",
+      "name": "23",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 24
+      },
+      "fields": {
+        "level": 23,
+        "health": 1.16,
+        "armor": 0.77,
+        "react": 0.32,
+        "perception": 0.54,
+        "to_hit": 0.32
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:24",
+      "name": "24",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 25
+      },
+      "fields": {
+        "level": 24,
+        "health": 1.19,
+        "armor": 0.8,
+        "react": 0.33,
+        "perception": 0.56,
+        "to_hit": 0.33
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:25",
+      "name": "25",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 26
+      },
+      "fields": {
+        "level": 25,
+        "health": 1.21,
+        "armor": 0.83,
+        "react": 0.34,
+        "perception": 0.58,
+        "to_hit": 0.34
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:26",
+      "name": "26",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 27
+      },
+      "fields": {
+        "level": 26,
+        "health": 1.24,
+        "armor": 0.86,
+        "react": 0.35,
+        "perception": 0.6,
+        "to_hit": 0.35
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:27",
+      "name": "27",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 28
+      },
+      "fields": {
+        "level": 27,
+        "health": 1.27,
+        "armor": 0.89,
+        "react": 0.36,
+        "perception": 0.62,
+        "to_hit": 0.36
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:28",
+      "name": "28",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 29
+      },
+      "fields": {
+        "level": 28,
+        "health": 1.3,
+        "armor": 0.92,
+        "react": 0.37,
+        "perception": 0.64,
+        "to_hit": 0.37
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:29",
+      "name": "29",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 30
+      },
+      "fields": {
+        "level": 29,
+        "health": 1.33,
+        "armor": 0.95,
+        "react": 0.38,
+        "perception": 0.66,
+        "to_hit": 0.38
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:30",
+      "name": "30",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 31
+      },
+      "fields": {
+        "level": 30,
+        "health": 1.36,
+        "armor": 0.98,
+        "react": 0.39,
+        "perception": 0.68,
+        "to_hit": 0.39
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:31",
+      "name": "31",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 32
+      },
+      "fields": {
+        "level": 31,
+        "health": 1.39,
+        "armor": 1.01,
+        "react": 0.4,
+        "perception": 0.7,
+        "to_hit": 0.4
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:32",
+      "name": "32",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 33
+      },
+      "fields": {
+        "level": 32,
+        "health": 1.42,
+        "armor": 1.04,
+        "react": 0.41,
+        "perception": 0.72,
+        "to_hit": 0.41
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:33",
+      "name": "33",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 34
+      },
+      "fields": {
+        "level": 33,
+        "health": 1.44,
+        "armor": 1.07,
+        "react": 0.42,
+        "perception": 0.74,
+        "to_hit": 0.42
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:34",
+      "name": "34",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 35
+      },
+      "fields": {
+        "level": 34,
+        "health": 1.47,
+        "armor": 1.1,
+        "react": 0.43,
+        "perception": 0.76,
+        "to_hit": 0.43
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:35",
+      "name": "35",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 36
+      },
+      "fields": {
+        "level": 35,
+        "health": 1.5,
+        "armor": 1.13,
+        "react": 0.44,
+        "perception": 0.78,
+        "to_hit": 0.44
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:36",
+      "name": "36",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 37
+      },
+      "fields": {
+        "level": 36,
+        "health": 1.53,
+        "armor": 1.16,
+        "react": 0.45,
+        "perception": 0.8,
+        "to_hit": 0.45
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:37",
+      "name": "37",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 38
+      },
+      "fields": {
+        "level": 37,
+        "health": 1.56,
+        "armor": 1.19,
+        "react": 0.46,
+        "perception": 0.82,
+        "to_hit": 0.46
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:38",
+      "name": "38",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 39
+      },
+      "fields": {
+        "level": 38,
+        "health": 1.59,
+        "armor": 1.22,
+        "react": 0.47,
+        "perception": 0.84,
+        "to_hit": 0.47
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:39",
+      "name": "39",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 40
+      },
+      "fields": {
+        "level": 39,
+        "health": 1.62,
+        "armor": 1.25,
+        "react": 0.48,
+        "perception": 0.86,
+        "to_hit": 0.48
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:40",
+      "name": "40",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 41
+      },
+      "fields": {
+        "level": 40,
+        "health": 1.65,
+        "armor": 1.28,
+        "react": 0.49,
+        "perception": 0.88,
+        "to_hit": 0.49
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:41",
+      "name": "41",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 42
+      },
+      "fields": {
+        "level": 41,
+        "health": 1.68,
+        "armor": 1.31,
+        "react": 0.5,
+        "perception": 0.9,
+        "to_hit": 0.5
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:42",
+      "name": "42",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 43
+      },
+      "fields": {
+        "level": 42,
+        "health": 1.71,
+        "armor": 1.34,
+        "react": 0.51,
+        "perception": 0.92,
+        "to_hit": 0.51
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:43",
+      "name": "43",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 44
+      },
+      "fields": {
+        "level": 43,
+        "health": 1.74,
+        "armor": 1.37,
+        "react": 0.52,
+        "perception": 0.94,
+        "to_hit": 0.52
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:44",
+      "name": "44",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 45
+      },
+      "fields": {
+        "level": 44,
+        "health": 1.77,
+        "armor": 1.4,
+        "react": 0.53,
+        "perception": 0.96,
+        "to_hit": 0.53
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:45",
+      "name": "45",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 46
+      },
+      "fields": {
+        "level": 45,
+        "health": 1.8,
+        "armor": 1.43,
+        "react": 0.54,
+        "perception": 0.98,
+        "to_hit": 0.54
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:46",
+      "name": "46",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 47
+      },
+      "fields": {
+        "level": 46,
+        "health": 1.83,
+        "armor": 1.46,
+        "react": 0.55,
+        "perception": 1,
+        "to_hit": 0.55
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:47",
+      "name": "47",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 48
+      },
+      "fields": {
+        "level": 47,
+        "health": 1.86,
+        "armor": 1.49,
+        "react": 0.56,
+        "perception": 1.02,
+        "to_hit": 0.56
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:48",
+      "name": "48",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 49
+      },
+      "fields": {
+        "level": 48,
+        "health": 1.89,
+        "armor": 1.52,
+        "react": 0.57,
+        "perception": 1.04,
+        "to_hit": 0.57
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:49",
+      "name": "49",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 50
+      },
+      "fields": {
+        "level": 49,
+        "health": 1.92,
+        "armor": 1.55,
+        "react": 0.58,
+        "perception": 1.06,
+        "to_hit": 0.58
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:50",
+      "name": "50",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 51
+      },
+      "fields": {
+        "level": 50,
+        "health": 1.95,
+        "armor": 1.58,
+        "react": 0.59,
+        "perception": 1.08,
+        "to_hit": 0.59
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:51",
+      "name": "51",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 52
+      },
+      "fields": {
+        "level": 51,
+        "health": 1.98,
+        "armor": 1.61,
+        "react": 0.6,
+        "perception": 1.1,
+        "to_hit": 0.6
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:52",
+      "name": "52",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 53
+      },
+      "fields": {
+        "level": 52,
+        "health": 2.01,
+        "armor": 1.65,
+        "react": 0.61,
+        "perception": 1.12,
+        "to_hit": 0.61
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:53",
+      "name": "53",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 54
+      },
+      "fields": {
+        "level": 53,
+        "health": 2.04,
+        "armor": 1.68,
+        "react": 0.62,
+        "perception": 1.14,
+        "to_hit": 0.62
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:54",
+      "name": "54",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 55
+      },
+      "fields": {
+        "level": 54,
+        "health": 2.07,
+        "armor": 1.71,
+        "react": 0.63,
+        "perception": 1.16,
+        "to_hit": 0.63
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:55",
+      "name": "55",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 56
+      },
+      "fields": {
+        "level": 55,
+        "health": 2.1,
+        "armor": 1.74,
+        "react": 0.64,
+        "perception": 1.18,
+        "to_hit": 0.64
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:56",
+      "name": "56",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 57
+      },
+      "fields": {
+        "level": 56,
+        "health": 2.13,
+        "armor": 1.77,
+        "react": 0.65,
+        "perception": 1.2,
+        "to_hit": 0.65
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:57",
+      "name": "57",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 58
+      },
+      "fields": {
+        "level": 57,
+        "health": 2.16,
+        "armor": 1.8,
+        "react": 0.66,
+        "perception": 1.22,
+        "to_hit": 0.66
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:58",
+      "name": "58",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 59
+      },
+      "fields": {
+        "level": 58,
+        "health": 2.19,
+        "armor": 1.83,
+        "react": 0.67,
+        "perception": 1.24,
+        "to_hit": 0.67
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:59",
+      "name": "59",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 60
+      },
+      "fields": {
+        "level": 59,
+        "health": 2.22,
+        "armor": 1.86,
+        "react": 0.68,
+        "perception": 1.26,
+        "to_hit": 0.68
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:60",
+      "name": "60",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 61
+      },
+      "fields": {
+        "level": 60,
+        "health": 2.25,
+        "armor": 1.89,
+        "react": 0.69,
+        "perception": 1.28,
+        "to_hit": 0.69
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:61",
+      "name": "61",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 62
+      },
+      "fields": {
+        "level": 61,
+        "health": 2.28,
+        "armor": 1.92,
+        "react": 0.7,
+        "perception": 1.3,
+        "to_hit": 0.7
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:62",
+      "name": "62",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 63
+      },
+      "fields": {
+        "level": 62,
+        "health": 2.31,
+        "armor": 1.95,
+        "react": 0.71,
+        "perception": 1.32,
+        "to_hit": 0.71
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:63",
+      "name": "63",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 64
+      },
+      "fields": {
+        "level": 63,
+        "health": 2.34,
+        "armor": 1.98,
+        "react": 0.72,
+        "perception": 1.34,
+        "to_hit": 0.72
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:64",
+      "name": "64",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 65
+      },
+      "fields": {
+        "level": 64,
+        "health": 2.37,
+        "armor": 2.01,
+        "react": 0.73,
+        "perception": 1.36,
+        "to_hit": 0.73
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:65",
+      "name": "65",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 66
+      },
+      "fields": {
+        "level": 65,
+        "health": 2.4,
+        "armor": 2.04,
+        "react": 0.74,
+        "perception": 1.38,
+        "to_hit": 0.74
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:66",
+      "name": "66",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 67
+      },
+      "fields": {
+        "level": 66,
+        "health": 2.43,
+        "armor": 2.07,
+        "react": 0.75,
+        "perception": 1.4,
+        "to_hit": 0.75
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:67",
+      "name": "67",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 68
+      },
+      "fields": {
+        "level": 67,
+        "health": 2.46,
+        "armor": 2.1,
+        "react": 0.76,
+        "perception": 1.42,
+        "to_hit": 0.76
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:68",
+      "name": "68",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 69
+      },
+      "fields": {
+        "level": 68,
+        "health": 2.49,
+        "armor": 2.13,
+        "react": 0.77,
+        "perception": 1.44,
+        "to_hit": 0.77
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:69",
+      "name": "69",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 70
+      },
+      "fields": {
+        "level": 69,
+        "health": 2.52,
+        "armor": 2.16,
+        "react": 0.78,
+        "perception": 1.46,
+        "to_hit": 0.78
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:70",
+      "name": "70",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 71
+      },
+      "fields": {
+        "level": 70,
+        "health": 2.55,
+        "armor": 2.19,
+        "react": 0.79,
+        "perception": 1.48,
+        "to_hit": 0.79
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:71",
+      "name": "71",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 72
+      },
+      "fields": {
+        "level": 71,
+        "health": 2.58,
+        "armor": 2.22,
+        "react": 0.8,
+        "perception": 1.5,
+        "to_hit": 0.8
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:72",
+      "name": "72",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 73
+      },
+      "fields": {
+        "level": 72,
+        "health": 2.61,
+        "armor": 2.25,
+        "react": 0.81,
+        "perception": 1.52,
+        "to_hit": 0.81
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:73",
+      "name": "73",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 74
+      },
+      "fields": {
+        "level": 73,
+        "health": 2.64,
+        "armor": 2.28,
+        "react": 0.82,
+        "perception": 1.54,
+        "to_hit": 0.82
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:74",
+      "name": "74",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 75
+      },
+      "fields": {
+        "level": 74,
+        "health": 2.67,
+        "armor": 2.31,
+        "react": 0.83,
+        "perception": 1.56,
+        "to_hit": 0.83
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:75",
+      "name": "75",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 76
+      },
+      "fields": {
+        "level": 75,
+        "health": 2.7,
+        "armor": 2.34,
+        "react": 0.84,
+        "perception": 1.58,
+        "to_hit": 0.84
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:76",
+      "name": "76",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 77
+      },
+      "fields": {
+        "level": 76,
+        "health": 2.73,
+        "armor": 2.37,
+        "react": 0.85,
+        "perception": 1.6,
+        "to_hit": 0.85
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:77",
+      "name": "77",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 78
+      },
+      "fields": {
+        "level": 77,
+        "health": 2.76,
+        "armor": 2.4,
+        "react": 0.86,
+        "perception": 1.62,
+        "to_hit": 0.86
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:78",
+      "name": "78",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 79
+      },
+      "fields": {
+        "level": 78,
+        "health": 2.79,
+        "armor": 2.43,
+        "react": 0.87,
+        "perception": 1.64,
+        "to_hit": 0.87
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:79",
+      "name": "79",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 80
+      },
+      "fields": {
+        "level": 79,
+        "health": 2.82,
+        "armor": 2.46,
+        "react": 0.88,
+        "perception": 1.66,
+        "to_hit": 0.88
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:80",
+      "name": "80",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 81
+      },
+      "fields": {
+        "level": 80,
+        "health": 2.85,
+        "armor": 2.49,
+        "react": 0.89,
+        "perception": 1.68,
+        "to_hit": 0.89
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:81",
+      "name": "81",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 82
+      },
+      "fields": {
+        "level": 81,
+        "health": 2.88,
+        "armor": 2.52,
+        "react": 0.9,
+        "perception": 1.7,
+        "to_hit": 0.9
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:82",
+      "name": "82",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 83
+      },
+      "fields": {
+        "level": 82,
+        "health": 2.91,
+        "armor": 2.55,
+        "react": 0.91,
+        "perception": 1.72,
+        "to_hit": 0.91
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:83",
+      "name": "83",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 84
+      },
+      "fields": {
+        "level": 83,
+        "health": 2.94,
+        "armor": 2.58,
+        "react": 0.92,
+        "perception": 1.74,
+        "to_hit": 0.92
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:84",
+      "name": "84",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 85
+      },
+      "fields": {
+        "level": 84,
+        "health": 2.97,
+        "armor": 2.61,
+        "react": 0.93,
+        "perception": 1.76,
+        "to_hit": 0.93
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:85",
+      "name": "85",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 86
+      },
+      "fields": {
+        "level": 85,
+        "health": 3,
+        "armor": 2.64,
+        "react": 0.94,
+        "perception": 1.78,
+        "to_hit": 0.94
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:86",
+      "name": "86",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 87
+      },
+      "fields": {
+        "level": 86,
+        "health": 3.03,
+        "armor": 2.67,
+        "react": 0.95,
+        "perception": 1.8,
+        "to_hit": 0.95
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:87",
+      "name": "87",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 88
+      },
+      "fields": {
+        "level": 87,
+        "health": 3.06,
+        "armor": 2.7,
+        "react": 0.96,
+        "perception": 1.82,
+        "to_hit": 0.96
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:88",
+      "name": "88",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 89
+      },
+      "fields": {
+        "level": 88,
+        "health": 3.09,
+        "armor": 2.73,
+        "react": 0.97,
+        "perception": 1.84,
+        "to_hit": 0.97
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:89",
+      "name": "89",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 90
+      },
+      "fields": {
+        "level": 89,
+        "health": 3.12,
+        "armor": 2.76,
+        "react": 0.98,
+        "perception": 1.86,
+        "to_hit": 0.98
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:90",
+      "name": "90",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 91
+      },
+      "fields": {
+        "level": 90,
+        "health": 3.15,
+        "armor": 2.79,
+        "react": 0.99,
+        "perception": 1.88,
+        "to_hit": 0.99
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:91",
+      "name": "91",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 92
+      },
+      "fields": {
+        "level": 91,
+        "health": 3.18,
+        "armor": 2.82,
+        "react": 1,
+        "perception": 1.9,
+        "to_hit": 1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:92",
+      "name": "92",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 93
+      },
+      "fields": {
+        "level": 92,
+        "health": 3.21,
+        "armor": 2.85,
+        "react": 1.01,
+        "perception": 1.92,
+        "to_hit": 1.01
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:93",
+      "name": "93",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 94
+      },
+      "fields": {
+        "level": 93,
+        "health": 3.24,
+        "armor": 2.88,
+        "react": 1.02,
+        "perception": 1.94,
+        "to_hit": 1.02
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:94",
+      "name": "94",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 95
+      },
+      "fields": {
+        "level": 94,
+        "health": 3.27,
+        "armor": 2.91,
+        "react": 1.03,
+        "perception": 1.96,
+        "to_hit": 1.03
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:95",
+      "name": "95",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 96
+      },
+      "fields": {
+        "level": 95,
+        "health": 3.3,
+        "armor": 2.94,
+        "react": 1.04,
+        "perception": 1.98,
+        "to_hit": 1.04
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:96",
+      "name": "96",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 97
+      },
+      "fields": {
+        "level": 96,
+        "health": 3.33,
+        "armor": 2.97,
+        "react": 1.05,
+        "perception": 2,
+        "to_hit": 1.05
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:97",
+      "name": "97",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 98
+      },
+      "fields": {
+        "level": 97,
+        "health": 3.36,
+        "armor": 3,
+        "react": 1.06,
+        "perception": 2.02,
+        "to_hit": 1.06
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:98",
+      "name": "98",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 99
+      },
+      "fields": {
+        "level": 98,
+        "health": 3.39,
+        "armor": 3.03,
+        "react": 1.07,
+        "perception": 2.04,
+        "to_hit": 1.07
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:99",
+      "name": "99",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 100
+      },
+      "fields": {
+        "level": 99,
+        "health": 3.42,
+        "armor": 3.06,
+        "react": 1.08,
+        "perception": 2.06,
+        "to_hit": 1.08
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "tank:100",
+      "name": "100",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 101
+      },
+      "fields": {
+        "level": 100,
+        "health": 3.45,
+        "armor": 3.09,
+        "react": 1.09,
+        "perception": 2.08,
+        "to_hit": 1.09
+      },
+      "dynamic_fields": {}
+    }
+  ],
+  "excluded_rows": []
+}

@@ -1,0 +1,1822 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "level",
+    "health",
+    "armor",
+    "react",
+    "perception",
+    "to_hit"
+  ],
+  "source_headers": [
+    "Level",
+    "Health",
+    "Armor",
+    "React",
+    "Perception",
+    "To Hit"
+  ],
+  "records": [
+    {
+      "id": "fighter:1",
+      "name": "1",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 105
+      },
+      "fields": {
+        "level": 1,
+        "health": 0.5,
+        "armor": 0.1,
+        "react": 0.1,
+        "perception": 0.1,
+        "to_hit": 0.1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:2",
+      "name": "2",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 106
+      },
+      "fields": {
+        "level": 2,
+        "health": 0.52,
+        "armor": 0.11,
+        "react": 0.11,
+        "perception": 0.13,
+        "to_hit": 0.13
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:3",
+      "name": "3",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 107
+      },
+      "fields": {
+        "level": 3,
+        "health": 0.54,
+        "armor": 0.12,
+        "react": 0.12,
+        "perception": 0.16,
+        "to_hit": 0.16
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:4",
+      "name": "4",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 108
+      },
+      "fields": {
+        "level": 4,
+        "health": 0.56,
+        "armor": 0.13,
+        "react": 0.13,
+        "perception": 0.19,
+        "to_hit": 0.19
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:5",
+      "name": "5",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 109
+      },
+      "fields": {
+        "level": 5,
+        "health": 0.58,
+        "armor": 0.14,
+        "react": 0.14,
+        "perception": 0.22,
+        "to_hit": 0.22
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:6",
+      "name": "6",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 110
+      },
+      "fields": {
+        "level": 6,
+        "health": 0.6,
+        "armor": 0.15,
+        "react": 0.15,
+        "perception": 0.25,
+        "to_hit": 0.25
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:7",
+      "name": "7",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 111
+      },
+      "fields": {
+        "level": 7,
+        "health": 0.62,
+        "armor": 0.16,
+        "react": 0.16,
+        "perception": 0.28,
+        "to_hit": 0.28
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:8",
+      "name": "8",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 112
+      },
+      "fields": {
+        "level": 8,
+        "health": 0.64,
+        "armor": 0.17,
+        "react": 0.17,
+        "perception": 0.31,
+        "to_hit": 0.31
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:9",
+      "name": "9",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 113
+      },
+      "fields": {
+        "level": 9,
+        "health": 0.66,
+        "armor": 0.18,
+        "react": 0.18,
+        "perception": 0.34,
+        "to_hit": 0.34
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:10",
+      "name": "10",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 114
+      },
+      "fields": {
+        "level": 10,
+        "health": 0.68,
+        "armor": 0.19,
+        "react": 0.19,
+        "perception": 0.37,
+        "to_hit": 0.37
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:11",
+      "name": "11",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 115
+      },
+      "fields": {
+        "level": 11,
+        "health": 0.7,
+        "armor": 0.2,
+        "react": 0.2,
+        "perception": 0.4,
+        "to_hit": 0.4
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:12",
+      "name": "12",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 116
+      },
+      "fields": {
+        "level": 12,
+        "health": 0.72,
+        "armor": 0.21,
+        "react": 0.21,
+        "perception": 0.43,
+        "to_hit": 0.43
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:13",
+      "name": "13",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 117
+      },
+      "fields": {
+        "level": 13,
+        "health": 0.74,
+        "armor": 0.22,
+        "react": 0.22,
+        "perception": 0.47,
+        "to_hit": 0.47
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:14",
+      "name": "14",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 118
+      },
+      "fields": {
+        "level": 14,
+        "health": 0.76,
+        "armor": 0.23,
+        "react": 0.23,
+        "perception": 0.5,
+        "to_hit": 0.5
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:15",
+      "name": "15",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 119
+      },
+      "fields": {
+        "level": 15,
+        "health": 0.78,
+        "armor": 0.24,
+        "react": 0.24,
+        "perception": 0.53,
+        "to_hit": 0.53
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:16",
+      "name": "16",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 120
+      },
+      "fields": {
+        "level": 16,
+        "health": 0.8,
+        "armor": 0.25,
+        "react": 0.25,
+        "perception": 0.56,
+        "to_hit": 0.56
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:17",
+      "name": "17",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 121
+      },
+      "fields": {
+        "level": 17,
+        "health": 0.82,
+        "armor": 0.26,
+        "react": 0.26,
+        "perception": 0.59,
+        "to_hit": 0.59
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:18",
+      "name": "18",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 122
+      },
+      "fields": {
+        "level": 18,
+        "health": 0.84,
+        "armor": 0.27,
+        "react": 0.27,
+        "perception": 0.62,
+        "to_hit": 0.62
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:19",
+      "name": "19",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 123
+      },
+      "fields": {
+        "level": 19,
+        "health": 0.86,
+        "armor": 0.28,
+        "react": 0.28,
+        "perception": 0.65,
+        "to_hit": 0.65
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:20",
+      "name": "20",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 124
+      },
+      "fields": {
+        "level": 20,
+        "health": 0.88,
+        "armor": 0.29,
+        "react": 0.29,
+        "perception": 0.68,
+        "to_hit": 0.68
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:21",
+      "name": "21",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 125
+      },
+      "fields": {
+        "level": 21,
+        "health": 0.9,
+        "armor": 0.3,
+        "react": 0.3,
+        "perception": 0.71,
+        "to_hit": 0.71
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:22",
+      "name": "22",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 126
+      },
+      "fields": {
+        "level": 22,
+        "health": 0.92,
+        "armor": 0.31,
+        "react": 0.31,
+        "perception": 0.74,
+        "to_hit": 0.74
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:23",
+      "name": "23",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 127
+      },
+      "fields": {
+        "level": 23,
+        "health": 0.94,
+        "armor": 0.32,
+        "react": 0.32,
+        "perception": 0.77,
+        "to_hit": 0.77
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:24",
+      "name": "24",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 128
+      },
+      "fields": {
+        "level": 24,
+        "health": 0.96,
+        "armor": 0.33,
+        "react": 0.33,
+        "perception": 0.8,
+        "to_hit": 0.8
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:25",
+      "name": "25",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 129
+      },
+      "fields": {
+        "level": 25,
+        "health": 0.98,
+        "armor": 0.34,
+        "react": 0.34,
+        "perception": 0.83,
+        "to_hit": 0.83
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:26",
+      "name": "26",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 130
+      },
+      "fields": {
+        "level": 26,
+        "health": 1,
+        "armor": 0.35,
+        "react": 0.35,
+        "perception": 0.86,
+        "to_hit": 0.86
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:27",
+      "name": "27",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 131
+      },
+      "fields": {
+        "level": 27,
+        "health": 1.02,
+        "armor": 0.36,
+        "react": 0.36,
+        "perception": 0.89,
+        "to_hit": 0.89
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:28",
+      "name": "28",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 132
+      },
+      "fields": {
+        "level": 28,
+        "health": 1.04,
+        "armor": 0.37,
+        "react": 0.37,
+        "perception": 0.92,
+        "to_hit": 0.92
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:29",
+      "name": "29",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 133
+      },
+      "fields": {
+        "level": 29,
+        "health": 1.06,
+        "armor": 0.38,
+        "react": 0.38,
+        "perception": 0.95,
+        "to_hit": 0.95
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:30",
+      "name": "30",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 134
+      },
+      "fields": {
+        "level": 30,
+        "health": 1.08,
+        "armor": 0.39,
+        "react": 0.39,
+        "perception": 0.98,
+        "to_hit": 0.98
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:31",
+      "name": "31",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 135
+      },
+      "fields": {
+        "level": 31,
+        "health": 1.1,
+        "armor": 0.4,
+        "react": 0.4,
+        "perception": 1.01,
+        "to_hit": 1.01
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:32",
+      "name": "32",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 136
+      },
+      "fields": {
+        "level": 32,
+        "health": 1.12,
+        "armor": 0.41,
+        "react": 0.41,
+        "perception": 1.04,
+        "to_hit": 1.04
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:33",
+      "name": "33",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 137
+      },
+      "fields": {
+        "level": 33,
+        "health": 1.14,
+        "armor": 0.42,
+        "react": 0.42,
+        "perception": 1.07,
+        "to_hit": 1.07
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:34",
+      "name": "34",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 138
+      },
+      "fields": {
+        "level": 34,
+        "health": 1.16,
+        "armor": 0.43,
+        "react": 0.43,
+        "perception": 1.1,
+        "to_hit": 1.1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:35",
+      "name": "35",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 139
+      },
+      "fields": {
+        "level": 35,
+        "health": 1.18,
+        "armor": 0.44,
+        "react": 0.44,
+        "perception": 1.13,
+        "to_hit": 1.13
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:36",
+      "name": "36",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 140
+      },
+      "fields": {
+        "level": 36,
+        "health": 1.2,
+        "armor": 0.45,
+        "react": 0.45,
+        "perception": 1.16,
+        "to_hit": 1.16
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:37",
+      "name": "37",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 141
+      },
+      "fields": {
+        "level": 37,
+        "health": 1.22,
+        "armor": 0.46,
+        "react": 0.46,
+        "perception": 1.19,
+        "to_hit": 1.19
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:38",
+      "name": "38",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 142
+      },
+      "fields": {
+        "level": 38,
+        "health": 1.24,
+        "armor": 0.47,
+        "react": 0.47,
+        "perception": 1.22,
+        "to_hit": 1.22
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:39",
+      "name": "39",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 143
+      },
+      "fields": {
+        "level": 39,
+        "health": 1.26,
+        "armor": 0.48,
+        "react": 0.48,
+        "perception": 1.25,
+        "to_hit": 1.25
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:40",
+      "name": "40",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 144
+      },
+      "fields": {
+        "level": 40,
+        "health": 1.28,
+        "armor": 0.49,
+        "react": 0.49,
+        "perception": 1.28,
+        "to_hit": 1.28
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:41",
+      "name": "41",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 145
+      },
+      "fields": {
+        "level": 41,
+        "health": 1.3,
+        "armor": 0.5,
+        "react": 0.5,
+        "perception": 1.31,
+        "to_hit": 1.31
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:42",
+      "name": "42",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 146
+      },
+      "fields": {
+        "level": 42,
+        "health": 1.32,
+        "armor": 0.51,
+        "react": 0.51,
+        "perception": 1.34,
+        "to_hit": 1.34
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:43",
+      "name": "43",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 147
+      },
+      "fields": {
+        "level": 43,
+        "health": 1.34,
+        "armor": 0.52,
+        "react": 0.52,
+        "perception": 1.37,
+        "to_hit": 1.37
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:44",
+      "name": "44",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 148
+      },
+      "fields": {
+        "level": 44,
+        "health": 1.36,
+        "armor": 0.53,
+        "react": 0.53,
+        "perception": 1.4,
+        "to_hit": 1.4
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:45",
+      "name": "45",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 149
+      },
+      "fields": {
+        "level": 45,
+        "health": 1.38,
+        "armor": 0.54,
+        "react": 0.54,
+        "perception": 1.43,
+        "to_hit": 1.43
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:46",
+      "name": "46",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 150
+      },
+      "fields": {
+        "level": 46,
+        "health": 1.4,
+        "armor": 0.55,
+        "react": 0.55,
+        "perception": 1.46,
+        "to_hit": 1.46
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:47",
+      "name": "47",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 151
+      },
+      "fields": {
+        "level": 47,
+        "health": 1.42,
+        "armor": 0.56,
+        "react": 0.56,
+        "perception": 1.49,
+        "to_hit": 1.49
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:48",
+      "name": "48",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 152
+      },
+      "fields": {
+        "level": 48,
+        "health": 1.44,
+        "armor": 0.57,
+        "react": 0.57,
+        "perception": 1.52,
+        "to_hit": 1.52
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:49",
+      "name": "49",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 153
+      },
+      "fields": {
+        "level": 49,
+        "health": 1.46,
+        "armor": 0.58,
+        "react": 0.58,
+        "perception": 1.55,
+        "to_hit": 1.55
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:50",
+      "name": "50",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 154
+      },
+      "fields": {
+        "level": 50,
+        "health": 1.48,
+        "armor": 0.59,
+        "react": 0.59,
+        "perception": 1.58,
+        "to_hit": 1.58
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:51",
+      "name": "51",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 155
+      },
+      "fields": {
+        "level": 51,
+        "health": 1.5,
+        "armor": 0.6,
+        "react": 0.6,
+        "perception": 1.61,
+        "to_hit": 1.61
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:52",
+      "name": "52",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 156
+      },
+      "fields": {
+        "level": 52,
+        "health": 1.52,
+        "armor": 0.61,
+        "react": 0.61,
+        "perception": 1.65,
+        "to_hit": 1.65
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:53",
+      "name": "53",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 157
+      },
+      "fields": {
+        "level": 53,
+        "health": 1.54,
+        "armor": 0.62,
+        "react": 0.62,
+        "perception": 1.68,
+        "to_hit": 1.68
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:54",
+      "name": "54",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 158
+      },
+      "fields": {
+        "level": 54,
+        "health": 1.56,
+        "armor": 0.63,
+        "react": 0.63,
+        "perception": 1.71,
+        "to_hit": 1.71
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:55",
+      "name": "55",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 159
+      },
+      "fields": {
+        "level": 55,
+        "health": 1.58,
+        "armor": 0.64,
+        "react": 0.64,
+        "perception": 1.74,
+        "to_hit": 1.74
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:56",
+      "name": "56",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 160
+      },
+      "fields": {
+        "level": 56,
+        "health": 1.6,
+        "armor": 0.65,
+        "react": 0.65,
+        "perception": 1.77,
+        "to_hit": 1.77
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:57",
+      "name": "57",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 161
+      },
+      "fields": {
+        "level": 57,
+        "health": 1.62,
+        "armor": 0.66,
+        "react": 0.66,
+        "perception": 1.8,
+        "to_hit": 1.8
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:58",
+      "name": "58",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 162
+      },
+      "fields": {
+        "level": 58,
+        "health": 1.64,
+        "armor": 0.67,
+        "react": 0.67,
+        "perception": 1.83,
+        "to_hit": 1.83
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:59",
+      "name": "59",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 163
+      },
+      "fields": {
+        "level": 59,
+        "health": 1.66,
+        "armor": 0.68,
+        "react": 0.68,
+        "perception": 1.86,
+        "to_hit": 1.86
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:60",
+      "name": "60",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 164
+      },
+      "fields": {
+        "level": 60,
+        "health": 1.68,
+        "armor": 0.69,
+        "react": 0.69,
+        "perception": 1.89,
+        "to_hit": 1.89
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:61",
+      "name": "61",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 165
+      },
+      "fields": {
+        "level": 61,
+        "health": 1.7,
+        "armor": 0.7,
+        "react": 0.7,
+        "perception": 1.92,
+        "to_hit": 1.92
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:62",
+      "name": "62",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 166
+      },
+      "fields": {
+        "level": 62,
+        "health": 1.72,
+        "armor": 0.71,
+        "react": 0.71,
+        "perception": 1.95,
+        "to_hit": 1.95
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:63",
+      "name": "63",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 167
+      },
+      "fields": {
+        "level": 63,
+        "health": 1.74,
+        "armor": 0.72,
+        "react": 0.72,
+        "perception": 1.98,
+        "to_hit": 1.98
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:64",
+      "name": "64",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 168
+      },
+      "fields": {
+        "level": 64,
+        "health": 1.76,
+        "armor": 0.73,
+        "react": 0.73,
+        "perception": 2.01,
+        "to_hit": 2.01
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:65",
+      "name": "65",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 169
+      },
+      "fields": {
+        "level": 65,
+        "health": 1.78,
+        "armor": 0.74,
+        "react": 0.74,
+        "perception": 2.04,
+        "to_hit": 2.04
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:66",
+      "name": "66",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 170
+      },
+      "fields": {
+        "level": 66,
+        "health": 1.8,
+        "armor": 0.75,
+        "react": 0.75,
+        "perception": 2.07,
+        "to_hit": 2.07
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:67",
+      "name": "67",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 171
+      },
+      "fields": {
+        "level": 67,
+        "health": 1.82,
+        "armor": 0.76,
+        "react": 0.76,
+        "perception": 2.1,
+        "to_hit": 2.1
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:68",
+      "name": "68",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 172
+      },
+      "fields": {
+        "level": 68,
+        "health": 1.84,
+        "armor": 0.77,
+        "react": 0.77,
+        "perception": 2.13,
+        "to_hit": 2.13
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:69",
+      "name": "69",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 173
+      },
+      "fields": {
+        "level": 69,
+        "health": 1.86,
+        "armor": 0.78,
+        "react": 0.78,
+        "perception": 2.16,
+        "to_hit": 2.16
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:70",
+      "name": "70",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 174
+      },
+      "fields": {
+        "level": 70,
+        "health": 1.88,
+        "armor": 0.79,
+        "react": 0.79,
+        "perception": 2.19,
+        "to_hit": 2.19
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:71",
+      "name": "71",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 175
+      },
+      "fields": {
+        "level": 71,
+        "health": 1.9,
+        "armor": 0.8,
+        "react": 0.8,
+        "perception": 2.22,
+        "to_hit": 2.22
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:72",
+      "name": "72",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 176
+      },
+      "fields": {
+        "level": 72,
+        "health": 1.92,
+        "armor": 0.81,
+        "react": 0.81,
+        "perception": 2.25,
+        "to_hit": 2.25
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:73",
+      "name": "73",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 177
+      },
+      "fields": {
+        "level": 73,
+        "health": 1.94,
+        "armor": 0.82,
+        "react": 0.82,
+        "perception": 2.28,
+        "to_hit": 2.28
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:74",
+      "name": "74",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 178
+      },
+      "fields": {
+        "level": 74,
+        "health": 1.96,
+        "armor": 0.83,
+        "react": 0.83,
+        "perception": 2.31,
+        "to_hit": 2.31
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:75",
+      "name": "75",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 179
+      },
+      "fields": {
+        "level": 75,
+        "health": 1.98,
+        "armor": 0.84,
+        "react": 0.84,
+        "perception": 2.34,
+        "to_hit": 2.34
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:76",
+      "name": "76",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 180
+      },
+      "fields": {
+        "level": 76,
+        "health": 2,
+        "armor": 0.85,
+        "react": 0.85,
+        "perception": 2.37,
+        "to_hit": 2.37
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:77",
+      "name": "77",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 181
+      },
+      "fields": {
+        "level": 77,
+        "health": 2.02,
+        "armor": 0.86,
+        "react": 0.86,
+        "perception": 2.4,
+        "to_hit": 2.4
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:78",
+      "name": "78",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 182
+      },
+      "fields": {
+        "level": 78,
+        "health": 2.04,
+        "armor": 0.87,
+        "react": 0.87,
+        "perception": 2.43,
+        "to_hit": 2.43
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:79",
+      "name": "79",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 183
+      },
+      "fields": {
+        "level": 79,
+        "health": 2.06,
+        "armor": 0.88,
+        "react": 0.88,
+        "perception": 2.46,
+        "to_hit": 2.46
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:80",
+      "name": "80",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 184
+      },
+      "fields": {
+        "level": 80,
+        "health": 2.08,
+        "armor": 0.89,
+        "react": 0.89,
+        "perception": 2.49,
+        "to_hit": 2.49
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:81",
+      "name": "81",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 185
+      },
+      "fields": {
+        "level": 81,
+        "health": 2.1,
+        "armor": 0.9,
+        "react": 0.9,
+        "perception": 2.52,
+        "to_hit": 2.52
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:82",
+      "name": "82",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 186
+      },
+      "fields": {
+        "level": 82,
+        "health": 2.12,
+        "armor": 0.91,
+        "react": 0.91,
+        "perception": 2.55,
+        "to_hit": 2.55
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:83",
+      "name": "83",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 187
+      },
+      "fields": {
+        "level": 83,
+        "health": 2.14,
+        "armor": 0.92,
+        "react": 0.92,
+        "perception": 2.58,
+        "to_hit": 2.58
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:84",
+      "name": "84",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 188
+      },
+      "fields": {
+        "level": 84,
+        "health": 2.16,
+        "armor": 0.93,
+        "react": 0.93,
+        "perception": 2.61,
+        "to_hit": 2.61
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:85",
+      "name": "85",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 189
+      },
+      "fields": {
+        "level": 85,
+        "health": 2.18,
+        "armor": 0.94,
+        "react": 0.94,
+        "perception": 2.64,
+        "to_hit": 2.64
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:86",
+      "name": "86",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 190
+      },
+      "fields": {
+        "level": 86,
+        "health": 2.2,
+        "armor": 0.95,
+        "react": 0.95,
+        "perception": 2.67,
+        "to_hit": 2.67
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:87",
+      "name": "87",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 191
+      },
+      "fields": {
+        "level": 87,
+        "health": 2.22,
+        "armor": 0.96,
+        "react": 0.96,
+        "perception": 2.7,
+        "to_hit": 2.7
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:88",
+      "name": "88",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 192
+      },
+      "fields": {
+        "level": 88,
+        "health": 2.24,
+        "armor": 0.97,
+        "react": 0.97,
+        "perception": 2.73,
+        "to_hit": 2.73
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:89",
+      "name": "89",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 193
+      },
+      "fields": {
+        "level": 89,
+        "health": 2.26,
+        "armor": 0.98,
+        "react": 0.98,
+        "perception": 2.76,
+        "to_hit": 2.76
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:90",
+      "name": "90",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 194
+      },
+      "fields": {
+        "level": 90,
+        "health": 2.28,
+        "armor": 0.99,
+        "react": 0.99,
+        "perception": 2.79,
+        "to_hit": 2.79
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:91",
+      "name": "91",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 195
+      },
+      "fields": {
+        "level": 91,
+        "health": 2.3,
+        "armor": 1,
+        "react": 1,
+        "perception": 2.82,
+        "to_hit": 2.82
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:92",
+      "name": "92",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 196
+      },
+      "fields": {
+        "level": 92,
+        "health": 2.32,
+        "armor": 1.01,
+        "react": 1.01,
+        "perception": 2.85,
+        "to_hit": 2.85
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:93",
+      "name": "93",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 197
+      },
+      "fields": {
+        "level": 93,
+        "health": 2.34,
+        "armor": 1.02,
+        "react": 1.02,
+        "perception": 2.88,
+        "to_hit": 2.88
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:94",
+      "name": "94",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 198
+      },
+      "fields": {
+        "level": 94,
+        "health": 2.36,
+        "armor": 1.03,
+        "react": 1.03,
+        "perception": 2.91,
+        "to_hit": 2.91
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:95",
+      "name": "95",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 199
+      },
+      "fields": {
+        "level": 95,
+        "health": 2.38,
+        "armor": 1.04,
+        "react": 1.04,
+        "perception": 2.94,
+        "to_hit": 2.94
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:96",
+      "name": "96",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 200
+      },
+      "fields": {
+        "level": 96,
+        "health": 2.4,
+        "armor": 1.05,
+        "react": 1.05,
+        "perception": 2.97,
+        "to_hit": 2.97
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:97",
+      "name": "97",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 201
+      },
+      "fields": {
+        "level": 97,
+        "health": 2.42,
+        "armor": 1.06,
+        "react": 1.06,
+        "perception": 3,
+        "to_hit": 3
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:98",
+      "name": "98",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 202
+      },
+      "fields": {
+        "level": 98,
+        "health": 2.44,
+        "armor": 1.07,
+        "react": 1.07,
+        "perception": 3.03,
+        "to_hit": 3.03
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:99",
+      "name": "99",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 203
+      },
+      "fields": {
+        "level": 99,
+        "health": 2.46,
+        "armor": 1.08,
+        "react": 1.08,
+        "perception": 3.06,
+        "to_hit": 3.06
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "fighter:100",
+      "name": "100",
+      "kind": "record",
+      "source": {
+        "sheet": "Stats",
+        "row": 204
+      },
+      "fields": {
+        "level": 100,
+        "health": 2.48,
+        "armor": 1.09,
+        "react": 1.09,
+        "perception": 3.09,
+        "to_hit": 3.09
+      },
+      "dynamic_fields": {}
+    }
+  ],
+  "excluded_rows": []
+}

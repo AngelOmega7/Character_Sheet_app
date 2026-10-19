@@ -1,0 +1,84 @@
+/**
+ * Searches for Zoid!C2 in Zoid_Gifs Column A.
+ * Grabs up to 4 URLs from Columns B, C, D, E and places them over 4 cells.
+ */
+function updateQuadGifs() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const zoidSheet = ss.getSheetByName("Zoid");
+  const gifSheet = ss.getSheetByName("Zoid_Gifs");
+
+if (!zoidSheet) {
+  throw new Error("Cannot find sheet named 'Zoid'. Check for extra spaces or typos.");
+}
+if (!gifSheet) {
+  throw new Error("Cannot find sheet named 'Zoid_Gifs'. Check for extra spaces or typos.");
+}
+
+
+  // 1. Get search value from Zoid!C2
+  const lookupValue = zoidSheet.getRange("C4").getValue();
+  if (!lookupValue) return;
+
+  // 2. Fetch the entire table
+  const data = gifSheet.getRange("A:E").getValues();
+
+  // 3. Define where the 4 Gifs should go
+  const targets = [
+    { col: 7, row: 25 }, // G25
+    { col: 7, row: 30 }, // G30
+    { col: 7, row: 35 }, // G35
+    { col: 7, row: 40 }  // G40
+  ];
+
+    // 4. Find the EXACT matching row
+  let matchRow = null;
+  for (let i = 0; i < data.length; i++) {
+    // Using === ensures it matches the full cell content exactly
+    if (data[i][0] === lookupValue) { 
+      matchRow = data[i]; 
+      break;
+    }
+  }
+
+
+  if (matchRow) {
+    // 5. Remove old images in the target cells
+    const existingImages = zoidSheet.getImages();
+    existingImages.forEach(img => {
+      const anchor = img.getAnchorCell();
+      if (anchor && anchor.getColumn() === 7) { // Column G
+        const row = anchor.getRow();
+        if ([25, 30, 35, 40].includes(row)) {
+          img.remove();
+        }
+      }
+    });
+
+    // 6. Loop through and insert found Gifs
+    for (let j = 1; j <= 4; j++) {
+      let gifUrl = matchRow[j];
+      const target = targets[j - 1];
+
+      if (gifUrl && typeof gifUrl === 'string') {
+        try {
+          if (gifUrl.includes("drive.google.com")) {
+            // Extract File ID from URL
+            const fileIdMatch = gifUrl.match(/[-\w]{25,}/);
+            if (fileIdMatch) {
+              // Fetch file as a Blob for direct insertion
+              const blob = DriveApp.getFileById(fileIdMatch[0]).getBlob();
+              zoidSheet.insertImage(blob, target.col, target.row);
+            }
+          } else if (gifUrl.startsWith("http")) {
+            // External non-Drive URL
+            zoidSheet.insertImage(gifUrl, target.col, target.row);
+          }
+        } catch (e) {
+          // Typically occurs if image exceeds 1 million pixel area
+          console.warn(`Error at row ${target.row}: ${e.message}`);
+        }
+      }
+    }
+  }
+}
+
