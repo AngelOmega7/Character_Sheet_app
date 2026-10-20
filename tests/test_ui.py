@@ -16,6 +16,7 @@ from zoids_app.characters import restore_roster_selection
 from zoids_app.combat_controller import combat_snapshot
 from zoids_app.stats import calculate_stats
 from zoids_app.storage import CharacterStore
+from test_support import established_character
 
 
 class PageStub:
@@ -42,6 +43,8 @@ class EditorTests(unittest.TestCase):
         self.store = CharacterStore(Path(self.directory.name) / "characters.sqlite3", catalog)
         self.page = PageStub()
         self.editor = CharacterEditor(self.page, self.store, catalog)
+        self.editor.character = established_character(catalog)
+        self.editor.render()
 
     def test_create_equip_activate_save_and_reopen(self):
         editor = self.editor
@@ -78,9 +81,11 @@ class EditorTests(unittest.TestCase):
         editor.change_equipment("left", editor.character.inventory[-1].id)
         original_id = editor.character.active_zoid_id
         health = editor.character.current_health
-        editor.frame_fields["speed"].value = "2"
+        editor.gold_input.value = "15000"
+        editor.adjust_upgrade("speed", 1)
+        editor.adjust_upgrade("speed", 1)
         editor.acquisition.value = "zoids:shield_liger"
-        editor.obtain()
+        self.confirm_purchase()
         self.assertEqual(editor.character.build.equipment, (None,) * 4)
         self.assertEqual(editor.character.build.upgrades.speed, 0)
         editor.select_owned(original_id)
@@ -94,13 +99,15 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(len(editor.form_select.options), 1)
         self.assertNotIn("zoids:zero_jager_cau", {o.key for o in editor.acquisition.options})
         editor.acquisition.value = "zoids:liger_zero"
-        editor.obtain()
+        self.confirm_purchase()
         self.assertEqual(len(editor.owned_select.options), 2)
         self.assertEqual(len(editor.form_select.options), 1)
         self.assertIn("zoids:zero_jager_cau", {o.key for o in editor.acquisition.options})
-        editor.damage_fields[2].value = "3"
+        editor.gold_input.value = "60000"
+        for _ in range(3):
+            editor.adjust_upgrade("damage", 1, 2)
         editor.acquisition.value = "zoids:zero_jager_cau"
-        editor.obtain()
+        self.confirm_purchase()
         self.assertEqual(len(editor.owned_select.options), 2)
         self.assertEqual(len(editor.form_select.options), 2)
         self.assertEqual(editor.damage_fields[3].value, "3")
@@ -126,17 +133,21 @@ class EditorTests(unittest.TestCase):
         self.assertTrue(editor.owned_select.disabled)
         names = {o.text for o in editor.acquisition.options}
         self.assertFalse(names & {"Leo Blaze", "Zero Phoenix", "Gustav", "Hover Cargo", "Whale King"})
-        transport_text = [c.value for c in editor.transport_section.content.controls if isinstance(c, flet.Text)]
-        self.assertTrue({"Transport", "Hover Cargo", "Gustav", "Whale King"} <= set(transport_text))
+        self.assertTrue({"None", "Hover Cargo", "Gustav", "Whale King", "Dragoon Nest"} <= {o.text for o in editor.transport_picker.options})
         editor.save()
         self.assertEqual(self.store.load(editor.character.id).owned_zoids, ())
         editor.acquisition.value = "zoids:liger_zero"
-        editor.obtain()
+        self.confirm_purchase()
         self.assertEqual(editor.character.build.zoid, "zoids:liger_zero")
 
     def learn(self, name):
         self.editor.ability_to_learn.value = self.editor.catalog.find("abilities", name)["id"]
         self.editor.learn_selected_ability()
+
+    def confirm_purchase(self):
+        self.editor.obtain()
+        self.assertIsNotNone(self.page.dialog)
+        self.page.dialog.actions[-1].on_click(None)
 
     def acquire_item(self, name, quantity=1):
         self.editor.equipment_to_acquire.value = self.editor.catalog.find("armaments", name)["id"]
@@ -242,10 +253,10 @@ class EditorTests(unittest.TestCase):
         editor.apply_organoid()
         saber_id = editor.character.active_zoid_id
         editor.acquisition.value = "zoids:liger_zero"
-        editor.obtain()
+        self.confirm_purchase()
         liger_id = editor.character.active_zoid_id
         editor.acquisition.value = "zoids:zero_jager_cau"
-        editor.obtain()
+        self.confirm_purchase()
         editor.select_owned(saber_id)
         editor.select_owned(liger_id)
         self.assertEqual(editor.character.build.zoid, "zoids:zero_jager_cau")
@@ -274,7 +285,7 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(editor.character.owned_zoids, ())
         self.assertEqual(self.store.load(editor.character.id), editor.character)
         editor.acquisition.value = "zoids:liger_zero"
-        editor.obtain()
+        self.confirm_purchase()
         self.assertEqual(editor.character.build.abilities, ("abilities:fleet_footed",))
         self.assertEqual(editor.character.build.organoid_level, 40)
         self.assertTrue(editor.character.build.organoid_enabled)
@@ -470,7 +481,7 @@ class EditorTests(unittest.TestCase):
         editor.apply_organoid()
         self.assertEqual(editor.personality.value, "Outspoken")
         editor.acquisition.value = "zoids:liger_zero"
-        editor.obtain()
+        self.confirm_purchase()
         editor.save()
         saved = editor.character
         editor.new()

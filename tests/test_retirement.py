@@ -10,6 +10,7 @@ from zoids_app.catalog import Catalog
 from zoids_app.characters import acquire_zoid, new_character
 from zoids_app.combat import RuleError
 from zoids_app.storage import CharacterStore, SAVE_VERSION
+from test_support import established_character as new_character
 
 
 class RetirementTests(unittest.TestCase):
@@ -21,7 +22,7 @@ class RetirementTests(unittest.TestCase):
 
     def test_all_blox_zoids_and_five_abilities_are_excluded(self):
         zoids = self.catalog.tables["zoids"]
-        self.assertEqual(len(zoids["records"]), 135)
+        self.assertEqual(len(zoids["records"]), 134)
         self.assertFalse(any(r["fields"]["type"].strip().casefold() == "blox" for r in zoids["records"]))
         retired = [r for r in zoids["excluded_rows"] if r["reason"] == "Owner retired BLOX Zoids"]
         self.assertEqual(len(retired), 19)
@@ -36,7 +37,7 @@ class RetirementTests(unittest.TestCase):
 
     def test_transports_have_separate_reference_catalog_and_provenance(self):
         records = self.catalog.tables["transports"]["records"]
-        self.assertEqual({r["name"] for r in records}, {"Hover Cargo", "Gustav", "Whale King"})
+        self.assertEqual({r["name"] for r in records}, {"Hover Cargo", "Gustav", "Whale King", "Dragoon Nest"})
         for record in records:
             with self.assertRaises(RuleError):
                 self.catalog.find("zoids", record["name"])

@@ -3,9 +3,12 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import sys
 from decimal import Decimal
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from tools.workflow_data import TRANSPORTS, apply_workflow, write_purchases
 DICE_DAMAGE = re.compile(r"\b(\d+)\s*[dD]\s*(\d+)\b")
 CAU_BASES = {
     "Zero Jager (CAU)": "Liger Zero", "Zero Schneider (CAU)": "Liger Zero",
@@ -14,12 +17,13 @@ CAU_BASES = {
     "Sturm Fury (CAU)": "Berserk Fury", "Jagd Fury (CAU)": "Berserk Fury",
     "Berserk Fury Z (CAU)": "Berserk Fury",
 }
-TRANSPORT_NAMES = {"Hover Cargo", "Gustav", "Whale King"}
+TRANSPORT_NAMES = set(TRANSPORTS)
 
 
-def add_ownership_metadata(records, keys):
+def add_ownership_metadata(records, keys, families=None):
     """Explicit CAU families and stable weapon identities, independent of slots."""
     by_name = {r["name"]: r for r in records}
+    families = families or CAU_BASES
     aliases = {"strike_laster_claw": "strike_laser_claw", "strike_laser_claws": "strike_laser_claw"}
 
     def weapons(record):
@@ -28,15 +32,15 @@ def add_ownership_metadata(records, keys):
             name = record["fields"][keys[name_column - 1]]
             damage = record["fields"][keys[damage_column - 1]]
             key = slug(name) if name and damage is not None else None
-            if record["name"] == "Liger Zero" or CAU_BASES.get(record["name"]) == "Liger Zero":
+            if record["name"] == "Liger Zero" or families.get(record["name"]) == "Liger Zero":
                 key = aliases.get(key, key)
             result.append(key)
         return result
 
     for record in records:
-        if "(CAU)" in record["name"] and record["name"] not in CAU_BASES:
+        if "(CAU)" in record["name"] and record["name"] not in families:
             raise ValueError(f"Unmapped CAU form: {record['name']}")
-        base = by_name[CAU_BASES.get(record["name"], record["name"])]
+        base = by_name[families.get(record["name"], record["name"])]
         record["ownership_base_id"] = base["id"]
         base_weapons = weapons(base)
         record["fixed_weapon_ids"] = [
@@ -352,12 +356,17 @@ def build():
                     issues.append({"dataset": dataset, "id": record["id"], "field": key, "error": val})
         if dataset == "zoids":
             correct_zaber_fang(next(r for r in records if r["name"] == "Zaber Fang"), keys)
+            add_ownership_metadata(records, keys)
+            families = apply_workflow(records, keys, ROOT, CAU_BASES)
             transports = []
             for record in records:
                 if record["name"] in TRANSPORT_NAMES:
                     original_id = record["id"]
                     record["id"] = f"transports:{slug(record['name'])}"
                     record["legacy_zoid_id"] = original_id
+                    record["hangar_capacity"], record["hangar_size"] = TRANSPORTS[record["name"]]
+                    record.pop("ownership_base_id", None)
+                    record.pop("fixed_weapon_ids", None)
                     transports.append(record)
                     excluded.append({"row": record["source"]["row"], "id": original_id, "name": record["name"], "reason": "Moved to Transport catalog"})
             records = [r for r in records if r["name"] not in TRANSPORT_NAMES]
@@ -365,14 +374,25 @@ def build():
                               "records": transports, "excluded_rows": []}
             (output / "transports.json").write_text(json.dumps(transport_data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
             counts["transports"] = dict(records=len(transports), selectable=len(transports), excluded_empty_rows=0, excluded_retired_rows=0)
-            add_ownership_metadata(records, keys)
+            add_ownership_metadata(records, keys, families)
+            n = write_purchases(output, records, ROOT)
+            counts["purchases"] = dict(records=n, selectable=n, excluded_empty_rows=0, excluded_retired_rows=0)
+        if dataset == "abilities":
+            for record in records:
+                if "Lion" in (record["name"] or ""):
+                    record["legacy_names"] = [record["name"]]
+                    record["name"] = record["fields"]["name"] = record["name"].replace("Lion", "Liger")
+                    record["family"] = record["family"].replace("lion", "liger")
+                    record["eligible_types"] = [t.replace("Lion", "Liger") for t in record["eligible_types"]]
         ids = [r["id"] for r in records]
         if len(ids) != len(set(ids)):
             raise ValueError(f"Duplicate normalized IDs in {dataset}")
         data = {"schema_version": 1, "columns": keys, "source_headers": headers, "records": records, "excluded_rows": excluded}
         (output / f"{dataset}.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
         counts[dataset] = dict(records=len(records), selectable=sum(r["kind"] == "record" for r in records), excluded_empty_rows=sum(r["reason"] == "empty" for r in excluded), excluded_retired_rows=sum(r["reason"].startswith("Owner retired") for r in excluded), moved_rows=sum(r["reason"].startswith("Moved to") for r in excluded))
-    manifest = {"schema_version": 1, "data_version": "laser-and-types-v11", "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "datasets": counts, "review_items": issues}
+    manifest = {"schema_version": 1, "data_version": "workflow-v12", "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "datasets": counts, "review_items": issues}
+    manifest["workflow_sources"] = {name: hashlib.sha256((ROOT / "assets" / name).read_bytes()).hexdigest()
+                                    for name in ("zoid_cost.csv", "CAU_expand.txt")}
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
     (ROOT / "docs/generated/damage-conversions.json").write_text(json.dumps(damage_conversions, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(counts, indent=2))

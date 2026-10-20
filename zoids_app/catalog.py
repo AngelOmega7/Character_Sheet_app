@@ -9,12 +9,13 @@ class Catalog:
     def __init__(self, directory=None):
         directory = Path(directory) if directory else Path(__file__).parent / "data"
         manifest = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
+        self.manifest = manifest
         self.tables = {name: json.loads((directory / f"{name}.json").read_text(encoding="utf-8")) for name in manifest["datasets"]}
         self.by_id = {r["id"]: r for table in self.tables.values() for r in table["records"]}
 
     def find(self, dataset, name_or_id):
         for record in self.tables[dataset]["records"]:
-            if record["id"] == name_or_id or record["name"] == name_or_id:
+            if record["id"] == name_or_id or record["name"] == name_or_id or name_or_id in record.get("legacy_names", []):
                 return record
         raise RuleError(f"Unknown {dataset} entry: {name_or_id}")
 

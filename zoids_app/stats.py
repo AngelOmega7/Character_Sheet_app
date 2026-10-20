@@ -146,9 +146,9 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     if effective_level != int(effective_level):
         raise RuleError("Effective pilot level must be an integer")
     style = build.pilot_style.lower()
-    if style not in ("tank", "fighter", "scout", "almighty"):
+    if style not in ("tank", "fighter", "scout", "almighty", "npc"):
         raise RuleError(f"Unknown pilot style: {build.pilot_style}")
-    progression = catalog.find(style, str(int(effective_level)))
+    progression = None if style == "npc" else catalog.find(style, str(int(effective_level)))
     matching_size = next((a for a in abilities if a and str(size).strip().casefold() in {s.casefold() for s in a["eligible_sizes"]}), None)
     all_stats = n(matching_size, 5)
 
@@ -273,7 +273,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         weapon["heat_capacity_bonus"] = heat_capacity_bonus if weapon["heat_rating"] is not None else 0
         weapon["maximum_heat"] = weapon["heat_rating"] + weapon["heat_capacity_bonus"] if weapon["heat_rating"] is not None else None
     return {
-        "ruleset": "owner-corrected-v13", "zoid_id": zoid["id"],
+        "ruleset": "owner-corrected-v14", "zoid_id": zoid["id"],
         "size_bonus": all_stats,
         "bonus_levels": bonus_levels, "effective_level": effective_level,
         "base": base, "pilot": pilot, "current": current,

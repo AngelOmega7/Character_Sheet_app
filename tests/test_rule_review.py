@@ -13,7 +13,7 @@ class RuleReviewTests(unittest.TestCase):
         self.catalog = Catalog()
 
     def test_type_abilities_match_whole_listed_types_without_biological_groups(self):
-        for zoid_type, broad in (("Lion", "Mammal Type 5"), ("Tiger", "Mammal Type 5"),
+        for zoid_type, broad in (("Liger", "Mammal Type 5"), ("Tiger", "Mammal Type 5"),
                                  ("Wolf", "Mammal Type 5"), ("Gorilla", "Mammal Type 5"),
                                  ("Raptor", "Dinosaur, Land Type 5"), ("T-Rex", "Dinosaur, Land Type 5")):
             zoid = next(r for r in self.catalog.tables["zoids"]["records"] if r["fields"]["type"].strip() == zoid_type)
@@ -22,7 +22,7 @@ class RuleReviewTests(unittest.TestCase):
             build = replace(build, abilities=(broad, f"{zoid_type} Type 1"))
             self.assertEqual(calculate_stats(build, self.catalog)["bonus_levels"], 5)
         record = self.catalog.find("zoids", "Saberlion")
-        record["fields"]["type"] = " lion "
+        record["fields"]["type"] = " liger "
         self.assertEqual(calculate_stats(CharacterBuild("Saberlion", abilities=("Lion Type 1",)), self.catalog)["bonus_levels"], 5)
         record["fields"]["type"] = "Li"
         self.assertEqual(calculate_stats(CharacterBuild("Saberlion", abilities=("Lion Type 1",)), self.catalog)["bonus_levels"], 0)
@@ -38,9 +38,9 @@ class RuleReviewTests(unittest.TestCase):
 
     def test_zoid_specific_lasers_receive_sniper_and_laser_expert_bonuses(self):
         build = CharacterBuild("Lightning Saix", pilot_level=20, equipment=(None, "armaments:zoid_equipment_slot_1", None, None))
-        base = calculate_attack(build, "left", current_health=100, range_band="long", catalog=self.catalog)
+        base = calculate_attack(build, "fixed_2", current_health=100, range_band="long", catalog=self.catalog)
         self.assertTrue(base["ranged"])
-        expert = calculate_attack(replace(build, abilities=("Laser Expert 4", "Sniper 4")), "left",
+        expert = calculate_attack(replace(build, abilities=("Laser Expert 4", "Sniper 4")), "fixed_2",
                                   current_health=100, range_band="long", catalog=self.catalog)
         self.assertEqual(expert["to_hit"], base["to_hit"] + 8)
         rs = self.catalog.find("zoids", "Zaber Fang RS")

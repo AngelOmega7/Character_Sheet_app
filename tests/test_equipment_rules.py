@@ -78,7 +78,7 @@ class EquipmentRuleTests(unittest.TestCase):
 
     def test_command_wolf_rifle_tags_and_demolitionist_tracking(self):
         zoid = self.catalog.find("zoids", "Command Wolf IS")
-        tags = weapon_tags(self.catalog.column(zoid, 50))
+        tags = weapon_tags(self.catalog.column(zoid, 33))
         self.assertTrue({"ranged", "bullet"} <= tags)
         self.assertNotIn("piercing", tags)
         self.assertEqual(self.catalog.find("feats", "Demolitionist")["handling"], "player_managed")

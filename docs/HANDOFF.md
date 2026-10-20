@@ -4,12 +4,14 @@
 
 Build a fully offline Python/Flet RPG character manager for Android and Windows, migrated from a multi-sheet Google workbook. The workbook is initial source/reference only: the installed app must never connect to or modify Google Sheets.
 
-Implemented: local reference catalogs, stat calculation, owned abilities/equipment/Zoids/CAU forms, Flet editor with pilot fields/feat tracking, upgrade/Organoid controls and searchable dropdowns, resource tracking, persistent weapon conditions and last d20 results, combat actions and previews, Transport reference section, supplied app icons, and versioned SQLite saves. Current baseline: **183 tests passing** with Flet installed (twenty-three UI tests skip without it). Python 3.10+ is required; the rules/storage use the standard library and the UI uses pinned Flet 1.0.4. Android/Windows distributable packages are pending.
+Implemented: the five-page Flet workflow, CSV-backed purchasing, structured inventory/design knowledge, upgrade costs/refunds, expanded CAUs and detachment, duplicate chassis ownership, Transport cargo rules, NPC/None options, character/combat tracking, icons, and SQLite saves. Current baseline: **200 tests passing** with Flet installed (28 UI tests skip without it). Python 3.10+ is required; rules/storage use the standard library and the UI uses pinned Flet 1.0.4. Packaging is a separate next stage.
 
-New drafts start with an owned Saberlion and empty equipment inventory. Each base Zoid can be owned once; equipment types can be acquired multiple times. Switching preserves chassis upgrades/resources and form equipment/activation. Abilities, Organoid settings, inventory, gold, pilot notes, and feats stay pilot-wide. Fixed-weapon conditions/results follow shared weapon IDs; removable conditions/results follow inventory-copy IDs. Save schema v7 migrates v1–v6, defaults new pilot fields, and moves Zaber Fang's existing Killer Saber upgrades/activation/conditions to slot 4 without giving them to the restored slot-3 Laser Machine Gun. Saves use the platform application-support directory (path shown in the editor), with an optional `ZOIDS_SAVE_DIR` override.
+New pilots start with 10,000g, no automatically granted Zoid, and Organoid None. Their starter purchase may be any non-CAU costing at most 10,000g, ignoring other prerequisites. Multiple instances of a model are allowed. Schema v8 migrates earlier saves, preserving independently owned variants as separate host-plus-CAU instances and moving fixed-weapon upgrades/conditions by identity. See `docs/workflow.md` for the current authoritative behavior and the accepted purchasing/refund decisions. Saves use the platform application-support directory, with an optional `ZOIDS_SAVE_DIR` override.
 
 ## Where to start
 
+- **`docs/workflow.md`: current five-page workflow, purchasing, Transport, expanded CAUs, source corrections, and migration details. This supersedes earlier deferrals/restrictions below.**
+- `zoids_app/commerce.py`, `transport.py`, `workflow_migration.py`: new transaction, cargo, and migration logic.
 - `docs/data-and-rules.md`: current calculation rules, resolved issues, remaining discrepancies.
 - `docs/ability-review.md`: ability decisions and remaining work.
 - `docs/roadmap.md`: agreed seven-step rollout, owner deferrals, and Transport's Step 7 completion requirement.
@@ -26,7 +28,7 @@ New drafts start with an owned Saberlion and empty equipment inventory. Each bas
 - Each weapon receives the strongest matching active bonus among Laser, Missile, Particle, Melee, and Rifle Expert. **Anti-Air Pro is an exception and adds on top** for Anti-Air-tagged weapons. Expert ranks 3/4 grant no advantage.
 - Ranged Piercing becomes Ranged + Bullet; Rifle Expert requires both tags. Melee Piercing stays as a player-managed label. Command Wolf IS's Long Range Rifle now has its missing Ranged tag.
 - Ranged Energy becomes Laser; Laser Expert matches Laser only, not retained melee Energy. Explicit Ranged class/description tags have been restored, including Zaber Fang RS's Double Beam Cannon as Ranged + Laser.
-- Type abilities match exact listed game types, case-insensitively with surrounding whitespace trimmed. Mammal does not include Lion/Tiger/Wolf/Gorilla; Dinosaur, Land does not include Raptor/T-Rex.
+- Type abilities match exact listed game types. Lion terminology is now Liger (Saberlion retains its name). Mammal does not include Liger/Tiger/Wolf/Gorilla; Dinosaur, Land does not include Raptor/T-Rex.
 - Zaber Fang: fixed 2 remains 20mm but uses Ranged + Particle; fixed 3 is Laser Machine Gun (45 damage, 17 base to-hit, Ranged/Laser/Close Range); Killer Saber moves to fixed 4 with its existing values and persistent identity.
 - Physical, Social, Personality, general inventory/cargo notes, Zi Database/campaign notes, and seven feat slots are tracking-only. No automatic feat advantage, extra Vent, or stat effects. Mental retains its pre-existing calculation role.
 - Anti-Ait becomes Anti-Air. Slashing/Bludgeon removed. Freeze/Electric/Electrical/Lighting combined into Electrical. Tags have no automatic damage/status effects; they still support ability matching.
@@ -46,7 +48,7 @@ New drafts start with an owned Saberlion and empty equipment inventory. Each bas
 - Rest clears heat without healing or repairing broken weapons. Weapon repair costs 10,000g and clears heat/broken status. Health repair costs 10g per point. Weapon repair requires confirmation if more than 25% of health is missing.
 - Multi Attack, Smoke Master, Armor Breaker, Weapon Breaker, Counter Attack are tracked but player-managed.
 - Demolitionist is tracked but player-managed: manually Vent each applicable weapon.
-- Every successful Use rolls one inclusive 1–20 d20, including unrated equipment and the final use that causes overheating breakage. Each occupied weapon/equipment card has a Last d20 box displaying the raw result (no modifier added). Failed uses do not roll. The latest result persists until the next successful use, across refreshes, Vent/Rest/repair, transfers, CAU switches, and save/reload.
+- Use rolls one inclusive 1–20 d20 only for numerical-damage weapons, including the final overheating use. Non-damaging utilities use without rolling and retain activation controls. Empty Combat cards are hidden. Results persist across refreshes, Vent/Rest/repair, transfers, CAU switches, and save/reload.
 - Read-only attack previews remain separate: range affects Sniper and current health affects Comeback. Apply the displayed modifier to the raw die at the table. Range changes never use a weapon, add heat, or reroll.
 - Rest active loadout clears the current eight-slot weapons/equipment only, preserving health, shield damage, gold, and broken flags. Other stored/form-specific weapons retain heat; shared identities naturally retain the same condition across forms.
 - Health repair accepts partial points or blank/full, charging 10g per point actually restored. Weapon repair charges 10,000g once and clears heat/broken. The low-health confirmation dialog supports Cancel/Repair anyway and refuses an outdated quote; click Repair again after state changes.
@@ -54,9 +56,10 @@ New drafts start with an owned Saberlion and empty equipment inventory. Each bas
 - GIFs deferred. Remaining Dashboard-origin discrepancies are deferred unless needed for a gameplay requirement; preserve the Dashboard source.
 - Obtain CAU forms separately after their base. Liger Zero: Zero Jager/Schneider/Panzer/X/Empire; Konig Wolf: Konig Wolf DSR; Berserk Fury: Sturm Fury/Jagd Fury/Berserk Fury Z. All form names retain `(CAU)`.
 - Share frame upgrades across an owned base and its forms. Weapon upgrades follow matching base-weapon identity, not slot number; other form weapons remain separate. Sharing is scoped to one owned chassis. Strike Laster Claw / Strike Laser Claw / Strike Laser Claws all display as **Strike Laser Claw**. The converter preserves originals and emits stable ownership/weapon IDs.
-- Retire all 19 BLOX-type Zoids (trim source types) and BLOX Type ranks 1–5, including the `BLOXType 1` spelling. There are now 135 playable Zoids and 160 playable abilities.
-- Hover Cargo, Gustav, and Whale King belong to `transports.json` and the Transport reference section. Owner is designing Transport rules; implementation is still required before Step 7 is complete. Current ruleset/reference versions: `owner-corrected-v13` / `laser-and-types-v11`.
-- Export/import/backups are deferred. Purchasing/building is deferred while the owner creates costs/required-parts data. `assets/ZoidNames.txt` contains 138 sorted current names (nine CAU forms and three Transports included).
+- Retired BLOX content remains excluded. There are 134 playable designs (51 CAUs), 160 abilities, and four Transports. Dragon Nest is now Dragoon Nest and is no longer a playable chassis.
+- Transport capacities/sizes: Gustav 2/Medium, Hover Cargo 6/Large, Dragoon Nest 12/Large Large, Whale King 24/Extra Large. Type changes unload cargo; each chassis counts once. Size/capacity checks are enforced.
+- Purchasing is implemented from the owner's CSV. Its locked source file was preserved; approved typo corrections are applied in the importer. Upgrade counters charge/refund tiers. CAU detachment refunds half CSV price plus current/predecessor Parts; unique upgrades are lost. Current ruleset/reference versions: `owner-corrected-v14` / `workflow-v12`.
+- Export/import/backups remain deferred. `assets/ZoidNames.txt` has been refreshed with all 138 current names. Packaging remains pending owner review.
 
 ## Resume
 
@@ -77,6 +80,6 @@ Desktop startup and layout have been visually checked on Windows. Headless UI te
 
 On Linux, use `python3` if `python` is unavailable. On Windows, `py -3` also works when the Python launcher is installed.
 
-Private GitHub repository: https://github.com/AngelOmega7/zoids-character-app. The shared branch is `main`. Next active step: UI polish and playtesting (Step 6). Step 5's current type/tag/weapon corrections are implemented; Dashboard findings retain their earlier deferrals. Follow `docs/roadmap.md`: skip export/import/backups for now; await the owner's purchasing table and Transport rules; do not mark Step 7 complete before Transport implementation.
+Private GitHub repository: https://github.com/AngelOmega7/zoids-character-app. Shared branch: `main`. Current implementation is ready for owner playtesting; then proceed to packaging as a separate task. Dashboard findings and export/import/backups retain their explicit deferrals. Keep follow-up work bounded to reported issues and agreed packaging requirements.
 
 Git tracks project files, not OpenCode conversation history or machine-local configuration. A fresh conversation can resume by reading this handoff and the linked documents.

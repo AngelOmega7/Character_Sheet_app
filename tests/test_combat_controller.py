@@ -3,6 +3,7 @@ import unittest
 from unittest.mock import patch
 
 from zoids_app.catalog import Catalog
+from test_support import established_character
 from zoids_app.characters import (FixedWeaponCondition, acquire_equipment, acquire_zoid, assign_pilot_ability,
     equip_owned_equipment, learn_pilot_ability, new_character, return_equipment_to_inventory, switch_zoid)
 from zoids_app.combat import RepairConfirmationRequired, RuleError, WeaponCondition
@@ -20,7 +21,7 @@ class CombatControllerTests(unittest.TestCase):
         self.addCleanup(patcher.stop)
 
     def pilot(self, copies=1):
-        character = acquire_equipment(new_character(self.catalog), "Particle Cannon", copies, self.catalog)
+        character = acquire_equipment(established_character(self.catalog), "Particle Cannon", copies, self.catalog)
         return equip_owned_equipment(character, "left", character.inventory[0].id, self.catalog)
 
     def act(self, character, action="use", slot="left", **kwargs):

@@ -12,7 +12,9 @@ from .characters import (PilotDetails, acquire_equipment, acquire_zoid, assign_p
                          new_character, return_equipment_to_inventory, switch_zoid, validate_character)
 from .attacks import calculate_attack
 from .combat import RepairConfirmationRequired, RuleError
-from .combat_controller import combat_snapshot, repair_character_health, rest_active_loadout, weapon_action
+from .combat_controller import combat_snapshot, repair_character_health, rest_active_loadout, rolls_damage, weapon_action
+from .commerce import change_upgrade, detach_cau, purchase_zoid, quote_purchase, recipe, recipe_parts, set_known_design, set_material
+from .transport import load_zoid, select_transport
 from .equipment import SLOT_COLUMNS
 from .stats import Upgrades
 from .storage import CharacterStore
@@ -51,6 +53,8 @@ class CharacterEditor:
         self.character = new_character(catalog)
         self.dirty = False
         self.attack_bands = {}
+        self.view = "Overview"
+        self.navigation = ft.Row(wrap=True)
         self.status = ft.Text("New character — save when ready.", color="#8CD9C8")
         self.body = ft.Column(spacing=18)
         self.saved = ft.Dropdown(label="Saved characters")
@@ -62,11 +66,31 @@ class CharacterEditor:
             ft.ResponsiveRow([ft.Container(self.saved, col={"xs": 12, "md": 10}),
                               ft.Container(ft.Button("Open", on_click=self.open_saved), col={"xs": 12, "md": 2})]),
             ft.Row([ft.Button("New character", on_click=self.new), ft.Button("Save character", on_click=self.save)], wrap=True),
-            self.status, self.body,
+            self.status, self.navigation, self.body,
             ft.Text(f"Save file: {store.path}", size=12, selectable=True, color="#AAC0D6"),
         ], spacing=16))
         self.refresh_saved()
         self.render()
+        if hasattr(page, "window"):
+            page.window.prevent_close = True
+            page.window.on_event = self.window_event
+
+    async def window_event(self, event):
+        if event.type == ft.WindowEventType.CLOSE:
+            self.confirm_switch(lambda: self.page.run_task(self.finish_close))
+
+    async def finish_close(self):
+        await self.page.window.destroy()
+
+    def switch_page(self, name):
+        try:
+            candidate = self.profile_candidate()
+            self.dirty = self.dirty or candidate != self.character
+            self.character = candidate
+            self.view = name
+            self.render()
+        except RuleError as exc:
+            self.message(str(exc), True)
 
     def message(self, text, error=False):
         self.status.value = text
@@ -75,7 +99,7 @@ class CharacterEditor:
 
     def changed(self, event=None):
         self.dirty = True
-        self.message("Unsaved changes. Apply details/upgrades to refresh stats, or Save character.")
+        self.message("Unsaved changes. Apply details to refresh stats, or Save character.")
 
     def refresh_saved(self):
         records = self.store.list_characters()
@@ -93,16 +117,23 @@ class CharacterEditor:
             self.page.pop_dialog()
             action()
 
+        def save_first(event):
+            self.page.pop_dialog()
+            if self.save():
+                action()
+
         self.page.show_dialog(ft.AlertDialog(
             modal=True, title=ft.Text("Unsaved changes"),
-            content=ft.Text("Discard changes and switch characters? Use Save character first to keep them."),
+            content=ft.Text("Save the current character before continuing?"),
             actions=[ft.TextButton("Keep editing", on_click=lambda e: self.page.pop_dialog()),
-                     ft.TextButton("Discard changes", on_click=discard)]))
+                     ft.TextButton("Discard changes", on_click=discard),
+                     ft.TextButton("Save", on_click=save_first)]))
 
     def new(self, event=None):
         def action():
             self.character = new_character(self.catalog)
             self.dirty = False
+            self.view = "Overview"
             self.render()
             self.message("New character — save when ready.")
         self.confirm_switch(action)
@@ -117,6 +148,7 @@ class CharacterEditor:
             try:
                 character = self.store.load(selected)
                 self.character = character
+                self.saved.value = selected
                 self.dirty = False
                 self.render()
                 self.message(f"Loaded {character.name}.")
@@ -138,12 +170,7 @@ class CharacterEditor:
         details = PilotDetails(physical=physical, social=social, personality=self.personality.value,
             inventory_notes=self.inventory_notes.value, database_notes=self.database_notes.value,
             feats=tuple(control.value or None for control in self.feat_slots))
-        try:
-            upgrades = Upgrades(**{key: int(control.value) for key, control in self.frame_fields.items()},
-                                damage=tuple(int(c.value) for c in self.damage_fields),
-                                to_hit=tuple(int(c.value) for c in self.hit_fields))
-        except (ValueError, TypeError) as exc:
-            raise RuleError("Upgrade points must be whole numbers from 0 to 5") from exc
+        upgrades = self.character.build.upgrades
         try:
             organoid_level = int(self.organoid_level.value)
         except (ValueError, TypeError) as exc:
@@ -157,7 +184,7 @@ class CharacterEditor:
                         organoid_color=self.organoid_color.value, organoid_level=organoid_level,
                         organoid_enabled=self.organoid_enabled.value, shield_adjustment=shields)
         return validate_character(replace(self.character, name=self.name.value, build=build, current_health=health,
-                                          gold=gold, pilot_details=details), self.catalog)
+                                          gold=gold, pilot_details=details, transport_notes=self.transport_notes.value), self.catalog)
 
     def change_feat(self, slot, value):
         try:
@@ -220,7 +247,7 @@ class CharacterEditor:
                 self.page.pop_dialog()
                 self.weapon_action(slot, "repair", confirmed=True, expected=quote)
 
-            self.page.show_dialog(ft.AlertDialog(modal=True, title=ft.Text("Confirm weapon repair"),
+            self.page.show_dialog(ft.AlertDialog(modal=True, scrollable=True, title=ft.Text("Confirm weapon repair"),
                 content=ft.Text(str(exc)), actions=[
                     ft.TextButton("Cancel", on_click=lambda e: self.page.pop_dialog()),
                     ft.TextButton("Repair anyway", on_click=confirm)]))
@@ -270,7 +297,7 @@ class CharacterEditor:
         text = (f"Health {character.current_health} / {stats['pilot']['health']} · "
                 f"Shields {max(0, stats['shields'])} / {max(0, stats['shields'] + character.build.shield_adjustment)}") if stats else "Select an owned Zoid for combat."
         return card("Combat resources", [ft.Text(text, size=16),
-            self.health_input, self.shield_damage_input, self.gold_input,
+            self.health_input, self.shield_damage_input,
             ft.Button("Apply resources", on_click=self.apply_resources),
             self.health_repair_points,
             ft.Row([ft.Button("Repair health · 10g/point", on_click=self.repair_health, disabled=stats is None),
@@ -307,6 +334,8 @@ class CharacterEditor:
 
     def apply_organoid(self, event=None):
         try:
+            if self.organoid_color.value == "None":
+                self.organoid_enabled.value = False
             self.character = self.profile_candidate()
             self.dirty = True
             self.render()
@@ -378,12 +407,32 @@ class CharacterEditor:
         try:
             candidate = self.profile_candidate()
             record = self.catalog.find("zoids", selected_entry(self.acquisition))
-            candidate = acquire_zoid(candidate, record["id"], self.catalog)
-            owned = next(o for o in candidate.owned_zoids if o.base_zoid == record["ownership_base_id"])
-            self.character = switch_zoid(candidate, owned.id, record["id"], self.catalog)
-            self.dirty = True
-            self.render()
-            self.message(f"Obtained {record['name']}. Unsaved changes.")
+            quote = quote_purchase(candidate, record["id"], host_id=self.purchase_host.value or None,
+                base_id=self.purchase_base.value or None, starter=candidate.starter_pending, catalog=self.catalog)
+            override = bool(quote.issues)
+            materials = ", ".join(f"{count} × {name}" for name, count in quote.materials) or "None"
+            text = (record["name"] + "\n" + "\n".join(quote.issues) + "\n\nGM Override grants this build without spending gold, materials, or an external base Zoid.") if override else f"Purchase {record['name']} for {quote.cost:,}g?\nMaterials: {materials}"
+            if quote.host_id:
+                text += "\nHost: " + self.owner_label(next(o for o in candidate.owned_zoids if o.id == quote.host_id))
+            if not override and quote.base_id:
+                text += f"\nConsumes base Zoid instance {quote.base_id[:8]}; upgrades are lost and removable equipment is returned to inventory."
+            if quote.predecessor:
+                text += "\nReplaces predecessor CAU: " + self.catalog.find("zoids", quote.predecessor)["name"]
+            def confirm(event):
+                self.page.pop_dialog()
+                try:
+                    latest = self.profile_candidate()
+                    if latest != candidate:
+                        raise RuleError("Character changed; request a fresh purchase quote")
+                    self.character = purchase_zoid(latest, quote, override=override, catalog=self.catalog)
+                    self.dirty = True
+                    self.render()
+                    self.message(f"Obtained {record['name']}. Unsaved changes.")
+                except RuleError as exc:
+                    self.message(str(exc), True)
+            self.page.show_dialog(ft.AlertDialog(modal=True, scrollable=True, title=ft.Text("GM Override confirmation" if override else "Confirm purchase"),
+                content=ft.Text(text), actions=[ft.TextButton("Cancel", on_click=lambda e: self.page.pop_dialog()),
+                                               ft.TextButton("GM Override" if override else "Purchase", on_click=confirm)]))
         except RuleError as exc:
             self.message(str(exc), True)
 
@@ -392,7 +441,7 @@ class CharacterEditor:
             self.character = self.profile_candidate()
             self.dirty = True
             self.render()
-            self.message("Pilot details and upgrade points applied. Unsaved changes.")
+            self.message("Pilot details applied. Unsaved changes.")
         except RuleError as exc:
             self.message(str(exc), True)
 
@@ -405,8 +454,10 @@ class CharacterEditor:
             self.saved.value = self.character.id
             self.render()
             self.message(f"Saved {self.character.name} locally.")
+            return True
         except (RuleError, OSError, sqlite3.Error) as exc:
             self.message(str(exc), True)
+            return False
 
     def change_equipment(self, slot, value):
         try:
@@ -485,20 +536,179 @@ class CharacterEditor:
             field = "fixed_active" if fixed else "equipment_active"
             flags = list(getattr(candidate.build, field))
             flags[index] = value
-            self.character = replace(candidate, build=replace(candidate.build, **{field: tuple(flags)}))
+            self.character = validate_character(replace(candidate, build=replace(candidate.build, **{field: tuple(flags)})), self.catalog)
             self.dirty = True
             self.render()
             self.message("Activation updated. Unsaved changes.")
         except RuleError as exc:
             self.message(str(exc), True)
 
+    def purchase_selection(self, event=None):
+        if not self.acquisition.value:
+            return
+        r = self.catalog.find("zoids", self.acquisition.value)
+        data = recipe(self.catalog, r["id"])
+        cau = r["id"] != r["ownership_base_id"]
+        hosts = [o for o in self.character.owned_zoids if o.base_zoid == r["ownership_base_id"]
+                 and not any(f.zoid == r["id"] for f in o.forms)] if cau else []
+        self.purchase_host.options = [option(o.id, self.owner_label(o)) for o in hosts]
+        self.purchase_host.value = self.character.active_zoid_id if any(o.id == self.character.active_zoid_id for o in hosts) else (hosts[0].id if len(hosts) == 1 else None)
+        self.purchase_host.disabled = not cau
+        candidates = [o for o in self.character.owned_zoids if o.base_zoid == data["base_zoid"] and len(o.forms) == 1]
+        if cau and data["base_zoid"] == r["ownership_base_id"]:
+            candidates = []
+        self.purchase_base.options = [option(o.id, self.owner_label(o)) for o in candidates]
+        self.purchase_base.value = candidates[0].id if len(candidates) == 1 else None
+        self.purchase_base.disabled = not candidates
+        base_name = self.catalog.find("zoids", data["base_zoid"])["name"] if data["base_zoid"] else "None"
+        self.purchase_details.value = f"Cost: {data['cost']:,}g · Core: {data['core'] or 'None'} · Parts: {data['parts'] or 'None'} · Base/prerequisite: {base_name}"
+        self.page.update()
+
+    def owner_label(self, owner):
+        return f"{self.catalog.find('zoids', owner.base_zoid)['name']} · {owner.id[:8]}"
+
+    def detach_selected_cau(self, event=None):
+        try:
+            candidate = self.profile_candidate()
+            owner = next(o for o in candidate.owned_zoids if o.id == candidate.active_zoid_id)
+            form = next(f for f in owner.forms if f.zoid == candidate.build.zoid)
+            result = detach_cau(candidate, owner.id, form.zoid, self.catalog)
+            parts = form.build_parts if form.build_parts is not None else recipe_parts(self.catalog, form.zoid)
+            def confirm(event):
+                self.page.pop_dialog()
+                try:
+                    latest = self.profile_candidate()
+                    if latest != candidate or detach_cau(latest, owner.id, form.zoid, self.catalog) != result:
+                        raise RuleError("State changed; request a fresh detachment quote")
+                    self.character = result
+                    self.dirty = True
+                    self.render()
+                    self.message("CAU detached; refund and Parts returned. Unsaved changes.")
+                except RuleError as exc:
+                    self.message(str(exc), True)
+            self.page.show_dialog(ft.AlertDialog(modal=True, scrollable=True, title=ft.Text("Detach CAU permanently?"),
+                content=ft.Text(f"Refund: {result.gold - candidate.gold:,}g. Return Parts: {', '.join(parts) or 'None'}. Form-specific upgrades are lost; removable equipment returns to inventory."),
+                actions=[ft.TextButton("Cancel", on_click=lambda e: self.page.pop_dialog()), ft.TextButton("Detach", on_click=confirm)]))
+        except (RuleError, StopIteration) as exc:
+            self.message(str(exc) or "Select an owned CAU first", True)
+
+    def adjust_upgrade(self, field, delta, slot=None):
+        try:
+            candidate = self.profile_candidate()
+            result = change_upgrade(candidate, field, delta, slot, self.catalog)
+            difference = candidate.gold - result.gold
+            self.character = result
+            self.dirty = True
+            self.render()
+            self.message((f"Spent {difference:,}g." if difference >= 0 else f"Refunded {-difference:,}g.") + " Unsaved changes.")
+        except RuleError as exc:
+            self.message(str(exc), True)
+
+    def upgrade_counter(self, label, value, field, slot=None, disabled=False):
+        control = ft.TextField(label=label, value=str(value), read_only=True, width=100, disabled=disabled)
+        base = 5000 if slot is None else 10000
+        widget = ft.Column([ft.Row([
+            ft.IconButton(icon=ft.Icons.REMOVE, disabled=disabled or value == 0, tooltip=f"Refund {base * value:,}g",
+                          on_click=lambda e: self.adjust_upgrade(field, -1, slot)), control,
+            ft.IconButton(icon=ft.Icons.ADD, disabled=disabled or value == 5, tooltip=f"Buy next point for {base * (value + 1):,}g",
+                          on_click=lambda e: self.adjust_upgrade(field, 1, slot)),
+        ], wrap=True), ft.Text(f"Next: {base * (value + 1):,}g" if value < 5 else "Maximum 5", size=12)])
+        return control, widget
+
+    def update_material(self, event=None, *, name=None, quantity=None):
+        try:
+            name = name or self.material_name.text or self.material_name.value
+            if quantity is None:
+                try:
+                    quantity = int(self.material_quantity.value)
+                except (ValueError, TypeError) as exc:
+                    raise RuleError("Enter a nonnegative whole quantity") from exc
+            self.character = set_material(self.profile_candidate(), name, quantity, self.catalog)
+            self.dirty = True
+            self.render()
+            self.message("General inventory updated. Unsaved changes.")
+        except RuleError as exc:
+            self.message(str(exc), True)
+
+    def update_known(self, event=None, *, identity=None, known=True):
+        try:
+            identity = identity or selected_entry(self.design_to_add)
+            if not identity:
+                raise RuleError("Select a Zoid design")
+            self.character = set_known_design(self.profile_candidate(), identity, known, self.catalog)
+            self.dirty = True
+            self.render()
+            self.message("Zi Database updated. Unsaved changes.")
+        except RuleError as exc:
+            self.message(str(exc), True)
+
+    def purchasing_inventory_panels(self, character):
+        names = {r["fields"][key] for r in self.catalog.tables["purchases"]["records"] for key in ("core", "parts") if r["fields"][key]}
+        names.update(i.name for i in character.materials)
+        self.material_name = searchable_dropdown(label="General item (or type a custom name)", options=[option(n, n) for n in sorted(names)])
+        self.material_quantity = ft.TextField(label="Quantity (0 removes item)", value="1", keyboard_type=ft.KeyboardType.NUMBER)
+        inventory = card("General inventory", [self.material_name, self.material_quantity,
+            ft.Button("Set quantity", on_click=self.update_material),
+            *[ft.Row([ft.Text(f"{i.name} × {i.quantity}", expand=True),
+                      ft.TextButton("Remove", on_click=lambda e, n=i.name: self.update_material(name=n, quantity=0))]) for i in character.materials]])
+        self.design_to_add = searchable_dropdown(label="Known Zoid design", options=[option(r["id"], r["name"]) for r in sorted(self.catalog.tables["zoids"]["records"], key=lambda r: r["name"])])
+        database = card("Zi Database", [self.design_to_add, ft.Button("Add known design", on_click=self.update_known),
+            *[ft.Row([ft.Text(self.catalog.find("zoids", identity)["name"], expand=True),
+                      ft.TextButton("Remove", on_click=lambda e, i=identity: self.update_known(identity=i, known=False))]) for identity in character.known_zoids]])
+        return inventory, database
+
+    def change_transport(self, event):
+        try:
+            self.character = select_transport(self.profile_candidate(), event.control.value or None, self.catalog)
+            self.dirty = True
+            self.render()
+            self.message("Transport changed; cargo unloaded. Owned Zoids are retained. Unsaved changes.")
+        except RuleError as exc:
+            self.message(str(exc), True)
+
+    def load_cargo(self, identity, loaded=True):
+        try:
+            self.character = load_zoid(self.profile_candidate(), identity, loaded, self.catalog)
+            self.dirty = True
+            self.render()
+            self.message("Transport cargo updated. Unsaved changes.")
+        except RuleError as exc:
+            self.message(str(exc), True)
+
+    def transport_panels(self, character):
+        transports = [self.catalog.find("transports", n) for n in ("Gustav", "Hover Cargo", "Dragoon Nest", "Whale King")]
+        self.transport_picker = ft.Dropdown(label="Transport type", value=character.transport or "",
+            options=[option("", "None"), *[option(r["id"], r["name"]) for r in transports]], on_select=self.change_transport)
+        r = self.catalog.find("transports", character.transport) if character.transport else None
+        stats = [ft.Text(f"{key.title()}: {r['fields'][key]}") for key in ("health", "armor", "defense", "speed", "reaction", "range")] if r else []
+        if r:
+            stats.extend([ft.Text(f"Shield: {(self.catalog.column(r, 24) or 0) + (self.catalog.column(r, 35) or 0)}"),
+                          ft.Text(f"Hangar Capacity: {r['hangar_capacity']} · Hangar Size: {r['hangar_size']}")])
+        self.transport_section = card("Transport", [self.transport_picker, *stats,
+            ft.Text("GM-managed selection. Changing Transport unloads all cargo. Each owned chassis occupies one bay; its CAUs stay with it.", size=12)])
+        owned, loaded = [], []
+        for owner in character.owned_zoids:
+            record = self.catalog.find("zoids", owner.active_form)
+            label = f"{self.owner_label(owner)} · {record['name']} · {record['fields']['size']}"
+            owned.append(ft.Row([ft.Text(label, expand=True), ft.Button("Load", disabled=not r or owner.id in character.loaded_zoids,
+                on_click=lambda e, i=owner.id: self.load_cargo(i))]))
+            if owner.id in character.loaded_zoids:
+                loaded.append(ft.Row([ft.Text(label, expand=True), ft.Button("Unload", on_click=lambda e, i=owner.id: self.load_cargo(i, False))]))
+        self.transport_notes = ft.TextField(label="Transport notes", value=character.transport_notes,
+            multiline=True, min_lines=3, max_lines=10, on_change=self.changed)
+        return [self.transport_section, card("All owned Zoids", owned),
+                card(f"Loaded Zoids · {len(loaded)} / {r['hangar_capacity'] if r else 0}", loaded),
+                card("Transport Notes", [self.transport_notes])]
+
     def render(self):
         character, build = self.character, self.character.build
         stats, combat_weapons = combat_snapshot(character, self.catalog) if character.owned_zoids else (None, {})
         resources = self.resource_panel(character, stats)
+        transport_cards = self.transport_panels(character)
+        general_inventory, database = self.purchasing_inventory_panels(character)
         self.name = ft.TextField(label="Pilot / character name", value=character.name, on_change=self.changed)
         self.style = ft.Dropdown(label="Pilot style", value=build.pilot_style,
-                                options=[option(s, s.title()) for s in ("FIGHTER", "TANK", "SCOUT", "ALMIGHTY")], on_select=self.changed)
+                                options=[option(s, s.title() if s != "NPC" else s) for s in ("FIGHTER", "TANK", "SCOUT", "ALMIGHTY", "NPC")], on_select=self.changed)
         self.level = ft.TextField(label="Pilot level (1–100)", value=str(build.pilot_level), on_change=self.changed,
                                   keyboard_type=ft.KeyboardType.NUMBER)
         self.mental = ft.TextField(label="Mental", value=str(build.mental), on_change=self.changed,
@@ -518,55 +728,63 @@ class CharacterEditor:
                         ft.ResponsiveRow([ft.Container(self.level, col=6), ft.Container(self.mental, col=6)]),
                         ft.ResponsiveRow([ft.Container(self.physical, col=6), ft.Container(self.social, col=6)]),
                          ft.Button("Apply pilot details", on_click=self.apply_profile)])
-        pilot_notes = card("Pilot notes · tracking", [self.personality, self.inventory_notes, self.database_notes,
+        pilot_notes = card("Pilot notes · tracking", [self.gold_input, self.personality, self.inventory_notes, self.database_notes,
             ft.Text("These notes and Physical/Social are player-managed. Equipment copies are tracked separately in the equipment inventory.", size=12)])
         feats = self.feat_panel(character)
         self.organoid_color = ft.Dropdown(label="Organoid color", value=build.organoid_color,
-            options=[option(color, color) for color in ("White", "Red", "Blue", "Black")], on_select=self.apply_organoid)
+            options=[option(color, color) for color in ("None", "White", "Red", "Blue", "Black")], on_select=self.apply_organoid)
         self.organoid_level = ft.Dropdown(label="Organoid level (0–40)", value=str(build.organoid_level), menu_height=300,
             options=[option(str(level), str(level)) for level in range(41)], on_select=self.apply_organoid)
-        self.organoid_enabled = ft.Checkbox(label="Organoid activated", value=build.organoid_enabled, on_change=self.apply_organoid)
+        self.organoid_enabled = ft.Checkbox(label="Organoid activated", value=build.organoid_enabled,
+            disabled=build.organoid_color == "None", on_change=self.apply_organoid)
+        self.organoid_level.disabled = build.organoid_color == "None"
         organoid = card("Organoid", [self.organoid_color, self.organoid_level, self.organoid_enabled,
             ft.Text("Bonuses apply only while activated. Only White generates shields, using Organoid level. These pilot-wide settings follow Zoid and CAU switches; current health is preserved.", size=12)])
         abilities = self.ability_panel(build)
         active = next((o for o in character.owned_zoids if o.id == character.active_zoid_id), None)
         self.owned_select = ft.Dropdown(label="Owned Zoid", value=active.id if active else None, menu_height=300, disabled=active is None,
-            options=[option(o.id, self.catalog.find("zoids", o.base_zoid)["name"]) for o in character.owned_zoids],
+            options=[option(o.id, self.owner_label(o)) for o in character.owned_zoids],
             on_select=lambda e: self.select_owned(e.control.value))
         self.form_select = ft.Dropdown(label="Obtained form", value=build.zoid or None, menu_height=300, disabled=active is None,
             options=[option(f.zoid, self.catalog.find("zoids", f.zoid)["name"]) for f in (active.forms if active else ())],
             on_select=lambda e: self.select_owned(active.id, e.control.value))
         owned_bases = {o.base_zoid for o in character.owned_zoids}
-        owned_forms = {f.zoid for o in character.owned_zoids for f in o.forms}
         obtainable = sorted([r for r in self.catalog.tables["zoids"]["records"]
-            if r["id"] not in owned_forms and (r["ownership_base_id"] == r["id"] or r["ownership_base_id"] in owned_bases)],
+            if (r["ownership_base_id"] == r["id"] or any(o.base_zoid == r["ownership_base_id"] and all(f.zoid != r["id"] for f in o.forms) for o in character.owned_zoids))
+            and (not character.starter_pending or (r["ownership_base_id"] == r["id"] and recipe(self.catalog, r["id"])["cost"] <= 10000))],
             key=lambda r: r["name"])
-        self.acquisition = searchable_dropdown(label="Obtain a Zoid / CAU form",
-                                      options=[option(r["id"], r["name"]) for r in obtainable], disabled=not obtainable)
+        self.acquisition = searchable_dropdown(label="Purchase starting Zoid" if character.starter_pending else "Purchase Zoid / CAU form",
+            options=[option(r["id"], f"{r['name']} · {recipe(self.catalog, r['id'])['cost']:,}g") for r in obtainable],
+            disabled=not obtainable, on_select=self.purchase_selection)
+        self.purchase_host = ft.Dropdown(label="CAU host instance", options=[], disabled=True)
+        self.purchase_base = ft.Dropdown(label="Base Zoid instance to consume", options=[], disabled=True)
+        self.purchase_details = ft.Text("Select a design to view its recipe.", size=13)
         roster = card("Owned-Zoid hangar", [self.owned_select, self.form_select,
             ft.Text(f"{len(character.owned_zoids)} owned Zoid(s) · {len(active.forms) if active else 0} form(s) for this chassis", size=12),
-            ft.Text("Switching preserves each chassis and form. Obtain a base before its CAU forms.", size=12),
-            self.acquisition, ft.Button("Obtain & select", on_click=self.obtain, disabled=not obtainable),
-            ft.Text("Record acquisitions from play; no gold is charged. Each base Zoid can be owned once.", size=12)])
-        self.frame_fields = {key: ft.TextField(label=f"{key.title()} points", value=str(getattr(build.upgrades, key)),
-            on_change=self.changed, keyboard_type=ft.KeyboardType.NUMBER) for key in ("speed", "reaction", "defense", "capacity")}
+            ft.Text(f"Required level: {self.catalog.find('zoids', build.zoid)['fields']['required_level']}" if active else "No active Zoid"),
+            ft.Text("Starter purchase: up to 10,000g; all other prerequisites waived." if character.starter_pending else "Multiple copies are allowed. Select a specific host/base instance when needed.", size=12),
+            self.acquisition, self.purchase_details, self.purchase_host, self.purchase_base,
+            ft.Button("Review purchase", on_click=self.obtain, disabled=not obtainable),
+            ft.Button("Detach selected CAU", disabled=not active or build.zoid == active.base_zoid, on_click=self.detach_selected_cau)])
+        self.frame_fields, frame_widgets = {}, []
+        for key in ("speed", "reaction", "defense", "capacity"):
+            control, widget = self.upgrade_counter(key.title(), getattr(build.upgrades, key), key, disabled=not active)
+            self.frame_fields[key] = control
+            frame_widgets.append(ft.Container(widget, col={"xs": 12, "md": 6}))
         self.damage_fields, self.hit_fields = [], []
-        upgrade_controls = [ft.Text("Record upgrade points (0–5). Frame upgrades apply to every obtained form of this chassis. No purchase cost is charged.", size=12),
-            ft.ResponsiveRow([ft.Container(c, col=6) for c in self.frame_fields.values()])]
+        upgrade_controls = [ft.Text("Points 0–5. Chassis tiers cost 5,000g × new rank; weapon tiers cost 10,000g × new rank. Minus refunds the full removed tier cost. Frame/shared-weapon upgrades follow the host across forms.", size=12),
+            ft.ResponsiveRow(frame_widgets)]
         identities = self.catalog.find("zoids", build.zoid)["fixed_weapon_ids"] if active else (None,) * 4
         base_identities = self.catalog.find("zoids", active.base_zoid)["fixed_weapon_ids"] if active else ()
         for index, key in enumerate(identities):
-            damage_field = ft.TextField(label="Damage points", value=str(build.upgrades.damage[index]),
-                on_change=self.changed, disabled=key is None, keyboard_type=ft.KeyboardType.NUMBER)
-            hit_field = ft.TextField(label="To-hit points", value=str(build.upgrades.to_hit[index]),
-                on_change=self.changed, disabled=key is None, keyboard_type=ft.KeyboardType.NUMBER)
+            damage_field, damage_widget = self.upgrade_counter("Damage", build.upgrades.damage[index], "damage", index, key is None)
+            hit_field, hit_widget = self.upgrade_counter("To-hit", build.upgrades.to_hit[index], "to_hit", index, key is None)
             self.damage_fields.append(damage_field)
             self.hit_fields.append(hit_field)
             if key:
                 shared = "Shared with matching base weapon" if key in base_identities else "This form's weapon"
                 upgrade_controls.extend([ft.Text(f"{index + 1}. {stats['weapons'][index]['name']} · {shared}", size=13),
-                    ft.ResponsiveRow([ft.Container(damage_field, col=6), ft.Container(hit_field, col=6)])])
-        upgrade_controls.append(ft.Button("Apply upgrades", on_click=self.apply_profile))
+                    ft.ResponsiveRow([ft.Container(damage_widget, col={"xs": 12, "md": 6}), ft.Container(hit_widget, col={"xs": 12, "md": 6})])])
         upgrades_card = card("Chassis & weapon upgrades", upgrade_controls)
         upgrades_card.visible = active is not None
         inventory_card = self.inventory_panel(character)
@@ -607,6 +825,8 @@ class CharacterEditor:
         self.attack_previews, self.range_controls = {}, {}
         self.roll_boxes = {}
         for index, weapon in enumerate(stats["weapons"] if stats else []):
+            if not weapon["name"]:
+                continue
             controls = [ft.Text(weapon["damage_type"] or "Utility / empty", color="#AAC0D6"),
                         ft.Text(weapon["effect"] or ("No effect text recorded." if weapon["name"] else "No equipment in this slot."), size=13)]
             slot = weapon["slot"]
@@ -619,11 +839,12 @@ class CharacterEditor:
                             size=32, weight=ft.FontWeight.BOLD, selectable=True),
                 ], spacing=4), padding=12, width=110, bgcolor="#213349", border_radius=8,
                     tooltip="Unmodified d20 result from this weapon's last successful use.")
-                self.roll_boxes[slot] = roll_box
-                controls.append(roll_box)
+                if rolls_damage(weapon):
+                    self.roll_boxes[slot] = roll_box
+                    controls.append(roll_box)
                 controls.extend([ft.Text(f"Heat: {condition.heat} / {weapon['maximum_heat'] if weapon['maximum_heat'] is not None else 'unrated'}"),
                     ft.Text("BROKEN — repair required" if condition.broken else "Ready", color="#FFB4AB" if condition.broken else "#8CD9C8")])
-                if weapon["base_damage"] is not None:
+                if rolls_damage(weapon):
                     tags = weapon_tags(weapon["damage_type"])
                     ranged = "ranged" in tags and "melee" not in tags
                     band = self.attack_bands.get(target["identity"], "normal")
@@ -653,21 +874,19 @@ class CharacterEditor:
                     ft.Button("Vent", on_click=lambda e, s=slot: self.weapon_action(s, "vent")),
                     ft.Button("Repair · 10,000g", disabled=not condition.broken, on_click=lambda e, s=slot: self.weapon_action(s, "repair")),
                 ], wrap=True))
-            if index < 4:
-                controls.append(ft.Checkbox(label="Activated", value=build.fixed_active[index],
-                    disabled=not weapon["name"], on_change=lambda e, i=index: self.activate(i, e.control.value, True)))
+            if not rolls_damage(weapon):
+                controls.append(ft.Checkbox(label="Activated (passive is automatic)",
+                    value=build.fixed_active[index] if index < 4 else build.equipment_active[index - 4],
+                    on_change=lambda e, i=index: self.activate(i if i < 4 else i - 4, e.control.value, i < 4)))
             weapon_card = card(f"{index + 1}. {weapon['name'] or 'Empty'}", controls)
             weapon_card.col = {"xs": 12, "md": 6}
             weapon_cards.append(weapon_card)
-        self.transport_section = card("Transport", [
-            ft.Text("Transport Zoids carry other Zoids and store unused collected Zoids. Transport gameplay will be implemented later.", size=13),
-            *[ft.Text(r["name"], size=16) for r in sorted(self.catalog.tables["transports"]["records"], key=lambda r: r["name"])],
-            ft.Text("Reference only — not selectable as a normal Zoid.", size=12, color="#AAC0D6"),
-        ])
-        self.body.controls = [ft.ResponsiveRow([
-            ft.Column([profile, pilot_notes, organoid, roster, upgrades_card, inventory_card, equipment_card], col={"xs": 12, "lg": 5}),
-            ft.Column([summary, resources, ft.Text("Combat · weapons & equipment", size=22), ft.ResponsiveRow(weapon_cards), abilities, feats, self.transport_section], col={"xs": 12, "lg": 7}),
-        ])]
+        self.page_cards = {"Overview": [profile, organoid, roster], "Combat": [resources, ft.ResponsiveRow(weapon_cards)],
+            "Upgrades": [upgrades_card, inventory_card, equipment_card],
+            "Pilot": [abilities, feats, pilot_notes, general_inventory, database], "Transport": transport_cards}
+        self.navigation.controls = [ft.Button(name, bgcolor="#213349" if name == self.view else None,
+            on_click=lambda e, n=name: self.switch_page(n)) for name in self.page_cards]
+        self.body.controls = ([] if self.view == "Transport" else [summary]) + self.page_cards[self.view]
         self.page.update()
 
 

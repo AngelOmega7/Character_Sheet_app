@@ -5,23 +5,24 @@ Berserk Fury
 Berserk Fury Z (CAU)
 Black Rhimos
 Blade Liger
-Blade Liger AB
+Blade Liger AB (CAU)
 Blitz Tiger
 Bloodler
 Bloody Demon
 Brachios
 Cannon Tortoise
-Cannon Tortoise BC
+Cannon Tortoise BC (CAU)
+Cannonry Molga (CAU)
 Cerberus
-Climber Wolf
+Climber Wolf (CAU)
 Command Wolf
-Command Wolf AC
-Command Wolf IS
-Command Wolf Town
+Command Wolf AC (CAU)
+Command Wolf IS (CAU)
+Command Wolf UC (CAU)
 Cyclops
 Cyclops 2
 Dark Horn
-Dark Horn HS
+Dark Horn HS (CAU)
 Dark Poison
 Dark Spiner
 Death Meteor
@@ -30,23 +31,23 @@ Death Stinger
 Diablo Tiger
 Dibison
 Double Sworder
-Dragon Nest
+Dragoon Nest
 Elephander
-Elephander AG
+Elephander AG (CAU)
 Gator
-Geno Breaker
-Geno Flame
+Geno Breaker (CAU)
+Geno Flame (CAU)
 Geno Hydra
 Geno Hydra KA
 Geno Saurer
-Geno Scissors
-Geno Trooper
+Geno Scissors (CAU)
+Geno Trooper (CAU)
 Gilvader
 Godos
 Gojulas
 Gojulas Giga
-Gojulas Giga Cannon
-Gojulas Gunner
+Gojulas Giga Cannon (CAU)
+Gojulas Gunner (CAU)
 Gojulas the Ogre
 Gordos
 Gordos LR
@@ -54,28 +55,28 @@ Gorhecks
 Gravity Bison
 Gun Blaster
 Gun Sniper
-Gun sniper LS
-Gun Sniper NS
+Gun Sniper LS (CAU)
+Gun Sniper NS (CAU)
 Gun Sniper Weasel
 Gun Tiger
 Gustav
 Guysack
-Guysack Stinger
+Guysack Stinger (CAU)
 Hammer Head
-Hammer Head VL
+Hammer Head VL (CAU)
 Hammer Rock
 Hellrunner
 Hover Cargo
 Iguan
-Iron Drill
+Iron Drill (CAU)
 Iron Kong
-Iron Kong Maneuver
-Iron Kong PK
-Iron Kong SS
+Iron Kong Maneuver (CAU)
+Iron Kong PK (CAU)
+Iron Kong SS (CAU)
 Jagd Fury (CAU)
 Jagged Stinger
 Killer Dome
-Killer Spiner
+Killer Spiner (CAU)
 King Gojulas
 Konig Wolf
 Konig Wolf DSR (CAU)
@@ -85,52 +86,51 @@ Lightning Saix
 Lightning Saix BS
 Mad Thunder
 Molga
-Molga Cannonry
 Proto Breaker
 Proto Zaber
 Psycho Geno Saurer
 Pteramander
 Pteras
-Pteras Bomber
-Pteras Radome
+Pteras Bomber (CAU)
+Pteras Radome (CAU)
 Raynos
 Red Horn
-Red Horn BG
+Red Horn BG (CAU)
 Redler
-Redler BoostC
-Redler Interceptor
-Rev Hunter
+Redler BC (CAU)
+Redler Interceptor (CAU)
+Rev Hunter (CAU)
 Rev Raptor
-Rev Raptor Pile Bunker
+Rev Raptor Pilebunker (CAU)
 Saberlion
 Saicurtis
 Sea Striker
 Shadow Fox
 Shield Liger
-Shield Liger DCS
-Shield Liger DCS-J
+Shield Liger DCS (CAU)
+Shield Liger DCS-J (CAU)
 Snipe Master
-Snipe Master AS
-Snipe Master FB
+Snipe Master AS (CAU)
+Snipe Master FB (CAU)
 Spark Liger
 Stealth Viper
 Storm Sworder
-Stormsworder F
-Stormsworder FX
+Stormsworder F (CAU)
+Stormsworder FX (CAU)
 Sturm Fury (CAU)
 Trinity Liger
-Trinity Liger BA
+Trinity Liger BA (CAU)
 Ultra Phalanx
 Ultra Saurus
 Wardick
 Whale King
 Zabat
 Zaber Fang
-Zaber Fang AT
+Zaber Fang AT (CAU)
 Zaber Fang Old
-Zaber Fang RS
-Zaber Fang SS
-Zaber Fang TS
+Zaber Fang RS (CAU)
+Zaber Fang SS (CAU)
+Zaber Fang TS (CAU)
 Zero Empire (CAU)
 Zero Jager (CAU)
 Zero Panzer (CAU)

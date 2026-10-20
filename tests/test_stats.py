@@ -223,9 +223,9 @@ class StatsTests(unittest.TestCase):
 
     def test_dynamic_equipment_rebinds_to_selected_zoid(self):
         result = self.calc(zoid="Lightning Saix", pilot_level=100, abilities=(), equipment=("armaments:zoid_equipment_slot_1", None, None, None))
-        self.assertEqual(result["weapons"][4]["base_damage"], 110)
-        self.assertEqual(result["weapons"][4]["name"], "Pulse Laser Gun:")
-        self.assertEqual(result["carry_load"], 20)
+        self.assertEqual(result["weapons"][1]["base_damage"], 110)
+        self.assertEqual(result["weapons"][1]["name"], "Pulse Laser Gun:")
+        self.assertEqual(result["carry_load"], 0)
 
     def test_legacy_dice_damage_is_numeric_and_accepts_bonuses(self):
         result = self.calc(zoid="Ultra Phalanx", pilot_level=100, abilities=())
@@ -241,8 +241,8 @@ class StatsTests(unittest.TestCase):
         self.assertEqual(result["weapons"][4]["base_damage"], 120)
         self.assertFalse(result["warnings"])
         bursts = self.calc(zoid="Shadow Fox", pilot_level=100, abilities=(), equipment=("armaments:zoid_equipment_slot_1", None, None, None))
-        self.assertEqual(bursts["weapons"][4]["base_damage"], 30)
-        self.assertEqual(bursts["weapons"][4]["damage_note"], "Shoots three bursts of 30")
+        self.assertEqual(bursts["weapons"][2]["base_damage"], 30)
+        self.assertEqual(bursts["weapons"][2]["damage_note"], "Shoots three bursts of 30")
 
     def test_all_zoids_and_pilot_styles_calculate(self):
         for z in self.catalog.tables["zoids"]["records"]:
@@ -274,7 +274,7 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(len(ids), len(set(ids)))
             for r in table["records"]:
                 self.assertGreater(r["source"]["row"], 1)
-        self.assertEqual(len(catalog.tables["zoids"]["records"]), 135)
+        self.assertEqual(len(catalog.tables["zoids"]["records"]), 134)
         self.assertEqual(len(catalog.tables["organoids"]["records"]), 41)
 
     def test_formula_constants_and_unresolved_dynamic_fields(self):

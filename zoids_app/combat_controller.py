@@ -1,6 +1,7 @@
 """Atomic combat commands over owned chassis and physical equipment copies."""
 from dataclasses import dataclass, replace
 import random
+from decimal import Decimal
 
 from .attacks import calculate_attack
 from .catalog import Catalog
@@ -8,6 +9,10 @@ from .characters import Character, FixedWeaponCondition, fixed_weapon_identity, 
 from .combat import (RuleError, WeaponCondition, WeaponState, repair_health,
                      repair_weapon, use_weapon)
 from .stats import calculate_stats
+
+
+def rolls_damage(weapon):
+    return isinstance(weapon["base_damage"], (int, float, Decimal)) and not isinstance(weapon["base_damage"], bool)
 
 
 @dataclass(frozen=True)
@@ -79,9 +84,9 @@ def weapon_action(character, slot, action, *, confirmed=False, catalog=None):
     cost = 0
     if action == "use":
         result = use_weapon(state, heat_capacity_bonus=weapon["heat_capacity_bonus"])
-        roll = random.randint(1, 20)
+        roll = random.randint(1, 20) if rolls_damage(weapon) else condition.last_roll
         condition = WeaponCondition(result.weapon.heat if rating is not None else condition.heat, result.weapon.broken, roll)
-        message = f"d20: {roll}. " + ("Use resolved; weapon is now broken." if result.broke_after_use else "Use recorded. Apply the attack modifier and resolve the effect.")
+        message = (f"d20: {roll}. " if rolls_damage(weapon) else "Equipment use recorded. ") + ("Use resolved; weapon is now broken." if result.broke_after_use else "Resolve the effect at the table.")
     elif action == "vent":
         condition = replace(condition, heat=max(0, condition.heat - 1))
         message = "Vented 1 heat (minimum 0). Broken status is unchanged."

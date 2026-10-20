@@ -290,7 +290,19 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "legacy_zoid_id": "zoids:gustav"
+      "legacy_fixed_weapon_ids": [
+        "zoids:gustav:weapon:assisting_fire",
+        null,
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:gustav",
+      "legacy_names": [
+        "Gustav"
+      ],
+      "legacy_zoid_id": "zoids:gustav",
+      "hangar_capacity": 2,
+      "hangar_size": "Medium"
     },
     {
       "id": "transports:hover_cargo",
@@ -399,7 +411,134 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "legacy_zoid_id": "zoids:hover_cargo"
+      "legacy_fixed_weapon_ids": [
+        "zoids:hover_cargo:weapon:assisting_fire",
+        null,
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:hover_cargo",
+      "legacy_names": [
+        "Hover Cargo"
+      ],
+      "legacy_zoid_id": "zoids:hover_cargo",
+      "hangar_capacity": 6,
+      "hangar_size": "Large"
+    },
+    {
+      "id": "transports:dragoon_nest",
+      "name": "Dragoon Nest",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 157
+      },
+      "fields": {
+        "name": "Dragoon Nest",
+        "base_zoid": null,
+        "type": "Reptile",
+        "size": "Extra Large",
+        "required_level": 16,
+        "health": 800,
+        "armor": 28,
+        "defense": 35,
+        "speed": 120,
+        "reaction": 10,
+        "range": 1500,
+        "carry_capacity": 850,
+        "weapon_1_13": "Assisting Fire:",
+        "effect_2_14": "Front mounted rocket pods. Targets a single opponent.",
+        "damage_1_15": 250,
+        "type_1_16": "Ranged, Homing, Explosive",
+        "to_hit_1_17": 13,
+        "active_passive3_18": null,
+        "weapon_2_19": null,
+        "effect_3_20": null,
+        "damage_2_21": null,
+        "type_2_22": null,
+        "to_hit_2_23": null,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": null,
+        "effect_4_31": null,
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": null,
+        "effect_5_42": null,
+        "damage_4_43": null,
+        "type_4_44": null,
+        "to_hit_4_45": null,
+        "re_equip_slot_type_1_46": null,
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": null,
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": null,
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": null,
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "legacy_fixed_weapon_ids": [
+        "zoids:dragon_nest:weapon:assisting_fire",
+        null,
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:dragon_nest",
+      "legacy_names": [
+        "Dragon Nest",
+        "Dragoon Nest"
+      ],
+      "legacy_zoid_id": "zoids:dragon_nest",
+      "hangar_capacity": 12,
+      "hangar_size": "Large Large"
     },
     {
       "id": "transports:whale_king",
@@ -501,7 +640,19 @@
         "column_83": null
       },
       "dynamic_fields": {},
-      "legacy_zoid_id": "zoids:whale_king"
+      "legacy_fixed_weapon_ids": [
+        "zoids:whale_king:weapon:assisting_fire",
+        null,
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:whale_king",
+      "legacy_names": [
+        "Whale King"
+      ],
+      "legacy_zoid_id": "zoids:whale_king",
+      "hangar_capacity": 24,
+      "hangar_size": "Extra Large"
     }
   ],
   "excluded_rows": []

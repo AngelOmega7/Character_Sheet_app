@@ -16,6 +16,13 @@ class FormLoadout:
     equipment_active: tuple[bool, ...] = (False,) * 4
     fixed_active: tuple[bool, ...] = (False,) * 4
     equipment_ids: tuple[str | None, ...] = (None,) * 4
+    build_parts: tuple[str, ...] | None = None
+
+
+@dataclass(frozen=True)
+class Material:
+    name: str
+    quantity: int
 
 
 @dataclass(frozen=True)
@@ -81,6 +88,12 @@ class Character:
     archived_content: tuple[dict, ...] = ()
     inventory: tuple[OwnedEquipment, ...] = ()
     pilot_details: PilotDetails = field(default_factory=PilotDetails)
+    materials: tuple[Material, ...] = ()
+    known_zoids: tuple[str, ...] = ()
+    transport: str | None = None
+    loaded_zoids: tuple[str, ...] = ()
+    transport_notes: str = ""
+    starter_pending: bool = False
 
 
 def _nonnegative(value, name):
@@ -102,8 +115,8 @@ def _validate_build(build, catalog):
     return build
 
 
-def _loadout(build, equipment_ids=(None,) * 4):
-    return FormLoadout(build.zoid, build.equipment, build.equipment_active, build.fixed_active, equipment_ids)
+def _loadout(build, equipment_ids=(None,) * 4, build_parts=None):
+    return FormLoadout(build.zoid, build.equipment, build.equipment_active, build.fixed_active, equipment_ids, build_parts)
 
 
 def _project(pilot_build, owned, form, catalog):
@@ -130,7 +143,7 @@ def _capture(character, owned, catalog):
                 raise RuleError("Empty and utility slots cannot receive weapon upgrades")
         else:
             weapons[key] = WeaponUpgrade(key, damage, hit)
-    return replace(owned, forms=tuple(_loadout(build, f.equipment_ids) if f.zoid == build.zoid else f for f in owned.forms),
+    return replace(owned, forms=tuple(_loadout(build, f.equipment_ids, f.build_parts) if f.zoid == build.zoid else f for f in owned.forms),
                    frame=replace(build.upgrades, damage=(0,) * 4, to_hit=(0,) * 4),
                    weapons=tuple(weapons.values()), current_health=character.current_health,
                    shield_adjustment=build.shield_adjustment, defense_up=build.defense_up, defense_down=build.defense_down)
@@ -147,6 +160,25 @@ def validate_character(character, catalog=None):
         raise RuleError("Character name must be at most 100 characters")
     _nonnegative(character.current_health, "current_health")
     _nonnegative(character.gold, "gold")
+    if type(character.starter_pending) is not bool or not isinstance(character.transport_notes, str):
+        raise RuleError("Invalid pilot workflow fields")
+    seen_materials = set()
+    materials = []
+    for item in character.materials:
+        if not isinstance(item.name, str) or not item.name.strip() or item.name.strip().casefold() in seen_materials:
+            raise RuleError("General inventory items must have distinct nonempty names")
+        _nonnegative(item.quantity, "Quantity")
+        seen_materials.add(item.name.strip().casefold())
+        if item.quantity:
+            materials.append(replace(item, name=item.name.strip()))
+    known = tuple(catalog.find("zoids", z)["id"] for z in character.known_zoids)
+    if len(set(known)) != len(known):
+        raise RuleError("Duplicate Zi Database entry")
+    character = replace(character, materials=tuple(materials), known_zoids=known)
+    if character.transport:
+        character = replace(character, transport=catalog.find("transports", character.transport)["id"])
+    from .transport import validate_cargo
+    validate_cargo(character, catalog)
     details = character.pilot_details
     if not isinstance(details, PilotDetails):
         raise RuleError("Pilot details must be a valid tracking record")
@@ -174,8 +206,10 @@ def validate_character(character, catalog=None):
         feats.pop()
     character = replace(character, pilot_details=replace(details, feats=tuple(feats)))
     # Selected Organoid settings must remain valid even while deactivated.
-    if character.build.organoid_color not in ("White", "Red", "Blue", "Black"):
-        raise RuleError("Choose a White, Red, Blue, or Black Organoid")
+    if character.build.organoid_color not in ("None", "White", "Red", "Blue", "Black"):
+        raise RuleError("Choose None, White, Red, Blue, or Black for Organoid color")
+    if character.build.organoid_color == "None" and character.build.organoid_enabled:
+        raise RuleError("An Organoid with color None cannot be activated")
     if type(character.build.organoid_level) is not int or not 0 <= character.build.organoid_level <= 40:
         raise RuleError("Organoid level must be a whole number from 0 to 40")
     catalog.find("organoids", str(character.build.organoid_level))
@@ -199,7 +233,11 @@ def validate_character(character, catalog=None):
             raise RuleError("A pilot with no owned Zoids cannot have an active Zoid")
         if any(build.equipment) or any(build.equipment_active) or any(build.fixed_active) or build.upgrades != Upgrades():
             raise RuleError("A pilot with no owned Zoids cannot have an active loadout")
-        catalog.find(build.pilot_style.lower(), str(build.pilot_level))
+        if build.pilot_style.lower() == "npc":
+            if not 1 <= build.pilot_level <= 100:
+                raise RuleError("Pilot level must be from 1 to 100")
+        else:
+            catalog.find(build.pilot_style.lower(), str(build.pilot_level))
         abilities = tuple(catalog.find("abilities", a)["id"] if a else None for a in build.abilities)
         inactive = tuple(catalog.find("abilities", a)["id"] for a in build.inactive_abilities)
         validate_loadout(AbilityLoadout(abilities, inactive), catalog)
@@ -212,8 +250,8 @@ def validate_character(character, catalog=None):
         base = catalog.find("zoids", owned.base_zoid)
         if base["ownership_base_id"] != base["id"]:
             raise RuleError("CAU forms must belong to their base Zoid")
-        if not isinstance(owned.id, str) or not owned.id or owned.id in seen_ids or base["id"] in seen_bases:
-            raise RuleError("Each base Zoid can be owned only once, with a unique instance ID")
+        if not isinstance(owned.id, str) or not owned.id or owned.id in seen_ids:
+            raise RuleError("Each owned Zoid must have a unique instance ID")
         seen_ids.add(owned.id)
         seen_bases.add(base["id"])
         for name in ("current_health", "shield_adjustment", "defense_up", "defense_down"):
@@ -243,7 +281,10 @@ def validate_character(character, catalog=None):
         for weapon in owned.weapon_conditions:
             if weapon.weapon_id not in valid_conditions or not isinstance(weapon.condition, WeaponCondition):
                 raise RuleError("Fixed-weapon condition must reference an acquired form's weapon")
-        forms = tuple(_loadout(_validate_build(_project(build, owned, f, catalog), catalog), f.equipment_ids) for f in owned.forms)
+        for form in owned.forms:
+            if form.build_parts is not None and any(not isinstance(p, str) or not p for p in form.build_parts):
+                raise RuleError("Invalid CAU build-parts history")
+        forms = tuple(_loadout(_validate_build(_project(build, owned, f, catalog), catalog), f.equipment_ids, f.build_parts) for f in owned.forms)
         owned = replace(owned, base_zoid=base["id"], forms=forms)
         if owned.id == character.active_zoid_id:
             if owned.active_form != build.zoid:
@@ -284,19 +325,18 @@ def adopt_legacy_character(character, catalog=None):
 
 
 def new_character(catalog=None):
-    catalog = catalog or Catalog()
-    build = CharacterBuild("zoids:saberlion")
-    return adopt_legacy_character(Character(str(uuid4()), "New pilot", build,
-                                           calculate_stats(build, catalog)["pilot"]["health"]), catalog)
+    return Character(str(uuid4()), "New pilot", CharacterBuild("", organoid_color="None"), 0,
+                     gold=10000, starter_pending=True)
 
 
-def acquire_zoid(character, zoid, catalog=None):
+def acquire_zoid(character, zoid, catalog=None, *, host_id=None):
     """Obtain a base Zoid or one CAU form; acquisition does not switch pilots."""
     catalog = catalog or Catalog()
     character = validate_character(character, catalog)
     record = catalog.find("zoids", zoid)
     base = record["ownership_base_id"]
-    existing = next((o for o in character.owned_zoids if o.base_zoid == base), None)
+    matches = [o for o in character.owned_zoids if o.base_zoid == base and (host_id is None or o.id == host_id)]
+    existing = matches[0] if len(matches) == 1 else None
     if record["id"] != base:
         if existing is None:
             raise RuleError("Obtain the base Zoid before obtaining a CAU form")
@@ -305,8 +345,6 @@ def acquire_zoid(character, zoid, catalog=None):
         updated = replace(existing, forms=(*existing.forms, FormLoadout(record["id"])))
         roster = tuple(updated if o.id == existing.id else o for o in character.owned_zoids)
     else:
-        if existing:
-            raise RuleError("This base Zoid is already owned")
         fresh_build = replace(character.build, zoid=base, equipment=(None,) * 4,
                               equipment_active=(False,) * 4, fixed_active=(False,) * 4,
                               upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0)

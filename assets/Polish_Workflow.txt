@@ -35,7 +35,7 @@ There should be one more card called Transport Notes: with a text box that is em
 
 3. Purchasing Rules
 
-I am including two files in C:\Zoids\Zoids TTRPG\Repo\zoids-character-app\assets named zoid_cost.csv and armament_cost.csv. These provide the monetary value of the Zoids and Weapons and Equipment that will be needed for our purchasing rules. zoid_cost.csv also includes columns for Zoid Core and Parts.
+I am including a file in C:\Zoids\Zoids TTRPG\Repo\zoids-character-app\assets named zoid_cost.csv. These provide the monetary value of the Zoids that will be needed for our purchasing rules. zoid_cost.csv also includes columns for Zoid Core and Parts.
 
 First, the starting gold of a pilot at character creation should be set to 10,000g. The pilot can then purchase their first starting Zoid with that money. They should be asked to purchase a starting Zoid from a list of Zoids whose cost is less than or equal to 10,000g. This should then become their first owned Zoid.
 
@@ -43,6 +43,8 @@ When a pilot attempts to add a new Zoid to their list of Owned Zoids, the app sh
 	If the checks don't pass, ask for a GM Override confirmation before adding the Zoid to the list of Owned Zoids.
 
 We also need to set the rules for purchasing upgrades. Lets first change the upgrade text entry fields of the upgrades to a counter that can tick up and down from 0 to 5. Next, we'll set the cost of each upgrade to be the base upgrade cost multiplied by the number of upgrades. For chassis upgrades, the base cost is 5,000g. For weapons upgrades, the base cost is 10,000g. For example, the first upgrade to a weapon's damage costs 10,000g. The second upgrade costs 20,000g, and the third costs 30,000g, etc.
+
+Removable Equipment doesn't need purchasing rules. Those things will handled by the GM at the table, not tracked through the App.
 
 4. Additional Changes
 

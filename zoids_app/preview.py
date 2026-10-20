@@ -10,7 +10,7 @@ from .stats import CharacterBuild, Upgrades, calculate_stats
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--zoid", default="Saberlion")
-    parser.add_argument("--style", default="FIGHTER", choices=("TANK", "FIGHTER", "SCOUT", "ALMIGHTY"))
+    parser.add_argument("--style", default="FIGHTER", choices=("TANK", "FIGHTER", "SCOUT", "ALMIGHTY", "NPC"))
     parser.add_argument("--level", type=int, default=1)
     parser.add_argument("--mental", type=int, default=3)
     parser.add_argument("--ability", action="append", default=[])

@@ -1,5 +1,7 @@
 # Reference data and stat calculations
 
+**Current workflow update:** `workflow.md` supersedes earlier one-instance, purchasing, Transport, starter, and utility-roll behavior in this document. Current versions are `owner-corrected-v14`, `workflow-v12`, and save schema v8. There are 134 playable designs (51 CAUs) and four Transports. NPC has zero style progression bonuses; new pilots start with Organoid None. Catalog Lion terminology is now Liger, except Saberlion's name.
+
 ## Delivered
 
 - `tools/convert_reference_data.py` builds ten local JSON catalogs and a manifest from the local inventory. It never accesses Google Sheets.

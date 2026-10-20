@@ -14,6 +14,7 @@ from zoids_app.combat import RuleError
 from zoids_app.combat_controller import combat_snapshot, weapon_action
 from zoids_app.stats import Upgrades, calculate_stats
 from zoids_app.storage import CharacterStore, SAVE_VERSION
+from test_support import established_character as new_character
 
 
 class PilotDetailsTests(unittest.TestCase):

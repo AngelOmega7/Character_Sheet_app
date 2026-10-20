@@ -1,0 +1,3370 @@
+{
+  "schema_version": 1,
+  "columns": [
+    "name",
+    "cost",
+    "core",
+    "parts",
+    "base_zoid"
+  ],
+  "source_headers": [
+    "Name",
+    "Cost",
+    "Zoid Core",
+    "Parts",
+    "Base Zoid"
+  ],
+  "records": [
+    {
+      "id": "purchases:allosaurer",
+      "name": "Allosaurer",
+      "kind": "record",
+      "zoid_id": "zoids:allosaurer",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 2
+      },
+      "original": {
+        "Name": "Allosaurer",
+        "Cost": "7,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Godos"
+      },
+      "fields": {
+        "name": "Allosaurer",
+        "cost": 7000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:godos"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:atak_kat",
+      "name": "Atak Kat",
+      "kind": "record",
+      "zoid_id": "zoids:atak_kat",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 3
+      },
+      "original": {
+        "Name": "Atak Kat",
+        "Cost": "20,000",
+        "Zoid Core": "Zoid Core ZN",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Atak Kat",
+        "cost": 20000,
+        "core": "Zoid Core ZN",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:barigator",
+      "name": "Barigator",
+      "kind": "record",
+      "zoid_id": "zoids:barigator",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 4
+      },
+      "original": {
+        "Name": "Barigator",
+        "Cost": "10,000",
+        "Zoid Core": "Zoid Core H1",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Barigator",
+        "cost": 10000,
+        "core": "Zoid Core H1",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:berserk_fury",
+      "name": "Berserk Fury",
+      "kind": "record",
+      "zoid_id": "zoids:berserk_fury",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 5
+      },
+      "original": {
+        "Name": "Berserk Fury",
+        "Cost": "150,000",
+        "Zoid Core": "Zoid Core UX",
+        "Parts": "WildZ OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Berserk Fury",
+        "cost": 150000,
+        "core": "Zoid Core UX",
+        "parts": "WildZ OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:berserk_fury_z_cau",
+      "name": "Berserk Fury Z (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:berserk_fury_z_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 6
+      },
+      "original": {
+        "Name": "Berserk Fury Z (CAU)",
+        "Cost": "50,000",
+        "Zoid Core": "",
+        "Parts": "ZF Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Berserk Fury Z (CAU)",
+        "cost": 50000,
+        "core": null,
+        "parts": "ZF Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:black_rhimos",
+      "name": "Black Rhimos",
+      "kind": "record",
+      "zoid_id": "zoids:black_rhimos",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 7
+      },
+      "original": {
+        "Name": "Black Rhimos",
+        "Cost": "30,000",
+        "Zoid Core": "Zoid Core GR",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Black Rhimos",
+        "cost": 30000,
+        "core": "Zoid Core GR",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:blade_liger",
+      "name": "Blade Liger",
+      "kind": "record",
+      "zoid_id": "zoids:blade_liger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 8
+      },
+      "original": {
+        "Name": "Blade Liger",
+        "Cost": "32,000",
+        "Zoid Core": "",
+        "Parts": "Normal OS",
+        "Base Zoid": "Shield Liger"
+      },
+      "fields": {
+        "name": "Blade Liger",
+        "cost": 32000,
+        "core": null,
+        "parts": "Normal OS",
+        "base_zoid": "zoids:shield_liger"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:blade_liger_ab",
+      "name": "Blade Liger AB (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:blade_liger_ab",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 9
+      },
+      "original": {
+        "Name": "Blade Liger AB",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "AB Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Blade Liger AB (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "AB Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:blitz_tiger",
+      "name": "Blitz Tiger",
+      "kind": "record",
+      "zoid_id": "zoids:blitz_tiger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 10
+      },
+      "original": {
+        "Name": "Blitz Tiger",
+        "Cost": "400,000",
+        "Zoid Core": "Zoid Core BT",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Blitz Tiger",
+        "cost": 400000,
+        "core": "Zoid Core BT",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:bloodler",
+      "name": "Bloodler",
+      "kind": "record",
+      "zoid_id": "zoids:bloodler",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 11
+      },
+      "original": {
+        "Name": "Bloodler",
+        "Cost": "50,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Redler"
+      },
+      "fields": {
+        "name": "Bloodler",
+        "cost": 50000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:redler"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:bloody_demon",
+      "name": "Bloody Demon",
+      "kind": "record",
+      "zoid_id": "zoids:bloody_demon",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 12
+      },
+      "original": {
+        "Name": "Bloody Demon",
+        "Cost": "160,000",
+        "Zoid Core": "Zoid Core GS",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Bloody Demon",
+        "cost": 160000,
+        "core": "Zoid Core GS",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:brachios",
+      "name": "Brachios",
+      "kind": "record",
+      "zoid_id": "zoids:brachios",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 13
+      },
+      "original": {
+        "Name": "Brachios",
+        "Cost": "15,000",
+        "Zoid Core": "Zoid Core ZN",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Brachios",
+        "cost": 15000,
+        "core": "Zoid Core ZN",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:cannon_tortoise",
+      "name": "Cannon Tortoise",
+      "kind": "record",
+      "zoid_id": "zoids:cannon_tortoise",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 14
+      },
+      "original": {
+        "Name": "Cannon Tortoise",
+        "Cost": "10,000",
+        "Zoid Core": "Zoid Core H1",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Cannon Tortoise",
+        "cost": 10000,
+        "core": "Zoid Core H1",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:cannon_tortoise_bc",
+      "name": "Cannon Tortoise BC (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:cannon_tortoise_bc",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 15
+      },
+      "original": {
+        "Name": "Cannon Tortoise BC",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "BC Set",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Cannon Tortoise BC (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "BC Set",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:cerberus",
+      "name": "Cerberus",
+      "kind": "record",
+      "zoid_id": "zoids:cerberus",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 16
+      },
+      "original": {
+        "Name": "Cerberus",
+        "Cost": "15,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Command Wolf"
+      },
+      "fields": {
+        "name": "Cerberus",
+        "cost": 15000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:command_wolf"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:climber_wolf",
+      "name": "Climber Wolf (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:climber_wolf",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 17
+      },
+      "original": {
+        "Name": "Climber Wolf",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "Climb Engine",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Climber Wolf (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "Climb Engine",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:command_wolf",
+      "name": "Command Wolf",
+      "kind": "record",
+      "zoid_id": "zoids:command_wolf",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 18
+      },
+      "original": {
+        "Name": "Command Wolf",
+        "Cost": "25,000",
+        "Zoid Core": "Zoid Core H1",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Command Wolf",
+        "cost": 25000,
+        "core": "Zoid Core H1",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:command_wolf_ac",
+      "name": "Command Wolf AC (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:command_wolf_ac",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 19
+      },
+      "original": {
+        "Name": "Command Wolf AC",
+        "Cost": "8,000",
+        "Zoid Core": "",
+        "Parts": "Attack Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Command Wolf AC (CAU)",
+        "cost": 8000,
+        "core": null,
+        "parts": "Attack Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:command_wolf_is",
+      "name": "Command Wolf IS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:command_wolf_is",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 20
+      },
+      "original": {
+        "Name": "Command Wolf IS",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "Damaged Rifle",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Command Wolf IS (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "Damaged Rifle",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:command_wolf_town",
+      "name": "Command Wolf UC (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:command_wolf_town",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 21
+      },
+      "original": {
+        "Name": "Command Wolf Town",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "Rocket Cannon",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Command Wolf UC (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "Rocket Cannon",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:cyclops",
+      "name": "Cyclops",
+      "kind": "record",
+      "zoid_id": "zoids:cyclops",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 22
+      },
+      "original": {
+        "Name": "Cyclops",
+        "Cost": "240,000",
+        "Zoid Core": "Zoid Core GR",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Cyclops",
+        "cost": 240000,
+        "core": "Zoid Core GR",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:cyclops_2",
+      "name": "Cyclops 2",
+      "kind": "record",
+      "zoid_id": "zoids:cyclops_2",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 23
+      },
+      "original": {
+        "Name": "Cyclops 2",
+        "Cost": "240,000",
+        "Zoid Core": "Zoid Core GR",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Cyclops 2",
+        "cost": 240000,
+        "core": "Zoid Core GR",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:dark_horn",
+      "name": "Dark Horn",
+      "kind": "record",
+      "zoid_id": "zoids:dark_horn",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 24
+      },
+      "original": {
+        "Name": "Dark Horn",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Red Horn"
+      },
+      "fields": {
+        "name": "Dark Horn",
+        "cost": 10000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:red_horn"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:dark_horn_hs",
+      "name": "Dark Horn HS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:dark_horn_hs",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 25
+      },
+      "original": {
+        "Name": "Dark Horn HS",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "HS Set",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Dark Horn HS (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "HS Set",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:dark_poison",
+      "name": "Dark Poison",
+      "kind": "record",
+      "zoid_id": "zoids:dark_poison",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 26
+      },
+      "original": {
+        "Name": "Dark Poison",
+        "Cost": "6,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Molga"
+      },
+      "fields": {
+        "name": "Dark Poison",
+        "cost": 6000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:molga"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:dark_spiner",
+      "name": "Dark Spiner",
+      "kind": "record",
+      "zoid_id": "zoids:dark_spiner",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 27
+      },
+      "original": {
+        "Name": "Dark Spiner",
+        "Cost": "80,000",
+        "Zoid Core": "Zoid Core SP",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Dark Spiner",
+        "cost": 80000,
+        "core": "Zoid Core SP",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:death_meteor",
+      "name": "Death Meteor",
+      "kind": "record",
+      "zoid_id": "zoids:death_meteor",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 28
+      },
+      "original": {
+        "Name": "Death Meteor",
+        "Cost": "200,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Death Saurer"
+      },
+      "fields": {
+        "name": "Death Meteor",
+        "cost": 200000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:death_saurer"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:death_saurer",
+      "name": "Death Saurer",
+      "kind": "record",
+      "zoid_id": "zoids:death_saurer",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 29
+      },
+      "original": {
+        "Name": "Death Saurer",
+        "Cost": "300,000",
+        "Zoid Core": "Zoid Core DZ",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Death Saurer",
+        "cost": 300000,
+        "core": "Zoid Core DZ",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:death_stinger",
+      "name": "Death Stinger",
+      "kind": "record",
+      "zoid_id": "zoids:death_stinger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 30
+      },
+      "original": {
+        "Name": "Death Stinger",
+        "Cost": "180,000",
+        "Zoid Core": "Zoids Core DS",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Death Stinger",
+        "cost": 180000,
+        "core": "Zoid Core DS",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:diablo_tiger",
+      "name": "Diablo Tiger",
+      "kind": "record",
+      "zoid_id": "zoids:diablo_tiger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 31
+      },
+      "original": {
+        "Name": "Diablo Tiger",
+        "Cost": "240,000",
+        "Zoid Core": "Zoid Core DT",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Diablo Tiger",
+        "cost": 240000,
+        "core": "Zoid Core DT",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:dibison",
+      "name": "Dibison",
+      "kind": "record",
+      "zoid_id": "zoids:dibison",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 32
+      },
+      "original": {
+        "Name": "Dibison",
+        "Cost": "66,000",
+        "Zoid Core": "Zoid Core H2",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Dibison",
+        "cost": 66000,
+        "core": "Zoid Core H2",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:double_sworder",
+      "name": "Double Sworder",
+      "kind": "record",
+      "zoid_id": "zoids:double_sworder",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 33
+      },
+      "original": {
+        "Name": "Double Sworder",
+        "Cost": "2,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Saicurtis"
+      },
+      "fields": {
+        "name": "Double Sworder",
+        "cost": 2000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:saicurtis"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:elephander",
+      "name": "Elephander",
+      "kind": "record",
+      "zoid_id": "zoids:elephander",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 34
+      },
+      "original": {
+        "Name": "Elephander",
+        "Cost": "70,000",
+        "Zoid Core": "Zoid Core GR",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Elephander",
+        "cost": 70000,
+        "core": "Zoid Core GR",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:elephander_ag",
+      "name": "Elephander AG (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:elephander_ag",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 35
+      },
+      "original": {
+        "Name": "Elephander AG",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "AG Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Elephander AG (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "AG Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gator",
+      "name": "Gator",
+      "kind": "record",
+      "zoid_id": "zoids:gator",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 36
+      },
+      "original": {
+        "Name": "Gator",
+        "Cost": "6,000",
+        "Zoid Core": "Zoid Core ZN",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gator",
+        "cost": 6000,
+        "core": "Zoid Core ZN",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:geno_breaker",
+      "name": "Geno Breaker (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:geno_breaker",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 37
+      },
+      "original": {
+        "Name": "Geno Breaker",
+        "Cost": "40,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Geno Breaker (CAU)",
+        "cost": 40000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:geno_flame",
+      "name": "Geno Flame (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:geno_flame",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 38
+      },
+      "original": {
+        "Name": "Geno Flame",
+        "Cost": "30,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Geno Flame (CAU)",
+        "cost": 30000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:geno_hydra",
+      "name": "Geno Hydra",
+      "kind": "record",
+      "zoid_id": "zoids:geno_hydra",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 39
+      },
+      "original": {
+        "Name": "Geno Hydra",
+        "Cost": "130,000",
+        "Zoid Core": "Zoid Core GH",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Geno Hydra",
+        "cost": 130000,
+        "core": "Zoid Core GH",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:geno_hydra_ka",
+      "name": "Geno Hydra KA",
+      "kind": "record",
+      "zoid_id": "zoids:geno_hydra_ka",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 40
+      },
+      "original": {
+        "Name": "Geno Hydra KA",
+        "Cost": "50,000",
+        "Zoid Core": "",
+        "Parts": "KA Unit",
+        "Base Zoid": "Geno Hydra"
+      },
+      "fields": {
+        "name": "Geno Hydra KA",
+        "cost": 50000,
+        "core": null,
+        "parts": "KA Unit",
+        "base_zoid": "zoids:geno_hydra"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:geno_saurer",
+      "name": "Geno Saurer",
+      "kind": "record",
+      "zoid_id": "zoids:geno_saurer",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 41
+      },
+      "original": {
+        "Name": "Geno Saurer",
+        "Cost": "80,000",
+        "Zoid Core": "Zoid Core GS",
+        "Parts": "Normal OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Geno Saurer",
+        "cost": 80000,
+        "core": "Zoid Core GS",
+        "parts": "Normal OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:geno_scissors",
+      "name": "Geno Scissors (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:geno_scissors",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 42
+      },
+      "original": {
+        "Name": "Geno Scissors",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "Scissors Parts",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Geno Scissors (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "Scissors Parts",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:geno_trooper",
+      "name": "Geno Trooper (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:geno_trooper",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 43
+      },
+      "original": {
+        "Name": "Geno Trooper",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "Flight Parts",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Geno Trooper (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "Flight Parts",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gilvader",
+      "name": "Gilvader",
+      "kind": "record",
+      "zoid_id": "zoids:gilvader",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 44
+      },
+      "original": {
+        "Name": "Gilvader",
+        "Cost": "500,000",
+        "Zoid Core": "Zoid Core GV",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gilvader",
+        "cost": 500000,
+        "core": "Zoid Core GV",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:godos",
+      "name": "Godos",
+      "kind": "record",
+      "zoid_id": "zoids:godos",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 45
+      },
+      "original": {
+        "Name": "Godos",
+        "Cost": "10,000",
+        "Zoid Core": "Zoid Core H1",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Godos",
+        "cost": 10000,
+        "core": "Zoid Core H1",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gojulas",
+      "name": "Gojulas",
+      "kind": "record",
+      "zoid_id": "zoids:gojulas",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 46
+      },
+      "original": {
+        "Name": "Gojulas",
+        "Cost": "70,000",
+        "Zoid Core": "Zoid Core ZG",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gojulas",
+        "cost": 70000,
+        "core": "Zoid Core ZG",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gojulas_giga",
+      "name": "Gojulas Giga",
+      "kind": "record",
+      "zoid_id": "zoids:gojulas_giga",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 47
+      },
+      "original": {
+        "Name": "Gojulas Giga",
+        "Cost": "120,000",
+        "Zoid Core": "Zoid Core ZG",
+        "Parts": "WildG OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gojulas Giga",
+        "cost": 120000,
+        "core": "Zoid Core ZG",
+        "parts": "WildG OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gojulas_giga_cannon",
+      "name": "Gojulas Giga Cannon (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:gojulas_giga_cannon",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 48
+      },
+      "original": {
+        "Name": "Gojulas Giga Cannon",
+        "Cost": "20,000",
+        "Zoid Core": "",
+        "Parts": "GC Set",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gojulas Giga Cannon (CAU)",
+        "cost": 20000,
+        "core": null,
+        "parts": "GC Set",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gojulas_gunner",
+      "name": "Gojulas Gunner (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:gojulas_gunner",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 49
+      },
+      "original": {
+        "Name": "Gojulas Gunner",
+        "Cost": "20,000",
+        "Zoid Core": "",
+        "Parts": "GC Set",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gojulas Gunner (CAU)",
+        "cost": 20000,
+        "core": null,
+        "parts": "GC Set",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gojulas_the_ogre",
+      "name": "Gojulas the Ogre",
+      "kind": "record",
+      "zoid_id": "zoids:gojulas_the_ogre",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 50
+      },
+      "original": {
+        "Name": "Gojulas the Ogre",
+        "Cost": "80,000",
+        "Zoid Core": "",
+        "Parts": "Normal OS",
+        "Base Zoid": "Gojulas"
+      },
+      "fields": {
+        "name": "Gojulas the Ogre",
+        "cost": 80000,
+        "core": null,
+        "parts": "Normal OS",
+        "base_zoid": "zoids:gojulas"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gordos",
+      "name": "Gordos",
+      "kind": "record",
+      "zoid_id": "zoids:gordos",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 51
+      },
+      "original": {
+        "Name": "Gordos",
+        "Cost": "55,000",
+        "Zoid Core": "Zoid Core H1",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gordos",
+        "cost": 55000,
+        "core": "Zoid Core H1",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gordos_lr",
+      "name": "Gordos LR",
+      "kind": "record",
+      "zoid_id": "zoids:gordos_lr",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 52
+      },
+      "original": {
+        "Name": "Gordos LR",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "GC Set",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gordos LR",
+        "cost": 10000,
+        "core": null,
+        "parts": "GC Set",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gorhecks",
+      "name": "Gorhecks",
+      "kind": "record",
+      "zoid_id": "zoids:gorhecks",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 53
+      },
+      "original": {
+        "Name": "Gorhecks",
+        "Cost": "7,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Gordos"
+      },
+      "fields": {
+        "name": "Gorhecks",
+        "cost": 7000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:gordos"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gravity_bison",
+      "name": "Gravity Bison",
+      "kind": "record",
+      "zoid_id": "zoids:gravity_bison",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 54
+      },
+      "original": {
+        "Name": "Gravity Bison",
+        "Cost": "96,000",
+        "Zoid Core": "Zoid Core H2",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gravity Bison",
+        "cost": 96000,
+        "core": "Zoid Core H2",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gun_blaster",
+      "name": "Gun Blaster",
+      "kind": "record",
+      "zoid_id": "zoids:gun_blaster",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 55
+      },
+      "original": {
+        "Name": "Gun Blaster",
+        "Cost": "80,000",
+        "Zoid Core": "Zoid Core GB",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gun Blaster",
+        "cost": 80000,
+        "core": "Zoid Core GB",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gun_sniper",
+      "name": "Gun Sniper",
+      "kind": "record",
+      "zoid_id": "zoids:gun_sniper",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 56
+      },
+      "original": {
+        "Name": "Gun Sniper",
+        "Cost": "12,000",
+        "Zoid Core": "Zoid Core H2",
+        "Parts": "Limited OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gun Sniper",
+        "cost": 12000,
+        "core": "Zoid Core H2",
+        "parts": "Limited OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gun_sniper_ls",
+      "name": "Gun Sniper LS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:gun_sniper_ls",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 57
+      },
+      "original": {
+        "Name": "Gun sniper LS",
+        "Cost": "30,000",
+        "Zoid Core": "",
+        "Parts": "LM Set",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gun Sniper LS (CAU)",
+        "cost": 30000,
+        "core": null,
+        "parts": "LM Set",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gun_sniper_ns",
+      "name": "Gun Sniper NS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:gun_sniper_ns",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 58
+      },
+      "original": {
+        "Name": "Gun Sniper NS",
+        "Cost": "40,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gun Sniper NS (CAU)",
+        "cost": 40000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gun_sniper_weasel",
+      "name": "Gun Sniper Weasel",
+      "kind": "record",
+      "zoid_id": "zoids:gun_sniper_weasel",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 59
+      },
+      "original": {
+        "Name": "Gun Sniper Weasel",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "WW Unit",
+        "Base Zoid": "Gun Sniper"
+      },
+      "fields": {
+        "name": "Gun Sniper Weasel",
+        "cost": 5000,
+        "core": null,
+        "parts": "WW Unit",
+        "base_zoid": "zoids:gun_sniper"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gun_tiger",
+      "name": "Gun Tiger",
+      "kind": "record",
+      "zoid_id": "zoids:gun_tiger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 60
+      },
+      "original": {
+        "Name": "Gun Tiger",
+        "Cost": "6,000",
+        "Zoid Core": "Zoid Core SS",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Gun Tiger",
+        "cost": 6000,
+        "core": "Zoid Core SS",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:guysack",
+      "name": "Guysack",
+      "kind": "record",
+      "zoid_id": "zoids:guysack",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 61
+      },
+      "original": {
+        "Name": "Guysack",
+        "Cost": "10,000",
+        "Zoid Core": "Zoid Core IS",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Guysack",
+        "cost": 10000,
+        "core": "Zoid Core IS",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:guysack_stinger",
+      "name": "Guysack Stinger (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:guysack_stinger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 62
+      },
+      "original": {
+        "Name": "Guysack Stinger",
+        "Cost": "30,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Guysack Stinger (CAU)",
+        "cost": 30000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:hammer_head",
+      "name": "Hammer Head",
+      "kind": "record",
+      "zoid_id": "zoids:hammer_head",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 63
+      },
+      "original": {
+        "Name": "Hammer Head",
+        "Cost": "40,000",
+        "Zoid Core": "Zoid Core WT",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Hammer Head",
+        "cost": 40000,
+        "core": "Zoid Core WT",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:hammer_head_vl",
+      "name": "Hammer Head VL (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:hammer_head_vl",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 64
+      },
+      "original": {
+        "Name": "Hammer Head VL",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "VL Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Hammer Head VL (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "VL Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:hammer_rock",
+      "name": "Hammer Rock",
+      "kind": "record",
+      "zoid_id": "zoids:hammer_rock",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 65
+      },
+      "original": {
+        "Name": "Hammer Rock",
+        "Cost": "12,000",
+        "Zoid Core": "Zoid Core SS",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Hammer Rock",
+        "cost": 12000,
+        "core": "Zoid Core SS",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:hellrunner",
+      "name": "Hellrunner",
+      "kind": "record",
+      "zoid_id": "zoids:hellrunner",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 66
+      },
+      "original": {
+        "Name": "Hellrunner",
+        "Cost": "5,000",
+        "Zoid Core": "Zoid Core ZN",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Hellrunner",
+        "cost": 5000,
+        "core": "Zoid Core ZN",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:iguan",
+      "name": "Iguan",
+      "kind": "record",
+      "zoid_id": "zoids:iguan",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 67
+      },
+      "original": {
+        "Name": "Iguan",
+        "Cost": "3,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Godos"
+      },
+      "fields": {
+        "name": "Iguan",
+        "cost": 3000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:godos"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:iron_drill",
+      "name": "Iron Drill (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:iron_drill",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 68
+      },
+      "original": {
+        "Name": "Iron Drill",
+        "Cost": "55,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Iron Drill (CAU)",
+        "cost": 55000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:iron_kong",
+      "name": "Iron Kong",
+      "kind": "record",
+      "zoid_id": "zoids:iron_kong",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 69
+      },
+      "original": {
+        "Name": "Iron Kong",
+        "Cost": "50,000",
+        "Zoid Core": "Zoid Core ZN",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Iron Kong",
+        "cost": 50000,
+        "core": "Zoid Core ZN",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:iron_kong_maneuver",
+      "name": "Iron Kong Maneuver (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:iron_kong_maneuver",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 70
+      },
+      "original": {
+        "Name": "Iron Kong Maneuver",
+        "Cost": "30,000",
+        "Zoid Core": "",
+        "Parts": "MS Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Iron Kong Maneuver (CAU)",
+        "cost": 30000,
+        "core": null,
+        "parts": "MS Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:iron_kong_pk",
+      "name": "Iron Kong PK (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:iron_kong_pk",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 71
+      },
+      "original": {
+        "Name": "Iron Kong PK",
+        "Cost": "60,000",
+        "Zoid Core": "",
+        "Parts": "PK Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Iron Kong PK (CAU)",
+        "cost": 60000,
+        "core": null,
+        "parts": "PK Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:iron_kong_ss",
+      "name": "Iron Kong SS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:iron_kong_ss",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 72
+      },
+      "original": {
+        "Name": "Iron Kong SS",
+        "Cost": "50,000",
+        "Zoid Core": "",
+        "Parts": "PB Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Iron Kong SS (CAU)",
+        "cost": 50000,
+        "core": null,
+        "parts": "PB Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:jagd_fury_cau",
+      "name": "Jagd Fury (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:jagd_fury_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 73
+      },
+      "original": {
+        "Name": "Jagd Fury (CAU)",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "Jagd Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Jagd Fury (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "Jagd Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:jagged_stinger",
+      "name": "Jagged Stinger",
+      "kind": "record",
+      "zoid_id": "zoids:jagged_stinger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 74
+      },
+      "original": {
+        "Name": "Jagged Stinger",
+        "Cost": "40,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Jagged Stinger"
+      },
+      "fields": {
+        "name": "Jagged Stinger",
+        "cost": 40000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:death_stinger"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:killer_dome",
+      "name": "Killer Dome",
+      "kind": "record",
+      "zoid_id": "zoids:killer_dome",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 75
+      },
+      "original": {
+        "Name": "Killer Dome",
+        "Cost": "9,000",
+        "Zoid Core": "Zoid Core SS",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Killer Dome",
+        "cost": 9000,
+        "core": "Zoid Core SS",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:killer_spiner",
+      "name": "Killer Spiner (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:killer_spiner",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 76
+      },
+      "original": {
+        "Name": "Killer Spiner",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Killer Dome"
+      },
+      "fields": {
+        "name": "Killer Spiner (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:killer_dome"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:king_gojulas",
+      "name": "King Gojulas",
+      "kind": "record",
+      "zoid_id": "zoids:king_gojulas",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 77
+      },
+      "original": {
+        "Name": "King Gojulas",
+        "Cost": "700,000",
+        "Zoid Core": "Zoid Core KG",
+        "Parts": "",
+        "Base Zoid": "Gojulas"
+      },
+      "fields": {
+        "name": "King Gojulas",
+        "cost": 700000,
+        "core": "Zoid Core KG",
+        "parts": null,
+        "base_zoid": "zoids:gojulas"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:konig_wolf",
+      "name": "Konig Wolf",
+      "kind": "record",
+      "zoid_id": "zoids:konig_wolf",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 78
+      },
+      "original": {
+        "Name": "Konig Wolf",
+        "Cost": "42,000",
+        "Zoid Core": "Zoid Core KW",
+        "Parts": "WildZ OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Konig Wolf",
+        "cost": 42000,
+        "core": "Zoid Core KW",
+        "parts": "WildZ OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:konig_wolf_dsr_cau",
+      "name": "Konig Wolf DSR (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:konig_wolf_dsr_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 79
+      },
+      "original": {
+        "Name": "Konig Wolf DSR (CAU)",
+        "Cost": "15,000",
+        "Zoid Core": "",
+        "Parts": "DSR Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Konig Wolf DSR (CAU)",
+        "cost": 15000,
+        "core": null,
+        "parts": "DSR Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:liger_aero",
+      "name": "Liger Aero",
+      "kind": "record",
+      "zoid_id": "zoids:liger_aero",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 80
+      },
+      "original": {
+        "Name": "Liger Aero",
+        "Cost": "18,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Shield Liger"
+      },
+      "fields": {
+        "name": "Liger Aero",
+        "cost": 18000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:shield_liger"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:liger_zero",
+      "name": "Liger Zero",
+      "kind": "record",
+      "zoid_id": "zoids:liger_zero",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 81
+      },
+      "original": {
+        "Name": "Liger Zero",
+        "Cost": "75,000",
+        "Zoid Core": "Zoid Core UX",
+        "Parts": "WildZ OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Liger Zero",
+        "cost": 75000,
+        "core": "Zoid Core UX",
+        "parts": "WildZ OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:lightning_saix",
+      "name": "Lightning Saix",
+      "kind": "record",
+      "zoid_id": "zoids:lightning_saix",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 82
+      },
+      "original": {
+        "Name": "Lightning Saix",
+        "Cost": "40,000",
+        "Zoid Core": "Zoid Core GR",
+        "Parts": "Limited OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Lightning Saix",
+        "cost": 40000,
+        "core": "Zoid Core GR",
+        "parts": "Limited OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:lightning_saix_bs",
+      "name": "Lightning Saix BS",
+      "kind": "record",
+      "zoid_id": "zoids:lightning_saix_bs",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 83
+      },
+      "original": {
+        "Name": "Lightning Saix BS",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Lightning Saix"
+      },
+      "fields": {
+        "name": "Lightning Saix BS",
+        "cost": 10000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:lightning_saix"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:mad_thunder",
+      "name": "Mad Thunder",
+      "kind": "record",
+      "zoid_id": "zoids:mad_thunder",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 84
+      },
+      "original": {
+        "Name": "Mad Thunder",
+        "Cost": "150,000",
+        "Zoid Core": "Zoid Core MT",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Mad Thunder",
+        "cost": 150000,
+        "core": "Zoid Core MT",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:molga",
+      "name": "Molga",
+      "kind": "record",
+      "zoid_id": "zoids:molga",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 85
+      },
+      "original": {
+        "Name": "Molga",
+        "Cost": "6,000",
+        "Zoid Core": "Zoid Core ZN",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Molga",
+        "cost": 6000,
+        "core": "Zoid Core ZN",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:molga_cannonry",
+      "name": "Cannonry Molga (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:molga_cannonry",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 86
+      },
+      "original": {
+        "Name": "Molga Cannonry",
+        "Cost": "2,000",
+        "Zoid Core": "",
+        "Parts": "Cannonry Unit",
+        "Base Zoid": "Molga"
+      },
+      "fields": {
+        "name": "Cannonry Molga (CAU)",
+        "cost": 2000,
+        "core": null,
+        "parts": "Cannonry Unit",
+        "base_zoid": "zoids:molga"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:proto_breaker",
+      "name": "Proto Breaker",
+      "kind": "record",
+      "zoid_id": "zoids:proto_breaker",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 87
+      },
+      "original": {
+        "Name": "Proto Breaker",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Geno Saurer"
+      },
+      "fields": {
+        "name": "Proto Breaker",
+        "cost": 10000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:geno_saurer"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:proto_zaber",
+      "name": "Proto Zaber",
+      "kind": "record",
+      "zoid_id": "zoids:proto_zaber",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 88
+      },
+      "original": {
+        "Name": "Proto Zaber",
+        "Cost": "18,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Zaber Fang"
+      },
+      "fields": {
+        "name": "Proto Zaber",
+        "cost": 18000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:zaber_fang"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:psycho_geno_saurer",
+      "name": "Psycho Geno Saurer",
+      "kind": "record",
+      "zoid_id": "zoids:psycho_geno_saurer",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 89
+      },
+      "original": {
+        "Name": "Psycho Geno Saurer",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Geno Saurer"
+      },
+      "fields": {
+        "name": "Psycho Geno Saurer",
+        "cost": 5000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:geno_saurer"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:pteramander",
+      "name": "Pteramander",
+      "kind": "record",
+      "zoid_id": "zoids:pteramander",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 90
+      },
+      "original": {
+        "Name": "Pteramander",
+        "Cost": "90,000",
+        "Zoid Core": "Zoid Core SL",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Pteramander",
+        "cost": 90000,
+        "core": "Zoid Core SL",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:pteras",
+      "name": "Pteras",
+      "kind": "record",
+      "zoid_id": "zoids:pteras",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 91
+      },
+      "original": {
+        "Name": "Pteras",
+        "Cost": "7,000",
+        "Zoid Core": "Zoid Core FL",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Pteras",
+        "cost": 7000,
+        "core": "Zoid Core FL",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:pteras_bomber",
+      "name": "Pteras Bomber (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:pteras_bomber",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 92
+      },
+      "original": {
+        "Name": "Pteras Bomber",
+        "Cost": "3,000",
+        "Zoid Core": "",
+        "Parts": "Bomber Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Pteras Bomber (CAU)",
+        "cost": 3000,
+        "core": null,
+        "parts": "Bomber Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:pteras_radome",
+      "name": "Pteras Radome (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:pteras_radome",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 93
+      },
+      "original": {
+        "Name": "Pteras Radome",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "Radome Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Pteras Radome (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "Radome Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:raynos",
+      "name": "Raynos",
+      "kind": "record",
+      "zoid_id": "zoids:raynos",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 94
+      },
+      "original": {
+        "Name": "Raynos",
+        "Cost": "32,000",
+        "Zoid Core": "Zoid Core FL",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Raynos",
+        "cost": 32000,
+        "core": "Zoid Core FL",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:red_horn",
+      "name": "Red Horn",
+      "kind": "record",
+      "zoid_id": "zoids:red_horn",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 95
+      },
+      "original": {
+        "Name": "Red Horn",
+        "Cost": "48,000",
+        "Zoid Core": "Zoid Core ZN",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Red Horn",
+        "cost": 48000,
+        "core": "Zoid Core ZN",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:red_horn_bg",
+      "name": "Red Horn BG (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:red_horn_bg",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 96
+      },
+      "original": {
+        "Name": "Red Horn BG",
+        "Cost": "12,000",
+        "Zoid Core": "",
+        "Parts": "BG Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Red Horn BG (CAU)",
+        "cost": 12000,
+        "core": null,
+        "parts": "BG Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:redler",
+      "name": "Redler",
+      "kind": "record",
+      "zoid_id": "zoids:redler",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 97
+      },
+      "original": {
+        "Name": "Redler",
+        "Cost": "10,000",
+        "Zoid Core": "Zoid Core FL",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Redler",
+        "cost": 10000,
+        "core": "Zoid Core FL",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:redler_boostc",
+      "name": "Redler BC (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:redler_boostc",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 98
+      },
+      "original": {
+        "Name": "Redler BoostC",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "BC Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Redler BC (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "BC Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:redler_interceptor",
+      "name": "Redler Interceptor (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:redler_interceptor",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 99
+      },
+      "original": {
+        "Name": "Redler Interceptor",
+        "Cost": "30,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Redler Interceptor (CAU)",
+        "cost": 30000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:rev_hunter",
+      "name": "Rev Hunter (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:rev_hunter",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 100
+      },
+      "original": {
+        "Name": "Rev Hunter",
+        "Cost": "7,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Rev Hunter (CAU)",
+        "cost": 7000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:rev_raptor",
+      "name": "Rev Raptor",
+      "kind": "record",
+      "zoid_id": "zoids:rev_raptor",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 101
+      },
+      "original": {
+        "Name": "Rev Raptor",
+        "Cost": "12,000",
+        "Zoid Core": "Zoid Core GR",
+        "Parts": "Limited OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Rev Raptor",
+        "cost": 12000,
+        "core": "Zoid Core GR",
+        "parts": "Limited OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:rev_raptor_pile_bunker",
+      "name": "Rev Raptor Pilebunker (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:rev_raptor_pile_bunker",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 102
+      },
+      "original": {
+        "Name": "Rev Raptor Pile Bunker",
+        "Cost": "4,000",
+        "Zoid Core": "",
+        "Parts": "PB Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Rev Raptor Pilebunker (CAU)",
+        "cost": 4000,
+        "core": null,
+        "parts": "PB Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:saberlion",
+      "name": "Saberlion",
+      "kind": "record",
+      "zoid_id": "zoids:saberlion",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 103
+      },
+      "original": {
+        "Name": "Saberlion",
+        "Cost": "6,000",
+        "Zoid Core": "",
+        "Parts": "Zoid Core SS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Saberlion",
+        "cost": 6000,
+        "core": "Zoid Core SS",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:saicurtis",
+      "name": "Saicurtis",
+      "kind": "record",
+      "zoid_id": "zoids:saicurtis",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 104
+      },
+      "original": {
+        "Name": "Saicurtis",
+        "Cost": "18,000",
+        "Zoid Core": "Zoid Core IS",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Saicurtis",
+        "cost": 18000,
+        "core": "Zoid Core IS",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:sea_striker",
+      "name": "Sea Striker",
+      "kind": "record",
+      "zoid_id": "zoids:sea_striker",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 105
+      },
+      "original": {
+        "Name": "Sea Striker",
+        "Cost": "7,000",
+        "Zoid Core": "Zoid Core WT",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Sea Striker",
+        "cost": 7000,
+        "core": "Zoid Core WT",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:shadow_fox",
+      "name": "Shadow Fox",
+      "kind": "record",
+      "zoid_id": "zoids:shadow_fox",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 106
+      },
+      "original": {
+        "Name": "Shadow Fox",
+        "Cost": "38,000",
+        "Zoid Core": "Zoid Core H2",
+        "Parts": "Normal OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Shadow Fox",
+        "cost": 38000,
+        "core": "Zoid Core H2",
+        "parts": "Normal OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:shield_liger",
+      "name": "Shield Liger",
+      "kind": "record",
+      "zoid_id": "zoids:shield_liger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 107
+      },
+      "original": {
+        "Name": "Shield Liger",
+        "Cost": "38,000",
+        "Zoid Core": "Zoid Core H1",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Shield Liger",
+        "cost": 38000,
+        "core": "Zoid Core H1",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:shield_liger_dcs",
+      "name": "Shield Liger DCS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:shield_liger_dcs",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 108
+      },
+      "original": {
+        "Name": "Shield Liger DCS",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "DCS Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Shield Liger DCS (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "DCS Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:shield_liger_dcs_j",
+      "name": "Shield Liger DCS-J (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:shield_liger_dcs_j",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 109
+      },
+      "original": {
+        "Name": "Shield Liger DCS-J",
+        "Cost": "25,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Shield Liger DCS"
+      },
+      "fields": {
+        "name": "Shield Liger DCS-J (CAU)",
+        "cost": 25000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:shield_liger_dcs"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:snipe_master",
+      "name": "Snipe Master",
+      "kind": "record",
+      "zoid_id": "zoids:snipe_master",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 110
+      },
+      "original": {
+        "Name": "Snipe Master",
+        "Cost": "12,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Gun Sniper"
+      },
+      "fields": {
+        "name": "Snipe Master",
+        "cost": 12000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:gun_sniper"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:snipe_master_as",
+      "name": "Snipe Master AS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:snipe_master_as",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 111
+      },
+      "original": {
+        "Name": "Snipe Master AS",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "AS Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Snipe Master AS (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "AS Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:snipe_master_fb",
+      "name": "Snipe Master FB (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:snipe_master_fb",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 112
+      },
+      "original": {
+        "Name": "Snipe Master FB",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "FB Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Snipe Master FB (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": "FB Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:spark_liger",
+      "name": "Spark Liger",
+      "kind": "record",
+      "zoid_id": "zoids:spark_liger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 113
+      },
+      "original": {
+        "Name": "Spark Liger",
+        "Cost": "30,000",
+        "Zoid Core": "",
+        "Parts": "Spark Unit",
+        "Base Zoid": "Shield Liger"
+      },
+      "fields": {
+        "name": "Spark Liger",
+        "cost": 30000,
+        "core": null,
+        "parts": "Spark Unit",
+        "base_zoid": "zoids:shield_liger"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:stealth_viper",
+      "name": "Stealth Viper",
+      "kind": "record",
+      "zoid_id": "zoids:stealth_viper",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 114
+      },
+      "original": {
+        "Name": "Stealth Viper",
+        "Cost": "10,000",
+        "Zoid Core": "Zoid Core H1",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Stealth Viper",
+        "cost": 10000,
+        "core": "Zoid Core H1",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:storm_sworder",
+      "name": "Storm Sworder",
+      "kind": "record",
+      "zoid_id": "zoids:storm_sworder",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 115
+      },
+      "original": {
+        "Name": "Storm Sworder",
+        "Cost": "50,000",
+        "Zoid Core": "Zoid Core FL",
+        "Parts": "Limited OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Storm Sworder",
+        "cost": 50000,
+        "core": "Zoid Core FL",
+        "parts": "Limited OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:stormsworder_f",
+      "name": "Stormsworder F (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:stormsworder_f",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 116
+      },
+      "original": {
+        "Name": "Stormsworder F",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "Bomber Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Stormsworder F (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "Bomber Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:stormsworder_fx",
+      "name": "Stormsworder FX (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:stormsworder_fx",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 117
+      },
+      "original": {
+        "Name": "Stormsworder FX",
+        "Cost": "40,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Stormsworder FX (CAU)",
+        "cost": 40000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:sturm_fury_cau",
+      "name": "Sturm Fury (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:sturm_fury_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 118
+      },
+      "original": {
+        "Name": "Sturm Fury (CAU)",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "Sturm Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Sturm Fury (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "Sturm Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:trinity_liger",
+      "name": "Trinity Liger",
+      "kind": "record",
+      "zoid_id": "zoids:trinity_liger",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 119
+      },
+      "original": {
+        "Name": "Trinity Liger",
+        "Cost": "100,000",
+        "Zoid Core": "Zoid Core TL",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Trinity Liger",
+        "cost": 100000,
+        "core": "Zoid Core TL",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:trinity_liger_ba",
+      "name": "Trinity Liger BA (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:trinity_liger_ba",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 120
+      },
+      "original": {
+        "Name": "Trinity Liger BA",
+        "Cost": "50,000",
+        "Zoid Core": "",
+        "Parts": "BA Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Trinity Liger BA (CAU)",
+        "cost": 50000,
+        "core": null,
+        "parts": "BA Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:ultra_phalanx",
+      "name": "Ultra Phalanx",
+      "kind": "record",
+      "zoid_id": "zoids:ultra_phalanx",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 121
+      },
+      "original": {
+        "Name": "Ultra Phalanx",
+        "Cost": "380,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Ultra Saurus"
+      },
+      "fields": {
+        "name": "Ultra Phalanx",
+        "cost": 380000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:ultra_saurus"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:ultra_saurus",
+      "name": "Ultra Saurus",
+      "kind": "record",
+      "zoid_id": "zoids:ultra_saurus",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 122
+      },
+      "original": {
+        "Name": "Ultra Saurus",
+        "Cost": "280,000",
+        "Zoid Core": "Zoid Core US",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Ultra Saurus",
+        "cost": 280000,
+        "core": "Zoid Core US",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:wardick",
+      "name": "Wardick",
+      "kind": "record",
+      "zoid_id": "zoids:wardick",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 123
+      },
+      "original": {
+        "Name": "Wardick",
+        "Cost": "60,000",
+        "Zoid Core": "Zoid Core WS",
+        "Parts": "Limited OS",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Wardick",
+        "cost": 60000,
+        "core": "Zoid Core WS",
+        "parts": "Limited OS",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zabat",
+      "name": "Zabat",
+      "kind": "record",
+      "zoid_id": "zoids:zabat",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 124
+      },
+      "original": {
+        "Name": "Zabat",
+        "Cost": "8,000",
+        "Zoid Core": "Zoid Core FL",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zabat",
+        "cost": 8000,
+        "core": "Zoid Core FL",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zaber_fang",
+      "name": "Zaber Fang",
+      "kind": "record",
+      "zoid_id": "zoids:zaber_fang",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 125
+      },
+      "original": {
+        "Name": "Zaber Fang",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Zaber Fang Old"
+      },
+      "fields": {
+        "name": "Zaber Fang",
+        "cost": 5000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:zaber_fang_old"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zaber_fang_at",
+      "name": "Zaber Fang AT (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zaber_fang_at",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 126
+      },
+      "original": {
+        "Name": "Zaber Fang AT",
+        "Cost": "6,000",
+        "Zoid Core": "",
+        "Parts": "Assault Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zaber Fang AT (CAU)",
+        "cost": 6000,
+        "core": null,
+        "parts": "Assault Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zaber_fang_old",
+      "name": "Zaber Fang Old",
+      "kind": "record",
+      "zoid_id": "zoids:zaber_fang_old",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 127
+      },
+      "original": {
+        "Name": "Zaber Fang Old",
+        "Cost": "35,000",
+        "Zoid Core": "Zoid Core ZN",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zaber Fang Old",
+        "cost": 35000,
+        "core": "Zoid Core ZN",
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zaber_fang_rs",
+      "name": "Zaber Fang RS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zaber_fang_rs",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 128
+      },
+      "original": {
+        "Name": "Zaber Fang RS",
+        "Cost": "20,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zaber Fang RS (CAU)",
+        "cost": 20000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zaber_fang_ss",
+      "name": "Zaber Fang SS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zaber_fang_ss",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 129
+      },
+      "original": {
+        "Name": "Zaber Fang SS",
+        "Cost": "10,000",
+        "Zoid Core": "",
+        "Parts": "BG Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zaber Fang SS (CAU)",
+        "cost": 10000,
+        "core": null,
+        "parts": "BG Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zaber_fang_ts",
+      "name": "Zaber Fang TS (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zaber_fang_ts",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 130
+      },
+      "original": {
+        "Name": "Zaber Fang TS",
+        "Cost": "2,000",
+        "Zoid Core": "",
+        "Parts": "Tiger Soul",
+        "Base Zoid": "Zaber Fang AT"
+      },
+      "fields": {
+        "name": "Zaber Fang TS (CAU)",
+        "cost": 2000,
+        "core": null,
+        "parts": "Tiger Soul",
+        "base_zoid": "zoids:zaber_fang_at"
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zero_empire_cau",
+      "name": "Zero Empire (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zero_empire_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 131
+      },
+      "original": {
+        "Name": "Zero Empire (CAU)",
+        "Cost": "5,000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zero Empire (CAU)",
+        "cost": 5000,
+        "core": null,
+        "parts": null,
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zero_jager_cau",
+      "name": "Zero Jager (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zero_jager_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 132
+      },
+      "original": {
+        "Name": "Zero Jager (CAU)",
+        "Cost": "15,000",
+        "Zoid Core": "",
+        "Parts": "Jager Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zero Jager (CAU)",
+        "cost": 15000,
+        "core": null,
+        "parts": "Jager Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zero_panzer_cau",
+      "name": "Zero Panzer (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zero_panzer_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 133
+      },
+      "original": {
+        "Name": "Zero Panzer (CAU)",
+        "Cost": "20,000",
+        "Zoid Core": "",
+        "Parts": "Panzer Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zero Panzer (CAU)",
+        "cost": 20000,
+        "core": null,
+        "parts": "Panzer Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zero_schneider_cau",
+      "name": "Zero Schneider (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zero_schneider_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 134
+      },
+      "original": {
+        "Name": "Zero Schneider (CAU)",
+        "Cost": "15,000",
+        "Zoid Core": "",
+        "Parts": "Schneider Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zero Schneider (CAU)",
+        "cost": 15000,
+        "core": null,
+        "parts": "Schneider Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zero_x_cau",
+      "name": "Zero X (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zero_x_cau",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 135
+      },
+      "original": {
+        "Name": "Zero X (CAU)",
+        "Cost": "16,000",
+        "Zoid Core": "",
+        "Parts": "X Unit",
+        "Base Zoid": ""
+      },
+      "fields": {
+        "name": "Zero X (CAU)",
+        "cost": 16000,
+        "core": null,
+        "parts": "X Unit",
+        "base_zoid": null
+      },
+      "dynamic_fields": {}
+    }
+  ],
+  "excluded_rows": []
+}

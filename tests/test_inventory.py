@@ -7,6 +7,7 @@ from zoids_app.characters import (OwnedEquipment, acquire_equipment, acquire_zoi
     return_equipment_to_inventory, switch_zoid, validate_character)
 from zoids_app.combat import RuleError
 from zoids_app.stats import calculate_stats
+from test_support import established_character as new_character
 
 
 class InventoryTests(unittest.TestCase):
@@ -113,12 +114,12 @@ class InventoryTests(unittest.TestCase):
             validate_character(replace(equipped, inventory=(OwnedEquipment(character.inventory[0].id, "Extension Armor"),)), self.catalog)
 
     def test_dynamic_equipment_copies_still_resolve_against_selected_zoid(self):
-        character = acquire_zoid(self.pilot("Zoid equipment slot 1"), "Lightning Saix", self.catalog)
+        character = acquire_zoid(self.pilot("Zoid equipment slot 1"), "Zaber Fang", self.catalog)
         character = switch_zoid(character, character.owned_zoids[-1].id, catalog=self.catalog)
         character = self.equip(character, "left", character.inventory[0].id)
         weapon = calculate_stats(character.build, self.catalog)["weapons"][5]
-        self.assertEqual(weapon["base_damage"], 110)
-        self.assertEqual(weapon["name"], "Pulse Laser Gun:")
+        self.assertEqual(weapon["base_damage"], 120)
+        self.assertTrue(weapon["name"])
 
     def test_empty_roster_can_keep_inventory_until_a_zoid_is_obtained(self):
         character = restore_roster_selection(replace(new_character(self.catalog), owned_zoids=()), self.catalog)

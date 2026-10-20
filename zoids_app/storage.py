@@ -6,11 +6,11 @@ from pathlib import Path
 import sqlite3
 
 from .catalog import Catalog
-from .characters import Character, FixedWeaponCondition, FormLoadout, OwnedEquipment, OwnedZoid, PilotDetails, WeaponUpgrade, adopt_legacy_character, migrate_equipment_inventory, restore_roster_selection, validate_character
+from .characters import Character, FixedWeaponCondition, FormLoadout, Material, OwnedEquipment, OwnedZoid, PilotDetails, WeaponUpgrade, adopt_legacy_character, migrate_equipment_inventory, restore_roster_selection, validate_character
 from .combat import RuleError, WeaponCondition
 from .stats import CharacterBuild, Upgrades
 
-SAVE_VERSION = 7
+SAVE_VERSION = 8
 
 
 def _upgrades(values):
@@ -44,6 +44,8 @@ def _owned(values):
         for key in ("equipment", "equipment_active", "fixed_active"):
             form[key] = tuple(form[key])
         form["equipment_ids"] = tuple(form.get("equipment_ids", (None,) * 4))
+        if form.get("build_parts") is not None:
+            form["build_parts"] = tuple(form["build_parts"])
         forms.append(FormLoadout(**form))
     values["forms"] = tuple(forms)
     return OwnedZoid(**values)
@@ -56,13 +58,13 @@ class CharacterStore:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         with closing(sqlite3.connect(self.path)) as db, db:
             version = db.execute("PRAGMA user_version").fetchone()[0]
-            if version not in (0, 1, 2, 3, 4, 5, 6, SAVE_VERSION):
+            if version not in (*range(SAVE_VERSION), SAVE_VERSION):
                 raise RuleError(f"Unsupported save database version: {version}")
             db.execute("""CREATE TABLE IF NOT EXISTS characters (
                 id TEXT PRIMARY KEY, name TEXT NOT NULL, payload TEXT NOT NULL,
                 updated_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now'))
             )""")
-            if version in (0, 1, 2, 3, 4, 5, 6):
+            if version < SAVE_VERSION:
                 # All rows migrate in one transaction. A corrupt row rolls back
                 # every update and leaves the old schema version intact.
                 for character_id, payload in db.execute("SELECT id, payload FROM characters").fetchall():
@@ -77,7 +79,7 @@ class CharacterStore:
                 "SELECT id, name, updated_at FROM characters ORDER BY updated_at DESC, id")]
 
     def _encode(self, character):
-        manifest = json.loads((Path(__file__).parent / "data/manifest.json").read_text(encoding="utf-8"))
+        manifest = self.catalog.manifest
         return json.dumps({"save_version": SAVE_VERSION, "data_version": manifest["data_version"],
                            "character": asdict(character)}, ensure_ascii=False)
 
@@ -102,17 +104,25 @@ class CharacterStore:
         try:
             payload = json.loads(text)
             version = payload["save_version"]
-            if type(version) is not int or version not in ((1, 2, 3, 4, 5, 6, SAVE_VERSION) if allow_legacy else (SAVE_VERSION,)):
+            if type(version) is not int or version not in (range(1, SAVE_VERSION + 1) if allow_legacy else (SAVE_VERSION,)):
                 raise RuleError("This character uses an unsupported save version")
             values = dict(payload["character"])
             details = dict(values.get("pilot_details", {}))
             details["feats"] = tuple(details.get("feats", ()))
             values["pilot_details"] = PilotDetails(**details)
+            values["materials"] = tuple(Material(**i) for i in values.get("materials", []))
+            values["known_zoids"] = tuple(values.get("known_zoids", []))
+            values["loaded_zoids"] = tuple(values.get("loaded_zoids", []))
             archived = list(values.get("archived_content", []))
             removed_active = False
             if version < 3:
                 removed = {key: r for r in self.catalog.tables["zoids"]["excluded_rows"]
                            if "id" in r for key in (r["id"], r["name"])}
+                for transport in self.catalog.tables["transports"]["records"]:
+                    original_id = transport["legacy_zoid_id"]
+                    if original_id in removed:
+                        for alias in transport.get("legacy_names", []):
+                            removed[alias] = removed[original_id]
                 retired_abilities = {key for r in self.catalog.tables["abilities"]["excluded_rows"]
                                      if "id" in r for key in (r["id"], r["name"])}
                 build = dict(values["build"])
@@ -165,6 +175,8 @@ class CharacterStore:
             if removed_active:
                 character = restore_roster_selection(character, self.catalog)
             elif version == 1:
+                from .workflow_migration import prepare_legacy_build
+                character = replace(character, build=prepare_legacy_build(character.build, self.catalog))
                 character = adopt_legacy_character(character, self.catalog)
             elif version < 7 and character.build.zoid == "zoids:zaber_fang":
                 # Persistent upgrade/condition identities already belong to Killer
@@ -172,6 +184,9 @@ class CharacterStore:
                 character = restore_roster_selection(character, self.catalog)
             if version < 4 and (version != 1 or removed_active):
                 character = migrate_equipment_inventory(character, self.catalog)
+            if version < 8 and version != 1:
+                from .workflow_migration import migrate_workflow
+                character = migrate_workflow(character, self.catalog)
             return validate_character(character, self.catalog)
         except (KeyError, TypeError, ValueError, AttributeError) as exc:
             raise RuleError(f"Cannot load character: {exc}") from exc

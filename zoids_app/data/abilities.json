@@ -229,14 +229,14 @@
     },
     {
       "id": "abilities:lion_type_1",
-      "name": "Lion Type 1",
+      "name": "Liger Type 1",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 8
       },
       "fields": {
-        "name": "Lion Type 1",
+        "name": "Liger Type 1",
         "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
         "bonus_levels": 5,
         "zoid_sizes": null,
@@ -256,23 +256,26 @@
       "description_formulas": {
         "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Lion\",N8+5,\"\")"
       },
-      "family": "lion_type",
+      "family": "liger_type",
       "rank": 1,
       "eligible_types": [
-        "Lion"
+        "Liger"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Lion Type 1"
+      ]
     },
     {
       "id": "abilities:lion_type_2",
-      "name": "Lion Type 2",
+      "name": "Liger Type 2",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 9
       },
       "fields": {
-        "name": "Lion Type 2",
+        "name": "Liger Type 2",
         "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
         "bonus_levels": 10,
         "zoid_sizes": null,
@@ -289,23 +292,26 @@
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
-      "family": "lion_type",
+      "family": "liger_type",
       "rank": 2,
       "eligible_types": [
-        "Lion"
+        "Liger"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Lion Type 2"
+      ]
     },
     {
       "id": "abilities:lion_type_3",
-      "name": "Lion Type 3",
+      "name": "Liger Type 3",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 10
       },
       "fields": {
-        "name": "Lion Type 3",
+        "name": "Liger Type 3",
         "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 15,
         "zoid_sizes": null,
@@ -322,23 +328,26 @@
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
-      "family": "lion_type",
+      "family": "liger_type",
       "rank": 3,
       "eligible_types": [
-        "Lion"
+        "Liger"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Lion Type 3"
+      ]
     },
     {
       "id": "abilities:lion_type_4",
-      "name": "Lion Type 4",
+      "name": "Liger Type 4",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 11
       },
       "fields": {
-        "name": "Lion Type 4",
+        "name": "Liger Type 4",
         "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 20,
         "zoid_sizes": null,
@@ -355,23 +364,26 @@
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
-      "family": "lion_type",
+      "family": "liger_type",
       "rank": 4,
       "eligible_types": [
-        "Lion"
+        "Liger"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Lion Type 4"
+      ]
     },
     {
       "id": "abilities:lion_type_5",
-      "name": "Lion Type 5",
+      "name": "Liger Type 5",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 12
       },
       "fields": {
-        "name": "Lion Type 5",
+        "name": "Liger Type 5",
         "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 25,
         "zoid_sizes": null,
@@ -388,12 +400,15 @@
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
-      "family": "lion_type",
+      "family": "liger_type",
       "rank": 5,
       "eligible_types": [
-        "Lion"
+        "Liger"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Lion Type 5"
+      ]
     },
     {
       "id": "abilities:wolf_type_1",

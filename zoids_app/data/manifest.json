@@ -1,20 +1,26 @@
 {
   "schema_version": 1,
-  "data_version": "laser-and-types-v11",
+  "data_version": "workflow-v12",
   "source_sha256": "b132ebf2b1513c1e315753ea667f6362bc71bbc6d04d0b21ec69b6d4a15d59bf",
   "datasets": {
     "transports": {
-      "records": 3,
-      "selectable": 3,
+      "records": 4,
+      "selectable": 4,
+      "excluded_empty_rows": 0,
+      "excluded_retired_rows": 0
+    },
+    "purchases": {
+      "records": 134,
+      "selectable": 134,
       "excluded_empty_rows": 0,
       "excluded_retired_rows": 0
     },
     "zoids": {
-      "records": 135,
-      "selectable": 135,
+      "records": 134,
+      "selectable": 134,
       "excluded_empty_rows": 5,
       "excluded_retired_rows": 19,
-      "moved_rows": 3
+      "moved_rows": 4
     },
     "armaments": {
       "records": 157,
@@ -119,5 +125,9 @@
       "id": "feats:none",
       "kind": "placeholder"
     }
-  ]
+  ],
+  "workflow_sources": {
+    "zoid_cost.csv": "52e27d035966938e55ef26da12a2c6042020e17808762d0af1aea00b7bbac41d",
+    "CAU_expand.txt": "4247588cd66e736f47a4b66e66852c6c3ca639c9dfb50d66b26b8ad83c5b3269"
+  }
 }

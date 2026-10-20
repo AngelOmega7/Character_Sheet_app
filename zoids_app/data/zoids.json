@@ -311,6 +311,16 @@
         "zoids:zaber_fang_old:weapon:20mm",
         "zoids:zaber_fang_old:weapon:laser_machine_gun",
         "zoids:zaber_fang_old:weapon:killer_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:zaber_fang_old:weapon:3_shock_cannon",
+        "zoids:zaber_fang_old:weapon:20mm",
+        "zoids:zaber_fang_old:weapon:laser_machine_gun",
+        "zoids:zaber_fang_old:weapon:killer_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:zaber_fang_old",
+      "legacy_names": [
+        "Zaber Fang Old"
       ]
     },
     {
@@ -501,18 +511,28 @@
         "zoids:zaber_fang:weapon:20mm",
         "zoids:zaber_fang:weapon:laser_machine_gun",
         "zoids:zaber_fang:weapon:killer_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:zaber_fang:weapon:3_barrel_shock_cannon",
+        "zoids:zaber_fang:weapon:20mm",
+        "zoids:zaber_fang:weapon:laser_machine_gun",
+        "zoids:zaber_fang:weapon:killer_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:zaber_fang",
+      "legacy_names": [
+        "Zaber Fang"
       ]
     },
     {
       "id": "zoids:zaber_fang_rs",
-      "name": "Zaber Fang RS",
+      "name": "Zaber Fang RS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 4
       },
       "fields": {
-        "name": "Zaber Fang RS",
+        "name": "Zaber Fang RS (CAU)",
         "base_zoid": "Zaber Fang",
         "type": "Tiger",
         "size": "Large",
@@ -620,24 +640,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:zaber_fang_rs",
+      "ownership_base_id": "zoids:zaber_fang",
       "fixed_weapon_ids": [
+        "zoids:zaber_fang:weapon:3_barrel_shock_cannon",
+        "zoids:zaber_fang:weapon:20mm",
+        "zoids:zaber_fang:weapon:killer_saber",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:zaber_fang_rs:weapon:3_barrel_shock_cannon",
         "zoids:zaber_fang_rs:weapon:20mm",
         "zoids:zaber_fang_rs:weapon:killer_saber",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:zaber_fang_rs",
+      "legacy_names": [
+        "Zaber Fang RS"
       ]
     },
     {
       "id": "zoids:zaber_fang_ss",
-      "name": "Zaber Fang SS",
+      "name": "Zaber Fang SS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 5
       },
       "fields": {
-        "name": "Zaber Fang SS",
+        "name": "Zaber Fang SS (CAU)",
         "base_zoid": "Zaber Fang",
         "type": "Tiger",
         "size": "Large",
@@ -745,24 +775,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:zaber_fang_ss",
+      "ownership_base_id": "zoids:zaber_fang",
       "fixed_weapon_ids": [
+        "zoids:zaber_fang:weapon:3_barrel_shock_cannon",
+        "zoids:zaber_fang_ss:weapon:beam_gun",
+        "zoids:zaber_fang_ss:weapon:beam_gatling",
+        "zoids:zaber_fang:weapon:killer_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:zaber_fang_ss:weapon:3_barrel_shock_cannon",
         "zoids:zaber_fang_ss:weapon:beam_gun",
         "zoids:zaber_fang_ss:weapon:beam_gatling",
         "zoids:zaber_fang_ss:weapon:killer_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:zaber_fang_ss",
+      "legacy_names": [
+        "Zaber Fang SS"
       ]
     },
     {
       "id": "zoids:zaber_fang_at",
-      "name": "Zaber Fang AT",
+      "name": "Zaber Fang AT (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 6
       },
       "fields": {
-        "name": "Zaber Fang AT",
+        "name": "Zaber Fang AT (CAU)",
         "base_zoid": "Zaber Fang",
         "type": "Tiger",
         "size": "Large",
@@ -853,24 +893,34 @@
         "column_83": null
       },
       "dynamic_fields": {},
-      "ownership_base_id": "zoids:zaber_fang_at",
+      "ownership_base_id": "zoids:zaber_fang",
       "fixed_weapon_ids": [
+        "zoids:zaber_fang:weapon:3_barrel_shock_cannon",
+        "zoids:zaber_fang_at:weapon:8_missile_pod",
+        "zoids:zaber_fang:weapon:killer_saber",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:zaber_fang_at:weapon:3_barrel_shock_cannon",
         "zoids:zaber_fang_at:weapon:8_missile_pod",
         "zoids:zaber_fang_at:weapon:killer_saber",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:zaber_fang_at",
+      "legacy_names": [
+        "Zaber Fang AT"
       ]
     },
     {
       "id": "zoids:zaber_fang_ts",
-      "name": "Zaber Fang TS",
+      "name": "Zaber Fang TS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 7
       },
       "fields": {
-        "name": "Zaber Fang TS",
+        "name": "Zaber Fang TS (CAU)",
         "base_zoid": "Zaber Fang AT",
         "type": "Tiger",
         "size": "Large",
@@ -961,12 +1011,22 @@
         "column_83": null
       },
       "dynamic_fields": {},
-      "ownership_base_id": "zoids:zaber_fang_ts",
+      "ownership_base_id": "zoids:zaber_fang",
       "fixed_weapon_ids": [
+        "zoids:zaber_fang:weapon:3_barrel_shock_cannon",
+        "zoids:zaber_fang_ts:weapon:short_range_cannon",
+        "zoids:zaber_fang:weapon:killer_saber",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:zaber_fang_ts:weapon:3_barrel_shock_cannon",
         "zoids:zaber_fang_ts:weapon:short_range_cannon",
         "zoids:zaber_fang_ts:weapon:killer_saber",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:zaber_fang_ts",
+      "legacy_names": [
+        "Zaber Fang TS"
       ]
     },
     {
@@ -1092,6 +1152,16 @@
         "zoids:proto_zaber:weapon:linear_laser_gun",
         "zoids:proto_zaber:weapon:sr_vulcan",
         "zoids:proto_zaber:weapon:killer_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:proto_zaber:weapon:triple_impact_cannon",
+        "zoids:proto_zaber:weapon:linear_laser_gun",
+        "zoids:proto_zaber:weapon:sr_vulcan",
+        "zoids:proto_zaber:weapon:killer_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:proto_zaber",
+      "legacy_names": [
+        "Proto Zaber"
       ]
     },
     {
@@ -1212,6 +1282,16 @@
         "zoids:diablo_tiger:weapon:cyber_claw",
         "zoids:diablo_tiger:weapon:optical_camouflage",
         "zoids:diablo_tiger:weapon:cyber_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:diablo_tiger:weapon:cyber_cannon",
+        "zoids:diablo_tiger:weapon:cyber_claw",
+        "zoids:diablo_tiger:weapon:optical_camouflage",
+        "zoids:diablo_tiger:weapon:cyber_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:diablo_tiger",
+      "legacy_names": [
+        "Diablo Tiger"
       ]
     },
     {
@@ -1337,6 +1417,16 @@
         "zoids:blitz_tiger:weapon:lightning_attack",
         "zoids:blitz_tiger:weapon:volt_cannon",
         "zoids:blitz_tiger:weapon:crusher_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:blitz_tiger:weapon:thunder_claw",
+        "zoids:blitz_tiger:weapon:lightning_attack",
+        "zoids:blitz_tiger:weapon:volt_cannon",
+        "zoids:blitz_tiger:weapon:crusher_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:blitz_tiger",
+      "legacy_names": [
+        "Blitz Tiger"
       ]
     },
     {
@@ -1462,6 +1552,16 @@
         null,
         "zoids:atak_kat:weapon:go_for_broke",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:atak_kat:weapon:laser_machine_gun",
+        null,
+        "zoids:atak_kat:weapon:go_for_broke",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:atak_kat",
+      "legacy_names": [
+        "Atak Kat"
       ]
     },
     {
@@ -1491,22 +1591,22 @@
         "type_1_16": "Ranged, Bullet",
         "to_hit_1_17": 17,
         "active_passive3_18": null,
-        "weapon_2_19": "Killer Fang:",
-        "effect_3_20": "Bite attack. Targets a single opponent.",
-        "damage_2_21": 130,
-        "type_2_22": "Melee, Piercing",
-        "to_hit_2_23": 13,
+        "weapon_2_19": "Pulse Laser Gun:",
+        "effect_3_20": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
+        "damage_2_21": 110,
+        "type_2_22": "Ranged, Laser",
+        "to_hit_2_23": 18,
         "shield_health_24": null,
         "speed_increase_25": null,
         "to_hit_increase_26": null,
         "reaction_increase_2_27": null,
         "range_increase_28": null,
         "active_passive_29": null,
-        "weapon_3_30": null,
-        "effect_4_31": null,
-        "damage_3_32": 0,
-        "type_3_33": null,
-        "to_hit_3_34": null,
+        "weapon_3_30": "Killer Fang:",
+        "effect_4_31": "Bite attack. Targets a single opponent.",
+        "damage_3_32": 130,
+        "type_3_33": "Melee, Piercing",
+        "to_hit_3_34": 13,
         "shield_health_2_35": null,
         "speed_increase_2_36": null,
         "to_hit_increase_2_37": null,
@@ -1519,12 +1619,12 @@
         "type_4_44": null,
         "to_hit_4_45": null,
         "re_equip_slot_type_1_46": "Weapon and Assist",
-        "removable_equipment_47": "Pulse Laser Gun:",
-        "effect_6_48": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
-        "damage_5_49": 110,
-        "damage_type_50": "Ranged, Laser",
-        "to_hit_5_51": 18,
-        "weight_52": 20,
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
         "re_equip_slot_type_2_53": "Weapon and Assist",
         "removable_equipment_2_54": null,
         "damage_6_55": null,
@@ -1571,18 +1671,139 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         },
         "damage_type_50": {
-          "original": "Energy",
+          "original": "Ranged, Laser",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "weapon_3_30": {
+          "original": null,
+          "corrected": "Killer Fang:",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 19
+        },
+        "effect_4_31": {
+          "original": null,
+          "corrected": "Bite attack. Targets a single opponent.",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 20
+        },
+        "damage_3_32": {
+          "original": 0,
+          "corrected": 130,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 21
+        },
+        "type_3_33": {
+          "original": null,
+          "corrected": "Melee, Piercing",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 22
+        },
+        "to_hit_3_34": {
+          "original": null,
+          "corrected": 13,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 23
+        },
+        "weapon_3_heat": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 86
+        },
+        "weapon_2_19": {
+          "original": "Killer Fang:",
+          "corrected": "Pulse Laser Gun:",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 47
+        },
+        "effect_3_20": {
+          "original": "Bite attack. Targets a single opponent.",
+          "corrected": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 48
+        },
+        "damage_2_21": {
+          "original": 130,
+          "corrected": 110,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 49
+        },
+        "type_2_22": {
+          "original": "Melee, Piercing",
           "corrected": "Ranged, Laser",
-          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 50
+        },
+        "to_hit_2_23": {
+          "original": 13,
+          "corrected": 18,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 51
+        },
+        "weapon_2_heat": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "removable_equipment_47": {
+          "original": "Pulse Laser Gun:",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "effect_6_48": {
+          "original": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "damage_5_49": {
+          "original": 110,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "to_hit_5_51": {
+          "original": 18,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "weight_52": {
+          "original": 20,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
         }
       },
       "ownership_base_id": "zoids:lightning_saix",
       "fixed_weapon_ids": [
         "zoids:lightning_saix:weapon:2_barrel_vulcan_cannon",
+        "zoids:lightning_saix:weapon:pulse_laser_gun",
+        "zoids:lightning_saix:weapon:killer_fang",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:lightning_saix:weapon:2_barrel_vulcan_cannon",
         "zoids:lightning_saix:weapon:killer_fang",
         null,
         null
-      ]
+      ],
+      "legacy_ownership_base_id": "zoids:lightning_saix",
+      "legacy_names": [
+        "Lightning Saix"
+      ],
+      "damage_notes": {},
+      "workflow_weapon_move": {
+        "destination": 2,
+        "old_fixed_moves": {
+          "2": 3
+        },
+        "removable_template": "armaments:zoid_equipment_slot_1"
+      }
     },
     {
       "id": "zoids:lightning_saix_bs",
@@ -1611,22 +1832,22 @@
         "type_1_16": "Ranged, Bullet",
         "to_hit_1_17": 17,
         "active_passive3_18": null,
-        "weapon_2_19": "Killer Fang:",
-        "effect_3_20": "Bite attack. Targets a single opponent. ",
+        "weapon_2_19": "Pulse Laser Gun:",
+        "effect_3_20": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
         "damage_2_21": 130,
-        "type_2_22": "Melee, Piercing",
-        "to_hit_2_23": 13,
+        "type_2_22": "Ranged, Laser",
+        "to_hit_2_23": 19,
         "shield_health_24": null,
         "speed_increase_25": null,
         "to_hit_increase_26": null,
         "reaction_increase_2_27": null,
         "range_increase_28": null,
         "active_passive_29": null,
-        "weapon_3_30": null,
-        "effect_4_31": null,
-        "damage_3_32": 0,
-        "type_3_33": null,
-        "to_hit_3_34": null,
+        "weapon_3_30": "Killer Fang:",
+        "effect_4_31": "Bite attack. Targets a single opponent. ",
+        "damage_3_32": 130,
+        "type_3_33": "Melee, Piercing",
+        "to_hit_3_34": 13,
         "shield_health_2_35": null,
         "speed_increase_2_36": null,
         "to_hit_increase_2_37": null,
@@ -1639,12 +1860,12 @@
         "type_4_44": null,
         "to_hit_4_45": null,
         "re_equip_slot_type_1_46": "Weapon and Assist",
-        "removable_equipment_47": "Pulse Laser Gun:",
-        "effect_6_48": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
-        "damage_5_49": 130,
-        "damage_type_50": "Ranged, Laser",
-        "to_hit_5_51": 19,
-        "weight_52": 22,
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
         "re_equip_slot_type_2_53": "Weapon and Assist",
         "removable_equipment_2_54": null,
         "damage_6_55": null,
@@ -1691,18 +1912,139 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         },
         "damage_type_50": {
-          "original": "Energy",
+          "original": "Ranged, Laser",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "weapon_3_30": {
+          "original": null,
+          "corrected": "Killer Fang:",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 19
+        },
+        "effect_4_31": {
+          "original": null,
+          "corrected": "Bite attack. Targets a single opponent. ",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 20
+        },
+        "damage_3_32": {
+          "original": 0,
+          "corrected": 130,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 21
+        },
+        "type_3_33": {
+          "original": null,
+          "corrected": "Melee, Piercing",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 22
+        },
+        "to_hit_3_34": {
+          "original": null,
+          "corrected": 13,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 23
+        },
+        "weapon_3_heat": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 86
+        },
+        "weapon_2_19": {
+          "original": "Killer Fang:",
+          "corrected": "Pulse Laser Gun:",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 47
+        },
+        "effect_3_20": {
+          "original": "Bite attack. Targets a single opponent. ",
+          "corrected": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 48
+        },
+        "damage_2_21": {
+          "original": 130,
+          "corrected": 130,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 49
+        },
+        "type_2_22": {
+          "original": "Melee, Piercing",
           "corrected": "Ranged, Laser",
-          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 50
+        },
+        "to_hit_2_23": {
+          "original": 13,
+          "corrected": 19,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 51
+        },
+        "weapon_2_heat": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "removable_equipment_47": {
+          "original": "Pulse Laser Gun:",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "effect_6_48": {
+          "original": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "damage_5_49": {
+          "original": 130,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "to_hit_5_51": {
+          "original": 19,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "weight_52": {
+          "original": 22,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
         }
       },
       "ownership_base_id": "zoids:lightning_saix_bs",
       "fixed_weapon_ids": [
         "zoids:lightning_saix_bs:weapon:2_barrel_vulcan_cannon",
+        "zoids:lightning_saix_bs:weapon:pulse_laser_gun",
+        "zoids:lightning_saix_bs:weapon:killer_fang",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:lightning_saix_bs:weapon:2_barrel_vulcan_cannon",
         "zoids:lightning_saix_bs:weapon:killer_fang",
         null,
         null
-      ]
+      ],
+      "legacy_ownership_base_id": "zoids:lightning_saix_bs",
+      "legacy_names": [
+        "Lightning Saix BS"
+      ],
+      "damage_notes": {},
+      "workflow_weapon_move": {
+        "destination": 2,
+        "old_fixed_moves": {
+          "2": 3
+        },
+        "removable_template": "armaments:zoid_equipment_slot_1"
+      }
     },
     {
       "id": "zoids:gun_tiger",
@@ -1822,6 +2164,16 @@
         "zoids:gun_tiger:weapon:static_minigun",
         null,
         "zoids:gun_tiger:weapon:high_wave_frequency_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gun_tiger:weapon:high_wave_frequency_claw",
+        "zoids:gun_tiger:weapon:static_minigun",
+        null,
+        "zoids:gun_tiger:weapon:high_wave_frequency_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:gun_tiger",
+      "legacy_names": [
+        "Gun Tiger"
       ]
     },
     {
@@ -1835,7 +2187,7 @@
       "fields": {
         "name": "Liger Zero",
         "base_zoid": null,
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 15,
         "health": 260,
@@ -1944,6 +2296,16 @@
         null,
         "zoids:liger_zero:weapon:strike_laser_claw",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:liger_zero:weapon:shock_cannon",
+        null,
+        "zoids:liger_zero:weapon:strike_laser_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:liger_zero",
+      "legacy_names": [
+        "Liger Zero"
       ]
     },
     {
@@ -1957,7 +2319,7 @@
       "fields": {
         "name": "Zero Schneider (CAU)",
         "base_zoid": "Liger Zero",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 17,
         "health": 290,
@@ -2064,6 +2426,17 @@
         "zoids:zero_schneider_cau:weapon:5_blades",
         null,
         "zoids:zero_schneider_cau:weapon:laser_blade"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:liger_zero:weapon:shock_cannon",
+        "zoids:zero_schneider_cau:weapon:5_blades",
+        null,
+        "zoids:zero_schneider_cau:weapon:laser_blade"
+      ],
+      "legacy_ownership_base_id": "zoids:liger_zero",
+      "legacy_names": [
+        "Zero Schneider (CAU)",
+        "Zero Schneider"
       ]
     },
     {
@@ -2077,7 +2450,7 @@
       "fields": {
         "name": "Zero Jager (CAU)",
         "base_zoid": "Liger Zero",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 17,
         "health": 260,
@@ -2189,6 +2562,17 @@
         "zoids:zero_jager_cau:weapon:vulcan_pod",
         null,
         "zoids:liger_zero:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:liger_zero:weapon:shock_cannon",
+        "zoids:zero_jager_cau:weapon:vulcan_pod",
+        null,
+        "zoids:liger_zero:weapon:strike_laser_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:liger_zero",
+      "legacy_names": [
+        "Zero Jager (CAU)",
+        "Zero Jager"
       ]
     },
     {
@@ -2202,7 +2586,7 @@
       "fields": {
         "name": "Zero Panzer (CAU)",
         "base_zoid": "Liger Zero",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 20,
         "health": 300,
@@ -2314,6 +2698,17 @@
         "zoids:zero_panzer_cau:weapon:hybrid_cannons",
         "zoids:zero_panzer_cau:weapon:burning_big_bang",
         "zoids:liger_zero:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:zero_panzer_cau:weapon:grenade_launcher",
+        "zoids:zero_panzer_cau:weapon:hybrid_cannons",
+        "zoids:zero_panzer_cau:weapon:burning_big_bang",
+        "zoids:liger_zero:weapon:strike_laser_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:liger_zero",
+      "legacy_names": [
+        "Zero Panzer (CAU)",
+        "Zero Panzer"
       ]
     },
     {
@@ -2327,7 +2722,7 @@
       "fields": {
         "name": "Zero Empire (CAU)",
         "base_zoid": "Liger Zero",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 15,
         "health": 260,
@@ -2434,6 +2829,17 @@
         null,
         "zoids:liger_zero:weapon:strike_laser_claw",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:liger_zero:weapon:shock_cannon",
+        null,
+        "zoids:liger_zero:weapon:strike_laser_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:liger_zero",
+      "legacy_names": [
+        "Zero Empire (CAU)",
+        "Zero Empire"
       ]
     },
     {
@@ -2447,7 +2853,7 @@
       "fields": {
         "name": "Zero X (CAU)",
         "base_zoid": "Liger Zero",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 15,
         "health": 280,
@@ -2564,6 +2970,17 @@
         "zoids:zero_x_cau:weapon:stun_blade",
         "zoids:zero_x_cau:weapon:electron_driver",
         "zoids:liger_zero:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:liger_zero:weapon:shock_cannon",
+        "zoids:zero_x_cau:weapon:stun_blade",
+        "zoids:zero_x_cau:weapon:electron_driver",
+        "zoids:liger_zero:weapon:strike_laser_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:liger_zero",
+      "legacy_names": [
+        "Zero X (CAU)",
+        "Zero X"
       ]
     },
     {
@@ -2577,7 +2994,7 @@
       "fields": {
         "name": "Trinity Liger",
         "base_zoid": null,
-        "type": "Lion ",
+        "type": "Liger ",
         "size": "Large",
         "required_level": 20,
         "health": 300,
@@ -2684,20 +3101,30 @@
         null,
         null,
         "zoids:trinity_liger:weapon:armor_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:trinity_liger:weapon:beam_gun",
+        null,
+        null,
+        "zoids:trinity_liger:weapon:armor_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:trinity_liger",
+      "legacy_names": [
+        "Trinity Liger"
       ]
     },
     {
       "id": "zoids:trinity_liger_ba",
-      "name": "Trinity Liger BA",
+      "name": "Trinity Liger BA (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 22
       },
       "fields": {
-        "name": "Trinity Liger BA",
+        "name": "Trinity Liger BA (CAU)",
         "base_zoid": "Trinity Liger",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 22,
         "health": 350,
@@ -2803,12 +3230,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:trinity_liger_ba",
+      "ownership_base_id": "zoids:trinity_liger",
       "fixed_weapon_ids": [
+        "zoids:trinity_liger:weapon:beam_gun",
+        "zoids:trinity_liger_ba:weapon:fast_gatling",
+        "zoids:trinity_liger_ba:weapon:micro_missile",
+        "zoids:trinity_liger_ba:weapon:dozer_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:trinity_liger_ba:weapon:beam_gun",
         "zoids:trinity_liger_ba:weapon:fast_gatling",
         "zoids:trinity_liger_ba:weapon:micro_missile",
         "zoids:trinity_liger_ba:weapon:dozer_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:trinity_liger_ba",
+      "legacy_names": [
+        "Trinity Liger BA"
       ]
     },
     {
@@ -2822,7 +3259,7 @@
       "fields": {
         "name": "Shield Liger",
         "base_zoid": null,
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 7,
         "health": 210,
@@ -2917,20 +3354,30 @@
         null,
         "zoids:shield_liger:weapon:laser_saber",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:shield_liger:weapon:shock_cannon",
+        null,
+        "zoids:shield_liger:weapon:laser_saber",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:shield_liger",
+      "legacy_names": [
+        "Shield Liger"
       ]
     },
     {
       "id": "zoids:shield_liger_dcs",
-      "name": "Shield Liger DCS",
+      "name": "Shield Liger DCS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 24
       },
       "fields": {
-        "name": "Shield Liger DCS",
+        "name": "Shield Liger DCS (CAU)",
         "base_zoid": "Shield Liger",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 8,
         "health": 210,
@@ -3026,26 +3473,36 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:shield_liger_dcs",
+      "ownership_base_id": "zoids:shield_liger",
       "fixed_weapon_ids": [
+        "zoids:shield_liger:weapon:shock_cannon",
+        "zoids:shield_liger_dcs:weapon:beam_cannon",
+        null,
+        "zoids:shield_liger:weapon:laser_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:shield_liger_dcs:weapon:shock_cannon",
         "zoids:shield_liger_dcs:weapon:beam_cannon",
         null,
         "zoids:shield_liger_dcs:weapon:laser_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:shield_liger_dcs",
+      "legacy_names": [
+        "Shield Liger DCS"
       ]
     },
     {
       "id": "zoids:shield_liger_dcs_j",
-      "name": "Shield Liger DCS-J",
+      "name": "Shield Liger DCS-J (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 25
       },
       "fields": {
-        "name": "Shield Liger DCS-J",
+        "name": "Shield Liger DCS-J (CAU)",
         "base_zoid": "Shield Liger DCS",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 13,
         "health": 250,
@@ -3141,12 +3598,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:shield_liger_dcs_j",
+      "ownership_base_id": "zoids:shield_liger",
       "fixed_weapon_ids": [
+        "zoids:shield_liger:weapon:shock_cannon",
+        "zoids:shield_liger_dcs_j:weapon:beam_cannon",
+        null,
+        "zoids:shield_liger:weapon:laser_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:shield_liger_dcs_j:weapon:shock_cannon",
         "zoids:shield_liger_dcs_j:weapon:beam_cannon",
         null,
         "zoids:shield_liger_dcs_j:weapon:laser_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:shield_liger_dcs_j",
+      "legacy_names": [
+        "Shield Liger DCS-J"
       ]
     },
     {
@@ -3158,9 +3625,9 @@
         "row": 26
       },
       "fields": {
-        "name": "Spark Liger ",
+        "name": "Spark Liger",
         "base_zoid": "Shield Liger",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 15,
         "health": 240,
@@ -3262,6 +3729,16 @@
         "zoids:spark_liger:weapon:laser_claw",
         "zoids:spark_liger:weapon:potential_difference_generator",
         "zoids:spark_liger:weapon:laser_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:spark_liger:weapon:shock_gun",
+        "zoids:spark_liger:weapon:laser_claw",
+        "zoids:spark_liger:weapon:potential_difference_generator",
+        "zoids:spark_liger:weapon:laser_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:spark_liger",
+      "legacy_names": [
+        "Spark Liger"
       ]
     },
     {
@@ -3275,7 +3752,7 @@
       "fields": {
         "name": "Blade Liger",
         "base_zoid": "Shield Liger",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 13,
         "health": 280,
@@ -3377,20 +3854,30 @@
         null,
         "zoids:blade_liger:weapon:laser_blade",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:blade_liger:weapon:shock_cannon",
+        null,
+        "zoids:blade_liger:weapon:laser_blade",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:blade_liger",
+      "legacy_names": [
+        "Blade Liger"
       ]
     },
     {
       "id": "zoids:blade_liger_ab",
-      "name": "Blade Liger AB",
+      "name": "Blade Liger AB (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 28
       },
       "fields": {
-        "name": "Blade Liger AB",
+        "name": "Blade Liger AB (CAU)",
         "base_zoid": "Blade Liger",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 16,
         "health": 300,
@@ -3486,12 +3973,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:blade_liger_ab",
+      "ownership_base_id": "zoids:blade_liger",
       "fixed_weapon_ids": [
+        "zoids:blade_liger:weapon:shock_cannon",
+        "zoids:blade_liger_ab:weapon:attack_booster_cannon",
+        null,
+        "zoids:blade_liger_ab:weapon:laser_saber"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:blade_liger_ab:weapon:shock_cannon",
         "zoids:blade_liger_ab:weapon:attack_booster_cannon",
         null,
         "zoids:blade_liger_ab:weapon:laser_saber"
+      ],
+      "legacy_ownership_base_id": "zoids:blade_liger_ab",
+      "legacy_names": [
+        "Blade Liger AB"
       ]
     },
     {
@@ -3505,7 +4002,7 @@
       "fields": {
         "name": "Liger Aero",
         "base_zoid": "Shield Liger",
-        "type": "Lion",
+        "type": "Liger",
         "size": "Large",
         "required_level": 13,
         "health": 230,
@@ -3600,6 +4097,16 @@
         null,
         "zoids:liger_aero:weapon:laser_saber",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:liger_aero:weapon:shock_gun",
+        null,
+        "zoids:liger_aero:weapon:laser_saber",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:liger_aero",
+      "legacy_names": [
+        "Liger Aero"
       ]
     },
     {
@@ -3613,7 +4120,7 @@
       "fields": {
         "name": "Saberlion",
         "base_zoid": null,
-        "type": "Lion",
+        "type": "Liger",
         "size": "Small",
         "required_level": 3,
         "health": 90,
@@ -3720,6 +4227,16 @@
         "zoids:saberlion:weapon:high_frequency_wave_blade",
         null,
         "zoids:saberlion:weapon:high_frequency_wave_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:saberlion:weapon:high_frequency_wave_claw",
+        "zoids:saberlion:weapon:high_frequency_wave_blade",
+        null,
+        "zoids:saberlion:weapon:high_frequency_wave_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:saberlion",
+      "legacy_names": [
+        "Saberlion"
       ]
     },
     {
@@ -3835,18 +4352,28 @@
         "zoids:command_wolf:weapon:bite_fang",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        null,
+        "zoids:command_wolf:weapon:bite_fang",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:command_wolf",
+      "legacy_names": [
+        "Command Wolf"
       ]
     },
     {
       "id": "zoids:command_wolf_town",
-      "name": "Command Wolf Town",
+      "name": "Command Wolf UC (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 32
       },
       "fields": {
-        "name": "Command Wolf Town",
+        "name": "Command Wolf UC (CAU)",
         "base_zoid": "Command Wolf",
         "type": "Wolf",
         "size": "Medium",
@@ -3937,24 +4464,35 @@
         "column_83": null
       },
       "dynamic_fields": {},
-      "ownership_base_id": "zoids:command_wolf_town",
+      "ownership_base_id": "zoids:command_wolf",
       "fixed_weapon_ids": [
+        "zoids:command_wolf_town:weapon:rocket_gun",
+        null,
+        "zoids:command_wolf:weapon:bite_fang",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:command_wolf_town:weapon:rocket_gun",
         null,
         "zoids:command_wolf_town:weapon:bite_fang",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:command_wolf_town",
+      "legacy_names": [
+        "Command Wolf Town",
+        "Command Wolf UC"
       ]
     },
     {
       "id": "zoids:command_wolf_ac",
-      "name": "Command Wolf AC",
+      "name": "Command Wolf AC (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 33
       },
       "fields": {
-        "name": "Command Wolf AC",
+        "name": "Command Wolf AC (CAU)",
         "base_zoid": "Command Wolf",
         "type": "Wolf",
         "size": "Medium",
@@ -4045,24 +4583,34 @@
         "column_83": null
       },
       "dynamic_fields": {},
-      "ownership_base_id": "zoids:command_wolf_ac",
+      "ownership_base_id": "zoids:command_wolf",
       "fixed_weapon_ids": [
+        "zoids:command_wolf_ac:weapon:long_range_cannon",
+        null,
+        "zoids:command_wolf:weapon:bite_fang",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:command_wolf_ac:weapon:long_range_cannon",
         null,
         "zoids:command_wolf_ac:weapon:bite_fang",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:command_wolf_ac",
+      "legacy_names": [
+        "Command Wolf AC"
       ]
     },
     {
       "id": "zoids:command_wolf_is",
-      "name": "Command Wolf IS",
+      "name": "Command Wolf IS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 34
       },
       "fields": {
-        "name": "Command Wolf IS",
+        "name": "Command Wolf IS (CAU)",
         "base_zoid": "Command Wolf",
         "type": "Wolf",
         "size": "Medium",
@@ -4091,11 +4639,11 @@
         "reaction_increase_2_27": null,
         "range_increase_28": null,
         "active_passive_29": null,
-        "weapon_3_30": null,
-        "effect_4_31": null,
-        "damage_3_32": null,
-        "type_3_33": null,
-        "to_hit_3_34": null,
+        "weapon_3_30": "Long Range Rifle",
+        "effect_4_31": "back mounted rifle. Targets a single opponent. Minimum range of 100m. Ranged (Command Wolf Only)",
+        "damage_3_32": 130,
+        "type_3_33": "Ranged, Bullet, Long Range",
+        "to_hit_3_34": 19,
         "shield_health_2_35": null,
         "speed_increase_2_36": null,
         "to_hit_increase_2_37": null,
@@ -4108,12 +4656,12 @@
         "type_4_44": null,
         "to_hit_4_45": null,
         "re_equip_slot_type_1_46": "Weapon and Assist",
-        "removable_equipment_47": "Long Rang Rifle:",
-        "effect_6_48": "back mounted rifle. Targets a single opponent. Minimum range of 100m. Ranged (Command Wolf Only)",
-        "damage_5_49": 130,
-        "damage_type_50": "Ranged, Bullet, Long Range",
-        "to_hit_5_51": 19,
-        "weight_52": 18,
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
         "re_equip_slot_type_2_53": "Weapon and Assist",
         "removable_equipment_2_54": null,
         "damage_6_55": null,
@@ -4155,18 +4703,101 @@
       "dynamic_fields": {},
       "corrections": {
         "damage_type_50": {
-          "original": "Piercing, Long Range",
+          "original": "Ranged, Bullet, Long Range",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "weapon_3_30": {
+          "original": null,
+          "corrected": "Long Range Rifle",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "effect_4_31": {
+          "original": null,
+          "corrected": "back mounted rifle. Targets a single opponent. Minimum range of 100m. Ranged (Command Wolf Only)",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 48
+        },
+        "damage_3_32": {
+          "original": null,
+          "corrected": 130,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 49
+        },
+        "type_3_33": {
+          "original": null,
           "corrected": "Ranged, Bullet, Long Range",
-          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 50
+        },
+        "to_hit_3_34": {
+          "original": null,
+          "corrected": 19,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 51
+        },
+        "weapon_3_heat": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "removable_equipment_47": {
+          "original": "Long Rang Rifle:",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "effect_6_48": {
+          "original": "back mounted rifle. Targets a single opponent. Minimum range of 100m. Ranged (Command Wolf Only)",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "damage_5_49": {
+          "original": 130,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "to_hit_5_51": {
+          "original": 19,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "weight_52": {
+          "original": 18,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
         }
       },
-      "ownership_base_id": "zoids:command_wolf_is",
+      "ownership_base_id": "zoids:command_wolf",
       "fixed_weapon_ids": [
+        null,
+        "zoids:command_wolf:weapon:bite_fang",
+        "zoids:command_wolf_is:weapon:long_range_rifle",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         null,
         "zoids:command_wolf_is:weapon:bite_fang",
         null,
         null
-      ]
+      ],
+      "legacy_ownership_base_id": "zoids:command_wolf_is",
+      "legacy_names": [
+        "Command Wolf IS"
+      ],
+      "damage_notes": {},
+      "workflow_weapon_move": {
+        "destination": 3,
+        "old_fixed_moves": {},
+        "removable_template": "armaments:zoid_equipment_slot_1"
+      }
     },
     {
       "id": "zoids:cerberus",
@@ -4286,18 +4917,28 @@
         "zoids:cerberus:weapon:beam_vulcan",
         null,
         "zoids:cerberus:weapon:double_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:cerberus:weapon:double_beam_cannon",
+        "zoids:cerberus:weapon:beam_vulcan",
+        null,
+        "zoids:cerberus:weapon:double_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:cerberus",
+      "legacy_names": [
+        "Cerberus"
       ]
     },
     {
       "id": "zoids:climber_wolf",
-      "name": "Climber Wolf",
+      "name": "Climber Wolf (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 36
       },
       "fields": {
-        "name": "Climber Wolf",
+        "name": "Climber Wolf (CAU)",
         "base_zoid": "Command Wolf",
         "type": "Wolf",
         "size": "Medium",
@@ -4395,12 +5036,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:climber_wolf",
+      "ownership_base_id": "zoids:command_wolf",
       "fixed_weapon_ids": [
+        "zoids:climber_wolf:weapon:double_laser",
+        "zoids:command_wolf:weapon:bite_fang",
+        null,
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:climber_wolf:weapon:double_laser",
         "zoids:climber_wolf:weapon:bite_fang",
         null,
         null
+      ],
+      "legacy_ownership_base_id": "zoids:climber_wolf",
+      "legacy_names": [
+        "Climber Wolf"
       ]
     },
     {
@@ -4441,28 +5092,28 @@
         "reaction_increase_2_27": null,
         "range_increase_28": null,
         "active_passive_29": "Active",
-        "weapon_3_30": "Strike Laser Claw",
-        "effect_4_31": "Claw attack. Targets a single opponent.",
-        "damage_3_32": 220,
-        "type_3_33": "Melee, Energy",
-        "to_hit_3_34": 15,
+        "weapon_3_30": "Laser Vulcan Gun",
+        "effect_4_31": null,
+        "damage_3_32": 30,
+        "type_3_33": "Ranged, Laser",
+        "to_hit_3_34": 17,
         "shield_health_2_35": null,
         "speed_increase_2_36": null,
         "to_hit_increase_2_37": null,
         "reaction_increase_38": null,
         "increase_range_39": null,
         "active_passive_2_40": null,
-        "weapon_4_41": null,
-        "effect_5_42": null,
-        "damage_4_43": null,
-        "type_4_44": null,
-        "to_hit_4_45": null,
+        "weapon_4_41": "Strike Laser Claw",
+        "effect_5_42": "Claw attack. Targets a single opponent.",
+        "damage_4_43": 220,
+        "type_4_44": "Melee, Energy",
+        "to_hit_4_45": 15,
         "re_equip_slot_type_1_46": "Weapon and Assist",
-        "removable_equipment_47": "Laser Vulcan Gun: back mounted gun. Targets up to three Zoids. Ranged (Shadow Fox Only)",
+        "removable_equipment_47": null,
         "effect_6_48": null,
-        "damage_5_49": 30,
-        "damage_type_50": "Ranged, Laser",
-        "to_hit_5_51": 17,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
         "weight_52": null,
         "re_equip_slot_type_2_53": "Weapon and Assist ",
         "removable_equipment_2_54": null,
@@ -4505,31 +5156,141 @@
       "dynamic_fields": {},
       "corrections": {
         "weapon_3_30": {
-          "original": "Strike Laser Claw:",
-          "corrected": "Strike Laser Claw",
-          "reason": "Owner standardized weapon name"
+          "original": "Strike Laser Claw",
+          "corrected": "Laser Vulcan Gun",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
         },
         "type_3_33": {
-          "original": "Melee, Slashing, Energy",
-          "corrected": "Melee, Energy",
-          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+          "original": "Melee, Energy",
+          "corrected": "Ranged, Laser",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 50
         },
         "damage_type_50": {
-          "original": "Energy",
-          "corrected": "Ranged, Laser",
-          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+          "original": "Ranged, Laser",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "weapon_4_41": {
+          "original": null,
+          "corrected": "Strike Laser Claw",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 30
+        },
+        "effect_5_42": {
+          "original": null,
+          "corrected": "Claw attack. Targets a single opponent.",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 31
+        },
+        "damage_4_43": {
+          "original": null,
+          "corrected": 220,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 32
+        },
+        "type_4_44": {
+          "original": null,
+          "corrected": "Melee, Energy",
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 33
+        },
+        "to_hit_4_45": {
+          "original": null,
+          "corrected": 15,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 34
+        },
+        "weapon_4_heat": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 87
+        },
+        "effect_4_31": {
+          "original": "Claw attack. Targets a single opponent.",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 48
+        },
+        "damage_3_32": {
+          "original": 220,
+          "corrected": 30,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 49
+        },
+        "to_hit_3_34": {
+          "original": 15,
+          "corrected": 17,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": 51
+        },
+        "weapon_3_heat": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "removable_equipment_47": {
+          "original": "Laser Vulcan Gun: back mounted gun. Targets up to three Zoids. Ranged (Shadow Fox Only)",
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "effect_6_48": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "damage_5_49": {
+          "original": 30,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "to_hit_5_51": {
+          "original": 17,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
+        },
+        "weight_52": {
+          "original": null,
+          "corrected": null,
+          "reason": "Owner moved unique removable weapon into fixed loadout",
+          "copied_from_column": null
         }
       },
       "damage_notes": {
-        "damage_5_49": "Shoots three bursts of 30"
+        "damage_3_32": "Shoots three bursts of 30"
       },
       "ownership_base_id": "zoids:shadow_fox",
       "fixed_weapon_ids": [
         "zoids:shadow_fox:weapon:electro_magnetic_bite_fang",
         null,
+        "zoids:shadow_fox:weapon:laser_vulcan_gun",
+        "zoids:shadow_fox:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:shadow_fox:weapon:electro_magnetic_bite_fang",
+        null,
         "zoids:shadow_fox:weapon:strike_laser_claw",
         null
-      ]
+      ],
+      "legacy_ownership_base_id": "zoids:shadow_fox",
+      "legacy_names": [
+        "Shadow Fox"
+      ],
+      "workflow_weapon_move": {
+        "destination": 3,
+        "old_fixed_moves": {
+          "3": 4
+        },
+        "removable_template": "armaments:zoid_equipment_slot_1"
+      }
     },
     {
       "id": "zoids:konig_wolf",
@@ -4644,6 +5405,16 @@
         null,
         "zoids:konig_wolf:weapon:electron_bite_fang",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:konig_wolf:weapon:strike_claw",
+        null,
+        "zoids:konig_wolf:weapon:electron_bite_fang",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:konig_wolf",
+      "legacy_names": [
+        "Konig Wolf"
       ]
     },
     {
@@ -4764,6 +5535,17 @@
         "zoids:konig_wolf_dsr_cau:weapon:dual_sniper_rifle",
         null,
         "zoids:konig_wolf:weapon:electron_bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:konig_wolf:weapon:strike_claw",
+        "zoids:konig_wolf_dsr_cau:weapon:dual_sniper_rifle",
+        null,
+        "zoids:konig_wolf:weapon:electron_bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:konig_wolf",
+      "legacy_names": [
+        "Konig Wolf DSR (CAU)",
+        "Konig Wolf DSR"
       ]
     },
     {
@@ -4879,18 +5661,28 @@
         "zoids:iron_kong:weapon:10_shot_rocket",
         "zoids:iron_kong:weapon:hammer_knuckle",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:iron_kong:weapon:6_shot_missile_pod",
+        "zoids:iron_kong:weapon:10_shot_rocket",
+        "zoids:iron_kong:weapon:hammer_knuckle",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:iron_kong",
+      "legacy_names": [
+        "Iron Kong"
       ]
     },
     {
       "id": "zoids:iron_kong_pk",
-      "name": "Iron Kong PK",
+      "name": "Iron Kong PK (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 41
       },
       "fields": {
-        "name": "Iron Kong PK",
+        "name": "Iron Kong PK (CAU)",
         "base_zoid": "Iron Kong",
         "type": "Gorilla",
         "size": "Large",
@@ -4998,24 +5790,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:iron_kong_pk",
+      "ownership_base_id": "zoids:iron_kong",
       "fixed_weapon_ids": [
+        "zoids:iron_kong_pk:weapon:beam_launcher",
+        "zoids:iron_kong:weapon:10_shot_rocket",
+        "zoids:iron_kong_pk:weapon:pulse_laser_gun",
+        "zoids:iron_kong:weapon:hammer_knuckle"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:iron_kong_pk:weapon:beam_launcher",
         "zoids:iron_kong_pk:weapon:10_shot_rocket",
         "zoids:iron_kong_pk:weapon:pulse_laser_gun",
         "zoids:iron_kong_pk:weapon:hammer_knuckle"
+      ],
+      "legacy_ownership_base_id": "zoids:iron_kong_pk",
+      "legacy_names": [
+        "Iron Kong PK"
       ]
     },
     {
       "id": "zoids:iron_kong_maneuver",
-      "name": "Iron Kong Maneuver",
+      "name": "Iron Kong Maneuver (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 42
       },
       "fields": {
-        "name": "Iron Kong Maneuver",
+        "name": "Iron Kong Maneuver (CAU)",
         "base_zoid": "Iron Kong",
         "type": "Gorilla",
         "size": "Large ",
@@ -5113,24 +5915,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:iron_kong_maneuver",
+      "ownership_base_id": "zoids:iron_kong",
       "fixed_weapon_ids": [
+        "zoids:iron_kong:weapon:6_shot_missile_pod",
+        "zoids:iron_kong:weapon:10_shot_rocket",
+        null,
+        "zoids:iron_kong:weapon:hammer_knuckle"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:iron_kong_maneuver:weapon:6_shot_missile_pod",
         "zoids:iron_kong_maneuver:weapon:10_shot_rocket",
         null,
         "zoids:iron_kong_maneuver:weapon:hammer_knuckle"
+      ],
+      "legacy_ownership_base_id": "zoids:iron_kong_maneuver",
+      "legacy_names": [
+        "Iron Kong Maneuver"
       ]
     },
     {
       "id": "zoids:iron_kong_ss",
-      "name": "Iron Kong SS",
+      "name": "Iron Kong SS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 43
       },
       "fields": {
-        "name": "Iron Kong SS",
+        "name": "Iron Kong SS (CAU)",
         "base_zoid": "Iron Kong",
         "type": "Gorilla",
         "size": "Large",
@@ -5238,24 +6050,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:iron_kong_ss",
+      "ownership_base_id": "zoids:iron_kong",
       "fixed_weapon_ids": [
+        "zoids:iron_kong_ss:weapon:beam_gatling",
+        "zoids:iron_kong:weapon:10_shot_rocket",
+        "zoids:iron_kong_ss:weapon:pulse_laser_gun",
+        "zoids:iron_kong:weapon:hammer_knuckle"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:iron_kong_ss:weapon:beam_gatling",
         "zoids:iron_kong_ss:weapon:10_shot_rocket",
         "zoids:iron_kong_ss:weapon:pulse_laser_gun",
         "zoids:iron_kong_ss:weapon:hammer_knuckle"
+      ],
+      "legacy_ownership_base_id": "zoids:iron_kong_ss",
+      "legacy_names": [
+        "Iron Kong SS"
       ]
     },
     {
       "id": "zoids:iron_drill",
-      "name": "Iron Drill",
+      "name": "Iron Drill (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 44
       },
       "fields": {
-        "name": "Iron Drill",
+        "name": "Iron Drill (CAU)",
         "base_zoid": "Iron Kong",
         "type": "Gorilla",
         "size": "Large",
@@ -5358,12 +6180,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:iron_drill",
+      "ownership_base_id": "zoids:iron_kong",
       "fixed_weapon_ids": [
         "zoids:iron_drill:weapon:beam_bazooka",
         "zoids:iron_drill:weapon:iron_knuckle",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:iron_drill:weapon:beam_bazooka",
+        "zoids:iron_drill:weapon:iron_knuckle",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:iron_drill",
+      "legacy_names": [
+        "Iron Drill"
       ]
     },
     {
@@ -5484,6 +6316,16 @@
         "zoids:hammer_rock:weapon:multi_beam_gun",
         "zoids:hammer_rock:weapon:hammer_knuckle",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:hammer_rock:weapon:vulcan_pack",
+        "zoids:hammer_rock:weapon:multi_beam_gun",
+        "zoids:hammer_rock:weapon:hammer_knuckle",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:hammer_rock",
+      "legacy_names": [
+        "Hammer Rock"
       ]
     },
     {
@@ -5604,6 +6446,16 @@
         "zoids:dibison:weapon:3_barrel_acceleration_shock_cannon",
         "zoids:dibison:weapon:megalo_max",
         "zoids:dibison:weapon:crusher_horn"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:dibison:weapon:8_missile_pod",
+        "zoids:dibison:weapon:3_barrel_acceleration_shock_cannon",
+        "zoids:dibison:weapon:megalo_max",
+        "zoids:dibison:weapon:crusher_horn"
+      ],
+      "legacy_ownership_base_id": "zoids:dibison",
+      "legacy_names": [
+        "Dibison"
       ]
     },
     {
@@ -5719,6 +6571,16 @@
         "zoids:gravity_bison:weapon:3_barrel_anti_zoid_shock_cannon",
         "zoids:gravity_bison:weapon:20_barrel_assault_gun",
         "zoids:gravity_bison:weapon:drill_horn"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gravity_bison:weapon:maneuver_missiles",
+        "zoids:gravity_bison:weapon:3_barrel_anti_zoid_shock_cannon",
+        "zoids:gravity_bison:weapon:20_barrel_assault_gun",
+        "zoids:gravity_bison:weapon:drill_horn"
+      ],
+      "legacy_ownership_base_id": "zoids:gravity_bison",
+      "legacy_names": [
+        "Gravity Bison"
       ]
     },
     {
@@ -5834,6 +6696,16 @@
         "zoids:black_rhimos:weapon:double_shock_cannon",
         "zoids:black_rhimos:weapon:hard_drill",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:black_rhimos:weapon:large_electro_magnetic_cannon",
+        "zoids:black_rhimos:weapon:double_shock_cannon",
+        "zoids:black_rhimos:weapon:hard_drill",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:black_rhimos",
+      "legacy_names": [
+        "Black Rhimos"
       ]
     },
     {
@@ -5942,6 +6814,16 @@
         null,
         "zoids:cyclops:weapon:long_spear",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:cyclops:weapon:iron_cannon",
+        null,
+        "zoids:cyclops:weapon:long_spear",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:cyclops",
+      "legacy_names": [
+        "Cyclops"
       ]
     },
     {
@@ -6057,6 +6939,16 @@
         null,
         "zoids:cyclops_2:weapon:split_horn",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:cyclops_2:weapon:iron_cannon",
+        null,
+        "zoids:cyclops_2:weapon:split_horn",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:cyclops_2",
+      "legacy_names": [
+        "Cyclops 2"
       ]
     },
     {
@@ -6187,18 +7079,28 @@
         "zoids:elephander:weapon:beam_gun",
         "zoids:elephander:weapon:pulse_laser_gun",
         "zoids:elephander:weapon:crusher_tusk"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:elephander:weapon:double_beam_gun",
+        "zoids:elephander:weapon:beam_gun",
+        "zoids:elephander:weapon:pulse_laser_gun",
+        "zoids:elephander:weapon:crusher_tusk"
+      ],
+      "legacy_ownership_base_id": "zoids:elephander",
+      "legacy_names": [
+        "Elephander"
       ]
     },
     {
       "id": "zoids:elephander_ag",
-      "name": "Elephander AG",
+      "name": "Elephander AG (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 52
       },
       "fields": {
-        "name": "Elephander AG",
+        "name": "Elephander AG (CAU)",
         "base_zoid": "Elephander",
         "type": "Mammal",
         "size": "Large",
@@ -6311,12 +7213,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:elephander_ag",
+      "ownership_base_id": "zoids:elephander",
       "fixed_weapon_ids": [
         "zoids:elephander_ag:weapon:double_bream_gun",
         "zoids:elephander_ag:weapon:hyper_laser_gun",
         "zoids:elephander_ag:weapon:assault_gatling",
+        "zoids:elephander:weapon:crusher_tusk"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:elephander_ag:weapon:double_bream_gun",
+        "zoids:elephander_ag:weapon:hyper_laser_gun",
+        "zoids:elephander_ag:weapon:assault_gatling",
         "zoids:elephander_ag:weapon:crusher_tusk"
+      ],
+      "legacy_ownership_base_id": "zoids:elephander_ag",
+      "legacy_names": [
+        "Elephander AG"
       ]
     },
     {
@@ -6442,6 +7354,16 @@
         "zoids:geno_saurer:weapon:charged_particle_cannon",
         "zoids:geno_saurer:weapon:long_range_laser",
         "zoids:geno_saurer:weapon:hyper_killer_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:geno_saurer:weapon:laser_gun",
+        "zoids:geno_saurer:weapon:charged_particle_cannon",
+        "zoids:geno_saurer:weapon:long_range_laser",
+        "zoids:geno_saurer:weapon:hyper_killer_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:geno_saurer",
+      "legacy_names": [
+        "Geno Saurer"
       ]
     },
     {
@@ -6567,18 +7489,28 @@
         "zoids:psycho_geno_saurer:weapon:charged_particle_cannon",
         "zoids:psycho_geno_saurer:weapon:long_range_laser",
         "zoids:psycho_geno_saurer:weapon:hyper_killer_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:psycho_geno_saurer:weapon:vulcan",
+        "zoids:psycho_geno_saurer:weapon:charged_particle_cannon",
+        "zoids:psycho_geno_saurer:weapon:long_range_laser",
+        "zoids:psycho_geno_saurer:weapon:hyper_killer_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:psycho_geno_saurer",
+      "legacy_names": [
+        "Psycho Geno Saurer"
       ]
     },
     {
       "id": "zoids:geno_breaker",
-      "name": "Geno Breaker",
+      "name": "Geno Breaker (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 55
       },
       "fields": {
-        "name": "Geno Breaker",
+        "name": "Geno Breaker (CAU)",
         "base_zoid": "Geno Saurer",
         "type": "T-Rex",
         "size": "Large",
@@ -6681,12 +7613,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:geno_breaker",
+      "ownership_base_id": "zoids:geno_saurer",
       "fixed_weapon_ids": [
         "zoids:geno_breaker:weapon:x_breaker",
         "zoids:geno_breaker:weapon:focused_charged_particle_cannon",
         "zoids:geno_breaker:weapon:laser_blade",
+        "zoids:geno_saurer:weapon:hyper_killer_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:geno_breaker:weapon:x_breaker",
+        "zoids:geno_breaker:weapon:focused_charged_particle_cannon",
+        "zoids:geno_breaker:weapon:laser_blade",
         "zoids:geno_breaker:weapon:hyper_killer_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:geno_breaker",
+      "legacy_names": [
+        "Geno Breaker"
       ]
     },
     {
@@ -6812,18 +7754,28 @@
         "zoids:proto_breaker:weapon:charged_particle_cannon",
         "zoids:proto_breaker:weapon:long_range_laser",
         "zoids:proto_breaker:weapon:hyper_killer_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:proto_breaker:weapon:x_breaker",
+        "zoids:proto_breaker:weapon:charged_particle_cannon",
+        "zoids:proto_breaker:weapon:long_range_laser",
+        "zoids:proto_breaker:weapon:hyper_killer_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:proto_breaker",
+      "legacy_names": [
+        "Proto Breaker"
       ]
     },
     {
       "id": "zoids:geno_scissors",
-      "name": "Geno Scissors",
+      "name": "Geno Scissors (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 57
       },
       "fields": {
-        "name": "Geno Scissors",
+        "name": "Geno Scissors (CAU)",
         "base_zoid": "Geno Breaker",
         "type": "T-Rex",
         "size": "Large",
@@ -6931,24 +7883,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:geno_scissors",
+      "ownership_base_id": "zoids:geno_saurer",
       "fixed_weapon_ids": [
         "zoids:geno_scissors:weapon:x_breaker",
         "zoids:geno_scissors:weapon:focused_charged_particle_cannon",
         "zoids:geno_scissors:weapon:assault_beam_cannon",
+        "zoids:geno_saurer:weapon:hyper_killer_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:geno_scissors:weapon:x_breaker",
+        "zoids:geno_scissors:weapon:focused_charged_particle_cannon",
+        "zoids:geno_scissors:weapon:assault_beam_cannon",
         "zoids:geno_scissors:weapon:hyper_killer_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:geno_scissors",
+      "legacy_names": [
+        "Geno Scissors"
       ]
     },
     {
       "id": "zoids:geno_trooper",
-      "name": "Geno Trooper",
+      "name": "Geno Trooper (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 58
       },
       "fields": {
-        "name": "Geno Trooper",
+        "name": "Geno Trooper (CAU)",
         "base_zoid": "Geno Breaker",
         "type": "T-Rex",
         "size": "Large",
@@ -7056,24 +8018,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:geno_trooper",
+      "ownership_base_id": "zoids:geno_saurer",
       "fixed_weapon_ids": [
         "zoids:geno_trooper:weapon:vulcan",
         "zoids:geno_trooper:weapon:focused_charged_particle_cannon",
         "zoids:geno_trooper:weapon:4_laser",
+        "zoids:geno_saurer:weapon:hyper_killer_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:geno_trooper:weapon:vulcan",
+        "zoids:geno_trooper:weapon:focused_charged_particle_cannon",
+        "zoids:geno_trooper:weapon:4_laser",
         "zoids:geno_trooper:weapon:hyper_killer_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:geno_trooper",
+      "legacy_names": [
+        "Geno Trooper"
       ]
     },
     {
       "id": "zoids:geno_flame",
-      "name": "Geno Flame",
+      "name": "Geno Flame (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 59
       },
       "fields": {
-        "name": "Geno Flame",
+        "name": "Geno Flame (CAU)",
         "base_zoid": "Geno Saurer",
         "type": "T-Rex",
         "size": "Large",
@@ -7176,12 +8148,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:geno_flame",
+      "ownership_base_id": "zoids:geno_saurer",
       "fixed_weapon_ids": [
         "zoids:geno_flame:weapon:expg_beam_cannon",
         "zoids:geno_flame:weapon:diffused_charged_particle_cannon",
         null,
         "zoids:geno_flame:weapon:flame_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:geno_flame:weapon:expg_beam_cannon",
+        "zoids:geno_flame:weapon:diffused_charged_particle_cannon",
+        null,
+        "zoids:geno_flame:weapon:flame_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:geno_flame",
+      "legacy_names": [
+        "Geno Flame"
       ]
     },
     {
@@ -7307,6 +8289,16 @@
         "zoids:berserk_fury:weapon:diffuse_particle_cannon",
         null,
         "zoids:berserk_fury:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:berserk_fury:weapon:buster_claw",
+        "zoids:berserk_fury:weapon:diffuse_particle_cannon",
+        null,
+        "zoids:berserk_fury:weapon:strike_laser_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:berserk_fury",
+      "legacy_names": [
+        "Berserk Fury"
       ]
     },
     {
@@ -7432,6 +8424,17 @@
         "zoids:berserk_fury:weapon:diffuse_particle_cannon",
         "zoids:berserk_fury:weapon:strike_laser_claw",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:sturm_fury_cau:weapon:x_breaker",
+        "zoids:berserk_fury:weapon:diffuse_particle_cannon",
+        "zoids:berserk_fury:weapon:strike_laser_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:berserk_fury",
+      "legacy_names": [
+        "Sturm Fury (CAU)",
+        "Sturm Fury"
       ]
     },
     {
@@ -7552,6 +8555,17 @@
         "zoids:berserk_fury:weapon:diffuse_particle_cannon",
         "zoids:jagd_fury_cau:weapon:missile_pod",
         "zoids:berserk_fury:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:jagd_fury_cau:weapon:long_range_cannon",
+        "zoids:berserk_fury:weapon:diffuse_particle_cannon",
+        "zoids:jagd_fury_cau:weapon:missile_pod",
+        "zoids:berserk_fury:weapon:strike_laser_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:berserk_fury",
+      "legacy_names": [
+        "Jagd Fury (CAU)",
+        "Jagd Fury"
       ]
     },
     {
@@ -7672,6 +8686,17 @@
         "zoids:berserk_fury:weapon:diffuse_particle_cannon",
         "zoids:berserk_fury:weapon:strike_laser_claw",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:berserk_fury_z_cau:weapon:12_shot_missile_pod",
+        "zoids:berserk_fury:weapon:diffuse_particle_cannon",
+        "zoids:berserk_fury:weapon:strike_laser_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:berserk_fury",
+      "legacy_names": [
+        "Berserk Fury Z (CAU)",
+        "Berserk Fury Z"
       ]
     },
     {
@@ -7802,6 +8827,16 @@
         "zoids:geno_hydra:weapon:saucer_head",
         "zoids:geno_hydra:weapon:diffused_charged_particle_cannon",
         "zoids:geno_hydra:weapon:claw_head"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:geno_hydra:weapon:gatling_head",
+        "zoids:geno_hydra:weapon:saucer_head",
+        "zoids:geno_hydra:weapon:diffused_charged_particle_cannon",
+        "zoids:geno_hydra:weapon:claw_head"
+      ],
+      "legacy_ownership_base_id": "zoids:geno_hydra",
+      "legacy_names": [
+        "Geno Hydra"
       ]
     },
     {
@@ -7922,6 +8957,16 @@
         "zoids:geno_hydra_ka:weapon:diffused_charged_particle_cannon",
         "zoids:geno_hydra_ka:weapon:tail_claw",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:geno_hydra_ka:weapon:plasma_cannon",
+        "zoids:geno_hydra_ka:weapon:diffused_charged_particle_cannon",
+        "zoids:geno_hydra_ka:weapon:tail_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:geno_hydra_ka",
+      "legacy_names": [
+        "Geno Hydra KA"
       ]
     },
     {
@@ -8052,18 +9097,28 @@
         "zoids:dark_spiner:weapon:double_cannon",
         "zoids:dark_spiner:weapon:jamming_blade",
         "zoids:dark_spiner:weapon:electro_magnetic_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:dark_spiner:weapon:114mm_machine_gun",
+        "zoids:dark_spiner:weapon:double_cannon",
+        "zoids:dark_spiner:weapon:jamming_blade",
+        "zoids:dark_spiner:weapon:electro_magnetic_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:dark_spiner",
+      "legacy_names": [
+        "Dark Spiner"
       ]
     },
     {
       "id": "zoids:killer_spiner",
-      "name": "Killer Spiner",
+      "name": "Killer Spiner (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 67
       },
       "fields": {
-        "name": "Killer Spiner",
+        "name": "Killer Spiner (CAU)",
         "base_zoid": "Dark Spiner",
         "type": "Dinosaur, Land",
         "size": "Large",
@@ -8166,12 +9221,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:killer_spiner",
+      "ownership_base_id": "zoids:dark_spiner",
       "fixed_weapon_ids": [
         "zoids:killer_spiner:weapon:laser_cannon",
         "zoids:killer_spiner:weapon:pulse_laser_cannon",
         null,
         "zoids:killer_spiner:weapon:giant_crab"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:killer_spiner:weapon:laser_cannon",
+        "zoids:killer_spiner:weapon:pulse_laser_cannon",
+        null,
+        "zoids:killer_spiner:weapon:giant_crab"
+      ],
+      "legacy_ownership_base_id": "zoids:killer_spiner",
+      "legacy_names": [
+        "Killer Spiner"
       ]
     },
     {
@@ -8297,6 +9362,16 @@
         "zoids:gun_sniper:weapon:8_missile_pod",
         "zoids:gun_sniper:weapon:sniper_rifle",
         "zoids:gun_sniper:weapon:anchro_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gun_sniper:weapon:beam_machine_gun",
+        "zoids:gun_sniper:weapon:8_missile_pod",
+        "zoids:gun_sniper:weapon:sniper_rifle",
+        "zoids:gun_sniper:weapon:anchro_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:gun_sniper",
+      "legacy_names": [
+        "Gun Sniper"
       ]
     },
     {
@@ -8417,18 +9492,28 @@
         "zoids:gun_sniper_weasel:weapon:8_missile_pod",
         "zoids:gun_sniper_weasel:weapon:multi_beam_gun",
         "zoids:gun_sniper_weasel:weapon:anchor_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gun_sniper_weasel:weapon:beam_machine_gun",
+        "zoids:gun_sniper_weasel:weapon:8_missile_pod",
+        "zoids:gun_sniper_weasel:weapon:multi_beam_gun",
+        "zoids:gun_sniper_weasel:weapon:anchor_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:gun_sniper_weasel",
+      "legacy_names": [
+        "Gun Sniper Weasel"
       ]
     },
     {
       "id": "zoids:gun_sniper_ls",
-      "name": "Gun sniper LS",
+      "name": "Gun Sniper LS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 70
       },
       "fields": {
-        "name": "Gun sniper LS",
+        "name": "Gun Sniper LS (CAU)",
         "base_zoid": "Gun Sniper Weasel",
         "type": "Raptor",
         "size": "Small",
@@ -8531,24 +9616,35 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:gun_sniper_ls",
+      "ownership_base_id": "zoids:gun_sniper_weasel",
       "fixed_weapon_ids": [
         "zoids:gun_sniper_ls:weapon:missile_pod",
         "zoids:gun_sniper_ls:weapon:beam_gatling",
         "zoids:gun_sniper_ls:weapon:full_burst",
+        "zoids:gun_sniper_weasel:weapon:anchor_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gun_sniper_ls:weapon:missile_pod",
+        "zoids:gun_sniper_ls:weapon:beam_gatling",
+        "zoids:gun_sniper_ls:weapon:full_burst",
         "zoids:gun_sniper_ls:weapon:anchor_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:gun_sniper_ls",
+      "legacy_names": [
+        "Gun sniper LS",
+        "Gun Sniper LS"
       ]
     },
     {
       "id": "zoids:gun_sniper_ns",
-      "name": "Gun Sniper NS",
+      "name": "Gun Sniper NS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 71
       },
       "fields": {
-        "name": "Gun Sniper NS",
+        "name": "Gun Sniper NS (CAU)",
         "base_zoid": "Gun Sniper Weasel",
         "type": "Raptor",
         "size": "Small",
@@ -8656,12 +9752,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:gun_sniper_ns",
+      "ownership_base_id": "zoids:gun_sniper",
       "fixed_weapon_ids": [
+        "zoids:gun_sniper:weapon:beam_machine_gun",
+        "zoids:gun_sniper:weapon:8_missile_pod",
+        "zoids:gun_sniper:weapon:sniper_rifle",
+        "zoids:gun_sniper_ns:weapon:anchor_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:gun_sniper_ns:weapon:beam_machine_gun",
         "zoids:gun_sniper_ns:weapon:8_missile_pod",
         "zoids:gun_sniper_ns:weapon:sniper_rifle",
         "zoids:gun_sniper_ns:weapon:anchor_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:gun_sniper_ns",
+      "legacy_names": [
+        "Gun Sniper NS"
       ]
     },
     {
@@ -8782,18 +9888,28 @@
         "zoids:snipe_master:weapon:sniper_rifle",
         "zoids:snipe_master:weapon:bite_fang",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:snipe_master:weapon:zan_smasher",
+        "zoids:snipe_master:weapon:sniper_rifle",
+        "zoids:snipe_master:weapon:bite_fang",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:snipe_master",
+      "legacy_names": [
+        "Snipe Master"
       ]
     },
     {
       "id": "zoids:snipe_master_fb",
-      "name": "Snipe Master FB",
+      "name": "Snipe Master FB (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 73
       },
       "fields": {
-        "name": "Snipe Master FB",
+        "name": "Snipe Master FB (CAU)",
         "base_zoid": "Snipe Master",
         "type": "Raptor",
         "size": "Small",
@@ -8896,24 +10012,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:snipe_master_fb",
+      "ownership_base_id": "zoids:snipe_master",
       "fixed_weapon_ids": [
+        "zoids:snipe_master_fb:weapon:long_range_rifle",
+        "zoids:snipe_master:weapon:sniper_rifle",
+        null,
+        "zoids:snipe_master:weapon:bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:snipe_master_fb:weapon:long_range_rifle",
         "zoids:snipe_master_fb:weapon:sniper_rifle",
         null,
         "zoids:snipe_master_fb:weapon:bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:snipe_master_fb",
+      "legacy_names": [
+        "Snipe Master FB"
       ]
     },
     {
       "id": "zoids:snipe_master_as",
-      "name": "Snipe Master AS",
+      "name": "Snipe Master AS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 74
       },
       "fields": {
-        "name": "Snipe Master AS",
+        "name": "Snipe Master AS (CAU)",
         "base_zoid": "Snipe Master",
         "type": "Raptor",
         "size": "Small",
@@ -9021,12 +10147,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:snipe_master_as",
+      "ownership_base_id": "zoids:snipe_master",
       "fixed_weapon_ids": [
+        "zoids:snipe_master_as:weapon:strike_tonfa",
+        "zoids:snipe_master:weapon:sniper_rifle",
+        "zoids:snipe_master_as:weapon:beam_cannon",
+        "zoids:snipe_master:weapon:bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:snipe_master_as:weapon:strike_tonfa",
         "zoids:snipe_master_as:weapon:sniper_rifle",
         "zoids:snipe_master_as:weapon:beam_cannon",
         "zoids:snipe_master_as:weapon:bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:snipe_master_as",
+      "legacy_names": [
+        "Snipe Master AS"
       ]
     },
     {
@@ -9147,18 +10283,28 @@
         "zoids:rev_raptor:weapon:hyper_claw",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:rev_raptor:weapon:counter_scythe",
+        "zoids:rev_raptor:weapon:hyper_claw",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:rev_raptor",
+      "legacy_names": [
+        "Rev Raptor"
       ]
     },
     {
       "id": "zoids:rev_raptor_pile_bunker",
-      "name": "Rev Raptor Pile Bunker",
+      "name": "Rev Raptor Pilebunker (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 76
       },
       "fields": {
-        "name": "Rev Raptor Pile Bunker",
+        "name": "Rev Raptor Pilebunker (CAU)",
         "base_zoid": "Rev Raptor",
         "type": "Raptor",
         "size": "Small",
@@ -9261,24 +10407,35 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:rev_raptor_pile_bunker",
+      "ownership_base_id": "zoids:rev_raptor",
       "fixed_weapon_ids": [
+        "zoids:rev_raptor:weapon:counter_scythe",
+        "zoids:rev_raptor_pile_bunker:weapon:pile_bunker",
+        "zoids:rev_raptor:weapon:hyper_claw",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:rev_raptor_pile_bunker:weapon:counter_scythe",
         "zoids:rev_raptor_pile_bunker:weapon:pile_bunker",
         "zoids:rev_raptor_pile_bunker:weapon:hyper_claw",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:rev_raptor_pile_bunker",
+      "legacy_names": [
+        "Rev Raptor Pile Bunker",
+        "Rev Raptor Pilebunker"
       ]
     },
     {
       "id": "zoids:rev_hunter",
-      "name": "Rev Hunter",
+      "name": "Rev Hunter (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 77
       },
       "fields": {
-        "name": "Rev Hunter",
+        "name": "Rev Hunter (CAU)",
         "base_zoid": "Rev Raptor",
         "type": "Raptor",
         "size": "Small",
@@ -9369,12 +10526,22 @@
         "column_83": null
       },
       "dynamic_fields": {},
-      "ownership_base_id": "zoids:rev_hunter",
+      "ownership_base_id": "zoids:rev_raptor",
       "fixed_weapon_ids": [
+        "zoids:rev_hunter:weapon:killer_lance",
+        "zoids:rev_raptor:weapon:hyper_claw",
+        null,
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:rev_hunter:weapon:killer_lance",
         "zoids:rev_hunter:weapon:hyper_claw",
         null,
         null
+      ],
+      "legacy_ownership_base_id": "zoids:rev_hunter",
+      "legacy_names": [
+        "Rev Hunter"
       ]
     },
     {
@@ -9490,6 +10657,16 @@
         null,
         "zoids:hellrunner:weapon:go_for_broke",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:hellrunner:weapon:small_guided_missile",
+        null,
+        "zoids:hellrunner:weapon:go_for_broke",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:hellrunner",
+      "legacy_names": [
+        "Hellrunner"
       ]
     },
     {
@@ -9504,7 +10681,7 @@
         "name": "Ultra Saurus",
         "base_zoid": null,
         "type": "Dinosaur, Land",
-        "size": "Extra Lare",
+        "size": "Extra Large",
         "required_level": 28,
         "health": 1300,
         "armor": 28,
@@ -9598,6 +10775,16 @@
         "zoids:ultra_saurus:weapon:linear_cannon",
         "zoids:ultra_saurus:weapon:hyper_fang",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:ultra_saurus:weapon:8_shot_missile_pod",
+        "zoids:ultra_saurus:weapon:linear_cannon",
+        "zoids:ultra_saurus:weapon:hyper_fang",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:ultra_saurus",
+      "legacy_names": [
+        "Ultra Saurus"
       ]
     },
     {
@@ -9710,6 +10897,16 @@
         "zoids:ultra_phalanx:weapon:3_shot_mortar",
         "zoids:ultra_phalanx:weapon:chest_mortar",
         "zoids:ultra_phalanx:weapon:hyper_bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:ultra_phalanx:weapon:8_shot_missile_pod",
+        "zoids:ultra_phalanx:weapon:3_shot_mortar",
+        "zoids:ultra_phalanx:weapon:chest_mortar",
+        "zoids:ultra_phalanx:weapon:hyper_bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:ultra_phalanx",
+      "legacy_names": [
+        "Ultra Phalanx"
       ]
     },
     {
@@ -9830,6 +11027,16 @@
         "zoids:gordos:weapon:railgun",
         null,
         "zoids:gordos:weapon:hyper_bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gordos:weapon:beam_gun",
+        "zoids:gordos:weapon:railgun",
+        null,
+        "zoids:gordos:weapon:hyper_bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:gordos",
+      "legacy_names": [
+        "Gordos"
       ]
     },
     {
@@ -9950,6 +11157,16 @@
         "zoids:gorhecks:weapon:2_missile",
         null,
         "zoids:gorhecks:weapon:go_for_broke"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gorhecks:weapon:double_beam_cannon",
+        "zoids:gorhecks:weapon:2_missile",
+        null,
+        "zoids:gorhecks:weapon:go_for_broke"
+      ],
+      "legacy_ownership_base_id": "zoids:gorhecks",
+      "legacy_names": [
+        "Gorhecks"
       ]
     },
     {
@@ -10058,6 +11275,16 @@
         "zoids:gordos_lr:weapon:long_range_cannon",
         null,
         "zoids:gordos_lr:weapon:hyper_bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gordos_lr:weapon:4_barrel_shock_cannon",
+        "zoids:gordos_lr:weapon:long_range_cannon",
+        null,
+        "zoids:gordos_lr:weapon:hyper_bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:gordos_lr",
+      "legacy_names": [
+        "Gordos LR"
       ]
     },
     {
@@ -10173,18 +11400,28 @@
         "zoids:red_horn:weapon:missile_pod",
         "zoids:red_horn:weapon:anti_air_beam_cannon",
         "zoids:red_horn:weapon:crusher_horn"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:red_horn:weapon:3_barrel_linear_cannon",
+        "zoids:red_horn:weapon:missile_pod",
+        "zoids:red_horn:weapon:anti_air_beam_cannon",
+        "zoids:red_horn:weapon:crusher_horn"
+      ],
+      "legacy_ownership_base_id": "zoids:red_horn",
+      "legacy_names": [
+        "Red Horn"
       ]
     },
     {
       "id": "zoids:red_horn_bg",
-      "name": "Red Horn BG",
+      "name": "Red Horn BG (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 85
       },
       "fields": {
-        "name": "Red Horn BG",
+        "name": "Red Horn BG (CAU)",
         "base_zoid": "Red Horn",
         "type": "Dinosaur, Land",
         "size": "Large",
@@ -10287,12 +11524,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:red_horn_bg",
+      "ownership_base_id": "zoids:red_horn",
       "fixed_weapon_ids": [
+        "zoids:red_horn:weapon:3_barrel_linear_cannon",
+        "zoids:red_horn:weapon:missile_pod",
+        "zoids:red_horn_bg:weapon:energy_gatling",
+        "zoids:red_horn:weapon:crusher_horn"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:red_horn_bg:weapon:3_barrel_linear_cannon",
         "zoids:red_horn_bg:weapon:missile_pod",
         "zoids:red_horn_bg:weapon:energy_gatling",
         "zoids:red_horn_bg:weapon:crusher_horn"
+      ],
+      "legacy_ownership_base_id": "zoids:red_horn_bg",
+      "legacy_names": [
+        "Red Horn BG"
       ]
     },
     {
@@ -10304,7 +11551,7 @@
         "row": 86
       },
       "fields": {
-        "name": "Dark Horn ",
+        "name": "Dark Horn",
         "base_zoid": "Red Horn",
         "type": "Dinosaur, Land",
         "size": "Large",
@@ -10413,18 +11660,28 @@
         "zoids:dark_horn:weapon:missile_pod",
         "zoids:dark_horn:weapon:energy_gatling",
         "zoids:dark_horn:weapon:crusher_horn"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:dark_horn:weapon:3_barrel_linear_cannon",
+        "zoids:dark_horn:weapon:missile_pod",
+        "zoids:dark_horn:weapon:energy_gatling",
+        "zoids:dark_horn:weapon:crusher_horn"
+      ],
+      "legacy_ownership_base_id": "zoids:dark_horn",
+      "legacy_names": [
+        "Dark Horn"
       ]
     },
     {
       "id": "zoids:dark_horn_hs",
-      "name": "Dark Horn HS",
+      "name": "Dark Horn HS (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 87
       },
       "fields": {
-        "name": "Dark Horn HS",
+        "name": "Dark Horn HS (CAU)",
         "base_zoid": "Dark Horn",
         "type": "Dinosaur, Land",
         "size": "Large",
@@ -10532,12 +11789,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:dark_horn_hs",
+      "ownership_base_id": "zoids:dark_horn",
       "fixed_weapon_ids": [
+        "zoids:dark_horn:weapon:3_barrel_linear_cannon",
+        "zoids:dark_horn_hs:weapon:hybrid_vulcan",
+        "zoids:dark_horn_hs:weapon:beam_cannon",
+        "zoids:dark_horn:weapon:crusher_horn"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:dark_horn_hs:weapon:3_barrel_linear_cannon",
         "zoids:dark_horn_hs:weapon:hybrid_vulcan",
         "zoids:dark_horn_hs:weapon:beam_cannon",
         "zoids:dark_horn_hs:weapon:crusher_horn"
+      ],
+      "legacy_ownership_base_id": "zoids:dark_horn_hs",
+      "legacy_names": [
+        "Dark Horn HS"
       ]
     },
     {
@@ -10653,6 +11920,16 @@
         "zoids:mad_thunder:weapon:double_shock_cannon",
         "zoids:mad_thunder:weapon:magnezer_drill",
         "zoids:mad_thunder:weapon:thunder_horn"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:mad_thunder:weapon:beam_cannon",
+        "zoids:mad_thunder:weapon:double_shock_cannon",
+        "zoids:mad_thunder:weapon:magnezer_drill",
+        "zoids:mad_thunder:weapon:thunder_horn"
+      ],
+      "legacy_ownership_base_id": "zoids:mad_thunder",
+      "legacy_names": [
+        "Mad Thunder"
       ]
     },
     {
@@ -10768,6 +12045,16 @@
         null,
         null,
         "zoids:gun_blaster:weapon:electromagnetic_bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gun_blaster:weapon:rolling_cannon",
+        null,
+        null,
+        "zoids:gun_blaster:weapon:electromagnetic_bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:gun_blaster",
+      "legacy_names": [
+        "Gun Blaster"
       ]
     },
     {
@@ -10883,6 +12170,16 @@
         "zoids:brachios:weapon:bite_fang",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:brachios:weapon:linear_laser",
+        "zoids:brachios:weapon:bite_fang",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:brachios",
+      "legacy_names": [
+        "Brachios"
       ]
     },
     {
@@ -11003,6 +12300,16 @@
         "zoids:gilvader:weapon:beam_smasher",
         "zoids:gilvader:weapon:gravity_gun",
         "zoids:gilvader:weapon:rear_cutting_wing"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gilvader:weapon:plasma_particle_cannon",
+        "zoids:gilvader:weapon:beam_smasher",
+        "zoids:gilvader:weapon:gravity_gun",
+        "zoids:gilvader:weapon:rear_cutting_wing"
+      ],
+      "legacy_ownership_base_id": "zoids:gilvader",
+      "legacy_names": [
+        "Gilvader"
       ]
     },
     {
@@ -11118,6 +12425,16 @@
         "zoids:gojulas:weapon:beam_gun",
         "zoids:gojulas:weapon:hyper_fang",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gojulas:weapon:crusher_claw",
+        "zoids:gojulas:weapon:beam_gun",
+        "zoids:gojulas:weapon:hyper_fang",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:gojulas",
+      "legacy_names": [
+        "Gojulas"
       ]
     },
     {
@@ -11226,18 +12543,28 @@
         "zoids:gojulas_the_ogre:weapon:4_barrel_shock_cannon",
         "zoids:gojulas_the_ogre:weapon:buster_cannon",
         "zoids:gojulas_the_ogre:weapon:hyper_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gojulas_the_ogre:weapon:crusher_claw",
+        "zoids:gojulas_the_ogre:weapon:4_barrel_shock_cannon",
+        "zoids:gojulas_the_ogre:weapon:buster_cannon",
+        "zoids:gojulas_the_ogre:weapon:hyper_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:gojulas_the_ogre",
+      "legacy_names": [
+        "Gojulas the Ogre"
       ]
     },
     {
       "id": "zoids:gojulas_gunner",
-      "name": "Gojulas Gunner",
+      "name": "Gojulas Gunner (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 94
       },
       "fields": {
-        "name": "Gojulas Gunner",
+        "name": "Gojulas Gunner (CAU)",
         "base_zoid": "Gojulas",
         "type": "T-Rex",
         "size": "Large Large",
@@ -11328,12 +12655,22 @@
         "column_83": null
       },
       "dynamic_fields": {},
-      "ownership_base_id": "zoids:gojulas_gunner",
+      "ownership_base_id": "zoids:gojulas",
       "fixed_weapon_ids": [
+        "zoids:gojulas:weapon:crusher_claw",
+        "zoids:gojulas_gunner:weapon:4_barrel_shock_cannon",
+        "zoids:gojulas_gunner:weapon:long_range_cannon",
+        "zoids:gojulas:weapon:hyper_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:gojulas_gunner:weapon:crusher_claw",
         "zoids:gojulas_gunner:weapon:4_barrel_shock_cannon",
         "zoids:gojulas_gunner:weapon:long_range_cannon",
         "zoids:gojulas_gunner:weapon:hyper_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:gojulas_gunner",
+      "legacy_names": [
+        "Gojulas Gunner"
       ]
     },
     {
@@ -11449,18 +12786,28 @@
         "zoids:gojulas_giga:weapon:crusher_tail",
         null,
         "zoids:gojulas_giga:weapon:crusher_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gojulas_giga:weapon:hyper_press_manipulator",
+        "zoids:gojulas_giga:weapon:crusher_tail",
+        null,
+        "zoids:gojulas_giga:weapon:crusher_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:gojulas_giga",
+      "legacy_names": [
+        "Gojulas Giga"
       ]
     },
     {
       "id": "zoids:gojulas_giga_cannon",
-      "name": "Gojulas Giga Cannon",
+      "name": "Gojulas Giga Cannon (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 96
       },
       "fields": {
-        "name": "Gojulas Giga Cannon",
+        "name": "Gojulas Giga Cannon (CAU)",
         "base_zoid": "Gojulas Giga",
         "type": "T-Rex",
         "size": "Large Large",
@@ -11558,12 +12905,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:gojulas_giga_cannon",
+      "ownership_base_id": "zoids:gojulas_giga",
       "fixed_weapon_ids": [
+        "zoids:gojulas_giga:weapon:hyper_press_manipulator",
+        "zoids:gojulas_giga:weapon:crusher_tail",
+        "zoids:gojulas_giga_cannon:weapon:buster_cannon",
+        "zoids:gojulas_giga:weapon:crusher_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:gojulas_giga_cannon:weapon:hyper_press_manipulator",
         "zoids:gojulas_giga_cannon:weapon:crusher_tail",
         "zoids:gojulas_giga_cannon:weapon:buster_cannon",
         "zoids:gojulas_giga_cannon:weapon:crusher_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:gojulas_giga_cannon",
+      "legacy_names": [
+        "Gojulas Giga Cannon"
       ]
     },
     {
@@ -11684,6 +13041,16 @@
         "zoids:king_gojulas:weapon:big_claw",
         "zoids:king_gojulas:weapon:crusher_tail",
         "zoids:king_gojulas:weapon:blade_horn"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:king_gojulas:weapon:super_gatling",
+        "zoids:king_gojulas:weapon:big_claw",
+        "zoids:king_gojulas:weapon:crusher_tail",
+        "zoids:king_gojulas:weapon:blade_horn"
+      ],
+      "legacy_ownership_base_id": "zoids:king_gojulas",
+      "legacy_names": [
+        "King Gojulas"
       ]
     },
     {
@@ -11695,7 +13062,7 @@
         "row": 98
       },
       "fields": {
-        "name": "Death Saurer ",
+        "name": "Death Saurer",
         "base_zoid": null,
         "type": "T-Rex",
         "size": "Extra Large",
@@ -11804,6 +13171,16 @@
         "zoids:death_saurer:weapon:beam_gun",
         "zoids:death_saurer:weapon:smash_tail",
         "zoids:death_saurer:weapon:bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:death_saurer:weapon:large_particle_cannon",
+        "zoids:death_saurer:weapon:beam_gun",
+        "zoids:death_saurer:weapon:smash_tail",
+        "zoids:death_saurer:weapon:bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:death_saurer",
+      "legacy_names": [
+        "Death Saurer"
       ]
     },
     {
@@ -11815,7 +13192,7 @@
         "row": 99
       },
       "fields": {
-        "name": "Bloody Demon ",
+        "name": "Bloody Demon",
         "base_zoid": null,
         "type": "T-Rex",
         "size": "Extra Large",
@@ -11924,6 +13301,16 @@
         "zoids:bloody_demon:weapon:large_gatling_gun",
         "zoids:bloody_demon:weapon:smash_tail",
         "zoids:bloody_demon:weapon:bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:bloody_demon:weapon:large_particle_cannon",
+        "zoids:bloody_demon:weapon:large_gatling_gun",
+        "zoids:bloody_demon:weapon:smash_tail",
+        "zoids:bloody_demon:weapon:bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:bloody_demon",
+      "legacy_names": [
+        "Bloody Demon"
       ]
     },
     {
@@ -12049,6 +13436,16 @@
         "zoids:death_meteor:weapon:death_claw",
         "zoids:death_meteor:weapon:smash_tail",
         "zoids:death_meteor:weapon:killer_bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:death_meteor:weapon:large_beam_cannon",
+        "zoids:death_meteor:weapon:death_claw",
+        "zoids:death_meteor:weapon:smash_tail",
+        "zoids:death_meteor:weapon:killer_bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:death_meteor",
+      "legacy_names": [
+        "Death Meteor"
       ]
     },
     {
@@ -12164,6 +13561,16 @@
         "zoids:godos:weapon:crusher_claw",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:godos:weapon:small_beam_cannon",
+        "zoids:godos:weapon:crusher_claw",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:godos",
+      "legacy_names": [
+        "Godos"
       ]
     },
     {
@@ -12284,6 +13691,16 @@
         "zoids:allosaurer:weapon:electric_claw",
         "zoids:allosaurer:weapon:energy_bite_fang",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:allosaurer:weapon:double_beam_cannon",
+        "zoids:allosaurer:weapon:electric_claw",
+        "zoids:allosaurer:weapon:energy_bite_fang",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:allosaurer",
+      "legacy_names": [
+        "Allosaurer"
       ]
     },
     {
@@ -12399,6 +13816,16 @@
         null,
         "zoids:iguan:weapon:crusher_vice",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:iguan:weapon:impact_gun",
+        null,
+        "zoids:iguan:weapon:crusher_vice",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:iguan",
+      "legacy_names": [
+        "Iguan"
       ]
     },
     {
@@ -12514,6 +13941,16 @@
         "zoids:death_stinger:weapon:charged_particle_gun",
         "zoids:death_stinger:weapon:hyper_laser_gun",
         "zoids:death_stinger:weapon:sb_scissors"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:death_stinger:weapon:shock_gun",
+        "zoids:death_stinger:weapon:charged_particle_gun",
+        "zoids:death_stinger:weapon:hyper_laser_gun",
+        "zoids:death_stinger:weapon:sb_scissors"
+      ],
+      "legacy_ownership_base_id": "zoids:death_stinger",
+      "legacy_names": [
+        "Death Stinger"
       ]
     },
     {
@@ -12629,6 +14066,16 @@
         "zoids:jagged_stinger:weapon:double_charged_particle_gun",
         "zoids:jagged_stinger:weapon:beam_gun",
         "zoids:jagged_stinger:weapon:strike_laser_bite_scissors"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:jagged_stinger:weapon:shock_gun",
+        "zoids:jagged_stinger:weapon:double_charged_particle_gun",
+        "zoids:jagged_stinger:weapon:beam_gun",
+        "zoids:jagged_stinger:weapon:strike_laser_bite_scissors"
+      ],
+      "legacy_ownership_base_id": "zoids:jagged_stinger",
+      "legacy_names": [
+        "Jagged Stinger"
       ]
     },
     {
@@ -12744,18 +14191,28 @@
         null,
         "zoids:guysack:weapon:laser_claw",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:guysack:weapon:beam_rifle",
+        null,
+        "zoids:guysack:weapon:laser_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:guysack",
+      "legacy_names": [
+        "Guysack"
       ]
     },
     {
       "id": "zoids:guysack_stinger",
-      "name": "Guysack Stinger",
+      "name": "Guysack Stinger (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 126
       },
       "fields": {
-        "name": "Guysack Stinger",
+        "name": "Guysack Stinger (CAU)",
         "base_zoid": "Guysack",
         "type": "Insect",
         "size": "Small",
@@ -12858,12 +14315,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:guysack_stinger",
+      "ownership_base_id": "zoids:guysack",
       "fixed_weapon_ids": [
+        "zoids:guysack_stinger:weapon:beam_gun",
+        "zoids:guysack_stinger:weapon:paralyzing_mist",
+        "zoids:guysack:weapon:laser_claw",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:guysack_stinger:weapon:beam_gun",
         "zoids:guysack_stinger:weapon:paralyzing_mist",
         "zoids:guysack_stinger:weapon:laser_claw",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:guysack_stinger",
+      "legacy_names": [
+        "Guysack Stinger"
       ]
     },
     {
@@ -12984,18 +14451,28 @@
         "zoids:molga:weapon:go_for_broke",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:molga:weapon:gatling",
+        "zoids:molga:weapon:go_for_broke",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:molga",
+      "legacy_names": [
+        "Molga"
       ]
     },
     {
       "id": "zoids:molga_cannonry",
-      "name": "Molga Cannonry",
+      "name": "Cannonry Molga (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 128
       },
       "fields": {
-        "name": "Molga Cannonry",
+        "name": "Cannonry Molga (CAU)",
         "base_zoid": "Molga",
         "type": "Insect",
         "size": "Small",
@@ -13103,12 +14580,23 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:molga_cannonry",
+      "ownership_base_id": "zoids:molga",
       "fixed_weapon_ids": [
+        "zoids:molga:weapon:gatling",
+        "zoids:molga_cannonry:weapon:cannon_unit",
+        "zoids:molga:weapon:go_for_broke",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:molga_cannonry:weapon:gatling",
         "zoids:molga_cannonry:weapon:cannon_unit",
         "zoids:molga_cannonry:weapon:go_for_broke",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:molga_cannonry",
+      "legacy_names": [
+        "Molga Cannonry",
+        "Cannonry Molga"
       ]
     },
     {
@@ -13224,6 +14712,16 @@
         "zoids:dark_poison:weapon:go_4_broke",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:dark_poison:weapon:strategic_missile",
+        "zoids:dark_poison:weapon:go_4_broke",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:dark_poison",
+      "legacy_names": [
+        "Dark Poison"
       ]
     },
     {
@@ -13235,7 +14733,7 @@
         "row": 130
       },
       "fields": {
-        "name": "Saicurtis ",
+        "name": "Saicurtis",
         "base_zoid": null,
         "type": "Insect",
         "size": "Small",
@@ -13349,6 +14847,16 @@
         "zoids:saicurtis:weapon:small_beam_cannon",
         "zoids:saicurtis:weapon:go_4_broke",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:saicurtis:weapon:2_barrel_beam_cannon",
+        "zoids:saicurtis:weapon:small_beam_cannon",
+        "zoids:saicurtis:weapon:go_4_broke",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:saicurtis",
+      "legacy_names": [
+        "Saicurtis"
       ]
     },
     {
@@ -13474,6 +14982,16 @@
         "zoids:double_sworder:weapon:2_barrel_beam_cannon",
         "zoids:double_sworder:weapon:break_sword",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:double_sworder:weapon:4_barrel_machine_gun",
+        "zoids:double_sworder:weapon:2_barrel_beam_cannon",
+        "zoids:double_sworder:weapon:break_sword",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:double_sworder",
+      "legacy_names": [
+        "Double Sworder"
       ]
     },
     {
@@ -13599,6 +15117,16 @@
         "zoids:killer_dome:weapon:pulse_laser_cannon",
         null,
         "zoids:killer_dome:weapon:giant_crab"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:killer_dome:weapon:laser_cannon",
+        "zoids:killer_dome:weapon:pulse_laser_cannon",
+        null,
+        "zoids:killer_dome:weapon:giant_crab"
+      ],
+      "legacy_ownership_base_id": "zoids:killer_dome",
+      "legacy_names": [
+        "Killer Dome"
       ]
     },
     {
@@ -13610,7 +15138,7 @@
         "row": 133
       },
       "fields": {
-        "name": "Cannon Tortoise ",
+        "name": "Cannon Tortoise",
         "base_zoid": null,
         "type": "Reptile",
         "size": "Small",
@@ -13714,18 +15242,28 @@
         "zoids:cannon_tortoise:weapon:go_4_broke",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:cannon_tortoise:weapon:liquid_cooled_particle_cannon",
+        "zoids:cannon_tortoise:weapon:go_4_broke",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:cannon_tortoise",
+      "legacy_names": [
+        "Cannon Tortoise"
       ]
     },
     {
       "id": "zoids:cannon_tortoise_bc",
-      "name": "Cannon Tortoise BC",
+      "name": "Cannon Tortoise BC (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 134
       },
       "fields": {
-        "name": "Cannon Tortoise BC",
+        "name": "Cannon Tortoise BC (CAU)",
         "base_zoid": "Cannon Tortoise",
         "type": "Reptile",
         "size": "Small",
@@ -13828,12 +15366,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:cannon_tortoise_bc",
+      "ownership_base_id": "zoids:cannon_tortoise",
       "fixed_weapon_ids": [
+        "zoids:cannon_tortoise:weapon:liquid_cooled_particle_cannon",
+        "zoids:cannon_tortoise_bc:weapon:large_beam_cannon",
+        "zoids:cannon_tortoise:weapon:go_4_broke",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:cannon_tortoise_bc:weapon:liquid_cooled_particle_cannon",
         "zoids:cannon_tortoise_bc:weapon:large_beam_cannon",
         "zoids:cannon_tortoise_bc:weapon:go_4_broke",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:cannon_tortoise_bc",
+      "legacy_names": [
+        "Cannon Tortoise BC"
       ]
     },
     {
@@ -13954,6 +15502,16 @@
         null,
         "zoids:gator:weapon:go_4_broke",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gator:weapon:small_beam_cannon",
+        null,
+        "zoids:gator:weapon:go_4_broke",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:gator",
+      "legacy_names": [
+        "Gator"
       ]
     },
     {
@@ -14062,6 +15620,16 @@
         "zoids:barigator:weapon:bite_fang",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:barigator:weapon:missile_pod",
+        "zoids:barigator:weapon:bite_fang",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:barigator",
+      "legacy_names": [
+        "Barigator"
       ]
     },
     {
@@ -14192,6 +15760,16 @@
         "zoids:stealth_viper:weapon:heavy_machine_gun",
         "zoids:stealth_viper:weapon:small_laser_machine_gun",
         "zoids:stealth_viper:weapon:go_for_broke"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:stealth_viper:weapon:vulcan",
+        "zoids:stealth_viper:weapon:heavy_machine_gun",
+        "zoids:stealth_viper:weapon:small_laser_machine_gun",
+        "zoids:stealth_viper:weapon:go_for_broke"
+      ],
+      "legacy_ownership_base_id": "zoids:stealth_viper",
+      "legacy_names": [
+        "Stealth Viper"
       ]
     },
     {
@@ -14312,18 +15890,28 @@
         "zoids:hammer_head:weapon:hyper_beam_cannon",
         "zoids:hammer_head:weapon:missile_pod",
         "zoids:hammer_head:weapon:go_for_broke"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:hammer_head:weapon:hyper_shock_gun",
+        "zoids:hammer_head:weapon:hyper_beam_cannon",
+        "zoids:hammer_head:weapon:missile_pod",
+        "zoids:hammer_head:weapon:go_for_broke"
+      ],
+      "legacy_ownership_base_id": "zoids:hammer_head",
+      "legacy_names": [
+        "Hammer Head"
       ]
     },
     {
       "id": "zoids:hammer_head_vl",
-      "name": "Hammer Head VL",
+      "name": "Hammer Head VL (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 139
       },
       "fields": {
-        "name": "Hammer Head VL",
+        "name": "Hammer Head VL (CAU)",
         "base_zoid": "Hammer Head",
         "type": "Reptile",
         "size": "Medium",
@@ -14421,12 +16009,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:hammer_head_vl",
+      "ownership_base_id": "zoids:hammer_head",
       "fixed_weapon_ids": [
+        "zoids:hammer_head:weapon:hyper_shock_gun",
+        null,
+        "zoids:hammer_head_vl:weapon:lance_attack",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:hammer_head_vl:weapon:hyper_shock_gun",
         null,
         "zoids:hammer_head_vl:weapon:lance_attack",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:hammer_head_vl",
+      "legacy_names": [
+        "Hammer Head VL"
       ]
     },
     {
@@ -14547,6 +16145,16 @@
         "zoids:wardick:weapon:missile_launcher",
         "zoids:wardick:weapon:sound_wave_cannon",
         "zoids:wardick:weapon:go_for_broke"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:wardick:weapon:medium_bore_beam_cannon",
+        "zoids:wardick:weapon:missile_launcher",
+        "zoids:wardick:weapon:sound_wave_cannon",
+        "zoids:wardick:weapon:go_for_broke"
+      ],
+      "legacy_ownership_base_id": "zoids:wardick",
+      "legacy_names": [
+        "Wardick"
       ]
     },
     {
@@ -14667,6 +16275,16 @@
         "zoids:sea_striker:weapon:go_for_broke",
         "zoids:sea_striker:weapon:accelerated_beam_cannon",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:sea_striker:weapon:homing_torpedo",
+        "zoids:sea_striker:weapon:go_for_broke",
+        "zoids:sea_striker:weapon:accelerated_beam_cannon",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:sea_striker",
+      "legacy_names": [
+        "Sea Striker"
       ]
     },
     {
@@ -14787,18 +16405,28 @@
         "zoids:redler:weapon:laser_blade",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:redler:weapon:strike_claw",
+        "zoids:redler:weapon:laser_blade",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:redler",
+      "legacy_names": [
+        "Redler"
       ]
     },
     {
       "id": "zoids:redler_boostc",
-      "name": "Redler BoostC",
+      "name": "Redler BC (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 143
       },
       "fields": {
-        "name": "Redler BoostC",
+        "name": "Redler BC (CAU)",
         "base_zoid": "Redler",
         "type": "Dinosaur, Flying",
         "size": "Medium",
@@ -14896,24 +16524,35 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:redler_boostc",
+      "ownership_base_id": "zoids:redler",
       "fixed_weapon_ids": [
+        "zoids:redler_boostc:weapon:beam_cannon",
+        null,
+        "zoids:redler:weapon:strike_claw",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:redler_boostc:weapon:beam_cannon",
         null,
         "zoids:redler_boostc:weapon:strike_claw",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:redler_boostc",
+      "legacy_names": [
+        "Redler BoostC",
+        "Redler BC"
       ]
     },
     {
       "id": "zoids:redler_interceptor",
-      "name": "Redler Interceptor",
+      "name": "Redler Interceptor (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 144
       },
       "fields": {
-        "name": "Redler Interceptor ",
+        "name": "Redler Interceptor (CAU)",
         "base_zoid": "Redler",
         "type": "Dinosaur, Flying",
         "size": "Medium",
@@ -15011,12 +16650,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:redler_interceptor",
+      "ownership_base_id": "zoids:redler",
       "fixed_weapon_ids": [
         "zoids:redler_interceptor:weapon:cannon",
         null,
         "zoids:redler_interceptor:weapon:anchor_claw",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:redler_interceptor:weapon:cannon",
+        null,
+        "zoids:redler_interceptor:weapon:anchor_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:redler_interceptor",
+      "legacy_names": [
+        "Redler Interceptor"
       ]
     },
     {
@@ -15132,6 +16781,16 @@
         "zoids:bloodler:weapon:guided_missile",
         null,
         "zoids:bloodler:weapon:laser_cutter"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:bloodler:weapon:dragon_claw",
+        "zoids:bloodler:weapon:guided_missile",
+        null,
+        "zoids:bloodler:weapon:laser_cutter"
+      ],
+      "legacy_ownership_base_id": "zoids:bloodler",
+      "legacy_names": [
+        "Bloodler"
       ]
     },
     {
@@ -15252,18 +16911,28 @@
         "zoids:pteras:weapon:2_shot_missile_pod",
         "zoids:pteras:weapon:go_4_broke",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:pteras:weapon:vulcan",
+        "zoids:pteras:weapon:2_shot_missile_pod",
+        "zoids:pteras:weapon:go_4_broke",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:pteras",
+      "legacy_names": [
+        "Pteras"
       ]
     },
     {
       "id": "zoids:pteras_bomber",
-      "name": "Pteras Bomber",
+      "name": "Pteras Bomber (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 147
       },
       "fields": {
-        "name": "Pteras Bomber",
+        "name": "Pteras Bomber (CAU)",
         "base_zoid": "Pteras",
         "type": "Dinosaur, Flying",
         "size": "Small",
@@ -15366,24 +17035,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:pteras_bomber",
+      "ownership_base_id": "zoids:pteras",
       "fixed_weapon_ids": [
+        "zoids:pteras:weapon:vulcan",
+        "zoids:pteras_bomber:weapon:2_shot_missile",
+        "zoids:pteras_bomber:weapon:air_raid_missile",
+        "zoids:pteras:weapon:go_4_broke"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:pteras_bomber:weapon:vulcan",
         "zoids:pteras_bomber:weapon:2_shot_missile",
         "zoids:pteras_bomber:weapon:air_raid_missile",
         "zoids:pteras_bomber:weapon:go_4_broke"
+      ],
+      "legacy_ownership_base_id": "zoids:pteras_bomber",
+      "legacy_names": [
+        "Pteras Bomber"
       ]
     },
     {
       "id": "zoids:pteras_radome",
-      "name": "Pteras Radome",
+      "name": "Pteras Radome (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 148
       },
       "fields": {
-        "name": "Pteras Radome",
+        "name": "Pteras Radome (CAU)",
         "base_zoid": "Pteras",
         "type": "Dinosaur, Flying",
         "size": "Small",
@@ -15486,12 +17165,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:pteras_radome",
+      "ownership_base_id": "zoids:pteras",
       "fixed_weapon_ids": [
+        "zoids:pteras:weapon:vulcan",
+        "zoids:pteras_radome:weapon:2_shot_missile",
+        null,
+        "zoids:pteras:weapon:go_4_broke"
+      ],
+      "legacy_fixed_weapon_ids": [
         "zoids:pteras_radome:weapon:vulcan",
         "zoids:pteras_radome:weapon:2_shot_missile",
         null,
         "zoids:pteras_radome:weapon:go_4_broke"
+      ],
+      "legacy_ownership_base_id": "zoids:pteras_radome",
+      "legacy_names": [
+        "Pteras Radome"
       ]
     },
     {
@@ -15612,18 +17301,28 @@
         "zoids:storm_sworder:weapon:anchor_claw",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:storm_sworder:weapon:pulse_laser",
+        "zoids:storm_sworder:weapon:anchor_claw",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:storm_sworder",
+      "legacy_names": [
+        "Storm Sworder"
       ]
     },
     {
       "id": "zoids:stormsworder_f",
-      "name": "Stormsworder F",
+      "name": "Stormsworder F (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 150
       },
       "fields": {
-        "name": "Stormsworder F",
+        "name": "Stormsworder F (CAU)",
         "base_zoid": "Storm Sworder",
         "type": "Dinosaur, Flying",
         "size": "Large",
@@ -15726,24 +17425,34 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:stormsworder_f",
+      "ownership_base_id": "zoids:storm_sworder",
       "fixed_weapon_ids": [
         "zoids:stormsworder_f:weapon:vulcan_gun",
         "zoids:stormsworder_f:weapon:iron_claws",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:stormsworder_f:weapon:vulcan_gun",
+        "zoids:stormsworder_f:weapon:iron_claws",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:stormsworder_f",
+      "legacy_names": [
+        "Stormsworder F"
       ]
     },
     {
       "id": "zoids:stormsworder_fx",
-      "name": "Stormsworder FX",
+      "name": "Stormsworder FX (CAU)",
       "kind": "record",
       "source": {
         "sheet": "Zoid List",
         "row": 151
       },
       "fields": {
-        "name": "Stormsworder FX",
+        "name": "Stormsworder FX (CAU)",
         "base_zoid": "Storm Sworder ",
         "type": "Dinosaur, Flying",
         "size": "Large",
@@ -15851,12 +17560,22 @@
           "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
         }
       },
-      "ownership_base_id": "zoids:stormsworder_fx",
+      "ownership_base_id": "zoids:storm_sworder",
       "fixed_weapon_ids": [
         "zoids:stormsworder_fx:weapon:long_range_cannon",
         "zoids:stormsworder_fx:weapon:4_beam_gun",
         null,
         "zoids:stormsworder_fx:weapon:iron_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:stormsworder_fx:weapon:long_range_cannon",
+        "zoids:stormsworder_fx:weapon:4_beam_gun",
+        null,
+        "zoids:stormsworder_fx:weapon:iron_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:stormsworder_fx",
+      "legacy_names": [
+        "Stormsworder FX"
       ]
     },
     {
@@ -15972,6 +17691,16 @@
         "zoids:zabat:weapon:hyper_claw",
         null,
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:zabat:weapon:laser_gun",
+        "zoids:zabat:weapon:hyper_claw",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:zabat",
+      "legacy_names": [
+        "Zabat"
       ]
     },
     {
@@ -16087,6 +17816,16 @@
         null,
         "zoids:raynos:weapon:strum_claw",
         null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:raynos:weapon:triple_beam_cannon",
+        null,
+        "zoids:raynos:weapon:strum_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:raynos",
+      "legacy_names": [
+        "Raynos"
       ]
     },
     {
@@ -16207,114 +17946,16 @@
         "zoids:pteramander:weapon:multi_vulcan",
         "zoids:pteramander:weapon:flame_thrower",
         null
-      ]
-    },
-    {
-      "id": "zoids:dragon_nest",
-      "name": "Dragon Nest",
-      "kind": "record",
-      "source": {
-        "sheet": "Zoid List",
-        "row": 157
-      },
-      "fields": {
-        "name": "Dragon Nest",
-        "base_zoid": null,
-        "type": "Reptile",
-        "size": "Extra Large",
-        "required_level": 16,
-        "health": 800,
-        "armor": 28,
-        "defense": 35,
-        "speed": 120,
-        "reaction": 10,
-        "range": 1500,
-        "carry_capacity": 850,
-        "weapon_1_13": "Assisting Fire:",
-        "effect_2_14": "Front mounted rocket pods. Targets a single opponent.",
-        "damage_1_15": 250,
-        "type_1_16": "Ranged, Homing, Explosive",
-        "to_hit_1_17": 13,
-        "active_passive3_18": null,
-        "weapon_2_19": null,
-        "effect_3_20": null,
-        "damage_2_21": null,
-        "type_2_22": null,
-        "to_hit_2_23": null,
-        "shield_health_24": null,
-        "speed_increase_25": null,
-        "to_hit_increase_26": null,
-        "reaction_increase_2_27": null,
-        "range_increase_28": null,
-        "active_passive_29": null,
-        "weapon_3_30": null,
-        "effect_4_31": null,
-        "damage_3_32": null,
-        "type_3_33": null,
-        "to_hit_3_34": null,
-        "shield_health_2_35": null,
-        "speed_increase_2_36": null,
-        "to_hit_increase_2_37": null,
-        "reaction_increase_38": null,
-        "increase_range_39": null,
-        "active_passive_2_40": null,
-        "weapon_4_41": null,
-        "effect_5_42": null,
-        "damage_4_43": null,
-        "type_4_44": null,
-        "to_hit_4_45": null,
-        "re_equip_slot_type_1_46": null,
-        "removable_equipment_47": null,
-        "effect_6_48": null,
-        "damage_5_49": null,
-        "damage_type_50": null,
-        "to_hit_5_51": null,
-        "weight_52": null,
-        "re_equip_slot_type_2_53": null,
-        "removable_equipment_2_54": null,
-        "damage_6_55": null,
-        "effect_7_56": null,
-        "to_hit_6_57": null,
-        "type_5_58": null,
-        "weight_2_59": null,
-        "re_equip_slot_type_3_60": null,
-        "removable_equipment_3_61": null,
-        "damage_7_62": null,
-        "to_hit_7_63": null,
-        "weight_3_64": null,
-        "re_equip_slot_type_4_65": null,
-        "removable_equipment_4_66": null,
-        "damage_8_67": null,
-        "to_hit_8_68": null,
-        "effect_69": null,
-        "weight_4_70": null,
-        "defense_increase_for_solo_shield_71": null,
-        "on_off_72": null,
-        "zoid_picture_base": null,
-        "zoid_picture_red": null,
-        "zoid_green_47": null,
-        "zoid_blue_48": null,
-        "zoid_white_49": null,
-        "zoid_black_50": null,
-        "zoid_purple_51": null,
-        "zoid_brown_52": null,
-        "first_attack_gif": null,
-        "second_attack_gif": null,
-        "third_attack_gif": null,
-        "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
-        "column_83": null
-      },
-      "dynamic_fields": {},
-      "ownership_base_id": "zoids:dragon_nest",
-      "fixed_weapon_ids": [
-        "zoids:dragon_nest:weapon:assisting_fire",
-        null,
-        null,
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:pteramander:weapon:double_anti_air_laser",
+        "zoids:pteramander:weapon:multi_vulcan",
+        "zoids:pteramander:weapon:flame_thrower",
         null
+      ],
+      "legacy_ownership_base_id": "zoids:pteramander",
+      "legacy_names": [
+        "Pteramander"
       ]
     }
   ],
@@ -16463,6 +18104,12 @@
       "row": 156,
       "id": "zoids:hover_cargo",
       "name": "Hover Cargo",
+      "reason": "Moved to Transport catalog"
+    },
+    {
+      "row": 157,
+      "id": "zoids:dragon_nest",
+      "name": "Dragoon Nest",
       "reason": "Moved to Transport catalog"
     },
     {
