@@ -14,7 +14,7 @@ Page changes retain valid draft edits. Closing the Windows window or switching/n
 
 ## Purchases and refunds
 
-New pilots have **10,000g**, no automatically granted Zoid, and Organoid **None**. Their starter selection is any non-CAU design costing at most 10,000g. Only its gold cost is required; Core, Parts, Base Zoid, and Zi Database requirements are waived.
+New pilots have **10,000g**, no automatically granted Zoid, and Organoid **None**. Starter choices must be non-CAU designs costing at most 10,000g with **no Base Zoid requirement in the CSV**. Core, Parts, and Zi Database requirements are waived. Both the picker and transaction validation enforce this restriction.
 
 Later purchases check funds, General Inventory quantities, the required Base Zoid/CAU, and the target's known-design entry. Confirmed normal purchases deduct the CSV price, consume one of each required Core/Parts item, and consume the selected eligible base instance. Consumed chassis must own no CAUs. Replacements start without inherited upgrades; removable equipment remains in pilot inventory. With multiple eligible bases, select the specific instance.
 
@@ -25,6 +25,12 @@ When recipe checks fail, a separate **GM Override** confirmation grants the buil
 - Detaching a CAU refunds **half its current CSV price**, including GM-granted forms. Returned Parts include predecessor-CAU Parts. Form-specific upgrades/conditions are removed; host/shared upgrades remain. Assigned removable copies remain owned.
 - Chassis upgrade tier N costs **5,000g × N**; fixed-weapon tier N costs **10,000g × N**. Each track is independent. Decreasing a counter refunds the full removed tier cost. Existing recorded points are retained without retroactive charges.
 - Removable equipment acquisition remains GM-managed; no equipment purchasing cost is applied.
+
+## Selling and deleting
+
+**Sell selected Zoid + CAUs** in Overview quotes 75% of the combined CSV prices of that specific chassis and all its currently owned CAU forms. Confirmation removes the instance and its forms/upgrades, unloads it from Transport, and credits the quoted gold. Removable equipment stays in inventory with its condition intact. Other instances and known designs remain unchanged. Parts and upgrades do not receive additional refunds. Only currently owned forms count, not previously consumed predecessor CAUs. The combined refund is rounded down to whole gold if needed. Selling the last Zoid leaves an empty roster without granting another starter purchase. Save character to retain the sale.
+
+**Delete saved character** targets the selected entry in the saved-character picker. A warning names the character and requires explicit confirmation before deleting its database record. Deleting the open character also discards its unsaved edits and opens a fresh draft. Deleting another saved character preserves the current draft and its pending edits. Cancel performs no deletion.
 
 ## Transport
 
@@ -69,4 +75,4 @@ Current references: **134 playable designs (51 CAUs), 4 Transports, 134 price re
 
 ## Verification and next step
 
-**200 tests pass**, including purchasing/override/refund transactions, cargo constraints, workflow migration, page navigation, and save/discard/cancel handling. Export/import/backups remain deferred. Packaging is the next separate stage after owner review; Android execution and distributable packages have not been verified yet.
+**205 tests pass**, including starter eligibility, purchasing/override/refund and sale transactions, saved-character deletion, cargo constraints, workflow migration, page navigation, and save/discard/cancel handling. Export/import/backups remain deferred. Packaging is the next separate stage after owner review; Android execution and distributable packages have not been verified yet.

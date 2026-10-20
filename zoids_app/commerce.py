@@ -68,8 +68,8 @@ def quote_purchase(character, zoid, *, host_id=None, base_id=None, starter=False
     data = recipe(catalog, record["id"])
     cau = record["id"] != record["ownership_base_id"]
     if starter:
-        if not character.starter_pending or character.owned_zoids or cau or data["cost"] > 10000:
-            raise RuleError("Choose a non-CAU starting Zoid costing at most 10,000g")
+        if not character.starter_pending or character.owned_zoids or cau or data["cost"] > 10000 or data["base_zoid"]:
+            raise RuleError("Choose a non-CAU starting Zoid costing at most 10,000g with no Base Zoid requirement")
     elif character.starter_pending:
         raise RuleError("Purchase a starting Zoid first")
     issues, predecessor = [], None
@@ -186,6 +186,24 @@ def detach_cau(character, owner_id, form_id, catalog=None):
         active_form=owner.base_zoid if owner.active_form == form_id else owner.active_form), catalog)
     character = replace(character, gold=character.gold + recipe(catalog, form_id)["cost"] // 2,
         materials=tuple(items.values()), owned_zoids=tuple(owner if o.id == owner_id else o for o in character.owned_zoids))
+    return validate_character(restore_roster_selection(character, catalog), catalog)
+
+
+def sell_zoid(character, owner_id, catalog=None):
+    """Sell one chassis and all currently owned forms at 75% of their CSV prices.
+
+    Inventory copies stay owned, but assignments disappear with the sold chassis.
+    No separate upgrade or material refund is part of a whole-Zoid sale.
+    """
+    catalog = catalog or Catalog()
+    character = validate_character(character, catalog)
+    owner = next((o for o in character.owned_zoids if o.id == owner_id), None)
+    if owner is None:
+        raise RuleError("This pilot does not own that Zoid instance")
+    refund = sum(recipe(catalog, f.zoid)["cost"] for f in owner.forms) * 3 // 4
+    character = replace(character, gold=character.gold + refund,
+        owned_zoids=tuple(o for o in character.owned_zoids if o.id != owner_id),
+        loaded_zoids=tuple(i for i in character.loaded_zoids if i != owner_id))
     return validate_character(restore_roster_selection(character, catalog), catalog)
 
 

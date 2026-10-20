@@ -1,0 +1,20 @@
+cd C:\Zoids\Zoids TTRPG\Repo\zoids-character-app
+
+.\.venv\Scripts\python -m zoids_app
+
+
+
+
+Set-Location "C:\Zoids\Zoids TTRPG\Repo\zoids-character-app"
+
+.\.venv\Scripts\python -m pip install "flet[cli,desktop]==1.0.4"
+
+
+
+
+.\.venv\Scripts\flet.exe build windows --verbose
+
+
+
+
+.\.venv\Scripts\flet.exe build apk --verbose

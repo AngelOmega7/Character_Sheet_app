@@ -10,6 +10,8 @@ except ImportError:
     ft = None
 
 from zoids_app.catalog import Catalog
+from zoids_app.combat import RuleError
+from zoids_app.commerce import recipe
 from zoids_app.storage import CharacterStore
 from test_ui import PageStub
 
@@ -53,6 +55,9 @@ class WorkflowUITests(unittest.TestCase):
         self.assertEqual(editor.character.gold, 10000)
         self.assertTrue(editor.organoid_enabled.disabled)
         self.assertNotIn("zoids:zero_empire_cau", {o.key for o in editor.acquisition.options})
+        self.assertNotIn("zoids:allosaurer", {o.key for o in editor.acquisition.options})
+        for option in editor.acquisition.options:
+            self.assertIsNone(recipe(self.catalog, option.key)["base_zoid"])
         self.starter()
         self.assertEqual(editor.character.gold, 4000)
         self.assertFalse(editor.character.starter_pending)
@@ -161,3 +166,69 @@ class WorkflowUITests(unittest.TestCase):
         self.assertEqual(editor.character.loaded_zoids, ())
         editor.load_cargo(editor.character.active_zoid_id)
         self.assertEqual(editor.character.loaded_zoids, ())  # Liger is too large.
+
+    def test_saved_character_deletion_cancel_and_unrelated_draft_preservation(self):
+        editor = self.editor
+        editor.name.value = "First pilot"
+        editor.save()
+        first = editor.character.id
+        editor.new()
+        editor.name.value = "Second pilot"
+        editor.save()
+        second = editor.character.id
+        editor.name.value = "Second pilot, unsaved edit"
+        editor.changed()
+        editor.saved.value = first
+        editor.delete_saved()
+        self.assertIn("First pilot", self.page.dialog.content.value)
+        self.page.dialog.actions[0].on_click(None)
+        self.assertEqual(len(self.store.list_characters()), 2)
+        editor.delete_saved()
+        self.page.dialog.actions[-1].on_click(None)
+        self.assertEqual(editor.character.id, second)
+        self.assertEqual(editor.name.value, "Second pilot, unsaved edit")
+        self.assertTrue(editor.dirty)
+        with self.assertRaises(RuleError):
+            CharacterStore(self.store.path, self.catalog).load(first)
+        self.assertEqual(self.store.load(second).name, "Second pilot")
+
+    def test_deleting_open_character_resets_editor_and_clears_last_save_selection(self):
+        editor = self.editor
+        editor.save()
+        old_id = editor.character.id
+        editor.name.value = "Unsaved changes"
+        editor.changed()
+        editor.delete_saved()
+        self.assertIn("Unsaved edits", self.page.dialog.content.value)
+        self.page.dialog.actions[-1].on_click(None)
+        self.assertNotEqual(editor.character.id, old_id)
+        self.assertFalse(editor.dirty)
+        self.assertEqual(editor.view, "Overview")
+        self.assertIsNone(editor.saved.value)
+        self.assertTrue(editor.delete_saved_button.disabled)
+        self.assertEqual(self.store.list_characters(), [])
+
+    def test_sale_confirmation_cancel_stale_quote_and_saved_refund(self):
+        self.starter()
+        editor = self.editor
+        before = editor.character
+        editor.sell_selected_zoid()
+        self.assertIn("4,500g", self.page.dialog.content.value)
+        self.page.dialog.actions[0].on_click(None)
+        self.assertEqual(editor.character, before)
+        editor.sell_selected_zoid()
+        editor.gold_input.value = "5000"
+        self.page.dialog.actions[-1].on_click(None)
+        self.assertEqual(editor.character, before)
+        self.assertIn("fresh sale quote", editor.status.value)
+        editor.apply_profile()
+        editor.sell_selected_zoid()
+        confirm = self.page.dialog.actions[-1].on_click
+        confirm(None)
+        self.assertEqual(editor.character.gold, 9500)
+        self.assertEqual(editor.character.owned_zoids, ())
+        self.assertFalse(editor.character.starter_pending)
+        confirm(None)
+        self.assertEqual(editor.character.gold, 9500)
+        editor.save()
+        self.assertEqual(self.store.load(editor.character.id), editor.character)

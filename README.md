@@ -20,6 +20,8 @@ Use `python3` on Linux or `py -3` on Windows if needed. Start a new coding sessi
 
 ## Run the character editor (Windows)
 
+For standalone Windows and Android builds, see **[Local packaging commands](docs/packaging.md)**. The repository now includes `main.py` and `pyproject.toml` for Flet packaging.
+
 From the repository root:
 
 ```powershell
@@ -30,13 +32,17 @@ python -m venv .venv
 
 Dependency installation and the first Flet desktop-runtime setup may require internet. Once installed, character editing and SQLite saves run locally, without Google Sheets or an account. Android/Windows distributable packages are not built yet.
 
-1. **Overview:** create a pilot with 10,000g and purchase a non-CAU starter costing at most 10,000g. Other starter prerequisites are waived. Select pilot style (including NPC), Organoid (None by default), owned chassis, and CAU form. Multiple instances of a model are allowed; required level is displayed.
+1. **Overview:** create a pilot with 10,000g and purchase a non-CAU starter costing at most 10,000g that has no Base Zoid requirement. Core, Parts, and Zi Database prerequisites are waived for starters. Select pilot style (including NPC), Organoid (None by default), owned chassis, and CAU form. Multiple instances of a model are allowed; required level is displayed.
 2. **Pilot:** edit gold/notes, learn and assign abilities, track feats, record General Inventory item quantities, and add known designs to Zi Database. Existing notes remain available separately from these structured records.
 3. **Overview purchasing:** select a design, host/base instance if needed, and review the quote. Normal purchases consume CSV costs and prerequisites; failed recipe checks offer a separate GM Override. CAUs can be detached with a quoted refund. See `docs/workflow.md` for replacement and refund rules.
 4. **Upgrades:** use paid +/− counters (0–5); chassis tiers cost 5,000g × tier and weapon tiers 10,000g × tier. Minus refunds the full removed tier cost. Acquire and attach equipment copies here; removable equipment still has no purchasing costs.
 5. **Combat:** record health/shield damage, use/vent/repair weapons, and rest the active loadout. Only occupied slots are shown. Numerical-damage weapons roll one d20 on Use; non-damaging utilities keep activation controls without a die roller.
 6. **Transport:** choose None/Gustav/Hover Cargo/Dragoon Nest/Whale King, inspect base stats, and load/unload owned chassis within size/capacity limits. Changing transport unloads cargo without deleting Zoids. Calculated Stats appears on every other page.
 7. **Save character** retains edits and combat state. Closing or switching characters with unsaved changes offers Keep editing, Discard changes, or Save; unsuccessful saves cancel the transition.
+
+Use **Sell selected Zoid + CAUs** in Overview to confirm a sale at 75% of the chassis's and currently owned CAUs' combined CSV prices. Their upgrades are removed; removable equipment returns to inventory and the chassis is unloaded from Transport. Save to keep the sale.
+
+Use **Delete saved character** beside Save to permanently delete the selected saved-character entry after a warning and confirmation. Cancel leaves it intact. Deleting the open character resets the editor; deleting another preserves your current unsaved draft.
 
 **Pilot feats** provides seven selections with reference descriptions. Feats and the new pilot tracking fields are handled by players at the table; they do not automate advantage, vent extra weapons, or alter calculated stats. Mental retains its existing calculation rule. Personality is editable text independent of Organoid color.
 
@@ -70,7 +76,7 @@ Run all rules, persistence, and headless UI interaction tests:
 .\.venv\Scripts\python -m unittest discover -s tests -v
 ```
 
-Current baseline: **200 tests passing**. Without Flet installed, 28 UI interaction tests are skipped; core and persistence tests still run.
+Current baseline: **205 tests passing**. Without Flet installed, 31 UI interaction tests are skipped; core and persistence tests still run.
 
 Before switching devices, commit and push your changes. On the other device, pull the latest changes before continuing. The source workbook and generated reference data are included, so cloning does not require access to Google Sheets.
 

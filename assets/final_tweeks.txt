@@ -1,0 +1,5 @@
+1. Limit starting Zoid options to Zoids that do not have a Base Zoid in zoid_cost.csv. I mistakenly waived all the other requirements, and I should have left that requirement in place.
+
+2. We need the option to delete a saved character, with a warning and confirmation window.
+
+3. We need an option to sell a Zoid. Selling a Zoid removes the Zoid and any CAUs from the Owned Zoid list, and refunds 75% of the Zoid's cost and 75% of the cost of all CAUs

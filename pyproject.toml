@@ -1,0 +1,22 @@
+[project]
+name = "zoids-character-app"
+version = "1.0.0"
+description = "Offline Zoids character and combat manager"
+requires-python = ">=3.10"
+dependencies = ["flet==1.0.4"]
+
+[tool.flet]
+product = "Zoids Character App"
+org = "io.github.angelomega7"
+bundle_id = "io.github.angelomega7.zoids_character_app"
+build_number = 1
+
+[tool.flet.app]
+path = "."
+module = "main"
+include = ["zoids_app/data", "assets/icon.png", "assets/icon.ico"]
+exclude = [
+    ".venv", "venv", ".git", "build", "dist", "docs", "source", "tests", "tools", "saves",
+    "__pycache__", "**/__pycache__", "*.sqlite", "*.sqlite-*", "*.sqlite3", "*.sqlite3-*",
+    "*.db", "*.db-*", "*.txt", "assets/*.txt", "assets/*.csv",
+]

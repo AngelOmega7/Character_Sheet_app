@@ -100,6 +100,13 @@ class CharacterStore:
             raise RuleError("Saved character was not found")
         return self._decode(row[0], character_id)
 
+    def delete(self, character_id):
+        """Delete exactly one saved character, without affecting other saves."""
+        with closing(sqlite3.connect(self.path)) as db, db:
+            result = db.execute("DELETE FROM characters WHERE id=?", (character_id,))
+            if result.rowcount != 1:
+                raise RuleError("Saved character was not found")
+
     def _decode(self, text, character_id, allow_legacy=False):
         try:
             payload = json.loads(text)

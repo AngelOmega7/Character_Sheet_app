@@ -13,7 +13,7 @@ from zoids_app.characters import (FixedWeaponCondition, Material, acquire_equipm
 from zoids_app.combat import RuleError, WeaponCondition
 from zoids_app.combat_controller import combat_snapshot, weapon_action
 from zoids_app.commerce import (change_upgrade, detach_cau, purchase_zoid, quote_purchase,
-                                recipe, set_known_design, set_material)
+                                recipe, sell_zoid, set_known_design, set_material)
 from zoids_app.stats import CharacterBuild, Upgrades, calculate_stats
 from zoids_app.storage import CharacterStore, SAVE_VERSION
 from zoids_app.transport import load_zoid, select_transport
@@ -37,16 +37,58 @@ class WorkflowTests(unittest.TestCase):
                 c = set_material(c, material, 3, self.catalog)
         return c
 
-    def test_starter_has_ten_thousand_gold_no_organoid_and_waives_requirements(self):
+    def test_starter_waives_materials_and_database_but_disallows_base_requirements(self):
         c = new_character(self.catalog)
         self.assertEqual((c.gold, c.build.organoid_color, c.owned_zoids), (10000, "None", ()))
-        c = self.buy(c, "Allosaurer", starter=True)  # Requires Godos normally.
-        self.assertEqual(c.gold, 3000)
-        self.assertEqual(c.owned_zoids[0].base_zoid, "zoids:allosaurer")
+        c = self.buy(c, "Godos", starter=True)  # Core and known-design requirements waived.
+        self.assertEqual(c.gold, 0)
+        self.assertEqual(c.owned_zoids[0].base_zoid, "zoids:godos")
         self.assertFalse(c.starter_pending)
-        for name in ("Liger Zero", "Cannon Tortoise BC"):
+        for name in ("Liger Zero", "Cannon Tortoise BC", "Allosaurer", "Iguan", "Zaber Fang"):
             with self.assertRaises(RuleError):
                 quote_purchase(new_character(self.catalog), name, starter=True, catalog=self.catalog)
+
+    def test_sale_refunds_chassis_and_all_owned_caus_and_preserves_equipment(self):
+        c = established_character(self.catalog)
+        remaining = c.active_zoid_id
+        c = acquire_zoid(c, "Liger Zero", self.catalog)
+        sold = c.owned_zoids[-1].id
+        for form in ("Zero Jager (CAU)", "Zero Panzer (CAU)"):
+            c = acquire_zoid(c, form, self.catalog, host_id=sold)
+        c = switch_zoid(c, sold, "zoids:zero_jager_cau", self.catalog)
+        c = set_upgrades(c, Upgrades(speed=2), self.catalog)
+        c = acquire_equipment(c, "Particle Cannon", catalog=self.catalog)
+        c = equip_owned_equipment(c, "left", c.inventory[0].id, self.catalog)
+        c = set_material(c, "Jager Unit", 3, self.catalog)
+        c = select_transport(c, "Whale King", self.catalog)
+        c = load_zoid(c, remaining, catalog=self.catalog)
+        c = load_zoid(c, sold, catalog=self.catalog)
+        result = sell_zoid(c, sold, self.catalog)
+        self.assertEqual(result.gold, 82500)  # (75,000 + 15,000 + 20,000) * .75
+        self.assertEqual(result.inventory, c.inventory)
+        self.assertEqual(result.materials, c.materials)  # Sale does not also detach/refund Parts.
+        self.assertEqual(result.active_zoid_id, remaining)
+        self.assertEqual(result.loaded_zoids, (remaining,))
+        self.assertEqual(len(result.owned_zoids), 1)
+        self.assertEqual(result.build.equipment, (None,) * 4)
+        with self.assertRaises(RuleError):
+            sell_zoid(result, sold, self.catalog)
+
+    def test_sale_targets_one_duplicate_instance_and_can_leave_an_empty_roster(self):
+        c = established_character(self.catalog)
+        first = c.active_zoid_id
+        c = acquire_zoid(c, "Saberlion", self.catalog)
+        second = c.owned_zoids[-1].id
+        c = sell_zoid(c, second, self.catalog)
+        self.assertEqual(c.active_zoid_id, first)
+        self.assertEqual(c.gold, 4500)
+        c = sell_zoid(c, first, self.catalog)
+        self.assertEqual(c.gold, 9000)
+        self.assertEqual((c.owned_zoids, c.active_zoid_id, c.build.zoid), ((), "", ""))
+        self.assertFalse(c.starter_pending)
+        with tempfile.TemporaryDirectory() as directory:
+            store = CharacterStore(Path(directory) / "sale.sqlite3", self.catalog)
+            self.assertEqual(store.load(store.save(c).id), c)
 
     def test_purchase_checks_and_consumes_exact_material_quantities_and_gold(self):
         c = established_character(self.catalog)

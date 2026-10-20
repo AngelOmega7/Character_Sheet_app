@@ -13,7 +13,7 @@ from .characters import (PilotDetails, acquire_equipment, acquire_zoid, assign_p
 from .attacks import calculate_attack
 from .combat import RepairConfirmationRequired, RuleError
 from .combat_controller import combat_snapshot, repair_character_health, rest_active_loadout, rolls_damage, weapon_action
-from .commerce import change_upgrade, detach_cau, purchase_zoid, quote_purchase, recipe, recipe_parts, set_known_design, set_material
+from .commerce import change_upgrade, detach_cau, purchase_zoid, quote_purchase, recipe, recipe_parts, sell_zoid, set_known_design, set_material
 from .transport import load_zoid, select_transport
 from .equipment import SLOT_COLUMNS
 from .stats import Upgrades
@@ -58,6 +58,7 @@ class CharacterEditor:
         self.status = ft.Text("New character — save when ready.", color="#8CD9C8")
         self.body = ft.Column(spacing=18)
         self.saved = ft.Dropdown(label="Saved characters")
+        self.delete_saved_button = ft.Button("Delete saved character", on_click=self.delete_saved)
         self.page.add(ft.Column([
             ft.Row([ft.Image(src="icon.png", width=48, height=48, fit=ft.BoxFit.CONTAIN,
                              semantics_label="Zoids app icon"),
@@ -65,7 +66,7 @@ class CharacterEditor:
             ft.Text("Offline character manager · local saves", color="#AAC0D6"),
             ft.ResponsiveRow([ft.Container(self.saved, col={"xs": 12, "md": 10}),
                               ft.Container(ft.Button("Open", on_click=self.open_saved), col={"xs": 12, "md": 2})]),
-            ft.Row([ft.Button("New character", on_click=self.new), ft.Button("Save character", on_click=self.save)], wrap=True),
+            ft.Row([ft.Button("New character", on_click=self.new), ft.Button("Save character", on_click=self.save), self.delete_saved_button], wrap=True),
             self.status, self.navigation, self.body,
             ft.Text(f"Save file: {store.path}", size=12, selectable=True, color="#AAC0D6"),
         ], spacing=16))
@@ -105,8 +106,42 @@ class CharacterEditor:
         records = self.store.list_characters()
         self.saved.options = [option(r["id"], f"{r['name']} · {r['id'][:8]}") for r in records]
         self.saved.disabled = not records
+        self.delete_saved_button.disabled = not records
+        if not records:
+            self.saved.value = None
         if records and self.saved.value not in {r["id"] for r in records}:
             self.saved.value = records[0]["id"]
+
+    def delete_saved(self, event=None):
+        selected = self.saved.value
+        try:
+            record = next((r for r in self.store.list_characters() if r["id"] == selected), None)
+            if record is None:
+                raise RuleError("Select a saved character to delete")
+
+            def confirm(event):
+                self.page.pop_dialog()
+                try:
+                    self.store.delete(selected)
+                    self.refresh_saved()
+                    if self.character.id == selected:
+                        self.character = new_character(self.catalog)
+                        self.dirty = False
+                        self.attack_bands.clear()
+                        self.view = "Overview"
+                        self.render()
+                    self.message(f"Deleted saved character {record['name']}.")
+                except (RuleError, OSError, sqlite3.Error) as exc:
+                    self.message(str(exc), True)
+
+            warning = f"Permanently delete {record['name']} ({selected[:8]}) and all of its saved state? This cannot be undone."
+            if self.character.id == selected:
+                warning += " Unsaved edits to this character will also be discarded."
+            self.page.show_dialog(ft.AlertDialog(modal=True, scrollable=True, title=ft.Text("Delete saved character?"),
+                content=ft.Text(warning), actions=[ft.TextButton("Cancel", on_click=lambda e: self.page.pop_dialog()),
+                                                  ft.TextButton("Delete permanently", on_click=confirm)]))
+        except (RuleError, OSError, sqlite3.Error) as exc:
+            self.message(str(exc), True)
 
     def confirm_switch(self, action):
         if not self.dirty:
@@ -592,6 +627,38 @@ class CharacterEditor:
         except (RuleError, StopIteration) as exc:
             self.message(str(exc) or "Select an owned CAU first", True)
 
+    def sell_selected_zoid(self, event=None):
+        try:
+            candidate = self.profile_candidate()
+            owner = next((o for o in candidate.owned_zoids if o.id == candidate.active_zoid_id), None)
+            if owner is None:
+                raise RuleError("Select an owned Zoid to sell")
+            result = sell_zoid(candidate, owner.id, self.catalog)
+            refund = result.gold - candidate.gold
+            lines = [f"{self.catalog.find('zoids', f.zoid)['name']}: {recipe(self.catalog, f.zoid)['cost']:,}g" for f in owner.forms]
+
+            def confirm(event):
+                self.page.pop_dialog()
+                try:
+                    latest = self.profile_candidate()
+                    if latest != candidate or sell_zoid(latest, owner.id, self.catalog) != result:
+                        raise RuleError("State changed; request a fresh sale quote")
+                    self.character = result
+                    self.dirty = True
+                    self.render()
+                    self.message(f"Zoid and its CAUs sold for {refund:,}g. Unsaved changes.")
+                except RuleError as exc:
+                    self.message(str(exc), True)
+
+            text = (f"Sell {self.owner_label(owner)} and all its currently owned CAUs?\n\n" + "\n".join(lines)
+                    + f"\n\n75% refund: {refund:,}g.\nThe chassis, CAUs, and their upgrades will be removed. "
+                      "Removable equipment stays in inventory, and the chassis is unloaded from Transport.")
+            self.page.show_dialog(ft.AlertDialog(modal=True, scrollable=True, title=ft.Text("Confirm Zoid sale"),
+                content=ft.Text(text), actions=[ft.TextButton("Cancel", on_click=lambda e: self.page.pop_dialog()),
+                                               ft.TextButton("Sell Zoid and CAUs", on_click=confirm)]))
+        except RuleError as exc:
+            self.message(str(exc), True)
+
     def adjust_upgrade(self, field, delta, slot=None):
         try:
             candidate = self.profile_candidate()
@@ -751,7 +818,8 @@ class CharacterEditor:
         owned_bases = {o.base_zoid for o in character.owned_zoids}
         obtainable = sorted([r for r in self.catalog.tables["zoids"]["records"]
             if (r["ownership_base_id"] == r["id"] or any(o.base_zoid == r["ownership_base_id"] and all(f.zoid != r["id"] for f in o.forms) for o in character.owned_zoids))
-            and (not character.starter_pending or (r["ownership_base_id"] == r["id"] and recipe(self.catalog, r["id"])["cost"] <= 10000))],
+            and (not character.starter_pending or (r["ownership_base_id"] == r["id"] and recipe(self.catalog, r["id"])["cost"] <= 10000
+                                                   and not recipe(self.catalog, r["id"])["base_zoid"]))],
             key=lambda r: r["name"])
         self.acquisition = searchable_dropdown(label="Purchase starting Zoid" if character.starter_pending else "Purchase Zoid / CAU form",
             options=[option(r["id"], f"{r['name']} · {recipe(self.catalog, r['id'])['cost']:,}g") for r in obtainable],
@@ -762,10 +830,11 @@ class CharacterEditor:
         roster = card("Owned-Zoid hangar", [self.owned_select, self.form_select,
             ft.Text(f"{len(character.owned_zoids)} owned Zoid(s) · {len(active.forms) if active else 0} form(s) for this chassis", size=12),
             ft.Text(f"Required level: {self.catalog.find('zoids', build.zoid)['fields']['required_level']}" if active else "No active Zoid"),
-            ft.Text("Starter purchase: up to 10,000g; all other prerequisites waived." if character.starter_pending else "Multiple copies are allowed. Select a specific host/base instance when needed.", size=12),
+            ft.Text("Starter: non-CAU, up to 10,000g, no Base Zoid requirement. Core, Parts, and Zi Database requirements are waived." if character.starter_pending else "Multiple copies are allowed. Select a specific host/base instance when needed.", size=12),
             self.acquisition, self.purchase_details, self.purchase_host, self.purchase_base,
             ft.Button("Review purchase", on_click=self.obtain, disabled=not obtainable),
-            ft.Button("Detach selected CAU", disabled=not active or build.zoid == active.base_zoid, on_click=self.detach_selected_cau)])
+            ft.Button("Detach selected CAU", disabled=not active or build.zoid == active.base_zoid, on_click=self.detach_selected_cau),
+            ft.Button("Sell selected Zoid + CAUs", disabled=not active, on_click=self.sell_selected_zoid)])
         self.frame_fields, frame_widgets = {}, []
         for key in ("speed", "reaction", "defense", "capacity"):
             control, widget = self.upgrade_counter(key.title(), getattr(build.upgrades, key), key, disabled=not active)
