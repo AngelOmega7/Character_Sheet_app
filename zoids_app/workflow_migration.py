@@ -25,6 +25,18 @@ def prepare_legacy_build(build, catalog):
                    fixed_active=tuple(active), equipment=tuple(equipment), equipment_active=tuple(flags))
 
 
+def migrate_expanded_caus(character, catalog):
+    """Rehome previously standalone expansion forms without replaying old migrations."""
+    expanded = {"zoids:zero_falcon", "zoids:zero_phoenix", "zoids:buster_fury"}
+    affected = tuple(o for o in character.owned_zoids if o.base_zoid in expanded)
+    if not affected:
+        return character
+    migrated = migrate_workflow(replace(character, owned_zoids=affected), catalog)
+    replacements = {o.id: o for o in migrated.owned_zoids}
+    result = replace(character, owned_zoids=tuple(replacements.get(o.id, o) for o in character.owned_zoids))
+    return restore_roster_selection(result, catalog)
+
+
 def migrate_workflow(character, catalog):
     roster, archive = [], list(character.archived_content)
     transport = character.transport

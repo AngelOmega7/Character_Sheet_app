@@ -1923,6 +1923,177 @@
       "eligible_sizes": []
     },
     {
+      "id": "abilities:bloxtype_1",
+      "name": "BLOX Type 1",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 58
+      },
+      "fields": {
+        "name": "BLOX Type 1",
+        "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
+        "bonus_levels": 5,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "description_formulas": {
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"BLOX\",N8+5,\"\")"
+      },
+      "legacy_names": [
+        "BLOXType 1"
+      ],
+      "family": "blox_type",
+      "rank": 1,
+      "eligible_types": [
+        "BLOX"
+      ],
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:blox_type_2",
+      "name": "BLOX Type 2",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 59
+      },
+      "fields": {
+        "name": "BLOX Type 2",
+        "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
+        "bonus_levels": 10,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "blox_type",
+      "rank": 2,
+      "eligible_types": [
+        "BLOX"
+      ],
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:blox_type_3",
+      "name": "BLOX Type 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 60
+      },
+      "fields": {
+        "name": "BLOX Type 3",
+        "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 15,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "blox_type",
+      "rank": 3,
+      "eligible_types": [
+        "BLOX"
+      ],
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:blox_type_4",
+      "name": "BLOX Type 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 61
+      },
+      "fields": {
+        "name": "BLOX Type 4",
+        "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 20,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "blox_type",
+      "rank": 4,
+      "eligible_types": [
+        "BLOX"
+      ],
+      "eligible_sizes": []
+    },
+    {
+      "id": "abilities:blox_type_5",
+      "name": "BLOX Type 5",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 62
+      },
+      "fields": {
+        "name": "BLOX Type 5",
+        "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
+        "bonus_levels": 25,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "blox_type",
+      "rank": 5,
+      "eligible_types": [
+        "BLOX"
+      ],
+      "eligible_sizes": []
+    },
+    {
       "id": "abilities:small_expert",
       "name": "Small Expert",
       "kind": "record",
@@ -5467,36 +5638,6 @@
     }
   ],
   "excluded_rows": [
-    {
-      "row": 58,
-      "id": "abilities:bloxtype_1",
-      "name": "BLOXType 1",
-      "reason": "Owner retired this ability family and all ranks"
-    },
-    {
-      "row": 59,
-      "id": "abilities:blox_type_2",
-      "name": "BLOX Type 2",
-      "reason": "Owner retired this ability family and all ranks"
-    },
-    {
-      "row": 60,
-      "id": "abilities:blox_type_3",
-      "name": "BLOX Type 3",
-      "reason": "Owner retired this ability family and all ranks"
-    },
-    {
-      "row": 61,
-      "id": "abilities:blox_type_4",
-      "name": "BLOX Type 4",
-      "reason": "Owner retired this ability family and all ranks"
-    },
-    {
-      "row": 62,
-      "id": "abilities:blox_type_5",
-      "name": "BLOX Type 5",
-      "reason": "Owner retired this ability family and all ranks"
-    },
     {
       "row": 163,
       "id": "abilities:wimp",

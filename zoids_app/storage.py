@@ -1,16 +1,20 @@
 """Versioned transactional SQLite saves; no calculated totals are persisted."""
 from contextlib import closing
 from dataclasses import asdict, replace
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 import sqlite3
+from uuid import uuid4
 
 from .catalog import Catalog
-from .characters import Character, FixedWeaponCondition, FormLoadout, Material, OwnedEquipment, OwnedZoid, PilotDetails, WeaponUpgrade, adopt_legacy_character, migrate_equipment_inventory, restore_roster_selection, validate_character
+from .characters import Character, FixedWeaponCondition, FormLoadout, Material, OwnedEquipment, OwnedZoid, PilotDetails, StoredFuzor, WeaponUpgrade, adopt_legacy_character, migrate_equipment_inventory, restore_roster_selection, validate_character
 from .combat import RuleError, WeaponCondition
 from .stats import CharacterBuild, Upgrades
 
-SAVE_VERSION = 8
+SAVE_VERSION = 10
+EXPORT_FORMAT = "zoids-character-export"
+EXPORT_FORMAT_VERSION = 1
 
 
 def _upgrades(values):
@@ -32,8 +36,12 @@ def _swap_last_fixed_slots(values):
     return (values[0], values[1], values[3], values[2])
 
 
-def _owned(values):
+def _owned(values, depth=0):
+    if depth > 1:
+        raise RuleError("Nested FUZOR component history is not supported")
     values = dict(values)
+    if values.get("fusion_components") is not None:
+        values["fusion_components"] = tuple(_owned(component, depth + 1) for component in values["fusion_components"])
     values["frame"] = _upgrades(values["frame"])
     values["weapons"] = tuple(WeaponUpgrade(**w) for w in values["weapons"])
     values["weapon_conditions"] = tuple(FixedWeaponCondition(w["weapon_id"], WeaponCondition(**w["condition"]))
@@ -78,6 +86,42 @@ class CharacterStore:
             return [dict(row) for row in db.execute(
                 "SELECT id, name, updated_at FROM characters ORDER BY updated_at DESC, id")]
 
+    def export_character(self, character_id):
+        """Return one saved character as a portable, versioned JSON document."""
+        character = self.load(character_id)
+        return json.dumps({
+            "format": EXPORT_FORMAT,
+            "format_version": EXPORT_FORMAT_VERSION,
+            "exported_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "save_version": SAVE_VERSION,
+            "data_version": self.catalog.manifest["data_version"],
+            "character": asdict(character),
+        }, ensure_ascii=False, indent=2) + "\n"
+
+    def import_character(self, text):
+        """Validate an export/raw payload and save it without overwriting an existing ID."""
+        try:
+            document = json.loads(text)
+        except (TypeError, json.JSONDecodeError) as exc:
+            raise RuleError("The import file is not valid character JSON") from exc
+        if not isinstance(document, dict):
+            raise RuleError("The import file must contain a character document")
+        if "format" in document or "format_version" in document:
+            if document.get("format") != EXPORT_FORMAT:
+                raise RuleError("The import file is not a Zoids character export")
+            if type(document.get("format_version")) is not int or document["format_version"] != EXPORT_FORMAT_VERSION:
+                raise RuleError("This character export uses an unsupported format version")
+        values = document.get("character")
+        if not isinstance(values, dict) or not isinstance(values.get("id"), str) or not values["id"]:
+            raise RuleError("The import file does not contain a valid character")
+        payload = json.dumps({"save_version": document.get("save_version"),
+                              "data_version": document.get("data_version", ""),
+                              "character": values}, ensure_ascii=False)
+        character = self._decode(payload, values["id"], allow_legacy=True)
+        if any(record["id"] == character.id for record in self.list_characters()):
+            character = replace(character, id=str(uuid4()))
+        return self.save(character)
+
     def _encode(self, character):
         manifest = self.catalog.manifest
         return json.dumps({"save_version": SAVE_VERSION, "data_version": manifest["data_version"],
@@ -120,6 +164,8 @@ class CharacterStore:
             values["materials"] = tuple(Material(**i) for i in values.get("materials", []))
             values["known_zoids"] = tuple(values.get("known_zoids", []))
             values["loaded_zoids"] = tuple(values.get("loaded_zoids", []))
+            values["stored_fuzors"] = tuple(StoredFuzor(i["id"], i["zoid"], _upgrades(i["frame"]),
+                tuple(WeaponUpgrade(**w) for w in i["weapons"])) for i in values.get("stored_fuzors", []))
             archived = list(values.get("archived_content", []))
             removed_active = False
             if version < 3:
@@ -194,6 +240,8 @@ class CharacterStore:
             if version < 8 and version != 1:
                 from .workflow_migration import migrate_workflow
                 character = migrate_workflow(character, self.catalog)
+            from .workflow_migration import migrate_expanded_caus
+            character = migrate_expanded_caus(character, self.catalog)
             return validate_character(character, self.catalog)
         except (KeyError, TypeError, ValueError, AttributeError) as exc:
             raise RuleError(f"Cannot load character: {exc}") from exc

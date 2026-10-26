@@ -212,10 +212,7 @@ def build():
             if dataset == "armaments" and row in (3, 4, 5, 6):
                 kind = "dynamic"
                 name = f"Zoid equipment slot {row - 2}"
-            if dataset == "zoids" and str(fields["type"]).strip().casefold() == "blox":
-                excluded.append({"row": row, "id": f"zoids:{slug(name)}", "name": name, "reason": "Owner retired BLOX Zoids"})
-                continue
-            if dataset == "abilities" and name and re.sub(r"\s+\d+$", "", name.replace("BLOXType", "BLOX Type")).casefold().replace("-", " ") in {"wimp", "cross eyed", "slowpoke", "bad armor", "blox type"}:
+            if dataset == "abilities" and name and re.sub(r"\s+\d+$", "", name.replace("BLOXType", "BLOX Type")).casefold().replace("-", " ") in {"wimp", "cross eyed", "slowpoke", "bad armor"}:
                 excluded.append({"row": row, "id": f"abilities:{slug(name)}", "name": name, "reason": "Owner retired this ability family and all ranks"})
                 continue
             record = {
@@ -304,6 +301,9 @@ def build():
             if dataset == "abilities" and kind == "record":
                 # BLOXType 1 is a source spelling inconsistency in the BLOX Type family.
                 family_name = name.replace("BLOXType", "BLOX Type")
+                if family_name != name:
+                    record["legacy_names"] = [name]
+                    record["name"] = fields["name"] = family_name
                 match = re.fullmatch(r"(.+?)\s+(\d+)", family_name)
                 record["family"] = slug(match[1] if match else family_name)
                 record["rank"] = int(match[2]) if match else 1
@@ -390,9 +390,9 @@ def build():
         data = {"schema_version": 1, "columns": keys, "source_headers": headers, "records": records, "excluded_rows": excluded}
         (output / f"{dataset}.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
         counts[dataset] = dict(records=len(records), selectable=sum(r["kind"] == "record" for r in records), excluded_empty_rows=sum(r["reason"] == "empty" for r in excluded), excluded_retired_rows=sum(r["reason"].startswith("Owner retired") for r in excluded), moved_rows=sum(r["reason"].startswith("Moved to") for r in excluded))
-    manifest = {"schema_version": 1, "data_version": "workflow-v12", "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "datasets": counts, "review_items": issues}
+    manifest = {"schema_version": 1, "data_version": "workflow-v15", "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "datasets": counts, "review_items": issues}
     manifest["workflow_sources"] = {name: hashlib.sha256((ROOT / "assets" / name).read_bytes()).hexdigest()
-                                    for name in ("zoid_cost.csv", "CAU_expand.txt")}
+                                    for name in ("zoid_cost.csv", "CAU_expand.txt", "CAU_expand_2.txt")}
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
     (ROOT / "docs/generated/damage-conversions.json").write_text(json.dumps(damage_conversions, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(counts, indent=2))

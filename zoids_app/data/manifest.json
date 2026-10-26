@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "data_version": "workflow-v12",
-  "source_sha256": "b132ebf2b1513c1e315753ea667f6362bc71bbc6d04d0b21ec69b6d4a15d59bf",
+  "data_version": "workflow-v15",
+  "source_sha256": "4958f748ce85f2ec0a3bc4679a0daf34d2e60c8c5cc764c1eb30053aa6138822",
   "datasets": {
     "transports": {
       "records": 4,
@@ -10,16 +10,16 @@
       "excluded_retired_rows": 0
     },
     "purchases": {
-      "records": 134,
-      "selectable": 134,
+      "records": 154,
+      "selectable": 154,
       "excluded_empty_rows": 0,
       "excluded_retired_rows": 0
     },
     "zoids": {
-      "records": 134,
-      "selectable": 134,
-      "excluded_empty_rows": 5,
-      "excluded_retired_rows": 19,
+      "records": 154,
+      "selectable": 154,
+      "excluded_empty_rows": 4,
+      "excluded_retired_rows": 0,
       "moved_rows": 4
     },
     "armaments": {
@@ -30,10 +30,10 @@
       "moved_rows": 0
     },
     "abilities": {
-      "records": 161,
-      "selectable": 160,
+      "records": 166,
+      "selectable": 165,
       "excluded_empty_rows": 1,
-      "excluded_retired_rows": 21,
+      "excluded_retired_rows": 16,
       "moved_rows": 0
     },
     "feats": {
@@ -127,7 +127,8 @@
     }
   ],
   "workflow_sources": {
-    "zoid_cost.csv": "52e27d035966938e55ef26da12a2c6042020e17808762d0af1aea00b7bbac41d",
-    "CAU_expand.txt": "4247588cd66e736f47a4b66e66852c6c3ca639c9dfb50d66b26b8ad83c5b3269"
+    "zoid_cost.csv": "a6903af14269605547f31495c358ee6ee0049d27ebbd3d0a0355451a8184cf21",
+    "CAU_expand.txt": "e697d478521568090548a343babce1cde0fbfe4ed085c6169abd81d322c8e640",
+    "CAU_expand_2.txt": "e77b076f5cd56e544234fdd77d3c90240ad9260eca09a850c0b4eafdc3823be0"
   }
 }

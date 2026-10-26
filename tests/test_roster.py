@@ -120,8 +120,8 @@ class RosterTests(unittest.TestCase):
         base = self.catalog.find("zoids", "Liger Zero")
         self.assertEqual(base["corrections"]["weapon_3_30"]["original"], "Strike Laster Claw:")
 
-    def test_blox_and_transports_cannot_be_acquired_as_normal_zoids(self):
-        for name in ("Leo Blaze", "Zero Phoenix", "Gustav", "Hover Cargo", "Whale King"):
+    def test_unhosted_caus_and_transports_cannot_be_acquired_as_normal_zoids(self):
+        for name in ("Zero Phoenix", "Gustav", "Hover Cargo", "Whale King"):
             with self.subTest(name=name), self.assertRaises(RuleError):
                 acquire_zoid(new_character(self.catalog), name, self.catalog)
 

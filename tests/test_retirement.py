@@ -20,20 +20,18 @@ class RetirementTests(unittest.TestCase):
         self.addCleanup(self.directory.cleanup)
         self.path = Path(self.directory.name) / "characters.sqlite3"
 
-    def test_all_blox_zoids_and_five_abilities_are_excluded(self):
+    def test_blox_zoids_and_five_abilities_are_restored(self):
         zoids = self.catalog.tables["zoids"]
-        self.assertEqual(len(zoids["records"]), 134)
-        self.assertFalse(any(r["fields"]["type"].strip().casefold() == "blox" for r in zoids["records"]))
+        self.assertEqual(len(zoids["records"]), 154)
+        self.assertEqual(sum(r["fields"]["type"].strip().casefold() == "blox" for r in zoids["records"]), 14)
+        for name, expected in (("Buster Eagle", "Flying"), ("Fire Phoenix", "Flying"),
+                               ("Jet Falcon", "Flying"), ("Zero Falcon", "Liger"), ("Zero Phoenix", "Liger")):
+            self.assertEqual(self.catalog.find("zoids", name)["fields"]["type"], expected)
         retired = [r for r in zoids["excluded_rows"] if r["reason"] == "Owner retired BLOX Zoids"]
-        self.assertEqual(len(retired), 19)
-        self.assertIn("Zero Phoenix", {r["name"] for r in retired})
-        for record in retired:
-            with self.assertRaises(RuleError):
-                self.catalog.find("zoids", record["id"])
+        self.assertEqual(retired, [])
         for name in ("BLOXType 1", "BLOX Type 2", "BLOX Type 3", "BLOX Type 4", "BLOX Type 5"):
-            with self.assertRaises(RuleError):
-                self.catalog.find("abilities", name)
-        self.assertEqual(sum(r["kind"] == "record" for r in self.catalog.tables["abilities"]["records"]), 160)
+            self.assertEqual(self.catalog.find("abilities", name)["eligible_types"], ["BLOX"])
+        self.assertEqual(sum(r["kind"] == "record" for r in self.catalog.tables["abilities"]["records"]), 165)
 
     def test_transports_have_separate_reference_catalog_and_provenance(self):
         records = self.catalog.tables["transports"]["records"]
@@ -55,8 +53,8 @@ class RetirementTests(unittest.TestCase):
         values["gold"] = 1234
         values["current_health"] = 17
         values["build"]["zoid"] = removed_id
-        values["build"]["abilities"] = ["abilities:bloxtype_1", "abilities:sniper_4"]
-        values["build"]["inactive_abilities"] = ["abilities:blox_type_5"]
+        values["build"]["abilities"] = ["abilities:wimp", "abilities:sniper_4"]
+        values["build"]["inactive_abilities"] = ["abilities:slowpoke"]
         values["build"]["upgrades"]["speed"] = 3
         owned = values["owned_zoids"][0]
         owned["base_zoid"] = removed_id
@@ -76,7 +74,7 @@ class RetirementTests(unittest.TestCase):
             db.execute(f"PRAGMA user_version={version}")
 
     def test_v2_retirement_preserves_archive_and_selects_surviving_zoid(self):
-        old = self.old_pilot("zoids:leo_blaze", survivor=True)
+        old = self.old_pilot("zoids:hover_cargo", survivor=True)
         removed = old["owned_zoids"][0]
         self.write_old(old, 2)
         store = CharacterStore(self.path, self.catalog)
@@ -111,7 +109,7 @@ class RetirementTests(unittest.TestCase):
         self.assertEqual(acquired.build.upgrades.speed, 0)
 
     def test_v1_retired_zoid_migrates_without_granting_a_replacement(self):
-        old = self.old_pilot("zoids:zero_phoenix")
+        old = self.old_pilot("zoids:hover_cargo")
         old.pop("owned_zoids")
         old.pop("active_zoid_id")
         self.write_old(old, 1)

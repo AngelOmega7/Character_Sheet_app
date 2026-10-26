@@ -274,7 +274,7 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(len(ids), len(set(ids)))
             for r in table["records"]:
                 self.assertGreater(r["source"]["row"], 1)
-        self.assertEqual(len(catalog.tables["zoids"]["records"]), 134)
+        self.assertEqual(len(catalog.tables["zoids"]["records"]), 154)
         self.assertEqual(len(catalog.tables["organoids"]["records"]), 41)
 
     def test_formula_constants_and_unresolved_dynamic_fields(self):

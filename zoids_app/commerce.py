@@ -1,9 +1,10 @@
 """CSV-backed, atomic build/purchase, upgrade, and CAU-detachment transactions."""
 from collections import Counter
 from dataclasses import dataclass, replace
+from uuid import NAMESPACE_URL, uuid5
 
 from .catalog import Catalog
-from .characters import (Material, acquire_zoid, fixed_weapon_identity, restore_roster_selection,
+from .characters import (Material, StoredFuzor, acquire_zoid, fixed_weapon_identity, restore_roster_selection,
                          set_upgrades, switch_zoid, validate_character)
 from .combat import RuleError
 
@@ -57,19 +58,29 @@ class PurchaseQuote:
     predecessor: str | None
     issues: tuple[str, ...]
     starter: bool = False
+    blox_ids: tuple[str | None, ...] = ()
+    stored_fuzor: StoredFuzor | None = None
 
 
-def quote_purchase(character, zoid, *, host_id=None, base_id=None, starter=False, catalog=None):
+def quote_purchase(character, zoid, *, host_id=None, base_id=None, blox_ids=(), stored_fuzor_id=None, starter=False, catalog=None):
     catalog = catalog or Catalog()
     if type(starter) is not bool:
         raise RuleError("Starter flag must be a Boolean")
     character = validate_character(character, catalog)
     record = catalog.find("zoids", zoid)
+    stored = None
+    if stored_fuzor_id is not None:
+        stored = next((s for s in character.stored_fuzors if s.id == stored_fuzor_id and s.zoid == record["id"]), None)
+        if stored is None or not record.get("is_fuzor"):
+            raise RuleError("Select a stored FUZOR of this design to rebuild")
     data = recipe(catalog, record["id"])
+    components = data.get("blox", [])
+    if not isinstance(blox_ids, (tuple, list)) or (blox_ids and len(blox_ids) != len(components)):
+        raise RuleError("Select one owned instance for each BLOX component requirement")
     cau = record["id"] != record["ownership_base_id"]
     if starter:
-        if not character.starter_pending or character.owned_zoids or cau or data["cost"] > 10000 or data["base_zoid"]:
-            raise RuleError("Choose a non-CAU starting Zoid costing at most 10,000g with no Base Zoid requirement")
+        if not character.starter_pending or character.owned_zoids or cau or data["cost"] > 10000 or data["base_zoid"] or components:
+            raise RuleError("Choose a non-CAU starting Zoid costing at most 10,000g with no Base Zoid or BLOX component requirement")
     elif character.starter_pending:
         raise RuleError("Purchase a starting Zoid first")
     issues, predecessor = [], None
@@ -113,7 +124,21 @@ def quote_purchase(character, zoid, *, host_id=None, base_id=None, starter=False
             base_id = None
     else:
         base_id = None
-    return PurchaseQuote(record["id"], data["cost"], tuple(required.items()), host_id, base_id, predecessor, tuple(issues), starter)
+    selected, used = [], {identity for identity in (host_id, base_id) if identity}
+    for index, component in enumerate(components):
+        requested = blox_ids[index] if blox_ids else None
+        candidates = [o for o in character.owned_zoids if o.base_zoid == component and len(o.forms) == 1
+                      and o.id not in used and (requested is None or o.id == requested)]
+        if len(candidates) == 1:
+            chosen = candidates[0].id
+            used.add(chosen)
+            selected.append(chosen)
+        else:
+            selected.append(requested)
+            name = catalog.find("zoids", component)["name"]
+            issues.append(f"BLOX {index + 1}: select a distinct owned {name} with no acquired CAUs to consume")
+    return PurchaseQuote(record["id"], data["cost"], tuple(required.items()), host_id, base_id, predecessor,
+                         tuple(issues), starter, tuple(selected), stored)
 
 
 def _prune_form_state(owner, catalog):
@@ -131,18 +156,24 @@ def purchase_zoid(character, quote, *, override=False, catalog=None):
     if type(override) is not bool:
         raise RuleError("GM Override must be explicitly confirmed")
     character = validate_character(character, catalog)
-    fresh = quote_purchase(character, quote.zoid, host_id=quote.host_id, base_id=quote.base_id, starter=quote.starter, catalog=catalog)
+    fresh = quote_purchase(character, quote.zoid, host_id=quote.host_id, base_id=quote.base_id,
+                           blox_ids=quote.blox_ids, stored_fuzor_id=quote.stored_fuzor.id if quote.stored_fuzor else None,
+                           starter=quote.starter, catalog=catalog)
     if fresh != quote:
         raise RuleError("Purchase requirements changed; request a fresh quote")
     if quote.issues and not override:
         raise RuleError("; ".join(quote.issues))
+    components = tuple(replace(o, forms=tuple(replace(f, equipment=(None,) * 4,
+        equipment_ids=(None,) * 4, equipment_active=(False,) * 4) for f in o.forms))
+        for o in character.owned_zoids if o.id in quote.blox_ids) if not override else ()
     if not override:
         consumed = {name.casefold(): count for name, count in quote.materials}
         character = replace(character, gold=character.gold - quote.cost,
             materials=tuple(Material(i.name, i.quantity - consumed.get(i.name.casefold(), 0)) for i in character.materials))
-        if quote.base_id:
-            character = replace(character, owned_zoids=tuple(o for o in character.owned_zoids if o.id != quote.base_id),
-                                loaded_zoids=tuple(i for i in character.loaded_zoids if i != quote.base_id))
+        consumed_zoids = {identity for identity in (quote.base_id, *quote.blox_ids) if identity}
+        if consumed_zoids:
+            character = replace(character, owned_zoids=tuple(o for o in character.owned_zoids if o.id not in consumed_zoids),
+                                loaded_zoids=tuple(i for i in character.loaded_zoids if i not in consumed_zoids))
             character = restore_roster_selection(character, catalog)
     parts = recipe_parts(catalog, quote.zoid)
     if quote.predecessor and quote.host_id:
@@ -161,6 +192,18 @@ def purchase_zoid(character, quote, *, override=False, catalog=None):
     before = {o.id for o in character.owned_zoids}
     character = acquire_zoid(character, quote.zoid, catalog, host_id=quote.host_id)
     owner = next(o for o in character.owned_zoids if o.id == quote.host_id) if quote.host_id else next(o for o in character.owned_zoids if o.id not in before)
+    if quote.stored_fuzor:
+        stored = quote.stored_fuzor
+        generated_id = owner.id
+        owner = replace(owner, id=stored.id, frame=stored.frame, weapons=stored.weapons)
+        character = replace(character,
+            stored_fuzors=tuple(s for s in character.stored_fuzors if s.id != stored.id),
+            owned_zoids=tuple(owner if o.id == generated_id else o for o in character.owned_zoids),
+            active_zoid_id=owner.id if character.active_zoid_id == generated_id else character.active_zoid_id)
+        character = restore_roster_selection(character, catalog)
+    if catalog.find("zoids", quote.zoid).get("is_fuzor"):
+        owner = replace(owner, fusion_components=components)
+        character = replace(character, owned_zoids=tuple(owner if o.id == owner.id else o for o in character.owned_zoids))
     if quote.host_id:
         owner = replace(owner, forms=tuple(replace(f, build_parts=parts) if f.zoid == quote.zoid else f for f in owner.forms))
         character = replace(character, owned_zoids=tuple(owner if o.id == owner.id else o for o in character.owned_zoids))
@@ -189,21 +232,42 @@ def detach_cau(character, owner_id, form_id, catalog=None):
     return validate_character(restore_roster_selection(character, catalog), catalog)
 
 
-def sell_zoid(character, owner_id, catalog=None):
+def sell_zoid(character, owner_id, catalog=None, *, retain_fuzor=False):
     """Sell one chassis and all currently owned forms at 75% of their CSV prices.
 
     Inventory copies stay owned, but assignments disappear with the sold chassis.
-    No separate upgrade or material refund is part of a whole-Zoid sale.
+    FUZOR sales also recover saved components, or fresh recipe copies for old saves.
     """
     catalog = catalog or Catalog()
+    if type(retain_fuzor) is not bool:
+        raise RuleError("Choose whether to retain this FUZOR's identity and upgrades")
     character = validate_character(character, catalog)
     owner = next((o for o in character.owned_zoids if o.id == owner_id), None)
     if owner is None:
         raise RuleError("This pilot does not own that Zoid instance")
+    is_fuzor = catalog.find("zoids", owner.base_zoid).get("is_fuzor", False)
+    if retain_fuzor and not is_fuzor:
+        raise RuleError("Only sold FUZORs can retain their identity and upgrades")
     refund = sum(recipe(catalog, f.zoid)["cost"] for f in owner.forms) * 3 // 4
     character = replace(character, gold=character.gold + refund,
         owned_zoids=tuple(o for o in character.owned_zoids if o.id != owner_id),
         loaded_zoids=tuple(i for i in character.loaded_zoids if i != owner_id))
+    character = restore_roster_selection(character, catalog)
+    if is_fuzor:
+        if owner.fusion_components is not None:
+            character = replace(character, owned_zoids=(*character.owned_zoids, *owner.fusion_components))
+        else:
+            # Pre-v9 builds did not retain components. Stable fallback identities
+            # keep repeated sale quotes identical without granting duplicate copies.
+            for index, component in enumerate(recipe(catalog, owner.base_zoid).get("blox", [])):
+                character = acquire_zoid(character, component, catalog)
+                created = character.owned_zoids[-1]
+                identity = str(uuid5(NAMESPACE_URL, f"zoids:fuzor:{owner.id}:component:{index}"))
+                character = replace(character, owned_zoids=(*character.owned_zoids[:-1], replace(created, id=identity)),
+                    active_zoid_id=identity if character.active_zoid_id == created.id else character.active_zoid_id)
+        if retain_fuzor:
+            stored = StoredFuzor(owner.id, owner.base_zoid, owner.frame, owner.weapons)
+            character = replace(character, stored_fuzors=(*character.stored_fuzors, stored))
     return validate_character(restore_roster_selection(character, catalog), catalog)
 
 

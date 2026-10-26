@@ -8,20 +8,24 @@ RENAMES = {"Dragon Nest": "Dragoon Nest", "Command Wolf Town": "Command Wolf UC"
            "Rev Raptor Pile Bunker": "Rev Raptor Pilebunker", "Gun sniper LS": "Gun Sniper LS"}
 TRANSPORTS = {"Gustav": (2, "Medium"), "Hover Cargo": (6, "Large"),
               "Dragoon Nest": (12, "Large Large"), "Whale King": (24, "Extra Large")}
+TYPE_CORRECTIONS = {"Buster Eagle": "Flying", "Fire Phoenix": "Flying", "Jet Falcon": "Flying",
+                    "Zero Falcon": "Liger", "Zero Phoenix": "Liger"}
+FUZORS = {"Fuzor Dragon", "Chimera Dragon", "Gojulox", "2-Arm Lizard", "Griffin", "Lord Gale"}
 
 
 def apply_workflow(records, keys, root, existing_families):
     families = dict(existing_families)
-    base = None
-    for line in (root / "assets/CAU_expand.txt").read_text(encoding="utf-8-sig").splitlines()[5:]:
-        line = line.strip()
-        if not line:
-            continue
-        if line.startswith("/"):
-            name = line[1:].split(" (")[0].strip().replace("Sniper Master", "Snipe Master")
-            families[name + " (CAU)"] = base
-        else:
-            base = line
+    for filename in ("CAU_expand.txt", "CAU_expand_2.txt"):
+        base = None
+        for line in (root / "assets" / filename).read_text(encoding="utf-8-sig").splitlines()[5:]:
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith("/"):
+                name = line[1:].split(" (")[0].strip().replace("Sniper Master", "Snipe Master")
+                families[name + " (CAU)"] = base
+            else:
+                base = line
     stems = {name.removesuffix(" (CAU)") for name in families}
     for r in records:
         fields = r["fields"]
@@ -33,6 +37,13 @@ def apply_workflow(records, keys, root, existing_families):
             name += " (CAU)"
         r["legacy_names"] = list(dict.fromkeys([old_name, name.removesuffix(" (CAU)")]))
         r["name"] = fields["name"] = name
+        r["is_fuzor"] = name in FUZORS
+        corrected_type = TYPE_CORRECTIONS.get(name.removesuffix(" (CAU)"))
+        if corrected_type is not None:
+            r.setdefault("corrections", {})["type"] = {
+                "original": fields["type"], "corrected": corrected_type,
+                "reason": "Owner assigned game types to implemented BLOX designs"}
+            fields["type"] = corrected_type
         for key, value in fields.items():
             if isinstance(value, str):
                 fields[key] = re.sub(r"\bLion\b", "Liger", value)
@@ -79,7 +90,10 @@ def write_purchases(output, records, root):
             lookup[name.casefold()] = r
     converted = []
     with (root / "assets/zoid_cost.csv").open(encoding="utf-8-sig", newline="") as stream:
-        for row_number, row in enumerate(csv.DictReader(stream), 2):
+        reader = csv.DictReader(stream)
+        blox_columns = sorted((key for key in reader.fieldnames if re.fullmatch(r"BLOX \d+", key)),
+                              key=lambda key: int(key.split()[1]))
+        for row_number, row in enumerate(reader, 2):
             original = dict(row)
             if row["Name"] == "Jagged Stinger":
                 row["Base Zoid"] = "Death Stinger"
@@ -89,17 +103,21 @@ def write_purchases(output, records, root):
                 row["Zoid Core"], row["Parts"] = "Zoid Core SS", ""
             r = lookup[row["Name"].strip().casefold()]
             base_name = row["Base Zoid"].strip()
-            cost = int(row["Cost"].replace(",", ""))
+            blox = [lookup[row[key].strip().casefold()]["id"] for key in blox_columns if row[key].strip()]
+            cost = int(row["Cost"].replace(",", "").strip() or ("0" if r["is_fuzor"] else ""))
             if cost < 0:
                 raise ValueError(f"Negative price for {r['name']}")
+            if r["is_fuzor"] and (cost != 0 or len(blox) < 2 or base_name or row["Zoid Core"].strip() or row["Parts"].strip()):
+                raise ValueError(f"FUZOR {r['name']} must require multiple component Zoids and no gold/core/parts/base")
             converted.append({"id": "purchases:" + r["id"].split(":")[1], "name": r["name"], "kind": "record",
                 "zoid_id": r["id"], "source": {"sheet": "zoid_cost.csv", "row": row_number}, "original": original,
                 "fields": {"name": r["name"], "cost": cost,
                     "core": row["Zoid Core"].strip() or None, "parts": row["Parts"].strip() or None,
-                    "base_zoid": lookup[base_name.casefold()]["id"] if base_name else None}, "dynamic_fields": {}})
+                    "base_zoid": lookup[base_name.casefold()]["id"] if base_name else None,
+                    "blox": blox}, "dynamic_fields": {}})
     if {r["zoid_id"] for r in converted} != {r["id"] for r in records} or len(converted) != len(records):
         raise ValueError("Every playable Zoid/form must have exactly one cost row")
-    data = {"schema_version": 1, "columns": ["name", "cost", "core", "parts", "base_zoid"],
-            "source_headers": ["Name", "Cost", "Zoid Core", "Parts", "Base Zoid"], "records": converted, "excluded_rows": []}
+    data = {"schema_version": 1, "columns": ["name", "cost", "core", "parts", "base_zoid", "blox"],
+            "source_headers": reader.fieldnames, "records": converted, "excluded_rows": []}
     (output / "purchases.json").write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8", newline="\n")
     return len(converted)

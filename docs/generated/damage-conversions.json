@@ -161,6 +161,14 @@
   },
   {
     "dataset": "zoids",
+    "id": "zoids:fuzor_dragon",
+    "source": "Zoid List!N117",
+    "field": "effect_2_14",
+    "original": "Hand mounted guns. Targets up to two Zoids. Shoots two bursts of 6D10 piercing",
+    "converted": "Hand mounted guns. Targets up to two Zoids. Shoots two bursts of 60 piercing"
+  },
+  {
+    "dataset": "zoids",
     "id": "zoids:pteramander",
     "source": "Zoid List!N154",
     "field": "effect_2_14",

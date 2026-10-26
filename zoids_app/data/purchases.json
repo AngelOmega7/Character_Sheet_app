@@ -5,14 +5,21 @@
     "cost",
     "core",
     "parts",
-    "base_zoid"
+    "base_zoid",
+    "blox"
   ],
   "source_headers": [
     "Name",
     "Cost",
     "Zoid Core",
     "Parts",
-    "Base Zoid"
+    "Base Zoid",
+    "BLOX 1",
+    "BLOX 2",
+    "BLOX 3",
+    "BLOX 4",
+    "BLOX 5",
+    "BLOX 6"
   ],
   "records": [
     {
@@ -26,17 +33,24 @@
       },
       "original": {
         "Name": "Allosaurer",
-        "Cost": "7,000",
+        "Cost": "7000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Godos"
+        "Base Zoid": "Godos",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Allosaurer",
         "cost": 7000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:godos"
+        "base_zoid": "zoids:godos",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -51,17 +65,24 @@
       },
       "original": {
         "Name": "Atak Kat",
-        "Cost": "20,000",
+        "Cost": "20000",
         "Zoid Core": "Zoid Core ZN",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Atak Kat",
         "cost": 20000,
         "core": "Zoid Core ZN",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -76,17 +97,24 @@
       },
       "original": {
         "Name": "Barigator",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "Zoid Core H1",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Barigator",
         "cost": 10000,
         "core": "Zoid Core H1",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -101,17 +129,24 @@
       },
       "original": {
         "Name": "Berserk Fury",
-        "Cost": "150,000",
+        "Cost": "150000",
         "Zoid Core": "Zoid Core UX",
         "Parts": "WildZ OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Berserk Fury",
         "cost": 150000,
         "core": "Zoid Core UX",
         "parts": "WildZ OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -126,17 +161,24 @@
       },
       "original": {
         "Name": "Berserk Fury Z (CAU)",
-        "Cost": "50,000",
+        "Cost": "50000",
         "Zoid Core": "",
         "Parts": "ZF Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Berserk Fury Z (CAU)",
         "cost": 50000,
         "core": null,
         "parts": "ZF Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -151,17 +193,24 @@
       },
       "original": {
         "Name": "Black Rhimos",
-        "Cost": "30,000",
+        "Cost": "30000",
         "Zoid Core": "Zoid Core GR",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Black Rhimos",
         "cost": 30000,
         "core": "Zoid Core GR",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -176,17 +225,24 @@
       },
       "original": {
         "Name": "Blade Liger",
-        "Cost": "32,000",
+        "Cost": "32000",
         "Zoid Core": "",
         "Parts": "Normal OS",
-        "Base Zoid": "Shield Liger"
+        "Base Zoid": "Shield Liger",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Blade Liger",
         "cost": 32000,
         "core": null,
         "parts": "Normal OS",
-        "base_zoid": "zoids:shield_liger"
+        "base_zoid": "zoids:shield_liger",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -201,17 +257,24 @@
       },
       "original": {
         "Name": "Blade Liger AB",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "AB Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Blade Liger AB (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "AB Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -226,17 +289,24 @@
       },
       "original": {
         "Name": "Blitz Tiger",
-        "Cost": "400,000",
+        "Cost": "400000",
         "Zoid Core": "Zoid Core BT",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Blitz Tiger",
         "cost": 400000,
         "core": "Zoid Core BT",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -251,17 +321,24 @@
       },
       "original": {
         "Name": "Bloodler",
-        "Cost": "50,000",
+        "Cost": "50000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Redler"
+        "Base Zoid": "Redler",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Bloodler",
         "cost": 50000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:redler"
+        "base_zoid": "zoids:redler",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -276,17 +353,24 @@
       },
       "original": {
         "Name": "Bloody Demon",
-        "Cost": "160,000",
+        "Cost": "160000",
         "Zoid Core": "Zoid Core GS",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Bloody Demon",
         "cost": 160000,
         "core": "Zoid Core GS",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -301,17 +385,24 @@
       },
       "original": {
         "Name": "Brachios",
-        "Cost": "15,000",
+        "Cost": "15000",
         "Zoid Core": "Zoid Core ZN",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Brachios",
         "cost": 15000,
         "core": "Zoid Core ZN",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -326,17 +417,24 @@
       },
       "original": {
         "Name": "Cannon Tortoise",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "Zoid Core H1",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Cannon Tortoise",
         "cost": 10000,
         "core": "Zoid Core H1",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -351,17 +449,24 @@
       },
       "original": {
         "Name": "Cannon Tortoise BC",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "BC Set",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Cannon Tortoise BC (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "BC Set",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -376,17 +481,24 @@
       },
       "original": {
         "Name": "Cerberus",
-        "Cost": "15,000",
+        "Cost": "15000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Command Wolf"
+        "Base Zoid": "Command Wolf",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Cerberus",
         "cost": 15000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:command_wolf"
+        "base_zoid": "zoids:command_wolf",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -401,17 +513,24 @@
       },
       "original": {
         "Name": "Climber Wolf",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "Climb Engine",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Climber Wolf (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "Climb Engine",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -426,17 +545,24 @@
       },
       "original": {
         "Name": "Command Wolf",
-        "Cost": "25,000",
+        "Cost": "25000",
         "Zoid Core": "Zoid Core H1",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Command Wolf",
         "cost": 25000,
         "core": "Zoid Core H1",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -451,17 +577,24 @@
       },
       "original": {
         "Name": "Command Wolf AC",
-        "Cost": "8,000",
+        "Cost": "8000",
         "Zoid Core": "",
         "Parts": "Attack Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Command Wolf AC (CAU)",
         "cost": 8000,
         "core": null,
         "parts": "Attack Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -476,17 +609,24 @@
       },
       "original": {
         "Name": "Command Wolf IS",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "Damaged Rifle",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Command Wolf IS (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "Damaged Rifle",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -501,17 +641,24 @@
       },
       "original": {
         "Name": "Command Wolf Town",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "Rocket Cannon",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Command Wolf UC (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "Rocket Cannon",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -526,17 +673,24 @@
       },
       "original": {
         "Name": "Cyclops",
-        "Cost": "240,000",
+        "Cost": "240000",
         "Zoid Core": "Zoid Core GR",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Cyclops",
         "cost": 240000,
         "core": "Zoid Core GR",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -551,17 +705,24 @@
       },
       "original": {
         "Name": "Cyclops 2",
-        "Cost": "240,000",
+        "Cost": "240000",
         "Zoid Core": "Zoid Core GR",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Cyclops 2",
         "cost": 240000,
         "core": "Zoid Core GR",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -576,17 +737,24 @@
       },
       "original": {
         "Name": "Dark Horn",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Red Horn"
+        "Base Zoid": "Red Horn",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Dark Horn",
         "cost": 10000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:red_horn"
+        "base_zoid": "zoids:red_horn",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -601,17 +769,24 @@
       },
       "original": {
         "Name": "Dark Horn HS",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "HS Set",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Dark Horn HS (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "HS Set",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -626,17 +801,24 @@
       },
       "original": {
         "Name": "Dark Poison",
-        "Cost": "6,000",
+        "Cost": "6000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Molga"
+        "Base Zoid": "Molga",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Dark Poison",
         "cost": 6000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:molga"
+        "base_zoid": "zoids:molga",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -651,17 +833,24 @@
       },
       "original": {
         "Name": "Dark Spiner",
-        "Cost": "80,000",
+        "Cost": "80000",
         "Zoid Core": "Zoid Core SP",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Dark Spiner",
         "cost": 80000,
         "core": "Zoid Core SP",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -676,17 +865,24 @@
       },
       "original": {
         "Name": "Death Meteor",
-        "Cost": "200,000",
+        "Cost": "200000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Death Saurer"
+        "Base Zoid": "Death Saurer",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Death Meteor",
         "cost": 200000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:death_saurer"
+        "base_zoid": "zoids:death_saurer",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -701,17 +897,24 @@
       },
       "original": {
         "Name": "Death Saurer",
-        "Cost": "300,000",
+        "Cost": "300000",
         "Zoid Core": "Zoid Core DZ",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Death Saurer",
         "cost": 300000,
         "core": "Zoid Core DZ",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -726,17 +929,24 @@
       },
       "original": {
         "Name": "Death Stinger",
-        "Cost": "180,000",
+        "Cost": "180000",
         "Zoid Core": "Zoids Core DS",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Death Stinger",
         "cost": 180000,
         "core": "Zoid Core DS",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -751,17 +961,24 @@
       },
       "original": {
         "Name": "Diablo Tiger",
-        "Cost": "240,000",
+        "Cost": "240000",
         "Zoid Core": "Zoid Core DT",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Diablo Tiger",
         "cost": 240000,
         "core": "Zoid Core DT",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -776,17 +993,24 @@
       },
       "original": {
         "Name": "Dibison",
-        "Cost": "66,000",
+        "Cost": "66000",
         "Zoid Core": "Zoid Core H2",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Dibison",
         "cost": 66000,
         "core": "Zoid Core H2",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -801,17 +1025,24 @@
       },
       "original": {
         "Name": "Double Sworder",
-        "Cost": "2,000",
+        "Cost": "2000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Saicurtis"
+        "Base Zoid": "Saicurtis",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Double Sworder",
         "cost": 2000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:saicurtis"
+        "base_zoid": "zoids:saicurtis",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -826,17 +1057,24 @@
       },
       "original": {
         "Name": "Elephander",
-        "Cost": "70,000",
+        "Cost": "70000",
         "Zoid Core": "Zoid Core GR",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Elephander",
         "cost": 70000,
         "core": "Zoid Core GR",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -851,17 +1089,24 @@
       },
       "original": {
         "Name": "Elephander AG",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "AG Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Elephander AG (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "AG Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -876,17 +1121,24 @@
       },
       "original": {
         "Name": "Gator",
-        "Cost": "6,000",
+        "Cost": "6000",
         "Zoid Core": "Zoid Core ZN",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gator",
         "cost": 6000,
         "core": "Zoid Core ZN",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -901,17 +1153,24 @@
       },
       "original": {
         "Name": "Geno Breaker",
-        "Cost": "40,000",
+        "Cost": "40000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Geno Breaker (CAU)",
         "cost": 40000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -926,17 +1185,24 @@
       },
       "original": {
         "Name": "Geno Flame",
-        "Cost": "30,000",
+        "Cost": "30000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Geno Flame (CAU)",
         "cost": 30000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -951,17 +1217,24 @@
       },
       "original": {
         "Name": "Geno Hydra",
-        "Cost": "130,000",
+        "Cost": "130000",
         "Zoid Core": "Zoid Core GH",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Geno Hydra",
         "cost": 130000,
         "core": "Zoid Core GH",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -976,17 +1249,24 @@
       },
       "original": {
         "Name": "Geno Hydra KA",
-        "Cost": "50,000",
+        "Cost": "50000",
         "Zoid Core": "",
         "Parts": "KA Unit",
-        "Base Zoid": "Geno Hydra"
+        "Base Zoid": "Geno Hydra",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Geno Hydra KA",
         "cost": 50000,
         "core": null,
         "parts": "KA Unit",
-        "base_zoid": "zoids:geno_hydra"
+        "base_zoid": "zoids:geno_hydra",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1001,17 +1281,24 @@
       },
       "original": {
         "Name": "Geno Saurer",
-        "Cost": "80,000",
+        "Cost": "80000",
         "Zoid Core": "Zoid Core GS",
         "Parts": "Normal OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Geno Saurer",
         "cost": 80000,
         "core": "Zoid Core GS",
         "parts": "Normal OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1026,17 +1313,24 @@
       },
       "original": {
         "Name": "Geno Scissors",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "Scissors Parts",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Geno Scissors (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "Scissors Parts",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1051,17 +1345,24 @@
       },
       "original": {
         "Name": "Geno Trooper",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "Flight Parts",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Geno Trooper (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "Flight Parts",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1076,17 +1377,24 @@
       },
       "original": {
         "Name": "Gilvader",
-        "Cost": "500,000",
+        "Cost": "500000",
         "Zoid Core": "Zoid Core GV",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gilvader",
         "cost": 500000,
         "core": "Zoid Core GV",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1101,17 +1409,24 @@
       },
       "original": {
         "Name": "Godos",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "Zoid Core H1",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Godos",
         "cost": 10000,
         "core": "Zoid Core H1",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1126,17 +1441,24 @@
       },
       "original": {
         "Name": "Gojulas",
-        "Cost": "70,000",
+        "Cost": "70000",
         "Zoid Core": "Zoid Core ZG",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gojulas",
         "cost": 70000,
         "core": "Zoid Core ZG",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1151,17 +1473,24 @@
       },
       "original": {
         "Name": "Gojulas Giga",
-        "Cost": "120,000",
+        "Cost": "120000",
         "Zoid Core": "Zoid Core ZG",
         "Parts": "WildG OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gojulas Giga",
         "cost": 120000,
         "core": "Zoid Core ZG",
         "parts": "WildG OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1176,17 +1505,24 @@
       },
       "original": {
         "Name": "Gojulas Giga Cannon",
-        "Cost": "20,000",
+        "Cost": "20000",
         "Zoid Core": "",
         "Parts": "GC Set",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gojulas Giga Cannon (CAU)",
         "cost": 20000,
         "core": null,
         "parts": "GC Set",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1201,17 +1537,24 @@
       },
       "original": {
         "Name": "Gojulas Gunner",
-        "Cost": "20,000",
+        "Cost": "20000",
         "Zoid Core": "",
         "Parts": "GC Set",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gojulas Gunner (CAU)",
         "cost": 20000,
         "core": null,
         "parts": "GC Set",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1226,17 +1569,24 @@
       },
       "original": {
         "Name": "Gojulas the Ogre",
-        "Cost": "80,000",
+        "Cost": "80000",
         "Zoid Core": "",
         "Parts": "Normal OS",
-        "Base Zoid": "Gojulas"
+        "Base Zoid": "Gojulas",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gojulas the Ogre",
         "cost": 80000,
         "core": null,
         "parts": "Normal OS",
-        "base_zoid": "zoids:gojulas"
+        "base_zoid": "zoids:gojulas",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1251,17 +1601,24 @@
       },
       "original": {
         "Name": "Gordos",
-        "Cost": "55,000",
+        "Cost": "55000",
         "Zoid Core": "Zoid Core H1",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gordos",
         "cost": 55000,
         "core": "Zoid Core H1",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1276,17 +1633,24 @@
       },
       "original": {
         "Name": "Gordos LR",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "GC Set",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gordos LR",
         "cost": 10000,
         "core": null,
         "parts": "GC Set",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1301,17 +1665,24 @@
       },
       "original": {
         "Name": "Gorhecks",
-        "Cost": "7,000",
+        "Cost": "7000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Gordos"
+        "Base Zoid": "Gordos",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gorhecks",
         "cost": 7000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:gordos"
+        "base_zoid": "zoids:gordos",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1326,17 +1697,24 @@
       },
       "original": {
         "Name": "Gravity Bison",
-        "Cost": "96,000",
+        "Cost": "96000",
         "Zoid Core": "Zoid Core H2",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gravity Bison",
         "cost": 96000,
         "core": "Zoid Core H2",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1351,17 +1729,24 @@
       },
       "original": {
         "Name": "Gun Blaster",
-        "Cost": "80,000",
+        "Cost": "80000",
         "Zoid Core": "Zoid Core GB",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gun Blaster",
         "cost": 80000,
         "core": "Zoid Core GB",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1376,17 +1761,24 @@
       },
       "original": {
         "Name": "Gun Sniper",
-        "Cost": "12,000",
+        "Cost": "12000",
         "Zoid Core": "Zoid Core H2",
         "Parts": "Limited OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gun Sniper",
         "cost": 12000,
         "core": "Zoid Core H2",
         "parts": "Limited OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1401,17 +1793,24 @@
       },
       "original": {
         "Name": "Gun sniper LS",
-        "Cost": "30,000",
+        "Cost": "30000",
         "Zoid Core": "",
         "Parts": "LM Set",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gun Sniper LS (CAU)",
         "cost": 30000,
         "core": null,
         "parts": "LM Set",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1426,17 +1825,24 @@
       },
       "original": {
         "Name": "Gun Sniper NS",
-        "Cost": "40,000",
+        "Cost": "40000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gun Sniper NS (CAU)",
         "cost": 40000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1451,17 +1857,24 @@
       },
       "original": {
         "Name": "Gun Sniper Weasel",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "WW Unit",
-        "Base Zoid": "Gun Sniper"
+        "Base Zoid": "Gun Sniper",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gun Sniper Weasel",
         "cost": 5000,
         "core": null,
         "parts": "WW Unit",
-        "base_zoid": "zoids:gun_sniper"
+        "base_zoid": "zoids:gun_sniper",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1476,17 +1889,24 @@
       },
       "original": {
         "Name": "Gun Tiger",
-        "Cost": "6,000",
+        "Cost": "6000",
         "Zoid Core": "Zoid Core SS",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Gun Tiger",
         "cost": 6000,
         "core": "Zoid Core SS",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1501,17 +1921,24 @@
       },
       "original": {
         "Name": "Guysack",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "Zoid Core IS",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Guysack",
         "cost": 10000,
         "core": "Zoid Core IS",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1526,17 +1953,24 @@
       },
       "original": {
         "Name": "Guysack Stinger",
-        "Cost": "30,000",
+        "Cost": "30000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Guysack Stinger (CAU)",
         "cost": 30000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1551,17 +1985,24 @@
       },
       "original": {
         "Name": "Hammer Head",
-        "Cost": "40,000",
+        "Cost": "40000",
         "Zoid Core": "Zoid Core WT",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Hammer Head",
         "cost": 40000,
         "core": "Zoid Core WT",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1576,17 +2017,24 @@
       },
       "original": {
         "Name": "Hammer Head VL",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "VL Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Hammer Head VL (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "VL Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1601,17 +2049,24 @@
       },
       "original": {
         "Name": "Hammer Rock",
-        "Cost": "12,000",
+        "Cost": "12000",
         "Zoid Core": "Zoid Core SS",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Hammer Rock",
         "cost": 12000,
         "core": "Zoid Core SS",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1626,17 +2081,24 @@
       },
       "original": {
         "Name": "Hellrunner",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "Zoid Core ZN",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Hellrunner",
         "cost": 5000,
         "core": "Zoid Core ZN",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1651,17 +2113,24 @@
       },
       "original": {
         "Name": "Iguan",
-        "Cost": "3,000",
+        "Cost": "3000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Godos"
+        "Base Zoid": "Godos",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Iguan",
         "cost": 3000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:godos"
+        "base_zoid": "zoids:godos",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1676,17 +2145,24 @@
       },
       "original": {
         "Name": "Iron Drill",
-        "Cost": "55,000",
+        "Cost": "55000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Iron Drill (CAU)",
         "cost": 55000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1701,17 +2177,24 @@
       },
       "original": {
         "Name": "Iron Kong",
-        "Cost": "50,000",
+        "Cost": "50000",
         "Zoid Core": "Zoid Core ZN",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Iron Kong",
         "cost": 50000,
         "core": "Zoid Core ZN",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1726,17 +2209,24 @@
       },
       "original": {
         "Name": "Iron Kong Maneuver",
-        "Cost": "30,000",
+        "Cost": "30000",
         "Zoid Core": "",
         "Parts": "MS Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Iron Kong Maneuver (CAU)",
         "cost": 30000,
         "core": null,
         "parts": "MS Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1751,17 +2241,24 @@
       },
       "original": {
         "Name": "Iron Kong PK",
-        "Cost": "60,000",
+        "Cost": "60000",
         "Zoid Core": "",
         "Parts": "PK Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Iron Kong PK (CAU)",
         "cost": 60000,
         "core": null,
         "parts": "PK Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1776,17 +2273,24 @@
       },
       "original": {
         "Name": "Iron Kong SS",
-        "Cost": "50,000",
+        "Cost": "50000",
         "Zoid Core": "",
         "Parts": "PB Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Iron Kong SS (CAU)",
         "cost": 50000,
         "core": null,
         "parts": "PB Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1801,17 +2305,24 @@
       },
       "original": {
         "Name": "Jagd Fury (CAU)",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "Jagd Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Jagd Fury (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "Jagd Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1826,17 +2337,24 @@
       },
       "original": {
         "Name": "Jagged Stinger",
-        "Cost": "40,000",
+        "Cost": "40000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Jagged Stinger"
+        "Base Zoid": "Jagged Stinger",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Jagged Stinger",
         "cost": 40000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:death_stinger"
+        "base_zoid": "zoids:death_stinger",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1851,17 +2369,24 @@
       },
       "original": {
         "Name": "Killer Dome",
-        "Cost": "9,000",
+        "Cost": "9000",
         "Zoid Core": "Zoid Core SS",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Killer Dome",
         "cost": 9000,
         "core": "Zoid Core SS",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1876,17 +2401,24 @@
       },
       "original": {
         "Name": "Killer Spiner",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Killer Dome"
+        "Base Zoid": "Killer Dome",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Killer Spiner (CAU)",
         "cost": 10000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:killer_dome"
+        "base_zoid": "zoids:killer_dome",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1901,17 +2433,24 @@
       },
       "original": {
         "Name": "King Gojulas",
-        "Cost": "700,000",
+        "Cost": "700000",
         "Zoid Core": "Zoid Core KG",
         "Parts": "",
-        "Base Zoid": "Gojulas"
+        "Base Zoid": "Gojulas",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "King Gojulas",
         "cost": 700000,
         "core": "Zoid Core KG",
         "parts": null,
-        "base_zoid": "zoids:gojulas"
+        "base_zoid": "zoids:gojulas",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1926,17 +2465,24 @@
       },
       "original": {
         "Name": "Konig Wolf",
-        "Cost": "42,000",
+        "Cost": "42000",
         "Zoid Core": "Zoid Core KW",
         "Parts": "WildZ OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Konig Wolf",
         "cost": 42000,
         "core": "Zoid Core KW",
         "parts": "WildZ OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1951,17 +2497,24 @@
       },
       "original": {
         "Name": "Konig Wolf DSR (CAU)",
-        "Cost": "15,000",
+        "Cost": "15000",
         "Zoid Core": "",
         "Parts": "DSR Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Konig Wolf DSR (CAU)",
         "cost": 15000,
         "core": null,
         "parts": "DSR Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -1976,17 +2529,24 @@
       },
       "original": {
         "Name": "Liger Aero",
-        "Cost": "18,000",
+        "Cost": "18000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Shield Liger"
+        "Base Zoid": "Shield Liger",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Liger Aero",
         "cost": 18000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:shield_liger"
+        "base_zoid": "zoids:shield_liger",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2001,17 +2561,24 @@
       },
       "original": {
         "Name": "Liger Zero",
-        "Cost": "75,000",
+        "Cost": "75000",
         "Zoid Core": "Zoid Core UX",
         "Parts": "WildZ OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Liger Zero",
         "cost": 75000,
         "core": "Zoid Core UX",
         "parts": "WildZ OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2026,17 +2593,24 @@
       },
       "original": {
         "Name": "Lightning Saix",
-        "Cost": "40,000",
+        "Cost": "40000",
         "Zoid Core": "Zoid Core GR",
         "Parts": "Limited OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Lightning Saix",
         "cost": 40000,
         "core": "Zoid Core GR",
         "parts": "Limited OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2051,17 +2625,24 @@
       },
       "original": {
         "Name": "Lightning Saix BS",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Lightning Saix"
+        "Base Zoid": "Lightning Saix",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Lightning Saix BS",
         "cost": 10000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:lightning_saix"
+        "base_zoid": "zoids:lightning_saix",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2076,17 +2657,24 @@
       },
       "original": {
         "Name": "Mad Thunder",
-        "Cost": "150,000",
+        "Cost": "150000",
         "Zoid Core": "Zoid Core MT",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Mad Thunder",
         "cost": 150000,
         "core": "Zoid Core MT",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2101,17 +2689,24 @@
       },
       "original": {
         "Name": "Molga",
-        "Cost": "6,000",
+        "Cost": "6000",
         "Zoid Core": "Zoid Core ZN",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Molga",
         "cost": 6000,
         "core": "Zoid Core ZN",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2126,17 +2721,24 @@
       },
       "original": {
         "Name": "Molga Cannonry",
-        "Cost": "2,000",
+        "Cost": "2000",
         "Zoid Core": "",
         "Parts": "Cannonry Unit",
-        "Base Zoid": "Molga"
+        "Base Zoid": "Molga",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Cannonry Molga (CAU)",
         "cost": 2000,
         "core": null,
         "parts": "Cannonry Unit",
-        "base_zoid": "zoids:molga"
+        "base_zoid": "zoids:molga",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2151,17 +2753,24 @@
       },
       "original": {
         "Name": "Proto Breaker",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Geno Saurer"
+        "Base Zoid": "Geno Saurer",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Proto Breaker",
         "cost": 10000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:geno_saurer"
+        "base_zoid": "zoids:geno_saurer",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2176,17 +2785,24 @@
       },
       "original": {
         "Name": "Proto Zaber",
-        "Cost": "18,000",
+        "Cost": "18000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Zaber Fang"
+        "Base Zoid": "Zaber Fang",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Proto Zaber",
         "cost": 18000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:zaber_fang"
+        "base_zoid": "zoids:zaber_fang",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2201,17 +2817,24 @@
       },
       "original": {
         "Name": "Psycho Geno Saurer",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Geno Saurer"
+        "Base Zoid": "Geno Saurer",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Psycho Geno Saurer",
         "cost": 5000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:geno_saurer"
+        "base_zoid": "zoids:geno_saurer",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2226,17 +2849,24 @@
       },
       "original": {
         "Name": "Pteramander",
-        "Cost": "90,000",
+        "Cost": "90000",
         "Zoid Core": "Zoid Core SL",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Pteramander",
         "cost": 90000,
         "core": "Zoid Core SL",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2251,17 +2881,24 @@
       },
       "original": {
         "Name": "Pteras",
-        "Cost": "7,000",
+        "Cost": "7000",
         "Zoid Core": "Zoid Core FL",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Pteras",
         "cost": 7000,
         "core": "Zoid Core FL",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2276,17 +2913,24 @@
       },
       "original": {
         "Name": "Pteras Bomber",
-        "Cost": "3,000",
+        "Cost": "3000",
         "Zoid Core": "",
         "Parts": "Bomber Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Pteras Bomber (CAU)",
         "cost": 3000,
         "core": null,
         "parts": "Bomber Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2301,17 +2945,24 @@
       },
       "original": {
         "Name": "Pteras Radome",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "Radome Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Pteras Radome (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "Radome Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2326,17 +2977,24 @@
       },
       "original": {
         "Name": "Raynos",
-        "Cost": "32,000",
+        "Cost": "32000",
         "Zoid Core": "Zoid Core FL",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Raynos",
         "cost": 32000,
         "core": "Zoid Core FL",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2351,17 +3009,24 @@
       },
       "original": {
         "Name": "Red Horn",
-        "Cost": "48,000",
+        "Cost": "48000",
         "Zoid Core": "Zoid Core ZN",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Red Horn",
         "cost": 48000,
         "core": "Zoid Core ZN",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2376,17 +3041,24 @@
       },
       "original": {
         "Name": "Red Horn BG",
-        "Cost": "12,000",
+        "Cost": "12000",
         "Zoid Core": "",
         "Parts": "BG Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Red Horn BG (CAU)",
         "cost": 12000,
         "core": null,
         "parts": "BG Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2401,17 +3073,24 @@
       },
       "original": {
         "Name": "Redler",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "Zoid Core FL",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Redler",
         "cost": 10000,
         "core": "Zoid Core FL",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2426,17 +3105,24 @@
       },
       "original": {
         "Name": "Redler BoostC",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "BC Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Redler BC (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "BC Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2451,17 +3137,24 @@
       },
       "original": {
         "Name": "Redler Interceptor",
-        "Cost": "30,000",
+        "Cost": "30000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Redler Interceptor (CAU)",
         "cost": 30000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2476,17 +3169,24 @@
       },
       "original": {
         "Name": "Rev Hunter",
-        "Cost": "7,000",
+        "Cost": "7000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Rev Hunter (CAU)",
         "cost": 7000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2501,17 +3201,24 @@
       },
       "original": {
         "Name": "Rev Raptor",
-        "Cost": "12,000",
+        "Cost": "12000",
         "Zoid Core": "Zoid Core GR",
         "Parts": "Limited OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Rev Raptor",
         "cost": 12000,
         "core": "Zoid Core GR",
         "parts": "Limited OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2526,17 +3233,24 @@
       },
       "original": {
         "Name": "Rev Raptor Pile Bunker",
-        "Cost": "4,000",
+        "Cost": "4000",
         "Zoid Core": "",
         "Parts": "PB Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Rev Raptor Pilebunker (CAU)",
         "cost": 4000,
         "core": null,
         "parts": "PB Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2551,17 +3265,24 @@
       },
       "original": {
         "Name": "Saberlion",
-        "Cost": "6,000",
+        "Cost": "6000",
         "Zoid Core": "",
         "Parts": "Zoid Core SS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Saberlion",
         "cost": 6000,
         "core": "Zoid Core SS",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2576,17 +3297,24 @@
       },
       "original": {
         "Name": "Saicurtis",
-        "Cost": "18,000",
+        "Cost": "18000",
         "Zoid Core": "Zoid Core IS",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Saicurtis",
         "cost": 18000,
         "core": "Zoid Core IS",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2601,17 +3329,24 @@
       },
       "original": {
         "Name": "Sea Striker",
-        "Cost": "7,000",
+        "Cost": "7000",
         "Zoid Core": "Zoid Core WT",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Sea Striker",
         "cost": 7000,
         "core": "Zoid Core WT",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2626,17 +3361,24 @@
       },
       "original": {
         "Name": "Shadow Fox",
-        "Cost": "38,000",
+        "Cost": "38000",
         "Zoid Core": "Zoid Core H2",
         "Parts": "Normal OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Shadow Fox",
         "cost": 38000,
         "core": "Zoid Core H2",
         "parts": "Normal OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2651,17 +3393,24 @@
       },
       "original": {
         "Name": "Shield Liger",
-        "Cost": "38,000",
+        "Cost": "38000",
         "Zoid Core": "Zoid Core H1",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Shield Liger",
         "cost": 38000,
         "core": "Zoid Core H1",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2676,17 +3425,24 @@
       },
       "original": {
         "Name": "Shield Liger DCS",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "DCS Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Shield Liger DCS (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "DCS Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2701,17 +3457,24 @@
       },
       "original": {
         "Name": "Shield Liger DCS-J",
-        "Cost": "25,000",
+        "Cost": "25000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Shield Liger DCS"
+        "Base Zoid": "Shield Liger DCS",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Shield Liger DCS-J (CAU)",
         "cost": 25000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:shield_liger_dcs"
+        "base_zoid": "zoids:shield_liger_dcs",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2726,17 +3489,24 @@
       },
       "original": {
         "Name": "Snipe Master",
-        "Cost": "12,000",
+        "Cost": "12000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Gun Sniper"
+        "Base Zoid": "Gun Sniper",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Snipe Master",
         "cost": 12000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:gun_sniper"
+        "base_zoid": "zoids:gun_sniper",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2751,17 +3521,24 @@
       },
       "original": {
         "Name": "Snipe Master AS",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "AS Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Snipe Master AS (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "AS Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2776,17 +3553,24 @@
       },
       "original": {
         "Name": "Snipe Master FB",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "FB Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Snipe Master FB (CAU)",
         "cost": 5000,
         "core": null,
         "parts": "FB Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2801,17 +3585,24 @@
       },
       "original": {
         "Name": "Spark Liger",
-        "Cost": "30,000",
+        "Cost": "30000",
         "Zoid Core": "",
         "Parts": "Spark Unit",
-        "Base Zoid": "Shield Liger"
+        "Base Zoid": "Shield Liger",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Spark Liger",
         "cost": 30000,
         "core": null,
         "parts": "Spark Unit",
-        "base_zoid": "zoids:shield_liger"
+        "base_zoid": "zoids:shield_liger",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2826,17 +3617,24 @@
       },
       "original": {
         "Name": "Stealth Viper",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "Zoid Core H1",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Stealth Viper",
         "cost": 10000,
         "core": "Zoid Core H1",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2851,17 +3649,24 @@
       },
       "original": {
         "Name": "Storm Sworder",
-        "Cost": "50,000",
+        "Cost": "50000",
         "Zoid Core": "Zoid Core FL",
         "Parts": "Limited OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Storm Sworder",
         "cost": 50000,
         "core": "Zoid Core FL",
         "parts": "Limited OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2876,17 +3681,24 @@
       },
       "original": {
         "Name": "Stormsworder F",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "Bomber Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Stormsworder F (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "Bomber Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2901,17 +3713,24 @@
       },
       "original": {
         "Name": "Stormsworder FX",
-        "Cost": "40,000",
+        "Cost": "40000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Stormsworder FX (CAU)",
         "cost": 40000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2926,17 +3745,24 @@
       },
       "original": {
         "Name": "Sturm Fury (CAU)",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "Sturm Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Sturm Fury (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "Sturm Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2951,17 +3777,24 @@
       },
       "original": {
         "Name": "Trinity Liger",
-        "Cost": "100,000",
+        "Cost": "100000",
         "Zoid Core": "Zoid Core TL",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Trinity Liger",
         "cost": 100000,
         "core": "Zoid Core TL",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -2976,17 +3809,24 @@
       },
       "original": {
         "Name": "Trinity Liger BA",
-        "Cost": "50,000",
+        "Cost": "50000",
         "Zoid Core": "",
         "Parts": "BA Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Trinity Liger BA (CAU)",
         "cost": 50000,
         "core": null,
         "parts": "BA Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3001,17 +3841,24 @@
       },
       "original": {
         "Name": "Ultra Phalanx",
-        "Cost": "380,000",
+        "Cost": "380000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Ultra Saurus"
+        "Base Zoid": "Ultra Saurus",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Ultra Phalanx",
         "cost": 380000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:ultra_saurus"
+        "base_zoid": "zoids:ultra_saurus",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3026,17 +3873,24 @@
       },
       "original": {
         "Name": "Ultra Saurus",
-        "Cost": "280,000",
+        "Cost": "280000",
         "Zoid Core": "Zoid Core US",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Ultra Saurus",
         "cost": 280000,
         "core": "Zoid Core US",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3051,17 +3905,24 @@
       },
       "original": {
         "Name": "Wardick",
-        "Cost": "60,000",
+        "Cost": "60000",
         "Zoid Core": "Zoid Core WS",
         "Parts": "Limited OS",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Wardick",
         "cost": 60000,
         "core": "Zoid Core WS",
         "parts": "Limited OS",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3076,17 +3937,24 @@
       },
       "original": {
         "Name": "Zabat",
-        "Cost": "8,000",
+        "Cost": "8000",
         "Zoid Core": "Zoid Core FL",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zabat",
         "cost": 8000,
         "core": "Zoid Core FL",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3101,17 +3969,24 @@
       },
       "original": {
         "Name": "Zaber Fang",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": "Zaber Fang Old"
+        "Base Zoid": "Zaber Fang Old",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zaber Fang",
         "cost": 5000,
         "core": null,
         "parts": null,
-        "base_zoid": "zoids:zaber_fang_old"
+        "base_zoid": "zoids:zaber_fang_old",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3126,17 +4001,24 @@
       },
       "original": {
         "Name": "Zaber Fang AT",
-        "Cost": "6,000",
+        "Cost": "6000",
         "Zoid Core": "",
         "Parts": "Assault Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zaber Fang AT (CAU)",
         "cost": 6000,
         "core": null,
         "parts": "Assault Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3151,17 +4033,24 @@
       },
       "original": {
         "Name": "Zaber Fang Old",
-        "Cost": "35,000",
+        "Cost": "35000",
         "Zoid Core": "Zoid Core ZN",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zaber Fang Old",
         "cost": 35000,
         "core": "Zoid Core ZN",
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3176,17 +4065,24 @@
       },
       "original": {
         "Name": "Zaber Fang RS",
-        "Cost": "20,000",
+        "Cost": "20000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zaber Fang RS (CAU)",
         "cost": 20000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3201,17 +4097,24 @@
       },
       "original": {
         "Name": "Zaber Fang SS",
-        "Cost": "10,000",
+        "Cost": "10000",
         "Zoid Core": "",
         "Parts": "BG Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zaber Fang SS (CAU)",
         "cost": 10000,
         "core": null,
         "parts": "BG Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3226,17 +4129,24 @@
       },
       "original": {
         "Name": "Zaber Fang TS",
-        "Cost": "2,000",
+        "Cost": "2000",
         "Zoid Core": "",
         "Parts": "Tiger Soul",
-        "Base Zoid": "Zaber Fang AT"
+        "Base Zoid": "Zaber Fang AT",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zaber Fang TS (CAU)",
         "cost": 2000,
         "core": null,
         "parts": "Tiger Soul",
-        "base_zoid": "zoids:zaber_fang_at"
+        "base_zoid": "zoids:zaber_fang_at",
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3251,17 +4161,24 @@
       },
       "original": {
         "Name": "Zero Empire (CAU)",
-        "Cost": "5,000",
+        "Cost": "5000",
         "Zoid Core": "",
         "Parts": "",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zero Empire (CAU)",
         "cost": 5000,
         "core": null,
         "parts": null,
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3276,17 +4193,24 @@
       },
       "original": {
         "Name": "Zero Jager (CAU)",
-        "Cost": "15,000",
+        "Cost": "15000",
         "Zoid Core": "",
         "Parts": "Jager Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zero Jager (CAU)",
         "cost": 15000,
         "core": null,
         "parts": "Jager Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3301,17 +4225,24 @@
       },
       "original": {
         "Name": "Zero Panzer (CAU)",
-        "Cost": "20,000",
+        "Cost": "20000",
         "Zoid Core": "",
         "Parts": "Panzer Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zero Panzer (CAU)",
         "cost": 20000,
         "core": null,
         "parts": "Panzer Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3326,17 +4257,24 @@
       },
       "original": {
         "Name": "Zero Schneider (CAU)",
-        "Cost": "15,000",
+        "Cost": "15000",
         "Zoid Core": "",
         "Parts": "Schneider Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zero Schneider (CAU)",
         "cost": 15000,
         "core": null,
         "parts": "Schneider Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
       },
       "dynamic_fields": {}
     },
@@ -3351,17 +4289,693 @@
       },
       "original": {
         "Name": "Zero X (CAU)",
-        "Cost": "16,000",
+        "Cost": "16000",
         "Zoid Core": "",
         "Parts": "X Unit",
-        "Base Zoid": ""
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
       },
       "fields": {
         "name": "Zero X (CAU)",
         "cost": 16000,
         "core": null,
         "parts": "X Unit",
-        "base_zoid": null
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:jet_falcon",
+      "name": "Jet Falcon",
+      "kind": "record",
+      "zoid_id": "zoids:jet_falcon",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 136
+      },
+      "original": {
+        "Name": "Jet Falcon",
+        "Cost": "30000",
+        "Zoid Core": "Zoid Core FL",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Jet Falcon",
+        "cost": 30000,
+        "core": "Zoid Core FL",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:fire_phoenix",
+      "name": "Fire Phoenix",
+      "kind": "record",
+      "zoid_id": "zoids:fire_phoenix",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 137
+      },
+      "original": {
+        "Name": "Fire Phoenix",
+        "Cost": "30000",
+        "Zoid Core": "Zoid Core FL",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Fire Phoenix",
+        "cost": 30000,
+        "core": "Zoid Core FL",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:buster_eagle",
+      "name": "Buster Eagle",
+      "kind": "record",
+      "zoid_id": "zoids:buster_eagle",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 138
+      },
+      "original": {
+        "Name": "Buster Eagle",
+        "Cost": "30000",
+        "Zoid Core": "Zoid Core FL",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Buster Eagle",
+        "cost": 30000,
+        "core": "Zoid Core FL",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zero_falcon",
+      "name": "Zero Falcon (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zero_falcon",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 139
+      },
+      "original": {
+        "Name": "Zero Falcon",
+        "Cost": "20000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Jet Falcon",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Zero Falcon (CAU)",
+        "cost": 20000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:jet_falcon",
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:zero_phoenix",
+      "name": "Zero Phoenix (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:zero_phoenix",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 140
+      },
+      "original": {
+        "Name": "Zero Phoenix",
+        "Cost": "20000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Fire Phoenix",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Zero Phoenix (CAU)",
+        "cost": 20000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:fire_phoenix",
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:buster_fury",
+      "name": "Buster Fury (CAU)",
+      "kind": "record",
+      "zoid_id": "zoids:buster_fury",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 141
+      },
+      "original": {
+        "Name": "Buster Fury",
+        "Cost": "50000",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "Buster Eagle",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Buster Fury (CAU)",
+        "cost": 50000,
+        "core": null,
+        "parts": null,
+        "base_zoid": "zoids:buster_eagle",
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:leo_blaze",
+      "name": "Leo Blaze",
+      "kind": "record",
+      "zoid_id": "zoids:leo_blaze",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 142
+      },
+      "original": {
+        "Name": "Leo Blaze",
+        "Cost": "8000",
+        "Zoid Core": "Zoid Core BX",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Leo Blaze",
+        "cost": 8000,
+        "core": "Zoid Core BX",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:unenlagia",
+      "name": "Unenlagia",
+      "kind": "record",
+      "zoid_id": "zoids:unenlagia",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 143
+      },
+      "original": {
+        "Name": "Unenlagia",
+        "Cost": "8000",
+        "Zoid Core": "Zoid Core BX",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Unenlagia",
+        "cost": 8000,
+        "core": "Zoid Core BX",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:mosasledge",
+      "name": "Mosasledge",
+      "kind": "record",
+      "zoid_id": "zoids:mosasledge",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 144
+      },
+      "original": {
+        "Name": "Mosasledge",
+        "Cost": "8000",
+        "Zoid Core": "Zoid Core BX",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Mosasledge",
+        "cost": 8000,
+        "core": "Zoid Core BX",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:nightwise",
+      "name": "Nightwise",
+      "kind": "record",
+      "zoid_id": "zoids:nightwise",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 145
+      },
+      "original": {
+        "Name": "Nightwise",
+        "Cost": "8000",
+        "Zoid Core": "Zoid Core BX",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Nightwise",
+        "cost": 8000,
+        "core": "Zoid Core BX",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:flyscissors",
+      "name": "Flyscissors",
+      "kind": "record",
+      "zoid_id": "zoids:flyscissors",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 146
+      },
+      "original": {
+        "Name": "Flyscissors",
+        "Cost": "9000",
+        "Zoid Core": "Zoid Core BX",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Flyscissors",
+        "cost": 9000,
+        "core": "Zoid Core BX",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:shell_karn",
+      "name": "Shell Karn",
+      "kind": "record",
+      "zoid_id": "zoids:shell_karn",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 147
+      },
+      "original": {
+        "Name": "Shell Karn",
+        "Cost": "9000",
+        "Zoid Core": "Zoid Core BX",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Shell Karn",
+        "cost": 9000,
+        "core": "Zoid Core BX",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:diplo_gun",
+      "name": "Diplo Gun",
+      "kind": "record",
+      "zoid_id": "zoids:diplo_gun",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 148
+      },
+      "original": {
+        "Name": "Diplo Gun",
+        "Cost": "9000",
+        "Zoid Core": "Zoid Core BX",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Diplo Gun",
+        "cost": 9000,
+        "core": "Zoid Core BX",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:demon_s_head",
+      "name": "Demon's Head",
+      "kind": "record",
+      "zoid_id": "zoids:demon_s_head",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 149
+      },
+      "original": {
+        "Name": "Demon's Head",
+        "Cost": "9000",
+        "Zoid Core": "Zoid Core BX",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Demon's Head",
+        "cost": 9000,
+        "core": "Zoid Core BX",
+        "parts": null,
+        "base_zoid": null,
+        "blox": []
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:fuzor_dragon",
+      "name": "Fuzor Dragon",
+      "kind": "record",
+      "zoid_id": "zoids:fuzor_dragon",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 150
+      },
+      "original": {
+        "Name": "Fuzor Dragon",
+        "Cost": "",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "Leo Blaze",
+        "BLOX 2": "Unenlagia",
+        "BLOX 3": "Mosasledge",
+        "BLOX 4": "Nightwise",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Fuzor Dragon",
+        "cost": 0,
+        "core": null,
+        "parts": null,
+        "base_zoid": null,
+        "blox": [
+          "zoids:leo_blaze",
+          "zoids:unenlagia",
+          "zoids:mosasledge",
+          "zoids:nightwise"
+        ]
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:chimera_dragon",
+      "name": "Chimera Dragon",
+      "kind": "record",
+      "zoid_id": "zoids:chimera_dragon",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 151
+      },
+      "original": {
+        "Name": "Chimera Dragon",
+        "Cost": "",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "Diplo Gun",
+        "BLOX 2": "Shell Karn",
+        "BLOX 3": "Demon's Head",
+        "BLOX 4": "Flyscissors",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Chimera Dragon",
+        "cost": 0,
+        "core": null,
+        "parts": null,
+        "base_zoid": null,
+        "blox": [
+          "zoids:diplo_gun",
+          "zoids:shell_karn",
+          "zoids:demon_s_head",
+          "zoids:flyscissors"
+        ]
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:gojulox",
+      "name": "Gojulox",
+      "kind": "record",
+      "zoid_id": "zoids:gojulox",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 152
+      },
+      "original": {
+        "Name": "Gojulox",
+        "Cost": "",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "Diplo Gun",
+        "BLOX 2": "Shell Karn",
+        "BLOX 3": "Demon's Head",
+        "BLOX 4": "Leo Blaze",
+        "BLOX 5": "Unenlagia",
+        "BLOX 6": "Nightwise"
+      },
+      "fields": {
+        "name": "Gojulox",
+        "cost": 0,
+        "core": null,
+        "parts": null,
+        "base_zoid": null,
+        "blox": [
+          "zoids:diplo_gun",
+          "zoids:shell_karn",
+          "zoids:demon_s_head",
+          "zoids:leo_blaze",
+          "zoids:unenlagia",
+          "zoids:nightwise"
+        ]
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:2_arm_lizard",
+      "name": "2-Arm Lizard",
+      "kind": "record",
+      "zoid_id": "zoids:2_arm_lizard",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 153
+      },
+      "original": {
+        "Name": "2-Arm Lizard",
+        "Cost": "",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "Leo Blaze",
+        "BLOX 2": "Unenlagia",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "2-Arm Lizard",
+        "cost": 0,
+        "core": null,
+        "parts": null,
+        "base_zoid": null,
+        "blox": [
+          "zoids:leo_blaze",
+          "zoids:unenlagia"
+        ]
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:griffin",
+      "name": "Griffin",
+      "kind": "record",
+      "zoid_id": "zoids:griffin",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 154
+      },
+      "original": {
+        "Name": "Griffin",
+        "Cost": "",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "Leo Blaze",
+        "BLOX 2": "Unenlagia",
+        "BLOX 3": "Buster Eagle",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Griffin",
+        "cost": 0,
+        "core": null,
+        "parts": null,
+        "base_zoid": null,
+        "blox": [
+          "zoids:leo_blaze",
+          "zoids:unenlagia",
+          "zoids:buster_eagle"
+        ]
+      },
+      "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:lord_gale",
+      "name": "Lord Gale",
+      "kind": "record",
+      "zoid_id": "zoids:lord_gale",
+      "source": {
+        "sheet": "zoid_cost.csv",
+        "row": 155
+      },
+      "original": {
+        "Name": "Lord Gale",
+        "Cost": "",
+        "Zoid Core": "",
+        "Parts": "",
+        "Base Zoid": "",
+        "BLOX 1": "Diplo Gun",
+        "BLOX 2": "Shell Karn",
+        "BLOX 3": "Demon's Head",
+        "BLOX 4": "Flyscissors",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Lord Gale",
+        "cost": 0,
+        "core": null,
+        "parts": null,
+        "base_zoid": null,
+        "blox": [
+          "zoids:diplo_gun",
+          "zoids:shell_karn",
+          "zoids:demon_s_head",
+          "zoids:flyscissors"
+        ]
       },
       "dynamic_fields": {}
     }

@@ -63,6 +63,16 @@ class OwnedZoid:
     defense_up: int = 0
     defense_down: int = 0
     weapon_conditions: tuple[FixedWeaponCondition, ...] = ()
+    fusion_components: tuple["OwnedZoid", ...] | None = None
+
+
+@dataclass(frozen=True)
+class StoredFuzor:
+    """Sold FUZOR identity and upgrade points, reserved for one future rebuild."""
+    id: str
+    zoid: str
+    frame: Upgrades
+    weapons: tuple[WeaponUpgrade, ...]
 
 
 @dataclass(frozen=True)
@@ -94,11 +104,35 @@ class Character:
     loaded_zoids: tuple[str, ...] = ()
     transport_notes: str = ""
     starter_pending: bool = False
+    stored_fuzors: tuple[StoredFuzor, ...] = ()
 
 
 def _nonnegative(value, name):
     if type(value) is not int or value < 0:
         raise RuleError(f"{name} must be a nonnegative integer")
+
+
+def _validate_stored_fuzors(character, catalog):
+    reserved = {o.id for o in character.owned_zoids}
+    reserved.update(component.id for o in character.owned_zoids for component in (o.fusion_components or ()))
+    if not isinstance(character.stored_fuzors, tuple):
+        raise RuleError("Stored FUZORs must be a list of saved identities and upgrades")
+    for stored in character.stored_fuzors:
+        if not isinstance(stored, StoredFuzor) or not isinstance(stored.id, str) or not stored.id.strip() or stored.id in reserved:
+            raise RuleError("Stored FUZOR identities must be unique and not currently owned or consumed")
+        reserved.add(stored.id)
+        record = catalog.find("zoids", stored.zoid)
+        if record["id"] != stored.zoid or not record.get("is_fuzor"):
+            raise RuleError("Only FUZOR identities and upgrades can be retained after sale")
+        if not isinstance(stored.frame, Upgrades) or any(stored.frame.damage) or any(stored.frame.to_hit):
+            raise RuleError("Stored frame upgrades cannot contain weapon-slot upgrades")
+        identities = {key for key in record["fixed_weapon_ids"] if key}
+        seen = set()
+        for weapon in stored.weapons:
+            if not isinstance(weapon, WeaponUpgrade) or weapon.weapon_id not in identities or weapon.weapon_id in seen:
+                raise RuleError("Stored FUZOR weapon upgrades must reference distinct weapons of that design")
+            seen.add(weapon.weapon_id)
+            Upgrades(damage=(weapon.damage, 0, 0, 0), to_hit=(weapon.to_hit, 0, 0, 0))
 
 
 def _validate_build(build, catalog):
@@ -227,6 +261,7 @@ def validate_character(character, catalog=None):
         copies[item.id] = item
         inventory.append(item)
     character = replace(character, inventory=tuple(inventory))
+    _validate_stored_fuzors(character, catalog)
     if not character.owned_zoids:
         build = character.build
         if character.active_zoid_id or build.zoid:
@@ -308,6 +343,21 @@ def validate_character(character, catalog=None):
         roster.append(owned)
     if character.active_zoid_id not in seen_ids:
         raise RuleError("Select an owned Zoid")
+    for owner in roster:
+        if owner.fusion_components is None:
+            continue
+        if not isinstance(owner.fusion_components, tuple) or not catalog.find("zoids", owner.base_zoid).get("is_fuzor"):
+            raise RuleError("Only FUZORs can store consumed component history")
+        for component in owner.fusion_components:
+            if not isinstance(component, OwnedZoid) or component.id in seen_ids:
+                raise RuleError("Consumed components must have unique, unavailable instance IDs")
+            seen_ids.add(component.id)
+            if component.fusion_components is not None or len(component.forms) != 1:
+                raise RuleError("Consumed components cannot contain fusion history or acquired CAUs")
+            if any(component.forms[0].equipment) or any(component.forms[0].equipment_ids) or any(component.forms[0].equipment_active):
+                raise RuleError("Consumed component equipment must remain in pilot inventory")
+            snapshot = replace(character, owned_zoids=(component,), active_zoid_id=component.id, loaded_zoids=())
+            validate_character(restore_roster_selection(snapshot, catalog), catalog)
     return replace(character, owned_zoids=tuple(roster))
 
 
@@ -513,6 +563,18 @@ def equip_owned_equipment(character, slot, copy_id=None, catalog=None):
     roster = tuple(owner if o.id == owner.id else o for o in character.owned_zoids)
     return validate_character(replace(character, owned_zoids=roster,
         build=replace(character.build, equipment=form.equipment, equipment_active=form.equipment_active)), catalog)
+
+
+def delete_equipment(character, copy_id, catalog=None):
+    """Permanently remove an unattached copy from pilot inventory."""
+    catalog = catalog or Catalog()
+    character = validate_character(character, catalog)
+    if not any(i.id == copy_id for i in character.inventory):
+        raise RuleError("This pilot does not own that equipment copy")
+    if copy_id in equipment_assignments(character):
+        raise RuleError("Return this copy to inventory from all forms before deleting it")
+    return validate_character(replace(character, inventory=tuple(
+        item for item in character.inventory if item.id != copy_id)), catalog)
 
 
 def return_equipment_to_inventory(character, copy_id, catalog=None):

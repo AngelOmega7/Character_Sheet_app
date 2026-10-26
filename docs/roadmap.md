@@ -2,7 +2,7 @@
 
 | Step | Work | Current status |
 |---|---|---|
-| 1 | Character export/import and backups | Deferred by owner; skip for now |
+| 1 | Character export/import and backups | Single-character JSON export/import implemented with validation and collision-safe IDs. Scheduled and full-database backups remain deferred |
 | 2 | Remaining pilot fields and feats | Implemented as player-managed tracking: Physical, Social, Personality, general inventory/cargo notes, Zi Database/campaign notes, and seven feat slots with descriptions |
 | 3 | Purchasing/building rules | Implemented from the supplied CSV: starter purchases, prerequisites, confirmations, GM override, consumed bases, upgrade costs/refunds, and CAU detachment |
 | 4 | Transport gameplay | Implemented: four types, base stats, size/capacity validation, cargo lists, unloading on type change, and notes |

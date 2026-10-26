@@ -172,6 +172,67 @@ class WorkflowTests(unittest.TestCase):
         self.assertNotIn(consumed, {o.id for o in c.owned_zoids})
         self.assertEqual(c.build.zoid, "zoids:killer_spiner")
 
+    def test_second_cau_expansion_consumes_component_and_retains_host(self):
+        for host_name, form_name, component, cost in (
+                ("Berserk Fury", "Buster Fury", "Buster Eagle", 50000),
+                ("Liger Zero", "Zero Falcon", "Jet Falcon", 20000),
+                ("Liger Zero", "Zero Phoenix", "Fire Phoenix", 20000)):
+            with self.subTest(form=form_name):
+                form = self.catalog.find("zoids", form_name)
+                self.assertEqual(form["name"], form_name + " (CAU)")
+                self.assertEqual(form["ownership_base_id"], self.catalog.find("zoids", host_name)["id"])
+                c = acquire_zoid(replace(new_character(self.catalog), starter_pending=False), host_name, self.catalog)
+                host = c.active_zoid_id
+                c = set_upgrades(c, Upgrades(speed=2), self.catalog)
+                c = self.funded(c, form_name)
+                with self.assertRaises(RuleError):
+                    self.buy(c, form_name, host_id=host)
+                c = acquire_zoid(c, component, self.catalog)
+                consumed = c.owned_zoids[-1].id
+                gold = c.gold
+                c = self.buy(c, form_name, host_id=host, base_id=consumed)
+                self.assertEqual(c.gold, gold - cost)
+                self.assertEqual([o.id for o in c.owned_zoids], [host])
+                self.assertEqual(c.build.zoid, form["id"])
+                self.assertEqual(c.build.upgrades.speed, 2)
+                with tempfile.TemporaryDirectory() as directory:
+                    store = CharacterStore(Path(directory) / "cau.sqlite3", self.catalog)
+                    self.assertEqual(store.load(store.save(c).id), c)
+                c = detach_cau(c, host, form["id"], self.catalog)
+                self.assertEqual(c.build.zoid, form["ownership_base_id"])
+                self.assertEqual(c.gold, gold - cost // 2)
+
+    def test_saved_standalone_expansion_form_migrates_and_preserves_condition(self):
+        for name in ("Zero Falcon", "Zero Phoenix"):
+            with self.subTest(form=name), tempfile.TemporaryDirectory() as directory:
+                c = acquire_zoid(new_character(self.catalog), "Liger Zero", self.catalog)
+                host = c.active_zoid_id
+                c = acquire_zoid(c, name, self.catalog, host_id=host)
+                form = self.catalog.find("zoids", name)
+                c = switch_zoid(c, host, form["id"], self.catalog)
+                c = set_upgrades(c, Upgrades(speed=2, damage=(0, 0, 0, 3)), self.catalog)
+                c = weapon_action(c, "fixed_4", "use", catalog=self.catalog).character
+                store = CharacterStore(Path(directory) / "old.sqlite3", self.catalog)
+                store.save(c)
+                with closing(sqlite3.connect(store.path)) as db, db:
+                    payload = json.loads(db.execute("SELECT payload FROM characters").fetchone()[0])
+                    payload["data_version"] = "workflow-v12"
+                    owner = payload["character"]["owned_zoids"][0]
+                    owner["base_zoid"] = form["id"]
+                    owner["forms"] = [f for f in owner["forms"] if f["zoid"] == form["id"]]
+                    for collection in ("weapons", "weapon_conditions"):
+                        owner[collection] = [w for w in owner[collection] if w["weapon_id"] in form["fixed_weapon_ids"]]
+                        for weapon in owner[collection]:
+                            weapon["weapon_id"] = weapon["weapon_id"].replace("zoids:liger_zero:", form["id"] + ":")
+                    db.execute("UPDATE characters SET payload=?", (json.dumps(payload),))
+                loaded = store.load(c.id)
+                self.assertEqual(loaded.build, c.build)
+                self.assertEqual(loaded.active_zoid_id, host)
+                self.assertEqual(loaded.owned_zoids[0].base_zoid, "zoids:liger_zero")
+                self.assertEqual(loaded.owned_zoids[0].weapon_conditions, c.owned_zoids[0].weapon_conditions)
+                store.save(loaded)
+                self.assertEqual(store.load(c.id), loaded)
+
     def test_upgrades_charge_each_tier_and_refund_full_removed_tier(self):
         c = replace(established_character(self.catalog), gold=65000)
         c = change_upgrade(c, "speed", 1, catalog=self.catalog)

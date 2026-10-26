@@ -3,7 +3,7 @@ import unittest
 
 from zoids_app.catalog import Catalog
 from zoids_app.characters import (OwnedEquipment, acquire_equipment, acquire_zoid, available_equipment,
-    equip_owned_equipment, equipment_assignments, new_character, restore_roster_selection,
+    delete_equipment, equip_owned_equipment, equipment_assignments, new_character, restore_roster_selection,
     return_equipment_to_inventory, switch_zoid, validate_character)
 from zoids_app.combat import RuleError
 from zoids_app.stats import calculate_stats
@@ -84,6 +84,19 @@ class InventoryTests(unittest.TestCase):
         self.assertFalse(available_equipment(character, "left", self.catalog))
         with self.assertRaises(RuleError):
             self.equip(character, "left", copy_id)
+
+    def test_delete_removes_only_unattached_copies(self):
+        character = self.pilot(quantity=2)
+        first, second = character.inventory
+        character = self.equip(character, "left", first.id)
+        with self.assertRaises(RuleError):
+            delete_equipment(character, first.id, self.catalog)
+        self.assertEqual(character.inventory, (first, second))
+        deleted = delete_equipment(character, second.id, self.catalog)
+        self.assertEqual(deleted.inventory, (first,))
+        self.assertEqual(equipment_assignments(deleted)[first.id], [(character.active_zoid_id, character.build.zoid, "left")])
+        with self.assertRaises(RuleError):
+            delete_equipment(deleted, second.id, self.catalog)
 
     def test_return_to_inventory_clears_all_forms_and_allows_transfer(self):
         character, copy_id = self.cau_pilot()

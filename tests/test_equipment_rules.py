@@ -4,7 +4,7 @@ import unittest
 from zoids_app.attacks import range_band_for_distance
 from zoids_app.catalog import Catalog
 from zoids_app.combat import RuleError
-from zoids_app.equipment import eligible_equipment, equip_item
+from zoids_app.equipment import eligible_equipment, equip_item, equipment_template_name, resolved_equipment_name
 from zoids_app.stats import CharacterBuild, calculate_stats
 from zoids_app.tags import weapon_tags
 
@@ -75,6 +75,24 @@ class EquipmentRuleTests(unittest.TestCase):
         self.assertIsNone(equip_item(equipped, "back", None, self.catalog).equipment[0])
         with self.assertRaises(RuleError):
             equip_item(build, "unknown", None, self.catalog)
+
+    def test_zoid_specific_equipment_names_resolve_for_their_zoid(self):
+        for zoid in ("Command Wolf", "Zaber Fang", "Zaber Fang RS"):
+            with self.subTest(zoid=zoid):
+                self.assertEqual(resolved_equipment_name("armaments:zoid_equipment_slot_1", zoid, self.catalog),
+                                 "Double Beam Cannon")
+        self.assertEqual(resolved_equipment_name("armaments:zoid_equipment_slot_4", "Shadow Fox", self.catalog),
+                         "Optical Camouflage")
+        self.assertEqual(resolved_equipment_name("armaments:zoid_equipment_slot_1", "Saberlion", self.catalog),
+                         "Zoid equipment slot 5")
+        self.assertEqual(resolved_equipment_name("armaments:particle_cannon", "Command Wolf", self.catalog),
+                         "Particle Cannon")
+
+    def test_generic_equipment_templates_display_as_slots_five_through_eight(self):
+        for source_slot in range(1, 5):
+            record = self.catalog.find("armaments", f"armaments:zoid_equipment_slot_{source_slot}")
+            with self.subTest(source_slot=source_slot):
+                self.assertEqual(equipment_template_name(record), f"Zoid equipment slot {source_slot + 4}")
 
     def test_command_wolf_rifle_tags_and_demolitionist_tracking(self):
         zoid = self.catalog.find("zoids", "Command Wolf IS")

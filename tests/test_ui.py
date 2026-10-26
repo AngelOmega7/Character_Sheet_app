@@ -1,5 +1,7 @@
 """Headless interaction tests; skipped when only the standard-library core is installed."""
+import asyncio
 from dataclasses import replace
+import json
 from pathlib import Path
 from types import SimpleNamespace
 import tempfile
@@ -12,10 +14,10 @@ except ImportError:
     flet = None
 
 from zoids_app.catalog import Catalog
-from zoids_app.characters import restore_roster_selection
+from zoids_app.characters import acquire_zoid, restore_roster_selection, switch_zoid
 from zoids_app.combat_controller import combat_snapshot
 from zoids_app.stats import calculate_stats
-from zoids_app.storage import CharacterStore
+from zoids_app.storage import CharacterStore, EXPORT_FORMAT
 from test_support import established_character
 
 
@@ -33,6 +35,22 @@ class PageStub:
         self.dialog = None
 
 
+class PickerStub:
+    def __init__(self):
+        self.save_kwargs = None
+        self.save_result = "/tmp/exported-character.json"
+        self.pick_kwargs = None
+        self.pick_result = []
+
+    async def save_file(self, **kwargs):
+        self.save_kwargs = kwargs
+        return self.save_result
+
+    async def pick_files(self, **kwargs):
+        self.pick_kwargs = kwargs
+        return self.pick_result
+
+
 @unittest.skipIf(flet is None, "Install requirements.txt to run Flet interaction tests")
 class EditorTests(unittest.TestCase):
     def setUp(self):
@@ -42,7 +60,8 @@ class EditorTests(unittest.TestCase):
         catalog = Catalog()
         self.store = CharacterStore(Path(self.directory.name) / "characters.sqlite3", catalog)
         self.page = PageStub()
-        self.editor = CharacterEditor(self.page, self.store, catalog)
+        self.picker = PickerStub()
+        self.editor = CharacterEditor(self.page, self.store, catalog, file_picker=self.picker)
         self.editor.character = established_character(catalog)
         self.editor.render()
 
@@ -64,6 +83,72 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(editor.character.build.pilot_level, 20)
         self.assertEqual(editor.character.build.equipment[1], "armaments:particle_cannon")
         self.assertTrue(editor.character.build.equipment_active[1])
+
+    def test_export_selected_saved_character_to_json(self):
+        editor = self.editor
+        editor.name.value = "Export Pilot"
+        editor.save()
+        asyncio.run(editor.export_saved())
+        kwargs = self.picker.save_kwargs
+        self.assertIsNotNone(kwargs)
+        self.assertEqual(kwargs["file_name"], f"Export Pilot-{editor.character.id[:8]}.json")
+        self.assertEqual(kwargs["allowed_extensions"], ["json"])
+        document = json.loads(kwargs["src_bytes"].decode("utf-8"))
+        self.assertEqual(document["format"], EXPORT_FORMAT)
+        self.assertEqual(document["character"]["id"], editor.character.id)
+        self.assertIn("Exported saved character Export Pilot", editor.status.value)
+
+    def test_export_cancel_does_not_change_state(self):
+        editor = self.editor
+        editor.save()
+        before = editor.character
+        self.picker.save_result = None
+        asyncio.run(editor.export_saved())
+        self.assertEqual(editor.character, before)
+        self.assertEqual(editor.status.value, "Export canceled.")
+
+    def test_import_saved_character_adds_copy_without_changing_open_draft(self):
+        editor = self.editor
+        editor.name.value = "Import Pilot"
+        editor.save()
+        saved = editor.character
+        editor.name.value = "Unsaved editor change"
+        editor.dirty = True
+        exported = self.store.export_character(saved.id)
+        self.picker.pick_result = [SimpleNamespace(bytes=exported.encode("utf-8"), path=None, name="pilot.json")]
+        asyncio.run(editor.import_saved())
+        self.assertEqual(self.picker.pick_kwargs["allowed_extensions"], ["json"])
+        self.assertTrue(self.picker.pick_kwargs["with_data"])
+        records = self.store.list_characters()
+        self.assertEqual(len(records), 2)
+        imported_id = next(r["id"] for r in records if r["id"] != saved.id)
+        self.assertEqual(editor.saved.value, imported_id)
+        self.assertEqual(self.store.load(imported_id).name, "Import Pilot")
+        self.assertEqual(editor.character, saved)
+        self.assertTrue(editor.dirty)
+        self.assertEqual(editor.name.value, "Unsaved editor change")
+        self.assertIn("Imported Import Pilot", editor.status.value)
+
+    def test_import_reads_file_path_when_bytes_are_not_returned(self):
+        editor = self.editor
+        editor.save()
+        saved = editor.character
+        path = Path(self.directory.name) / "portable.json"
+        path.write_text(self.store.export_character(saved.id), encoding="utf-8")
+        self.picker.pick_result = [SimpleNamespace(bytes=None, path=str(path), name=path.name)]
+        asyncio.run(editor.import_saved())
+        self.assertEqual(len(self.store.list_characters()), 2)
+
+    def test_invalid_import_reports_error_without_saving_or_switching(self):
+        editor = self.editor
+        editor.save()
+        before = editor.character
+        self.picker.pick_result = [SimpleNamespace(bytes=b"not json", path=None, name="broken.json")]
+        asyncio.run(editor.import_saved())
+        self.assertEqual(self.store.list_characters()[0]["id"], before.id)
+        self.assertEqual(len(self.store.list_characters()), 1)
+        self.assertEqual(editor.character, before)
+        self.assertIn("not valid character JSON", editor.status.value)
 
     def test_invalid_profile_cannot_overwrite_saved_character(self):
         editor = self.editor
@@ -126,13 +211,93 @@ class EditorTests(unittest.TestCase):
         self.page.dialog.actions[0].on_click(None)
         self.assertEqual(editor.name.value, "Unsaved name")
 
+    def test_fuzor_recipe_selects_component_instances_and_confirms_consumption(self):
+        editor = self.editor
+        c = editor.character
+        for name in ("Leo Blaze", "Leo Blaze", "Unenlagia"):
+            c = acquire_zoid(c, name, editor.catalog)
+        first, chosen, other = c.owned_zoids[-3:]
+        editor.character = replace(c, known_zoids=(*c.known_zoids, "zoids:2_arm_lizard"))
+        editor.render()
+        editor.acquisition.value = "zoids:2_arm_lizard"
+        editor.purchase_selection()
+        self.assertIn("Cost: 0g", editor.purchase_details.value)
+        self.assertEqual(len(editor.purchase_blox.controls), 2)
+        self.assertIsNone(editor.purchase_blox.controls[0].value)
+        self.assertEqual(editor.purchase_blox.controls[1].value, other.id)
+        editor.purchase_blox.controls[0].value = chosen.id
+        editor.obtain()
+        self.assertEqual(self.page.dialog.title.value, "Confirm purchase")
+        self.assertIn(chosen.id[:8], self.page.dialog.content.value)
+        self.assertIn("preserved for recovery", self.page.dialog.content.value)
+        self.page.dialog.actions[-1].on_click(None)
+        self.assertEqual(editor.character.build.zoid, "zoids:2_arm_lizard")
+        self.assertIn(first.id, {o.id for o in editor.character.owned_zoids})
+        self.assertNotIn(chosen.id, {o.id for o in editor.character.owned_zoids})
+        self.assertEqual(editor.character.gold, c.gold)
+        fused = editor.character
+        editor.sell_selected_zoid()
+        self.assertIn("Original identities, upgrades, health", self.page.dialog.content.controls[0].value)
+        self.assertIn(chosen.id[:8], self.page.dialog.content.controls[0].value)
+        self.page.dialog.actions[0].on_click(None)
+        self.assertEqual(editor.character, fused)
+        editor.sell_selected_zoid()
+        self.page.dialog.actions[-1].on_click(None)
+        self.assertEqual({o.id for o in editor.character.owned_zoids}, {o.id for o in c.owned_zoids})
+        self.assertEqual(editor.character.gold, c.gold)
+
+    def test_starter_picker_includes_base_blox_but_not_free_fuzors(self):
+        from zoids_app.characters import new_character
+        editor = self.editor
+        editor.character = new_character(editor.catalog)
+        editor.render()
+        offered = {option.key for option in editor.acquisition.options}
+        self.assertIn("zoids:leo_blaze", offered)
+        self.assertNotIn("zoids:2_arm_lizard", offered)
+        self.assertNotIn("zoids:gojulox", offered)
+
+    def test_keep_sold_fuzor_checkbox_and_select_retained_rebuild(self):
+        from zoids_app.characters import set_upgrades
+        from zoids_app.stats import Upgrades
+        editor = self.editor
+        c = acquire_zoid(editor.character, "2-Arm Lizard", editor.catalog)
+        identity = c.owned_zoids[-1].id
+        c = switch_zoid(c, identity, catalog=editor.catalog)
+        c = set_upgrades(c, Upgrades(speed=3, damage=(2, 0, 0, 0)), editor.catalog)
+        editor.character = replace(c, known_zoids=(*c.known_zoids, "zoids:2_arm_lizard"))
+        editor.render()
+        editor.sell_selected_zoid()
+        keep = self.page.dialog.content.controls[1]
+        self.assertFalse(keep.value)
+        keep.value = True
+        self.page.dialog.actions[0].on_click(None)
+        self.assertEqual(editor.character.stored_fuzors, ())
+        editor.sell_selected_zoid()
+        self.page.dialog.content.controls[1].value = True
+        self.page.dialog.actions[-1].on_click(None)
+        self.assertEqual([s.id for s in editor.character.stored_fuzors], [identity])
+        editor.acquisition.value = "zoids:2_arm_lizard"
+        editor.purchase_selection()
+        self.assertTrue(editor.purchase_stored_fuzor.visible)
+        self.assertEqual(editor.purchase_stored_fuzor.value, "new")
+        editor.purchase_stored_fuzor.value = identity
+        editor.obtain()
+        self.assertIn("retained frame and weapon upgrades", self.page.dialog.content.value)
+        self.page.dialog.actions[-1].on_click(None)
+        self.assertEqual(editor.character.active_zoid_id, identity)
+        self.assertEqual(editor.character.build.upgrades, c.build.upgrades)
+        self.assertEqual(editor.character.stored_fuzors, ())
+        editor.save()
+        self.assertEqual(self.store.load(editor.character.id), editor.character)
+
     def test_transport_section_and_empty_roster_after_retirement(self):
         editor = self.editor
         editor.character = restore_roster_selection(replace(editor.character, owned_zoids=()), editor.catalog)
         editor.render()
         self.assertTrue(editor.owned_select.disabled)
         names = {o.text for o in editor.acquisition.options}
-        self.assertFalse(names & {"Leo Blaze", "Zero Phoenix", "Gustav", "Hover Cargo", "Whale King"})
+        self.assertTrue(any(name.startswith("Leo Blaze ·") for name in names))
+        self.assertFalse(names & {"Zero Phoenix", "Gustav", "Hover Cargo", "Whale King"})
         self.assertTrue({"None", "Hover Cargo", "Gustav", "Whale King", "Dragoon Nest"} <= {o.text for o in editor.transport_picker.options})
         editor.save()
         self.assertEqual(self.store.load(editor.character.id).owned_zoids, ())
@@ -192,7 +357,7 @@ class EditorTests(unittest.TestCase):
 
     def test_learning_options_description_and_rejected_unowned_activation(self):
         editor = self.editor
-        self.assertFalse(any("blox" in o.key for o in editor.ability_to_learn.options))
+        self.assertEqual(sum("blox" in o.key for o in editor.ability_to_learn.options), 5)
         editor.ability_to_learn.value = "abilities:comeback"
         editor.ability_to_learn.on_select(SimpleNamespace(control=editor.ability_to_learn))
         self.assertIn("20%", editor.ability_description.value)
@@ -350,6 +515,52 @@ class EditorTests(unittest.TestCase):
             editor.equipment_quantity.value = quantity
             editor.obtain_equipment()
             self.assertEqual(editor.character, before)
+
+    def test_delete_unattached_equipment_copy_requires_confirmation_and_saves(self):
+        editor = self.editor
+        self.acquire_item("Particle Cannon", 2)
+        first, second = editor.character.inventory
+        editor.change_equipment("left", first.id)
+        editor.delete_equipment_copy(first.id)
+        self.assertIn("Return this copy", editor.status.value)
+        self.assertEqual(editor.character.inventory, (first, second))
+        editor.delete_equipment_copy(second.id)
+        self.assertIsNotNone(self.page.dialog)
+        self.assertIn("Permanently delete", self.page.dialog.content.value)
+        self.page.dialog.actions[0].on_click(None)
+        self.assertEqual(editor.character.inventory, (first, second))
+        editor.delete_equipment_copy(second.id)
+        self.page.dialog.actions[-1].on_click(None)
+        self.assertEqual(editor.character.inventory, (first,))
+        self.assertNotIn(second.id, {o.key for o in editor.equipment_dropdowns["right"].options})
+        self.assertTrue(editor.dirty)
+        editor.save()
+        saved = editor.character
+        editor.new()
+        editor.saved.value = saved.id
+        editor.open_saved()
+        self.assertEqual(editor.character.inventory, saved.inventory)
+
+    def test_zoid_specific_equipment_is_listed_under_its_real_name(self):
+        editor = self.editor
+        editor.character = acquire_zoid(editor.character, "Command Wolf", editor.catalog)
+        wolf = next(o for o in editor.character.owned_zoids if o.base_zoid == "zoids:command_wolf")
+        editor.character = switch_zoid(editor.character, wolf.id, catalog=editor.catalog)
+        editor.render()
+        choices = [o for o in editor.equipment_to_acquire.options if "Double Beam Cannon" in o.text]
+        self.assertEqual(len(choices), 1)
+        self.assertIn("Command Wolf", choices[0].text)
+        self.assertIn("Zoid equipment slot 5", choices[0].text)
+        self.assertNotIn("ZOS", choices[0].text)
+        editor.equipment_to_acquire.value = choices[0].key
+        editor.equipment_to_acquire.text = choices[0].text
+        editor.obtain_equipment()
+        copy = editor.character.inventory[-1]
+        self.assertEqual(copy.armament, "armaments:zoid_equipment_slot_1")
+        self.assertEqual(editor.inventory_labels[copy.id], "Double Beam Cannon · copy 1")
+        editor.change_equipment("left", copy.id)
+        self.assertEqual(editor.character.build.equipment[1], "armaments:zoid_equipment_slot_1")
+        self.assertEqual(editor.inventory_labels[copy.id], "Double Beam Cannon · copy 1")
 
     def combat_pilot(self, health=27, gold=20000):
         self.acquire_item("Particle Cannon")

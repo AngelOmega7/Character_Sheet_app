@@ -300,6 +300,7 @@
       "legacy_names": [
         "Gustav"
       ],
+      "is_fuzor": false,
       "legacy_zoid_id": "zoids:gustav",
       "hangar_capacity": 2,
       "hangar_size": "Medium"
@@ -421,6 +422,7 @@
       "legacy_names": [
         "Hover Cargo"
       ],
+      "is_fuzor": false,
       "legacy_zoid_id": "zoids:hover_cargo",
       "hangar_capacity": 6,
       "hangar_size": "Large"
@@ -536,6 +538,7 @@
         "Dragon Nest",
         "Dragoon Nest"
       ],
+      "is_fuzor": false,
       "legacy_zoid_id": "zoids:dragon_nest",
       "hangar_capacity": 12,
       "hangar_size": "Large Large"
@@ -650,6 +653,7 @@
       "legacy_names": [
         "Whale King"
       ],
+      "is_fuzor": false,
       "legacy_zoid_id": "zoids:whale_king",
       "hangar_capacity": 24,
       "hangar_size": "Extra Large"

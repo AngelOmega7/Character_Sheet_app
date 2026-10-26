@@ -12,7 +12,7 @@ from zoids_app.characters import acquire_equipment, acquire_zoid, assign_pilot_a
 from zoids_app.combat import RuleError
 from zoids_app.combat_controller import combat_snapshot, weapon_action
 from zoids_app.stats import CharacterBuild, Upgrades, calculate_stats
-from zoids_app.storage import CharacterStore, SAVE_VERSION
+from zoids_app.storage import CharacterStore, EXPORT_FORMAT, EXPORT_FORMAT_VERSION, SAVE_VERSION
 from test_support import established_character as new_character
 
 
@@ -54,6 +54,57 @@ class StorageTests(unittest.TestCase):
         self.assertEqual(len(self.store.list_characters()), 2)
         self.assertEqual(self.store.load(first.id).gold, 42)
         self.assertEqual(self.store.load(second.id).gold, 0)
+
+    def test_export_and_import_roundtrip_preserves_character(self):
+        saved = self.store.save(replace(new_character(self.catalog), name="Portable Pilot", gold=4321))
+        exported = self.store.export_character(saved.id)
+        document = json.loads(exported)
+        self.assertEqual((document["format"], document["format_version"]), (EXPORT_FORMAT, EXPORT_FORMAT_VERSION))
+        self.assertEqual(document["save_version"], SAVE_VERSION)
+        self.assertEqual(document["character"]["id"], saved.id)
+        self.assertEqual(document["character"]["name"], "Portable Pilot")
+        imported_store = CharacterStore(Path(self.directory.name) / "imported/characters.sqlite3", self.catalog)
+        imported = imported_store.import_character(exported)
+        self.assertEqual(imported, saved)
+        self.assertEqual(imported_store.load(imported.id), saved)
+
+    def test_import_with_existing_id_creates_a_new_saved_copy(self):
+        original = self.store.save(replace(new_character(self.catalog), name="Duplicate Pilot"))
+        exported = self.store.export_character(original.id)
+        imported = self.store.import_character(exported)
+        self.assertNotEqual(imported.id, original.id)
+        self.assertEqual(imported.name, original.name)
+        self.assertEqual(len(self.store.list_characters()), 2)
+        self.assertEqual(self.store.load(original.id), original)
+        self.assertEqual(self.store.load(imported.id), imported)
+
+    def test_import_accepts_a_raw_saved_payload(self):
+        saved = self.store.save(new_character(self.catalog))
+        document = json.loads(self.store.export_character(saved.id))
+        raw = json.dumps({key: document[key] for key in ("save_version", "data_version", "character")})
+        imported_store = CharacterStore(Path(self.directory.name) / "raw/characters.sqlite3", self.catalog)
+        self.assertEqual(imported_store.import_character(raw), saved)
+
+    def test_invalid_imports_are_rejected_without_changing_existing_saves(self):
+        original = self.store.save(new_character(self.catalog))
+        document = json.loads(self.store.export_character(original.id))
+        payloads = [
+            "not json",
+            "[]",
+            json.dumps({"format": "something-else", "format_version": 1, "save_version": SAVE_VERSION,
+                        "character": document["character"]}),
+            json.dumps({**document, "format_version": EXPORT_FORMAT_VERSION + 1}),
+            json.dumps({**document, "save_version": SAVE_VERSION + 1}),
+            json.dumps({**document, "character": {**document["character"], "name": " "}}),
+            json.dumps({**document, "character": {}}),
+        ]
+        for payload in payloads:
+            with self.subTest(payload=payload[:70]):
+                with self.assertRaises(RuleError):
+                    self.store.import_character(payload)
+                records = self.store.list_characters()
+                self.assertEqual(len(records), 1)
+                self.assertEqual(records[0]["id"], original.id)
 
     def test_invalid_save_leaves_previous_character_intact(self):
         original = self.store.save(new_character(self.catalog))

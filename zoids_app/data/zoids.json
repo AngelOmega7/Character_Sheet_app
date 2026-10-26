@@ -321,7 +321,8 @@
       "legacy_ownership_base_id": "zoids:zaber_fang_old",
       "legacy_names": [
         "Zaber Fang Old"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zaber_fang",
@@ -521,7 +522,8 @@
       "legacy_ownership_base_id": "zoids:zaber_fang",
       "legacy_names": [
         "Zaber Fang"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zaber_fang_rs",
@@ -656,7 +658,8 @@
       "legacy_ownership_base_id": "zoids:zaber_fang_rs",
       "legacy_names": [
         "Zaber Fang RS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zaber_fang_ss",
@@ -791,7 +794,8 @@
       "legacy_ownership_base_id": "zoids:zaber_fang_ss",
       "legacy_names": [
         "Zaber Fang SS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zaber_fang_at",
@@ -909,7 +913,8 @@
       "legacy_ownership_base_id": "zoids:zaber_fang_at",
       "legacy_names": [
         "Zaber Fang AT"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zaber_fang_ts",
@@ -1027,7 +1032,8 @@
       "legacy_ownership_base_id": "zoids:zaber_fang_ts",
       "legacy_names": [
         "Zaber Fang TS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:proto_zaber",
@@ -1162,7 +1168,8 @@
       "legacy_ownership_base_id": "zoids:proto_zaber",
       "legacy_names": [
         "Proto Zaber"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:diablo_tiger",
@@ -1292,7 +1299,8 @@
       "legacy_ownership_base_id": "zoids:diablo_tiger",
       "legacy_names": [
         "Diablo Tiger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:blitz_tiger",
@@ -1427,7 +1435,8 @@
       "legacy_ownership_base_id": "zoids:blitz_tiger",
       "legacy_names": [
         "Blitz Tiger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:atak_kat",
@@ -1562,7 +1571,8 @@
       "legacy_ownership_base_id": "zoids:atak_kat",
       "legacy_names": [
         "Atak Kat"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:lightning_saix",
@@ -1796,6 +1806,7 @@
       "legacy_names": [
         "Lightning Saix"
       ],
+      "is_fuzor": false,
       "damage_notes": {},
       "workflow_weapon_move": {
         "destination": 2,
@@ -2037,6 +2048,7 @@
       "legacy_names": [
         "Lightning Saix BS"
       ],
+      "is_fuzor": false,
       "damage_notes": {},
       "workflow_weapon_move": {
         "destination": 2,
@@ -2174,7 +2186,8 @@
       "legacy_ownership_base_id": "zoids:gun_tiger",
       "legacy_names": [
         "Gun Tiger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:liger_zero",
@@ -2306,7 +2319,8 @@
       "legacy_ownership_base_id": "zoids:liger_zero",
       "legacy_names": [
         "Liger Zero"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zero_schneider_cau",
@@ -2437,7 +2451,8 @@
       "legacy_names": [
         "Zero Schneider (CAU)",
         "Zero Schneider"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zero_jager_cau",
@@ -2573,7 +2588,8 @@
       "legacy_names": [
         "Zero Jager (CAU)",
         "Zero Jager"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zero_panzer_cau",
@@ -2709,7 +2725,8 @@
       "legacy_names": [
         "Zero Panzer (CAU)",
         "Zero Panzer"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zero_empire_cau",
@@ -2840,7 +2857,8 @@
       "legacy_names": [
         "Zero Empire (CAU)",
         "Zero Empire"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zero_x_cau",
@@ -2981,7 +2999,8 @@
       "legacy_names": [
         "Zero X (CAU)",
         "Zero X"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:trinity_liger",
@@ -3111,7 +3130,8 @@
       "legacy_ownership_base_id": "zoids:trinity_liger",
       "legacy_names": [
         "Trinity Liger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:trinity_liger_ba",
@@ -3246,7 +3266,8 @@
       "legacy_ownership_base_id": "zoids:trinity_liger_ba",
       "legacy_names": [
         "Trinity Liger BA"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:shield_liger",
@@ -3364,7 +3385,8 @@
       "legacy_ownership_base_id": "zoids:shield_liger",
       "legacy_names": [
         "Shield Liger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:shield_liger_dcs",
@@ -3489,7 +3511,8 @@
       "legacy_ownership_base_id": "zoids:shield_liger_dcs",
       "legacy_names": [
         "Shield Liger DCS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:shield_liger_dcs_j",
@@ -3614,7 +3637,8 @@
       "legacy_ownership_base_id": "zoids:shield_liger_dcs_j",
       "legacy_names": [
         "Shield Liger DCS-J"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:spark_liger",
@@ -3739,7 +3763,8 @@
       "legacy_ownership_base_id": "zoids:spark_liger",
       "legacy_names": [
         "Spark Liger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:blade_liger",
@@ -3864,7 +3889,8 @@
       "legacy_ownership_base_id": "zoids:blade_liger",
       "legacy_names": [
         "Blade Liger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:blade_liger_ab",
@@ -3989,7 +4015,8 @@
       "legacy_ownership_base_id": "zoids:blade_liger_ab",
       "legacy_names": [
         "Blade Liger AB"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:liger_aero",
@@ -4107,7 +4134,8 @@
       "legacy_ownership_base_id": "zoids:liger_aero",
       "legacy_names": [
         "Liger Aero"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:saberlion",
@@ -4237,7 +4265,8 @@
       "legacy_ownership_base_id": "zoids:saberlion",
       "legacy_names": [
         "Saberlion"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:command_wolf",
@@ -4362,7 +4391,8 @@
       "legacy_ownership_base_id": "zoids:command_wolf",
       "legacy_names": [
         "Command Wolf"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:command_wolf_town",
@@ -4481,7 +4511,8 @@
       "legacy_names": [
         "Command Wolf Town",
         "Command Wolf UC"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:command_wolf_ac",
@@ -4599,7 +4630,8 @@
       "legacy_ownership_base_id": "zoids:command_wolf_ac",
       "legacy_names": [
         "Command Wolf AC"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:command_wolf_is",
@@ -4792,6 +4824,7 @@
       "legacy_names": [
         "Command Wolf IS"
       ],
+      "is_fuzor": false,
       "damage_notes": {},
       "workflow_weapon_move": {
         "destination": 3,
@@ -4927,7 +4960,8 @@
       "legacy_ownership_base_id": "zoids:cerberus",
       "legacy_names": [
         "Cerberus"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:climber_wolf",
@@ -5052,7 +5086,8 @@
       "legacy_ownership_base_id": "zoids:climber_wolf",
       "legacy_names": [
         "Climber Wolf"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:shadow_fox",
@@ -5284,6 +5319,7 @@
       "legacy_names": [
         "Shadow Fox"
       ],
+      "is_fuzor": false,
       "workflow_weapon_move": {
         "destination": 3,
         "old_fixed_moves": {
@@ -5415,7 +5451,8 @@
       "legacy_ownership_base_id": "zoids:konig_wolf",
       "legacy_names": [
         "Konig Wolf"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:konig_wolf_dsr_cau",
@@ -5546,7 +5583,8 @@
       "legacy_names": [
         "Konig Wolf DSR (CAU)",
         "Konig Wolf DSR"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:iron_kong",
@@ -5671,7 +5709,8 @@
       "legacy_ownership_base_id": "zoids:iron_kong",
       "legacy_names": [
         "Iron Kong"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:iron_kong_pk",
@@ -5806,7 +5845,8 @@
       "legacy_ownership_base_id": "zoids:iron_kong_pk",
       "legacy_names": [
         "Iron Kong PK"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:iron_kong_maneuver",
@@ -5931,7 +5971,8 @@
       "legacy_ownership_base_id": "zoids:iron_kong_maneuver",
       "legacy_names": [
         "Iron Kong Maneuver"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:iron_kong_ss",
@@ -6066,7 +6107,8 @@
       "legacy_ownership_base_id": "zoids:iron_kong_ss",
       "legacy_names": [
         "Iron Kong SS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:iron_drill",
@@ -6196,7 +6238,8 @@
       "legacy_ownership_base_id": "zoids:iron_drill",
       "legacy_names": [
         "Iron Drill"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:hammer_rock",
@@ -6326,7 +6369,8 @@
       "legacy_ownership_base_id": "zoids:hammer_rock",
       "legacy_names": [
         "Hammer Rock"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:dibison",
@@ -6456,7 +6500,8 @@
       "legacy_ownership_base_id": "zoids:dibison",
       "legacy_names": [
         "Dibison"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gravity_bison",
@@ -6581,7 +6626,8 @@
       "legacy_ownership_base_id": "zoids:gravity_bison",
       "legacy_names": [
         "Gravity Bison"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:black_rhimos",
@@ -6706,7 +6752,8 @@
       "legacy_ownership_base_id": "zoids:black_rhimos",
       "legacy_names": [
         "Black Rhimos"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:cyclops",
@@ -6824,7 +6871,8 @@
       "legacy_ownership_base_id": "zoids:cyclops",
       "legacy_names": [
         "Cyclops"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:cyclops_2",
@@ -6949,7 +6997,8 @@
       "legacy_ownership_base_id": "zoids:cyclops_2",
       "legacy_names": [
         "Cyclops 2"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:elephander",
@@ -7089,7 +7138,8 @@
       "legacy_ownership_base_id": "zoids:elephander",
       "legacy_names": [
         "Elephander"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:elephander_ag",
@@ -7229,7 +7279,8 @@
       "legacy_ownership_base_id": "zoids:elephander_ag",
       "legacy_names": [
         "Elephander AG"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:geno_saurer",
@@ -7364,7 +7415,8 @@
       "legacy_ownership_base_id": "zoids:geno_saurer",
       "legacy_names": [
         "Geno Saurer"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:psycho_geno_saurer",
@@ -7499,7 +7551,8 @@
       "legacy_ownership_base_id": "zoids:psycho_geno_saurer",
       "legacy_names": [
         "Psycho Geno Saurer"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:geno_breaker",
@@ -7629,7 +7682,8 @@
       "legacy_ownership_base_id": "zoids:geno_breaker",
       "legacy_names": [
         "Geno Breaker"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:proto_breaker",
@@ -7764,7 +7818,8 @@
       "legacy_ownership_base_id": "zoids:proto_breaker",
       "legacy_names": [
         "Proto Breaker"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:geno_scissors",
@@ -7899,7 +7954,8 @@
       "legacy_ownership_base_id": "zoids:geno_scissors",
       "legacy_names": [
         "Geno Scissors"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:geno_trooper",
@@ -8034,7 +8090,8 @@
       "legacy_ownership_base_id": "zoids:geno_trooper",
       "legacy_names": [
         "Geno Trooper"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:geno_flame",
@@ -8164,7 +8221,8 @@
       "legacy_ownership_base_id": "zoids:geno_flame",
       "legacy_names": [
         "Geno Flame"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:berserk_fury",
@@ -8299,7 +8357,8 @@
       "legacy_ownership_base_id": "zoids:berserk_fury",
       "legacy_names": [
         "Berserk Fury"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:sturm_fury_cau",
@@ -8435,7 +8494,8 @@
       "legacy_names": [
         "Sturm Fury (CAU)",
         "Sturm Fury"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:jagd_fury_cau",
@@ -8566,7 +8626,8 @@
       "legacy_names": [
         "Jagd Fury (CAU)",
         "Jagd Fury"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:berserk_fury_z_cau",
@@ -8697,7 +8758,8 @@
       "legacy_names": [
         "Berserk Fury Z (CAU)",
         "Berserk Fury Z"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:geno_hydra",
@@ -8837,7 +8899,8 @@
       "legacy_ownership_base_id": "zoids:geno_hydra",
       "legacy_names": [
         "Geno Hydra"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:geno_hydra_ka",
@@ -8967,7 +9030,8 @@
       "legacy_ownership_base_id": "zoids:geno_hydra_ka",
       "legacy_names": [
         "Geno Hydra KA"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:dark_spiner",
@@ -9107,7 +9171,8 @@
       "legacy_ownership_base_id": "zoids:dark_spiner",
       "legacy_names": [
         "Dark Spiner"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:killer_spiner",
@@ -9237,7 +9302,8 @@
       "legacy_ownership_base_id": "zoids:killer_spiner",
       "legacy_names": [
         "Killer Spiner"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gun_sniper",
@@ -9372,7 +9438,8 @@
       "legacy_ownership_base_id": "zoids:gun_sniper",
       "legacy_names": [
         "Gun Sniper"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gun_sniper_weasel",
@@ -9502,7 +9569,8 @@
       "legacy_ownership_base_id": "zoids:gun_sniper_weasel",
       "legacy_names": [
         "Gun Sniper Weasel"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gun_sniper_ls",
@@ -9633,7 +9701,8 @@
       "legacy_names": [
         "Gun sniper LS",
         "Gun Sniper LS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gun_sniper_ns",
@@ -9768,7 +9837,8 @@
       "legacy_ownership_base_id": "zoids:gun_sniper_ns",
       "legacy_names": [
         "Gun Sniper NS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:snipe_master",
@@ -9898,7 +9968,8 @@
       "legacy_ownership_base_id": "zoids:snipe_master",
       "legacy_names": [
         "Snipe Master"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:snipe_master_fb",
@@ -10028,7 +10099,8 @@
       "legacy_ownership_base_id": "zoids:snipe_master_fb",
       "legacy_names": [
         "Snipe Master FB"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:snipe_master_as",
@@ -10163,7 +10235,8 @@
       "legacy_ownership_base_id": "zoids:snipe_master_as",
       "legacy_names": [
         "Snipe Master AS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:rev_raptor",
@@ -10293,7 +10366,8 @@
       "legacy_ownership_base_id": "zoids:rev_raptor",
       "legacy_names": [
         "Rev Raptor"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:rev_raptor_pile_bunker",
@@ -10424,7 +10498,8 @@
       "legacy_names": [
         "Rev Raptor Pile Bunker",
         "Rev Raptor Pilebunker"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:rev_hunter",
@@ -10542,7 +10617,8 @@
       "legacy_ownership_base_id": "zoids:rev_hunter",
       "legacy_names": [
         "Rev Hunter"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:hellrunner",
@@ -10667,7 +10743,8 @@
       "legacy_ownership_base_id": "zoids:hellrunner",
       "legacy_names": [
         "Hellrunner"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:ultra_saurus",
@@ -10785,7 +10862,8 @@
       "legacy_ownership_base_id": "zoids:ultra_saurus",
       "legacy_names": [
         "Ultra Saurus"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:ultra_phalanx",
@@ -10907,7 +10985,8 @@
       "legacy_ownership_base_id": "zoids:ultra_phalanx",
       "legacy_names": [
         "Ultra Phalanx"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gordos",
@@ -11037,7 +11116,8 @@
       "legacy_ownership_base_id": "zoids:gordos",
       "legacy_names": [
         "Gordos"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gorhecks",
@@ -11167,7 +11247,8 @@
       "legacy_ownership_base_id": "zoids:gorhecks",
       "legacy_names": [
         "Gorhecks"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gordos_lr",
@@ -11285,7 +11366,8 @@
       "legacy_ownership_base_id": "zoids:gordos_lr",
       "legacy_names": [
         "Gordos LR"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:red_horn",
@@ -11410,7 +11492,8 @@
       "legacy_ownership_base_id": "zoids:red_horn",
       "legacy_names": [
         "Red Horn"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:red_horn_bg",
@@ -11540,7 +11623,8 @@
       "legacy_ownership_base_id": "zoids:red_horn_bg",
       "legacy_names": [
         "Red Horn BG"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:dark_horn",
@@ -11670,7 +11754,8 @@
       "legacy_ownership_base_id": "zoids:dark_horn",
       "legacy_names": [
         "Dark Horn"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:dark_horn_hs",
@@ -11805,7 +11890,8 @@
       "legacy_ownership_base_id": "zoids:dark_horn_hs",
       "legacy_names": [
         "Dark Horn HS"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:mad_thunder",
@@ -11930,7 +12016,8 @@
       "legacy_ownership_base_id": "zoids:mad_thunder",
       "legacy_names": [
         "Mad Thunder"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gun_blaster",
@@ -12055,7 +12142,8 @@
       "legacy_ownership_base_id": "zoids:gun_blaster",
       "legacy_names": [
         "Gun Blaster"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:brachios",
@@ -12180,7 +12268,8 @@
       "legacy_ownership_base_id": "zoids:brachios",
       "legacy_names": [
         "Brachios"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gilvader",
@@ -12310,7 +12399,8 @@
       "legacy_ownership_base_id": "zoids:gilvader",
       "legacy_names": [
         "Gilvader"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gojulas",
@@ -12435,7 +12525,8 @@
       "legacy_ownership_base_id": "zoids:gojulas",
       "legacy_names": [
         "Gojulas"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gojulas_the_ogre",
@@ -12553,7 +12644,8 @@
       "legacy_ownership_base_id": "zoids:gojulas_the_ogre",
       "legacy_names": [
         "Gojulas the Ogre"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gojulas_gunner",
@@ -12671,7 +12763,8 @@
       "legacy_ownership_base_id": "zoids:gojulas_gunner",
       "legacy_names": [
         "Gojulas Gunner"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gojulas_giga",
@@ -12796,7 +12889,8 @@
       "legacy_ownership_base_id": "zoids:gojulas_giga",
       "legacy_names": [
         "Gojulas Giga"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gojulas_giga_cannon",
@@ -12921,7 +13015,8 @@
       "legacy_ownership_base_id": "zoids:gojulas_giga_cannon",
       "legacy_names": [
         "Gojulas Giga Cannon"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:king_gojulas",
@@ -13051,7 +13146,8 @@
       "legacy_ownership_base_id": "zoids:king_gojulas",
       "legacy_names": [
         "King Gojulas"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:death_saurer",
@@ -13181,7 +13277,8 @@
       "legacy_ownership_base_id": "zoids:death_saurer",
       "legacy_names": [
         "Death Saurer"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:bloody_demon",
@@ -13311,7 +13408,8 @@
       "legacy_ownership_base_id": "zoids:bloody_demon",
       "legacy_names": [
         "Bloody Demon"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:death_meteor",
@@ -13446,7 +13544,8 @@
       "legacy_ownership_base_id": "zoids:death_meteor",
       "legacy_names": [
         "Death Meteor"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:godos",
@@ -13571,7 +13670,8 @@
       "legacy_ownership_base_id": "zoids:godos",
       "legacy_names": [
         "Godos"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:allosaurer",
@@ -13701,7 +13801,8 @@
       "legacy_ownership_base_id": "zoids:allosaurer",
       "legacy_names": [
         "Allosaurer"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:iguan",
@@ -13826,7 +13927,2515 @@
       "legacy_ownership_base_id": "zoids:iguan",
       "legacy_names": [
         "Iguan"
-      ]
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:leo_blaze",
+      "name": "Leo Blaze",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 104
+      },
+      "fields": {
+        "name": "Leo Blaze",
+        "base_zoid": null,
+        "type": "BLOX",
+        "size": "Small",
+        "required_level": 8,
+        "health": 140,
+        "armor": 21,
+        "defense": 18,
+        "speed": 220,
+        "reaction": 14,
+        "range": 300,
+        "carry_capacity": 30,
+        "weapon_1_13": "Strike Laser Claw",
+        "effect_2_14": "Energy claw attack. Targets a single opponent. ",
+        "damage_1_15": 100,
+        "type_1_16": "Melee, Energy",
+        "to_hit_1_17": 17,
+        "active_passive3_18": null,
+        "weapon_2_19": "Zan Blade:",
+        "effect_3_20": "Tail blade. Targets a single opponent. ",
+        "damage_2_21": 130,
+        "type_2_22": "Melee",
+        "to_hit_2_23": 12,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Energy Shield:",
+        "effect_4_31": "Curved energy shield. Blocks 100 damage before dispersing. ",
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": 100,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": "Active",
+        "weapon_4_41": "Bite Fang:",
+        "effect_5_42": "Bite attack. Targets a single opponent.",
+        "damage_4_43": 80,
+        "type_4_44": "Melee, Piercing",
+        "to_hit_4_45": 13,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "weapon_1_13": {
+          "original": "Strike Laser Claw: ",
+          "corrected": "Strike Laser Claw",
+          "reason": "Owner standardized weapon name"
+        },
+        "type_1_16": {
+          "original": "Melee, Slashing, Energy",
+          "corrected": "Melee, Energy",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_2_22": {
+          "original": "Melee, Slashing",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:leo_blaze",
+      "fixed_weapon_ids": [
+        "zoids:leo_blaze:weapon:strike_laser_claw",
+        "zoids:leo_blaze:weapon:zan_blade",
+        null,
+        "zoids:leo_blaze:weapon:bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:leo_blaze:weapon:strike_laser_claw",
+        "zoids:leo_blaze:weapon:zan_blade",
+        null,
+        "zoids:leo_blaze:weapon:bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:leo_blaze",
+      "legacy_names": [
+        "Leo Blaze"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:unenlagia",
+      "name": "Unenlagia",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 105
+      },
+      "fields": {
+        "name": "Unenlagia",
+        "base_zoid": null,
+        "type": "BLOX",
+        "size": "Small",
+        "required_level": 6,
+        "health": 140,
+        "armor": 20,
+        "defense": 18,
+        "speed": 195,
+        "reaction": 12,
+        "range": 600,
+        "carry_capacity": 30,
+        "weapon_1_13": "Strike Laser Claw",
+        "effect_2_14": "Claw energy attack. Targets a single opponent. ",
+        "damage_1_15": 100,
+        "type_1_16": "Melee, Energy",
+        "to_hit_1_17": 14,
+        "active_passive3_18": null,
+        "weapon_2_19": "Hand Gun:",
+        "effect_3_20": "Hand mounted guns. Targets up to two opponents. Shoots two bursts that split the damage. ",
+        "damage_2_21": 65,
+        "type_2_22": "Ranged, Bullet",
+        "to_hit_2_23": 16,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Tail Rifle:",
+        "effect_4_31": "Tail sniper rifle. Targets a single opponent. ",
+        "damage_3_32": 100,
+        "type_3_33": "Ranged, Bullet, Long Range",
+        "to_hit_3_34": 18,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Bite Fang:",
+        "effect_5_42": "Bite attack. Targets a single opponent.",
+        "damage_4_43": 80,
+        "type_4_44": "Melee, Piercing",
+        "to_hit_4_45": 13,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "weapon_1_13": {
+          "original": "Strike Laser Claw: ",
+          "corrected": "Strike Laser Claw",
+          "reason": "Owner standardized weapon name"
+        },
+        "type_1_16": {
+          "original": "Melee. Slashing, Energy",
+          "corrected": "Melee, Energy",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_3_33": {
+          "original": "Ranged, Piercing, Long Range",
+          "corrected": "Ranged, Bullet, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_2_22": {
+          "original": "Ranged, Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:unenlagia",
+      "fixed_weapon_ids": [
+        "zoids:unenlagia:weapon:strike_laser_claw",
+        "zoids:unenlagia:weapon:hand_gun",
+        "zoids:unenlagia:weapon:tail_rifle",
+        "zoids:unenlagia:weapon:bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:unenlagia:weapon:strike_laser_claw",
+        "zoids:unenlagia:weapon:hand_gun",
+        "zoids:unenlagia:weapon:tail_rifle",
+        "zoids:unenlagia:weapon:bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:unenlagia",
+      "legacy_names": [
+        "Unenlagia"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:mosasledge",
+      "name": "Mosasledge",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 106
+      },
+      "fields": {
+        "name": "Mosasledge",
+        "base_zoid": null,
+        "type": "BLOX",
+        "size": "Small",
+        "required_level": 6,
+        "health": 140,
+        "armor": 22,
+        "defense": 18,
+        "speed": 100,
+        "reaction": 4,
+        "range": 100,
+        "carry_capacity": 30,
+        "weapon_1_13": "Torpedo Pod: ",
+        "effect_2_14": "Back mounted torpedo. Targets up to two opponnents. Fires two torpedos with the damage split between them. ",
+        "damage_1_15": 45,
+        "type_1_16": "Ranged, Explosive",
+        "to_hit_1_17": 15,
+        "active_passive3_18": null,
+        "weapon_2_19": "Tail Saw:",
+        "effect_3_20": "Tail attack. Targets a single opponent. ",
+        "damage_2_21": 130,
+        "type_2_22": "Melee",
+        "to_hit_2_23": 14,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Ion Booster:",
+        "effect_4_31": "Increases speed. Gains +300 to speed. Lasts for three turns",
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": 300,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": "Active",
+        "weapon_4_41": "Bite Fang:",
+        "effect_5_42": "Bite attack. Targets a single opponent.",
+        "damage_4_43": 100,
+        "type_4_44": "Melee, Piercing",
+        "to_hit_4_45": 13,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_2_22": {
+          "original": "Melee, Slashing",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:mosasledge",
+      "fixed_weapon_ids": [
+        "zoids:mosasledge:weapon:torpedo_pod",
+        "zoids:mosasledge:weapon:tail_saw",
+        null,
+        "zoids:mosasledge:weapon:bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:mosasledge:weapon:torpedo_pod",
+        "zoids:mosasledge:weapon:tail_saw",
+        null,
+        "zoids:mosasledge:weapon:bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:mosasledge",
+      "legacy_names": [
+        "Mosasledge"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:nightwise",
+      "name": "Nightwise",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 107
+      },
+      "fields": {
+        "name": "Nightwise",
+        "base_zoid": null,
+        "type": "BLOX",
+        "size": "Small",
+        "required_level": 6,
+        "health": 140,
+        "armor": 18,
+        "defense": 27,
+        "speed": 3100,
+        "reaction": 2,
+        "range": 2000,
+        "carry_capacity": 20,
+        "weapon_1_13": "Missile Pod: ",
+        "effect_2_14": "Underwing mounted missile pods. Targets an area 30m by 30m. Opponents inside the area of effect must make a reaction save against the attack roll. successful rolls take no damage.  ",
+        "damage_1_15": 65,
+        "type_1_16": "Ranged, Anti-Air, Explosive",
+        "to_hit_1_17": 18,
+        "active_passive3_18": null,
+        "weapon_2_19": "Inferred Sensor:",
+        "effect_3_20": "Gains +1,000 range. Lasts three turns. ",
+        "damage_2_21": null,
+        "type_2_22": null,
+        "to_hit_2_23": null,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": 1000,
+        "active_passive_29": "Active",
+        "weapon_3_30": "Ion Booster:",
+        "effect_4_31": "Increases speed. Gains +500 to speed. Lasts three turns. ",
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": 500,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": "Active",
+        "weapon_4_41": "Crusher Claw:",
+        "effect_5_42": "Claw attack. Targets a single opponent.",
+        "damage_4_43": 75,
+        "type_4_44": "Melee, Anti-Air, Piercing",
+        "to_hit_4_45": 15,
+        "re_equip_slot_type_1_46": "Weapon and Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "ownership_base_id": "zoids:nightwise",
+      "fixed_weapon_ids": [
+        "zoids:nightwise:weapon:missile_pod",
+        null,
+        null,
+        "zoids:nightwise:weapon:crusher_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:nightwise:weapon:missile_pod",
+        null,
+        null,
+        "zoids:nightwise:weapon:crusher_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:nightwise",
+      "legacy_names": [
+        "Nightwise"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:buster_eagle",
+      "name": "Buster Eagle",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 108
+      },
+      "fields": {
+        "name": "Buster Eagle",
+        "base_zoid": null,
+        "type": "Flying",
+        "size": "Medium",
+        "required_level": 11,
+        "health": 210,
+        "armor": 21,
+        "defense": 20,
+        "speed": 2000,
+        "reaction": 6,
+        "range": 300,
+        "carry_capacity": 30,
+        "weapon_1_13": "Buster Cannon:",
+        "effect_2_14": "Back mounted cannon. Targets a single opponent.",
+        "damage_1_15": 280,
+        "type_1_16": "Ranged, Anti-Air, Explosive, Long Range",
+        "to_hit_1_17": 10,
+        "active_passive3_18": null,
+        "weapon_2_19": "Anti-Zoids Missile:",
+        "effect_3_20": "Side mounted missile pods. Targets an area 60m by 60m. Opponents in the area of effect must make a reaction save against your attack roll. Successful rolls take no damage.",
+        "damage_2_21": 60,
+        "type_2_22": "Ranged, Anti-Air, Homing, Explosive",
+        "to_hit_2_23": 18,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Buster Claw:",
+        "effect_4_31": "Claw attack. Targets a single opponent.",
+        "damage_3_32": 180,
+        "type_3_33": "Melee, Anti-Air, Piercing",
+        "to_hit_3_34": 15,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": null,
+        "effect_5_42": null,
+        "damage_4_43": null,
+        "type_4_44": null,
+        "to_hit_4_45": null,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "ownership_base_id": "zoids:buster_eagle",
+      "fixed_weapon_ids": [
+        "zoids:buster_eagle:weapon:buster_cannon",
+        "zoids:buster_eagle:weapon:anti_zoids_missile",
+        "zoids:buster_eagle:weapon:buster_claw",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:buster_eagle:weapon:buster_cannon",
+        "zoids:buster_eagle:weapon:anti_zoids_missile",
+        "zoids:buster_eagle:weapon:buster_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:buster_eagle",
+      "legacy_names": [
+        "Buster Eagle"
+      ],
+      "is_fuzor": false,
+      "corrections": {
+        "type": {
+          "original": "BLOX",
+          "corrected": "Flying",
+          "reason": "Owner assigned game types to implemented BLOX designs"
+        }
+      }
+    },
+    {
+      "id": "zoids:flyscissors",
+      "name": "Flyscissors",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 109
+      },
+      "fields": {
+        "name": "Flyscissors",
+        "base_zoid": null,
+        "type": "BLOX",
+        "size": "Small",
+        "required_level": 7,
+        "health": 150,
+        "armor": 18,
+        "defense": 15,
+        "speed": 2800,
+        "reaction": 3,
+        "range": 300,
+        "carry_capacity": 20,
+        "weapon_1_13": "X-Scissor:",
+        "effect_2_14": "Front pincer attack. Targets a single opponent.",
+        "damage_1_15": 160,
+        "type_1_16": "Melee, Anti-Air, Piercing",
+        "to_hit_1_17": 12,
+        "active_passive3_18": null,
+        "weapon_2_19": "X Claws:",
+        "effect_3_20": "Claw attack. Targets a single opponent. ",
+        "damage_2_21": 85,
+        "type_2_22": "Melee, Anti-Air",
+        "to_hit_2_23": 15,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Smash Tail:",
+        "effect_4_31": "Tail attack. Targets a single opponent.",
+        "damage_3_32": 120,
+        "type_3_33": "Melee, Anti-Air",
+        "to_hit_3_34": 13,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Strike Claw:",
+        "effect_5_42": "Claw attack. Targets a single opponent.",
+        "damage_4_43": 120,
+        "type_4_44": "Melee, Anti-Air",
+        "to_hit_4_45": 15,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_3_33": {
+          "original": "Melee, Anti-Air, Slashing",
+          "corrected": "Melee, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_2_22": {
+          "original": "Melee, Anti-Air, Slashing",
+          "corrected": "Melee, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_4_44": {
+          "original": "Melee, Anti-Air, Slashing",
+          "corrected": "Melee, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:flyscissors",
+      "fixed_weapon_ids": [
+        "zoids:flyscissors:weapon:x_scissor",
+        "zoids:flyscissors:weapon:x_claws",
+        "zoids:flyscissors:weapon:smash_tail",
+        "zoids:flyscissors:weapon:strike_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:flyscissors:weapon:x_scissor",
+        "zoids:flyscissors:weapon:x_claws",
+        "zoids:flyscissors:weapon:smash_tail",
+        "zoids:flyscissors:weapon:strike_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:flyscissors",
+      "legacy_names": [
+        "Flyscissors"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:shell_karn",
+      "name": "Shell Karn",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 110
+      },
+      "fields": {
+        "name": "Shell Karn",
+        "base_zoid": null,
+        "type": "BLOX",
+        "size": "Small",
+        "required_level": 7,
+        "health": 150,
+        "armor": 27,
+        "defense": 18,
+        "speed": 80,
+        "reaction": 10,
+        "range": 100,
+        "carry_capacity": 30,
+        "weapon_1_13": "Electro-Magnetic Cannon:",
+        "effect_2_14": "Shoulder mounted energy cannon. Targets a single opponent.",
+        "damage_1_15": 30,
+        "type_1_16": "Ranged, Laser",
+        "to_hit_1_17": 12,
+        "active_passive3_18": null,
+        "weapon_2_19": "Hammer Knuckle:",
+        "effect_3_20": "Punch attack. Targets a single opponent.",
+        "damage_2_21": 150,
+        "type_2_22": "Melee",
+        "to_hit_2_23": 13,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Bite Fang:",
+        "effect_4_31": "Bite attack. Targets a single opponent.",
+        "damage_3_32": 90,
+        "type_3_33": "Melee, Piercing",
+        "to_hit_3_34": 15,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": null,
+        "effect_5_42": null,
+        "damage_4_43": null,
+        "type_4_44": null,
+        "to_hit_4_45": null,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_1_16": {
+          "original": "Ranged, Energy",
+          "corrected": "Ranged, Laser",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_2_22": {
+          "original": "Melee, Bludgeon",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:shell_karn",
+      "fixed_weapon_ids": [
+        "zoids:shell_karn:weapon:electro_magnetic_cannon",
+        "zoids:shell_karn:weapon:hammer_knuckle",
+        "zoids:shell_karn:weapon:bite_fang",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:shell_karn:weapon:electro_magnetic_cannon",
+        "zoids:shell_karn:weapon:hammer_knuckle",
+        "zoids:shell_karn:weapon:bite_fang",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:shell_karn",
+      "legacy_names": [
+        "Shell Karn"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:diplo_gun",
+      "name": "Diplo Gun",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 111
+      },
+      "fields": {
+        "name": "Diplo Gun",
+        "base_zoid": null,
+        "type": "BLOX",
+        "size": "Small",
+        "required_level": 7,
+        "health": 150,
+        "armor": 22,
+        "defense": 18,
+        "speed": 200,
+        "reaction": 3,
+        "range": 300,
+        "carry_capacity": 20,
+        "weapon_1_13": "Railcannon:",
+        "effect_2_14": "Railgun that runs the whole length of the Zoid. Targets a single opponent.",
+        "damage_1_15": 120,
+        "type_1_16": "Ranged, Bullet, Long Range",
+        "to_hit_1_17": 17,
+        "active_passive3_18": null,
+        "weapon_2_19": "Ion Booster:",
+        "effect_3_20": "Gain +500 speed. Lasts for three turn. ",
+        "damage_2_21": null,
+        "type_2_22": null,
+        "to_hit_2_23": null,
+        "shield_health_24": null,
+        "speed_increase_25": 500,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": "Active",
+        "weapon_3_30": "Diplo Cutter:",
+        "effect_4_31": "Side mounted blades. Targets a single opponent. ",
+        "damage_3_32": 80,
+        "type_3_33": "Melee, Anti-Air",
+        "to_hit_3_34": 14,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": null,
+        "effect_5_42": null,
+        "damage_4_43": null,
+        "type_4_44": null,
+        "to_hit_4_45": null,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_1_16": {
+          "original": "Ranged, Piercing, Long Range",
+          "corrected": "Ranged, Bullet, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_3_33": {
+          "original": "Melee, Anti-Air, Slashing",
+          "corrected": "Melee, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:diplo_gun",
+      "fixed_weapon_ids": [
+        "zoids:diplo_gun:weapon:railcannon",
+        null,
+        "zoids:diplo_gun:weapon:diplo_cutter",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:diplo_gun:weapon:railcannon",
+        null,
+        "zoids:diplo_gun:weapon:diplo_cutter",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:diplo_gun",
+      "legacy_names": [
+        "Diplo Gun"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:demon_s_head",
+      "name": "Demon's Head",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 112
+      },
+      "fields": {
+        "name": "Demon's Head",
+        "base_zoid": null,
+        "type": "BLOX",
+        "size": "Small",
+        "required_level": 7,
+        "health": 150,
+        "armor": 24,
+        "defense": 18,
+        "speed": 80,
+        "reaction": 8,
+        "range": 100,
+        "carry_capacity": 30,
+        "weapon_1_13": "Magnet Claw:",
+        "effect_2_14": "Claw attack. Targets a single opponent.",
+        "damage_1_15": 85,
+        "type_1_16": "Melee",
+        "to_hit_1_17": 13,
+        "active_passive3_18": null,
+        "weapon_2_19": "Magnezer Spear:",
+        "effect_3_20": "Spears flip forward. Targets a single opponent.",
+        "damage_2_21": 140,
+        "type_2_22": "Melee, Piercing",
+        "to_hit_2_23": 14,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Magnezer Tail:",
+        "effect_4_31": "Tail attack. Targets a single opponent.",
+        "damage_3_32": 130,
+        "type_3_33": "Melee",
+        "to_hit_3_34": 13,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Magnezer Fang:",
+        "effect_5_42": "Bite attack. Targets a single opponent.",
+        "damage_4_43": 150,
+        "type_4_44": "Melee, Piercing",
+        "to_hit_4_45": 12,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_1_16": {
+          "original": "Melee, Slashing",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_3_33": {
+          "original": "Melee, Slashing",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:demon_s_head",
+      "fixed_weapon_ids": [
+        "zoids:demon_s_head:weapon:magnet_claw",
+        "zoids:demon_s_head:weapon:magnezer_spear",
+        "zoids:demon_s_head:weapon:magnezer_tail",
+        "zoids:demon_s_head:weapon:magnezer_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:demon_s_head:weapon:magnet_claw",
+        "zoids:demon_s_head:weapon:magnezer_spear",
+        "zoids:demon_s_head:weapon:magnezer_tail",
+        "zoids:demon_s_head:weapon:magnezer_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:demon_s_head",
+      "legacy_names": [
+        "Demon's Head"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:fire_phoenix",
+      "name": "Fire Phoenix",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 113
+      },
+      "fields": {
+        "name": "Fire Phoenix",
+        "base_zoid": null,
+        "type": "Flying",
+        "size": "Medium",
+        "required_level": 10,
+        "health": 200,
+        "armor": 18,
+        "defense": 16,
+        "speed": 2000,
+        "reaction": 18,
+        "range": 400,
+        "carry_capacity": 35,
+        "weapon_1_13": "Charge Missile:",
+        "effect_2_14": "Chest mounted rocket. Targets a single opponent. ",
+        "damage_1_15": 230,
+        "type_1_16": "Ranged, Anti-Air, Explosive",
+        "to_hit_1_17": 11,
+        "active_passive3_18": null,
+        "weapon_2_19": "Laser Claw:",
+        "effect_3_20": "Energy claw attack. Targets a single opponent. ",
+        "damage_2_21": null,
+        "type_2_22": null,
+        "to_hit_2_23": null,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": null,
+        "effect_4_31": null,
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": null,
+        "effect_5_42": null,
+        "damage_4_43": null,
+        "type_4_44": null,
+        "to_hit_4_45": null,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "ownership_base_id": "zoids:fire_phoenix",
+      "fixed_weapon_ids": [
+        "zoids:fire_phoenix:weapon:charge_missile",
+        null,
+        null,
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:fire_phoenix:weapon:charge_missile",
+        null,
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:fire_phoenix",
+      "legacy_names": [
+        "Fire Phoenix"
+      ],
+      "is_fuzor": false,
+      "corrections": {
+        "type": {
+          "original": "BLOX",
+          "corrected": "Flying",
+          "reason": "Owner assigned game types to implemented BLOX designs"
+        }
+      }
+    },
+    {
+      "id": "zoids:jet_falcon",
+      "name": "Jet Falcon",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 114
+      },
+      "fields": {
+        "name": "Jet Falcon",
+        "base_zoid": null,
+        "type": "Flying",
+        "size": "Medium",
+        "required_level": 10,
+        "health": 300,
+        "armor": 18,
+        "defense": 10,
+        "speed": 3000,
+        "reaction": 12,
+        "range": 450,
+        "carry_capacity": 35,
+        "weapon_1_13": "Shock Cannon:",
+        "effect_2_14": "Back mounted cannon. Targets a single opponent. ",
+        "damage_1_15": 150,
+        "type_1_16": "Ranged, Anti-Air, Explosive",
+        "to_hit_1_17": 14,
+        "active_passive3_18": null,
+        "weapon_2_19": "Buster Claw:",
+        "effect_3_20": "Chest mounted claw attack. Targets a single opponent. ",
+        "damage_2_21": 190,
+        "type_2_22": "Melee, Anti-Air",
+        "to_hit_2_23": 16,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Magna Wing: ",
+        "effect_4_31": "Increase speed by 500. Lasts for three turns. ",
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": 500,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Smash Claw:",
+        "effect_5_42": "Claw attack. Targets a single opponent. ",
+        "damage_4_43": 130,
+        "type_4_44": "Melee",
+        "to_hit_4_45": 16,
+        "re_equip_slot_type_1_46": "Weapon and Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_2_22": {
+          "original": "Melee, Anti-Air, Slashing",
+          "corrected": "Melee, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_4_44": {
+          "original": "Melee, Slashing",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type": {
+          "original": "BLOX",
+          "corrected": "Flying",
+          "reason": "Owner assigned game types to implemented BLOX designs"
+        }
+      },
+      "ownership_base_id": "zoids:jet_falcon",
+      "fixed_weapon_ids": [
+        "zoids:jet_falcon:weapon:shock_cannon",
+        "zoids:jet_falcon:weapon:buster_claw",
+        null,
+        "zoids:jet_falcon:weapon:smash_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:jet_falcon:weapon:shock_cannon",
+        "zoids:jet_falcon:weapon:buster_claw",
+        null,
+        "zoids:jet_falcon:weapon:smash_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:jet_falcon",
+      "legacy_names": [
+        "Jet Falcon"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:zero_phoenix",
+      "name": "Zero Phoenix (CAU)",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 115
+      },
+      "fields": {
+        "name": "Zero Phoenix (CAU)",
+        "base_zoid": "Liger Zero, Fire Phoenix",
+        "type": "Liger",
+        "size": "Large",
+        "required_level": 15,
+        "health": 452,
+        "armor": 24,
+        "defense": 25,
+        "speed": 340,
+        "reaction": 20,
+        "range": 300,
+        "carry_capacity": 35,
+        "weapon_1_13": "Double Shock Gun:",
+        "effect_2_14": "Chest mounted cannon. Targets a single opponent. ",
+        "damage_1_15": 140,
+        "type_1_16": "Ranged, Explosive",
+        "to_hit_1_17": 14,
+        "active_passive3_18": null,
+        "weapon_2_19": "Shock Gun:",
+        "effect_3_20": "Back mounted cannon. Targets a single opponent. ",
+        "damage_2_21": 250,
+        "type_2_22": "Ranged, Explosive",
+        "to_hit_2_23": 15,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Charge Missile:",
+        "effect_4_31": "Back mounted missile pod. Targets a single opponent. ",
+        "damage_3_32": 180,
+        "type_3_33": "Ranged, Explosive",
+        "to_hit_3_34": 11,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Strike Laser Claw",
+        "effect_5_42": "Energy claw attack. Targets a single opponent. ",
+        "damage_4_43": 240,
+        "type_4_44": "Melee, Energy",
+        "to_hit_4_45": 16,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "weapon_4_41": {
+          "original": "Strike Laser Claw:",
+          "corrected": "Strike Laser Claw",
+          "reason": "Owner standardized weapon name"
+        },
+        "type_4_44": {
+          "original": "Melee, Slashing, Energy",
+          "corrected": "Melee, Energy",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type": {
+          "original": "BLOX ",
+          "corrected": "Liger",
+          "reason": "Owner assigned game types to implemented BLOX designs"
+        }
+      },
+      "ownership_base_id": "zoids:liger_zero",
+      "fixed_weapon_ids": [
+        "zoids:zero_phoenix:weapon:double_shock_gun",
+        "zoids:zero_phoenix:weapon:shock_gun",
+        "zoids:zero_phoenix:weapon:charge_missile",
+        "zoids:liger_zero:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:zero_phoenix:weapon:double_shock_gun",
+        "zoids:zero_phoenix:weapon:shock_gun",
+        "zoids:zero_phoenix:weapon:charge_missile",
+        "zoids:zero_phoenix:weapon:strike_laser_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:zero_phoenix",
+      "legacy_names": [
+        "Zero Phoenix"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:zero_falcon",
+      "name": "Zero Falcon (CAU)",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 116
+      },
+      "fields": {
+        "name": "Zero Falcon (CAU)",
+        "base_zoid": "Liger Zero, Jet Falcon",
+        "type": "Liger",
+        "size": "Large",
+        "required_level": 16,
+        "health": 494,
+        "armor": 24,
+        "defense": 28,
+        "speed": 400,
+        "reaction": 21,
+        "range": 300,
+        "carry_capacity": 45,
+        "weapon_1_13": "Double Shock Gun: ",
+        "effect_2_14": "Chest mounted cannon. Targets a single opponent. ",
+        "damage_1_15": 260,
+        "type_1_16": "Ranged, Explosive",
+        "to_hit_1_17": 16,
+        "active_passive3_18": null,
+        "weapon_2_19": "Strike Laser Claw",
+        "effect_3_20": "Back mounted energy claw attack. Targets a single opponent. ",
+        "damage_2_21": 340,
+        "type_2_22": "Melee, Energy",
+        "to_hit_2_23": 15,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Magna Wing:",
+        "effect_4_31": "Back mounted boosters. Increases speed by 300 for three turns. ",
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": 300,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Smash Claw: ",
+        "effect_5_42": "Front claw attack. Targets a single opponent. ",
+        "damage_4_43": 260,
+        "type_4_44": "Melee",
+        "to_hit_4_45": 16,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "weapon_2_19": {
+          "original": "Strike Laser Claw: ",
+          "corrected": "Strike Laser Claw",
+          "reason": "Owner standardized weapon name"
+        },
+        "type_2_22": {
+          "original": "Melee, Slashing, Energy",
+          "corrected": "Melee, Energy",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_4_44": {
+          "original": "Melee, Slashing",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type": {
+          "original": "BLOX",
+          "corrected": "Liger",
+          "reason": "Owner assigned game types to implemented BLOX designs"
+        }
+      },
+      "ownership_base_id": "zoids:liger_zero",
+      "fixed_weapon_ids": [
+        "zoids:zero_falcon:weapon:double_shock_gun",
+        "zoids:liger_zero:weapon:strike_laser_claw",
+        null,
+        "zoids:zero_falcon:weapon:smash_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:zero_falcon:weapon:double_shock_gun",
+        "zoids:zero_falcon:weapon:strike_laser_claw",
+        null,
+        "zoids:zero_falcon:weapon:smash_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:zero_falcon",
+      "legacy_names": [
+        "Zero Falcon"
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:fuzor_dragon",
+      "name": "Fuzor Dragon",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 117
+      },
+      "fields": {
+        "name": "Fuzor Dragon",
+        "base_zoid": "Leoblaze, Unenlagia, Mosasledge, Nightwise.",
+        "type": "BLOX",
+        "size": "Large",
+        "required_level": 13,
+        "health": 300,
+        "armor": 20,
+        "defense": 30,
+        "speed": 1800,
+        "reaction": 8,
+        "range": 300,
+        "carry_capacity": 40,
+        "weapon_1_13": "Handgun:",
+        "effect_2_14": "Hand mounted guns. Targets up to two Zoids. Shoots two bursts of 60 piercing",
+        "damage_1_15": 120,
+        "type_1_16": "Ranged, Anti-Air, Bullet",
+        "to_hit_1_17": 19,
+        "active_passive3_18": null,
+        "weapon_2_19": "Tail Saw:",
+        "effect_3_20": "Tail blade attack. Targets a single opponent.",
+        "damage_2_21": 210,
+        "type_2_22": "Melee, Anti-Air",
+        "to_hit_2_23": 16,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Energy Shield:",
+        "effect_4_31": "Curved energy shield. Blocks 200 damage before dispersing. ",
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": 200,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": "Active",
+        "weapon_4_41": "Dragon Tooth:",
+        "effect_5_42": "Bite attack. Targets a single opponent.",
+        "damage_4_43": 350,
+        "type_4_44": "Melee, Piercing",
+        "to_hit_4_45": 17,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_1_16": {
+          "original": "Ranged, Anti-Air, Piercing",
+          "corrected": "Ranged, Anti-Air, Bullet",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_2_22": {
+          "original": "Melee, Anti-Air, Slashing",
+          "corrected": "Melee, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:fuzor_dragon",
+      "fixed_weapon_ids": [
+        "zoids:fuzor_dragon:weapon:handgun",
+        "zoids:fuzor_dragon:weapon:tail_saw",
+        null,
+        "zoids:fuzor_dragon:weapon:dragon_tooth"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:fuzor_dragon:weapon:handgun",
+        "zoids:fuzor_dragon:weapon:tail_saw",
+        null,
+        "zoids:fuzor_dragon:weapon:dragon_tooth"
+      ],
+      "legacy_ownership_base_id": "zoids:fuzor_dragon",
+      "legacy_names": [
+        "Fuzor Dragon"
+      ],
+      "is_fuzor": true
+    },
+    {
+      "id": "zoids:chimera_dragon",
+      "name": "Chimera Dragon",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 118
+      },
+      "fields": {
+        "name": "Chimera Dragon",
+        "base_zoid": "Demonshead, Diplogun, Shell Karn, Flyscissors.",
+        "type": "BLOX",
+        "size": "Large",
+        "required_level": 13,
+        "health": 320,
+        "armor": 22,
+        "defense": 30,
+        "speed": 1200,
+        "reaction": 2,
+        "range": 200,
+        "carry_capacity": 40,
+        "weapon_1_13": "Rail Cannon:",
+        "effect_2_14": "Right shoulder mounted rail cannon. Targets a single opponent.",
+        "damage_1_15": 180,
+        "type_1_16": "Ranged, Anti-Air, Bullet, Long Range",
+        "to_hit_1_17": 17,
+        "active_passive3_18": null,
+        "weapon_2_19": "Missile Launcher:",
+        "effect_3_20": "Forward facing missile launcher. Targets an area 90m by 90m. Opponents inside the area of effect must make a reaction save against the attack roll. successful rolls take no damage. ",
+        "damage_2_21": 70,
+        "type_2_22": "Ranged, Anti-Air, Homing, Explosive",
+        "to_hit_2_23": 18,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Hells Gate:",
+        "effect_4_31": "Spear flips forward. Targets a single opponent.",
+        "damage_3_32": 360,
+        "type_3_33": "Melee, Anti-Air, Piercing",
+        "to_hit_3_34": 15,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Hammer Knuckle:",
+        "effect_5_42": "Punch attack. Targets a single opponents.",
+        "damage_4_43": 190,
+        "type_4_44": "Melee",
+        "to_hit_4_45": 19,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_1_16": {
+          "original": "Ranged, Anti-Air, Piercing, Long Range",
+          "corrected": "Ranged, Anti-Air, Bullet, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_4_44": {
+          "original": "Melee, Bludgeon",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:chimera_dragon",
+      "fixed_weapon_ids": [
+        "zoids:chimera_dragon:weapon:rail_cannon",
+        "zoids:chimera_dragon:weapon:missile_launcher",
+        "zoids:chimera_dragon:weapon:hells_gate",
+        "zoids:chimera_dragon:weapon:hammer_knuckle"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:chimera_dragon:weapon:rail_cannon",
+        "zoids:chimera_dragon:weapon:missile_launcher",
+        "zoids:chimera_dragon:weapon:hells_gate",
+        "zoids:chimera_dragon:weapon:hammer_knuckle"
+      ],
+      "legacy_ownership_base_id": "zoids:chimera_dragon",
+      "legacy_names": [
+        "Chimera Dragon"
+      ],
+      "is_fuzor": true
+    },
+    {
+      "id": "zoids:gojulox",
+      "name": "Gojulox",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 119
+      },
+      "fields": {
+        "name": "Gojulox",
+        "base_zoid": "Diploguns, Demonshead, Nightwise, Shellkarn, Unenlagia, Leoblaze.",
+        "type": "BLOX",
+        "size": "Large",
+        "required_level": 24,
+        "health": 450,
+        "armor": 24,
+        "defense": 90,
+        "speed": 130,
+        "reaction": 10,
+        "range": 500,
+        "carry_capacity": 60,
+        "weapon_1_13": "Magnezer Fang:",
+        "effect_2_14": "Bite attack. Targets a single opponent.",
+        "damage_1_15": 150,
+        "type_1_16": "Melee, Piercing",
+        "to_hit_1_17": 16,
+        "active_passive3_18": null,
+        "weapon_2_19": "Rail Cannon: ",
+        "effect_3_20": "Both shoulder mounted rail cannons. Targets a single opponent. If the damage exceeds the health of the target it continues on. ",
+        "damage_2_21": 240,
+        "type_2_22": "Ranged, Bullet, Puncture",
+        "to_hit_2_23": 17,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Handgun:",
+        "effect_4_31": "Hand mounted guns. Targets up to two Zoids. Damage is split between the targets. ",
+        "damage_3_32": 210,
+        "type_3_33": "Ranged, Anti-Air, Bullet",
+        "to_hit_3_34": 19,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Strike Laser Claw",
+        "effect_5_42": "Energy claw attack. Targets a single opponent.",
+        "damage_4_43": 320,
+        "type_4_44": "Melee, Energy",
+        "to_hit_4_45": 18,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "weapon_4_41": {
+          "original": "Strike Laser Claw:",
+          "corrected": "Strike Laser Claw",
+          "reason": "Owner standardized weapon name"
+        },
+        "type_3_33": {
+          "original": "Ranged, Anti-Air, Piercing,",
+          "corrected": "Ranged, Anti-Air, Bullet",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_2_22": {
+          "original": "Ranged, Piercing, Puncture",
+          "corrected": "Ranged, Bullet, Puncture",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_4_44": {
+          "original": "Melee, Slashing, Energy",
+          "corrected": "Melee, Energy",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:gojulox",
+      "fixed_weapon_ids": [
+        "zoids:gojulox:weapon:magnezer_fang",
+        "zoids:gojulox:weapon:rail_cannon",
+        "zoids:gojulox:weapon:handgun",
+        "zoids:gojulox:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:gojulox:weapon:magnezer_fang",
+        "zoids:gojulox:weapon:rail_cannon",
+        "zoids:gojulox:weapon:handgun",
+        "zoids:gojulox:weapon:strike_laser_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:gojulox",
+      "legacy_names": [
+        "Gojulox"
+      ],
+      "is_fuzor": true
+    },
+    {
+      "id": "zoids:2_arm_lizard",
+      "name": "2-Arm Lizard",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 120
+      },
+      "fields": {
+        "name": "2-Arm Lizard",
+        "base_zoid": "Leoblaze, Unenlagia",
+        "type": "BLOX",
+        "size": "Medium",
+        "required_level": 12,
+        "health": 240,
+        "armor": 22,
+        "defense": 28,
+        "speed": 130,
+        "reaction": 12,
+        "range": 600,
+        "carry_capacity": 30,
+        "weapon_1_13": "Handgun:",
+        "effect_2_14": "Hand mounted guns. Targets up to two opponents. Damage is split between the targets. ",
+        "damage_1_15": 90,
+        "type_1_16": "Ranged, Bullet",
+        "to_hit_1_17": 16,
+        "active_passive3_18": null,
+        "weapon_2_19": "Tail Rifle:",
+        "effect_3_20": "Back mounted sniper rifle. Targets a single opponent.",
+        "damage_2_21": 210,
+        "type_2_22": "Ranged, Bullet, Long Range",
+        "to_hit_2_23": 18,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Zan Blade:",
+        "effect_4_31": "Tail attack. Targets a single opponent.",
+        "damage_3_32": 250,
+        "type_3_33": "Melee",
+        "to_hit_3_34": 18,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": "Bite Fang:",
+        "effect_5_42": "Bite attack. Targets a single opponent.",
+        "damage_4_43": 180,
+        "type_4_44": "Melee, Piercing",
+        "to_hit_4_45": 13,
+        "re_equip_slot_type_1_46": "Weapon and Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_1_16": {
+          "original": "Ranged, Piercing",
+          "corrected": "Ranged, Bullet",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_3_33": {
+          "original": "Melee, Slashing",
+          "corrected": "Melee",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        },
+        "type_2_22": {
+          "original": "Ranged, Piercing, Long Range",
+          "corrected": "Ranged, Bullet, Long Range",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:2_arm_lizard",
+      "fixed_weapon_ids": [
+        "zoids:2_arm_lizard:weapon:handgun",
+        "zoids:2_arm_lizard:weapon:tail_rifle",
+        "zoids:2_arm_lizard:weapon:zan_blade",
+        "zoids:2_arm_lizard:weapon:bite_fang"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:2_arm_lizard:weapon:handgun",
+        "zoids:2_arm_lizard:weapon:tail_rifle",
+        "zoids:2_arm_lizard:weapon:zan_blade",
+        "zoids:2_arm_lizard:weapon:bite_fang"
+      ],
+      "legacy_ownership_base_id": "zoids:2_arm_lizard",
+      "legacy_names": [
+        "2-Arm Lizard"
+      ],
+      "is_fuzor": true
+    },
+    {
+      "id": "zoids:griffin",
+      "name": "Griffin",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 121
+      },
+      "fields": {
+        "name": "Griffin",
+        "base_zoid": "Leoblaze, Unenlagia, Buster Eagle.",
+        "type": "BLOX",
+        "size": "Large",
+        "required_level": 15,
+        "health": 400,
+        "armor": 19,
+        "defense": 30,
+        "speed": 1500,
+        "reaction": 4,
+        "range": 400,
+        "carry_capacity": 40,
+        "weapon_1_13": "Killer Beak:",
+        "effect_2_14": "Beak attack. Targets a single opponent.",
+        "damage_1_15": 230,
+        "type_1_16": "Melee, Anti-Air, Piercing",
+        "to_hit_1_17": 14,
+        "active_passive3_18": null,
+        "weapon_2_19": "AZ Missile:",
+        "effect_3_20": "Back mounted missile pods. Targets an area 90m by 90m. Opponents inside the area of effect must make a reaction save against the attack roll. successful rolls take no damage. ",
+        "damage_2_21": 130,
+        "type_2_22": "Ranged, Anti-Air, Explosive",
+        "to_hit_2_23": 18,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Buster Claw:",
+        "effect_4_31": "Claw attack. Targets a single opponent.",
+        "damage_3_32": 320,
+        "type_3_33": "Melee, Anti-Air",
+        "to_hit_3_34": 13,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": null,
+        "effect_5_42": null,
+        "damage_4_43": null,
+        "type_4_44": null,
+        "to_hit_4_45": null,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_3_33": {
+          "original": "Melee, Anti-Ait, Slashing",
+          "corrected": "Melee, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:griffin",
+      "fixed_weapon_ids": [
+        "zoids:griffin:weapon:killer_beak",
+        "zoids:griffin:weapon:az_missile",
+        "zoids:griffin:weapon:buster_claw",
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:griffin:weapon:killer_beak",
+        "zoids:griffin:weapon:az_missile",
+        "zoids:griffin:weapon:buster_claw",
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:griffin",
+      "legacy_names": [
+        "Griffin"
+      ],
+      "is_fuzor": true
+    },
+    {
+      "id": "zoids:lord_gale",
+      "name": "Lord Gale",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 122
+      },
+      "fields": {
+        "name": "Lord Gale",
+        "base_zoid": "DiploGun, Flyscissors, Demonshead, Shellkarn.",
+        "type": "BLOX",
+        "size": "Medium",
+        "required_level": 12,
+        "health": 250,
+        "armor": 21,
+        "defense": 28,
+        "speed": 300,
+        "reaction": 16,
+        "range": 500,
+        "carry_capacity": 25,
+        "weapon_1_13": "X-Scissor:",
+        "effect_2_14": "Right arm attack. Targets a single opponent.",
+        "damage_1_15": 280,
+        "type_1_16": "Melee, Anti-Air",
+        "to_hit_1_17": 16,
+        "active_passive3_18": null,
+        "weapon_2_19": "Magnezer Spear:",
+        "effect_3_20": "Left arm spear attack. Targets a single opponent. ",
+        "damage_2_21": 180,
+        "type_2_22": "Melee, Piercing",
+        "to_hit_2_23": 16,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": null,
+        "effect_4_31": null,
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": null,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": null,
+        "weapon_4_41": null,
+        "effect_5_42": null,
+        "damage_4_43": null,
+        "type_4_44": null,
+        "to_hit_4_45": null,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": null,
+        "weapon_2_heat": null,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "type_1_16": {
+          "original": "Melee, Anti-Air, Slashing",
+          "corrected": "Melee, Anti-Air",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:lord_gale",
+      "fixed_weapon_ids": [
+        "zoids:lord_gale:weapon:x_scissor",
+        "zoids:lord_gale:weapon:magnezer_spear",
+        null,
+        null
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:lord_gale:weapon:x_scissor",
+        "zoids:lord_gale:weapon:magnezer_spear",
+        null,
+        null
+      ],
+      "legacy_ownership_base_id": "zoids:lord_gale",
+      "legacy_names": [
+        "Lord Gale"
+      ],
+      "is_fuzor": true
     },
     {
       "id": "zoids:death_stinger",
@@ -13951,7 +16560,8 @@
       "legacy_ownership_base_id": "zoids:death_stinger",
       "legacy_names": [
         "Death Stinger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:jagged_stinger",
@@ -14076,7 +16686,8 @@
       "legacy_ownership_base_id": "zoids:jagged_stinger",
       "legacy_names": [
         "Jagged Stinger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:guysack",
@@ -14201,7 +16812,8 @@
       "legacy_ownership_base_id": "zoids:guysack",
       "legacy_names": [
         "Guysack"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:guysack_stinger",
@@ -14331,7 +16943,8 @@
       "legacy_ownership_base_id": "zoids:guysack_stinger",
       "legacy_names": [
         "Guysack Stinger"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:molga",
@@ -14461,7 +17074,8 @@
       "legacy_ownership_base_id": "zoids:molga",
       "legacy_names": [
         "Molga"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:molga_cannonry",
@@ -14597,7 +17211,8 @@
       "legacy_names": [
         "Molga Cannonry",
         "Cannonry Molga"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:dark_poison",
@@ -14722,7 +17337,8 @@
       "legacy_ownership_base_id": "zoids:dark_poison",
       "legacy_names": [
         "Dark Poison"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:saicurtis",
@@ -14857,7 +17473,8 @@
       "legacy_ownership_base_id": "zoids:saicurtis",
       "legacy_names": [
         "Saicurtis"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:double_sworder",
@@ -14992,7 +17609,8 @@
       "legacy_ownership_base_id": "zoids:double_sworder",
       "legacy_names": [
         "Double Sworder"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:killer_dome",
@@ -15127,7 +17745,8 @@
       "legacy_ownership_base_id": "zoids:killer_dome",
       "legacy_names": [
         "Killer Dome"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:cannon_tortoise",
@@ -15252,7 +17871,8 @@
       "legacy_ownership_base_id": "zoids:cannon_tortoise",
       "legacy_names": [
         "Cannon Tortoise"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:cannon_tortoise_bc",
@@ -15382,7 +18002,8 @@
       "legacy_ownership_base_id": "zoids:cannon_tortoise_bc",
       "legacy_names": [
         "Cannon Tortoise BC"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:gator",
@@ -15512,7 +18133,8 @@
       "legacy_ownership_base_id": "zoids:gator",
       "legacy_names": [
         "Gator"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:barigator",
@@ -15630,7 +18252,8 @@
       "legacy_ownership_base_id": "zoids:barigator",
       "legacy_names": [
         "Barigator"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:stealth_viper",
@@ -15770,7 +18393,8 @@
       "legacy_ownership_base_id": "zoids:stealth_viper",
       "legacy_names": [
         "Stealth Viper"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:hammer_head",
@@ -15900,7 +18524,8 @@
       "legacy_ownership_base_id": "zoids:hammer_head",
       "legacy_names": [
         "Hammer Head"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:hammer_head_vl",
@@ -16025,7 +18650,8 @@
       "legacy_ownership_base_id": "zoids:hammer_head_vl",
       "legacy_names": [
         "Hammer Head VL"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:wardick",
@@ -16155,7 +18781,8 @@
       "legacy_ownership_base_id": "zoids:wardick",
       "legacy_names": [
         "Wardick"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:sea_striker",
@@ -16285,7 +18912,8 @@
       "legacy_ownership_base_id": "zoids:sea_striker",
       "legacy_names": [
         "Sea Striker"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:redler",
@@ -16415,7 +19043,8 @@
       "legacy_ownership_base_id": "zoids:redler",
       "legacy_names": [
         "Redler"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:redler_boostc",
@@ -16541,7 +19170,8 @@
       "legacy_names": [
         "Redler BoostC",
         "Redler BC"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:redler_interceptor",
@@ -16666,7 +19296,8 @@
       "legacy_ownership_base_id": "zoids:redler_interceptor",
       "legacy_names": [
         "Redler Interceptor"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:bloodler",
@@ -16791,7 +19422,8 @@
       "legacy_ownership_base_id": "zoids:bloodler",
       "legacy_names": [
         "Bloodler"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:pteras",
@@ -16921,7 +19553,8 @@
       "legacy_ownership_base_id": "zoids:pteras",
       "legacy_names": [
         "Pteras"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:pteras_bomber",
@@ -17051,7 +19684,8 @@
       "legacy_ownership_base_id": "zoids:pteras_bomber",
       "legacy_names": [
         "Pteras Bomber"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:pteras_radome",
@@ -17181,7 +19815,8 @@
       "legacy_ownership_base_id": "zoids:pteras_radome",
       "legacy_names": [
         "Pteras Radome"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:storm_sworder",
@@ -17311,7 +19946,8 @@
       "legacy_ownership_base_id": "zoids:storm_sworder",
       "legacy_names": [
         "Storm Sworder"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:stormsworder_f",
@@ -17441,7 +20077,8 @@
       "legacy_ownership_base_id": "zoids:stormsworder_f",
       "legacy_names": [
         "Stormsworder F"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:stormsworder_fx",
@@ -17576,7 +20213,8 @@
       "legacy_ownership_base_id": "zoids:stormsworder_fx",
       "legacy_names": [
         "Stormsworder FX"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:zabat",
@@ -17701,7 +20339,8 @@
       "legacy_ownership_base_id": "zoids:zabat",
       "legacy_names": [
         "Zabat"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:raynos",
@@ -17826,7 +20465,8 @@
       "legacy_ownership_base_id": "zoids:raynos",
       "legacy_names": [
         "Raynos"
-      ]
+      ],
+      "is_fuzor": false
     },
     {
       "id": "zoids:pteramander",
@@ -17956,128 +20596,142 @@
       "legacy_ownership_base_id": "zoids:pteramander",
       "legacy_names": [
         "Pteramander"
-      ]
+      ],
+      "is_fuzor": false
+    },
+    {
+      "id": "zoids:buster_fury",
+      "name": "Buster Fury (CAU)",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid List",
+        "row": 159
+      },
+      "fields": {
+        "name": "Buster Fury (CAU)",
+        "base_zoid": "Berserk Fury, Buster Eagle",
+        "type": "T-Rex",
+        "size": "Large",
+        "required_level": 20,
+        "health": 380,
+        "armor": 24,
+        "defense": 50,
+        "speed": 380,
+        "reaction": 16,
+        "range": 500,
+        "carry_capacity": 45,
+        "weapon_1_13": "Buster Cannon:",
+        "effect_2_14": "Back mounted cannon. Targets a single opponent.",
+        "damage_1_15": 400,
+        "type_1_16": "Ranged, Anti-Air, Explosive, Long Range",
+        "to_hit_1_17": 14,
+        "active_passive3_18": "Buster Cannon:",
+        "weapon_2_19": "Diffuse Particle Cannon:",
+        "effect_3_20": "Mouth fired particle cannon. Fires in a straight line 30m wide. Opponents in the line of fire must make a reaction save against the attack roll. Successful saves take no damage. ",
+        "damage_2_21": 250,
+        "type_2_22": "Ranged, Anti-Air, Particle",
+        "to_hit_2_23": 17,
+        "shield_health_24": null,
+        "speed_increase_25": null,
+        "to_hit_increase_26": null,
+        "reaction_increase_2_27": null,
+        "range_increase_28": null,
+        "active_passive_29": null,
+        "weapon_3_30": "Energy Shield:",
+        "effect_4_31": "Curved energy shield. Blocks 400 damage before dispersing. ",
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
+        "shield_health_2_35": 400,
+        "speed_increase_2_36": null,
+        "to_hit_increase_2_37": null,
+        "reaction_increase_38": null,
+        "increase_range_39": null,
+        "active_passive_2_40": "Active",
+        "weapon_4_41": "Strike Laser Claw",
+        "effect_5_42": "Energy claw attack. Targets a single opponent. Melee",
+        "damage_4_43": 230,
+        "type_4_44": "Melee, Energy",
+        "to_hit_4_45": 15,
+        "re_equip_slot_type_1_46": "Assist",
+        "removable_equipment_47": null,
+        "effect_6_48": null,
+        "damage_5_49": null,
+        "damage_type_50": null,
+        "to_hit_5_51": null,
+        "weight_52": null,
+        "re_equip_slot_type_2_53": "Weapon and Assist",
+        "removable_equipment_2_54": null,
+        "damage_6_55": null,
+        "effect_7_56": null,
+        "to_hit_6_57": null,
+        "type_5_58": null,
+        "weight_2_59": null,
+        "re_equip_slot_type_3_60": "Weapon and Assist",
+        "removable_equipment_3_61": null,
+        "damage_7_62": null,
+        "to_hit_7_63": null,
+        "weight_3_64": null,
+        "re_equip_slot_type_4_65": "Assist",
+        "removable_equipment_4_66": null,
+        "damage_8_67": null,
+        "to_hit_8_68": null,
+        "effect_69": null,
+        "weight_4_70": null,
+        "defense_increase_for_solo_shield_71": null,
+        "on_off_72": null,
+        "zoid_picture_base": null,
+        "zoid_picture_red": null,
+        "zoid_green_47": null,
+        "zoid_blue_48": null,
+        "zoid_white_49": null,
+        "zoid_black_50": null,
+        "zoid_purple_51": null,
+        "zoid_brown_52": null,
+        "first_attack_gif": null,
+        "second_attack_gif": null,
+        "third_attack_gif": null,
+        "fourth_attack_gif": null,
+        "weapon_1_heat": 1,
+        "weapon_2_heat": 1,
+        "weapon_3_heat": null,
+        "weapon_4_heat": null,
+        "column_83": null
+      },
+      "dynamic_fields": {},
+      "corrections": {
+        "weapon_4_41": {
+          "original": "Strike Laser Claw:",
+          "corrected": "Strike Laser Claw",
+          "reason": "Owner standardized weapon name"
+        },
+        "type_4_44": {
+          "original": "Melee, Slashing, Energy",
+          "corrected": "Melee, Energy",
+          "reason": "Owner tag cleanup; explicit Ranged classification; ranged Piercing to Bullet and Energy to Laser"
+        }
+      },
+      "ownership_base_id": "zoids:berserk_fury",
+      "fixed_weapon_ids": [
+        "zoids:buster_fury:weapon:buster_cannon",
+        "zoids:berserk_fury:weapon:diffuse_particle_cannon",
+        null,
+        "zoids:berserk_fury:weapon:strike_laser_claw"
+      ],
+      "legacy_fixed_weapon_ids": [
+        "zoids:buster_fury:weapon:buster_cannon",
+        "zoids:buster_fury:weapon:diffuse_particle_cannon",
+        null,
+        "zoids:buster_fury:weapon:strike_laser_claw"
+      ],
+      "legacy_ownership_base_id": "zoids:buster_fury",
+      "legacy_names": [
+        "Buster Fury"
+      ],
+      "is_fuzor": false
     }
   ],
   "excluded_rows": [
-    {
-      "row": 104,
-      "id": "zoids:leo_blaze",
-      "name": "Leo Blaze",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 105,
-      "id": "zoids:unenlagia",
-      "name": "Unenlagia",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 106,
-      "id": "zoids:mosasledge",
-      "name": "Mosasledge",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 107,
-      "id": "zoids:nightwise",
-      "name": "Nightwise",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 108,
-      "id": "zoids:buster_eagle",
-      "name": "Buster Eagle",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 109,
-      "id": "zoids:flyscissors",
-      "name": "Flyscissors",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 110,
-      "id": "zoids:shell_karn",
-      "name": "Shell Karn",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 111,
-      "id": "zoids:diplo_gun",
-      "name": "Diplo Gun",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 112,
-      "id": "zoids:demon_s_head",
-      "name": "Demon's Head",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 113,
-      "id": "zoids:fire_phoenix",
-      "name": "Fire Phoenix",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 114,
-      "id": "zoids:jet_falcon",
-      "name": "Jet Falcon",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 115,
-      "id": "zoids:zero_phoenix",
-      "name": "Zero Phoenix",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 116,
-      "id": "zoids:zero_falcon",
-      "name": "Zero Falcon",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 117,
-      "id": "zoids:fuzor_dragon",
-      "name": "Fuzor Dragon",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 118,
-      "id": "zoids:chimera_dragon",
-      "name": "Chimera Dragon",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 119,
-      "id": "zoids:gojulox",
-      "name": "Gojulox",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 120,
-      "id": "zoids:2_arm_lizard",
-      "name": "2-Arm Lizard",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 121,
-      "id": "zoids:griffin",
-      "name": "Griffin",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 122,
-      "id": "zoids:lord_gale",
-      "name": "Lord Gale",
-      "reason": "Owner retired BLOX Zoids"
-    },
-    {
-      "row": 159,
-      "reason": "empty"
-    },
     {
       "row": 160,
       "reason": "empty"

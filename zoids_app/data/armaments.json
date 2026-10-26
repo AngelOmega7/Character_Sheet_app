@@ -93,12 +93,12 @@
         "heat": null
       },
       "dynamic_fields": {
-        "name": "vlookup(Zoid!C4,Zoid_DB[],47,FALSE())",
-        "damage": "vlookup(Zoid!C4,Zoid_DB[],49,FALSE)",
-        "damage_type": "vlookup(Zoid!C4,Zoid_DB[],50,FALSE())",
-        "effect": "vlookup(Zoid!C4,Zoid_DB[],48,FALSE())",
-        "to_hit": "vlookup(Zoid!C4,Zoid_DB[],51,FALSE())",
-        "weight": "vlookup(Zoid!C4,Zoid_DB[],52,FALSE())"
+        "name": "VLOOKUP(Zoid!C4,Zoid_DB[],47,FALSE())",
+        "damage": "VLOOKUP(Zoid!C4,Zoid_DB[],49,FALSE())",
+        "damage_type": "VLOOKUP(Zoid!C4,Zoid_DB[],50,FALSE())",
+        "effect": "VLOOKUP(Zoid!C4,Zoid_DB[],48,FALSE())",
+        "to_hit": "VLOOKUP(Zoid!C4,Zoid_DB[],51,FALSE())",
+        "weight": "VLOOKUP(Zoid!C4,Zoid_DB[],52,FALSE())"
       },
       "assist_eligible": false
     },
@@ -129,13 +129,13 @@
         "heat": null
       },
       "dynamic_fields": {
-        "name": "vlookup(Zoid!C4,Zoid_DB[],54,FALSE())",
-        "damage": "vlookup(Zoid!C4,Zoid_DB[],55,FALSE())",
-        "damage_type": "vlookup(Zoid!C4,Zoid_DB[],58,FALSE())",
-        "effect": "vlookup(Zoid!C4,Zoid_DB[],56,FALSE())",
-        "to_hit": "vlookup(Zoid!C4,Zoid_DB[],57,FALSE())",
-        "weight": "vlookup(Zoid!C4,Zoid_DB[],59,FALSE())",
-        "weapon_class": "vlookup(Zoid!C4,Zoid_DB[],55,FALSE)"
+        "name": "VLOOKUP(Zoid!C4,Zoid_DB[],54,FALSE())",
+        "damage": "VLOOKUP(Zoid!C4,Zoid_DB[],55,FALSE())",
+        "damage_type": "VLOOKUP(Zoid!C4,Zoid_DB[],58,FALSE())",
+        "effect": "VLOOKUP(Zoid!C4,Zoid_DB[],56,FALSE())",
+        "to_hit": "VLOOKUP(Zoid!C4,Zoid_DB[],57,FALSE())",
+        "weight": "VLOOKUP(Zoid!C4,Zoid_DB[],59,FALSE())",
+        "weapon_class": "VLOOKUP(Zoid!C4,Zoid_DB[],55,FALSE())"
       },
       "assist_eligible": false
     },
@@ -166,7 +166,7 @@
         "heat": null
       },
       "dynamic_fields": {
-        "name": "vlookup(Zoid!C4,Zoid_DB[],61,FALSE())"
+        "name": "VLOOKUP(Zoid!C4,Zoid_DB[],61,FALSE())"
       },
       "assist_eligible": false
     },
@@ -197,13 +197,13 @@
         "heat": null
       },
       "dynamic_fields": {
-        "name": "vlookup(Zoid!C4,Zoid_DB[],66,FALSE())",
-        "damage": "vlookup(Zoid!C4,Zoid_DB[],67,FALSE())",
-        "effect": "vlookup(Zoid!C4,Zoid_DB[],69,FALSE)",
-        "to_hit": "vlookup(Zoid!C4,Zoid_DB[],68,FALSE())",
-        "defense": "vlookup(Zoid!C4,Zoid_DB[],71,FALSE())",
-        "weight": "vlookup(Zoid!C4,Zoid_DB[],70,FALSE())",
-        "activation": "vlookup(Zoid!C4,Zoid_DB[],72,FALSE())"
+        "name": "VLOOKUP(Zoid!C4,Zoid_DB[],66,FALSE())",
+        "damage": "VLOOKUP(Zoid!C4,Zoid_DB[],67,FALSE())",
+        "effect": "VLOOKUP(Zoid!C4,Zoid_DB[],69,FALSE())",
+        "to_hit": "VLOOKUP(Zoid!C4,Zoid_DB[],68,FALSE())",
+        "defense": "VLOOKUP(Zoid!C4,Zoid_DB[],71,FALSE())",
+        "weight": "VLOOKUP(Zoid!C4,Zoid_DB[],70,FALSE())",
+        "activation": "VLOOKUP(Zoid!C4,Zoid_DB[],72,FALSE())"
       },
       "assist_eligible": false
     },

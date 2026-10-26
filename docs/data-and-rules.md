@@ -1,6 +1,6 @@
 # Reference data and stat calculations
 
-**Current workflow update:** `workflow.md` supersedes earlier one-instance, purchasing, Transport, starter, and utility-roll behavior in this document. Current versions are `owner-corrected-v14`, `workflow-v12`, and save schema v8. There are 134 playable designs (51 CAUs) and four Transports. NPC has zero style progression bonuses; new pilots start with Organoid None. Catalog Lion terminology is now Liger, except Saberlion's name.
+**Current workflow update:** `workflow.md` supersedes earlier one-instance, purchasing, Transport, starter, and utility-roll behavior in this document. Current versions are `owner-corrected-v14`, `workflow-v15`, and save schema v10. There are 154 playable designs (54 CAUs, 6 FUZORs), 165 abilities, and four Transports. All BLOX designs and BLOX Type abilities are restored. FUZORs retain BLOX type and require multiple component Zoids at zero gold cost; selling restores saved pre-fusion component states, with fresh recipe copies as the fallback for old builds. Sale optionally retains the FUZOR's own identity and frame/weapon upgrades for a future rebuild. Buster Eagle, Fire Phoenix, and Jet Falcon remain Flying type; Zero Falcon and Zero Phoenix remain Liger type. NPC has zero style progression bonuses; new pilots start with Organoid None. Catalog Lion terminology is now Liger, except Saberlion's name.
 
 ## Delivered
 
@@ -16,7 +16,7 @@ Rules, data, and persistence modules use Python's standard library; the interfac
 
 | Catalog | Playable/reference records |
 |---|---:|
-| Playable Zoids | 135 (19 BLOX retired; 3 moved to Transport) |
+| Playable Zoids | 154 (BLOX restored; 4 moved to Transport) |
 | Transports | 3 (reference only; gameplay deferred) |
 | Static armaments | 150 |
 | Abilities | 160 (16 retired drawback ranks and 5 BLOX Type ranks removed) |
@@ -59,7 +59,7 @@ Upgrade inputs are **points**, each 0–5. Frame multipliers are speed 30, react
 
 ## Owned Zoids and CAU forms
 
-`characters.py` stores a pilot's `owned_zoids`, with a unique instance ID for each owned base, and permits only one instance of a base per pilot. The active selector uses that roster rather than the entire catalog. `acquire_zoid()` records acquisitions; `switch_zoid()` flushes the current loadout/upgrades before projecting the chosen owned form into `CharacterBuild`. BLOX-type Zoids are retired, along with all five BLOX Type ability ranks. Source types are trimmed before matching so `BLOX ` is also excluded.
+`characters.py` stores a pilot's `owned_zoids`, with a unique instance ID for each owned base; duplicate chassis are supported. The active selector uses that roster rather than the entire catalog. `acquire_zoid()` records acquisitions; `switch_zoid()` flushes the current loadout/upgrades before projecting the chosen owned form into `CharacterBuild`. BLOX-type Zoids and all five BLOX Type ability ranks are restored. Source types are trimmed for exact matching, including `BLOX `.
 
 Hover Cargo, Gustav, and Whale King are moved into `transports.json` and the UI's **Transport** reference section. Their source fields and provenance are preserved. They cannot be acquired or selected as normal playable Zoids. Carrying other Zoids and storing unused collected Zoids are deferred Transport features.
 
@@ -67,9 +67,9 @@ CAU forms must be acquired separately after their base:
 
 | Base | Obtainable CAU forms |
 |---|---|
-| Liger Zero | Zero Jager, Zero Schneider, Zero Panzer, Zero X, Zero Empire |
+| Liger Zero | Zero Jager, Zero Schneider, Zero Panzer, Zero X, Zero Empire, Zero Falcon, Zero Phoenix |
 | Konig Wolf | Konig Wolf DSR |
-| Berserk Fury | Sturm Fury, Jagd Fury, Berserk Fury Z |
+| Berserk Fury | Sturm Fury, Jagd Fury, Berserk Fury Z, Buster Fury |
 
 All listed form catalog names include `(CAU)`. No other source `base_zoid` relationship automatically creates a shared ownership family.
 
@@ -79,6 +79,7 @@ All listed form catalog names include `(CAU)`. No other source `base_zoid` relat
 - Each form keeps its own equipment and activation flags. Current health, shield damage, and defense adjustments belong to the owned chassis and persist through form changes; switching to another owned chassis restores that chassis's resources. Pilot selections/abilities/Organoid settings and gold remain pilot-wide. Calculated maximums are recomputed without healing.
 - The UI records upgrade points and acquisitions without charging gold. Purchasing rules remain pending.
 - SQLite schema v7 adds pilot tracking fields/feats and migrates v1–v6 transactionally while retaining roster, inventory, combat state, last rolls, and archives. Prior Zaber Fang positional builds/activation flags are adjusted to the corrected weapon layout, preserving Killer Saber's identity-based upgrades/conditions in slot 4. Older conditions get an empty last result without rolling; pre-combat weapons start at zero heat/intact. Invalid data aborts without partially converting the database.
+- Saves use SQLite schema v10, including preserved FUZOR component states and optional retained FUZOR identities/upgrades. A single saved character can be exported as a versioned UTF-8 JSON document and imported through the normal decoder/migrations. Import validates the character, never overwrites an existing ID (a collision receives a new ID), and rejects unsupported format/save versions or invalid data without partial writes.
 
 Equipment and fixed activation flags are independent of attacks, heat, and broken status. The combat controller blocks use of broken weapons and updates weapon conditions separately from activation. Calculations never modify current health, shield damage, gold, heat, or weapon condition. Numeric arithmetic uses Decimal and explicit spreadsheet half-away-from-zero / away-from-zero rounding.
 
@@ -98,13 +99,15 @@ Equipment and fixed activation flags are independent of attacks, heat, and broke
 
 ## Owned removable equipment
 
-`zoids_app/equipment.py` supplies catalog compatibility rules: Assist slots accept only equipment below the ASSIST heading; Weapon and Assist slots accept equipment from the whole Armaments sheet, including dynamic Zoid equipment templates. Headings/placeholders are not equipment choices. Empty source slot types have no choices. The build-level `equip_item()` helper remains useful for rule calculations, but does not manage ownership.
+`zoids_app/equipment.py` supplies catalog compatibility rules: Assist slots accept only equipment below the ASSIST heading; Weapon and Assist slots accept equipment from the whole Armaments sheet, including dynamic Zoid equipment templates. Headings/placeholders are not equipment choices. Empty source slot types have no choices. `resolved_equipment_name()` displays a dynamic template under the actual name for a given Zoid (for example, Command Wolf's Double Beam Cannon), while retaining the generic fallback when the Zoid has no such equipment. The build-level `equip_item()` helper remains useful for rule calculations, but does not manage ownership.
 
-The editor and saves use `characters.py`: `acquire_equipment()`, `available_equipment()`, `equip_owned_equipment()`, and `return_equipment_to_inventory()`. Each `OwnedEquipment` copy has a unique ID and an Armaments reference. Each form's `equipment_ids` links its four removable slots to those copies; the calculator still receives resolved catalog IDs. Validation checks both references match, rejects unowned copies, and enforces allocation across the complete roster.
+The editor and saves use `characters.py`: `acquire_equipment()`, `available_equipment()`, `equip_owned_equipment()`, `return_equipment_to_inventory()`, and `delete_equipment()`. Each `OwnedEquipment` copy has a unique ID and an Armaments reference. Each form's `equipment_ids` links its four removable slots to those copies; the calculator still receives resolved catalog IDs. Validation checks both references match, rejects unowned copies, and enforces allocation across the complete roster.
 
 - A pilot may own multiple copies of a type; acquisition accepts a positive whole quantity. Unattached items remain in inventory and do not contribute weight or bonuses.
+- Dynamic Zoid-specific templates are offered by their resolved names in the acquisition menu for each owned Zoid/form. Generic template labels display as overall equipment slots 5–8 after fixed weapons 1–4; stable catalog IDs remain `armaments:zoid_equipment_slot_1` through `_4` for save compatibility. A copy still resolves against whichever Zoid it is equipped to, so inventory labels follow its current assignment (or the active form while unattached).
 - A copy may appear once in each alternate form of the **same owned Zoid**. It cannot appear in two slots of one form or be assigned to different owned Zoids. Assignments on inactive forms still reserve the copy for their chassis.
 - Clearing a slot returns that form's assignment; if another form references the copy, it stays assigned to the same chassis. **Return to inventory (all forms)** clears every assignment so another Zoid can use it. Neither operation deletes the owned copy.
+- **Delete copy** permanently removes one unattached copy after confirmation. Equipped copies must be returned to inventory from all forms first. Stored heat/broken status is discarded with the copy; gold, Zoids, upgrades, and other copies are unchanged.
 - Attaching a different copy or clearing a slot resets its activation. Reselecting the same copy preserves activation. Other loadouts, upgrades, resources, and gold are preserved. Acquiring copies records ownership without charging gold.
 - Migration creates the minimum copies needed by each legacy owned chassis: the maximum simultaneous count of each type across its forms. Corresponding copies are reused across forms, while different chassis receive separate copies. Stable IDs persist on subsequent loads; retirement archives are untouched.
 - Acquisition/learning and equipment-slot dropdowns use Flet's native case-insensitive text filtering and retain scrolling. Typing alone changes no ownership or assignment; acquisition buttons reject a stale selection when its visible search text no longer matches.
@@ -114,7 +117,7 @@ The editor and saves use `characters.py`: `acquire_equipment()`, `available_equi
 `zoids_app/abilities.py` manages an `AbilityLoadout` with active and inactive lists. `CharacterBuild.abilities` contains up to six active slots; `inactive_abilities` stores owned abilities that contribute no bonuses.
 
 - At most **one size bonus ability** can be active, even if a second ability targets a different size. Multiple size families may be owned inactive.
-- Numbered names are ranks of one ability family; an unnumbered name is rank 1. Family matching ignores capitalization. The retired BLOX family includes the source typo `BLOXType 1`.
+- Numbered names are ranks of one ability family; an unnumbered name is rank 1. Family matching ignores capitalization. BLOX Type 1 retains the source typo `BLOXType 1` as a legacy alias; all five ranks are available.
 - `learn_ability()` places a new family in inactive storage. A higher rank replaces the owned lower rank in its existing active slot or inactive position. The lower rank is removed, not moved to inactive storage. Downgrades are rejected.
 - `activate_ability()` moves an owned inactive ability into a chosen slot, storing the displaced ability inactive. It rejects a second active size ability in another slot. `deactivate_ability()` moves the selected ability inactive.
 - Calculation validates both lists so duplicate ranks/families cannot sneak into a build. The editor uses validated learning/assignment transitions through `learn_pilot_ability()` and `assign_pilot_ability()` in `characters.py`; save/load validates and persists both lists. There is no separate historical rank ledger.
@@ -199,7 +202,7 @@ The saved example matches base/pilot/current stat groups, carry values, bonus le
 
 Additional tests exercise all 135 playable Zoids across four pilot styles at level 100; exact-capacity/overload transitions; underlevel penalties; ability ownership/rank replacement and active/inactive switching; exact size matching and attack percentages; passive/active equipment; dynamic equipment and boosters; all Organoid colors at levels 0 and 40; rounding; invalid levels/upgrade points; retirement/Transport separation; and save migrations with removed active Zoids. These are formula-based and invariant checks, **not independently recalculated Google Sheets snapshots for every build**.
 
-Levels outside reference tables fail explicitly rather than being silently clamped. Further reference configurations and owner decisions on deferred findings are needed before claiming complete spreadsheet parity. Pilot fields, feat descriptions/selections, and general notes are tracked; their effects are table-managed. Export/import/backups are deferred. Purchasing/building awaits the owner's costs/parts table; `assets/ZoidNames.txt` lists all current names. Transport awaits owner-defined rules and must be implemented before Step 7 completion. See `roadmap.md` for priorities.
+Levels outside reference tables fail explicitly rather than being silently clamped. Further reference configurations and owner decisions on deferred findings are needed before claiming complete spreadsheet parity. Pilot fields, feat descriptions/selections, and general notes are tracked; their effects are table-managed. Single-character JSON export/import is implemented; scheduled/full-database backups are deferred. Purchasing/building awaits the owner's costs/parts table; `assets/ZoidNames.txt` lists all current names. Transport awaits owner-defined rules and must be implemented before Step 7 completion. See `roadmap.md` for priorities.
 
 ## Run locally
 

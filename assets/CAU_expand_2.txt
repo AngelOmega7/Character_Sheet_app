@@ -1,0 +1,10 @@
+base form
+	/first CAU
+	/second CAU
+	/etc.
+
+Liger Zero
+	/Zero Falcon
+	/Zero Phoenix
+Berserk Fury
+	/Buster Fury

@@ -1,3 +1,4 @@
+2-Arm Lizard
 Allosaurer
 Atak Kat
 Barigator
@@ -10,10 +11,13 @@ Blitz Tiger
 Bloodler
 Bloody Demon
 Brachios
+Buster Eagle
+Buster Fury (CAU)
 Cannon Tortoise
 Cannon Tortoise BC (CAU)
 Cannonry Molga (CAU)
 Cerberus
+Chimera Dragon
 Climber Wolf (CAU)
 Command Wolf
 Command Wolf AC (CAU)
@@ -28,12 +32,17 @@ Dark Spiner
 Death Meteor
 Death Saurer
 Death Stinger
+Demon's Head
 Diablo Tiger
 Dibison
+Diplo Gun
 Double Sworder
 Dragoon Nest
 Elephander
 Elephander AG (CAU)
+Fire Phoenix
+Flyscissors
+Fuzor Dragon
 Gator
 Geno Breaker (CAU)
 Geno Flame (CAU)
@@ -49,10 +58,12 @@ Gojulas Giga
 Gojulas Giga Cannon (CAU)
 Gojulas Gunner (CAU)
 Gojulas the Ogre
+Gojulox
 Gordos
 Gordos LR
 Gorhecks
 Gravity Bison
+Griffin
 Gun Blaster
 Gun Sniper
 Gun Sniper LS (CAU)
@@ -75,17 +86,22 @@ Iron Kong PK (CAU)
 Iron Kong SS (CAU)
 Jagd Fury (CAU)
 Jagged Stinger
+Jet Falcon
 Killer Dome
 Killer Spiner (CAU)
 King Gojulas
 Konig Wolf
 Konig Wolf DSR (CAU)
+Leo Blaze
 Liger Aero
 Liger Zero
 Lightning Saix
 Lightning Saix BS
+Lord Gale
 Mad Thunder
 Molga
+Mosasledge
+Nightwise
 Proto Breaker
 Proto Zaber
 Psycho Geno Saurer
@@ -106,6 +122,7 @@ Saberlion
 Saicurtis
 Sea Striker
 Shadow Fox
+Shell Karn
 Shield Liger
 Shield Liger DCS (CAU)
 Shield Liger DCS-J (CAU)
@@ -122,6 +139,7 @@ Trinity Liger
 Trinity Liger BA (CAU)
 Ultra Phalanx
 Ultra Saurus
+Unenlagia
 Wardick
 Whale King
 Zabat
@@ -132,7 +150,9 @@ Zaber Fang RS (CAU)
 Zaber Fang SS (CAU)
 Zaber Fang TS (CAU)
 Zero Empire (CAU)
+Zero Falcon (CAU)
 Zero Jager (CAU)
 Zero Panzer (CAU)
+Zero Phoenix (CAU)
 Zero Schneider (CAU)
 Zero X (CAU)
