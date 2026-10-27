@@ -17,6 +17,8 @@ This produces a portable app bundle, not a setup installer. Tag builds also uplo
 
 The workflow in `.github/workflows/build-macos.yml` uses GitHub's `macos-15` runner, Python 3.12, and Flet 1.0.4 to build a universal `.app` for Apple Silicon and Intel Macs. It uses the same push, pull request, tag, and manual triggers as the Windows workflow.
 
+The workflow selects Xcode 26.3 using `DEVELOPER_DIR` and logs the selected Xcode and SDK versions. The `connectivity_plus` dependency requires the macOS 26 SDK for `NWPath.isUltraConstrained`; the runner's default Xcode 16.4/macOS 15.5 SDK cannot compile it. This selects the build SDK, not the app's minimum supported macOS version.
+
 1. Commit and push the workflow. For a manual build, select **Actions → Build macOS → Run workflow** once it is on the default branch.
 2. Download `zoids-character-app-macos-universal-<run number>` from a successful run's **Artifacts** (retained for 30 days).
 3. Extract the artifact ZIP, then open the enclosed `zoids-character-app-macos-universal.zip` on a Mac to extract the `.app`. The inner archive preserves executable permissions and bundle symlinks.

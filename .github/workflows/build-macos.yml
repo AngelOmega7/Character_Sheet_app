@@ -24,12 +24,20 @@ jobs:
       run:
         shell: bash
     env:
+      # connectivity_plus uses NWPath.isUltraConstrained from the macOS 26 SDK.
+      # macos-15 defaults to Xcode 16.4, so select an installed Xcode 26 explicitly.
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
       PYTHONUTF8: "1"
       FLET_CLI_NO_RICH_OUTPUT: "1"
 
     steps:
       - name: Check out source
         uses: actions/checkout@v4
+
+      - name: Verify Xcode and macOS SDK
+        run: |
+          xcodebuild -version
+          xcrun --sdk macosx --show-sdk-version
 
       - name: Set up Python
         uses: actions/setup-python@v5
