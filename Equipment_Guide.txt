@@ -4,28 +4,6 @@ REMOVABLE EQUIPMENT - STAT BLOCK COMPANION
 89 catalog weapons; 7 Zoid-specific removable weapon entries.
 61 catalog assist items; 4 Zoid-specific assist entries.
 
-
-PROPOSED PRICING - PLAYTEST DRAFT
-Prices are proposed purchase values in gold (g), rounded to the nearest 250g
-(halfway values round up). Zoid-specific equipment has no assigned price.
-Weapon base: Damage x 50g x [1 + 0.10 x (To Hit - 15)]. Previously missing
-weapon accuracy is now +15 in the app and this companion. Gravity Cannon
-retains its special blank stats.
-Weapon percentage adjustments add together, then apply to the base once.
-Full-damage multi-target minimums: x2 base for two targets or narrow areas;
-x4 base for four targets or broad areas. These replace lower calculated
-prices; range/recharge discounts cannot reduce them. Round to 250g.
-Narrow areas: 15m-wide beams/lines and 15m-wide gatling areas. Broad areas:
-30m-wide or larger beams/areas. Split-total-damage attacks retain their
-existing +10% targeting premium rather than multiplying total damage.
-ZOS Prototype and ZOS Enhanced Type are not purchasable.
-Assist rates: to hit 750g/point; armor 500g; defense 100g; reaction 500g;
-range 5g; speed 10g; shield health 20g. Three-turn benefits use x0.75.
-Allied support uses x1.25 for one ally or x1.50 for broader support.
-Utility and resistance premiums are documented in each item's pricing basis.
-Heat and weight do not affect prices. They remain listed as gameplay stats.
-Utility tiers are based on effects, duration, and targeting only.
-The individual pricing review is complete.
 Gravity Cannon is unpriced by design.
 These prices belong to this companion document, not the app's catalog.
 
