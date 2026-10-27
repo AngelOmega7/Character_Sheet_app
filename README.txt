@@ -1,3 +1,5 @@
+CREDIT TO u/AdChemical1651 for the building blocks of this
+
 Install Current Release: Download Release and Extract
 
 Build: Python and Flet. See docs/packaging.md for local builds and GitHub Actions.
