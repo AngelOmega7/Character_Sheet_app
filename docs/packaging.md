@@ -1,8 +1,19 @@
-# Build locally: Windows and Android
+# Build: Windows and Android
 
 The root `main.py` and `pyproject.toml` configure Flet 1.0.4, the bundled reference catalogs, existing icons, version 1.0.0/build 1, and application ID `io.github.angelomega7.zoids_character_app`. Packaged dependencies use plain `flet`; desktop development tooling stays in the local virtual environment.
 
-## One-time prerequisites
+## Windows builds with GitHub Actions
+
+The workflow in `.github/workflows/build-windows.yml` builds the Windows x64 app on GitHub's `windows-2022` runner using Python 3.12 and Flet 1.0.4. The runner provides Visual Studio; Flet downloads its required Flutter SDK automatically.
+
+1. Commit and push the workflow to GitHub. Builds run for pushes to `main`, pull requests targeting `main`, and tags beginning with `v`.
+2. To build manually, open the repository's **Actions** tab, select **Build Windows**, and choose **Run workflow**. The workflow must first be present on the default branch for this button to appear.
+3. Open a successful run and download `zoids-character-app-windows-x64-<run number>` under **Artifacts**. Artifacts are retained for 30 days.
+4. Extract the entire downloaded ZIP on Windows and launch the `.exe` inside. Keep all bundled DLLs and data alongside it.
+
+This produces a portable app bundle, not a setup installer. Tag builds also upload to the workflow's artifacts; they do not create a GitHub Release. No repository secrets are needed. Check the **Build Windows app** step's log if compilation fails.
+
+## One-time local prerequisites
 
 - Windows build: install Visual Studio 2022 or 2026 with **Desktop development with C++**, including its recommended Windows SDK components. Enable Windows Developer Mode for Flutter plugin symlinks.
 - Both targets need Flutter. Flet installs the required version if it is not available.

@@ -1,0 +1,62 @@
+name: Build Windows
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: windows-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Windows x64 app
+    runs-on: windows-2022
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      PYTHONUTF8: "1"
+      FLET_CLI_NO_RICH_OUTPUT: "1"
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            pyproject.toml
+            requirements.txt
+
+      - name: Install Flet build tools
+        run: python -m pip install "flet[cli,desktop]==1.0.4"
+
+      - name: Enable Windows developer mode
+        run: |
+          New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" -Force | Out-Null
+          New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" -Name AllowDevelopmentWithoutDevLicense -Value 1 -PropertyType DWord -Force | Out-Null
+
+      # Flet downloads the Flutter SDK version required by this Flet release.
+      # windows-2022 already includes Visual Studio's C++ build tools.
+      - name: Build Windows app
+        run: flet build windows --verbose
+
+      - name: Upload Windows app bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: zoids-character-app-windows-x64-${{ github.run_number }}
+          path: build/windows/
+          if-no-files-found: error
+          retention-days: 30
