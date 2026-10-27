@@ -1,0 +1,2329 @@
+==============================================================================
+REMOVABLE EQUIPMENT - STAT BLOCK COMPANION
+==============================================================================
+89 catalog weapons; 7 Zoid-specific removable weapon entries.
+61 catalog assist items; 4 Zoid-specific assist entries.
+
+
+PROPOSED PRICING - PLAYTEST DRAFT
+Prices are proposed purchase values in gold (g), rounded to the nearest 250g
+(halfway values round up). Zoid-specific equipment has no assigned price.
+Weapon base: Damage x 50g x [1 + 0.10 x (To Hit - 15)]. Previously missing
+weapon accuracy is now +15 in the app and this companion. Gravity Cannon
+retains its special blank stats.
+Weapon percentage adjustments add together, then apply to the base once.
+Full-damage multi-target minimums: x2 base for two targets or narrow areas;
+x4 base for four targets or broad areas. These replace lower calculated
+prices; range/recharge discounts cannot reduce them. Round to 250g.
+Narrow areas: 15m-wide beams/lines and 15m-wide gatling areas. Broad areas:
+30m-wide or larger beams/areas. Split-total-damage attacks retain their
+existing +10% targeting premium rather than multiplying total damage.
+ZOS Prototype and ZOS Enhanced Type are not purchasable.
+Assist rates: to hit 750g/point; armor 500g; defense 100g; reaction 500g;
+range 5g; speed 10g; shield health 20g. Three-turn benefits use x0.75.
+Allied support uses x1.25 for one ally or x1.50 for broader support.
+Utility and resistance premiums are documented in each item's pricing basis.
+Heat and weight do not affect prices. They remain listed as gameplay stats.
+Utility tiers are based on effects, duration, and targeting only.
+The individual pricing review is complete.
+Gravity Cannon is unpriced by design.
+These prices belong to this companion document, not the app's catalog.
+
+HOW TO USE THIS REFERENCE
+This companion lists removable equipment from the Character Sheet app. Section
+1 covers weapons; Section 2 covers assist equipment. Each section lists
+catalog items alphabetically, followed by Zoid-specific entries. Separate Zoid
+versions retain their individual stats and source restrictions, even when
+names match.
+Values are catalog stats before pilot bonuses, upgrades, Organoids, or combat
+conditions. Missing values mean not listed, not zero. Heat and other optional
+modifiers appear wherever recorded. Effects preserve the catalog wording,
+including descriptions embedded in item names.
+Assist equipment includes armor, shields, sensors, boosters, and other support
+systems. Catalog assist items can use Assist or Weapon and Assist slots.
+Zoid-specific entries retain their source slot types and restrictions.
+
+CONTENTS - CATALOG WEAPONS
+001  16-Set Missile
+002  2-Set Anti-Air Laser
+003  2-Set High Speed Cannon
+004  2-Set Laser
+005  2-Set Missile
+006  3-Set Anti-Air Laser
+007  3-Set Impact Cannon
+008  3-Set Laser
+009  4-Set Anti-Air Laser
+010  4-Set Laser
+011  4-Set Missile
+012  6-Set Missile
+013  8-Set Missile
+014  Accelerated Cannons
+015  Accelerated Gatling
+016  Accelerated Impact Cannon
+017  Acid Cannon
+018  Anti-Air 16-Set Missile
+019  Anti-Air 2-Set Missile
+020  Anti-Air 4-Set Missile
+021  Anti-Air 8-Set Missile
+022  Anti-Air Gatling
+023  Anti-Air Laser
+024  Anti-Air Machine Gun
+025  Anti-Air Mega Vulcan
+026  Anti-Air Vulcan
+027  Assault Beam Cannon
+028  Assault Cannon
+029  Assault Rifle
+030  Beam Cannon
+031  Beam Needle
+032  Beam Rifle
+033  Buster Cannon
+034  Charge Particle Cannon
+035  Close-Range Rail Gun
+036  Concentrate Acid Cannon
+037  Double Cannon
+038  Ele Shot
+039  External Charge Particle Cannon
+040  Extra Electro Magnetic Cannon
+041  Focus Charge Particle Cannon
+042  Gatling Beam
+043  Gatling Cannon
+044  Gravity Cannon
+045  Great Charge Particle Cannon
+046  Heavy Gatling
+047  Heavy Machine Gun
+048  Heavy Particle Cannon
+049  High Speed Gatling
+050  High Speed Rail Gun
+051  Hybrid Cannon
+052  Hyper Cannon
+053  Hyper Machine Gun
+054  Hyper Missile
+055  Hyper Particle Cannon
+056  Hyper Rail Gun
+057  Impact Cannon
+058  Large Missile
+059  Laser Machine Gun
+060  Linear Cannon
+061  Long-Range Missile
+062  Long-Range Rifle
+063  Machine Gun
+064  Mega Vulcan
+065  Mini Laser
+066  Napalm Missile
+067  Neutron Missile
+068  Particle Cannon
+069  Photon Paticle Cannon
+070  Plasma Particle Cannon
+071  Poison Cloud Cannon
+072  Poison Gas Cannon
+073  Poison Mist Cannon
+074  Pulse Laser Gun
+075  Rail Gun
+076  Ray Storm
+077  Reaction Missile
+078  Rolling Cannon
+079  Shock Gun
+080  Sonic Cannon
+081  Spark Cannon
+082  Spread Charge Particle Cannon
+083  Spread Missile
+084  Super Sonic Cannon
+085  Super Spark Cannon
+086  Super Speed Rail Gun
+087  Triple Cannon
+088  Ultra Cannon
+089  Vulcan Gun
+
+CONTENTS - ZOID-SPECIFIC REMOVABLE WEAPONS
+Z01  5-Shot Missile Pod - Konig Wolf DSR (CAU)
+Z02  Double Beam Cannon - Atak Kat
+Z03  Double Beam Cannon - Command Wolf
+Z04  Double Beam Cannon - Proto Zaber
+Z05  Double Beam Cannon - Zaber Fang
+Z06  Double Beam Cannon - Zaber Fang Old
+Z07  Double Beam Cannon - Zaber Fang RS (CAU)
+
+CONTENTS - SECTION 2: ASSIST EQUIPMENT
+A001  3D Radar
+A002  Accelerator Equipment
+A003  After Burner
+A004  All-Weather Radar
+A005  Anti Charge Particle Shield
+A006  Anti-Laser Armor
+A007  Chobam Armor
+A008  Composite Sensor
+A009  Core Enhance Unit
+A010  E-Protector
+A011  E-Shield Generator
+A012  ECM
+A013  Electro-Magnetic Jammer
+A014  Electron Disruptor Equipment
+A015  Enhanced Chobam Armor
+A016  Enhanced Composite Sensor
+A017  Enhanced Fused Armor
+A018  Enhanced Laser Sensor
+A019  Enhanced Micro Sensor
+A020  Enhanced Optical Camouflage
+A021  Enhanced Radar System
+A022  Extension Armor
+A023  F-Round Shield
+A024  Full Armor System
+A025  Fused Armor
+A026  GPS Magnetism Detector
+A027  High Mobility Thruster
+A028  I-Field Generator
+A029  Infra-Red Scanner
+A030  Infra-Red Scope
+A031  Ion Projector
+A032  Large E-Shield Generator
+A033  Large Extension Armor
+A034  Large GPS Magnetism Detector
+A035  Large Magnetism Detector
+A036  Large Multiple Armor
+A037  Large Radar
+A038  Large Smokescreen Generator
+A039  Large Sonic Detector
+A040  Large Super-Heavy Armor
+A041  Laser Diffusion Equipment
+A042  Laser Sensor
+A043  Magnetism Detector
+A044  Micro Sensor
+A045  Multiple Armor
+A046  Optical Camouflage
+A047  Radar
+A048  Radar System
+A049  Radome Unit
+A050  Rare Metal Armor
+A051  Self Recovery Unit
+A052  Small E-Shield Generator
+A053  Smokescreen Generator
+A054  Sonic Detector
+A055  Stealth System
+A056  Super-Heavy Armor
+A057  Thruster
+A058  Turbo Charger
+A059  ZOS Enhanced Type
+A060  ZOS Mass Produced
+A061  ZOS Prototype
+
+CONTENTS - ZOID-SPECIFIC ASSIST EQUIPMENT
+ZA01  Anti-Particle Beam Shield - Mad Thunder
+ZA02  Auto Repair Unit - Diablo Tiger
+ZA03  Optical Camouflage - Shadow Fox
+ZA04  Stealth Generator - Zero X (CAU)
+
+==============================================================================
+SECTION 1 - REMOVABLE WEAPONS
+==============================================================================
+------------------------------------------------------------------------------
+[001] 16-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 9,250g
+  Pricing basis: Damage/accuracy base 7,800g; +10% split-damage targeting,
+  +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
+  Damage: 120 | To hit: 18
+  Weight: 26
+  Heat: 2
+  Effect: Fires sixteen missiles. Can target up to eight Zoids. Damage is
+  split between them.
+
+------------------------------------------------------------------------------
+[002] 2-Set Anti-Air Laser
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 6,250g
+  Pricing basis: Damage/accuracy base 5,200g; +10% split-damage targeting,
+  +10% anti-air.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air
+  Damage: 80 | To hit: 18
+  Weight: 15
+  Effect: Double barrel energy cannon. Can target up to two zoids. Damage is
+  split between targets.
+
+------------------------------------------------------------------------------
+[003] 2-Set High Speed Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 4,500g
+  Pricing basis: Damage/accuracy base 4,900g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Long Range
+  Damage: 140 | To hit: 12
+  Weight: 25
+  Effect: Double barrel cannon. Targets a single opponent. Minimum range of
+  150m
+
+------------------------------------------------------------------------------
+[004] 2-Set Laser
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 5,750g
+  Pricing basis: Damage/accuracy base 5,200g; +10% split-damage targeting.
+  Weapon class: Ranged | Damage type: Ranged, Laser
+  Damage: 80 | To hit: 18
+  Weight: 11
+  Effect: Double barrel energy cannon. Can target up to two Zoids. Damage is
+  split between targets.
+
+------------------------------------------------------------------------------
+[005] 2-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,500g
+  Pricing basis: Damage/accuracy base 3,250g; +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
+  Damage: 50 | To hit: 18
+  Weight: 10
+  Effect: Fires two missiles. Targets a single opponent. Homing
+
+------------------------------------------------------------------------------
+[006] 3-Set Anti-Air Laser
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 8,500g
+  Pricing basis: Damage/accuracy base 7,150g; +10% split-damage targeting,
+  +10% anti-air.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air
+  Damage: 110 | To hit: 18
+  Weight: 20
+  Effect: Triple barrel energy cannon. Can target up to three zoids. Damage is
+  split between targets.
+
+------------------------------------------------------------------------------
+[007] 3-Set Impact Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 8,000g
+  Pricing basis: Damage/accuracy base 8,000g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 160 | To hit: 15
+  Weight: 18
+  Effect: Triple barrel cannon. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[008] 3-Set Laser
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 7,750g
+  Pricing basis: Damage/accuracy base 7,150g; +10% split-damage targeting.
+  Weapon class: Ranged | Damage type: Ranged, Laser
+  Damage: 110 | To hit: 18
+  Weight: 23
+  Effect: Triple barrel energy cannon. Can target up to three Zoids. Damage is
+  split between targets.
+
+------------------------------------------------------------------------------
+[009] 4-Set Anti-Air Laser
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 12,500g
+  Pricing basis: Damage/accuracy base 10,500g; +10% split-damage targeting,
+  +10% anti-air.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air
+  Damage: 150 | To hit: 19
+  Weight: 25
+  Effect: Quad barrel energy cannon. Can target up to four zoids. Damage is
+  split between targets.
+
+------------------------------------------------------------------------------
+[010] 4-Set Laser
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 11,500g
+  Pricing basis: Damage/accuracy base 10,500g; +10% split-damage targeting.
+  Weapon class: Ranged | Damage type: Ranged, Laser
+  Damage: 150 | To hit: 19
+  Weight: 26
+  Effect: Quad barrel energy cannon. Can target up to four Zoids. Damage is
+  split between targets.
+
+------------------------------------------------------------------------------
+[011] 4-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 4,000g
+  Pricing basis: Damage/accuracy base 3,250g; +10% split-damage targeting,
+  +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
+  Damage: 50 | To hit: 18
+  Weight: 15
+  Effect: Fires four missiles. Can target up to two Zoids. Damage is split
+  between them.
+
+------------------------------------------------------------------------------
+[012] 6-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 5,500g
+  Pricing basis: Damage/accuracy base 4,550g; +10% split-damage targeting,
+  +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
+  Damage: 70 | To hit: 18
+  Weight: 18
+  Effect: Fires six missiles. Can target up to three Zoids. Damage is split
+  between them.
+
+------------------------------------------------------------------------------
+[013] 8-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 6,250g
+  Pricing basis: Damage/accuracy base 5,200g; +10% split-damage targeting,
+  +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
+  Damage: 80 | To hit: 18
+  Weight: 20
+  Effect: Fires eight missiles. Can target up to four Zoids. Damage is split
+  between them.
+
+------------------------------------------------------------------------------
+[014] Accelerated Cannons
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,250g
+  Pricing basis: Damage/accuracy base 3,600g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Long Range
+  Damage: 90 | To hit: 13
+  Weight: 15
+  Effect: Targets a single opponent. Minimum range of 105m.
+
+------------------------------------------------------------------------------
+[015] Accelerated Gatling
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 16,750g
+  Pricing basis: Damage/accuracy base 4,200g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Anti-Air, Close Range
+  Damage: 120 | To hit: 12
+  Weight: 15
+  Effect: Hi-speed gatling gun. Targets a horizontal area
+  30m wide by 90m long.
+  Any Zoids in that area must make a reaction save against your attack roll.
+  A failed save takes the listed damage; a successful save takes no damage.
+
+------------------------------------------------------------------------------
+[016] Accelerated Impact Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 5,500g
+  Pricing basis: Damage/accuracy base 6,000g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Close Range
+  Damage: 120 | To hit: 15
+  Weight: 12
+  Effect: Single barrel cannon. Targets a single opponent. Max range of 300m
+
+------------------------------------------------------------------------------
+[017] Acid Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 6,250g
+  Pricing basis: Damage/accuracy base 5,000g; +25% defense reduction.
+  Weapon class: Ranged | Damage type: Ranged, Acid, Defense
+  Damage: 100 | To hit: 15
+  Weight: 20
+  Effect: Fires a canister of acid. Targets a single opponent. For every 10
+  points of damage dealt the defense of the targeted Zoid lowers by 1. Ranged,
+  Defense
+
+------------------------------------------------------------------------------
+[018] Anti-Air 16-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 10,250g
+  Pricing basis: Damage/accuracy base 7,800g; +10% split-damage targeting,
+  +10% anti-air, +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Anti-Air, Homing
+  Damage: 120 | To hit: 18
+  Weight: 15
+  Heat: 2
+  Effect: Fires sixteen missiles. Can target up to eight Zoids. Damage is
+  split between them.
+
+------------------------------------------------------------------------------
+[019] Anti-Air 2-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 4,750g
+  Pricing basis: Damage/accuracy base 3,900g; +10% anti-air, +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Anti-Air, Homing
+  Damage: 60 | To hit: 18
+  Weight: 10
+  Effect: Fires two missiles. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[020] Anti-Air 4-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 5,000g
+  Pricing basis: Damage/accuracy base 3,900g; +10% split-damage targeting,
+  +10% anti-air, +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Anti-Air, Homing
+  Damage: 60 | To hit: 18
+  Weight: 15
+  Effect: Fires four missiles. Can target up to two Zoids. Damage is split
+  between them.
+
+------------------------------------------------------------------------------
+[021] Anti-Air 8-Set Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 7,500g
+  Pricing basis: Damage/accuracy base 5,850g; +10% split-damage targeting,
+  +10% anti-air, +10% homing.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Anti-Air, Homing
+  Damage: 90 | To hit: 18
+  Weight: 22
+  Effect: Fires eight missiles. Can target up to four Zoids. Damage is split
+  between them.
+
+------------------------------------------------------------------------------
+[022] Anti-Air Gatling
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 4,500g
+  Pricing basis: Damage/accuracy base 2,250g x2 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Anti-Air, Close Range
+  Damage: 50 | To hit: 14
+  Weight: 12
+  Effect: rapid fire gatling gun. Target a horizontal area 15m wide by 60
+  long. Any Zoids in that area must make a reaction against your attack.
+  Successful saves take no damage.
+
+------------------------------------------------------------------------------
+[023] Anti-Air Laser
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,500g
+  Pricing basis: Damage/accuracy base 3,250g; +10% anti-air.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air
+  Damage: 50 | To hit: 18
+  Weight: 6
+  Effect: Fires an energy beam. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[024] Anti-Air Machine Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,000g
+  Pricing basis: Damage/accuracy base 2,800g; +10% anti-air.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Anti-Air
+  Damage: 40 | To hit: 19
+  Weight: 5
+  Effect: Small machine gun. Target a single opponent.
+
+------------------------------------------------------------------------------
+[025] Anti-Air Mega Vulcan
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 16,750g
+  Pricing basis: Damage/accuracy base 4,200g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Anti-Air
+  Damage: 70 | To hit: 17
+  Weight: 8
+  Effect: Machine gun. Fires in a vertical line 30m by 90m. Opponents in the
+  area must make a reaction save against the attack roll. Successful saves
+  take no damage
+
+------------------------------------------------------------------------------
+[026] Anti-Air Vulcan
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 12,000g
+  Pricing basis: Damage/accuracy base 3,000g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Anti-Air
+  Damage: 50 | To hit: 17
+  Weight: 3
+  Effect: Fires a burst in a vertical line 30m by 90m. Opponents in the line
+  must make a reaction against your attack roll. Successful saves take no
+  damage.
+
+------------------------------------------------------------------------------
+[027] Assault Beam Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 4,500g
+  Pricing basis: Damage/accuracy base 4,500g.
+  Weapon class: Ranged | Damage type: Ranged, Laser
+  Damage: 75 | To hit: 17
+  Weight: 12
+  Effect: Energy cannon. Fires a single energy bolts. Targets a single
+  opponent.
+
+------------------------------------------------------------------------------
+[028] Assault Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 10,000g
+  Pricing basis: Damage/accuracy base 10,000g.
+  Weapon class: Ranged | Damage type: Ranged, Explosive
+  Damage: 250 | To hit: 13
+  Weight: 23
+  Heat: 2
+  Effect: Double barrel cannon. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[029] Assault Rifle
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 8,500g
+  Pricing basis: Damage/accuracy base 8,400g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 120 | To hit: 19
+  Weight: 21
+  Effect: Large assault rifle. Fires a single precious shot. Targets a single
+  opponent.
+
+------------------------------------------------------------------------------
+[030] Beam Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 7,750g
+  Pricing basis: Damage/accuracy base 7,700g.
+  Weapon class: Ranged | Damage type: Ranged, Laser
+  Damage: 140 | To hit: 16
+  Weight: 25
+  Effect: Fires a single energy bolts targets a single opponent.
+
+------------------------------------------------------------------------------
+[031] Beam Needle
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 14,500g
+  Pricing basis: Damage/accuracy base 7,200g x2 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air
+  Damage: 120 | To hit: 17
+  Weight: 15
+  Effect: Fires two bursts of energy bolts. Targets up to two opponents. Deals
+  the listed damage to each target; damage is not split.
+
+------------------------------------------------------------------------------
+[032] Beam Rifle
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 6,500g
+  Pricing basis: Damage/accuracy base 6,500g.
+  Weapon class: Ranged | Damage type: Ranged, Laser
+  Damage: 100 | To hit: 18
+  Weight: 14
+  Effect: Precision energy rifle. Fires a single energy bolt. Targets a single
+  opponent.
+
+------------------------------------------------------------------------------
+[033] Buster Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 18,000g
+  Pricing basis: Damage/accuracy base 20,000g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Long Range
+  Damage: 400 | To hit: 15
+  Weight: 35
+  Heat: 1
+  Effect: Large single barrel cannon. Targets a single opponent. Minimum range
+  of 225m
+
+------------------------------------------------------------------------------
+[034] Charge Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 15,500g
+  Pricing basis: Damage/accuracy base 13,000g; +10% split-damage targeting,
+  +10% penetration.
+  Weapon class: Ranged | Damage type: Ranged, Particle
+  Damage: 200 | To hit: 18
+  Weight: 50
+  Heat: 1
+  Effect: Fires two narrow particle beams. Targets up to two opponents. If
+  damage exceeds the remaining health of the targeted Zoids it punctures
+  through the zoid and continues on for the remaining damage. damage is split
+  between the two beams.
+
+------------------------------------------------------------------------------
+[035] Close-Range Rail Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 8,750g
+  Pricing basis: Damage/accuracy base 9,750g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Close Range
+  Damage: 150 | To hit: 18
+  Weight: 23
+  Effect: Rail cannon. Targets a single opponent. Maximum range of 150m.
+
+------------------------------------------------------------------------------
+[036] Concentrate Acid Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 12,500g
+  Pricing basis: Damage/accuracy base 10,000g; +25% defense reduction.
+  Weapon class: Ranged | Damage type: Ranged, Acid, Defense
+  Damage: 200 | To hit: 15
+  Weight: 23
+  Effect: Fires a single canister of acid. Targets a single opponent. For
+  every 10 points of damage dealt the defense of the targeted Zoid lowers by
+  1.
+
+------------------------------------------------------------------------------
+[037] Double Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 4,250g
+  Pricing basis: Damage/accuracy base 4,800g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Long Range
+  Damage: 120 | To hit: 13
+  Weight: 18
+  Effect: Double barrel cannon. Targets a single opponent. Minimum range of
+  120m.
+
+------------------------------------------------------------------------------
+[038] Ele Shot
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 16,750g
+  Pricing basis: Damage/accuracy base 8,400g x2 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Electrical
+  Damage: 140 | To hit: 17
+  Weight: 25
+  Effect: Fires an arc of electricity. Targets up to two opponents. Second
+  target must be within 75m of the first. Must be within 75m. On a Hit
+  opponents must roll a percentile die. A roll of 49 or lower will cause the
+  Zoid to freeze. At the end of their next turn they can roll again for a
+  chance to unfreeze. Deals the listed damage to each target; damage is not
+  split.
+
+------------------------------------------------------------------------------
+[039] External Charge Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 13,250g
+  Pricing basis: Damage/accuracy base 12,000g; +10% split-damage targeting.
+  Weapon class: Ranged | Damage type: Ranged, Particle
+  Damage: 200 | To hit: 17
+  Weight: 40
+  Heat: 1
+  Effect: can target up to four opponents. Each shot deals 50 damage.
+
+------------------------------------------------------------------------------
+[040] Extra Electro Magnetic Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 13,250g
+  Pricing basis: Damage/accuracy base 6,600g x2 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Electrical
+  Damage: 120 | To hit: 16
+  Weight: 23
+  Effect: Fires an arc of electricity. Targets up to two opponents. The second
+  opponent must be within 60m of the first opponent. Must be within 75m.
+  Opponents damaged by this attack must make a percentile roll. if the roll is
+  a 49 or lower the Zoid is frozen. At the end of their turn they may roll
+  again to unfreeze. Deals the listed damage to each target; damage is not
+  split.
+
+------------------------------------------------------------------------------
+[041] Focus Charge Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 23,000g
+  Pricing basis: Damage/accuracy base 21,000g; +10% penetration.
+  Weapon class: Ranged | Damage type: Ranged, Particle
+  Damage: 300 | To hit: 19
+  Weight: 50
+  Heat: 1
+  Effect: Fires a narrow particle beam. If damage exceeds health threshold it
+  punctures through the Zoid to hit whatever is behind it for the remaining
+  damage.
+
+------------------------------------------------------------------------------
+[042] Gatling Beam
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 33,500g
+  Pricing basis: Damage/accuracy base 8,400g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air, Close Range
+  Damage: 140 | To hit: 17
+  Weight: 23
+  Effect: Rapid fire energy gun. Targets an horizontal area 30m by 90m.
+
+------------------------------------------------------------------------------
+[043] Gatling Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,500g
+  Pricing basis: Damage/accuracy base 1,800g x2 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Close Range
+  Damage: 40 | To hit: 14
+  Weight: 10
+  Effect: small gatling gun. Targets a horizontal area 15m wide by 45m long.
+  Opponents in the area must make a reaction save against the attack roll.
+  Successful saves take no damage
+
+------------------------------------------------------------------------------
+[044] Gravity Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Weight: 100
+  Heat: 1
+  Effect: An immense weapon with devastating fire-power.
+
+------------------------------------------------------------------------------
+[045] Great Charge Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 98,000g
+  Pricing basis: Damage/accuracy base 24,500g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Particle, Anti-Air
+  Damage: 350 | To hit: 19
+  Weight: 80
+  Heat: 1
+  Effect: Fires a 60m wide particle beam. Each Zoid in the path of the beam
+  must make a reaction save against the attack roll. Successful saves take no
+  damage. Must recharge for three turns.
+
+------------------------------------------------------------------------------
+[046] Heavy Gatling
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 10,750g
+  Pricing basis: Damage/accuracy base 2,700g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Close Range
+  Damage: 60 | To hit: 14
+  Weight: 13
+  Effect: larger gatling gun. Target a horizontal area 30m wide by 90m long.
+  Any Zoids in that area must make a reaction save against your attack roll.
+  Successful saves take no damage.
+
+------------------------------------------------------------------------------
+[047] Heavy Machine Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 5,500g
+  Pricing basis: Damage/accuracy base 5,600g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 80 | To hit: 19
+  Weight: 7
+  Effect: First a single burst. Targets a single opponent
+
+------------------------------------------------------------------------------
+[048] Heavy Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 18,750g
+  Pricing basis: Damage/accuracy base 4,675g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Particle
+  Damage: 85 | To hit: 16
+  Weight: 25
+  Heat: 3
+  Effect: larger particle cannon. Each shot is a 30m wide particle beam. Each
+  Zoid in the path must make a reaction against your attack roll or take
+  damage.
+
+------------------------------------------------------------------------------
+[049] High Speed Gatling
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 13,500g
+  Pricing basis: Damage/accuracy base 3,375g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Anti-Air, Close Range
+  Damage: 75 | To hit: 14
+  Weight: 15
+  Effect: Targets a horizontal area 30m wide by 75m long.
+
+------------------------------------------------------------------------------
+[050] High Speed Rail Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 6,500g
+  Pricing basis: Damage/accuracy base 5,400g; +10% anti-air, +10% penetration.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Penetrating, Anti-Air,
+  Long Range
+  Damage: 120 | To hit: 14
+  Weight: 25
+  Effect: Faster rail cannon. Targets a single opponent. If damage exceeds the
+  remaining health of the target the railgun continues in a straight line for
+  the remaining damage.
+
+------------------------------------------------------------------------------
+[051] Hybrid Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 11,750g
+  Pricing basis: Damage/accuracy base 13,000g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Long Range
+  Damage: 200 | To hit: 18
+  Weight: 40
+  Heat: 3
+  Effect: Single barrel energy cannon. Fires a single bolt. Targets a single
+  opponent. Minimum range of 100m.
+
+------------------------------------------------------------------------------
+[052] Hyper Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 17,500g
+  Pricing basis: Damage/accuracy base 17,500g; no special-effect adjustments.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 350 | To hit: 15
+  Weight: 30
+  Heat: 1
+  Effect: Targets a single opponent. Deals the listed damage with no
+  additional effects.
+
+------------------------------------------------------------------------------
+[053] Hyper Machine Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 22,500g
+  Pricing basis: Damage/accuracy base 5,600g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 80 | To hit: 19
+  Weight: 10
+  Effect: Fires a burst in a vertical line 30m by 90m. Opponents in the line
+  must make a reaction against your attack roll. Successful saves take no
+  damage.
+
+------------------------------------------------------------------------------
+[054] Hyper Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 65,000g
+  Pricing basis: Damage/accuracy base 16,250g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
+  Damage: 250 | To hit: 18
+  Weight: 30
+  Heat: 1
+  Effect: Large missile. Targets an area 90m by 90m. Opponents in the area
+  must make a reaction save against the attack roll. Successful saves take no
+  damage.
+
+------------------------------------------------------------------------------
+[055] Hyper Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 22,000g
+  Pricing basis: Damage/accuracy base 5,500g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Particle
+  Damage: 100 | To hit: 16
+  Weight: 27
+  Heat: 2
+  Effect: Particle cannon. Fires a 30m wide particle beam. Each Zoid in the
+  path must make a reaction save against the attack roll. A failed save takes
+  the listed damage; a successful save takes no damage.
+
+------------------------------------------------------------------------------
+[056] Hyper Rail Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 10,000g
+  Pricing basis: Damage/accuracy base 9,000g; +10% penetration.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Penetrating, Long Range
+  Damage: 180 | To hit: 15
+  Weight: 30
+  Effect: Targets a single opponent. If damage exceeds the remaining health of
+  the target the railgun continues in a straight line for the remaining
+  damage.
+
+------------------------------------------------------------------------------
+[057] Impact Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 2,750g
+  Pricing basis: Damage/accuracy base 3,000g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Close Range
+  Damage: 60 | To hit: 15
+  Weight: 8
+  Effect: Single barrel cannon. Targets a single opponent. Max range of 210m
+
+------------------------------------------------------------------------------
+[058] Large Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 8,500g
+  Pricing basis: Damage/accuracy base 8,450g; +10% homing, -10% range
+  restriction.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing, Long Range
+  Damage: 130 | To hit: 18
+  Weight: 18
+  Effect: Fires a single missile. Minimum range of 400m.
+
+------------------------------------------------------------------------------
+[059] Laser Machine Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 4,250g
+  Pricing basis: Damage/accuracy base 3,600g; +10% split-damage targeting,
+  +10% anti-air.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air
+  Damage: 60 | To hit: 17
+  Weight: 8
+  Effect: Small energy machine gun. Target up to two opponents. Damage is
+  split between targets.
+
+------------------------------------------------------------------------------
+[060] Linear Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 7,750g
+  Pricing basis: Damage/accuracy base 7,700g.
+  Weapon class: Ranged | Damage type: Ranged, Explosive
+  Damage: 220 | To hit: 12
+  Weight: 20
+  Heat: 2
+  Effect: Single fire cannon. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[061] Long-Range Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 5,500g
+  Pricing basis: Damage/accuracy base 5,500g; +10% homing, -10% range
+  restriction.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing, Long Range
+  Damage: 110 | To hit: 15
+  Weight: 15
+  Effect: Single missile. Targets a single opponent. Minimum range of 800m
+
+------------------------------------------------------------------------------
+[062] Long-Range Rifle
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 11,250g
+  Pricing basis: Damage/accuracy base 12,600g; -10% range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Long Range
+  Damage: 180 | To hit: 19
+  Weight: 18
+  Effect: Fires a single precious shot. Targets a single opponent. Minimum
+  range of 300m.
+
+------------------------------------------------------------------------------
+[063] Machine Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 2,000g
+  Pricing basis: Damage/accuracy base 2,100g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 30 | To hit: 19
+  Weight: 4
+  Effect: Small machine gun. Target a single opponent.
+
+------------------------------------------------------------------------------
+[064] Mega Vulcan
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 14,500g
+  Pricing basis: Damage/accuracy base 3,600g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 60 | To hit: 17
+  Weight: 8
+  Effect: Fires a burst in a vertical line 30m by 105m. Opponents in the line
+  must make a reaction against your attack roll. Successful saves take no
+  damage.
+
+------------------------------------------------------------------------------
+[065] Mini Laser
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,500g
+  Pricing basis: Damage/accuracy base 3,250g; +10% penetration.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Puncture
+  Damage: 50 | To hit: 18
+  Weight: 5
+  Effect: Small energy gun. Target a single opponent. If damage exceeds health
+  threshold it punctures through the Zoid to hit whatever is behind it.
+
+------------------------------------------------------------------------------
+[066] Napalm Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 28,750g
+  Pricing basis: Damage/accuracy base 7,200g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Fire, Defense
+  Damage: 120 | To hit: 17
+  Weight: 10
+  Effect: Fires a canister that sets a horizontal line 30m by 90m on fire.
+  Lasts for three turns. Opponents in the area must make a reaction save
+  against the attack roll. Successful saves take no damage. For every 10
+  damage dealt the opponents defense drops by 1. Defense drop lasts until
+  repaired.
+
+------------------------------------------------------------------------------
+[067] Neutron Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 30,000g
+  Pricing basis: Damage/accuracy base 7,500g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
+  Damage: 150 | To hit: 15
+  Weight: 30
+  Heat: 1
+  Effect: Large missile. Targets an area 90m by 90m. Opponents in the area
+  must make a reaction save against the attack roll. Successful saves take no
+  damage.
+
+------------------------------------------------------------------------------
+[068] Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 7,250g
+  Pricing basis: Damage/accuracy base 3,575g x2 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Particle
+  Damage: 65 | To hit: 16
+  Weight: 20
+  Heat: 3
+  Effect: fires dense particle beams in a 15m wide straight line. Each Zoid in
+  the path must make a reaction against your attack roll or take damage.
+
+------------------------------------------------------------------------------
+[069] Photon Paticle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 12,750g
+  Pricing basis: Damage/accuracy base 11,700g; +10% penetration.
+  Weapon class: Ranged | Damage type: Ranged, Particle
+  Damage: 180 | To hit: 18
+  Weight: 30
+  Heat: 1
+  Effect: shoots a piercing particle beam. If damage exceeds health threshold
+  it punctures through the Zoid to hit whatever is behind it for the remaining
+  damage.
+
+------------------------------------------------------------------------------
+[070] Plasma Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 31,250g
+  Pricing basis: Damage/accuracy base 7,800g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Particle
+  Damage: 130 | To hit: 17
+  Weight: 35
+  Heat: 2
+  Effect: shoots dense particle blasts. Targets up to four opponents. Deals
+  the listed damage to each target; damage is not split.
+
+------------------------------------------------------------------------------
+[071] Poison Cloud Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 24,000g
+  Pricing basis: Damage/accuracy base 6,000g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Poison
+  Damage: 120 | To hit: 15
+  Weight: 14
+  Description from source name: targets a horizontal area 30m by 90m. Ranged,
+  Pilot
+  Effect: Pilot must make a constitution saving throw. On a failed save
+  reaction, and Hit are halved. May make a constitution saving throw at the
+  start of their next turn.
+
+------------------------------------------------------------------------------
+[072] Poison Gas Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 8,750g
+  Pricing basis: Damage/accuracy base 2,200g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Poison
+  Damage: 40 | To hit: 16
+  Weight: 12
+  Effect: launches a gas projectile that targets the pilot. Covers an area 30m
+  square. DC:16. Pilot must make a constitution saving throw. On a failed save
+  reaction, and Hit are halved. May make a constitution saving throw at the
+  start of their next turn.
+
+------------------------------------------------------------------------------
+[073] Poison Mist Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 18,000g
+  Pricing basis: Damage/accuracy base 4,500g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Poison
+  Damage: 90 | To hit: 15
+  Weight: 13
+  Description from source name: targets an horizontal area 30m by 60m. DC: 17.
+  Ranged, Pilot
+  Effect: Pilot must make a constitution saving throw. On a failed save
+  reaction, and Hit are halved. May make a constitution saving throw at the
+  start of their next turn.
+
+------------------------------------------------------------------------------
+[074] Pulse Laser Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 6,000g
+  Pricing basis: Damage/accuracy base 5,400g; +10% anti-air.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air
+  Damage: 90 | To hit: 17
+  Weight: 12
+  Effect: Fires a bust of energy beams. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[075] Rail Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 8,500g
+  Pricing basis: Damage/accuracy base 8,450g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 130 | To hit: 18
+  Weight: 20
+  Effect: Rail cannon. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[076] Ray Storm
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 11,250g
+  Pricing basis: Damage/accuracy base 9,360g; +10% split-damage targeting,
+  +10% anti-air; rounded to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Laser, Anti-Air
+  Damage: 144 total (4 shots of 36) | To hit: 18
+  Weight: 32
+  Effect: Large energy cannon. Fires four energy bolts. Targets up to two
+  opponents. Each shot deals 36 damage, for 144 total damage across all four
+  shots.
+
+------------------------------------------------------------------------------
+[077] Reaction Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 60,000g
+  Pricing basis: Damage/accuracy base 15,000g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
+  Damage: 300 | To hit: 15
+  Weight: 80
+  Heat: 1
+  Effect: Large missile. Targets an area 90m by 90m. Opponents in the area
+  must make a reaction save against the attack roll. Successful saves take no
+  damage.
+
+------------------------------------------------------------------------------
+[078] Rolling Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 8,750g
+  Pricing basis: Damage/accuracy base 8,000g; +10% penetration.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Penetrating
+  Damage: 160 | To hit: 15
+  Weight: 35
+  Effect: Large cannon. If the damage exceeds the remaining health of the
+  target Zoid it will pierce through the Zoid.
+
+------------------------------------------------------------------------------
+[079] Shock Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,250g
+  Pricing basis: Damage/accuracy base 3,300g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 60 | To hit: 16
+  Weight: 8
+  Effect: Single barrel cannon. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[080] Sonic Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 7,500g
+  Pricing basis: Damage/accuracy base 5,000g; +50% disabling effect.
+  Weapon class: Ranged | Damage type: Ranged, Sonic
+  Damage: 100 | To hit: 15
+  Weight: 10
+  Effect: Shoots a focused line of sonic damage. Targets a single opponent.
+  Pilot must make a constitution saving throw. On a failed save reaction, and
+  Hit are halved. May make a constitution saving throw at the start of their
+  next turn. Ranged, Pilot
+
+------------------------------------------------------------------------------
+[081] Spark Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,750g
+  Pricing basis: Damage/accuracy base 2,500g; +50% disabling effect.
+  Weapon class: Ranged | Damage type: Ranged, Electrical
+  Damage: 50 | To hit: 15
+  Weight: 15
+  Effect: Opponents damaged by this attack must roll percentile. On a roll of
+  49 or lower, the Zoid is frozen. At the end of each turn, it may roll
+  again; a roll above 49 unfreezes it.
+
+------------------------------------------------------------------------------
+[082] Spread Charge Particle Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 60,000g
+  Pricing basis: Damage/accuracy base 15,000g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Particle, Anti-Air
+  Damage: 250 | To hit: 17
+  Weight: 60
+  Heat: 1
+  Effect: Fires a 45m wide particle beam. Each Zoid in the path of the beam
+  must make a reaction save against the attack roll. Successful saves take no
+  damage. Must recharge for three turns.
+
+------------------------------------------------------------------------------
+[083] Spread Missile
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 26,000g
+  Pricing basis: Damage/accuracy base 6,500g x4 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Explosive
+  Damage: 130 | To hit: 15
+  Weight: 10
+  Heat: 1
+  Effect: A single missile divides into multiple smaller missiles. Targets 4
+  targets within an area 90m by 90m. Deals the listed damage to each target;
+  damage is not split.
+
+------------------------------------------------------------------------------
+[084] Super Sonic Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 11,250g
+  Pricing basis: Damage/accuracy base 7,500g; +50% disabling effect.
+  Weapon class: Ranged | Damage type: Ranged, Sonic
+  Damage: 150 | To hit: 15
+  Weight: 15
+  Effect: Shoots a focused line of sonic damage. Targets a single opponent.
+  Pilot must make a constitution saving throw. On a failed save reaction, and
+  Hit are halved. May make a constitution saving throw at the start of their
+  next turn.
+
+------------------------------------------------------------------------------
+[085] Super Spark Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 3,500g
+  Pricing basis: Damage/accuracy base 2,500g; +50% disabling effect, -10%
+  range restriction.
+  Weapon class: Ranged | Damage type: Ranged, Electrical
+  Damage: 50 | To hit: 15
+  Weight: 23
+  Effect: Fires an arc of electricity. Targets a single opponent. Must be
+  within 75 meters. Opponents damaged by this attack must make a percentile
+  roll. if the roll is a 49 or lower the Zoid is frozen. At the end of their
+  turn they may roll again to unfreeze.
+
+------------------------------------------------------------------------------
+[086] Super Speed Rail Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 10,750g
+  Pricing basis: Damage/accuracy base 9,750g; +10% penetration.
+  Weapon class: Ranged | Damage type: Ranged, Bullet, Penetrating, Long Range
+  Damage: 150 | To hit: 18
+  Weight: 27
+  Effect: Faster rail cannon. Targets a single opponent. If damage exceeds the
+  remaining health of the target the railgun continues in a straight line for
+  the remaining damage.
+
+------------------------------------------------------------------------------
+[087] Triple Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 7,500g
+  Pricing basis: Damage/accuracy base 7,500g.
+  Weapon class: Ranged | Damage type: Ranged, Explosive
+  Damage: 150 | To hit: 15
+  Weight: 28
+  Effect: Triple barrel cannon. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[088] Ultra Cannon
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 30,000g
+  Pricing basis: Damage/accuracy base 30,000g.
+  Weapon class: Ranged | Damage type: Ranged, Explosive
+  Damage: 600 | To hit: 15
+  Weight: 40
+  Heat: 1
+  Effect: Large single barrel cannon. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[089] Vulcan Gun
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 4,750g
+  Pricing basis: Damage/accuracy base 2,400g x2 multi-target minimum; rounded
+  to 250g.
+  Weapon class: Ranged | Damage type: Ranged, Bullet
+  Damage: 40 | To hit: 17
+  Weight: 3
+  Effect: Shoots in a 15m wide by 60m straight line. Opponents in the line
+  must make a reaction against your attack roll. Successful saves take no
+  damage.
+
+==============================================================================
+APPENDIX - ZOID-SPECIFIC REMOVABLE WEAPONS
+==============================================================================
+------------------------------------------------------------------------------
+[Z01] 5-Shot Missile Pod - Konig Wolf DSR (CAU)
+------------------------------------------------------------------------------
+  Listed on: Konig Wolf DSR (CAU) | Removable slot: 2
+  Source slot type: Weapon and Assist
+  Damage type: Ranged, Explosive
+  Damage: 120 | To hit: 19
+  Weight: 18
+  Effect: Outside shoulder mounted missie pods. Targets an area 45m by 90m.
+  Opponents in the area of effect must make a reaction save against the attack
+  roll. Successful saves take no damage. (Konig Wolf Only)
+
+------------------------------------------------------------------------------
+[Z02] Double Beam Cannon - Atak Kat
+------------------------------------------------------------------------------
+  Listed on: Atak Kat | Removable slot: 1
+  Source slot type: Weapon and Assist
+  Damage type: Ranged, Laser
+  Damage: 60 | To hit: 17
+  Weight: 8
+  Effect: back mounted energy weapon. Targets a single opponent. Ranged (Atak
+  Kat Only)
+
+------------------------------------------------------------------------------
+[Z03] Double Beam Cannon - Command Wolf
+------------------------------------------------------------------------------
+  Listed on: Command Wolf | Removable slot: 1
+  Source slot type: Weapon and Assist
+  Damage type: Ranged, Laser
+  Damage: 70 | To hit: 14
+  Weight: 13
+  Description from source name: back mounted energy cannon. Targets a single
+  opponent. Ranged (Command Wolf Only)
+  Effect: Not listed
+
+------------------------------------------------------------------------------
+[Z04] Double Beam Cannon - Proto Zaber
+------------------------------------------------------------------------------
+  Listed on: Proto Zaber | Removable slot: 1
+  Source slot type: Weapon and Assist
+  Damage type: Ranged, Laser
+  Damage: 200 | To hit: 18
+  Weight: 17
+  Description from source name: back mounted energy cannon. Targets a single
+  opponent. Ranged (Proto Fang Only)
+  Effect: Not listed
+
+------------------------------------------------------------------------------
+[Z05] Double Beam Cannon - Zaber Fang
+------------------------------------------------------------------------------
+  Listed on: Zaber Fang | Removable slot: 1
+  Source slot type: Weapon and Assist
+  Damage type: Ranged, Laser
+  Damage: 120 | To hit: 18
+  Weight: 15
+  Effect: Back mounted removable cannon. Targets a single opponent. (Zaber
+  Fang Only)
+
+------------------------------------------------------------------------------
+[Z06] Double Beam Cannon - Zaber Fang Old
+------------------------------------------------------------------------------
+  Listed on: Zaber Fang Old | Removable slot: 1
+  Source slot type: Weapon and Assist
+  Damage type: Ranged, Laser
+  Damage: 120 | To hit: 18
+  Weight: 15
+  Effect: Back mounted removable cannon. Targets a single opponent. (Only
+  usable by Zaber Fang Old)
+
+------------------------------------------------------------------------------
+[Z07] Double Beam Cannon - Zaber Fang RS (CAU)
+------------------------------------------------------------------------------
+  Listed on: Zaber Fang RS (CAU) | Removable slot: 1
+  Source slot type: Weapon and Assist
+  Damage type: Ranged, Laser
+  Damage: 120 | To hit: 18
+  Weight: 15
+  Effect: Back mounted removable cannon. Targets a single opponnent. (Zaber
+  Fang Only)
+
+==============================================================================
+SECTION 2 - ASSIST EQUIPMENT
+==============================================================================
+------------------------------------------------------------------------------
+[A001] 3D Radar
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 13,000g
+  Pricing basis: Stat-benefit base 10,500g; x0.75 for three-turn duration;
+  x1.5 for allied support; x1.10 for advantage against flying Zoids.
+  To hit: 0
+  Weight: 3
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 14 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Radar that increases hit rate for self and a ally by 14. Advantage
+  against flying Zoids. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A002] Accelerator Equipment
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 15,000g
+  Pricing basis: Stat-benefit base 20,000g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 10
+  Heat: 1 | Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 20 | Speed increase: 1000
+  Effect: Boosters to increase speed by 1,000 and reaction by 20. Lasts three
+  turns.
+
+------------------------------------------------------------------------------
+[A003] After Burner
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 5,750g
+  Pricing basis: Stat-benefit base 10,000g; x0.75 for three-turn duration;
+  x0.75 for three-turn recharge.
+  To hit: 0
+  Weight: 5
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 1000
+  Effect: Boosters that increases your speed by 1,000. Lasts three turns. Must
+  recharge for three turns.
+
+------------------------------------------------------------------------------
+[A004] All-Weather Radar
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 11,250g
+  Pricing basis: Stat-benefit base 15,000g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 5
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 20 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Radar that increases hit rate for self by 20. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A005] Anti Charge Particle Shield
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 25,000g
+  Pricing basis: Stat-benefit base 20,000g; +5,000g damage-resistance premium.
+  To hit: 0
+  Weight: 30
+  Activation: Passive
+  Defense increase: 200 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids defense by 200. Reduces particle damage by
+  half.
+
+------------------------------------------------------------------------------
+[A006] Anti-Laser Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 20,000g
+  Pricing basis: Stat-benefit base 15,000g; +5,000g damage-resistance premium.
+  To hit: 0
+  Weight: 10
+  Activation: Passive
+  Defense increase: 100 | Armor increase: 10 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids defense by 100 and armor by 10. Reduces energy
+  damage taken by half.
+
+------------------------------------------------------------------------------
+[A007] Chobam Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 6,000g
+  Pricing basis: Stat-benefit base 6,000g.
+  To hit: 0
+  Weight: 20
+  Activation: Passive
+  Defense increase: 30 | Armor increase: 6 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids armor by 6 and your defense by 30.
+
+------------------------------------------------------------------------------
+[A008] Composite Sensor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 4,500g
+  Pricing basis: Stat-benefit base 4,500g.
+  To hit: 0
+  Weight: 5
+  Activation: Passive
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 4 | Range
+  increase: 300 | Reaction increase: 0 | Speed increase: 0
+  Effect: A sensor that increases range by 300 and increases hit by 4
+
+------------------------------------------------------------------------------
+[A009] Core Enhance Unit
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 5,000g
+  Pricing basis: Permanent +100 maximum health: 50g per health.
+  To hit: 0
+  Weight: 3
+  Activation: Passive
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases Zoids maximum health by 100.
+
+------------------------------------------------------------------------------
+[A010] E-Protector
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 13,500g
+  Pricing basis: Stat-benefit base 6,000g; +7,500g damage-resistance premium.
+  To hit: 0
+  Weight: 15
+  Activation: Passive
+  Defense increase: 60 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids defense by 60. Reduces damage from energy and
+  particle by half.
+
+------------------------------------------------------------------------------
+[A011] E-Shield Generator
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 4,000g
+  Pricing basis: Stat-benefit base 4,000g.
+  To hit: 0
+  Weight: 5
+  Heat: 2 | Activation: Active | Shield health: 200
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: A domed energy shield that blocks 200 damage before dispersing.
+
+------------------------------------------------------------------------------
+[A012] ECM
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 10,000g
+  Pricing basis: Three-turn allied targeting-disruption utility tier.
+  Weight: 3
+  Heat: 1
+  To-hit increase: 0
+  Effect: System that disrupts enemies targeting systems againt you and your
+  ally's. Attacks have disadvantage against you. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A013] Electro-Magnetic Jammer
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 2,250g
+  Pricing basis: +3 Armor x 500g and +3 Reaction x 500g;
+  x0.75 for three-turn duration.
+  Weight: Not listed
+  Heat: 1
+  Activation: Active
+  Armor increase: 3 | To-hit increase: 0 | Reaction increase: 3
+  Effect: Increases Armor by 3 and Reaction by 3 for three turns.
+
+------------------------------------------------------------------------------
+[A014] Electron Disruptor Equipment
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 11,250g
+  Pricing basis: Attack-bonus reduction valued at 20 x 750g;
+  x0.75 for three-turn duration. Utility valuation, not damage pricing.
+  To hit: 15
+  Weight: Not listed
+  To-hit increase: 0
+  Effect: On a hit, reduces the target's attack bonus by 20 for three turns.
+  Track this effect manually.
+
+------------------------------------------------------------------------------
+[A015] Enhanced Chobam Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 8,000g
+  Pricing basis: Stat-benefit base 8,000g.
+  To hit: 0
+  Weight: 30
+  Activation: Passive
+  Defense increase: 50 | Armor increase: 6 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids armor by 6 and your defense by 50.
+
+------------------------------------------------------------------------------
+[A016] Enhanced Composite Sensor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 7,000g
+  Pricing basis: Stat-benefit base 7,000g.
+  To hit: 0
+  Weight: 3
+  Activation: Passive
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 6 | Range
+  increase: 500 | Reaction increase: 0 | Speed increase: 0
+  Effect: A sensor that increase range by 500 and increases hit rate by 6.
+
+------------------------------------------------------------------------------
+[A017] Enhanced Fused Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 50,000g
+  Pricing basis: Stat-benefit base 25,000g; +25,000g damage-resistance
+  premium.
+  To hit: 0
+  Weight: 50
+  Activation: Passive
+  Defense increase: 150 | Armor increase: 20 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids defense by 150 and armor by 20. Reduces all
+  damage taken by half.
+
+------------------------------------------------------------------------------
+[A018] Enhanced Laser Sensor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 2,500g
+  Pricing basis: Stat-benefit base 2,500g.
+  To hit: 0
+  Weight: 8
+  Activation: Passive
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 500 | Reaction increase: 0 | Speed increase: 0
+  Effect: An enhanced laser sensor that increases the Zoids range by 500.
+
+------------------------------------------------------------------------------
+[A019] Enhanced Micro Sensor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 1,500g
+  Pricing basis: Stat-benefit base 1,500g.
+  To hit: 0
+  Weight: 5
+  Activation: Passive
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 300 | Reaction increase: 0 | Speed increase: 0
+  Effect: A sensor that increases the Zoids range by 300.
+
+------------------------------------------------------------------------------
+[A020] Enhanced Optical Camouflage
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 10,000g
+  Pricing basis: Six-turn camouflage utility tier.
+  Weight: Not listed
+  Heat: 1
+  To-hit increase: 0
+  Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
+  against you while active. Lasts six turns.
+
+------------------------------------------------------------------------------
+[A021] Enhanced Radar System
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 13,500g
+  Pricing basis: Stat-benefit base 12,000g; x0.75 for three-turn duration;
+  x1.5 for allied support.
+  To hit: 0
+  Weight: 8
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 16 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Radar that increases hit rate for self and ally’s by 16. Lasts three
+  turns.
+
+------------------------------------------------------------------------------
+[A022] Extension Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 3,000g
+  Pricing basis: Stat-benefit base 3,000g.
+  To hit: 0
+  Weight: 5
+  Activation: Passive
+  Defense increase: 5 | Armor increase: 5 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increase defense by 5 and armor by 5.
+
+------------------------------------------------------------------------------
+[A023] F-Round Shield
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 20,000g
+  Pricing basis: Stat-benefit base 15,000g; +5,000g damage-resistance premium.
+  To hit: 0
+  Weight: 15
+  Activation: Passive
+  Defense increase: 70 | Armor increase: 16 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids defense by 70 and armor by 16. Reduces rifle
+  damage by half.
+
+------------------------------------------------------------------------------
+[A024] Full Armor System
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 14,000g
+  Pricing basis: Stat-benefit base 14,000g.
+  To hit: 0
+  Weight: 40
+  Activation: Passive
+  Defense increase: 50 | Armor increase: 18 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids armor by 18 and your defense by 50.
+
+------------------------------------------------------------------------------
+[A025] Fused Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 26,000g
+  Pricing basis: Stat-benefit base 11,000g; +15,000g damage-resistance
+  premium.
+  To hit: 0
+  Weight: 30
+  Activation: Passive
+  Defense increase: 60 | Armor increase: 10 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids defense by 60 and armor by 10. Reduces all
+  damage by half.
+
+------------------------------------------------------------------------------
+[A026] GPS Magnetism Detector
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 4,500g
+  Pricing basis: Stat-benefit base 4,000g; x0.75 for three-turn duration; x1.5
+  for allied support.
+  To hit: 0
+  Weight: 10
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 800 | Reaction increase: 0 | Speed increase: 0
+  Effect: Sensor that uses magnets that increases the detection range of your
+  and your ally's Zoids by 800. Lasts for three turns.
+
+------------------------------------------------------------------------------
+[A027] High Mobility Thruster
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 5,750g
+  Pricing basis: Stat-benefit base 7,500g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 10
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 15 | Speed increase: 0
+  Effect: Thrusters that increases reaction by 15. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A028] I-Field Generator
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 20,000g
+  Pricing basis: 100 group healing with three-turn recharge.
+  To hit: 0
+  Weight: 15
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Heals your ally's Zoids within 210m centered on yourself and your
+  own Zoid for 100. Must recharge for three turns.
+
+------------------------------------------------------------------------------
+[A029] Infra-Red Scanner
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 6,750g
+  Pricing basis: Stat-benefit base 9,000g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 2
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 12 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Scanner that increases your to Hit by 12. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A030] Infra-Red Scope
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 11,250g
+  Pricing basis: Stat-benefit base 15,000g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 3
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 20 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Scope that increases your to Hit by 20. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A031] Ion Projector
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 8,000g
+  Pricing basis: 100 self-healing with two-turn recharge.
+  To hit: 0
+  Weight: 12
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Heals the equipped Zoid by 100. Must recharge for two turns.
+
+------------------------------------------------------------------------------
+[A032] Large E-Shield Generator
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 6,000g
+  Pricing basis: Stat-benefit base 6,000g.
+  To hit: 0
+  Weight: 10
+  Heat: 1 | Activation: Active | Shield health: 300
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: A large domed energy shield that blocks 300 damage before
+  dispersing.
+
+------------------------------------------------------------------------------
+[A033] Large Extension Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 6,000g
+  Pricing basis: Stat-benefit base 6,000g.
+  To hit: 0
+  Weight: 10
+  Activation: Passive
+  Defense increase: 10 | Armor increase: 10 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases armor by 10 and increases defense by 10.
+
+------------------------------------------------------------------------------
+[A034] Large GPS Magnetism Detector
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 9,000g
+  Pricing basis: +1,600 range x 5g; x0.75 for three-turn duration;
+  x1.50 for allied support.
+  To hit: 0
+  Weight: 12
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 1600 | Reaction increase: 0 | Speed increase: 0
+  Effect: Sensor that uses magnets that increases the detection range of your
+  ally's Zoids by 1600. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A035] Large Magnetism Detector
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 9,000g
+  Pricing basis: Stat-benefit base 8,000g; x0.75 for three-turn duration; x1.5
+  for allied support.
+  To hit: 0
+  Weight: 7
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 1600 | Reaction increase: 0 | Speed increase: 0
+  Effect: Sensor that uses magnets that increases the range of your ally's
+  Zoids by 1,600. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A036] Large Multiple Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 5,000g
+  Pricing basis: Stat-benefit base 5,000g.
+  To hit: 0
+  Weight: 20
+  Activation: Passive
+  Defense increase: 20 | Armor increase: 6 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases defense by 20 and armor by 6.
+
+------------------------------------------------------------------------------
+[A037] Large Radar
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 9,000g
+  Pricing basis: 16 x 750g x 0.75 for three-turn duration.
+  To hit: 0
+  Weight: 4
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 16 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Larger radar that increases your to Hit by 16. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A038] Large Smokescreen Generator
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 5,000g
+  Pricing basis: Larger smoke-area utility tier.
+  To hit: 0
+  Weight: 3
+  Heat: 2 | Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Deploys thick smoke in 60m centered on you. Attacks have
+  disadvantage against this zoid while in the smoke. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A039] Large Sonic Detector
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 5,000g
+  Pricing basis: Stat-benefit base 4,500g; x0.75 for three-turn duration; x1.5
+  for allied support.
+  To hit: 0
+  Weight: 10
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 900 | Reaction increase: 0 | Speed increase: 0
+  Effect: Sensor using sound that increases the range of your and your ally's
+  Zoids by 900. Lasts for three turns.
+
+------------------------------------------------------------------------------
+[A040] Large Super-Heavy Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 11,000g
+  Pricing basis: Stat-benefit base 11,000g.
+  To hit: 0
+  Weight: 30
+  Activation: Passive
+  Defense increase: 70 | Armor increase: 8 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids armor by 8 and your defense by 70.
+
+------------------------------------------------------------------------------
+[A041] Laser Diffusion Equipment
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 15,000g
+  Pricing basis: Stat-benefit base 10,000g; +5,000g damage-resistance premium.
+  To hit: 0
+  Weight: 5
+  Heat: 1 | Activation: Active
+  Defense increase: 100 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids defense by 100. Reduces energy damage taken by
+  half.
+
+------------------------------------------------------------------------------
+[A042] Laser Sensor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 1,500g
+  Pricing basis: Stat-benefit base 2,000g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 6
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 400 | Reaction increase: 0 | Speed increase: 0
+  Effect: A laser sensor that increases the Zoids range by 400. Lasts three
+  turns.
+
+------------------------------------------------------------------------------
+[A043] Magnetism Detector
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 3,750g
+  Pricing basis: Stat-benefit base 4,000g; x0.75 for three-turn duration;
+  x1.25 for allied support.
+  To hit: 0
+  Weight: 5
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 800 | Reaction increase: 0 | Speed increase: 0
+  Effect: Sensor that uses magnets that increases the detection range one of
+  your ally's Zoids by 800. Lasts for three turns.
+
+------------------------------------------------------------------------------
+[A044] Micro Sensor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 750g
+  Pricing basis: Stat-benefit base 1,000g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 3
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 200 | Reaction increase: 0 | Speed increase: 0
+  Effect: A sensor that increases the Zoids range by 200. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A045] Multiple Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 500g
+  Pricing basis: Stat-benefit base 400g.
+  To hit: 0
+  Weight: 15
+  Activation: Passive
+  Defense increase: 4 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases defense by 4.
+
+------------------------------------------------------------------------------
+[A046] Optical Camouflage
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 6,000g
+  Pricing basis: Three-turn camouflage utility tier.
+  To hit: 0
+  Weight: 5
+  Heat: 2 | Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
+  against you while active. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A047] Radar
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 4,000g
+  Pricing basis: 7 x 750g x 0.75 for three-turn duration; rounded to 250g.
+  To hit: 0
+  Weight: 2
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 7 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Radar that increases your to Hit by 7. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A048] Radar System
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 5,750g
+  Pricing basis: Stat-benefit base 7,500g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 6
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 10 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Radar that increases your to Hit by 10. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A049] Radome Unit
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 17,000g
+  Pricing basis: Stat-benefit base 15,000g; x0.75 for three-turn duration;
+  x1.5 for allied support.
+  To hit: 0
+  Weight: 10
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 20 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Radar unit that increases ally's to Hit by 20. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A050] Rare Metal Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 19,500g
+  Pricing basis: Stat-benefit base 12,000g; +7,500g damage-resistance premium.
+  To hit: 0
+  Weight: 20
+  Activation: Passive
+  Defense increase: 80 | Armor increase: 8 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases your Zoids defense by 80 and armor by 8. Reduces damage
+  from energy and particle by half.
+
+------------------------------------------------------------------------------
+[A051] Self Recovery Unit
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 15,000g
+  Pricing basis: Passive 50 self-healing each turn.
+  To hit: 0
+  Weight: 15
+  Activation: Passive
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Heals the equipped Zoid at the end of every turn for 50.
+
+------------------------------------------------------------------------------
+[A052] Small E-Shield Generator
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 2,000g
+  Pricing basis: Stat-benefit base 2,000g.
+  To hit: 0
+  Weight: 3
+  Heat: 3 | Activation: Active | Shield health: 100
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: A small domed energy shield that blocks 100 damage before
+  dispersing.
+
+------------------------------------------------------------------------------
+[A053] Smokescreen Generator
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 4,000g
+  Pricing basis: Smoke/disadvantage utility tier.
+  To hit: 0
+  Weight: 1
+  Heat: 3 | Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Deploys thick smoke in 45m centered on you. While in the smoke
+  attacks against you have disadvantage. Lasts for three turns.
+
+------------------------------------------------------------------------------
+[A054] Sonic Detector
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 3,500g
+  Pricing basis: Stat-benefit base 3,000g; x0.75 for three-turn duration; x1.5
+  for allied support.
+  To hit: 0
+  Weight: 5
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 600 | Reaction increase: 0 | Speed increase: 0
+  Effect: Sensor using sound that increases the range of your and your ally's
+  Zoids by 600. Lasts three rounds.
+
+------------------------------------------------------------------------------
+[A055] Stealth System
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 8,000g
+  Pricing basis: Camouflage plus anti-air bonus suppression.
+  Weight: Not listed
+  Heat: 2
+  To-hit increase: 0
+  Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
+  against you while active. Nullifies opponents Anti-Air attack bonus against
+  the equipped Zoid. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A056] Super-Heavy Armor
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 1,000g
+  Pricing basis: Stat-benefit base 1,000g.
+  To hit: 0
+  Weight: 25
+  Activation: Passive
+  Defense increase: 10 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 0
+  Effect: Increases defense by 10.
+
+------------------------------------------------------------------------------
+[A057] Thruster
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 3,750g
+  Pricing basis: Stat-benefit base 5,000g; x0.75 for three-turn duration.
+  To hit: 0
+  Weight: 10
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 10 | Speed increase: 0
+  Effect: Thrusters that increases reaction by 10. Lasts for three turns.
+
+------------------------------------------------------------------------------
+[A058] Turbo Charger
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 1,500g
+  Pricing basis: 200 x 10g x 0.75 for three-turn duration.
+  To hit: 0
+  Weight: 5
+  Activation: Active
+  Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
+  increase: 0 | Reaction increase: 0 | Speed increase: 200
+  Effect: Boosters that increases your speed by 200. Lasts three turns.
+
+------------------------------------------------------------------------------
+[A059] ZOS Enhanced Type
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Availability: Not purchasable.
+  Weight: Not listed
+  Activation: Active
+  Effect: Adds an additional action each turn. Can be used once per combat
+  and lasts one minute. If used without an Organoid system active, at the end
+  of the one minute the Zoid suffers the System Down Condition.
+
+------------------------------------------------------------------------------
+[A060] ZOS Mass Produced
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Proposed price: 15,000g
+  Pricing basis: 20,000g extra-action baseline, discounted 25% for once-per-
+  combat use and conditional System Down risk.
+  Weight: Not listed
+  Activation: Active
+  Effect: Adds an additional action each turn. Can be used once per combat
+  and lasts three turns. If used without an Organoid system active, at the end
+  of the third turn the Zoid suffers the System Down Condition.
+
+------------------------------------------------------------------------------
+[A061] ZOS Prototype
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Availability: Not purchasable.
+  Weight: Not listed
+  Activation: Active
+  Effect: Adds an additional action each turn. Can be used once per combat
+  and lasts three turns. At the end of the third turn, the Zoid suffers the
+  System Down Condition.
+
+==============================================================================
+ZOID-SPECIFIC ASSIST EQUIPMENT
+==============================================================================
+------------------------------------------------------------------------------
+[ZA01] Anti-Particle Beam Shield - Mad Thunder
+------------------------------------------------------------------------------
+  Listed on: Mad Thunder | Removable slot: 4
+  Source slot type: Assist
+  Weight: 30
+  Activation: Passive
+  Defense increase: 200
+  Effect: Increases defense by 200. Halves particle damage.
+
+------------------------------------------------------------------------------
+[ZA02] Auto Repair Unit - Diablo Tiger
+------------------------------------------------------------------------------
+  Listed on: Diablo Tiger | Removable slot: 4
+  Source slot type: Assist
+  Weight: 15
+  Activation: Active
+  Description from source name: self repair function.
+  Effect: 50 healing. must recharg for two turns before next use
+
+------------------------------------------------------------------------------
+[ZA03] Optical Camouflage - Shadow Fox
+------------------------------------------------------------------------------
+  Listed on: Shadow Fox | Removable slot: 4
+  Source slot type: Assist
+  Weight: 5
+  Activation: Active
+  Effect: Self targeting stealth generator. Turns the Zoid "invisible". Lasts
+  for three turns. Attack rolls have disadvantage against your Zoid.
+
+------------------------------------------------------------------------------
+[ZA04] Stealth Generator - Zero X (CAU)
+------------------------------------------------------------------------------
+  Listed on: Zero X (CAU) | Removable slot: 1
+  Source slot type: Assist
+  Weight: Not listed
+  Effect: Generates Optical Camoflage and dampens sound when used outside of
+  combat
