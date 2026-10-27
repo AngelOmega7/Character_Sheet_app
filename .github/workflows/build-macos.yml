@@ -1,0 +1,73 @@
+name: Build macOS
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: macos-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: macOS universal app
+    runs-on: macos-15
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    env:
+      PYTHONUTF8: "1"
+      FLET_CLI_NO_RICH_OUTPUT: "1"
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            pyproject.toml
+            requirements.txt
+
+      - name: Install Flet build tools
+        run: python -m pip install "flet[cli,desktop]==1.0.4"
+
+      - name: Install Rosetta
+        run: sudo softwareupdate --install-rosetta --agree-to-license
+
+      # The runner includes Xcode and CocoaPods. Flet installs its Flutter SDK
+      # and builds for both Apple Silicon and Intel by default.
+      - name: Build macOS app
+        run: flet build macos --verbose --yes
+
+      # Archive before uploading to preserve bundle symlinks and permissions.
+      - name: Archive macOS app
+        run: |
+          shopt -s nullglob
+          apps=(build/macos/*.app)
+          if [ "${#apps[@]}" -ne 1 ]; then
+            echo "Expected exactly one .app bundle in build/macos" >&2
+            exit 1
+          fi
+          mkdir -p dist
+          ditto -c -k --sequesterRsrc --keepParent "${apps[0]}" dist/zoids-character-app-macos-universal.zip
+
+      - name: Upload macOS app bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: zoids-character-app-macos-universal-${{ github.run_number }}
+          path: dist/zoids-character-app-macos-universal.zip
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30

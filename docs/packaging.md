@@ -1,4 +1,4 @@
-# Build: Windows and Android
+# Build: Windows, macOS, and Android
 
 The root `main.py` and `pyproject.toml` configure Flet 1.0.4, the bundled reference catalogs, existing icons, version 1.0.0/build 1, and application ID `io.github.angelomega7.zoids_character_app`. Packaged dependencies use plain `flet`; desktop development tooling stays in the local virtual environment.
 
@@ -13,7 +13,18 @@ The workflow in `.github/workflows/build-windows.yml` builds the Windows x64 app
 
 This produces a portable app bundle, not a setup installer. Tag builds also upload to the workflow's artifacts; they do not create a GitHub Release. No repository secrets are needed. Check the **Build Windows app** step's log if compilation fails.
 
-## One-time local prerequisites
+## macOS builds with GitHub Actions
+
+The workflow in `.github/workflows/build-macos.yml` uses GitHub's `macos-15` runner, Python 3.12, and Flet 1.0.4 to build a universal `.app` for Apple Silicon and Intel Macs. It uses the same push, pull request, tag, and manual triggers as the Windows workflow.
+
+1. Commit and push the workflow. For a manual build, select **Actions → Build macOS → Run workflow** once it is on the default branch.
+2. Download `zoids-character-app-macos-universal-<run number>` from a successful run's **Artifacts** (retained for 30 days).
+3. Extract the artifact ZIP, then open the enclosed `zoids-character-app-macos-universal.zip` on a Mac to extract the `.app`. The inner archive preserves executable permissions and bundle symlinks.
+4. Move the `.app` to **Applications** and launch it.
+
+No repository secrets are required. The app uses the default ad-hoc signing and is not notarized; macOS may block downloaded builds. For a trusted test build, use **System Settings → Privacy & Security → Open Anyway** if offered. Public distribution with normal Gatekeeper approval requires an Apple Developer ID certificate and notarization credentials, which are not configured by this workflow. Successful compilation and launch still need verification on macOS.
+
+## One-time local prerequisites (Windows and Android)
 
 - Windows build: install Visual Studio 2022 or 2026 with **Desktop development with C++**, including its recommended Windows SDK components. Enable Windows Developer Mode for Flutter plugin symlinks.
 - Both targets need Flutter. Flet installs the required version if it is not available.
