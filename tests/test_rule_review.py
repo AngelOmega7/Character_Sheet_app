@@ -15,7 +15,7 @@ class RuleReviewTests(unittest.TestCase):
     def test_type_abilities_match_whole_listed_types_without_biological_groups(self):
         for zoid_type, broad in (("Liger", "Mammal Type 5"), ("Tiger", "Mammal Type 5"),
                                  ("Wolf", "Mammal Type 5"), ("Gorilla", "Mammal Type 5"),
-                                 ("Raptor", "Dinosaur, Land Type 5"), ("T-Rex", "Dinosaur, Land Type 5")):
+                                 ("Raptor", "Dinosaur Type 5"), ("T-Rex", "Dinosaur Type 5")):
             zoid = next(r for r in self.catalog.tables["zoids"]["records"] if r["fields"]["type"].strip() == zoid_type)
             build = CharacterBuild(zoid["id"], abilities=(broad,))
             self.assertEqual(calculate_stats(build, self.catalog)["bonus_levels"], 0)
@@ -26,6 +26,23 @@ class RuleReviewTests(unittest.TestCase):
         self.assertEqual(calculate_stats(CharacterBuild("Saberlion", abilities=("Lion Type 1",)), self.catalog)["bonus_levels"], 5)
         record["fields"]["type"] = "Li"
         self.assertEqual(calculate_stats(CharacterBuild("Saberlion", abilities=("Lion Type 1",)), self.catalog)["bonus_levels"], 0)
+
+    def test_simplified_type_abilities_cover_all_matching_zoids_and_old_names(self):
+        for zoid_type, old_type in (("Flying", "Dinosaur, Flying"),
+                                   ("Dinosaur", "Dinosaur, Land")):
+            zoids = [r for r in self.catalog.tables["zoids"]["records"]
+                     if r["fields"]["type"].strip() == zoid_type]
+            self.assertTrue(zoids)
+            for rank in range(1, 6):
+                ability = f"{zoid_type} Type {rank}"
+                legacy = f"{old_type} Type {rank}"
+                self.assertIs(self.catalog.find("abilities", ability),
+                              self.catalog.find("abilities", legacy))
+                for zoid in zoids:
+                    with self.subTest(zoid=zoid["name"], ability=ability):
+                        build = CharacterBuild(zoid["id"], pilot_style="npc",
+                                               abilities=(ability,))
+                        self.assertEqual(calculate_stats(build, self.catalog)["bonus_levels"], rank * 5)
 
     def test_declared_ranged_armaments_have_class_tags_and_no_energy(self):
         for record in self.catalog.tables["armaments"]["records"]:

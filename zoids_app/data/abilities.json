@@ -1420,14 +1420,14 @@
     },
     {
       "id": "abilities:dinosaur_land_type_1",
-      "name": "Dinosaur, Land Type 1",
+      "name": "Dinosaur Type 1",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 43
       },
       "fields": {
-        "name": "Dinosaur, Land Type 1",
+        "name": "Dinosaur Type 1",
         "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
         "bonus_levels": 5,
         "zoid_sizes": null,
@@ -1445,25 +1445,28 @@
       },
       "dynamic_fields": {},
       "description_formulas": {
-        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Dinosaur, Land\",N8+5,\"\")"
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Dinosaur\",N8+5,\"\")"
       },
       "family": "dinosaur_land_type",
       "rank": 1,
       "eligible_types": [
-        "Dinosaur, Land"
+        "Dinosaur"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Land Type 1"
+      ]
     },
     {
       "id": "abilities:dinosaur_land_type_2",
-      "name": "Dinosaur, Land Type 2",
+      "name": "Dinosaur Type 2",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 44
       },
       "fields": {
-        "name": "Dinosaur, Land Type 2",
+        "name": "Dinosaur Type 2",
         "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
         "bonus_levels": 10,
         "zoid_sizes": null,
@@ -1483,20 +1486,23 @@
       "family": "dinosaur_land_type",
       "rank": 2,
       "eligible_types": [
-        "Dinosaur, Land"
+        "Dinosaur"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Land Type 2"
+      ]
     },
     {
       "id": "abilities:dinosaur_land_type_3",
-      "name": "Dinosaur, Land Type 3",
+      "name": "Dinosaur Type 3",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 45
       },
       "fields": {
-        "name": "Dinosaur, Land Type 3",
+        "name": "Dinosaur Type 3",
         "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 15,
         "zoid_sizes": null,
@@ -1516,20 +1522,23 @@
       "family": "dinosaur_land_type",
       "rank": 3,
       "eligible_types": [
-        "Dinosaur, Land"
+        "Dinosaur"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Land Type 3"
+      ]
     },
     {
       "id": "abilities:dinosaur_land_type_4",
-      "name": "Dinosaur, Land Type 4",
+      "name": "Dinosaur Type 4",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 46
       },
       "fields": {
-        "name": "Dinosaur, Land Type 4",
+        "name": "Dinosaur Type 4",
         "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 20,
         "zoid_sizes": null,
@@ -1549,20 +1558,23 @@
       "family": "dinosaur_land_type",
       "rank": 4,
       "eligible_types": [
-        "Dinosaur, Land"
+        "Dinosaur"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Land Type 4"
+      ]
     },
     {
       "id": "abilities:dinosaur_land_type_5",
-      "name": "Dinosaur, Land Type 5",
+      "name": "Dinosaur Type 5",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 47
       },
       "fields": {
-        "name": "Dinosaur, Land Type 5",
+        "name": "Dinosaur Type 5",
         "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 25,
         "zoid_sizes": null,
@@ -1582,20 +1594,23 @@
       "family": "dinosaur_land_type",
       "rank": 5,
       "eligible_types": [
-        "Dinosaur, Land"
+        "Dinosaur"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Land Type 5"
+      ]
     },
     {
       "id": "abilities:dinosaur_flying_type_1",
-      "name": "Dinosaur, Flying Type 1",
+      "name": "Flying Type 1",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 48
       },
       "fields": {
-        "name": "Dinosaur, Flying Type 1",
+        "name": "Flying Type 1",
         "description": "Increases the pilots level by 5 while piloting the corresponding Zoid type.",
         "bonus_levels": 5,
         "zoid_sizes": null,
@@ -1613,25 +1628,28 @@
       },
       "dynamic_fields": {},
       "description_formulas": {
-        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Dinosaur, Flying\",N8+5,\"\")"
+        "description": "\"Increases the pilots level by 5 while piloting the corresponding Zoid type.\"&IF(N3=\"Flying\",N8+5,\"\")"
       },
       "family": "dinosaur_flying_type",
       "rank": 1,
       "eligible_types": [
-        "Dinosaur, Flying"
+        "Flying"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Flying Type 1"
+      ]
     },
     {
       "id": "abilities:dinosaur_flying_type_2",
-      "name": "Dinosaur, Flying Type 2",
+      "name": "Flying Type 2",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 49
       },
       "fields": {
-        "name": "Dinosaur, Flying Type 2 ",
+        "name": "Flying Type 2",
         "description": "Increases the pilots level by 10 levels while piloting the corresponding Zoid Type.",
         "bonus_levels": 10,
         "zoid_sizes": null,
@@ -1651,20 +1669,23 @@
       "family": "dinosaur_flying_type",
       "rank": 2,
       "eligible_types": [
-        "Dinosaur, Flying"
+        "Flying"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Flying Type 2"
+      ]
     },
     {
       "id": "abilities:dinosaur_flying_type_3",
-      "name": "Dinosaur, Flying Type 3",
+      "name": "Flying Type 3",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 50
       },
       "fields": {
-        "name": "Dinosaur, Flying Type 3",
+        "name": "Flying Type 3",
         "description": "Increases the pilots level by 15 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 15,
         "zoid_sizes": null,
@@ -1684,20 +1705,23 @@
       "family": "dinosaur_flying_type",
       "rank": 3,
       "eligible_types": [
-        "Dinosaur, Flying"
+        "Flying"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Flying Type 3"
+      ]
     },
     {
       "id": "abilities:dinosaur_flying_type_4",
-      "name": "Dinosaur, Flying Type 4",
+      "name": "Flying Type 4",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 51
       },
       "fields": {
-        "name": "Dinosaur, Flying Type 4",
+        "name": "Flying Type 4",
         "description": "Increases the pilots level by 20 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 20,
         "zoid_sizes": null,
@@ -1717,20 +1741,23 @@
       "family": "dinosaur_flying_type",
       "rank": 4,
       "eligible_types": [
-        "Dinosaur, Flying"
+        "Flying"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Flying Type 4"
+      ]
     },
     {
       "id": "abilities:dinosaur_flying_type_5",
-      "name": "Dinosaur, Flying Type 5",
+      "name": "Flying Type 5",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 52
       },
       "fields": {
-        "name": "Dinosaur, Flying Type 5",
+        "name": "Flying Type 5",
         "description": "Increases the pilots level by 25 levels while piloting the corresponding Zoid Type",
         "bonus_levels": 25,
         "zoid_sizes": null,
@@ -1750,9 +1777,12 @@
       "family": "dinosaur_flying_type",
       "rank": 5,
       "eligible_types": [
-        "Dinosaur, Flying"
+        "Flying"
       ],
-      "eligible_sizes": []
+      "eligible_sizes": [],
+      "legacy_names": [
+        "Dinosaur, Flying Type 5"
+      ]
     },
     {
       "id": "abilities:reptile_type_1",

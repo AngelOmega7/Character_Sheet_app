@@ -9044,7 +9044,7 @@
       "fields": {
         "name": "Dark Spiner",
         "base_zoid": null,
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large",
         "required_level": 14,
         "health": 310,
@@ -9185,7 +9185,7 @@
       "fields": {
         "name": "Killer Spiner (CAU)",
         "base_zoid": "Dark Spiner",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large",
         "required_level": 21,
         "health": 380,
@@ -10757,7 +10757,7 @@
       "fields": {
         "name": "Ultra Saurus",
         "base_zoid": null,
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Extra Large",
         "required_level": 28,
         "health": 1300,
@@ -10876,7 +10876,7 @@
       "fields": {
         "name": "Ultra Phalanx",
         "base_zoid": "Ultra Saurus",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Extra Large",
         "required_level": 30,
         "health": 1500,
@@ -10999,7 +10999,7 @@
       "fields": {
         "name": "Gordos",
         "base_zoid": null,
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large Large",
         "required_level": 8,
         "health": 250,
@@ -11130,7 +11130,7 @@
       "fields": {
         "name": "Gorhecks",
         "base_zoid": "Gordos",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Medium",
         "required_level": 9,
         "health": 150,
@@ -11261,7 +11261,7 @@
       "fields": {
         "name": "Gordos LR",
         "base_zoid": "Gordos",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large Large",
         "required_level": 10,
         "health": 250,
@@ -11380,7 +11380,7 @@
       "fields": {
         "name": "Red Horn",
         "base_zoid": null,
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large",
         "required_level": 8,
         "health": 240,
@@ -11506,7 +11506,7 @@
       "fields": {
         "name": "Red Horn BG (CAU)",
         "base_zoid": "Red Horn",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large",
         "required_level": 10,
         "health": 240,
@@ -11637,7 +11637,7 @@
       "fields": {
         "name": "Dark Horn",
         "base_zoid": "Red Horn",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large",
         "required_level": 13,
         "health": 300,
@@ -11768,7 +11768,7 @@
       "fields": {
         "name": "Dark Horn HS (CAU)",
         "base_zoid": "Dark Horn",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large",
         "required_level": 14,
         "health": 320,
@@ -11904,7 +11904,7 @@
       "fields": {
         "name": "Mad Thunder",
         "base_zoid": null,
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Extra Large",
         "required_level": 25,
         "health": 800,
@@ -12030,7 +12030,7 @@
       "fields": {
         "name": "Gun Blaster",
         "base_zoid": null,
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Large",
         "required_level": 19,
         "health": 400,
@@ -12156,7 +12156,7 @@
       "fields": {
         "name": "Brachios",
         "base_zoid": null,
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Medium",
         "required_level": 3,
         "health": 130,
@@ -12282,7 +12282,7 @@
       "fields": {
         "name": "Gilvader",
         "base_zoid": null,
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Extra Large",
         "required_level": 33,
         "health": 1200,
@@ -13558,7 +13558,7 @@
       "fields": {
         "name": "Godos",
         "base_zoid": null,
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Small",
         "required_level": 2,
         "health": 80,
@@ -13684,7 +13684,7 @@
       "fields": {
         "name": "Allosaurer",
         "base_zoid": "Godos",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Medium",
         "required_level": 7,
         "health": 120,
@@ -13815,7 +13815,7 @@
       "fields": {
         "name": "Iguan",
         "base_zoid": "Godos",
-        "type": "Dinosaur, Land",
+        "type": "Dinosaur",
         "size": "Small",
         "required_level": 2,
         "health": 80,
@@ -18926,7 +18926,7 @@
       "fields": {
         "name": "Redler",
         "base_zoid": null,
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Medium",
         "required_level": 5,
         "health": 80,
@@ -19057,7 +19057,7 @@
       "fields": {
         "name": "Redler BC (CAU)",
         "base_zoid": "Redler",
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Medium",
         "required_level": 9,
         "health": 150,
@@ -19184,7 +19184,7 @@
       "fields": {
         "name": "Redler Interceptor (CAU)",
         "base_zoid": "Redler",
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Medium",
         "required_level": 10,
         "health": 200,
@@ -19310,7 +19310,7 @@
       "fields": {
         "name": "Bloodler",
         "base_zoid": "Redler",
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Medium",
         "required_level": 15,
         "health": 250,
@@ -19436,7 +19436,7 @@
       "fields": {
         "name": "Pteras",
         "base_zoid": null,
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Small",
         "required_level": 2,
         "health": 55,
@@ -19567,7 +19567,7 @@
       "fields": {
         "name": "Pteras Bomber (CAU)",
         "base_zoid": "Pteras",
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Small",
         "required_level": 4,
         "health": 60,
@@ -19698,7 +19698,7 @@
       "fields": {
         "name": "Pteras Radome (CAU)",
         "base_zoid": "Pteras",
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Small",
         "required_level": 5,
         "health": 140,
@@ -19829,7 +19829,7 @@
       "fields": {
         "name": "Storm Sworder",
         "base_zoid": null,
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Large",
         "required_level": 13,
         "health": 220,
@@ -19960,7 +19960,7 @@
       "fields": {
         "name": "Stormsworder F (CAU)",
         "base_zoid": "Storm Sworder",
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Large",
         "required_level": 14,
         "health": 220,
@@ -20091,7 +20091,7 @@
       "fields": {
         "name": "Stormsworder FX (CAU)",
         "base_zoid": "Storm Sworder ",
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Large",
         "required_level": 17,
         "health": 280,
@@ -20227,7 +20227,7 @@
       "fields": {
         "name": "Zabat",
         "base_zoid": null,
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Small",
         "required_level": 3,
         "health": 60,
@@ -20353,7 +20353,7 @@
       "fields": {
         "name": "Raynos",
         "base_zoid": null,
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Medium",
         "required_level": 8,
         "health": 160,
@@ -20479,7 +20479,7 @@
       "fields": {
         "name": "Pteramander",
         "base_zoid": null,
-        "type": "Dinosaur, Flying",
+        "type": "Flying",
         "size": "Large Large",
         "required_level": 20,
         "health": 450,
