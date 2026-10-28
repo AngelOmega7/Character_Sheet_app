@@ -340,6 +340,24 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(set(editor.character.build.inactive_abilities), {"abilities:sniper_4", "abilities:fleet_footed_2"})
         self.assertEqual(calculate_stats(editor.character.build, editor.catalog), baseline)
 
+    def test_remove_inactive_ability_preserves_other_abilities_and_saves(self):
+        editor = self.editor
+        self.learn("Weapon Breaker 1")
+        self.learn("Fleet Footed")
+        editor.change_ability_slot(0, "abilities:fleet_footed")
+        editor.remove_inactive_ability("Weapon Breaker 1")
+        self.assertEqual(editor.character.build.inactive_abilities, ())
+        self.assertEqual(editor.character.build.abilities[0], "abilities:fleet_footed")
+        self.assertIn("abilities:weapon_breaker_1", {o.key for o in editor.ability_to_learn.options})
+        self.assertTrue(editor.dirty)
+        before = editor.character
+        editor.remove_inactive_ability("Fleet Footed")
+        self.assertEqual(editor.character, before)
+        editor.save()
+        self.assertEqual(self.store.load(editor.character.id).build.inactive_abilities, ())
+        self.learn("Weapon Breaker 1")
+        self.assertIn("abilities:weapon_breaker_1", editor.character.build.inactive_abilities)
+
     def test_second_size_ability_rejected_without_losing_owned_abilities(self):
         editor = self.editor
         self.learn("Small Expert")

@@ -109,10 +109,11 @@
       },
       "fields": {
         "name": "Demolitionist",
-        "description": "When you vent heat, you vent the heat of every weapon, rather than a single weapon."
+        "description": "While this feat is selected, venting a weapon removes 2 heat instead of 1 (minimum 0). Only the selected weapon is affected."
       },
       "dynamic_fields": {},
-      "handling": "player_managed"
+      "handling": "automated",
+      "vent_heat": 2
     },
     {
       "id": "feats:none",

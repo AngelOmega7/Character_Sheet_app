@@ -50,7 +50,7 @@ New pilots start with 10,000g, no automatically granted Zoid, and Organoid None.
 - Economized Shooting adds 1 maximum heat while active. Heat counters persist independently; firing at/above capacity works once then breaks the weapon.
 - Rest clears heat without healing or repairing broken weapons. Weapon repair costs 10,000g and clears heat/broken status. Health repair costs 10g per point. Weapon repair requires confirmation if more than 25% of health is missing.
 - Multi Attack, Smoke Master, Armor Breaker, Weapon Breaker, Counter Attack are tracked but player-managed.
-- Demolitionist is tracked but player-managed: manually Vent each applicable weapon.
+- Selected Demolitionist automatically vents 2 heat from the chosen weapon (minimum zero), preserving other weapons and broken status. Inactive pilot abilities can be removed from the Abilities panel and learned again later.
 - Use rolls one inclusive 1–20 d20 only for numerical-damage weapons, including the final overheating use. Non-damaging utilities use without rolling and retain activation controls. Empty Combat cards are hidden. Results persist across refreshes, Vent/Rest/repair, transfers, CAU switches, and save/reload.
 - Read-only attack previews remain separate: range affects Sniper and current health affects Comeback. Apply the displayed modifier to the raw die at the table. Range changes never use a weapon, add heat, or reroll.
 - Rest active loadout clears the current eight-slot weapons/equipment only, preserving health, shield damage, gold, and broken flags. Other stored/form-specific weapons retain heat; shared identities naturally retain the same condition across forms.

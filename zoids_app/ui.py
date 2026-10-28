@@ -9,7 +9,7 @@ import flet as ft
 from .catalog import Catalog
 from .characters import (PilotDetails, acquire_equipment, acquire_zoid, assign_pilot_ability, available_equipment,
                          delete_equipment, equip_owned_equipment, equipment_assignments, learn_pilot_ability,
-                         new_character, return_equipment_to_inventory, switch_zoid, validate_character)
+                         new_character, remove_pilot_ability, return_equipment_to_inventory, switch_zoid, validate_character)
 from .attacks import calculate_attack
 from .combat import RepairConfirmationRequired, RuleError
 from .combat_controller import combat_snapshot, repair_character_health, rest_active_loadout, rolls_damage, weapon_action
@@ -298,7 +298,7 @@ class CharacterEditor:
             self.character = self.profile_candidate()
             self.dirty = True
             self.render()
-            self.message("Feat tracking updated. Effects are handled at the table. Unsaved changes.")
+            self.message("Feats updated. Demolitionist applies automatically when venting. Unsaved changes.")
         except RuleError as exc:
             if type(slot) is int and 0 <= slot < 7:
                 feats = self.character.pilot_details.feats
@@ -308,7 +308,7 @@ class CharacterEditor:
     def feat_panel(self, character):
         records = sorted([r for r in self.catalog.tables["feats"]["records"] if r["kind"] == "record"], key=lambda r: r["name"])
         self.feat_slots, self.feat_descriptions = [], []
-        controls = [ft.Text("Seven tracking slots, matching the pilot sheet. Feat effects and eligibility are handled by players at the table.", size=13)]
+        controls = [ft.Text("Seven feat slots, matching the pilot sheet. Selected Demolitionist automatically vents 2 heat from one weapon. Other feat effects and eligibility are handled at the table.", size=13)]
         feats = character.pilot_details.feats
         for slot in range(7):
             selected = feats[slot] if slot < len(feats) else None
@@ -320,7 +320,7 @@ class CharacterEditor:
             self.feat_slots.append(dropdown)
             self.feat_descriptions.append(text)
             controls.extend([dropdown, text])
-        return card("Pilot feats · player-managed", controls)
+        return card("Pilot feats", controls)
 
     def apply_resources(self, event=None):
         try:
@@ -422,6 +422,17 @@ class CharacterEditor:
         except RuleError as exc:
             self.message(str(exc), True)
 
+    def remove_inactive_ability(self, ability):
+        try:
+            candidate = self.profile_candidate()
+            record = self.catalog.find("abilities", ability)
+            self.character = remove_pilot_ability(candidate, record["id"], self.catalog)
+            self.dirty = True
+            self.render()
+            self.message(f"Removed {record['name']} from inactive abilities. Unsaved changes.")
+        except RuleError as exc:
+            self.message(str(exc), True)
+
     def change_ability_slot(self, slot, value):
         try:
             candidate = self.profile_candidate()
@@ -487,7 +498,10 @@ class CharacterEditor:
             ft.Button("Learn / upgrade", on_click=self.learn_selected_ability, disabled=not learnable),
             *slot_controls,
             ft.Text(f"Owned inactive ({len(inactive)})", weight=ft.FontWeight.BOLD),
-            *[ft.Text(f"{r['name']} — {r['fields']['description'] or ''}", size=12, selectable=True) for r in inactive],
+            *[ft.Row([
+                ft.Text(f"{r['name']} — {r['fields']['description'] or ''}", size=12, selectable=True, expand=True),
+                ft.Button("Remove", on_click=lambda e, ability=r["id"]: self.remove_inactive_ability(ability)),
+            ]) for r in inactive],
             ft.Text("No inactive abilities yet." if not inactive else "Select an inactive ability in an active slot to activate it.", size=12),
             ft.Text("Weapon-card attack previews include range/health-dependent bonuses. Player-managed effects remain descriptive.", size=12, color="#AAC0D6"),
         ])

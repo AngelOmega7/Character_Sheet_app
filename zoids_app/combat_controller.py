@@ -88,8 +88,10 @@ def weapon_action(character, slot, action, *, confirmed=False, catalog=None):
         condition = WeaponCondition(result.weapon.heat if rating is not None else condition.heat, result.weapon.broken, roll)
         message = (f"d20: {roll}. " if rolls_damage(weapon) else "Equipment use recorded. ") + ("Use resolved; weapon is now broken." if result.broke_after_use else "Resolve the effect at the table.")
     elif action == "vent":
-        condition = replace(condition, heat=max(0, condition.heat - 1))
-        message = "Vented 1 heat (minimum 0). Broken status is unchanged."
+        amount = max((catalog.find("feats", feat).get("vent_heat", 1)
+                      for feat in character.pilot_details.feats if feat), default=1)
+        condition = replace(condition, heat=max(0, condition.heat - amount))
+        message = f"Vented {amount} heat (minimum 0). Broken status is unchanged."
     elif action == "repair":
         result = repair_weapon(state, character.gold, current_health=character.current_health,
                                maximum_health=stats["pilot"]["health"], confirmed=confirmed)

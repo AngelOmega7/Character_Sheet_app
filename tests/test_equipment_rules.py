@@ -99,4 +99,4 @@ class EquipmentRuleTests(unittest.TestCase):
         tags = weapon_tags(self.catalog.column(zoid, 33))
         self.assertTrue({"ranged", "bullet"} <= tags)
         self.assertNotIn("piercing", tags)
-        self.assertEqual(self.catalog.find("feats", "Demolitionist")["handling"], "player_managed")
+        self.assertEqual(self.catalog.find("feats", "Demolitionist")["handling"], "automated")

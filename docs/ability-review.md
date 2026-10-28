@@ -22,9 +22,9 @@ Owner confirmed these abilities need only active/inactive ownership tracking and
 | Weapon Breaker | Critical melee hits can destroy target weapons | Player managed |
 | Counter Attack | React to an enemy rolling a natural 1 | Player managed |
 
-Related feat: **Demolitionist** is tracked as player-managed. The player manually clicks Vent for each applicable weapon; no automatic multi-weapon Vent integration is required.
+Related feat: **Demolitionist** automatically makes Vent remove 2 heat instead of 1 from the chosen weapon while selected in a feat slot. Heat cannot go below zero; other weapons and broken status are unchanged.
 
-All seven feats now have saved tracking slots and visible descriptions in the Pilot feats panel. Phalanx Fire/Scrappy do not trigger automatic advantage rolls; Demolitionist does not alter Vent. Physical/Social and pilot notes are also tracking-only. Mental keeps its existing calculation rule.
+All seven feats have saved selection slots and visible descriptions in the Pilot feats panel. Phalanx Fire/Scrappy do not trigger automatic advantage rolls; Demolitionist's Vent bonus is automated. Physical/Social and pilot notes are tracking-only. Mental keeps its existing calculation rule. Inactive abilities can be removed from ownership using their Remove buttons, then learned again later if desired.
 
 ## Completed in the current milestone
 

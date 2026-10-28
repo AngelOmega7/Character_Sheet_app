@@ -34,7 +34,9 @@ Description formulas are preserved for provenance; their cached text is used as 
 
 ## Pilot fields and feats
 
-`Character.pilot_details` stores Physical and Social (integer tracking values), Personality, general inventory/cargo notes, Zi Database/campaign notes, and up to seven ordered feat selections. Names are canonicalized to stable feat IDs; blanks are empty slots. The editor displays each selected feat's description. These fields are saved pilot-wide and do not feed stat, heat, repair, or dice calculations. Eligibility/effects are handled at the table, including advantage and Demolitionist's multi-weapon Vent. Mental retains its existing reaction calculation.
+`Character.pilot_details` stores Physical and Social (integer tracking values), Personality, general inventory/cargo notes, Zi Database/campaign notes, and up to seven ordered feat selections. Names are canonicalized to stable feat IDs; blanks are empty slots. The editor displays each selected feat's description. Selected Demolitionist automatically vents 2 heat instead of 1 from the chosen weapon, clamped at zero; it does not vent other weapons or repair broken weapons. Other feat effects and eligibility are handled at the table. Physical/Social and notes remain tracking-only. Mental retains its existing reaction calculation.
+
+Owned inactive pilot abilities can be removed with the Remove button beside each entry. Removal preserves active slots and other inactive abilities; the ability becomes available to learn again. Save the character to persist the change.
 
 Source mapping: Physical/Social were Pilot!C4/C6; the general inventory area was G4:N11; the database area began at J13; feat slots were B41:B47. Source Personality (C7) displayed Organoid color through a formula; the app now provides independent editable tracking text. Old saves default these newly tracked fields to zero/blank/empty rather than copying the workbook's example pilot.
 
@@ -192,7 +194,7 @@ The current calculation ruleset is `owner-corrected-v13`, with reference data ve
 | **Deferred (Dashboard):** Organoid damage reads to-hit column, not damage column | Dashboard H23 | Preserve current to-hit lookup |
 | **Resolved:** legacy dice damage in weapons and descriptions | Zaber Fang family, Shadow Fox, Ultra Phalanx, and other weapon effect text | Convert NdM to N × M. Preserve damage type/multi-shot wording in notes and descriptions, and retain original text in the migration audit |
 | **Resolved:** broken Assist named range | Exported name points to #REF! | Validated equipment-selection API: Assist accepts equipment below ASSIST; Weapon and Assist accepts equipment from the whole Armaments sheet |
-| **Resolved:** Demolitionist feat changes Vent to all weapons | Feats A8:B8 | Tracked as player-managed; player manually selects Vent for each applicable weapon. No automatic multi-weapon Vent required |
+| **Resolved:** Demolitionist vents 2 heat from one weapon | Feats A8:B8; owner rule update | Automated while selected in a feat slot. Vent removes 2 heat from the chosen weapon, minimum zero; other weapons and broken status are preserved |
 
 The five TO_PERCENT wrappers on Dashboard are translated as numeric identity on their computed fractions, not as the exported IFERROR fallback constants. Display-only SPARKLINE wrappers will become UI bars. Shared Dashboard style selectors and sums are implemented directly as Python lookups and sums, not as an Excel formula interpreter.
 

@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 from zoids_app.catalog import Catalog
 from test_support import established_character
-from zoids_app.characters import (FixedWeaponCondition, acquire_equipment, acquire_zoid, assign_pilot_ability,
+from zoids_app.characters import (FixedWeaponCondition, PilotDetails, acquire_equipment, acquire_zoid, assign_pilot_ability,
     equip_owned_equipment, learn_pilot_ability, new_character, return_equipment_to_inventory, switch_zoid)
 from zoids_app.combat import RepairConfirmationRequired, RuleError, WeaponCondition
 from zoids_app.combat_controller import attack_preview, combat_snapshot, repair_character_health, rest_active_loadout, weapon_action
@@ -81,6 +81,31 @@ class CombatControllerTests(unittest.TestCase):
         self.assertEqual(self.condition(rested), WeaponCondition(0, True, 10))
         self.assertEqual(rested.inventory[1].condition.heat, 2)  # Unattached copy is not in this loadout.
         self.assertEqual((rested.current_health, rested.gold, rested.build.shield_adjustment), (27, 123, 19))
+
+    def test_demolitionist_vents_two_from_only_selected_copy_and_clamps_at_zero(self):
+        character = self.pilot(2)
+        character = equip_owned_equipment(character, "right", character.inventory[1].id, self.catalog)
+        for _ in range(4):
+            character = self.act(character)
+        character = self.act(character, slot="right")
+        character = replace(character, pilot_details=PilotDetails(feats=("Demolitionist",)))
+        result = weapon_action(character, "left", "vent", catalog=self.catalog)
+        self.assertIn("Vented 2 heat", result.message)
+        self.assertEqual(self.condition(result.character), WeaponCondition(2, True, 10))
+        self.assertEqual(self.condition(result.character, "right"), self.condition(character, "right"))
+        cooled = self.act(result.character, "vent", slot="right")
+        self.assertEqual(self.condition(cooled, "right").heat, 0)
+        without_feat = replace(result.character, pilot_details=PilotDetails())
+        self.assertEqual(self.condition(self.act(without_feat, "vent")).heat, 1)
+
+    def test_demolitionist_applies_to_fixed_weapons_without_repairing_them(self):
+        character = acquire_zoid(new_character(self.catalog), "Berserk Fury", self.catalog)
+        character = switch_zoid(character, character.owned_zoids[-1].id, catalog=self.catalog)
+        for _ in range(2):
+            character = self.act(character, slot="fixed_2")
+        character = replace(character, pilot_details=PilotDetails(feats=("feats:demolitionist",)))
+        cooled = self.act(character, "vent", slot="fixed_2")
+        self.assertEqual(self.condition(cooled, "fixed_2"), WeaponCondition(0, True, 10))
 
     def test_rest_does_not_clear_form_specific_weapons_outside_active_loadout(self):
         character = acquire_zoid(new_character(self.catalog), "Liger Zero", self.catalog)

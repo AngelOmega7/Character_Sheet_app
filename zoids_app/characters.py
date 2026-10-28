@@ -77,7 +77,7 @@ class StoredFuzor:
 
 @dataclass(frozen=True)
 class PilotDetails:
-    """Player-managed sheet fields; they never feed automated Zoid rules."""
+    """Pilot sheet fields and selected feats, including automated combat effects."""
     physical: int = 0
     social: int = 0
     personality: str = ""
@@ -436,6 +436,18 @@ def learn_pilot_ability(character, ability, catalog=None):
     loadout = learn_ability(AbilityLoadout(character.build.abilities, character.build.inactive_abilities), ability, catalog)
     return validate_character(replace(character, build=replace(character.build,
         abilities=loadout.active, inactive_abilities=loadout.inactive)), catalog)
+
+
+def remove_pilot_ability(character, ability, catalog=None):
+    """Remove an owned inactive ability; active abilities must be deactivated first."""
+    catalog = catalog or Catalog()
+    loadout = validate_loadout(AbilityLoadout(character.build.abilities, character.build.inactive_abilities), catalog)
+    record = catalog.find("abilities", ability)
+    if record["id"] not in loadout.inactive:
+        raise RuleError("Only owned inactive abilities can be removed; deactivate an active ability first")
+    return validate_character(replace(character, build=replace(character.build,
+        abilities=loadout.active,
+        inactive_abilities=tuple(a for a in loadout.inactive if a != record["id"]))), catalog)
 
 
 def assign_pilot_ability(character, slot, ability=None, catalog=None):
