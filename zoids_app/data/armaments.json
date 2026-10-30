@@ -3103,6 +3103,43 @@
       }
     },
     {
+      "id": "armaments:acid_blade",
+      "name": "Acid Blade",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 87
+      },
+      "fields": {
+        "name": "Acid Blade",
+        "damage": 100,
+        "damage_type": "Melee, Acid, Defense",
+        "effect": "Acid-coated blade attack. Targets a single opponent. Make the attack against the target's Reaction stat instead of its Armor stat. Each time a Zoid takes damage from this weapon, its Armor is reduced by 3. For every 10 damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions last until repaired.",
+        "to_hit": 15,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 20,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Melee",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Ranged, Acid, Defense",
+          "corrected": "Melee, Acid, Defense",
+          "reason": "Owner-requested melee variant; other gameplay stats and effects match the original cannon."
+        }
+      },
+      "derived_from": "armaments:acid_cannon"
+    },
+    {
       "id": "armaments:concentrate_acid_cannon",
       "name": "Concentrate Acid Cannon:",
       "kind": "record",
@@ -3139,6 +3176,43 @@
       }
     },
     {
+      "id": "armaments:concentrate_acid_blade",
+      "name": "Concentrate Acid Blade",
+      "kind": "record",
+      "source": {
+        "sheet": "Armaments",
+        "row": 88
+      },
+      "fields": {
+        "name": "Concentrate Acid Blade",
+        "damage": 200,
+        "damage_type": "Melee, Acid, Defense",
+        "effect": "Acid-coated blade attack. Targets a single opponent. Make the attack against the target's Reaction stat instead of its Armor stat. Each time a Zoid takes damage from this weapon, its Armor is reduced by 5. For every 10 damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions last until repaired.",
+        "to_hit": 15,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 23,
+        "activation": null,
+        "shields": null,
+        "weapon_class": "Melee",
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "assist_eligible": false,
+      "corrections": {
+        "damage_type": {
+          "original": "Ranged, Acid, Defense",
+          "corrected": "Melee, Acid, Defense",
+          "reason": "Owner-requested melee variant; other gameplay stats and effects match the original cannon."
+        }
+      },
+      "derived_from": "armaments:concentrate_acid_cannon"
+    },
+    {
       "id": "armaments:spark_cannon",
       "name": "Spark Cannon:",
       "kind": "record",
@@ -3150,7 +3224,7 @@
         "name": "Spark Cannon:",
         "damage": 50,
         "damage_type": "Ranged, Electrical",
-        "effect": "Opponents damaged by this attack must roll percentile. On a roll of 49 or lower, the Zoid is frozen. At the end of each of its turns, it may roll again; a roll above 49 unfreezes it.",
+        "effect": "On a hit, the target must roll percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if the attack roll is still higher than the target's Reaction, the target must roll percentile; on 25 or lower, it suffers the Freeze condition. At the end of each of its turns, the target may roll percentile again to unfreeze; a roll above 49 ends the Freeze condition.",
         "to_hit": 15,
         "defense": null,
         "armor": null,
@@ -3186,7 +3260,7 @@
         "name": "Super Spark Cannon:",
         "damage": 50,
         "damage_type": "Ranged, Electrical",
-        "effect": "Fires an arc of electricity. Targets a single opponent. Must be within 75 meters. Opponents damaged by this attack must make a percentile roll. if the roll is a 49 or lower the Zoid is frozen. At the end of their turn they may roll again to unfreeze. ",
+        "effect": "Fires an arc of electricity. Targets a single opponent. Must be within 75 meters. On a hit, the target must roll percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if the attack roll is still higher than the target's Reaction, the target must roll percentile; on 25 or lower, it suffers the Freeze condition. At the end of each of its turns, the target may roll percentile again to unfreeze; a roll above 49 ends the Freeze condition.",
         "to_hit": 15,
         "defense": null,
         "armor": null,
@@ -3222,7 +3296,7 @@
         "name": "Extra Electro Magnetic Cannon:",
         "damage": 120,
         "damage_type": "Ranged, Electrical",
-        "effect": "Fires an arc of electricity. Targets up to two opponents. The second opponent must be within 60m of the first opponent. Must be within 75m. Opponents damaged by this attack must make a percentile roll. if the roll is a 49 or lower the Zoid is frozen. At the end of their turn they may roll again to unfreeze. Deals the listed damage to each target; damage is not split.",
+        "effect": "Fires an arc of electricity. Targets up to two opponents. The second opponent must be within 60m of the first opponent. Must be within 75m. Deals the listed damage to each target; damage is not split. On a hit, the target must roll percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if the attack roll is still higher than the target's Reaction, the target must roll percentile; on 25 or lower, it suffers the Freeze condition. At the end of each of its turns, the target may roll percentile again to unfreeze; a roll above 49 ends the Freeze condition.",
         "to_hit": 16,
         "defense": null,
         "armor": null,
@@ -3258,7 +3332,7 @@
         "name": "Ele Shot:",
         "damage": 140,
         "damage_type": "Ranged, Electrical",
-        "effect": "Fires an arc of electricity. Targets up to two opponents. Second target must be within 75m of the first. Must be within 75m. On a Hit opponents must roll a percentile die. A roll of 49 or lower will cause the Zoid to freeze. At the end of their next turn they can roll again for a chance to unfreeze. Deals the listed damage to each target; damage is not split.",
+        "effect": "Fires an arc of electricity. Targets up to two opponents. Second target must be within 75m of the first. Must be within 75m. Deals the listed damage to each target; damage is not split. On a hit, the target must roll percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if the attack roll is still higher than the target's Reaction, the target must roll percentile; on 25 or lower, it suffers the Freeze condition. At the end of its next turn, the target may roll percentile again to unfreeze; a roll above 49 ends the Freeze condition.",
         "to_hit": 17,
         "defense": null,
         "armor": null,

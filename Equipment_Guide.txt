@@ -1,7 +1,7 @@
 ==============================================================================
 REMOVABLE EQUIPMENT - STAT BLOCK COMPANION
 ==============================================================================
-89 catalog weapons; 7 Zoid-specific removable weapon entries.
+91 catalog weapons; 7 Zoid-specific removable weapon entries.
 61 catalog assist items; 4 Zoid-specific assist entries.
 
 Gravity Cannon is unpriced by design.
@@ -38,79 +38,81 @@ CONTENTS - CATALOG WEAPONS
 014  Accelerated Cannons
 015  Accelerated Gatling
 016  Accelerated Impact Cannon
-017  Acid Cannon
-018  Anti-Air 16-Set Missile
-019  Anti-Air 2-Set Missile
-020  Anti-Air 4-Set Missile
-021  Anti-Air 8-Set Missile
-022  Anti-Air Gatling
-023  Anti-Air Laser
-024  Anti-Air Machine Gun
-025  Anti-Air Mega Vulcan
-026  Anti-Air Vulcan
-027  Assault Beam Cannon
-028  Assault Cannon
-029  Assault Rifle
-030  Beam Cannon
-031  Beam Needle
-032  Beam Rifle
-033  Buster Cannon
-034  Charge Particle Cannon
-035  Close-Range Rail Gun
-036  Concentrate Acid Cannon
-037  Double Cannon
-038  Ele Shot
-039  External Charge Particle Cannon
-040  Extra Electro Magnetic Cannon
-041  Focus Charge Particle Cannon
-042  Gatling Beam
-043  Gatling Cannon
-044  Gravity Cannon
-045  Great Charge Particle Cannon
-046  Heavy Gatling
-047  Heavy Machine Gun
-048  Heavy Particle Cannon
-049  High Speed Gatling
-050  High Speed Rail Gun
-051  Hybrid Cannon
-052  Hyper Cannon
-053  Hyper Machine Gun
-054  Hyper Missile
-055  Hyper Particle Cannon
-056  Hyper Rail Gun
-057  Impact Cannon
-058  Large Missile
-059  Laser Machine Gun
-060  Linear Cannon
-061  Long-Range Missile
-062  Long-Range Rifle
-063  Machine Gun
-064  Mega Vulcan
-065  Mini Laser
-066  Napalm Missile
-067  Neutron Missile
-068  Particle Cannon
-069  Photon Paticle Cannon
-070  Plasma Particle Cannon
-071  Poison Cloud Cannon
-072  Poison Gas Cannon
-073  Poison Mist Cannon
-074  Pulse Laser Gun
-075  Rail Gun
-076  Ray Storm
-077  Reaction Missile
-078  Rolling Cannon
-079  Shock Gun
-080  Sonic Cannon
-081  Spark Cannon
-082  Spread Charge Particle Cannon
-083  Spread Missile
-084  Super Sonic Cannon
-085  Super Spark Cannon
-086  Super Speed Rail Gun
-087  Triple Cannon
-088  Ultra Cannon
-089  Vulcan Gun
+017  Acid Blade
+018  Acid Cannon
+019  Anti-Air 16-Set Missile
+020  Anti-Air 2-Set Missile
+021  Anti-Air 4-Set Missile
+022  Anti-Air 8-Set Missile
+023  Anti-Air Gatling
+024  Anti-Air Laser
+025  Anti-Air Machine Gun
+026  Anti-Air Mega Vulcan
+027  Anti-Air Vulcan
+028  Assault Beam Cannon
+029  Assault Cannon
+030  Assault Rifle
+031  Beam Cannon
+032  Beam Needle
+033  Beam Rifle
+034  Buster Cannon
+035  Charge Particle Cannon
+036  Close-Range Rail Gun
+037  Concentrate Acid Blade
+038  Concentrate Acid Cannon
+039  Double Cannon
+040  Ele Shot
+041  External Charge Particle Cannon
+042  Extra Electro Magnetic Cannon
+043  Focus Charge Particle Cannon
+044  Gatling Beam
+045  Gatling Cannon
+046  Gravity Cannon
+047  Great Charge Particle Cannon
+048  Heavy Gatling
+049  Heavy Machine Gun
+050  Heavy Particle Cannon
+051  High Speed Gatling
+052  High Speed Rail Gun
+053  Hybrid Cannon
+054  Hyper Cannon
+055  Hyper Machine Gun
+056  Hyper Missile
+057  Hyper Particle Cannon
+058  Hyper Rail Gun
+059  Impact Cannon
+060  Large Missile
+061  Laser Machine Gun
+062  Linear Cannon
+063  Long-Range Missile
+064  Long-Range Rifle
+065  Machine Gun
+066  Mega Vulcan
+067  Mini Laser
+068  Napalm Missile
+069  Neutron Missile
+070  Particle Cannon
+071  Photon Paticle Cannon
+072  Plasma Particle Cannon
+073  Poison Cloud Cannon
+074  Poison Gas Cannon
+075  Poison Mist Cannon
+076  Pulse Laser Gun
+077  Rail Gun
+078  Ray Storm
+079  Reaction Missile
+080  Rolling Cannon
+081  Shock Gun
+082  Sonic Cannon
+083  Spark Cannon
+084  Spread Charge Particle Cannon
+085  Spread Missile
+086  Super Sonic Cannon
+087  Super Spark Cannon
+088  Super Speed Rail Gun
+089  Triple Cannon
+090  Ultra Cannon
+091  Vulcan Gun
 
 CONTENTS - ZOID-SPECIFIC REMOVABLE WEAPONS
 Z01  5-Shot Missile Pod - Konig Wolf DSR (CAU)
@@ -393,7 +395,22 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Single barrel cannon. Targets a single opponent. Max range of 300m
 
 ------------------------------------------------------------------------------
-[017] Acid Cannon
+[017] Acid Blade
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 6,250g
+  Pricing basis: Damage/accuracy base 5,000g; +25% defense reduction.
+  Weapon class: Melee | Damage type: Melee, Acid, Defense
+  Damage: 100 | To hit: 15
+  Weight: 20
+  Effect: Acid-coated blade attack. Targets a single opponent. Make the attack
+  against the target's Reaction stat instead of its Armor stat. Each time a
+  Zoid takes damage from this weapon, its Armor is reduced by 3. For every 10
+  damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions
+  last until repaired.
+
+------------------------------------------------------------------------------
+[018] Acid Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 6,250g
@@ -408,7 +425,7 @@ SECTION 1 - REMOVABLE WEAPONS
   last until repaired.
 
 ------------------------------------------------------------------------------
-[018] Anti-Air 16-Set Missile
+[019] Anti-Air 16-Set Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 10,250g
@@ -422,7 +439,7 @@ SECTION 1 - REMOVABLE WEAPONS
   split between them.
 
 ------------------------------------------------------------------------------
-[019] Anti-Air 2-Set Missile
+[020] Anti-Air 2-Set Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 4,750g
@@ -433,7 +450,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Fires two missiles. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[020] Anti-Air 4-Set Missile
+[021] Anti-Air 4-Set Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 5,000g
@@ -446,7 +463,7 @@ SECTION 1 - REMOVABLE WEAPONS
   between them.
 
 ------------------------------------------------------------------------------
-[021] Anti-Air 8-Set Missile
+[022] Anti-Air 8-Set Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 7,500g
@@ -459,7 +476,7 @@ SECTION 1 - REMOVABLE WEAPONS
   between them.
 
 ------------------------------------------------------------------------------
-[022] Anti-Air Gatling
+[023] Anti-Air Gatling
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 4,500g
@@ -473,7 +490,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Successful saves take no damage.
 
 ------------------------------------------------------------------------------
-[023] Anti-Air Laser
+[024] Anti-Air Laser
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
@@ -484,7 +501,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Fires an energy beam. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[024] Anti-Air Machine Gun
+[025] Anti-Air Machine Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 3,000g
@@ -495,7 +512,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Small machine gun. Target a single opponent.
 
 ------------------------------------------------------------------------------
-[025] Anti-Air Mega Vulcan
+[026] Anti-Air Mega Vulcan
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 16,750g
@@ -509,7 +526,7 @@ SECTION 1 - REMOVABLE WEAPONS
   take no damage
 
 ------------------------------------------------------------------------------
-[026] Anti-Air Vulcan
+[027] Anti-Air Vulcan
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 12,000g
@@ -523,7 +540,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[027] Assault Beam Cannon
+[028] Assault Beam Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 4,500g
@@ -535,7 +552,7 @@ SECTION 1 - REMOVABLE WEAPONS
   opponent.
 
 ------------------------------------------------------------------------------
-[028] Assault Cannon
+[029] Assault Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 10,000g
@@ -547,7 +564,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Double barrel cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[029] Assault Rifle
+[030] Assault Rifle
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 8,500g
@@ -559,7 +576,7 @@ SECTION 1 - REMOVABLE WEAPONS
   opponent.
 
 ------------------------------------------------------------------------------
-[030] Beam Cannon
+[031] Beam Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 7,750g
@@ -570,7 +587,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Fires a single energy bolts targets a single opponent.
 
 ------------------------------------------------------------------------------
-[031] Beam Needle
+[032] Beam Needle
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 14,500g
@@ -583,7 +600,7 @@ SECTION 1 - REMOVABLE WEAPONS
   the listed damage to each target; damage is not split.
 
 ------------------------------------------------------------------------------
-[032] Beam Rifle
+[033] Beam Rifle
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 6,500g
@@ -595,7 +612,7 @@ SECTION 1 - REMOVABLE WEAPONS
   opponent.
 
 ------------------------------------------------------------------------------
-[033] Buster Cannon
+[034] Buster Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 18,000g
@@ -608,7 +625,7 @@ SECTION 1 - REMOVABLE WEAPONS
   of 225m
 
 ------------------------------------------------------------------------------
-[034] Charge Particle Cannon
+[035] Charge Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 15,500g
@@ -624,7 +641,7 @@ SECTION 1 - REMOVABLE WEAPONS
   between the two beams.
 
 ------------------------------------------------------------------------------
-[035] Close-Range Rail Gun
+[036] Close-Range Rail Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 8,750g
@@ -635,7 +652,22 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Rail cannon. Targets a single opponent. Maximum range of 150m.
 
 ------------------------------------------------------------------------------
-[036] Concentrate Acid Cannon
+[037] Concentrate Acid Blade
+------------------------------------------------------------------------------
+  Slot eligibility: Weapon and Assist
+  Proposed price: 12,500g
+  Pricing basis: Damage/accuracy base 10,000g; +25% defense reduction.
+  Weapon class: Melee | Damage type: Melee, Acid, Defense
+  Damage: 200 | To hit: 15
+  Weight: 23
+  Effect: Acid-coated blade attack. Targets a single opponent. Make the attack
+  against the target's Reaction stat instead of its Armor stat. Each time a
+  Zoid takes damage from this weapon, its Armor is reduced by 5. For every 10
+  damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions
+  last until repaired.
+
+------------------------------------------------------------------------------
+[038] Concentrate Acid Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 12,500g
@@ -650,7 +682,7 @@ SECTION 1 - REMOVABLE WEAPONS
   reductions last until repaired.
 
 ------------------------------------------------------------------------------
-[037] Double Cannon
+[039] Double Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 4,250g
@@ -662,7 +694,7 @@ SECTION 1 - REMOVABLE WEAPONS
   120m.
 
 ------------------------------------------------------------------------------
-[038] Ele Shot
+[040] Ele Shot
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 16,750g
@@ -672,14 +704,16 @@ SECTION 1 - REMOVABLE WEAPONS
   Damage: 140 | To hit: 17
   Weight: 25
   Effect: Fires an arc of electricity. Targets up to two opponents. Second
-  target must be within 75m of the first. Must be within 75m. On a Hit
-  opponents must roll a percentile die. A roll of 49 or lower will cause the
-  Zoid to freeze. At the end of their next turn they can roll again for a
-  chance to unfreeze. Deals the listed damage to each target; damage is not
-  split.
+  target must be within 75m of the first. Must be within 75m. Deals the listed
+  damage to each target; damage is not split. On a hit, the target must roll
+  percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if
+  the attack roll is still higher than the target's Reaction, the target must
+  roll percentile; on 25 or lower, it suffers the Freeze condition. At the end
+  of its next turn, the target may roll percentile again to unfreeze; a roll
+  above 49 ends the Freeze condition.
 
 ------------------------------------------------------------------------------
-[039] External Charge Particle Cannon
+[041] External Charge Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 13,250g
@@ -691,7 +725,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: can target up to four opponents. Each shot deals 50 damage.
 
 ------------------------------------------------------------------------------
-[040] Extra Electro Magnetic Cannon
+[042] Extra Electro Magnetic Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 13,250g
@@ -701,14 +735,16 @@ SECTION 1 - REMOVABLE WEAPONS
   Damage: 120 | To hit: 16
   Weight: 23
   Effect: Fires an arc of electricity. Targets up to two opponents. The second
-  opponent must be within 60m of the first opponent. Must be within 75m.
-  Opponents damaged by this attack must make a percentile roll. if the roll is
-  a 49 or lower the Zoid is frozen. At the end of their turn they may roll
-  again to unfreeze. Deals the listed damage to each target; damage is not
-  split.
+  opponent must be within 60m of the first opponent. Must be within 75m. Deals
+  the listed damage to each target; damage is not split. On a hit, the target
+  must roll percentile; on 49 or lower, it suffers the Freeze condition. On a
+  miss, if the attack roll is still higher than the target's Reaction, the
+  target must roll percentile; on 25 or lower, it suffers the Freeze
+  condition. At the end of each of its turns, the target may roll percentile
+  again to unfreeze; a roll above 49 ends the Freeze condition.
 
 ------------------------------------------------------------------------------
-[041] Focus Charge Particle Cannon
+[043] Focus Charge Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 23,000g
@@ -722,7 +758,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[042] Gatling Beam
+[044] Gatling Beam
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 33,500g
@@ -734,7 +770,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Rapid fire energy gun. Targets an horizontal area 30m by 90m.
 
 ------------------------------------------------------------------------------
-[043] Gatling Cannon
+[045] Gatling Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
@@ -748,7 +784,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Successful saves take no damage
 
 ------------------------------------------------------------------------------
-[044] Gravity Cannon
+[046] Gravity Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Weight: 100
@@ -756,7 +792,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: An immense weapon with devastating fire-power.
 
 ------------------------------------------------------------------------------
-[045] Great Charge Particle Cannon
+[047] Great Charge Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 98,000g
@@ -771,7 +807,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage. Must recharge for three turns.
 
 ------------------------------------------------------------------------------
-[046] Heavy Gatling
+[048] Heavy Gatling
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 10,750g
@@ -785,7 +821,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Successful saves take no damage.
 
 ------------------------------------------------------------------------------
-[047] Heavy Machine Gun
+[049] Heavy Machine Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 5,500g
@@ -796,7 +832,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: First a single burst. Targets a single opponent
 
 ------------------------------------------------------------------------------
-[048] Heavy Particle Cannon
+[050] Heavy Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 18,750g
@@ -811,7 +847,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[049] High Speed Gatling
+[051] High Speed Gatling
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 13,500g
@@ -823,7 +859,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Targets a horizontal area 30m wide by 75m long.
 
 ------------------------------------------------------------------------------
-[050] High Speed Rail Gun
+[052] High Speed Rail Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 6,500g
@@ -837,7 +873,7 @@ SECTION 1 - REMOVABLE WEAPONS
   the remaining damage.
 
 ------------------------------------------------------------------------------
-[051] Hybrid Cannon
+[053] Hybrid Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 11,750g
@@ -850,7 +886,7 @@ SECTION 1 - REMOVABLE WEAPONS
   opponent. Minimum range of 100m.
 
 ------------------------------------------------------------------------------
-[052] Hyper Cannon
+[054] Hyper Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 17,500g
@@ -863,7 +899,7 @@ SECTION 1 - REMOVABLE WEAPONS
   additional effects.
 
 ------------------------------------------------------------------------------
-[053] Hyper Machine Gun
+[055] Hyper Machine Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 22,500g
@@ -877,7 +913,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[054] Hyper Missile
+[056] Hyper Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 65,000g
@@ -892,7 +928,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[055] Hyper Particle Cannon
+[057] Hyper Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 22,000g
@@ -907,7 +943,7 @@ SECTION 1 - REMOVABLE WEAPONS
   the listed damage; a successful save takes no damage.
 
 ------------------------------------------------------------------------------
-[056] Hyper Rail Gun
+[058] Hyper Rail Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 10,000g
@@ -920,7 +956,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[057] Impact Cannon
+[059] Impact Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 2,750g
@@ -931,7 +967,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Single barrel cannon. Targets a single opponent. Max range of 210m
 
 ------------------------------------------------------------------------------
-[058] Large Missile
+[060] Large Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 8,500g
@@ -943,7 +979,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Fires a single missile. Minimum range of 400m.
 
 ------------------------------------------------------------------------------
-[059] Laser Machine Gun
+[061] Laser Machine Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 4,250g
@@ -956,7 +992,7 @@ SECTION 1 - REMOVABLE WEAPONS
   split between targets.
 
 ------------------------------------------------------------------------------
-[060] Linear Cannon
+[062] Linear Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 7,750g
@@ -968,7 +1004,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Single fire cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[061] Long-Range Missile
+[063] Long-Range Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 5,500g
@@ -980,7 +1016,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Single missile. Targets a single opponent. Minimum range of 800m
 
 ------------------------------------------------------------------------------
-[062] Long-Range Rifle
+[064] Long-Range Rifle
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 11,250g
@@ -992,7 +1028,7 @@ SECTION 1 - REMOVABLE WEAPONS
   range of 300m.
 
 ------------------------------------------------------------------------------
-[063] Machine Gun
+[065] Machine Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 2,000g
@@ -1003,7 +1039,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Small machine gun. Target a single opponent.
 
 ------------------------------------------------------------------------------
-[064] Mega Vulcan
+[066] Mega Vulcan
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 14,500g
@@ -1017,7 +1053,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[065] Mini Laser
+[067] Mini Laser
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
@@ -1029,7 +1065,7 @@ SECTION 1 - REMOVABLE WEAPONS
   threshold it punctures through the Zoid to hit whatever is behind it.
 
 ------------------------------------------------------------------------------
-[066] Napalm Missile
+[068] Napalm Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 28,750g
@@ -1046,7 +1082,7 @@ SECTION 1 - REMOVABLE WEAPONS
   last until repaired.
 
 ------------------------------------------------------------------------------
-[067] Neutron Missile
+[069] Neutron Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 30,000g
@@ -1061,7 +1097,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[068] Particle Cannon
+[070] Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 7,250g
@@ -1075,7 +1111,7 @@ SECTION 1 - REMOVABLE WEAPONS
   the path must make a reaction against your attack roll or take damage.
 
 ------------------------------------------------------------------------------
-[069] Photon Paticle Cannon
+[071] Photon Paticle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 12,750g
@@ -1089,7 +1125,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[070] Plasma Particle Cannon
+[072] Plasma Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 31,250g
@@ -1103,7 +1139,7 @@ SECTION 1 - REMOVABLE WEAPONS
   the listed damage to each target; damage is not split.
 
 ------------------------------------------------------------------------------
-[071] Poison Cloud Cannon
+[073] Poison Cloud Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 24,000g
@@ -1119,7 +1155,7 @@ SECTION 1 - REMOVABLE WEAPONS
   start of their next turn.
 
 ------------------------------------------------------------------------------
-[072] Poison Gas Cannon
+[074] Poison Gas Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 8,750g
@@ -1134,7 +1170,7 @@ SECTION 1 - REMOVABLE WEAPONS
   start of their next turn.
 
 ------------------------------------------------------------------------------
-[073] Poison Mist Cannon
+[075] Poison Mist Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 18,000g
@@ -1150,7 +1186,7 @@ SECTION 1 - REMOVABLE WEAPONS
   start of their next turn.
 
 ------------------------------------------------------------------------------
-[074] Pulse Laser Gun
+[076] Pulse Laser Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 6,000g
@@ -1161,7 +1197,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Fires a bust of energy beams. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[075] Rail Gun
+[077] Rail Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 8,500g
@@ -1172,7 +1208,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Rail cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[076] Ray Storm
+[078] Ray Storm
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 11,250g
@@ -1186,7 +1222,7 @@ SECTION 1 - REMOVABLE WEAPONS
   shots.
 
 ------------------------------------------------------------------------------
-[077] Reaction Missile
+[079] Reaction Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 60,000g
@@ -1201,7 +1237,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage.
 
 ------------------------------------------------------------------------------
-[078] Rolling Cannon
+[080] Rolling Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 8,750g
@@ -1213,7 +1249,7 @@ SECTION 1 - REMOVABLE WEAPONS
   target Zoid it will pierce through the Zoid.
 
 ------------------------------------------------------------------------------
-[079] Shock Gun
+[081] Shock Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 3,250g
@@ -1224,7 +1260,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Single barrel cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[080] Sonic Cannon
+[082] Sonic Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 7,500g
@@ -1238,7 +1274,7 @@ SECTION 1 - REMOVABLE WEAPONS
   next turn. Ranged, Pilot
 
 ------------------------------------------------------------------------------
-[081] Spark Cannon
+[083] Spark Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 3,750g
@@ -1246,12 +1282,15 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Electrical
   Damage: 50 | To hit: 15
   Weight: 15
-  Effect: Opponents damaged by this attack must roll percentile. On a roll of
-  49 or lower, the Zoid is frozen. At the end of each turn, it may roll
-  again; a roll above 49 unfreezes it.
+  Effect: On a hit, the target must roll percentile; on 49 or lower, it
+  suffers the Freeze condition. On a miss, if the attack roll is still higher
+  than the target's Reaction, the target must roll percentile; on 25 or lower,
+  it suffers the Freeze condition. At the end of each of its turns, the target
+  may roll percentile again to unfreeze; a roll above 49 ends the Freeze
+  condition.
 
 ------------------------------------------------------------------------------
-[082] Spread Charge Particle Cannon
+[084] Spread Charge Particle Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 60,000g
@@ -1266,7 +1305,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage. Must recharge for three turns.
 
 ------------------------------------------------------------------------------
-[083] Spread Missile
+[085] Spread Missile
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 26,000g
@@ -1281,7 +1320,7 @@ SECTION 1 - REMOVABLE WEAPONS
   damage is not split.
 
 ------------------------------------------------------------------------------
-[084] Super Sonic Cannon
+[086] Super Sonic Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 11,250g
@@ -1295,7 +1334,7 @@ SECTION 1 - REMOVABLE WEAPONS
   next turn.
 
 ------------------------------------------------------------------------------
-[085] Super Spark Cannon
+[087] Super Spark Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
@@ -1305,12 +1344,15 @@ SECTION 1 - REMOVABLE WEAPONS
   Damage: 50 | To hit: 15
   Weight: 23
   Effect: Fires an arc of electricity. Targets a single opponent. Must be
-  within 75 meters. Opponents damaged by this attack must make a percentile
-  roll. if the roll is a 49 or lower the Zoid is frozen. At the end of their
-  turn they may roll again to unfreeze.
+  within 75 meters. On a hit, the target must roll percentile; on 49 or lower,
+  it suffers the Freeze condition. On a miss, if the attack roll is still
+  higher than the target's Reaction, the target must roll percentile; on 25 or
+  lower, it suffers the Freeze condition. At the end of each of its turns, the
+  target may roll percentile again to unfreeze; a roll above 49 ends the
+  Freeze condition.
 
 ------------------------------------------------------------------------------
-[086] Super Speed Rail Gun
+[088] Super Speed Rail Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 10,750g
@@ -1323,7 +1365,7 @@ SECTION 1 - REMOVABLE WEAPONS
   the remaining damage.
 
 ------------------------------------------------------------------------------
-[087] Triple Cannon
+[089] Triple Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 7,500g
@@ -1334,7 +1376,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Triple barrel cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[088] Ultra Cannon
+[090] Ultra Cannon
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 30,000g
@@ -1346,7 +1388,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Effect: Large single barrel cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
-[089] Vulcan Gun
+[091] Vulcan Gun
 ------------------------------------------------------------------------------
   Slot eligibility: Weapon and Assist
   Proposed price: 4,750g

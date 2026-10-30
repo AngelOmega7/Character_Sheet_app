@@ -218,7 +218,12 @@ FIXED WEAPONS & SYSTEMS
      Damage: 70 | Type: Ranged, Laser | To hit: 18
   2. Electric Claw
      Damage: 70 | Type: Melee, Piercing, Electrical | To hit: 16
-     Effect: Claw attack. Targets a single opponent.
+     Effect: Claw attack. Targets a single opponent. On a hit, the target must
+     roll percentile; on 49 or lower, it suffers the Freeze condition. On a
+     miss, if the attack roll is still higher than the target's Reaction, the
+     target must roll percentile; on 25 or lower, it suffers the Freeze
+     condition. At the end of each of its turns, the target may roll
+     percentile again to unfreeze; a roll above 49 ends the Freeze condition.
   3. Energy Bite Fang
      Damage: 80 | Type: Melee, Piercing | To hit: 15
      Effect: Bite Attack. Targets a single opponent.
@@ -479,9 +484,12 @@ FIXED WEAPONS & SYSTEMS
   1. Large Electro-Magnetic Cannon
      Damage: 25 | Type: Ranged, Electrical, Electical | To hit: 14
      Effect: Back mounted electric cannon. Targets up to two opponents, the
-     second must be within 50m of the first. Opponents damaged by this attack
-     must make a percentile roll. if the roll is a 49 or lower the Zoid is
-     frozen. At the end of their turn they may roll again to unfreeze.
+     second must be within 50m of the first. On a hit, the target must roll
+     percentile; on 49 or lower, it suffers the Freeze condition. On a miss,
+     if the attack roll is still higher than the target's Reaction, the target
+     must roll percentile; on 25 or lower, it suffers the Freeze condition. At
+     the end of each of its turns, the target may roll percentile again to
+     unfreeze; a roll above 49 ends the Freeze condition.
   2. Double Shock Cannon
      Damage: 80 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
@@ -576,22 +584,32 @@ PURCHASE & BUILD REFERENCE
 FIXED WEAPONS & SYSTEMS
   1. Thunder Claw
      Damage: 180 | Type: Melee, Electrical | To hit: 15
-     Effect: Claw electric attack. Targets a single opponent. On a hit must
-     make a percentile roll. If the roll is 49 or lower their zoid is frozen.
-     At the end of their turn they may roll again to unfreeze.
+     Effect: Claw electric attack. Targets a single opponent. On a hit, the
+     target must roll percentile; on 49 or lower, it suffers the Freeze
+     condition. On a miss, if the attack roll is still higher than the
+     target's Reaction, the target must roll percentile; on 25 or lower, it
+     suffers the Freeze condition. At the end of each of its turns, the target
+     may roll percentile again to unfreeze; a roll above 49 ends the Freeze
+     condition.
   2. Lightning Attack
      Damage: 360 | Type: Melee, Electrical | To hit: 16
      Effect: Head and shoulder mounted blades shift forward. Targets a single
-     opponent. On a hit must make a percentile roll. If the roll is 49 or
-     lower their zoid is frozen. At the end of their turn they may roll again
-     to unfreeze.
+     opponent. On a hit, the target must roll percentile; on 49 or lower, it
+     suffers the Freeze condition. On a miss, if the attack roll is still
+     higher than the target's Reaction, the target must roll percentile; on 25
+     or lower, it suffers the Freeze condition. At the end of each of its
+     turns, the target may roll percentile again to unfreeze; a roll above 49
+     ends the Freeze condition.
   3. Volt Cannon
      Damage: 120 | Type: Ranged, Electrical | To hit: 12
      Effect: Back mounted electric cannon. Targets an area of 45m by 135m.
      Must make a reaction save against the attack roll. On a successful save
-     you take no damage. On a hit must make a percentile roll. If the roll is
-     49 or lower their zoid is frozen. At the end of their turn they may roll
-     again to unfreeze.
+     you take no damage. On a hit, the target must roll percentile; on 49 or
+     lower, it suffers the Freeze condition. On a miss, if the attack roll is
+     still higher than the target's Reaction, the target must roll percentile;
+     on 25 or lower, it suffers the Freeze condition. At the end of each of
+     its turns, the target may roll percentile again to unfreeze; a roll above
+     49 ends the Freeze condition.
   4. Crusher Saber
      Damage: 250 | Type: Melee, Piercing | To hit: 14
      Effect: Bite attack. Targets a single opponent.
@@ -1200,12 +1218,20 @@ FIXED WEAPONS & SYSTEMS
      Damage: 130 | Type: Ranged, Electrical | To hit: 14
      Effect: Back sail discharges electricity. Targets an area 90m by 90m.
      Opponents in the area of effect must make a reaction save against the
-     attack roll. Successful saves take no damage.
+     attack roll. Successful saves take no damage. On a hit, the target must
+     roll percentile; on 49 or lower, it suffers the Freeze condition. On a
+     miss, if the attack roll is still higher than the target's Reaction, the
+     target must roll percentile; on 25 or lower, it suffers the Freeze
+     condition. At the end of each of its turns, the target may roll
+     percentile again to unfreeze; a roll above 49 ends the Freeze condition.
   4. Electro-Magnetic Fang
      Damage: 100 | Type: Melee, Electrical, Piercing | To hit: 12
-     Effect: Bite attack. Targets a single opponent. Opponents damaged by this
-     attack must make a percentile roll. If the roll is 49 or lower their Zoid
-     is frozen. At the end of their turn they may roll again to unfreeze.
+     Effect: Bite attack. Targets a single opponent. On a hit, the target must
+     roll percentile; on 49 or lower, it suffers the Freeze condition. On a
+     miss, if the attack roll is still higher than the target's Reaction, the
+     target must roll percentile; on 25 or lower, it suffers the Freeze
+     condition. At the end of each of its turns, the target may roll
+     percentile again to unfreeze; a roll above 49 ends the Freeze condition.
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Assist | Equipment: None listed
@@ -2639,9 +2665,12 @@ FIXED WEAPONS & SYSTEMS
      Effect: Deploys a mist that targets the Zoids systems. Canister deploys
      mist in a 30m by 60m wide wall. Targets the systems. Targets inside the
      area of effect must make a reaction roll against your attack. On a
-     success they dodge the attack. Zoids damaged by this attack must make a
-     percentile roll. if the roll is a 49 or lower the Zoid is frozen. At the
-     end of their turn they may roll again to restore.
+     success they dodge the attack. On a hit, the target must roll percentile;
+     on 49 or lower, it suffers the Freeze condition. On a miss, if the attack
+     roll is still higher than the target's Reaction, the target must roll
+     percentile; on 25 or lower, it suffers the Freeze condition. At the end
+     of each of its turns, the target may roll percentile again to unfreeze; a
+     roll above 49 ends the Freeze condition.
   3. Laser Claw
      Damage: 140 | Type: Melee, Piercing, Energy | To hit: 13
      Effect: Claw energy attack. Targets a single opponent.
@@ -2855,7 +2884,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 260 | Type: Ranged, Laser | To hit: 17
      Effect: Shoulder mounted energy cannon. Targets a single opponent.
   2. Iron Knuckle
-     Damage: 220 | Type: Melee
+     Damage: 220 | Type: Melee | To hit: 19
      Effect: Punch attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -2893,7 +2922,7 @@ FIXED WEAPONS & SYSTEMS
      Reaction increase: 10 | Activation: Active
      Effect: Increased reaction. Gain +10 to reaction. Lasts three turns
   4. Hammer Knuckle
-     Damage: 200 | Type: Melee | To hit: 15
+     Damage: 200 | Type: Melee | To hit: 17
      Effect: Punch attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2927,7 +2956,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 130 | Type: Ranged, Laser | To hit: 18
      Effect: Left forearm mounted laser gun. Targets up two two opponents.
   4. Hammer Knuckle
-     Damage: 230 | Type: Melee | To hit: 15
+     Damage: 230 | Type: Melee | To hit: 17
      Effect: Punch attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2966,7 +2995,7 @@ FIXED WEAPONS & SYSTEMS
      damage exceeds the reaming health of the target Zoid the remains energy
      damage will continue on.
   4. Hammer Knuckle
-     Damage: 220 | Type: Melee | To hit: 15
+     Damage: 220 | Type: Melee | To hit: 17
      Effect: Punch attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3496,16 +3525,23 @@ FIXED WEAPONS & SYSTEMS
   2. Stun Blade
      Damage: 180 | Type: Melee, Electrical | To hit: 15
      Effect: Blades flip down and out to side. Targets a single opponent. On a
-     hit, opponent must make a percentile roll. If the roll is 49 or lower the
-     Zoid is frozen. May roll to unfreeze at en of their next turn.
+     hit, the target must roll percentile; on 49 or lower, it suffers the
+     Freeze condition. On a miss, if the attack roll is still higher than the
+     target's Reaction, the target must roll percentile; on 25 or lower, it
+     suffers the Freeze condition. At the end of its next turn, the target may
+     roll percentile again to unfreeze; a roll above 49 ends the Freeze
+     condition.
   3. Electron Driver
      Damage: 150 | Type: Ranged, Freezing, Electrical | To hit: 14
      Effect: Blades on back point forward above the head towards the sky.
      Targets an area 90m by 90m. Opponents in the area of effect must make a
      reaction save against the attack roll. Successful saves take no damage.
-     Opponents damaged by this attack must make a percentile roll. If the roll
-     is 49 or lower their zoid is frozen. At the end of their turn they may
-     roll again to unfreeze.
+     On a hit, the target must roll percentile; on 49 or lower, it suffers the
+     Freeze condition. On a miss, if the attack roll is still higher than the
+     target's Reaction, the target must roll percentile; on 25 or lower, it
+     suffers the Freeze condition. At the end of each of its turns, the target
+     may roll percentile again to unfreeze; a roll above 49 ends the Freeze
+     condition.
   4. Strike Laser Claw
      Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
@@ -4660,10 +4696,13 @@ FIXED WEAPONS & SYSTEMS
      Effect: Claw attack. Targets a single opponent.
   3. Potential Difference Generator
      Damage: 25 | Type: Ranged, Freezing, Electrical | To hit: 14
-     Effect: Head mounted lightning generator. Targets a single opponent.
-     Opponents damaged by this attack must make a percentile roll. A roll of
-     49 or lower and their Zoid will be frozen. At the end of their turn they
-     may roll to unfreeze.
+     Effect: Head mounted lightning generator. Targets a single opponent. On a
+     hit, the target must roll percentile; on 49 or lower, it suffers the
+     Freeze condition. On a miss, if the attack roll is still higher than the
+     target's Reaction, the target must roll percentile; on 25 or lower, it
+     suffers the Freeze condition. At the end of each of its turns, the target
+     may roll percentile again to unfreeze; a roll above 49 ends the Freeze
+     condition.
   4. Laser Saber
      Damage: 190 | Type: Melee, Piercing, Energy | To hit: 13
      Effect: Bite attack. Targets a single opponent.
