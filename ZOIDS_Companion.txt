@@ -629,7 +629,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 15
   Health: 250 | Armor: 18 | Defense: 15
-  Speed: 350 | Reaction: 4 | Range: 600 | Carry capacity: 30
+  Speed: 350 | Reaction: 16 | Range: 600 | Carry capacity: 30
   Listed base/component Zoids: Redler
 
 FIXED WEAPONS & SYSTEMS
@@ -724,7 +724,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 11
   Health: 210 | Armor: 21 | Defense: 20
-  Speed: 2000 | Reaction: 6 | Range: 300 | Carry capacity: 30
+  Speed: 2000 | Reaction: 18 | Range: 300 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Buster Cannon
@@ -1620,7 +1620,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 10
   Health: 200 | Armor: 18 | Defense: 16
-  Speed: 2000 | Reaction: 18 | Range: 400 | Carry capacity: 35
+  Speed: 2000 | Reaction: 20 | Range: 400 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
   1. Charge Missile
@@ -1981,7 +1981,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Extra Large | Required level: 33
   Health: 1200 | Armor: 25 | Defense: 90
-  Speed: 4000 | Reaction: 3 | Range: 1000 | Carry capacity: 60
+  Speed: 4000 | Reaction: 15 | Range: 1000 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
   1. Plasma Particle Cannon
@@ -3047,7 +3047,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 10
   Health: 300 | Armor: 18 | Defense: 10
-  Speed: 3000 | Reaction: 12 | Range: 450 | Carry capacity: 35
+  Speed: 3000 | Reaction: 14 | Range: 450 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
@@ -3548,6 +3548,7 @@ FIXED WEAPONS & SYSTEMS
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Assist | Equipment: Stealth Generator
+     Weight: 10
      Effect: Generates Optical Camoflage and dampens sound when used outside
      of combat
   2. Slot type: Weapon and Assist | Equipment: None listed
@@ -3922,7 +3923,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Large Large | Required level: 20
   Health: 450 | Armor: 21 | Defense: 33
-  Speed: 2000 | Reaction: 20 | Range: 1000 | Carry capacity: 50
+  Speed: 2000 | Reaction: 22 | Range: 1000 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
   1. Double Anti-Air Laser
@@ -3957,7 +3958,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Small | Required level: 2
   Health: 55 | Armor: 20 | Defense: 10
-  Speed: 2000 | Reaction: 2 | Range: 1000 | Carry capacity: 20
+  Speed: 2000 | Reaction: 14 | Range: 1000 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan
@@ -3989,7 +3990,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Pteras
   Type: Dinosaur, Flying | Size: Small | Required level: 4
   Health: 60 | Armor: 20 | Defense: 10
-  Speed: 1200 | Reaction: 2 | Range: 1500 | Carry capacity: 13
+  Speed: 1200 | Reaction: 14 | Range: 1500 | Carry capacity: 13
   Listed base/component Zoids: Pteras
 
 FIXED WEAPONS & SYSTEMS
@@ -4024,7 +4025,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Pteras
   Type: Dinosaur, Flying | Size: Small | Required level: 5
   Health: 140 | Armor: 18 | Defense: 10
-  Speed: 2100 | Reaction: 3 | Range: 2000 | Carry capacity: 20
+  Speed: 2100 | Reaction: 15 | Range: 2000 | Carry capacity: 20
   Listed base/component Zoids: Pteras
 
 FIXED WEAPONS & SYSTEMS
@@ -4059,7 +4060,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 8
   Health: 160 | Armor: 21 | Defense: 10
-  Speed: 3300 | Reaction: 15 | Range: 1500 | Carry capacity: 20
+  Speed: 3300 | Reaction: 17 | Range: 1500 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Triple Beam Cannon
@@ -4156,7 +4157,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 5
   Health: 80 | Armor: 16 | Defense: 9
-  Speed: 3000 | Reaction: 2 | Range: 300 | Carry capacity: 20
+  Speed: 3000 | Reaction: 14 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Strike Claw
@@ -4184,7 +4185,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Redler
   Type: Dinosaur, Flying | Size: Medium | Required level: 9
   Health: 150 | Armor: 17 | Defense: 10
-  Speed: 3300 | Reaction: 2 | Range: 300 | Carry capacity: 18
+  Speed: 3300 | Reaction: 14 | Range: 300 | Carry capacity: 18
   Listed base/component Zoids: Redler
 
 FIXED WEAPONS & SYSTEMS
@@ -4215,7 +4216,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Redler
   Type: Dinosaur, Flying | Size: Medium | Required level: 10
   Health: 200 | Armor: 18 | Defense: 13
-  Speed: 3000 | Reaction: 4 | Range: 450 | Carry capacity: 15
+  Speed: 3000 | Reaction: 16 | Range: 450 | Carry capacity: 15
   Listed base/component Zoids: Redler
 
 FIXED WEAPONS & SYSTEMS
@@ -4754,7 +4755,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Large | Required level: 13
   Health: 220 | Armor: 21 | Defense: 20
-  Speed: 3200 | Reaction: 4 | Range: 2000 | Carry capacity: 30
+  Speed: 3200 | Reaction: 16 | Range: 2000 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Pulse Laser
@@ -4783,7 +4784,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Storm Sworder
   Type: Dinosaur, Flying | Size: Large | Required level: 14
   Health: 220 | Armor: 20 | Defense: 18
-  Speed: 3100 | Reaction: 3 | Range: 600 | Carry capacity: 40
+  Speed: 3100 | Reaction: 15 | Range: 600 | Carry capacity: 40
   Listed base/component Zoids: Storm Sworder
 
 FIXED WEAPONS & SYSTEMS
@@ -4814,7 +4815,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Storm Sworder
   Type: Dinosaur, Flying | Size: Large | Required level: 17
   Health: 280 | Armor: 20 | Defense: 28
-  Speed: 4000 | Reaction: 20 | Range: 650 | Carry capacity: 30
+  Speed: 4000 | Reaction: 22 | Range: 650 | Carry capacity: 30
   Listed base/component Zoids: Storm Sworder
 
 FIXED WEAPONS & SYSTEMS
@@ -5049,7 +5050,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Small | Required level: 3
   Health: 60 | Armor: 14 | Defense: 10
-  Speed: 2800 | Reaction: 20 | Range: 600 | Carry capacity: 20
+  Speed: 2800 | Reaction: 22 | Range: 600 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Laser Gun

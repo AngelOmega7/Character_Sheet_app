@@ -1562,8 +1562,9 @@ SECTION 2 - ASSIST EQUIPMENT
 [A006] Anti-Laser Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 20,000g
-  Pricing basis: Stat-benefit base 15,000g; +5,000g damage-resistance premium.
+  Proposed price: 65,000g
+  Pricing basis: Armor 10 x 5,000g; Defense 100 x 100g. +5,000g damage-
+  resistance premium.
   To hit: 0
   Weight: 10
   Activation: Passive
@@ -1576,8 +1577,8 @@ SECTION 2 - ASSIST EQUIPMENT
 [A007] Chobam Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 6,000g
-  Pricing basis: Stat-benefit base 6,000g.
+  Proposed price: 33,000g
+  Pricing basis: Armor 6 x 5,000g; Defense 30 x 100g.
   To hit: 0
   Weight: 20
   Activation: Passive
@@ -1654,10 +1655,10 @@ SECTION 2 - ASSIST EQUIPMENT
 [A013] Electro-Magnetic Jammer
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 2,250g
-  Pricing basis: +3 Armor x 500g and +3 Reaction x 500g;
-  x0.75 for three-turn duration.
-  Weight: Not listed
+  Proposed price: 12,500g
+  Pricing basis: Armor 3 x 5,000g; Reaction 3 x 500g. x0.75 for three-turn
+  duration.
+  Weight: 10
   Heat: 1
   Activation: Active
   Armor increase: 3 | To-hit increase: 0 | Reaction increase: 3
@@ -1671,7 +1672,7 @@ SECTION 2 - ASSIST EQUIPMENT
   Pricing basis: Attack-bonus reduction valued at 20 x 750g;
   x0.75 for three-turn duration. Utility valuation, not damage pricing.
   To hit: 15
-  Weight: Not listed
+  Weight: 10
   To-hit increase: 0
   Effect: On a hit, reduces the target's attack bonus by 20 for three turns.
   Track this effect manually.
@@ -1680,8 +1681,8 @@ SECTION 2 - ASSIST EQUIPMENT
 [A015] Enhanced Chobam Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 8,000g
-  Pricing basis: Stat-benefit base 8,000g.
+  Proposed price: 35,000g
+  Pricing basis: Armor 6 x 5,000g; Defense 50 x 100g.
   To hit: 0
   Weight: 30
   Activation: Passive
@@ -1706,9 +1707,9 @@ SECTION 2 - ASSIST EQUIPMENT
 [A017] Enhanced Fused Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 50,000g
-  Pricing basis: Stat-benefit base 25,000g; +25,000g damage-resistance
-  premium.
+  Proposed price: 140,000g
+  Pricing basis: Armor 20 x 5,000g; Defense 150 x 100g. +25,000g damage-
+  resistance premium.
   To hit: 0
   Weight: 50
   Activation: Passive
@@ -1749,7 +1750,7 @@ SECTION 2 - ASSIST EQUIPMENT
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 10,000g
   Pricing basis: Six-turn camouflage utility tier.
-  Weight: Not listed
+  Weight: 10
   Heat: 1
   To-hit increase: 0
   Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
@@ -1774,8 +1775,8 @@ SECTION 2 - ASSIST EQUIPMENT
 [A022] Extension Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 3,000g
-  Pricing basis: Stat-benefit base 3,000g.
+  Proposed price: 25,500g
+  Pricing basis: Armor 5 x 5,000g; Defense 5 x 100g.
   To hit: 0
   Weight: 5
   Activation: Passive
@@ -1787,8 +1788,9 @@ SECTION 2 - ASSIST EQUIPMENT
 [A023] F-Round Shield
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 20,000g
-  Pricing basis: Stat-benefit base 15,000g; +5,000g damage-resistance premium.
+  Proposed price: 92,000g
+  Pricing basis: Armor 16 x 5,000g; Defense 70 x 100g. +5,000g damage-
+  resistance premium.
   To hit: 0
   Weight: 15
   Activation: Passive
@@ -1801,8 +1803,8 @@ SECTION 2 - ASSIST EQUIPMENT
 [A024] Full Armor System
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 14,000g
-  Pricing basis: Stat-benefit base 14,000g.
+  Proposed price: 95,000g
+  Pricing basis: Armor 18 x 5,000g; Defense 50 x 100g.
   To hit: 0
   Weight: 40
   Activation: Passive
@@ -1814,9 +1816,9 @@ SECTION 2 - ASSIST EQUIPMENT
 [A025] Fused Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 26,000g
-  Pricing basis: Stat-benefit base 11,000g; +15,000g damage-resistance
-  premium.
+  Proposed price: 71,000g
+  Pricing basis: Armor 10 x 5,000g; Defense 60 x 100g. +15,000g damage-
+  resistance premium.
   To hit: 0
   Weight: 30
   Activation: Passive
@@ -1924,8 +1926,8 @@ SECTION 2 - ASSIST EQUIPMENT
 [A033] Large Extension Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 6,000g
-  Pricing basis: Stat-benefit base 6,000g.
+  Proposed price: 51,000g
+  Pricing basis: Armor 10 x 5,000g; Defense 10 x 100g.
   To hit: 0
   Weight: 10
   Activation: Passive
@@ -1967,8 +1969,8 @@ SECTION 2 - ASSIST EQUIPMENT
 [A036] Large Multiple Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 5,000g
-  Pricing basis: Stat-benefit base 5,000g.
+  Proposed price: 32,000g
+  Pricing basis: Armor 6 x 5,000g; Defense 20 x 100g.
   To hit: 0
   Weight: 20
   Activation: Passive
@@ -2022,8 +2024,8 @@ SECTION 2 - ASSIST EQUIPMENT
 [A040] Large Super-Heavy Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 11,000g
-  Pricing basis: Stat-benefit base 11,000g.
+  Proposed price: 47,000g
+  Pricing basis: Armor 8 x 5,000g; Defense 70 x 100g.
   To hit: 0
   Weight: 30
   Activation: Passive
@@ -2158,8 +2160,9 @@ SECTION 2 - ASSIST EQUIPMENT
 [A050] Rare Metal Armor
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
-  Proposed price: 19,500g
-  Pricing basis: Stat-benefit base 12,000g; +7,500g damage-resistance premium.
+  Proposed price: 55,500g
+  Pricing basis: Armor 8 x 5,000g; Defense 80 x 100g. +7,500g damage-
+  resistance premium.
   To hit: 0
   Weight: 20
   Activation: Passive
@@ -2230,7 +2233,7 @@ SECTION 2 - ASSIST EQUIPMENT
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 8,000g
   Pricing basis: Camouflage plus anti-air bonus suppression.
-  Weight: Not listed
+  Weight: 10
   Heat: 2
   To-hit increase: 0
   Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
@@ -2281,7 +2284,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
   Availability: Not purchasable.
-  Weight: Not listed
+  Weight: 10
   Activation: Active
   Effect: Adds an additional action each turn. Can be used once per combat
   and lasts one minute. If used without an Organoid system active, at the end
@@ -2294,7 +2297,7 @@ SECTION 2 - ASSIST EQUIPMENT
   Proposed price: 15,000g
   Pricing basis: 20,000g extra-action baseline, discounted 25% for once-per-
   combat use and conditional System Down risk.
-  Weight: Not listed
+  Weight: 10
   Activation: Active
   Effect: Adds an additional action each turn. Can be used once per combat
   and lasts three turns. If used without an Organoid system active, at the end
@@ -2305,7 +2308,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
   Slot eligibility: Assist; Weapon and Assist
   Availability: Not purchasable.
-  Weight: Not listed
+  Weight: 10
   Activation: Active
   Effect: Adds an additional action each turn. Can be used once per combat
   and lasts three turns. At the end of the third turn, the Zoid suffers the
@@ -2349,6 +2352,6 @@ ZOID-SPECIFIC ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
   Listed on: Zero X (CAU) | Removable slot: 1
   Source slot type: Assist
-  Weight: Not listed
+  Weight: 10
   Effect: Generates Optical Camoflage and dampens sound when used outside of
   combat
