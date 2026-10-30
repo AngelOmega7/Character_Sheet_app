@@ -1,10 +1,14 @@
 name: Build Windows
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - README.txt
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: windows-build-${{ github.ref }}
@@ -55,3 +59,24 @@ jobs:
           path: build/windows/
           if-no-files-found: error
           retention-days: 30
+
+      - name: Archive Windows app for release
+        run: |
+          New-Item -ItemType Directory -Path dist -Force | Out-Null
+          Compress-Archive -Path build/windows/* -DestinationPath dist/zoids-character-app-windows-x64.zip
+
+      - name: Update Windows release
+        if: github.ref == 'refs/heads/main'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release upload windows dist/zoids-character-app-windows-x64.zip --clobber
+          # Remove legacy run-numbered downloads only after uploading the new build.
+          assets=$(gh release view windows --json assets --jq '.assets[].name | select(test("^zoids-character-app-windows-x64-[0-9]+\\.zip$"))')
+          while IFS= read -r asset; do
+            if [ -n "$asset" ]; then
+              gh release delete-asset windows "$asset" --yes
+            fi
+          done <<< "$assets"
