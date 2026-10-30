@@ -4978,7 +4978,7 @@
       },
       "fields": {
         "name": "Armor Breaker",
-        "description": "When using a weapon that lowers the defense of the Zoid lowers the defense by an additional 2.",
+        "description": "While this ability is active, each time a weapon reduces a target's Armor, increase that Armor reduction by 1. This bonus does not increase Defense reduction.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5010,7 +5010,7 @@
       },
       "fields": {
         "name": "Armor Breaker 2",
-        "description": "When using a weapon that lowers the defense of the Zoid lowers the defense by an additional 4.",
+        "description": "While this ability is active, each time a weapon reduces a target's Armor, increase that Armor reduction by 2. This bonus does not increase Defense reduction.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5042,7 +5042,7 @@
       },
       "fields": {
         "name": "Armor Breaker 3",
-        "description": "When using a weapon that lowers the defense of the Zoid lowers the defense by an additional 6.",
+        "description": "While this ability is active, each time a weapon reduces a target's Armor, increase that Armor reduction by 3. This bonus does not increase Defense reduction.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5074,7 +5074,7 @@
       },
       "fields": {
         "name": "Armor Breaker 4",
-        "description": "When using a weapon that lowers the defense of the Zoid lowers the defense by an additional 8.",
+        "description": "While this ability is active, each time a weapon reduces a target's Armor, increase that Armor reduction by 4. This bonus does not increase Defense reduction.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,

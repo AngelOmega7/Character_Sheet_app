@@ -20507,7 +20507,7 @@
         "range_increase_28": null,
         "active_passive_29": null,
         "weapon_3_30": "Flame Thrower:",
-        "effect_4_31": "Breath fire out of the mouth. 100m long reach, 45m wide at end. For every 10 damage deals -1 to the opponents defense.",
+        "effect_4_31": "Breathes fire from the mouth, reaching 100m and widening to 45m at the end. Each time a Zoid takes damage from this weapon, its Armor is reduced by 5. For every 10 damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions last until repaired.",
         "damage_3_32": 220,
         "type_3_33": "Ranged, Defense, Fire",
         "to_hit_3_34": 12,

@@ -3900,8 +3900,10 @@ FIXED WEAPONS & SYSTEMS
      the attack roll. Successful rolls take no damage.
   3. Flame Thrower
      Damage: 220 | Type: Ranged, Defense, Fire | To hit: 12
-     Effect: Breath fire out of the mouth. 100m long reach, 45m wide at end.
-     For every 10 damage deals -1 to the opponents defense.
+     Effect: Breathes fire from the mouth, reaching 100m and widening to 45m
+     at the end. Each time a Zoid takes damage from this weapon, its Armor is
+     reduced by 5. For every 10 damage dealt, its Defense is reduced by 1.
+     Both Defense and Armor reductions last until repaired.
   4. No fixed weapon/system listed
 
 REMOVABLE EQUIPMENT SLOTS
