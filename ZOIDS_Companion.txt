@@ -305,7 +305,7 @@ PURCHASE & BUILD REFERENCE
 
 FIXED WEAPONS & SYSTEMS
   1. Buster Claw
-     Damage: 280 | Type: Melee | To hit: 12
+     Damage: 280 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   2. Diffuse Particle Cannon
      Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
@@ -316,7 +316,7 @@ FIXED WEAPONS & SYSTEMS
      Shield health: 400 | Activation: Active
      Effect: Curved energy shield. Blocks 400 damage before dispersing.
   4. Strike Laser Claw
-     Damage: 230 | Type: Melee, Energy | To hit: 15
+     Damage: 230 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent. Melee
 
 REMOVABLE EQUIPMENT SLOTS
@@ -350,7 +350,7 @@ FIXED WEAPONS & SYSTEMS
      Opponents in the line of fire must make a reaction save against the
      attack roll. Successful saves take no damage.
   3. Strike Laser Claw
-     Damage: 350 | Type: Melee, Energy | To hit: 15
+     Damage: 350 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -389,7 +389,7 @@ FIXED WEAPONS & SYSTEMS
      Shield health: 400 | Activation: Active
      Effect: Curved energy shield. Blocks 400 damage before dispersing.
   4. Strike Laser Claw
-     Damage: 230 | Type: Melee, Energy | To hit: 15
+     Damage: 230 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent. Melee
 
 REMOVABLE EQUIPMENT SLOTS
@@ -413,7 +413,7 @@ CAU base: Berserk Fury
 
 FIXED WEAPONS & SYSTEMS
   1. Long Range Cannon
-     Damage: 350 | Type: Ranged, Anti-Air, Explosive, Long Range | To hit: 12
+     Damage: 350 | Type: Ranged, Anti-Air, Explosive, Long Range | To hit: 15
      Effect: Back mounted cannon.
   2. Diffuse Particle Cannon
      Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
@@ -422,7 +422,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 170 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Back mounted missile pod. Targets an area 90m by 90m.
   4. Strike Laser Claw
-     Damage: 210 | Type: Melee, Energy | To hit: 15
+     Damage: 210 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent. Melee
 
 REMOVABLE EQUIPMENT SLOTS
@@ -446,7 +446,7 @@ CAU base: Berserk Fury
 
 FIXED WEAPONS & SYSTEMS
   1. X Breaker
-     Damage: 360 | Type: Melee | To hit: 12
+     Damage: 360 | Type: Melee | To hit: 15
      Effect: Slashing attack. Targets a single opponent.
   2. Diffuse Particle Cannon
      Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
@@ -454,7 +454,7 @@ FIXED WEAPONS & SYSTEMS
      the line of fire must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. Strike Laser Claw
-     Damage: 250 | Type: Melee, Energy | To hit: 15
+     Damage: 250 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -3152,7 +3152,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Konig Wolf
   Type: Wolf | Size: Large | Required level: 13
   Health: 280 | Armor: 22 | Defense: 28
-  Speed: 290 | Reaction: 7 | Range: 500 | Carry capacity: 40
+  Speed: 290 | Reaction: 18 | Range: 1000 | Carry capacity: 40
   Listed base/component Zoids: Konig Wolf
 
 FIXED WEAPONS & SYSTEMS
@@ -3261,7 +3261,7 @@ FIXED WEAPONS & SYSTEMS
      | Activation: Active
      Effect: Back mounted boosters. Doubles speed for three turns
   3. Strike Laser Claw
-     Damage: 240 | Type: Melee, Energy | To hit: 15
+     Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -3294,7 +3294,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Back mounted boosters that increases your Zoids speed by 400 for
      three turns.
   3. Strike Laser Claw
-     Damage: 210 | Type: Melee, Energy | To hit: 15
+     Damage: 210 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -3321,7 +3321,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 260 | Type: Ranged, Explosive | To hit: 16
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Strike Laser Claw
-     Damage: 340 | Type: Melee, Energy | To hit: 15
+     Damage: 340 | Type: Melee, Energy | To hit: 18
      Effect: Back mounted energy claw attack. Targets a single opponent.
   3. Magna Wing
      Speed increase: 300
@@ -3360,7 +3360,7 @@ FIXED WEAPONS & SYSTEMS
      Speed increase: 500 | Activation: Active
      Effect: Back mounted boosters. Increases speed by 500 for three turns.
   4. Strike Laser Claw
-     Damage: 240 | Type: Melee, Energy | To hit: 15
+     Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3431,7 +3431,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 180 | Type: Ranged, Explosive | To hit: 11
      Effect: Back mounted missile pod. Targets a single opponent.
   4. Strike Laser Claw
-     Damage: 240 | Type: Melee, Energy | To hit: 16
+     Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3507,7 +3507,7 @@ FIXED WEAPONS & SYSTEMS
      is 49 or lower their zoid is frozen. At the end of their turn they may
      roll again to unfreeze.
   4. Strike Laser Claw
-     Damage: 240 | Type: Melee, Energy | To hit: 14
+     Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
