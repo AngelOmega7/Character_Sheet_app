@@ -94,7 +94,7 @@
       },
       "fields": {
         "name": "Deadshot",
-        "description": "You may forgo your movement on your turn to fire all ranged weapons at your maximum range without penalty."
+        "description": "If you do not move on your turn, you gain a +10 to ranged attacks."
       },
       "dynamic_fields": {},
       "handling": "player_managed"
