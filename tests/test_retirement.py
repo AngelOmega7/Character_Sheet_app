@@ -22,7 +22,7 @@ class RetirementTests(unittest.TestCase):
 
     def test_blox_zoids_and_five_abilities_are_restored(self):
         zoids = self.catalog.tables["zoids"]
-        self.assertEqual(len(zoids["records"]), 154)
+        self.assertEqual(len(zoids["records"]), 155)
         self.assertEqual(sum(r["fields"]["type"].strip().casefold() == "blox" for r in zoids["records"]), 14)
         for name, expected in (("Buster Eagle", "Flying"), ("Fire Phoenix", "Flying"),
                                ("Jet Falcon", "Flying"), ("Zero Falcon", "Liger"), ("Zero Phoenix", "Liger")):

@@ -126,6 +126,7 @@ CONTENTS - BASE ZOID FAMILIES
 073  Nightwise
 074  Proto Breaker
 075  Proto Zaber
+     075.01  Great Zaber
 076  Psycho Geno Saurer
 077  Pteramander
 078  Pteras
@@ -218,12 +219,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 70 | Type: Ranged, Laser | To hit: 18
   2. Electric Claw
      Damage: 70 | Type: Melee, Piercing, Electrical | To hit: 16
-     Effect: Claw attack. Targets a single opponent. On a hit, the target must
-     roll percentile; on 49 or lower, it suffers the Freeze condition. On a
-     miss, if the attack roll is still higher than the target's Reaction, the
-     target must roll percentile; on 25 or lower, it suffers the Freeze
-     condition. At the end of each of its turns, the target may roll
-     percentile again to unfreeze; a roll above 49 ends the Freeze condition.
+     Effect: Claw attack. Targets a single opponent.
   3. Energy Bite Fang
      Damage: 80 | Type: Melee, Piercing | To hit: 15
      Effect: Bite Attack. Targets a single opponent.
@@ -484,12 +480,7 @@ FIXED WEAPONS & SYSTEMS
   1. Large Electro-Magnetic Cannon
      Damage: 25 | Type: Ranged, Electrical, Electical | To hit: 14
      Effect: Back mounted electric cannon. Targets up to two opponents, the
-     second must be within 50m of the first. On a hit, the target must roll
-     percentile; on 49 or lower, it suffers the Freeze condition. On a miss,
-     if the attack roll is still higher than the target's Reaction, the target
-     must roll percentile; on 25 or lower, it suffers the Freeze condition. At
-     the end of each of its turns, the target may roll percentile again to
-     unfreeze; a roll above 49 ends the Freeze condition.
+     second must be within 50m of the first.
   2. Double Shock Cannon
      Damage: 80 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
@@ -584,32 +575,16 @@ PURCHASE & BUILD REFERENCE
 FIXED WEAPONS & SYSTEMS
   1. Thunder Claw
      Damage: 180 | Type: Melee, Electrical | To hit: 15
-     Effect: Claw electric attack. Targets a single opponent. On a hit, the
-     target must roll percentile; on 49 or lower, it suffers the Freeze
-     condition. On a miss, if the attack roll is still higher than the
-     target's Reaction, the target must roll percentile; on 25 or lower, it
-     suffers the Freeze condition. At the end of each of its turns, the target
-     may roll percentile again to unfreeze; a roll above 49 ends the Freeze
-     condition.
+     Effect: Claw electric attack. Targets a single opponent.
   2. Lightning Attack
      Damage: 360 | Type: Melee, Electrical | To hit: 16
-     Effect: Head and shoulder mounted blades shift forward. Targets a single
-     opponent. On a hit, the target must roll percentile; on 49 or lower, it
-     suffers the Freeze condition. On a miss, if the attack roll is still
-     higher than the target's Reaction, the target must roll percentile; on 25
-     or lower, it suffers the Freeze condition. At the end of each of its
-     turns, the target may roll percentile again to unfreeze; a roll above 49
-     ends the Freeze condition.
+     Effect: Head and shoulder mounted blades shift forward. Targets a
+     single opponent.
   3. Volt Cannon
      Damage: 120 | Type: Ranged, Electrical | To hit: 12
      Effect: Back mounted electric cannon. Targets an area of 45m by 135m.
      Must make a reaction save against the attack roll. On a successful save
-     you take no damage. On a hit, the target must roll percentile; on 49 or
-     lower, it suffers the Freeze condition. On a miss, if the attack roll is
-     still higher than the target's Reaction, the target must roll percentile;
-     on 25 or lower, it suffers the Freeze condition. At the end of each of
-     its turns, the target may roll percentile again to unfreeze; a roll above
-     49 ends the Freeze condition.
+     you take no damage.
   4. Crusher Saber
      Damage: 250 | Type: Melee, Piercing | To hit: 14
      Effect: Bite attack. Targets a single opponent.
@@ -1218,20 +1193,10 @@ FIXED WEAPONS & SYSTEMS
      Damage: 130 | Type: Ranged, Electrical | To hit: 14
      Effect: Back sail discharges electricity. Targets an area 90m by 90m.
      Opponents in the area of effect must make a reaction save against the
-     attack roll. Successful saves take no damage. On a hit, the target must
-     roll percentile; on 49 or lower, it suffers the Freeze condition. On a
-     miss, if the attack roll is still higher than the target's Reaction, the
-     target must roll percentile; on 25 or lower, it suffers the Freeze
-     condition. At the end of each of its turns, the target may roll
-     percentile again to unfreeze; a roll above 49 ends the Freeze condition.
+     attack roll. Successful saves take no damage.
   4. Electro-Magnetic Fang
      Damage: 100 | Type: Melee, Electrical, Piercing | To hit: 12
-     Effect: Bite attack. Targets a single opponent. On a hit, the target must
-     roll percentile; on 49 or lower, it suffers the Freeze condition. On a
-     miss, if the attack roll is still higher than the target's Reaction, the
-     target must roll percentile; on 25 or lower, it suffers the Freeze
-     condition. At the end of each of its turns, the target may roll
-     percentile again to unfreeze; a roll above 49 ends the Freeze condition.
+     Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Assist | Equipment: None listed
@@ -2665,12 +2630,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Deploys a mist that targets the Zoids systems. Canister deploys
      mist in a 30m by 60m wide wall. Targets the systems. Targets inside the
      area of effect must make a reaction roll against your attack. On a
-     success they dodge the attack. On a hit, the target must roll percentile;
-     on 49 or lower, it suffers the Freeze condition. On a miss, if the attack
-     roll is still higher than the target's Reaction, the target must roll
-     percentile; on 25 or lower, it suffers the Freeze condition. At the end
-     of each of its turns, the target may roll percentile again to unfreeze; a
-     roll above 49 ends the Freeze condition.
+     success they dodge the attack.
   3. Laser Claw
      Damage: 140 | Type: Melee, Piercing, Energy | To hit: 13
      Effect: Claw energy attack. Targets a single opponent.
@@ -3524,24 +3484,12 @@ FIXED WEAPONS & SYSTEMS
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Stun Blade
      Damage: 180 | Type: Melee, Electrical | To hit: 15
-     Effect: Blades flip down and out to side. Targets a single opponent. On a
-     hit, the target must roll percentile; on 49 or lower, it suffers the
-     Freeze condition. On a miss, if the attack roll is still higher than the
-     target's Reaction, the target must roll percentile; on 25 or lower, it
-     suffers the Freeze condition. At the end of its next turn, the target may
-     roll percentile again to unfreeze; a roll above 49 ends the Freeze
-     condition.
+     Effect: Blades flip down and out to side. Targets a single opponent.
   3. Electron Driver
      Damage: 150 | Type: Ranged, Freezing, Electrical | To hit: 14
      Effect: Blades on back point forward above the head towards the sky.
      Targets an area 90m by 90m. Opponents in the area of effect must make a
      reaction save against the attack roll. Successful saves take no damage.
-     On a hit, the target must roll percentile; on 49 or lower, it suffers the
-     Freeze condition. On a miss, if the attack roll is still higher than the
-     target's Reaction, the target must roll percentile; on 25 or lower, it
-     suffers the Freeze condition. At the end of each of its turns, the target
-     may roll percentile again to unfreeze; a roll above 49 ends the Freeze
-     condition.
   4. Strike Laser Claw
      Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
@@ -3881,6 +3829,44 @@ REMOVABLE EQUIPMENT SLOTS
 PURCHASE & BUILD REFERENCE
   Cost: 18,000g
   Required base: Zaber Fang
+
+------------------------------------------------------------------------------
+[075.01] Great Zaber
+------------------------------------------------------------------------------
+    Type: Tiger | Size: Large | Required level: 20
+  Health: 300 | Armor: 24 | Defense: 40
+  Speed: 240 | Reaction: 16 | Range: 300 | Carry capacity: 45
+  Listed base/component Zoids: Proto Zaber
+
+FIXED WEAPONS & SYSTEMS
+  1. Triple Impact Cannon
+     Damage: 200 | Type: Ranged, Explosive | To hit: 17
+     Effect: Chest mounted cannon. Targets a single opponent.
+  2. 8-Shot Missile Pod
+     Damage: 100 | Type: Ranged, Explosive, Homing | To hit: 17
+     Effect: Back mounted missile pod. Targets up to four opponents. Shoots
+     four missiles with the damage split between them.
+  3. Concentrated Acid Gun
+     Damage: 20 | Type: Ranged, Acid, Defense | To hit: 15 | Heat: 1
+     Effect: Fires a single canister of acid. Targets a single opponent.
+  4. Killer Saber
+     Damage: 240 | Type: Melee, Piercing | To hit: 19
+     Effect: Bite attack. Targets a single opponent.
+
+REMOVABLE EQUIPMENT SLOTS
+  1. Slot type: Weapon and Assist | Equipment: Double Beam Cannon: back
+  mounted energy cannon. Targets a single opponent. Ranged (Great Zaber Only)
+     Damage: 200 | Type: Ranged, Laser | To hit: 18 | Weight: 17
+  2. Slot type: Weapon and Assist | Equipment: 20mm Solid Rifle: shoulder mounted LR rifle. Targets a
+  single opponent. Ranged (Great Zaber only)
+     Damage: 200 | Type: Ranged, Long Range, Bullet | To hit: 17 | Weight: 15
+  3. Slot type: Weapon and Assist | Equipment: None listed
+  4. Slot type: Assist | Equipment: None listed
+
+PURCHASE & BUILD REFERENCE
+  Cost: 50,000g
+  Required Zoid: Proto Zaber
+  Parts: WildZ OS
 
 ------------------------------------------------------------------------------
 [076] Psycho Geno Saurer
@@ -4697,13 +4683,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Claw attack. Targets a single opponent.
   3. Potential Difference Generator
      Damage: 25 | Type: Ranged, Freezing, Electrical | To hit: 14
-     Effect: Head mounted lightning generator. Targets a single opponent. On a
-     hit, the target must roll percentile; on 49 or lower, it suffers the
-     Freeze condition. On a miss, if the attack roll is still higher than the
-     target's Reaction, the target must roll percentile; on 25 or lower, it
-     suffers the Freeze condition. At the end of each of its turns, the target
-     may roll percentile again to unfreeze; a roll above 49 ends the Freeze
-     condition.
+     Effect: Head mounted lightning generator. Targets a single opponent.
   4. Laser Saber
      Damage: 190 | Type: Melee, Piercing, Energy | To hit: 13
      Effect: Bite attack. Targets a single opponent.

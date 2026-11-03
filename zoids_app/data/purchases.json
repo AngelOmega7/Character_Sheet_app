@@ -4978,6 +4978,39 @@
         ]
       },
       "dynamic_fields": {}
+    },
+    {
+      "id": "purchases:great_zaber",
+      "name": "Great Zaber",
+      "kind": "record",
+      "zoid_id": "zoids:great_zaber",
+      "source": {
+        "sheet": "ZOIDS_Companion.txt",
+        "row": 3887,
+        "entry": "075.01"
+      },
+      "original": {
+        "Name": "Great Zaber",
+        "Cost": "50000",
+        "Zoid Core": "",
+        "Parts": "WildZ OS",
+        "Base Zoid": "Proto Zaber",
+        "BLOX 1": "",
+        "BLOX 2": "",
+        "BLOX 3": "",
+        "BLOX 4": "",
+        "BLOX 5": "",
+        "BLOX 6": ""
+      },
+      "fields": {
+        "name": "Great Zaber",
+        "cost": 50000,
+        "core": null,
+        "parts": "WildZ OS",
+        "base_zoid": "zoids:proto_zaber",
+        "blox": []
+      },
+      "dynamic_fields": {}
     }
   ],
   "excluded_rows": []

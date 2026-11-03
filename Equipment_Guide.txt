@@ -185,6 +185,8 @@ A058  Turbo Charger
 A059  ZOS Enhanced Type
 A060  ZOS Mass Produced
 A061  ZOS Prototype
+A062  Acid Neutralizer Unit
+A063  EMP Hardened Circuits
 
 CONTENTS - ZOID-SPECIFIC ASSIST EQUIPMENT
 ZA01  Anti-Particle Beam Shield - Mad Thunder
@@ -401,13 +403,9 @@ SECTION 1 - REMOVABLE WEAPONS
   Proposed price: 6,250g
   Pricing basis: Damage/accuracy base 5,000g; +25% defense reduction.
   Weapon class: Melee | Damage type: Melee, Acid, Defense
-  Damage: 100 | To hit: 15
+  Damage: 10 | To hit: 15
   Weight: 20
-  Effect: Acid-coated blade attack. Targets a single opponent. Make the attack
-  against the target's Reaction stat instead of its Armor stat. Each time a
-  Zoid takes damage from this weapon, its Armor is reduced by 3. For every 10
-  damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions
-  last until repaired.
+  Effect: Acid-coated blade attack. Targets a single opponent.
 
 ------------------------------------------------------------------------------
 [018] Acid Cannon
@@ -416,13 +414,9 @@ SECTION 1 - REMOVABLE WEAPONS
   Proposed price: 6,250g
   Pricing basis: Damage/accuracy base 5,000g; +25% defense reduction.
   Weapon class: Ranged | Damage type: Ranged, Acid, Defense
-  Damage: 100 | To hit: 15
+  Damage: 10 | To hit: 15
   Weight: 20
-  Effect: Fires a canister of acid. Targets a single opponent. Make the attack
-  against the target's Reaction stat instead of its Armor stat. Each time a
-  Zoid takes damage from this weapon, its Armor is reduced by 3. For every 10
-  damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions
-  last until repaired.
+  Effect: Fires a canister of acid. Targets a single opponent.
 
 ------------------------------------------------------------------------------
 [019] Anti-Air 16-Set Missile
@@ -658,13 +652,9 @@ SECTION 1 - REMOVABLE WEAPONS
   Proposed price: 12,500g
   Pricing basis: Damage/accuracy base 10,000g; +25% defense reduction.
   Weapon class: Melee | Damage type: Melee, Acid, Defense
-  Damage: 200 | To hit: 15
+  Damage: 20 | To hit: 15
   Weight: 23
-  Effect: Acid-coated blade attack. Targets a single opponent. Make the attack
-  against the target's Reaction stat instead of its Armor stat. Each time a
-  Zoid takes damage from this weapon, its Armor is reduced by 5. For every 10
-  damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions
-  last until repaired.
+  Effect: Acid-coated blade attack. Targets a single opponent.
 
 ------------------------------------------------------------------------------
 [038] Concentrate Acid Cannon
@@ -673,13 +663,9 @@ SECTION 1 - REMOVABLE WEAPONS
   Proposed price: 12,500g
   Pricing basis: Damage/accuracy base 10,000g; +25% defense reduction.
   Weapon class: Ranged | Damage type: Ranged, Acid, Defense
-  Damage: 200 | To hit: 15
+  Damage: 20 | To hit: 15
   Weight: 23
-  Effect: Fires a single canister of acid. Targets a single opponent. Make the
-  attack against the target's Reaction stat instead of its Armor stat. Each
-  time a Zoid takes damage from this weapon, its Armor is reduced by 5. For
-  every 10 damage dealt, its Defense is reduced by 1. Both Defense and Armor
-  reductions last until repaired.
+  Effect: Fires a canister of acid. Targets a single opponent.
 
 ------------------------------------------------------------------------------
 [039] Double Cannon
@@ -704,13 +690,8 @@ SECTION 1 - REMOVABLE WEAPONS
   Damage: 140 | To hit: 17
   Weight: 25
   Effect: Fires an arc of electricity. Targets up to two opponents. Second
-  target must be within 75m of the first. Must be within 75m. Deals the listed
-  damage to each target; damage is not split. On a hit, the target must roll
-  percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if
-  the attack roll is still higher than the target's Reaction, the target must
-  roll percentile; on 25 or lower, it suffers the Freeze condition. At the end
-  of its next turn, the target may roll percentile again to unfreeze; a roll
-  above 49 ends the Freeze condition.
+  target must be within 75m of the first. Must be within 75m. Deals the
+  listed damage to each target; damage is not split.
 
 ------------------------------------------------------------------------------
 [041] External Charge Particle Cannon
@@ -734,14 +715,9 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Electrical
   Damage: 120 | To hit: 16
   Weight: 23
-  Effect: Fires an arc of electricity. Targets up to two opponents. The second
-  opponent must be within 60m of the first opponent. Must be within 75m. Deals
-  the listed damage to each target; damage is not split. On a hit, the target
-  must roll percentile; on 49 or lower, it suffers the Freeze condition. On a
-  miss, if the attack roll is still higher than the target's Reaction, the
-  target must roll percentile; on 25 or lower, it suffers the Freeze
-  condition. At the end of each of its turns, the target may roll percentile
-  again to unfreeze; a roll above 49 ends the Freeze condition.
+  Effect: Fires an arc of electricity. Targets up to two opponents. The
+  second opponent must be within 60m of the first opponent. Must be within
+  75m. Deals the listed damage to each target; damage is not split.
 
 ------------------------------------------------------------------------------
 [043] Focus Charge Particle Cannon
@@ -1282,12 +1258,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Electrical
   Damage: 50 | To hit: 15
   Weight: 15
-  Effect: On a hit, the target must roll percentile; on 49 or lower, it
-  suffers the Freeze condition. On a miss, if the attack roll is still higher
-  than the target's Reaction, the target must roll percentile; on 25 or lower,
-  it suffers the Freeze condition. At the end of each of its turns, the target
-  may roll percentile again to unfreeze; a roll above 49 ends the Freeze
-  condition.
+  Effect:
 
 ------------------------------------------------------------------------------
 [084] Spread Charge Particle Cannon
@@ -1344,12 +1315,7 @@ SECTION 1 - REMOVABLE WEAPONS
   Damage: 50 | To hit: 15
   Weight: 23
   Effect: Fires an arc of electricity. Targets a single opponent. Must be
-  within 75 meters. On a hit, the target must roll percentile; on 49 or lower,
-  it suffers the Freeze condition. On a miss, if the attack roll is still
-  higher than the target's Reaction, the target must roll percentile; on 25 or
-  lower, it suffers the Freeze condition. At the end of each of its turns, the
-  target may roll percentile again to unfreeze; a roll above 49 ends the
-  Freeze condition.
+  within 75 meters.
 
 ------------------------------------------------------------------------------
 [088] Super Speed Rail Gun
@@ -2314,7 +2280,28 @@ SECTION 2 - ASSIST EQUIPMENT
   and lasts three turns. At the end of the third turn, the Zoid suffers the
   System Down Condition.
 
-==============================================================================
+------------------------------------------------------------------------------
+[A062] Acid Neutralizer Unit
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Availability: 20,000g
+  Weight: 5
+  Activation: Passive
+  Effect: If hit by a Acid/Defense weapon, the Acid Neutralizer Unit negates
+  the attack. After the Unit has activated, it cannot be used again until the
+  Zoid has Rested or Repaired.
+  
+------------------------------------------------------------------------------
+[A063] EMP Hardened Circuits
+------------------------------------------------------------------------------
+  Slot eligibility: Assist; Weapon and Assist
+  Availability: 50,000g
+  Weight: 5
+  Activation: Passive
+  Effect: If you would gain the System Freeze condition, the effect is
+  negated. This ability can be used once, and resets every time a Zoid
+  Rests or Repairs.
+  
 ZOID-SPECIFIC ASSIST EQUIPMENT
 ==============================================================================
 ------------------------------------------------------------------------------

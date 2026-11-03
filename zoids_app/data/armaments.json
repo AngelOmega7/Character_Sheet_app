@@ -3076,9 +3076,9 @@
       },
       "fields": {
         "name": "Acid Cannon:",
-        "damage": 100,
+        "damage": 10,
         "damage_type": "Ranged, Acid, Defense",
-        "effect": "Fires a canister of acid. Targets a single opponent. Make the attack against the target's Reaction stat instead of its Armor stat. Each time a Zoid takes damage from this weapon, its Armor is reduced by 3. For every 10 damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions last until repaired.",
+        "effect": "Fires a canister of acid. Targets a single opponent.",
         "to_hit": 15,
         "defense": null,
         "armor": null,
@@ -3112,9 +3112,9 @@
       },
       "fields": {
         "name": "Acid Blade",
-        "damage": 100,
+        "damage": 10,
         "damage_type": "Melee, Acid, Defense",
-        "effect": "Acid-coated blade attack. Targets a single opponent. Make the attack against the target's Reaction stat instead of its Armor stat. Each time a Zoid takes damage from this weapon, its Armor is reduced by 3. For every 10 damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions last until repaired.",
+        "effect": "Acid-coated blade attack. Targets a single opponent.",
         "to_hit": 15,
         "defense": null,
         "armor": null,
@@ -3134,7 +3134,7 @@
         "damage_type": {
           "original": "Ranged, Acid, Defense",
           "corrected": "Melee, Acid, Defense",
-          "reason": "Owner-requested melee variant; other gameplay stats and effects match the original cannon."
+          "reason": "Owner-requested melee variant; gameplay values follow Equipment_Guide.txt."
         }
       },
       "derived_from": "armaments:acid_cannon"
@@ -3149,9 +3149,9 @@
       },
       "fields": {
         "name": "Concentrate Acid Cannon:",
-        "damage": 200,
+        "damage": 20,
         "damage_type": "Ranged, Acid, Defense",
-        "effect": "Fires a single canister of acid. Targets a single opponent. Make the attack against the target's Reaction stat instead of its Armor stat. Each time a Zoid takes damage from this weapon, its Armor is reduced by 5. For every 10 damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions last until repaired.",
+        "effect": "Fires a canister of acid. Targets a single opponent.",
         "to_hit": 15,
         "defense": null,
         "armor": null,
@@ -3185,9 +3185,9 @@
       },
       "fields": {
         "name": "Concentrate Acid Blade",
-        "damage": 200,
+        "damage": 20,
         "damage_type": "Melee, Acid, Defense",
-        "effect": "Acid-coated blade attack. Targets a single opponent. Make the attack against the target's Reaction stat instead of its Armor stat. Each time a Zoid takes damage from this weapon, its Armor is reduced by 5. For every 10 damage dealt, its Defense is reduced by 1. Both Defense and Armor reductions last until repaired.",
+        "effect": "Acid-coated blade attack. Targets a single opponent.",
         "to_hit": 15,
         "defense": null,
         "armor": null,
@@ -3207,7 +3207,7 @@
         "damage_type": {
           "original": "Ranged, Acid, Defense",
           "corrected": "Melee, Acid, Defense",
-          "reason": "Owner-requested melee variant; other gameplay stats and effects match the original cannon."
+          "reason": "Owner-requested melee variant; gameplay values follow Equipment_Guide.txt."
         }
       },
       "derived_from": "armaments:concentrate_acid_cannon"
@@ -3224,7 +3224,7 @@
         "name": "Spark Cannon:",
         "damage": 50,
         "damage_type": "Ranged, Electrical",
-        "effect": "On a hit, the target must roll percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if the attack roll is still higher than the target's Reaction, the target must roll percentile; on 25 or lower, it suffers the Freeze condition. At the end of each of its turns, the target may roll percentile again to unfreeze; a roll above 49 ends the Freeze condition.",
+        "effect": "",
         "to_hit": 15,
         "defense": null,
         "armor": null,
@@ -3260,7 +3260,7 @@
         "name": "Super Spark Cannon:",
         "damage": 50,
         "damage_type": "Ranged, Electrical",
-        "effect": "Fires an arc of electricity. Targets a single opponent. Must be within 75 meters. On a hit, the target must roll percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if the attack roll is still higher than the target's Reaction, the target must roll percentile; on 25 or lower, it suffers the Freeze condition. At the end of each of its turns, the target may roll percentile again to unfreeze; a roll above 49 ends the Freeze condition.",
+        "effect": "Fires an arc of electricity. Targets a single opponent. Must be within 75 meters.",
         "to_hit": 15,
         "defense": null,
         "armor": null,
@@ -3296,7 +3296,7 @@
         "name": "Extra Electro Magnetic Cannon:",
         "damage": 120,
         "damage_type": "Ranged, Electrical",
-        "effect": "Fires an arc of electricity. Targets up to two opponents. The second opponent must be within 60m of the first opponent. Must be within 75m. Deals the listed damage to each target; damage is not split. On a hit, the target must roll percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if the attack roll is still higher than the target's Reaction, the target must roll percentile; on 25 or lower, it suffers the Freeze condition. At the end of each of its turns, the target may roll percentile again to unfreeze; a roll above 49 ends the Freeze condition.",
+        "effect": "Fires an arc of electricity. Targets up to two opponents. The second opponent must be within 60m of the first opponent. Must be within 75m. Deals the listed damage to each target; damage is not split.",
         "to_hit": 16,
         "defense": null,
         "armor": null,
@@ -3332,7 +3332,7 @@
         "name": "Ele Shot:",
         "damage": 140,
         "damage_type": "Ranged, Electrical",
-        "effect": "Fires an arc of electricity. Targets up to two opponents. Second target must be within 75m of the first. Must be within 75m. Deals the listed damage to each target; damage is not split. On a hit, the target must roll percentile; on 49 or lower, it suffers the Freeze condition. On a miss, if the attack roll is still higher than the target's Reaction, the target must roll percentile; on 25 or lower, it suffers the Freeze condition. At the end of its next turn, the target may roll percentile again to unfreeze; a roll above 49 ends the Freeze condition.",
+        "effect": "Fires an arc of electricity. Targets up to two opponents. Second target must be within 75m of the first. Must be within 75m. Deals the listed damage to each target; damage is not split.",
         "to_hit": 17,
         "defense": null,
         "armor": null,
@@ -5291,6 +5291,68 @@
         "speed_bonus": null,
         "weight": 10,
         "activation": "Active",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "assist_eligible": true
+    },
+    {
+      "id": "armaments:acid_neutralizer_unit",
+      "name": "Acid Neutralizer Unit",
+      "kind": "record",
+      "source": {
+        "sheet": "Equipment_Guide.txt",
+        "row": 2284,
+        "entry": "A062"
+      },
+      "price": 20000,
+      "fields": {
+        "name": "Acid Neutralizer Unit",
+        "damage": null,
+        "damage_type": null,
+        "effect": "If hit by a Acid/Defense weapon, the Acid Neutralizer Unit negates the attack. After the Unit has activated, it cannot be used again until the Zoid has Rested or Repaired.",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 5,
+        "activation": "Passive",
+        "shields": null,
+        "weapon_class": null,
+        "heat": null
+      },
+      "dynamic_fields": {},
+      "assist_eligible": true
+    },
+    {
+      "id": "armaments:emp_hardened_circuits",
+      "name": "EMP Hardened Circuits",
+      "kind": "record",
+      "source": {
+        "sheet": "Equipment_Guide.txt",
+        "row": 2295,
+        "entry": "A063"
+      },
+      "price": 50000,
+      "fields": {
+        "name": "EMP Hardened Circuits",
+        "damage": null,
+        "damage_type": null,
+        "effect": "If you would gain the System Freeze condition, the effect is negated. This ability can be used once, and resets every time a Zoid Rests or Repairs.",
+        "to_hit": null,
+        "defense": null,
+        "armor": null,
+        "to_hit_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "speed_bonus": null,
+        "weight": 5,
+        "activation": "Passive",
         "shields": null,
         "weapon_class": null,
         "heat": null
