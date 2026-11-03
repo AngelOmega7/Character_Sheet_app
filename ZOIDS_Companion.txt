@@ -193,7 +193,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 250 | Type: Melee | To hit: 18
      Effect: Tail attack. Targets a single opponent.
   4. Bite Fang
-     Damage: 180 | Type: Melee, Piercing | To hit: 13
+     Damage: 180 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -218,10 +218,10 @@ FIXED WEAPONS & SYSTEMS
   1. Double Beam Cannon
      Damage: 70 | Type: Ranged, Laser | To hit: 18
   2. Electric Claw
-     Damage: 70 | Type: Melee, Piercing, Electrical | To hit: 16
+     Damage: 70 | Type: Melee, Electrical | To hit: 16
      Effect: Claw attack. Targets a single opponent.
   3. Energy Bite Fang
-     Damage: 80 | Type: Melee, Piercing | To hit: 15
+     Damage: 80 | Type: Melee | To hit: 15
      Effect: Bite Attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -282,7 +282,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 40 | Type: Ranged, Explosive | To hit: 17
      Effect: Back mounted missile pods. Targets a single opponent.
   2. Bite Fang
-     Damage: 35 | Type: Melee, Piercing | To hit: 13
+     Damage: 35 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -447,7 +447,7 @@ CAU base: Berserk Fury
 
 FIXED WEAPONS & SYSTEMS
   1. X Breaker
-     Damage: 360 | Type: Melee | To hit: 15
+     Damage: 360 | Type: Melee, Piercing | To hit: 15
      Effect: Slashing attack. Targets a single opponent.
   2. Diffuse Particle Cannon
      Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
@@ -478,14 +478,14 @@ PURCHASE & BUILD REFERENCE
 
 FIXED WEAPONS & SYSTEMS
   1. Large Electro-Magnetic Cannon
-     Damage: 25 | Type: Ranged, Electrical, Electical | To hit: 14
+     Damage: 25 | Type: Ranged, Electrical | To hit: 14
      Effect: Back mounted electric cannon. Targets up to two opponents, the
      second must be within 50m of the first.
   2. Double Shock Cannon
      Damage: 80 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
   3. Hard Drill
-     Damage: 73 | Type: Melee, Piercing | To hit: 12
+     Damage: 70 | Type: Melee, Piercing | To hit: 12
      Effect: Horn attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -552,7 +552,7 @@ FIXED WEAPONS & SYSTEMS
      Shield health: 200 | Activation: Active
      Effect: Curved energy shield. Blocks 200 damage before dispersing.
   4. Laser Saber
-     Damage: 230 | Type: Melee, Piercing | To hit: 15
+     Damage: 230 | Type: Melee | To hit: 15
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -654,7 +654,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 80 | Type: Melee | To hit: 13
      Effect: Tail attack. Targets a single opponent.
   4. Bite Fang
-     Damage: 250 | Type: Melee, Piercing | To hit: 13
+     Damage: 250 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -679,7 +679,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 50 | Type: Ranged, Penetrate, Laser | To hit: 17
      Effect: Back mounted energy gun. Targets a single opponent.
   2. Bite Fang
-     Damage: 65 | Type: Melee, Piercing | To hit: 12
+     Damage: 65 | Type: Melee | To hit: 12
      Effect: Bite attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -866,7 +866,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   2. Bite Fang
-     Damage: 60 | Type: Melee, Piercing | To hit: 13
+     Damage: 60 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -899,7 +899,7 @@ FIXED WEAPONS & SYSTEMS
      exceeds remaining Zoids health the remaining energy bolts continues in a
      straight line.
   2. Bite Fang
-     Damage: 85 | Type: Melee, Piercing | To hit: 13
+     Damage: 85 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -933,7 +933,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   3. Bite Fang
-     Damage: 85 | Type: Melee, Piercing | To hit: 13
+     Damage: 85 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -962,7 +962,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   2. Bite Fang
-     Damage: 120 | Type: Melee, Piercing | To hit: 14
+     Damage: 120 | Type: Melee | To hit: 14
      Effect: Bite attack. Targets a single opponent.
   3. Long Range Rifle
      Damage: 130 | Type: Ranged, Bullet, Long Range | To hit: 19
@@ -999,7 +999,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   3. Bite Fang
-     Damage: 85 | Type: Melee, Piercing | To hit: 17
+     Damage: 85 | Type: Melee | To hit: 17
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -1185,7 +1185,7 @@ FIXED WEAPONS & SYSTEMS
   1. 114mm Machine Gun
      Damage: 140 | Type: Ranged, Bullet | To hit: 19
      Effect: Back mounted machine gun. Targets up to two opponents. Shoots two
-     bursts of 72 piercing.
+     bursts of 70.
   2. Double Cannon
      Damage: 130 | Type: Ranged, Explosive | To hit: 16
      Effect: Back mounted cannons. Targets a single opponent.
@@ -1195,7 +1195,7 @@ FIXED WEAPONS & SYSTEMS
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   4. Electro-Magnetic Fang
-     Damage: 100 | Type: Melee, Electrical, Piercing | To hit: 12
+     Damage: 100 | Type: Melee, Electrical | To hit: 12
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -1264,7 +1264,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 300 | Type: Melee | To hit: 13
      Effect: Swiping tail attack. 180° arc around your Zoid.
   4. Killer Bite Fang
-     Damage: 500 | Type: Melee, Piercing | To hit: 13
+     Damage: 500 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -1297,7 +1297,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 230 | Type: Melee | To hit: 13
      Effect: Tail attack. 180° arc tail attack. Reach of 30m.
   4. Bite Fang
-     Damage: 230 | Type: Melee, Piercing | To hit: 13
+     Damage: 230 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -1327,12 +1327,12 @@ FIXED WEAPONS & SYSTEMS
      60m. Opponents in the path must make a reaction save against the attack
      roll. Successful saves take no damage.
   3. Hyper Laser Gun
-     Damage: 160 | Type: Ranged, Laser | To hit: 19
+     Damage: 160 | Type: Ranged, Laser, Piercing | To hit: 19
      Effect: Tail tip energy gun. Shoots a single piercing energy beam. If the
      damage exceeds the health remaining on the Zoid the energy beam pierces
      the Zoid and continues on until the remaining damage is expelled.
   4. SB Scissors
-     Damage: 300 | Type: Melee, Piercing | To hit: 15
+     Damage: 300 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -1363,7 +1363,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 130 | Type: Melee | To hit: 13
      Effect: Tail attack. Targets a single opponent.
   4. Magnezer Fang
-     Damage: 150 | Type: Melee, Piercing | To hit: 12
+     Damage: 150 | Type: Melee | To hit: 12
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -1399,7 +1399,7 @@ FIXED WEAPONS & SYSTEMS
      "invisible". Lasts for 5 turns. Disadvatage on attack rolls against you.
      Advantage on stealth cheacks.
   4. Cyber Fang
-     Damage: 400 | Type: Melee, Piercing | To hit: 13
+     Damage: 400 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -1525,7 +1525,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 250 | Type: Ranged, Laser | To hit: 17
      Effect: Trunk mounted energy gun. Targets a single opponent.
   3. Pulse Laser Gun
-     Damage: 100 | Type: Ranged, Bullet, Anti-Air, Laser | To hit: 18
+     Damage: 100 | Type: Ranged, Anti-Air, Laser | To hit: 18
      Effect: Back mounted energy gun. Targets a single opponents. If the
      damage exceeds there remaining health of the Zoid the beam pierces
      through and continues on dealing the reaming damage.
@@ -1615,7 +1615,7 @@ PURCHASE & BUILD REFERENCE
 
 FIXED WEAPONS & SYSTEMS
   1. X-Scissor
-     Damage: 160 | Type: Melee, Anti-Air, Piercing | To hit: 12
+     Damage: 160 | Type: Melee, Anti-Air | To hit: 12
      Effect: Front pincer attack. Targets a single opponent.
   2. X Claws
      Damage: 85 | Type: Melee, Anti-Air | To hit: 15
@@ -1650,7 +1650,7 @@ FIXED WEAPONS & SYSTEMS
   1. Handgun
      Damage: 120 | Type: Ranged, Anti-Air, Bullet | To hit: 19
      Effect: Hand mounted guns. Targets up to two Zoids. Shoots two bursts of
-     60 piercing
+     60
   2. Tail Saw
      Damage: 210 | Type: Melee, Anti-Air | To hit: 16
      Effect: Tail blade attack. Targets a single opponent.
@@ -1785,7 +1785,7 @@ FIXED WEAPONS & SYSTEMS
      Opponents in the line of fire must make a reaction save against the
      attack roll successful saves take no damage.
   3. Long Range Laser
-     Damage: 75 | Type: Ranged, Bullet, Laser, Long Range | To hit: 18
+     Damage: 75 | Type: Ranged, Laser, Long Range | To hit: 18
      Effect: Back mounted energy gun. Targets a single opponent. If damage
      exceeds the remaining health of the Zoid the attack continues through
      with the remaining damage.
@@ -1985,7 +1985,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 38 | Type: Ranged, Laser | To hit: 17
      Effect: Chest mounted beam cannon. Targets a single opponent.
   2. Crusher Claw
-     Damage: 35 | Type: Melee, Piercing | To hit: 13
+     Damage: 35 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -2009,13 +2009,13 @@ PURCHASE & BUILD REFERENCE
 
 FIXED WEAPONS & SYSTEMS
   1. Crusher Claw
-     Damage: 150 | Type: Melee, Piercing | To hit: 14
+     Damage: 150 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   2. Beam Gun
      Damage: 100 | Type: Ranged, Laser | To hit: 17
      Effect: Left arm mounted energy gun. Targets a single opponent.
   3. Hyper Fang
-     Damage: 200 | Type: Melee, Piercing | To hit: 13
+     Damage: 200 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -2040,7 +2040,7 @@ CAU base: Gojulas
 
 FIXED WEAPONS & SYSTEMS
   1. Crusher Claw
-     Damage: 180 | Type: Melee, Piercing | To hit: 14
+     Damage: 180 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   2. 4-Barrel Shock Cannon
      Damage: 180 | Type: Ranged, Explosive | To hit: 14
@@ -2050,7 +2050,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Back mounted cannons. Targets a single opponent. Minimum range
      75m.
   4. Hyper Fang
-     Damage: 200 | Type: Melee, Piercing | To hit: 13
+     Damage: 200 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2073,7 +2073,7 @@ PURCHASE & BUILD REFERENCE
 
 FIXED WEAPONS & SYSTEMS
   1. Hyper Press Manipulator
-     Damage: 280 | Type: Melee, Piercing | To hit: 15
+     Damage: 280 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Crusher Tail
      Damage: 280 | Type: Melee | To hit: 13
@@ -2083,7 +2083,7 @@ FIXED WEAPONS & SYSTEMS
      Shield health: 300 | Activation: Active
      Effect: Curved energy shield. Blocks 300 damage before dispersing.
   4. Crusher Fang
-     Damage: 320 | Type: Melee, Piercing | To hit: 13
+     Damage: 320 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2108,7 +2108,7 @@ CAU base: Gojulas Giga
 
 FIXED WEAPONS & SYSTEMS
   1. Hyper Press Manipulator
-     Damage: 300 | Type: Melee, Piercing | To hit: 15
+     Damage: 300 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Crusher Tail
      Damage: 280 | Type: Melee | To hit: 13
@@ -2119,7 +2119,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Back mounted cannon. Targets a single opponent. Minimum range
      75m.
   4. Crusher Fang
-     Damage: 320 | Type: Melee, Piercing | To hit: 13
+     Damage: 320 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2142,7 +2142,7 @@ PURCHASE & BUILD REFERENCE
 
 FIXED WEAPONS & SYSTEMS
   1. Crusher Claw
-     Damage: 180 | Type: Melee, Piercing | To hit: 14
+     Damage: 180 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   2. 4-Barrel Shock Cannon
      Damage: 180 | Type: Ranged, Explosive | To hit: 17
@@ -2152,7 +2152,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Back mounted cannons. Targets a single opponent. Minimum range of
      75m.
   4. Hyper Fang
-     Damage: 200 | Type: Melee, Piercing | To hit: 13
+     Damage: 200 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2221,7 +2221,7 @@ FIXED WEAPONS & SYSTEMS
      Range increase: 1000 | Activation: Active
      Effect: Increases the range by 1,000. Lasts three turns
   4. Hyper Bite Fang
-     Damage: 80 | Type: Melee, Piercing | To hit: 12
+     Damage: 80 | Type: Melee | To hit: 12
      Effect: Bite attack. Targets a single opponent. Melee
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2253,7 +2253,7 @@ FIXED WEAPONS & SYSTEMS
      Range increase: 1000 | Activation: Active
      Effect: Increases range by +1,000. Lasts three turns.
   4. Hyper Bite Fang
-     Damage: 150 | Type: Melee, Piercing | To hit: 12
+     Damage: 150 | Type: Melee | To hit: 12
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2388,7 +2388,7 @@ FIXED WEAPONS & SYSTEMS
      Shield health: 300 | Activation: Active
      Effect: Curved energy shield. Blocks 300 damage before dispersing.
   4. Electromagnetic Bite Fang
-     Damage: 180 | Type: Melee, Piercing | To hit: 14
+     Damage: 180 | Type: Melee, Electrical | To hit: 14
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2422,8 +2422,8 @@ FIXED WEAPONS & SYSTEMS
      Damage: 70 | Type: Ranged, Bullet, Long Range | To hit: 19
      Effect: Tail stiffens, claws clamp into the ground. Targets a single
      opponent. Minimum range of 75m.
-  4. Anchro Claw
-     Damage: 65 | Type: Melee, Piercing | To hit: 13
+  4. Anchor Claw
+     Damage: 65 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -2597,7 +2597,7 @@ FIXED WEAPONS & SYSTEMS
      Disadvantage on attacks against you while in the smoke. Lasts for three
      turns.
   3. Laser Claw
-     Damage: 37 | Type: Melee, Piercing, Energy | To hit: 13
+     Damage: 37 | Type: Melee | To hit: 13
      Effect: Claw energy attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -2632,7 +2632,7 @@ FIXED WEAPONS & SYSTEMS
      area of effect must make a reaction roll against your attack. On a
      success they dodge the attack.
   3. Laser Claw
-     Damage: 140 | Type: Melee, Piercing, Energy | To hit: 13
+     Damage: 140 | Type: Melee | To hit: 13
      Effect: Claw energy attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -2783,7 +2783,7 @@ FIXED WEAPONS & SYSTEMS
      Reaction increase: 10 | Activation: Active
      Effect: Gain +10 to reaction for three turns.
   3. Crusher Vice
-     Damage: 40 | Type: Melee, Piercing | To hit: 14
+     Damage: 40 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -2989,7 +2989,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 240 | Type: Ranged, Laser | To hit: 19
      Effect: Side mounted energy gun. Targets a single opponent. Ranged
   4. Strike Laser Bite Scissors
-     Damage: 300 | Type: Melee, Piercing, Energy | To hit: 15
+     Damage: 300 | Type: Melee | To hit: 15
      Effect: Energy claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3084,7 +3084,7 @@ FIXED WEAPONS & SYSTEMS
      in the area of effect must make a reaction save agains the attack roll.
      Successful saves take no damage.
   2. Big Claw
-     Damage: 360 | Type: Melee, Piercing | To hit: 14
+     Damage: 360 | Type: Melee | To hit: 14
      Effect: Swiping claw attack. Hits in a 30m line.
   3. Crusher Tail
      Damage: 300 | Type: Melee | To hit: 13
@@ -3120,7 +3120,7 @@ FIXED WEAPONS & SYSTEMS
      To-hit increase: 20 | Activation: Active
      Effect: Gain +20 to Hit. Lasts three turns.
   3. Electron Bite Fang
-     Damage: 180 | Type: Melee, Piercing | To hit: 14
+     Damage: 180 | Type: Melee, Electrical | To hit: 14
      Effect: Bite attack. Targets a single opponent. Melee
   4. No fixed weapon/system listed
 
@@ -3155,7 +3155,7 @@ FIXED WEAPONS & SYSTEMS
      To-hit increase: 20 | Activation: Active
      Effect: Increases hit rate. Gain +20 to Hit. Lasts three turns
   4. Electron Bite Fang
-     Damage: 180 | Type: Melee, Piercing | To hit: 14
+     Damage: 180 | Type: Melee, Electrical | To hit: 14
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3190,7 +3190,7 @@ FIXED WEAPONS & SYSTEMS
      Shield health: 100 | Activation: Active
      Effect: Curved energy shield. Blocks 100 damage before dispersing.
   4. Bite Fang
-     Damage: 80 | Type: Melee, Piercing | To hit: 13
+     Damage: 80 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3220,7 +3220,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Deploys a curved semi domed shield in front of the Zoid. Blocks
      300 damage before dispersing.
   3. Laser Saber
-     Damage: 200 | Type: Melee, Piercing, Energy | To hit: 17
+     Damage: 200 | Type: Melee | To hit: 17
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -3525,7 +3525,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: back mounted energy gun. Targets up to two opponents. Ranged
      (Lightning Saix Only)
   3. Killer Fang
-     Damage: 130 | Type: Melee, Piercing | To hit: 13
+     Damage: 130 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -3557,7 +3557,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: back mounted energy gun. Targets up to two opponents. Ranged
      (Lightning Saix Only)
   3. Killer Fang
-     Damage: 130 | Type: Melee, Piercing | To hit: 13
+     Damage: 130 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -3715,7 +3715,7 @@ FIXED WEAPONS & SYSTEMS
      Speed increase: 300 | Activation: Active
      Effect: Increases speed. Gains +300 to speed. Lasts for three turns
   4. Bite Fang
-     Damage: 100 | Type: Melee, Piercing | To hit: 13
+     Damage: 100 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3748,7 +3748,7 @@ FIXED WEAPONS & SYSTEMS
      Speed increase: 500 | Activation: Active
      Effect: Increases speed. Gains +500 to speed. Lasts three turns.
   4. Crusher Claw
-     Damage: 75 | Type: Melee, Anti-Air, Piercing | To hit: 15
+     Damage: 75 | Type: Melee, Anti-Air | To hit: 15
      Effect: Claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3813,9 +3813,9 @@ FIXED WEAPONS & SYSTEMS
   3. SR Vulcan
      Damage: 80 | Type: Ranged, Bullet | To hit: 17
      Effect: Shoulder mounted machine gun. Targets up to two Zoids. Two bursts
-     that deals 40 piercing.
+     that deals 40.
   4. Killer Saber
-     Damage: 180 | Type: Melee, Piercing | To hit: 17
+     Damage: 180 | Type: Melee | To hit: 17
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3850,7 +3850,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 20 | Type: Ranged, Acid, Defense | To hit: 15 | Heat: 1
      Effect: Fires a single canister of acid. Targets a single opponent.
   4. Killer Saber
-     Damage: 240 | Type: Melee, Piercing | To hit: 19
+     Damage: 240 | Type: Melee | To hit: 19
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -3886,7 +3886,7 @@ FIXED WEAPONS & SYSTEMS
      the line of fire must make a reaction save against the attack roll
      successful saves take no damage.
   3. Long Range Laser
-     Damage: 75 | Type: Ranged, Bullet, Laser, Long Range | To hit: 18
+     Damage: 75 | Type: Ranged, Laser, Long Range | To hit: 18
      Effect: Back mounted energy cannon. Targets a single opponent. If damage
      exceeds the remaining health of the opponent the attack pierces through
      and continues on with remaining damage.
@@ -4089,7 +4089,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 110 | Type: Ranged, Anti-Air, Laser | To hit: 17
      Effect: Back mounted energy cannon. Targets a single opponent.
   4. Crusher Horn
-     Damage: 140 | Type: Melee, Piercing | To hit: 12
+     Damage: 140 | Type: Melee | To hit: 12
      Effect: Horn attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -4125,7 +4125,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Back mounted energy gatling. Targets a horizontal area 45m wide
      by 90m long.
   4. Crusher Horn
-     Damage: 170 | Type: Melee, Piercing | To hit: 12
+     Damage: 170 | Type: Melee | To hit: 12
      Effect: Horn attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -4182,7 +4182,7 @@ FIXED WEAPONS & SYSTEMS
      Speed increase: 500 | Activation: Active
      Effect: Back mounted booster. Gains +500 speed. Lasts three turns.
   3. Strike Claw
-     Damage: 100 | Type: Melee, Piercing | To hit: 15
+     Damage: 100 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -4268,7 +4268,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 160 | Type: Melee, Piercing | To hit: 17
      Effect: shoulder mounted claws. Targets a single opponent.
   2. Hyper Claw
-     Damage: 120 | Type: Melee, Piercing | To hit: 17
+     Damage: 120 | Type: Melee | To hit: 17
      Effect: Claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -4415,7 +4415,7 @@ PURCHASE & BUILD REFERENCE
 
 FIXED WEAPONS & SYSTEMS
   1. Electro-Magnetic Bite Fang
-     Damage: 180 | Type: Melee, Piercing | To hit: 14
+     Damage: 180 | Type: Melee, Electrical | To hit: 14
      Effect: Bite attack. Targets a single opponent.
   2. Smoke Unit
      Activation: Active
@@ -4457,7 +4457,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 150 | Type: Melee | To hit: 13
      Effect: Punch attack. Targets a single opponent.
   3. Bite Fang
-     Damage: 90 | Type: Melee, Piercing | To hit: 15
+     Damage: 90 | Type: Melee | To hit: 15
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -4487,7 +4487,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Deploys a curved semi domed shield in front of the Zoid. Blocks
      150 damage before dispersing.
   3. Laser Saber
-     Damage: 150 | Type: Melee, Piercing | To hit: 13
+     Damage: 150 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -4521,7 +4521,7 @@ FIXED WEAPONS & SYSTEMS
      Shield health: 150 | Activation: Active
      Effect: Curved energy shield. Blocks 150 damage before dispersing.
   4. Laser Saber
-     Damage: 150 | Type: Melee, Piercing | To hit: 13
+     Damage: 150 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -4554,7 +4554,7 @@ FIXED WEAPONS & SYSTEMS
      Shield health: 200 | Activation: Active
      Effect: Curved energy shield. Blocks 200 damage before dispersing.
   4. Laser Saber
-     Damage: 200 | Type: Melee, Piercing | To hit: 13
+     Damage: 200 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -4584,7 +4584,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Tail stiffens, claws clamp into the ground. Targets a single
      opponent. Minimum range of 75m.
   3. Bite Fang
-     Damage: 85 | Type: Melee, Piercing | To hit: 13
+     Damage: 85 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
@@ -4619,7 +4619,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 150 | Type: Ranged, Laser | To hit: 16
      Effect: Wrist mounted energy cannons. Targets a single opponent.
   4. Bite Fang
-     Damage: 95 | Type: Melee, Piercing | To hit: 13
+     Damage: 95 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -4653,7 +4653,7 @@ FIXED WEAPONS & SYSTEMS
      Reaction increase: 10 | Activation: Active
      Effect: Increases reaction. Gain +10 to reaction. Lasts three turns.
   4. Bite Fang
-     Damage: 95 | Type: Melee, Piercing | To hit: 13
+     Damage: 95 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -4682,10 +4682,10 @@ FIXED WEAPONS & SYSTEMS
      Damage: 180 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   3. Potential Difference Generator
-     Damage: 25 | Type: Ranged, Freezing, Electrical | To hit: 14
+     Damage: 25 | Type: Ranged, Electrical | To hit: 14
      Effect: Head mounted lightning generator. Targets a single opponent.
   4. Laser Saber
-     Damage: 190 | Type: Melee, Piercing, Energy | To hit: 13
+     Damage: 190 | Type: Melee, Energy | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -4916,7 +4916,6 @@ FIXED WEAPONS & SYSTEMS
   4. Hyper Bite Fang
      Damage: 300 | Type: Melee, Piercing | To hit: 10
      Effect: Bite attack. Targets a single opponent.
-     Source damage note: 300 piercing
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Assist | Equipment: None listed
@@ -4977,7 +4976,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 100 | Type: Ranged, Bullet, Long Range | To hit: 18
      Effect: Tail sniper rifle. Targets a single opponent.
   4. Bite Fang
-     Damage: 80 | Type: Melee, Piercing | To hit: 13
+     Damage: 80 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
@@ -5037,7 +5036,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 27 | Type: Ranged, Anti-Air, Laser | To hit: 18
      Effect: Shoulder mounted energy gun. Targets a single opponent.
   2. Hyper Claw
-     Damage: 65 | Type: Melee, Anti-Air, Piercing | To hit: 15
+     Damage: 65 | Type: Melee, Anti-Air | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -5104,7 +5103,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Back mounted missile pod. Targets up to four opponents. Shoots
      four missiles with the damage split between them.
   3. Killer Saber
-     Damage: 160 | Type: Melee, Piercing | To hit: 13
+     Damage: 160 | Type: Melee | To hit: 13
      Effect: Bite attack. targets a single opponent
   4. No fixed weapon/system listed
 
@@ -5202,7 +5201,7 @@ FIXED WEAPONS & SYSTEMS
      Damage: 160 | Type: Ranged, Explosive | To hit: 13
      Effect: Back mounted cannon. Targets a single opponent.
   3. Killer Saber
-     Damage: 160 | Type: Melee, Piercing | To hit: 13
+     Damage: 160 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
 

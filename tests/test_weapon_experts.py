@@ -115,13 +115,16 @@ class WeaponExpertTests(unittest.TestCase):
                 if record["family"] == "rifle_expert":
                     self.assertEqual(weapon_tags(record["fields"]["damage_type"]), {"ranged", "bullet"})
 
-    def test_ranged_piercing_converted_melee_piercing_preserved(self):
+    def test_legacy_ranged_piercing_converted_except_explicit_laser_piercing(self):
         catalog = Catalog()
         for dataset, columns in (("zoids", (16, 22, 33, 44, 50, 58)), ("armaments", (3,))):
             for record in catalog.tables[dataset]["records"]:
                 for column in columns:
                     key = catalog.tables[dataset]["columns"][column - 1]
                     tags = weapon_tags(record["fields"][key])
+                    if record["id"] == "zoids:death_stinger" and column == 33:
+                        self.assertEqual(tags, {"ranged", "laser", "piercing"})
+                        continue
                     if "ranged" in tags and "melee" not in tags:
                         self.assertNotIn("piercing", tags)
         saber = catalog.find("zoids", "Saberlion")
