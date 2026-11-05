@@ -1,0 +1,204 @@
+CUSTOM ZOID CREATION RULES
+Draft baseline for playtesting
+==============================================================================
+
+PURPOSE
+
+Players create custom Zoids by modifying an existing chassis benchmark. This
+keeps construction costs comparable to existing Zoids while allowing distinct
+names, appearances, and combat roles.
+
+These are proposed tabletop rules. Creating this document does not add custom
+Zoid creation functionality to the Character Sheet app.
+
+1. CHOOSE A BENCHMARK ZOID
+------------------------------------------------------------------------------
+Choose an existing Zoid with a similar size, intended combat role, required
+level, movement capabilities, and weapon/system loadout.
+
+Start with its unmodified stats, fixed weapons and systems, and removable
+equipment slots. A new name or visual redesign is free. Changes to Zoid type
+require GM review because type affects ability eligibility.
+
+Use the benchmark's FULL construction cost, including prerequisite Zoids.
+An evolved Zoid's listed cost may represent only the final upgrade step.
+
+Examples of cumulative gold costs:
+
+  Shield Liger       38,000g
+  Blade Liger        70,000g
+  Zaber Fang         40,000g
+  Proto Zaber        58,000g
+  Great Zaber       108,000g
+
+These totals exclude separately required cores and parts. Supply the cores
+and parts required throughout the construction chain as well as the gold.
+Do not count a prerequisite twice: a supplied prerequisite Zoid satisfies
+that portion of the chain rather than requiring another purchase.
+
+2. PRICE IMPROVEMENTS USING EXISTING UPGRADE RULES
+------------------------------------------------------------------------------
+Each upgrade point has a flat cost, regardless of the current rank.
+
+  Frame improvement              Cost per point       Maximum
+  +30 Speed                         5,000g             5 points
+  +1 Reaction                       5,000g             5 points
+  +5 Defense                        5,000g             5 points
+  +10 Carry capacity                5,000g             5 points
+
+  Fixed-weapon improvement       Cost per point       Maximum
+  +20 damage to one weapon         10,000g             5 per weapon
+  +1 to hit for one weapon         10,000g             5 per weapon
+
+Damage and to-hit improvements are separate tracks for each fixed weapon.
+These weapon upgrade tracks do not apply to removable weapons.
+
+Construction improvements consume the SAME upgrade allowance as improvements
+purchased later. A weapon built with three damage points can receive only two
+more damage points, not another five.
+
+Record these improvements separately from the benchmark's base stats so they
+receive the same calculations as ordinary upgrades.
+
+HEALTH, ARMOR, AND RANGE
+
+For this initial ruleset, retain the benchmark's Health, Armor, and Range.
+The app does not have equivalent upgrade tracks for these stats, and Armor
+can change combat effectiveness sharply.
+
+For substantially different values, select a closer benchmark or have the GM
+price the design as a new chassis tier using comparable existing Zoids.
+
+3. CUSTOMIZE WEAPONS AND SYSTEMS
+------------------------------------------------------------------------------
+Use existing weapon profiles as templates. Include the complete profile:
+
+  - Damage and accuracy.
+  - Target count and area of effect.
+  - Range restrictions.
+  - Heat, recharge, and activation rules.
+  - Damage tags and special effects.
+
+A rename or visual redesign is free. Changing tags is not automatically
+cosmetic: Electrical, Acid, Homing, Piercing, and similar tags can change a
+weapon's effectiveness and interactions with abilities.
+
+Initial design limits:
+
+  - Up to four fixed weapons or systems.
+  - Retain the benchmark's removable equipment slot layout.
+  - A fixed shield, booster, or other system occupies a fixed slot.
+  - Removable equipment retains its normal weight and restrictions.
+
+For a mechanically different fixed weapon, compare against a Zoid that
+already carries something similar. Equipment Guide prices can inform the
+adjustment, but a removable weapon's price is not automatically a fair price
+for the same weapon as a fixed system.
+
+Price multi-target attacks by their actual effect, not just listed damage.
+Dealing 100 damage to each of four targets is substantially different from
+splitting 100 total damage between four targets.
+
+New fixed weapons, special systems, and changes to their restrictions require
+a GM-approved price adjustment. This baseline does not assign them universal
+point costs.
+
+4. ALLOW LIMITED TRADE-OFFS
+------------------------------------------------------------------------------
+Suggested starting rule:
+
+  Reducing a stat grants half the corresponding improvement cost as design
+  credit. Total credit cannot exceed 20% of the benchmark's cumulative gold
+  cost, excluding separately supplied cores and parts.
+
+Examples:
+
+  -30 Speed                         2,500g credit
+  -5 Defense                        2,500g credit
+  -20 damage on a retained weapon   5,000g credit
+
+Only meaningful reductions qualify. Removing damage from a weapon that will
+be discarded does not provide credit toward other improvements. The GM must
+approve reductions that would have little practical effect on the design.
+
+Credits are construction discounts, not gold paid to the player. They do not
+remove core or part requirements. This discount rule is separate from the
+app's normal refund for removing a purchased upgrade point.
+
+5. COMPARE THE DESIGN AGAINST THREE EXISTING ZOIDS
+------------------------------------------------------------------------------
+Before approving a design, compare it with three existing Zoids around its
+intended level. Use the same comparison conditions: unmodified chassis and
+listed systems, with purchased upgrades identified separately and no pilot
+or Organoid bonuses.
+
+Evaluate these categories separately:
+
+  SURVIVABILITY
+  Health, Armor, Defense, shields, and defensive systems.
+
+  MOBILITY
+  Speed, Reaction, and movement capabilities.
+
+  OFFENSE
+  Accuracy, strongest repeatable attack, multi-target damage, heat, recharge,
+  and special weapon effects.
+
+  UTILITY
+  Range, carry capacity, equipment slots, and special systems.
+
+If the custom Zoid is at least as good in every category and better in one,
+it should not cost less than that comparator's full construction cost. Include
+material requirements in the comparison rather than comparing gold alone.
+
+The custom Zoid's required level must be at least the benchmark's required
+level. A substantially stronger design should move into the level band of
+its stronger comparators.
+
+6. CALCULATE THE CONSTRUCTION PRICE
+------------------------------------------------------------------------------
+  Benchmark cumulative gold cost
+  + Purchased upgrade points
+  + GM-priced weapon and system changes
+  - Approved design credits
+  = Proposed construction price
+
+Then apply the comparison check in Section 5 and adjust the price or design
+if necessary. Required cores and parts are supplied separately.
+
+7. WORKED EXAMPLE: CUSTOM SHIELD LIGER
+------------------------------------------------------------------------------
+Retain Shield Liger's existing weapons, systems, and equipment slots. Add:
+
+  Shield Liger benchmark                    38,000g
+  +60 Speed: two frame points               10,000g
+  +5 Defense: one frame point                5,000g
+  +20 Laser Saber damage: one weapon point  10,000g
+                                           -------
+  Total                                    63,000g + Zoid Core H1
+
+Relevant base-plus-upgrade values:
+
+  Speed                 310
+  Defense                18
+  Laser Saber damage    170
+
+Record two Speed points, one Defense point, and one Laser Saber damage point
+as already used. These count toward their respective five-point limits.
+
+Compare this design with Blade Liger at 70,000g plus the materials required
+by its construction chain. Blade Liger still has higher Health, Defense,
+Range, carry capacity, and a stronger main melee weapon. The custom design
+therefore has a plausible price rather than simply replacing Blade Liger.
+
+This is an illustrative comparison; a final design still needs the full
+three-Zoid review, including its required level.
+
+8. PLAYTESTING AND FUTURE EXPANSION
+------------------------------------------------------------------------------
+Start with this benchmark-and-modify system and playtest several builds.
+Track whether custom Zoids consistently outperform similarly priced existing
+Zoids, and whether any trade-offs provide discounts without meaningful costs.
+
+Use those results to calibrate future independent pricing for Health, Armor,
+Range, new fixed systems, movement capabilities, and equipment-slot changes.

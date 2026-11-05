@@ -233,8 +233,9 @@ class WorkflowTests(unittest.TestCase):
                 store.save(loaded)
                 self.assertEqual(store.load(c.id), loaded)
 
-    def test_upgrades_charge_each_tier_and_refund_full_removed_tier(self):
-        c = replace(established_character(self.catalog), gold=65000)
+    def test_upgrades_charge_flat_costs_and_refund_each_removed_point(self):
+        c = replace(established_character(self.catalog), gold=40000)
+        c = change_upgrade(c, "speed", 1, catalog=self.catalog)
         c = change_upgrade(c, "speed", 1, catalog=self.catalog)
         c = change_upgrade(c, "damage", 1, 0, self.catalog)
         c = change_upgrade(c, "damage", 1, 0, self.catalog)
@@ -243,8 +244,11 @@ class WorkflowTests(unittest.TestCase):
         with self.assertRaises(RuleError):
             change_upgrade(c, "damage", 1, 0, self.catalog)
         c = change_upgrade(c, "damage", -1, 0, self.catalog)
-        self.assertEqual(c.gold, 30000)
+        self.assertEqual(c.gold, 10000)
         self.assertEqual(c.build.upgrades.damage[0], 2)
+        c = change_upgrade(c, "speed", -1, catalog=self.catalog)
+        self.assertEqual(c.gold, 15000)
+        self.assertEqual(c.build.upgrades.speed, 1)
         with self.assertRaises(RuleError):
             change_upgrade(c, "damage", 1, 2, self.catalog)  # Smoke unit.
 

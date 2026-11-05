@@ -289,7 +289,7 @@ def change_upgrade(character, field, delta, slot=None, catalog=None):
         updated = replace(upgrades, **{field: tuple(points)})
     else:
         raise RuleError("Unknown upgrade track")
-    amount = base * (old + 1) if delta > 0 else -base * old
+    amount = base * delta
     if amount > character.gold:
         raise RuleError(f"Upgrade costs {amount:,}g; only {character.gold:,}g available")
     return set_upgrades(replace(character, gold=character.gold - amount), updated, catalog)

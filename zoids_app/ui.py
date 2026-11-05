@@ -1043,7 +1043,7 @@ class CharacterEditor:
             self.frame_fields[key] = control
             frame_widgets.append(ft.Container(widget, col={"xs": 12, "md": 6}))
         self.damage_fields, self.hit_fields = [], []
-        upgrade_controls = [ft.Text("Points 0–5. Chassis tiers cost 5,000g × new rank; weapon tiers cost 10,000g × new rank. Minus refunds the full removed tier cost. Frame/shared-weapon upgrades follow the host across forms.", size=12),
+        upgrade_controls = [ft.Text("Points 0–5. Each frame upgrade point costs 5,000g; each weapon upgrade point costs 10,000g. Minus refunds the same flat cost per point. Frame/shared-weapon upgrades follow the host across forms.", size=12),
             ft.ResponsiveRow(frame_widgets)]
         identities = self.catalog.find("zoids", build.zoid)["fixed_weapon_ids"] if active else (None,) * 4
         base_identities = self.catalog.find("zoids", active.base_zoid)["fixed_weapon_ids"] if active else ()
