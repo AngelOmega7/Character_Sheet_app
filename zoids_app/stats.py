@@ -11,6 +11,7 @@ from .catalog import Catalog
 from .combat import RuleError
 from .abilities import AbilityLoadout, validate_loadout
 from .tags import weapon_tags
+from .upgrade_rules import UPGRADE_LIMITS
 
 
 def number(value):
@@ -41,13 +42,22 @@ class Upgrades:
     reaction: int = 0
     defense: int = 0
     capacity: int = 0
+    accuracy: int = 0
+    armor: int = 0
+    # Legacy positional data retained for old save/ownership migrations only.
+    # These fields no longer contribute to combat statistics.
     damage: tuple[int, ...] = (0, 0, 0, 0)
     to_hit: tuple[int, ...] = (0, 0, 0, 0)
 
     def __post_init__(self):
         if len(self.damage) != 4 or len(self.to_hit) != 4:
             raise RuleError("Four fixed-weapon upgrade slots are required")
-        for points in (self.speed, self.reaction, self.defense, self.capacity, *self.damage, *self.to_hit):
+        for name, limit in UPGRADE_LIMITS.items():
+            points = getattr(self, name)
+            if type(points) is not int or points < 0 or (limit is not None and points > limit):
+                raise RuleError(f"{name.title()} upgrade points must be nonnegative integers" +
+                                (f" from 0 through {limit}" if limit is not None else ""))
+        for points in (*self.damage, *self.to_hit):
             if type(points) is not int or not 0 <= points <= 5:
                 raise RuleError("Upgrade points must be integers from 0 through 5")
 
@@ -180,7 +190,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     }
     pilot = {
         "health": sheet_round(base["health"] * (1 + n(progression, 2) + all_stats + org["health"])),
-        "armor": sheet_round(base["armor"] * (1 + n(progression, 3) + all_stats + (total(6) if matching_size else 0) + org["armor"])),
+        "armor": sheet_round(base["armor"] * (1 + n(progression, 3) + all_stats + (total(6) if matching_size else 0) + org["armor"])) + u.armor,
         "defense": base["defense"],
         "speed": sheet_round(base["speed"] * (1 + org["speed"])),
         "reaction": sheet_round(number(base["reaction"]) * (1 + n(progression, 4) + all_stats)) + build.mental,
@@ -242,16 +252,14 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
             damage_bonus = None
             warnings.append(f"{zoid['name']} fixed_{i + 1}: textual damage {raw_damage!r} requires adjudication; spreadsheet arithmetic is invalid")
         else:
-            damage_bonus = sheet_round(u.damage[i] * 20 + (number(raw_damage) + u.damage[i] * 20) * org["damage"])
+            damage_bonus = sheet_round(number(raw_damage) * org["damage"])
         weapons.append({
             "slot": f"fixed_{i + 1}", "name": col(zoid, name_col), "effect": col(zoid, effect_col),
             "damage_type": col(zoid, type_col), "base_damage": raw_damage,
             "damage_note": damage_note(zoid, damage_col),
-            "damage_bonus": damage_bonus, "base_to_hit": base_hit + u.to_hit[i],
-            "damage_upgrade": u.damage[i] * 20, "damage_percent": org["damage"],
-            # Owner correction: fixed-slot upgrades add a flat bonus to the
-            # final attack modifier; removable slots have no upgrade inputs.
-            "to_hit": sheet_round(base_hit * (1 + n(progression, 6) + all_stats + org["to_hit"]) + hit_bonus + skill_hit) + u.to_hit[i],
+            "damage_bonus": damage_bonus, "base_to_hit": base_hit,
+            "damage_upgrade": 0, "damage_percent": org["damage"],
+            "to_hit": sheet_round(base_hit * (1 + n(progression, 6) + all_stats + org["to_hit"]) + hit_bonus + skill_hit) + (u.accuracy if raw_damage is not None else 0),
             "heat_rating": col(zoid, 85 + i),
         })
     for slot, e in zip(("back", "left", "right", "chest"), equipment):
@@ -266,7 +274,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
             "base_damage": raw_damage, "damage_bonus": damage_bonus,
             "damage_upgrade": 0, "damage_percent": org["damage"],
             "damage_note": damage_note(e, 2),
-            "base_to_hit": n(e, 5), "to_hit": sheet_round(n(e, 5) * (1 + n(progression, 6) + all_stats + org["to_hit"]) + hit_bonus + weapon_skill_bonus(col(e, 3))),
+            "base_to_hit": n(e, 5), "to_hit": sheet_round(n(e, 5) * (1 + n(progression, 6) + all_stats + org["to_hit"]) + hit_bonus + weapon_skill_bonus(col(e, 3))) + (u.accuracy if raw_damage is not None else 0),
             "heat_rating": col(e, 16),
         })
     for weapon in weapons:

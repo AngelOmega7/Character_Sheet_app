@@ -187,7 +187,8 @@ class StorageTests(unittest.TestCase):
                 self.assertEqual(migrated.build.equipment[1], "armaments:particle_cannon")
                 base = switch_zoid(migrated, owned.id, "zoids:liger_zero", self.catalog)
                 self.assertEqual(base.build.upgrades.speed, 2)
-                self.assertEqual(base.build.upgrades.damage, (1, 0, 3, 0))
+                self.assertEqual(base.build.upgrades.accuracy, 4)
+                self.assertEqual(base.build.upgrades.damage, (0,) * 4)
                 with closing(sqlite3.connect(self.path)) as db:
                     self.assertEqual(db.execute("PRAGMA user_version").fetchone()[0], SAVE_VERSION)
                     self.assertEqual(json.loads(db.execute("SELECT payload FROM characters").fetchone()[0])["save_version"], SAVE_VERSION)

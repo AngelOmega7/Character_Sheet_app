@@ -7,6 +7,7 @@ from .catalog import Catalog
 from .characters import (Material, StoredFuzor, acquire_zoid, fixed_weapon_identity, restore_roster_selection,
                          set_upgrades, switch_zoid, validate_character)
 from .combat import RuleError
+from .upgrade_rules import UPGRADE_LIMITS, upgrade_price
 
 
 def recipe(catalog, zoid):
@@ -277,19 +278,12 @@ def change_upgrade(character, field, delta, slot=None, catalog=None):
     if not character.owned_zoids or delta not in (-1, 1) or type(delta) is not int:
         raise RuleError("Select a Zoid and increase or decrease one upgrade point")
     upgrades = character.build.upgrades
-    if field in ("speed", "reaction", "defense", "capacity") and slot is None:
-        old, base = getattr(upgrades, field), 5000
+    if field in UPGRADE_LIMITS and slot is None:
+        old = getattr(upgrades, field)
         updated = replace(upgrades, **{field: old + delta})
-    elif field in ("damage", "to_hit") and type(slot) is int and 0 <= slot < 4:
-        if not catalog.find("zoids", character.build.zoid)["fixed_weapon_ids"][slot]:
-            raise RuleError("Only fixed weapons can receive weapon upgrades")
-        points = list(getattr(upgrades, field))
-        old, base = points[slot], 10000
-        points[slot] += delta
-        updated = replace(upgrades, **{field: tuple(points)})
     else:
         raise RuleError("Unknown upgrade track")
-    amount = base * delta
+    amount = upgrade_price(field, old + 1) if delta > 0 else -upgrade_price(field, old)
     if amount > character.gold:
         raise RuleError(f"Upgrade costs {amount:,}g; only {character.gold:,}g available")
     return set_upgrades(replace(character, gold=character.gold - amount), updated, catalog)

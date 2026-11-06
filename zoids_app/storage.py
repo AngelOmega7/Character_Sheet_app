@@ -11,8 +11,9 @@ from .catalog import Catalog
 from .characters import Character, FixedWeaponCondition, FormLoadout, Material, OwnedEquipment, OwnedZoid, PilotDetails, StoredFuzor, WeaponUpgrade, adopt_legacy_character, migrate_equipment_inventory, restore_roster_selection, validate_character
 from .combat import RuleError, WeaponCondition
 from .stats import CharacterBuild, Upgrades
+from .upgrade_migration import migrate_upgrade_payload
 
-SAVE_VERSION = 10
+SAVE_VERSION = 11
 EXPORT_FORMAT = "zoids-character-export"
 EXPORT_FORMAT_VERSION = 1
 
@@ -20,7 +21,7 @@ EXPORT_FORMAT_VERSION = 1
 def _upgrades(values):
     values = dict(values)
     for key in ("damage", "to_hit"):
-        values[key] = tuple(values[key])
+        values[key] = tuple(values.get(key, (0,) * 4))
     return Upgrades(**values)
 
 
@@ -164,8 +165,6 @@ class CharacterStore:
             values["materials"] = tuple(Material(**i) for i in values.get("materials", []))
             values["known_zoids"] = tuple(values.get("known_zoids", []))
             values["loaded_zoids"] = tuple(values.get("loaded_zoids", []))
-            values["stored_fuzors"] = tuple(StoredFuzor(i["id"], i["zoid"], _upgrades(i["frame"]),
-                tuple(WeaponUpgrade(**w) for w in i["weapons"])) for i in values.get("stored_fuzors", []))
             archived = list(values.get("archived_content", []))
             removed_active = False
             if version < 3:
@@ -206,6 +205,9 @@ class CharacterStore:
                             roster.append(owned)
                     values["owned_zoids"] = roster
             values["archived_content"] = tuple(archived)
+            migrate_upgrade_payload(values, version)
+            values["stored_fuzors"] = tuple(StoredFuzor(i["id"], i["zoid"], _upgrades(i["frame"]),
+                tuple(WeaponUpgrade(**w) for w in i["weapons"])) for i in values.get("stored_fuzors", []))
             values["inventory"] = tuple(OwnedEquipment(i["id"], i["armament"], WeaponCondition(**i.get("condition", {})))
                                         for i in values["inventory"]) if version >= 4 else ()
             values["build"] = _build(values["build"])

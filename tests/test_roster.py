@@ -130,10 +130,11 @@ class RosterTests(unittest.TestCase):
         with self.assertRaises(RuleError):
             set_upgrades(character, Upgrades(damage=(0, 1, 0, 0)), self.catalog)
 
-    def test_shared_points_change_damage_without_replacing_form_base_damage(self):
+    def test_frame_accuracy_follows_forms_without_changing_weapon_damage(self):
         character = self.family(forms=("Zero Empire (CAU)",))
-        character = set_upgrades(character, Upgrades(damage=(0, 0, 2, 0)), self.catalog)
+        character = set_upgrades(character, Upgrades(accuracy=2), self.catalog)
         empire = self.form(character, "Zero Empire (CAU)")
+        self.assertEqual(empire.build.upgrades.accuracy, 2)
         result = calculate_stats(empire.build, self.catalog)["weapons"][2]
         self.assertEqual(result["base_damage"], 210)
-        self.assertEqual(result["damage_upgrade"], 40)
+        self.assertEqual(result["damage_upgrade"], 0)

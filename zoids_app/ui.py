@@ -14,6 +14,7 @@ from .attacks import calculate_attack
 from .combat import RepairConfirmationRequired, RuleError
 from .combat_controller import combat_snapshot, repair_character_health, rest_active_loadout, rolls_damage, weapon_action
 from .commerce import change_upgrade, detach_cau, purchase_zoid, quote_purchase, recipe, recipe_parts, sell_zoid, set_known_design, set_material
+from .upgrade_rules import UPGRADE_LIMITS, upgrade_price
 from .transport import load_zoid, select_transport
 from .equipment import SLOT_COLUMNS, equipment_template_name, resolved_equipment_name
 from .stats import Upgrades
@@ -765,7 +766,7 @@ class CharacterEditor:
         stored = [s for s in self.character.stored_fuzors if s.zoid == r["id"]]
         self.purchase_stored_fuzor.options = [option("new", "New FUZOR — no retained upgrades"),
             *[option(s.id, f"{s.id[:8]} · Frame {s.frame.speed}/{s.frame.reaction}/{s.frame.defense}/{s.frame.capacity}"
-                     f" · Weapon points {sum(w.damage + w.to_hit for w in s.weapons)}") for s in stored]]
+                     f" · Accuracy {s.frame.accuracy} · Armor {s.frame.armor}") for s in stored]]
         self.purchase_stored_fuzor.value = "new"
         self.purchase_stored_fuzor.visible = bool(stored)
         self.purchase_blox.controls = []
@@ -869,13 +870,16 @@ class CharacterEditor:
 
     def upgrade_counter(self, label, value, field, slot=None, disabled=False):
         control = ft.TextField(label=label, value=str(value), read_only=True, width=100, disabled=disabled)
-        base = 5000 if slot is None else 10000
+        limit = UPGRADE_LIMITS[field]
+        maximum = limit is not None and value >= limit
+        refund = upgrade_price(field, value) if value else 0
+        price = upgrade_price(field, value + 1)
         widget = ft.Column([ft.Row([
-            ft.IconButton(icon=ft.Icons.REMOVE, disabled=disabled or value == 0, tooltip=f"Refund {base * value:,}g",
+            ft.IconButton(icon=ft.Icons.REMOVE, disabled=disabled or value == 0, tooltip=f"Refund {refund:,}g",
                           on_click=lambda e: self.adjust_upgrade(field, -1, slot)), control,
-            ft.IconButton(icon=ft.Icons.ADD, disabled=disabled or value == 5, tooltip=f"Buy next point for {base * (value + 1):,}g",
+            ft.IconButton(icon=ft.Icons.ADD, disabled=disabled or maximum, tooltip=f"Buy next point for {price:,}g",
                           on_click=lambda e: self.adjust_upgrade(field, 1, slot)),
-        ], wrap=True), ft.Text(f"Next: {base * (value + 1):,}g" if value < 5 else "Maximum 5", size=12)])
+        ], wrap=True), ft.Text(f"Next: {price:,}g" if not maximum else f"Maximum {limit}", size=12)])
         return control, widget
 
     def update_material(self, event=None, *, name=None, quantity=None):
@@ -1038,25 +1042,13 @@ class CharacterEditor:
             ft.Button("Detach selected CAU", disabled=not active or build.zoid == active.base_zoid, on_click=self.detach_selected_cau),
             ft.Button("Sell selected Zoid + CAUs", disabled=not active, on_click=self.sell_selected_zoid)])
         self.frame_fields, frame_widgets = {}, []
-        for key in ("speed", "reaction", "defense", "capacity"):
+        for key in UPGRADE_LIMITS:
             control, widget = self.upgrade_counter(key.title(), getattr(build.upgrades, key), key, disabled=not active)
             self.frame_fields[key] = control
             frame_widgets.append(ft.Container(widget, col={"xs": 12, "md": 6}))
-        self.damage_fields, self.hit_fields = [], []
-        upgrade_controls = [ft.Text("Points 0–5. Each frame upgrade point costs 5,000g; each weapon upgrade point costs 10,000g. Minus refunds the same flat cost per point. Frame/shared-weapon upgrades follow the host across forms.", size=12),
+        upgrade_controls = [ft.Text("Each point costs 5,000g × its new rank. Armor adds 20,000g per purchased point. Defense and Accuracy are uncapped; other tracks have a maximum of 5. Accuracy adds +1 to every attack per point; Armor adds +1 Armor per point. Minus refunds the removed rank's price. Frame upgrades follow the host across forms.", size=12),
             ft.ResponsiveRow(frame_widgets)]
-        identities = self.catalog.find("zoids", build.zoid)["fixed_weapon_ids"] if active else (None,) * 4
-        base_identities = self.catalog.find("zoids", active.base_zoid)["fixed_weapon_ids"] if active else ()
-        for index, key in enumerate(identities):
-            damage_field, damage_widget = self.upgrade_counter("Damage", build.upgrades.damage[index], "damage", index, key is None)
-            hit_field, hit_widget = self.upgrade_counter("To-hit", build.upgrades.to_hit[index], "to_hit", index, key is None)
-            self.damage_fields.append(damage_field)
-            self.hit_fields.append(hit_field)
-            if key:
-                shared = "Shared with matching base weapon" if key in base_identities else "This form's weapon"
-                upgrade_controls.extend([ft.Text(f"{index + 1}. {stats['weapons'][index]['name']} · {shared}", size=13),
-                    ft.ResponsiveRow([ft.Container(damage_widget, col={"xs": 12, "md": 6}), ft.Container(hit_widget, col={"xs": 12, "md": 6})])])
-        upgrades_card = card("Chassis & weapon upgrades", upgrade_controls)
+        upgrades_card = card("Frame upgrades", upgrade_controls)
         upgrades_card.visible = active is not None
         inventory_card = self.inventory_panel(character)
         equipment_controls = [ft.Text("Only compatible owned copies are listed. Unequipping clears this form's assignment; use Return to inventory to free a copy from all forms.", size=12)]

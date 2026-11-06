@@ -25,7 +25,7 @@ class StoredFuzorTests(unittest.TestCase):
         c = set_known_design(c, "2-Arm Lizard", catalog=self.catalog)
         c = self.buy(c)
         return set_upgrades(c, Upgrades(speed=3, reaction=2, defense=1, capacity=4,
-                                       damage=(2, 0, 0, 0), to_hit=(3, 0, 0, 0)), self.catalog)
+                                       accuracy=5, armor=2), self.catalog)
 
     def buy(self, c, stored=None, **kwargs):
         quote = quote_purchase(c, "2-Arm Lizard", stored_fuzor_id=stored, catalog=self.catalog)
@@ -69,7 +69,7 @@ class StoredFuzorTests(unittest.TestCase):
     def test_multiple_retained_copies_remain_independent(self):
         first = self.fused()
         sold = sell_zoid(first, first.active_zoid_id, self.catalog, retain_fuzor=True)
-        second = set_upgrades(self.buy(sold), Upgrades(speed=1, damage=(4, 0, 0, 0)), self.catalog)
+        second = set_upgrades(self.buy(sold), Upgrades(speed=1, accuracy=4), self.catalog)
         sold = sell_zoid(second, second.active_zoid_id, self.catalog, retain_fuzor=True)
         self.assertEqual(len(sold.stored_fuzors), 2)
         rebuilt = self.buy(sold, first.active_zoid_id)

@@ -21,7 +21,7 @@ def main():
         mental=args.mental, abilities=tuple(args.ability),
     )
     if args.snapshot:
-        build = CharacterBuild("Saberlion", mental=3, abilities=("Lion Type 1",), upgrades=Upgrades(damage=(1, 0, 0, 0)))
+        build = CharacterBuild("Saberlion", mental=3, abilities=("Lion Type 1",), upgrades=Upgrades(accuracy=1))
     try:
         result = calculate_stats(build)
     except RuleError as exc:

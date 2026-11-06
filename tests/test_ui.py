@@ -190,15 +190,33 @@ class EditorTests(unittest.TestCase):
         self.assertIn("zoids:zero_jager_cau", {o.key for o in editor.acquisition.options})
         editor.gold_input.value = "60000"
         for _ in range(3):
-            editor.adjust_upgrade("damage", 1, 2)
+            editor.adjust_upgrade("accuracy", 1)
         editor.acquisition.value = "zoids:zero_jager_cau"
         self.confirm_purchase()
         self.assertEqual(len(editor.owned_select.options), 2)
         self.assertEqual(len(editor.form_select.options), 2)
-        self.assertEqual(editor.damage_fields[3].value, "3")
+        self.assertEqual(editor.frame_fields["accuracy"].value, "3")
+        self.assertIn("armor", editor.frame_fields)
+        self.assertFalse(hasattr(editor, "damage_fields"))
         editor.save()
         loaded = self.store.load(editor.character.id)
-        self.assertEqual(loaded.build.upgrades.damage[3], 3)
+        self.assertEqual(loaded.build.upgrades.accuracy, 3)
+
+    def test_upgrade_counters_show_progressive_prices_and_uncapped_tracks(self):
+        for field in ("defense", "accuracy"):
+            _, widget = self.editor.upgrade_counter(field.title(), 7, field)
+            minus, _, plus = widget.controls[0].controls
+            self.assertFalse(plus.disabled)
+            self.assertEqual(plus.tooltip, "Buy next point for 40,000g")
+            self.assertEqual(minus.tooltip, "Refund 35,000g")
+        _, widget = self.editor.upgrade_counter("Armor", 2, "armor")
+        minus, _, plus = widget.controls[0].controls
+        self.assertEqual(minus.tooltip, "Refund 30,000g")
+        self.assertEqual(plus.tooltip, "Buy next point for 35,000g")
+        for field in ("speed", "reaction", "capacity", "armor"):
+            _, widget = self.editor.upgrade_counter(field.title(), 5, field)
+            self.assertTrue(widget.controls[0].controls[2].disabled)
+            self.assertEqual(widget.controls[1].value, "Maximum 5")
 
     def test_unsaved_switch_can_be_cancelled(self):
         editor = self.editor

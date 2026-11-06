@@ -28,7 +28,7 @@ class StatsTests(unittest.TestCase):
                     self.assertEqual([w["to_hit"] for w in actual["weapons"]], expected)
                 else:
                     self.assertEqual(actual[key], expected)
-        self.assertEqual(actual["weapons"][0]["damage_bonus"], 20)
+        self.assertEqual(actual["weapons"][0]["damage_bonus"], 0)  # Legacy weapon points no longer add damage.
 
     def test_spreadsheet_rounding_ties_and_away_from_zero(self):
         self.assertEqual(sheet_round("2.5"), 3)
@@ -47,9 +47,9 @@ class StatsTests(unittest.TestCase):
         self.assertEqual(result["pilot"]["range"], 675)
 
     def test_size_percentage_applies_to_all_weapon_slots_before_flat_upgrades(self):
-        result = self.calc(abilities=("Lion Type 1", "Small Expert"), equipment=("Particle Cannon", None, None, None), upgrades=Upgrades(to_hit=(2, 0, 0, 0)))
+        result = self.calc(abilities=("Lion Type 1", "Small Expert"), equipment=("Particle Cannon", None, None, None), upgrades=Upgrades(accuracy=2))
         self.assertEqual(result["weapons"][0]["to_hit"], 25)  # ROUND(17 * 1.35) + 2
-        self.assertEqual(result["weapons"][4]["to_hit"], 22)  # ROUND(16 * 1.35)
+        self.assertEqual(result["weapons"][4]["to_hit"], 24)  # ROUND(16 * 1.35) + 2
 
     def test_size_categories_match_exactly_and_support_explicit_lists(self):
         for ability in ("Extra Large Expert", "Large Large Expert", "Large Large Over Expert"):
@@ -88,21 +88,21 @@ class StatsTests(unittest.TestCase):
         self.assertEqual(result["base"]["defense"], 18)
         self.assertEqual(result["carry_capacity"], 40)
 
-    def test_fixed_hit_upgrade_adds_flat_final_bonus(self):
-        result = self.calc(upgrades=Upgrades(to_hit=(2, 0, 0, 0)))
-        self.assertEqual(result["weapons"][0]["base_to_hit"], 19)
+    def test_accuracy_upgrade_adds_flat_final_bonus(self):
+        result = self.calc(upgrades=Upgrades(accuracy=2))
+        self.assertEqual(result["weapons"][0]["base_to_hit"], 17)
         self.assertEqual(result["weapons"][0]["to_hit"], 23)
 
-    def test_hit_upgrades_are_slot_specific_and_do_not_affect_removable_weapons(self):
+    def test_accuracy_affects_all_attacks_but_not_utility_slots(self):
         equipment = ("Particle Cannon",) * 4
         baseline = self.calc(equipment=equipment)
-        upgraded = self.calc(equipment=equipment, upgrades=Upgrades(to_hit=(1, 2, 3, 4)))
+        upgraded = self.calc(equipment=equipment, upgrades=Upgrades(accuracy=7))
         self.assertTrue(upgraded["overloaded"])
         for i, (before, after) in enumerate(zip(baseline["weapons"], upgraded["weapons"])):
             with self.subTest(slot=i + 1):
-                expected_bonus = i + 1 if i < 4 else 0
+                expected_bonus = 7 if before["base_damage"] is not None else 0
                 self.assertEqual(after["to_hit"] - before["to_hit"], expected_bonus)
-                self.assertEqual(after["base_to_hit"] - before["base_to_hit"], expected_bonus)
+                self.assertEqual(after["base_to_hit"], before["base_to_hit"])
                 self.assertEqual(after["damage_bonus"], before["damage_bonus"])
 
     def test_hit_upgrades_stack_with_pilot_equipment_and_skill_bonuses(self):
@@ -112,7 +112,7 @@ class StatsTests(unittest.TestCase):
             equipment_active=(True, False, False, False),
         )
         baseline = self.calc(**changes)
-        upgraded = self.calc(**changes, upgrades=Upgrades(to_hit=(5, 0, 0, 0)))
+        upgraded = self.calc(**changes, upgrades=Upgrades(accuracy=5))
         self.assertEqual(upgraded["weapons"][0]["to_hit"], baseline["weapons"][0]["to_hit"] + 5)
 
     def test_upgrade_inputs_cannot_extend_to_removable_slots(self):
@@ -179,11 +179,11 @@ class StatsTests(unittest.TestCase):
         self.assertEqual((off["shields"], on["shields"]), (0, 200))
 
     def test_organoid_percentages_and_damage_rounding(self):
-        result = self.calc(organoid_enabled=True, upgrades=Upgrades(damage=(1, 0, 0, 0)))
+        result = self.calc(organoid_enabled=True)
         self.assertEqual(result["pilot"]["health"], 145)
         self.assertEqual(result["pilot"]["speed"], 260)
         self.assertEqual(result["pilot"]["range"], 630)
-        self.assertEqual(result["weapons"][0]["damage_bonus"], 23)
+        self.assertEqual(result["weapons"][0]["damage_bonus"], 2)
         self.assertEqual(result["weapons"][0]["to_hit"], 22)
 
     def test_organoid_hit_percentage_applies_to_all_eight_slots_when_active(self):
@@ -193,12 +193,12 @@ class StatsTests(unittest.TestCase):
         self.assertEqual([w["to_hit"] for w in result["weapons"]], [17, 12, 0, 15, 24, 24, 24, 24])
 
     def test_organoid_hit_stacks_with_size_before_flat_fixed_upgrades(self):
-        result = self.calc(abilities=("Lion Type 1", "Small Expert"), organoid_enabled=True, organoid_color="Black", organoid_level=5, upgrades=Upgrades(to_hit=(2, 0, 0, 0)))
+        result = self.calc(abilities=("Lion Type 1", "Small Expert"), organoid_enabled=True, organoid_color="Black", organoid_level=5, upgrades=Upgrades(accuracy=2))
         # ROUND(17 * (1 + .25 + .10 + .25)) + 2 = 29
         self.assertEqual(result["weapons"][0]["to_hit"], 29)
 
     def test_disabling_organoid_removes_all_bonuses_for_every_color(self):
-        base = replace(self.example, equipment=("Particle Cannon", None, None, None), fixed_active=(False, False, False, True), upgrades=Upgrades(damage=(1, 0, 0, 0), to_hit=(2, 0, 0, 0)))
+        base = replace(self.example, equipment=("Particle Cannon", None, None, None), fixed_active=(False, False, False, True), upgrades=Upgrades(accuracy=2))
         baseline = calculate_stats(base, self.catalog)
         for color in ("White", "Red", "Blue", "Black"):
             with self.subTest(color=color):
@@ -233,8 +233,8 @@ class StatsTests(unittest.TestCase):
         self.assertEqual(result["weapons"][3]["base_damage"], 300)
         self.assertEqual(result["weapons"][2]["damage_bonus"], 0)
         self.assertFalse(result["warnings"])
-        upgraded = self.calc(zoid="Ultra Phalanx", pilot_level=100, abilities=(), upgrades=Upgrades(damage=(0, 0, 1, 0)), organoid_enabled=True, organoid_color="White")
-        self.assertEqual(upgraded["weapons"][2]["damage_bonus"], 22)
+        upgraded = self.calc(zoid="Ultra Phalanx", pilot_level=100, abilities=(), organoid_enabled=True, organoid_color="White")
+        self.assertEqual(upgraded["weapons"][2]["damage_bonus"], 2)
 
     def test_dynamic_equipment_inherits_flat_damage(self):
         result = self.calc(zoid="Zaber Fang", pilot_level=100, abilities=(), equipment=("armaments:zoid_equipment_slot_1", None, None, None))

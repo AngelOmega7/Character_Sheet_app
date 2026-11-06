@@ -38,33 +38,39 @@ that portion of the chain rather than requiring another purchase.
 
 2. PRICE IMPROVEMENTS USING EXISTING UPGRADE RULES
 ------------------------------------------------------------------------------
-Each upgrade point has a flat cost, regardless of the current rank.
+Each frame upgrade point costs 5,000g multiplied by its new rank in that
+track: 5,000g for the first, 10,000g for the second, 15,000g for the third,
+and so on. Armor adds a further 20,000g to the price of each point.
 
-  Frame improvement              Cost per point       Maximum
-  +30 Speed                         5,000g             5 points
-  +1 Reaction                       5,000g             5 points
-  +5 Defense                        5,000g             5 points
-  +10 Carry capacity                5,000g             5 points
+  Frame improvement              Price of rank N             Maximum
+  +30 Speed                         5,000g x N               5 points
+  +1 Reaction                       5,000g x N               5 points
+  +5 Defense                        5,000g x N               Uncapped
+  +10 Carry capacity                5,000g x N               5 points
+  +1 Accuracy on all attacks        5,000g x N               Uncapped
+  +1 Armor                         (5,000g x N) + 20,000g    5 points
 
-  Fixed-weapon improvement       Cost per point       Maximum
-  +20 damage to one weapon         10,000g             5 per weapon
-  +1 to hit for one weapon         10,000g             5 per weapon
+Accuracy adds a flat bonus to the final attack modifier for both fixed and
+removable weapons. Armor adds a flat bonus after percentage modifiers.
+Weapon damage and weapon-specific to-hit upgrade tracks are removed.
+Removing a purchased frame point refunds the price of the removed rank.
 
-Damage and to-hit improvements are separate tracks for each fixed weapon.
-These weapon upgrade tracks do not apply to removable weapons.
+Existing saves convert each weapon damage or to-hit upgrade point into one
+Accuracy point on its owning Zoid. Shared weapons count once across forms;
+consumed components and stored FUZORs retain their own converted points.
 
 Construction improvements consume the SAME upgrade allowance as improvements
-purchased later. A weapon built with three damage points can receive only two
-more damage points, not another five.
+purchased later. A chassis built with three Speed points can receive only two
+more Speed points, not another five. Uncapped tracks continue at the next rank.
 
 Record these improvements separately from the benchmark's base stats so they
 receive the same calculations as ordinary upgrades.
 
-HEALTH, ARMOR, AND RANGE
+HEALTH AND RANGE
 
-For this initial ruleset, retain the benchmark's Health, Armor, and Range.
-The app does not have equivalent upgrade tracks for these stats, and Armor
-can change combat effectiveness sharply.
+For this initial ruleset, retain the benchmark's Health and Range. The app
+does not have equivalent upgrade tracks for these stats. Armor can be raised
+through the priced frame upgrade track above.
 
 For substantially different values, select a closer benchmark or have the GM
 price the design as a new chassis tier using comparable existing Zoids.
@@ -115,7 +121,11 @@ Examples:
 
   -30 Speed                         2,500g credit
   -5 Defense                        2,500g credit
-  -20 damage on a retained weapon   5,000g credit
+  -1 Reaction                       2,500g credit
+
+For design-credit purposes, use half the FIRST point's price for each unit
+of a meaningful base-stat reduction. Do not use higher ranks to inflate
+credits. Weapon damage reductions have no automatic upgrade-price credit.
 
 Only meaningful reductions qualify. Removing damage from a weapon that will
 be discarded does not provide credit toward other improvements. The GM must
@@ -171,9 +181,9 @@ if necessary. Required cores and parts are supplied separately.
 Retain Shield Liger's existing weapons, systems, and equipment slots. Add:
 
   Shield Liger benchmark                    38,000g
-  +60 Speed: two frame points               10,000g
+  +60 Speed: first and second points        15,000g
   +5 Defense: one frame point                5,000g
-  +20 Laser Saber damage: one weapon point  10,000g
+  +1 Accuracy: one frame point               5,000g
                                            -------
   Total                                    63,000g + Zoid Core H1
 
@@ -181,10 +191,12 @@ Relevant base-plus-upgrade values:
 
   Speed                 310
   Defense                18
-  Laser Saber damage    170
+  Accuracy bonus         +1 to all attacks
+  Laser Saber damage    150 (unchanged)
 
-Record two Speed points, one Defense point, and one Laser Saber damage point
-as already used. These count toward their respective five-point limits.
+Record two Speed points, one Defense point, and one Accuracy point as already
+used. Speed has three points remaining before its cap. The next Defense or
+Accuracy point costs 10,000g; neither track has a cap.
 
 Compare this design with Blade Liger at 70,000g plus the materials required
 by its construction chain. Blade Liger still has higher Health, Defense,
@@ -200,5 +212,5 @@ Start with this benchmark-and-modify system and playtest several builds.
 Track whether custom Zoids consistently outperform similarly priced existing
 Zoids, and whether any trade-offs provide discounts without meaningful costs.
 
-Use those results to calibrate future independent pricing for Health, Armor,
-Range, new fixed systems, movement capabilities, and equipment-slot changes.
+Use those results to calibrate future independent pricing for Health, Range,
+new fixed systems, movement capabilities, and equipment-slot changes.

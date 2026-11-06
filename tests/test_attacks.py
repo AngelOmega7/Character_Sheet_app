@@ -70,12 +70,12 @@ class ConditionalAbilityTests(unittest.TestCase):
             inactive = replace(build, abilities=(), inactive_abilities=(name,))
             self.assertEqual(self.attack(inactive, health=27)["damage"], 35)
 
-    def test_comeback_applies_to_ranged_damage_and_upgraded_fixed_damage(self):
-        build = CharacterBuild("Saberlion", abilities=("Comeback",), equipment=("Particle Cannon", None, None, None), upgrades=Upgrades(damage=(1, 0, 0, 0)))
-        self.assertEqual(self.attack(build, health=27)["damage"], 66)
+    def test_comeback_applies_to_ranged_and_fixed_damage_without_weapon_upgrades(self):
+        build = CharacterBuild("Saberlion", abilities=("Comeback",), equipment=("Particle Cannon", None, None, None), upgrades=Upgrades(accuracy=1))
+        self.assertEqual(self.attack(build, health=27)["damage"], 42)
         self.assertEqual(self.attack(build, health=27, slot="back", band="normal")["damage"], 78)
         enabled = replace(build, organoid_enabled=True, organoid_color="Black", organoid_level=5)
-        self.assertEqual(self.attack(enabled, health=27)["damage"], 80)
+        self.assertEqual(self.attack(enabled, health=27)["damage"], 51)
 
     def test_comeback_uses_current_derived_maximum_health(self):
         base = CharacterBuild("Saberlion", abilities=("Comeback",))

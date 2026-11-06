@@ -233,21 +233,21 @@ class WorkflowTests(unittest.TestCase):
                 store.save(loaded)
                 self.assertEqual(store.load(c.id), loaded)
 
-    def test_upgrades_charge_flat_costs_and_refund_each_removed_point(self):
-        c = replace(established_character(self.catalog), gold=40000)
+    def test_upgrades_charge_progressive_costs_and_refund_removed_rank(self):
+        c = replace(established_character(self.catalog), gold=45000)
         c = change_upgrade(c, "speed", 1, catalog=self.catalog)
         c = change_upgrade(c, "speed", 1, catalog=self.catalog)
-        c = change_upgrade(c, "damage", 1, 0, self.catalog)
-        c = change_upgrade(c, "damage", 1, 0, self.catalog)
-        c = change_upgrade(c, "damage", 1, 0, self.catalog)
+        c = change_upgrade(c, "accuracy", 1, catalog=self.catalog)
+        c = change_upgrade(c, "accuracy", 1, catalog=self.catalog)
+        c = change_upgrade(c, "accuracy", 1, catalog=self.catalog)
         self.assertEqual(c.gold, 0)
         with self.assertRaises(RuleError):
-            change_upgrade(c, "damage", 1, 0, self.catalog)
-        c = change_upgrade(c, "damage", -1, 0, self.catalog)
-        self.assertEqual(c.gold, 10000)
-        self.assertEqual(c.build.upgrades.damage[0], 2)
-        c = change_upgrade(c, "speed", -1, catalog=self.catalog)
+            change_upgrade(c, "accuracy", 1, catalog=self.catalog)
+        c = change_upgrade(c, "accuracy", -1, catalog=self.catalog)
         self.assertEqual(c.gold, 15000)
+        self.assertEqual(c.build.upgrades.accuracy, 2)
+        c = change_upgrade(c, "speed", -1, catalog=self.catalog)
+        self.assertEqual(c.gold, 25000)
         self.assertEqual(c.build.upgrades.speed, 1)
         with self.assertRaises(RuleError):
             change_upgrade(c, "damage", 1, 2, self.catalog)  # Smoke unit.
@@ -336,6 +336,6 @@ class WorkflowTests(unittest.TestCase):
             self.assertEqual({o.base_zoid for o in migrated.owned_zoids}, {"zoids:shield_liger"})
             self.assertEqual([o.frame.speed for o in migrated.owned_zoids], [2, 1])
             self.assertEqual(migrated.gold, 88)
-            self.assertEqual(migrated.build.upgrades.damage[0], 3)
+            self.assertEqual(migrated.build.upgrades.accuracy, 4)
             self.assertEqual(combat_snapshot(migrated, self.catalog)[1]["fixed_1"]["condition"].last_roll, 17)
             self.assertEqual(CharacterStore(path, self.catalog).load(raw["id"]), migrated)
