@@ -9,6 +9,7 @@ from .combat import RuleError
 SLOT_COLUMNS = {"back": 46, "left": 53, "right": 60, "chest": 65}
 _DYNAMIC_NAME = re.compile(r"vlookup\(Zoid!C4,Zoid_DB\[\],(\d+),FALSE(?:\(\))?\)", re.I)
 _SLOT_NAME = re.compile(r"Zoid equipment slot (\d+)", re.I)
+ZOID_EQUIPMENT_COLUMNS = ((47, 49), (54, 55), (61, 62), (66, 67))
 
 
 def equipment_template_name(record):
@@ -36,6 +37,24 @@ def resolved_equipment_name(armament, zoid, catalog=None):
     return text.split(":", 1)[0].strip() or equipment_template_name(record)
 
 
+def is_assist_equipment(armament, zoid, catalog):
+    """Classify a Zoid-specific template by its resolved item, not its source row.
+
+    Source slots identify the item's data; they do not restrict where it mounts.
+    A named item without a damage value is utility/assist equipment.
+    """
+    if armament["kind"] != "dynamic":
+        return armament["assist_eligible"]
+    match = _DYNAMIC_NAME.fullmatch(armament["dynamic_fields"].get("name", ""))
+    if match is None:
+        return False
+    columns = dict(ZOID_EQUIPMENT_COLUMNS)
+    name_column = int(match[1])
+    if name_column not in columns:
+        return False
+    return bool(catalog.column(zoid, name_column)) and catalog.column(zoid, columns[name_column]) is None
+
+
 def eligible_equipment(zoid, slot, catalog=None):
     """Return equippable Armaments records for this Zoid's removable slot."""
     catalog = catalog or Catalog()
@@ -44,10 +63,12 @@ def eligible_equipment(zoid, slot, catalog=None):
     record = catalog.find("zoids", zoid)
     slot_type = str(catalog.column(record, SLOT_COLUMNS[slot]) or "").strip().casefold()
     items = [r for r in catalog.tables["armaments"]["records"] if r["kind"] in {"record", "dynamic"}]
+    mounts = record.get("zoid_equipment_mounts", {})
+    items = [r for r in items if r["id"] not in mounts or slot in mounts[r["id"]]]
     if slot_type == "weapon and assist":
         return items
     if slot_type == "assist":
-        return [r for r in items if r["assist_eligible"]]
+        return [r for r in items if is_assist_equipment(r, record, catalog)]
     if not slot_type:
         return []
     raise RuleError(f"Unknown equipment slot type: {slot_type}")

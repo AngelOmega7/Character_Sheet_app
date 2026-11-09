@@ -211,6 +211,7 @@ class WorkflowTests(unittest.TestCase):
                 form = self.catalog.find("zoids", name)
                 c = switch_zoid(c, host, form["id"], self.catalog)
                 c = set_upgrades(c, Upgrades(speed=2, damage=(0, 0, 0, 3)), self.catalog)
+                c = replace(c, current_energy=self.catalog.find("zoids", c.build.zoid)["energy"])
                 c = weapon_action(c, "fixed_4", "use", catalog=self.catalog).character
                 store = CharacterStore(Path(directory) / "old.sqlite3", self.catalog)
                 store.save(c)

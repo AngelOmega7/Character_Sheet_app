@@ -13,7 +13,7 @@ from .combat import RuleError, WeaponCondition
 from .stats import CharacterBuild, Upgrades
 from .upgrade_migration import migrate_upgrade_payload
 
-SAVE_VERSION = 11
+SAVE_VERSION = 14
 EXPORT_FORMAT = "zoids-character-export"
 EXPORT_FORMAT_VERSION = 1
 
@@ -159,6 +159,18 @@ class CharacterStore:
             if type(version) is not int or version not in (range(1, SAVE_VERSION + 1) if allow_legacy else (SAVE_VERSION,)):
                 raise RuleError("This character uses an unsupported save version")
             values = dict(payload["character"])
+            if version < 12:
+                # Remove retired counters, preserving damage/rolls. New chassis
+                # energy initializes at half capacity during character validation.
+                values.pop("current_energy", None)
+                def migrate_condition(condition):
+                    condition.pop("heat", None)
+                def migrate_owned(owned):
+                    owned["current_energy"] = self.catalog.find("zoids", owned["active_form"])["energy"] // 2
+                    for weapon in owned.get("weapon_conditions", []):
+                        migrate_condition(weapon["condition"])
+                    for component in owned.get("fusion_components") or []:
+                        migrate_owned(component)
             details = dict(values.get("pilot_details", {}))
             details["feats"] = tuple(details.get("feats", ()))
             values["pilot_details"] = PilotDetails(**details)
@@ -205,6 +217,11 @@ class CharacterStore:
                             roster.append(owned)
                     values["owned_zoids"] = roster
             values["archived_content"] = tuple(archived)
+            if version < 12:
+                for owned in values.get("owned_zoids", []):
+                    migrate_owned(owned)
+                for item in values.get("inventory", []):
+                    migrate_condition(item.get("condition", {}))
             migrate_upgrade_payload(values, version)
             values["stored_fuzors"] = tuple(StoredFuzor(i["id"], i["zoid"], _upgrades(i["frame"]),
                 tuple(WeaponUpgrade(**w) for w in i["weapons"])) for i in values.get("stored_fuzors", []))
@@ -244,6 +261,9 @@ class CharacterStore:
                 character = migrate_workflow(character, self.catalog)
             from .workflow_migration import migrate_expanded_caus
             character = migrate_expanded_caus(character, self.catalog)
+            if version < 13:
+                from .workflow_migration import migrate_equipment_mounts
+                character = migrate_equipment_mounts(character, self.catalog)
             return validate_character(character, self.catalog)
         except (KeyError, TypeError, ValueError, AttributeError) as exc:
             raise RuleError(f"Cannot load character: {exc}") from exc

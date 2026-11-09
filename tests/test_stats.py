@@ -273,7 +273,8 @@ class CatalogTests(unittest.TestCase):
             ids = [r["id"] for r in table["records"]]
             self.assertEqual(len(ids), len(set(ids)))
             for r in table["records"]:
-                self.assertGreater(r["source"]["row"], 1)
+                if not r["source"].get("owner_defined"):
+                    self.assertGreater(r["source"]["row"], 1)
         self.assertEqual(len(catalog.tables["zoids"]["records"]), 155)
         self.assertEqual(len(catalog.tables["organoids"]["records"]), 41)
 

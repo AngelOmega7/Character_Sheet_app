@@ -57,21 +57,13 @@ class EquipmentAbilityTests(unittest.TestCase):
             self.assertEqual(both["current"]["armor"], baseline["current"]["armor"] + 2 * rank)
             self.assertEqual(actual["current"]["reaction"], baseline["current"]["reaction"])
 
-    def test_economized_capacity_and_breakage(self):
+    def test_economized_active_rank_one_reduces_energy_cost(self):
         build = CharacterBuild("Saberlion", abilities=("Economized Shooting",), equipment=("Particle Cannon", None, None, None))
         actual = calculate_stats(build, self.catalog)
-        weapon = actual["weapons"][4]
-        self.assertEqual((weapon["heat_rating"], weapon["maximum_heat"]), (3, 4))
-        self.assertIsNone(actual["weapons"][0]["maximum_heat"])
-        state = WeaponState(3)
-        for _ in range(4):
-            state = use_weapon(state, heat_capacity_bonus=weapon["heat_capacity_bonus"]).weapon
-            self.assertFalse(state.broken)
-        self.assertTrue(use_weapon(state, heat_capacity_bonus=1).weapon.broken)
-        self.assertTrue(use_weapon(state, heat_capacity_bonus=0).weapon.broken)
         disabled = calculate_stats(replace(build, abilities=(), inactive_abilities=("Economized Shooting",)), self.catalog)
-        self.assertEqual(disabled["weapons"][4]["maximum_heat"], 3)
-        self.assertEqual(use_weapon(WeaponState(), heat_capacity_bonus=1).weapon, WeaponState())
+        self.assertEqual(actual["weapons"][4]["energy_cost"], 10)
+        self.assertEqual(disabled["weapons"][4]["energy_cost"], 12)
+        self.assertEqual(actual["weapons"][0], disabled["weapons"][0])
 
     def test_player_managed_abilities_remain_selectable_without_stat_effects(self):
         names = ("Melee Multi Attack", "Smoke Master", "Armor Breaker", "Weapon Breaker 1", "Counter Attack")

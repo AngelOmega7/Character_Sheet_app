@@ -12,7 +12,7 @@ from .characters import (PilotDetails, acquire_equipment, acquire_zoid, assign_p
                          new_character, remove_pilot_ability, return_equipment_to_inventory, switch_zoid, validate_character)
 from .attacks import calculate_attack
 from .combat import RepairConfirmationRequired, RuleError
-from .combat_controller import combat_snapshot, repair_character_health, rest_active_loadout, rolls_damage, weapon_action
+from .combat_controller import combat_snapshot, repair_character_health, rest, start_turn, rolls_damage, weapon_action
 from .commerce import change_upgrade, detach_cau, purchase_zoid, quote_purchase, recipe, recipe_parts, sell_zoid, set_known_design, set_material
 from .upgrade_rules import UPGRADE_LIMITS, upgrade_price
 from .transport import load_zoid, select_transport
@@ -281,15 +281,15 @@ class CharacterEditor:
         except (ValueError, TypeError) as exc:
             raise RuleError("Organoid level must be a whole number from 0 to 40") from exc
         try:
-            health, shields, gold = (int(control.value) for control in (self.health_input, self.shield_damage_input, self.gold_input))
+            health, shields, gold, energy = (int(control.value) for control in (self.health_input, self.shield_damage_input, self.gold_input, self.energy_input))
         except (ValueError, TypeError) as exc:
-            raise RuleError("Current health, shield damage, and gold must be nonnegative whole numbers") from exc
+            raise RuleError("Current health, energy, shield damage, and gold must be nonnegative whole numbers") from exc
         build = replace(self.character.build, pilot_level=level, mental=mental,
                         pilot_style=self.style.value, upgrades=upgrades,
                         organoid_color=self.organoid_color.value, organoid_level=organoid_level,
                         organoid_enabled=self.organoid_enabled.value, shield_adjustment=shields)
         return validate_character(replace(self.character, name=self.name.value, build=build, current_health=health,
-                                          gold=gold, pilot_details=details, transport_notes=self.transport_notes.value), self.catalog)
+                                          current_energy=energy, gold=gold, pilot_details=details, transport_notes=self.transport_notes.value), self.catalog)
 
     def change_feat(self, slot, value):
         try:
@@ -299,7 +299,7 @@ class CharacterEditor:
             self.character = self.profile_candidate()
             self.dirty = True
             self.render()
-            self.message("Feats updated. Demolitionist applies automatically when venting. Unsaved changes.")
+            self.message("Feats updated. Unsaved changes.")
         except RuleError as exc:
             if type(slot) is int and 0 <= slot < 7:
                 feats = self.character.pilot_details.feats
@@ -309,7 +309,7 @@ class CharacterEditor:
     def feat_panel(self, character):
         records = sorted([r for r in self.catalog.tables["feats"]["records"] if r["kind"] == "record"], key=lambda r: r["name"])
         self.feat_slots, self.feat_descriptions = [], []
-        controls = [ft.Text("Seven feat slots, matching the pilot sheet. Selected Demolitionist automatically vents 2 heat from one weapon. Other feat effects and eligibility are handled at the table.", size=13)]
+        controls = [ft.Text("Seven feat slots, matching the pilot sheet. Feat effects and eligibility are player-tracked. For Demolitionist, set current energy to its total when you use it and track its once-per-Rest limit at the table.", size=13)]
         feats = character.pilot_details.feats
         for slot in range(7):
             selected = feats[slot] if slot < len(feats) else None
@@ -361,7 +361,13 @@ class CharacterEditor:
 
     def rest(self, event=None):
         try:
-            self.commit_combat(rest_active_loadout(self.profile_candidate(), self.catalog))
+            self.commit_combat(rest(self.profile_candidate(), self.catalog))
+        except RuleError as exc:
+            self.message(str(exc), True)
+
+    def start_turn(self, event=None):
+        try:
+            self.commit_combat(start_turn(self.profile_candidate(), self.catalog))
         except RuleError as exc:
             self.message(str(exc), True)
 
@@ -386,12 +392,14 @@ class CharacterEditor:
             self.dirty = self.dirty or changed
             self.attack_bands[identity] = value
             self.render()
-            self.message("Attack preview updated. No use or heat added." + (" Unsaved changes." if self.dirty else ""))
+            self.message("Attack preview updated. No energy spent." + (" Unsaved changes." if self.dirty else ""))
         except RuleError as exc:
             self.message(str(exc), True)
 
     def resource_panel(self, character, stats):
         self.health_input = ft.TextField(label="Current health", value=str(character.current_health),
+            keyboard_type=ft.KeyboardType.NUMBER, on_change=self.changed, disabled=stats is None)
+        self.energy_input = ft.TextField(label="Current energy", value=str(character.current_energy or 0),
             keyboard_type=ft.KeyboardType.NUMBER, on_change=self.changed, disabled=stats is None)
         self.shield_damage_input = ft.TextField(label="Shield damage taken", value=str(character.build.shield_adjustment),
             keyboard_type=ft.KeyboardType.NUMBER, on_change=self.changed, disabled=stats is None)
@@ -401,13 +409,22 @@ class CharacterEditor:
             keyboard_type=ft.KeyboardType.NUMBER, disabled=stats is None)
         text = (f"Health {character.current_health} / {stats['pilot']['health']} · "
                 f"Shields {max(0, stats['shields'])} / {max(0, stats['shields'] + character.build.shield_adjustment)}") if stats else "Select an owned Zoid for combat."
-        return card("Combat resources", [ft.Text(text, size=16),
-            self.health_input, self.shield_damage_input,
+        maximum_health = stats["pilot"]["health"] if stats else 0
+        maximum_energy = stats["energy"] if stats else 0
+        self.health_bar = ft.ProgressBar(value=min(1, character.current_health / maximum_health) if maximum_health else 0,
+                                        color="#8CD9A0", bgcolor="#213349", height=12)
+        self.energy_bar = ft.ProgressBar(value=min(1, (character.current_energy or 0) / maximum_energy) if maximum_energy else 0,
+                                        color="#68BFFF", bgcolor="#213349", height=12)
+        return card("Combat resources", [ft.Text(text, size=16), self.health_bar,
+            ft.Text(f"Energy {character.current_energy or 0} / {maximum_energy} · EPT {stats['energy_recharge'] if stats else 0}", size=16),
+            self.energy_bar, self.health_input, self.energy_input, self.shield_damage_input,
             ft.Button("Apply resources", on_click=self.apply_resources),
             self.health_repair_points,
             ft.Row([ft.Button("Repair health · 10g/point", on_click=self.repair_health, disabled=stats is None),
-                    ft.Button("Rest active loadout", on_click=self.rest, disabled=stats is None)], wrap=True),
-            ft.Text("Rest clears heat in the current eight-slot loadout, without healing or repairing. Use rolls one d20 and records the use; apply the attack modifier and resolve effects at the table. Save character to keep combat changes and last rolls.", size=12)])
+                    ft.Button("Start Turn", on_click=self.start_turn, disabled=stats is None),
+                    ft.Button("Rest", on_click=self.rest, disabled=stats is None)], wrap=True),
+            ft.Text("Rest sets current Energy to half of maximum (rounded down), even if it was higher before.", size=12),
+            ft.Text("Press Start Turn once at the start of your turn to recharge energy, up to its total. Use spends the listed energy cost and rolls one d20 for attacks. Activation toggles only apply stat bonuses; use the system to pay its cost. Save character to keep combat changes and last rolls.", size=12)])
 
     def learn_selected_ability(self, event=None):
         if not self.ability_to_learn.value:
@@ -654,8 +671,8 @@ class CharacterEditor:
                     self.message(str(exc), True)
 
             warning = f"Permanently delete {label} from this pilot's inventory? This cannot be undone."
-            if item.condition.heat or item.condition.broken:
-                warning += f" Its stored heat ({item.condition.heat}) and condition will also be discarded."
+            if item.condition.broken:
+                warning += " Its broken condition will also be discarded."
             self.page.show_dialog(ft.AlertDialog(modal=True, scrollable=True, title=ft.Text("Delete equipment copy?"),
                 content=ft.Text(warning), actions=[ft.TextButton("Cancel", on_click=lambda e: self.page.pop_dialog()),
                                                   ft.TextButton("Delete copy", on_click=confirm)]))
@@ -700,7 +717,7 @@ class CharacterEditor:
             key = f"dynamic|{record_id}|{name}"
             self.acquisition_armaments[key] = record_id
             template = self.catalog.find("armaments", record_id)
-            options.append(option(key, f"{name} · {equipment_template_name(template)} ({', '.join(names)})"))
+            options.append(option(key, f"{name} · source: {equipment_template_name(template)} ({', '.join(names)})"))
         return sorted(options, key=lambda o: o.text.casefold())
 
     def inventory_panel(self, character):
@@ -718,7 +735,7 @@ class CharacterEditor:
             locations = [f"{self.catalog.find('zoids', form)['name']} / {slot.title()}" for _, form, slot in mounts]
             rows.append(ft.Column([ft.Text(label, weight=ft.FontWeight.BOLD),
                 ft.Text("Assigned: " + "; ".join(locations) if mounts else "In inventory — unattached", size=12),
-                ft.Text(f"Stored heat: {item.condition.heat} · {'BROKEN — attach to repair' if item.condition.broken else 'Intact'}", size=12),
+                ft.Text('BROKEN — attach to repair' if item.condition.broken else 'Intact', size=12),
                 ft.Button("Return to inventory (all forms)", visible=bool(mounts),
                           on_click=lambda e, copy_id=item.id: self.return_equipment(copy_id)),
                 ft.Button("Delete copy", visible=not mounts,
@@ -736,6 +753,11 @@ class CharacterEditor:
     def activate(self, index, value, fixed=False):
         try:
             candidate = self.profile_candidate()
+            item = candidate.build.equipment[index] if not fixed else None
+            if item and self.catalog.find("armaments", item).get("energy_restore"):
+                if value:
+                    self.commit_combat(weapon_action(candidate, ("back", "left", "right", "chest")[index], "use", catalog=self.catalog))
+                return
             field = "fixed_active" if fixed else "equipment_active"
             flags = list(getattr(candidate.build, field))
             flags[index] = value
@@ -766,7 +788,7 @@ class CharacterEditor:
         stored = [s for s in self.character.stored_fuzors if s.zoid == r["id"]]
         self.purchase_stored_fuzor.options = [option("new", "New FUZOR — no retained upgrades"),
             *[option(s.id, f"{s.id[:8]} · Frame {s.frame.speed}/{s.frame.reaction}/{s.frame.defense}/{s.frame.capacity}"
-                     f" · Accuracy {s.frame.accuracy} · Armor {s.frame.armor}") for s in stored]]
+                     f" · Accuracy {s.frame.accuracy} · Armor {s.frame.armor} · EPT +{s.frame.ept}") for s in stored]]
         self.purchase_stored_fuzor.value = "new"
         self.purchase_stored_fuzor.visible = bool(stored)
         self.purchase_blox.controls = []
@@ -868,7 +890,7 @@ class CharacterEditor:
         except RuleError as exc:
             self.message(str(exc), True)
 
-    def upgrade_counter(self, label, value, field, slot=None, disabled=False):
+    def upgrade_counter(self, label, value, field, slot=None, disabled=False, base_stat=None):
         control = ft.TextField(label=label, value=str(value), read_only=True, width=100, disabled=disabled)
         limit = UPGRADE_LIMITS[field]
         maximum = limit is not None and value >= limit
@@ -876,11 +898,30 @@ class CharacterEditor:
         price = upgrade_price(field, value + 1)
         widget = ft.Column([ft.Row([
             ft.IconButton(icon=ft.Icons.REMOVE, disabled=disabled or value == 0, tooltip=f"Refund {refund:,}g",
-                          on_click=lambda e: self.adjust_upgrade(field, -1, slot)), control,
+                          on_click=lambda e: self.adjust_upgrade(field, -1, slot)),
+            control,
             ft.IconButton(icon=ft.Icons.ADD, disabled=disabled or maximum, tooltip=f"Buy next point for {price:,}g",
                           on_click=lambda e: self.adjust_upgrade(field, 1, slot)),
-        ], wrap=True), ft.Text(f"Next: {price:,}g" if not maximum else f"Maximum {limit}", size=12)])
+            base_stat or ft.Text("Base: —", size=12, expand=True),
+        ]), ft.Text(f"Next: {price:,}g" if not maximum else f"Maximum {limit}", size=12)])
         return control, widget
+
+    def upgrade_base_stat(self, field, record):
+        """Raw selected-form values, before pilot, equipment, or upgrade effects."""
+        if record is None:
+            return ft.Text("Base: —", size=12, expand=True)
+        if field == "accuracy":
+            entries = [(i, self.catalog.column(record, name), self.catalog.column(record, hit))
+                       for i, (name, damage, hit) in enumerate(((13, 15, 17), (19, 21, 23), (30, 32, 34), (41, 43, 45)), 1)
+                       if self.catalog.column(record, name) and self.catalog.column(record, damage) is not None]
+            text = "Base to-hit: " + (" / ".join(f"F{i}: {hit if hit is not None else 0}" for i, _, hit in entries) or "—")
+            tooltip = "Fixed weapons' catalog to-hit values. Removable weapons use their own base to-hit.\n" + "\n".join(
+                f"F{i}: {name}" for i, name, _ in entries)
+        else:
+            value = record["energy_recharge"] if field == "ept" else record["fields"]["carry_capacity" if field == "capacity" else field]
+            text = f"Base: {value if value is not None else '—'}"
+            tooltip = "Selected Zoid form's catalog stat, before pilot bonuses, equipment, or upgrades."
+        return ft.Text(text, tooltip=tooltip, size=12, expand=True)
 
     def update_material(self, event=None, *, name=None, quantity=None):
         try:
@@ -949,8 +990,11 @@ class CharacterEditor:
         r = self.catalog.find("transports", character.transport) if character.transport else None
         stats = [ft.Text(f"{key.title()}: {r['fields'][key]}") for key in ("health", "armor", "defense", "speed", "reaction", "range")] if r else []
         if r:
-            stats.extend([ft.Text(f"Shield: {(self.catalog.column(r, 24) or 0) + (self.catalog.column(r, 35) or 0)}"),
+            stats.extend([ft.Text(f"Energy: {r['energy']} · EPT: {r['energy_recharge']}"),
+                          ft.Text(f"Shield: {(self.catalog.column(r, 24) or 0) + (self.catalog.column(r, 35) or 0)}"),
                           ft.Text(f"Hangar Capacity: {r['hangar_capacity']} · Hangar Size: {r['hangar_size']}")])
+            stats.extend(ft.Text(f"{self.catalog.column(r, column)} · Energy cost: {r['energy_costs'][index]}")
+                         for index, column in enumerate((13, 19, 30, 41, 47, 54, 61, 66)) if self.catalog.column(r, column))
         self.transport_section = card("Transport", [self.transport_picker, *stats,
             ft.Text("GM-managed selection. Changing Transport unloads all cargo. Each owned chassis occupies one bay; its CAUs stay with it.", size=12)])
         owned, loaded = [], []
@@ -1041,17 +1085,20 @@ class CharacterEditor:
             ft.Button("Review purchase", on_click=self.obtain, disabled=not obtainable),
             ft.Button("Detach selected CAU", disabled=not active or build.zoid == active.base_zoid, on_click=self.detach_selected_cau),
             ft.Button("Sell selected Zoid + CAUs", disabled=not active, on_click=self.sell_selected_zoid)])
-        self.frame_fields, frame_widgets = {}, []
+        self.frame_fields, self.upgrade_base_labels, frame_widgets = {}, {}, []
+        upgrade_record = self.catalog.find("zoids", build.zoid) if active else None
         for key in UPGRADE_LIMITS:
-            control, widget = self.upgrade_counter(key.title(), getattr(build.upgrades, key), key, disabled=not active)
+            base_stat = self.upgrade_base_stat(key, upgrade_record)
+            self.upgrade_base_labels[key] = base_stat
+            control, widget = self.upgrade_counter("EPT" if key == "ept" else key.title(), getattr(build.upgrades, key), key,
+                                                   disabled=not active, base_stat=base_stat)
             self.frame_fields[key] = control
             frame_widgets.append(ft.Container(widget, col={"xs": 12, "md": 6}))
-        upgrade_controls = [ft.Text("Each point costs 5,000g × its new rank. Armor adds 20,000g per purchased point. Defense and Accuracy are uncapped; other tracks have a maximum of 5. Accuracy adds +1 to every attack per point; Armor adds +1 Armor per point. Minus refunds the removed rank's price. Frame upgrades follow the host across forms.", size=12),
-            ft.ResponsiveRow(frame_widgets)]
+        upgrade_controls = [ft.ResponsiveRow(frame_widgets)]
         upgrades_card = card("Frame upgrades", upgrade_controls)
         upgrades_card.visible = active is not None
         inventory_card = self.inventory_panel(character)
-        equipment_controls = [ft.Text("Only compatible owned copies are listed. Unequipping clears this form's assignment; use Return to inventory to free a copy from all forms.", size=12)]
+        equipment_controls = [ft.Text("Only compatible owned copies are listed. Zoid-specific source slot numbers identify the item, not where it must be equipped. Non-weapon Zoid-specific equipment fits Assist and Weapon and Assist slots. Unequipping clears this form's assignment; use Return to inventory to free a copy from all forms.", size=12)]
         self.equipment_dropdowns = {}
         active_form = next((f for f in active.forms if f.zoid == build.zoid), None) if active else None
         zoid_record = self.catalog.find("zoids", build.zoid) if active else None
@@ -1064,9 +1111,13 @@ class CharacterEditor:
                                    disabled=not choices and not build.equipment[index],
                                    on_select=lambda e, s=slot: self.change_equipment(s, e.control.value))
             self.equipment_dropdowns[slot] = dropdown
-            equipment_controls.extend([dropdown, ft.Checkbox(label="Activated (passive bonuses apply automatically)",
-                value=build.equipment_active[index], disabled=not build.equipment[index],
-                on_change=lambda e, i=index: self.activate(i, e.control.value))])
+            item = self.catalog.find("armaments", build.equipment[index]) if build.equipment[index] else None
+            activation = (ft.Button("Activate · restore Energy", on_click=lambda e, i=index: self.activate(i, True))
+                          if item and item.get("energy_restore") else
+                          ft.Checkbox(label="Activated (passive bonuses apply automatically)",
+                              value=build.equipment_active[index], disabled=not build.equipment[index],
+                              on_change=lambda e, i=index: self.activate(i, e.control.value)))
+            equipment_controls.extend([dropdown, activation])
         equipment_card = card("Removable equipment", equipment_controls)
         equipment_card.visible = active is not None
         stat_values = {"Max health": stats["pilot"]["health"], "Armor": stats["current"]["armor"],
@@ -1105,7 +1156,7 @@ class CharacterEditor:
                 if rolls_damage(weapon):
                     self.roll_boxes[slot] = roll_box
                     controls.append(roll_box)
-                controls.extend([ft.Text(f"Heat: {condition.heat} / {weapon['maximum_heat'] if weapon['maximum_heat'] is not None else 'unrated'}"),
+                controls.extend([ft.Text(f"Energy cost: {weapon['energy_cost']}"),
                     ft.Text("BROKEN — repair required" if condition.broken else "Ready", color="#FFB4AB" if condition.broken else "#8CD9C8")])
                 if rolls_damage(weapon):
                     tags = weapon_tags(weapon["damage_type"])
@@ -1133,11 +1184,10 @@ class CharacterEditor:
                     except RuleError as exc:
                         controls.append(ft.Text(f"Preview: {exc}", color="#FFD08A"))
                 controls.append(ft.Row([
-                    ft.Button("Use", disabled=condition.broken, on_click=lambda e, s=slot: self.weapon_action(s, "use")),
-                    ft.Button("Vent", on_click=lambda e, s=slot: self.weapon_action(s, "vent")),
+                    ft.Button("Activate" if weapon.get("energy_restore") else "Use", disabled=condition.broken or weapon['energy_cost'] > character.current_energy, on_click=lambda e, s=slot: self.weapon_action(s, "use")),
                     ft.Button("Repair · 10,000g", disabled=not condition.broken, on_click=lambda e, s=slot: self.weapon_action(s, "repair")),
                 ], wrap=True))
-            if not rolls_damage(weapon):
+            if not rolls_damage(weapon) and not weapon.get("energy_restore"):
                 controls.append(ft.Checkbox(label="Activated (passive is automatic)",
                     value=build.fixed_active[index] if index < 4 else build.equipment_active[index - 4],
                     on_change=lambda e, i=index: self.activate(i if i < 4 else i - 4, e.control.value, i < 4)))

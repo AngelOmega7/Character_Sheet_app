@@ -42,18 +42,18 @@ class PilotDetailsTests(unittest.TestCase):
         self.assertEqual(loaded.pilot_details.inventory_notes, details.inventory_notes)
         self.assertEqual(loaded.pilot_details.personality, details.personality)
 
-    def test_feats_do_not_automate_advantage_or_multi_weapon_venting(self):
+    def test_feats_do_not_automate_advantage_or_change_energy_costs(self):
         character = acquire_equipment(new_character(self.catalog), "Particle Cannon", 2, self.catalog)
         for slot, item in zip(("left", "right"), character.inventory):
             character = equip_owned_equipment(character, slot, item.id, self.catalog)
         character = replace(character, pilot_details=PilotDetails(feats=("Phalanx Fire", "Demolitionist")))
         with patch("zoids_app.combat_controller.random.randint", return_value=14) as roll:
             character = weapon_action(character, "left", "use", catalog=self.catalog).character
+            self.assertEqual(character.current_energy, 8)
+            character = replace(character, current_energy=20)
             character = weapon_action(character, "right", "use", catalog=self.catalog).character
             self.assertEqual(roll.call_count, 2)
-            character = weapon_action(character, "left", "vent", catalog=self.catalog).character
-            self.assertEqual(roll.call_count, 2)
-        self.assertEqual([i.condition.heat for i in character.inventory], [0, 1])
+        self.assertEqual(character.current_energy, 8)
         self.assertEqual([i.condition.last_roll for i in character.inventory], [14, 14])
 
     def test_invalid_tracking_values_cannot_overwrite_a_save(self):
@@ -66,7 +66,7 @@ class PilotDetailsTests(unittest.TestCase):
             self.assertEqual(self.store.load(saved.id), saved)
 
     def test_v6_migration_defaults_new_tracking_fields_without_changing_resources(self):
-        character = replace(new_character(self.catalog), current_health=23, gold=55)
+        character = replace(new_character(self.catalog), current_health=23, gold=55, current_energy=10)
         with patch("zoids_app.combat_controller.random.randint", return_value=19):
             character = weapon_action(character, "fixed_1", "use", catalog=self.catalog).character
         values = asdict(character)

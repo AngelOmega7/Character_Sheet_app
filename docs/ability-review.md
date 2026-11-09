@@ -22,14 +22,14 @@ Owner confirmed these abilities need only active/inactive ownership tracking and
 | Weapon Breaker | Critical melee hits can destroy target weapons | Player managed |
 | Counter Attack | React to an enemy rolling a natural 1 | Player managed |
 
-Related feat: **Demolitionist** automatically makes Vent remove 2 heat instead of 1 from the chosen weapon while selected in a feat slot. Heat cannot go below zero; other weapons and broken status are unchanged.
+**Economized Shooting** has four ranks, reducing Ranged-tagged weapon Energy Costs by 2/4/6/8 while active (minimum 0). **Demolitionist** is player-tracked: “Once per Rest, you may completely fill your Zoid's Energy.” Full rules and previous effects are tracked in `energy-rules.md`.
 
-All seven feats have saved selection slots and visible descriptions in the Pilot feats panel. Phalanx Fire/Scrappy do not trigger automatic advantage rolls; Demolitionist's Vent bonus is automated. Physical/Social and pilot notes are tracking-only. Mental keeps its existing calculation rule. Inactive abilities can be removed from ownership using their Remove buttons, then learned again later if desired.
+All seven feats have saved selection slots and visible descriptions in the Pilot feats panel. Phalanx Fire/Scrappy do not trigger automatic advantage rolls. Physical/Social and pilot notes are tracking-only. Mental keeps its existing calculation rule. Inactive abilities can be removed from ownership using their Remove buttons, then learned again later if desired.
 
 ## Completed in the current milestone
 
 - Flet ability management: learn new families inactive, permanently replace owned lower ranks, assign/deactivate six active slots, enforce one active size ability, and display inactive ownership and descriptions. Validated character transitions preserve health/resources and save ownership pilot-wide through Zoid/CAU switches.
-- Flet Organoid color/level/activation controls recalculate stats immediately. Selected settings are validated even while deactivated, persist with the pilot, and preserve current health. Only White generates shields using Organoid level. Weapon-card previews now include selected range and current-health context, alongside persistent Use/Vent/Rest/repair actions.
+- Flet Organoid color/level/activation controls recalculate stats immediately. Selected settings are validated even while deactivated, persist with the pilot, and preserve current health. Only White generates shields using Organoid level. Weapon-card previews include selected range and current-health context, alongside Use/Start Turn/repair actions.
 - Laser, Missile, Particle, Melee, Rifle Expert and Anti-Air Pro bonuses now reach all eight qualifying weapon slots. Expert ranks 3/4 no longer grant or describe advantage.
 - Use the strongest applicable active bonus among Laser, Missile, Particle, Melee, and Rifle Expert. **Anti-Air Pro is an exception:** add its bonus on top when active and the weapon has the Anti-Air tag, even if no other Expert applies. Other bonus sources (pilot, size, activated Organoid, equipment, fixed upgrades, contextual Sniper) retain their own rules.
 - Melee tags are tracking labels with no automatic damage/status mechanics. Tags still determine which Expert abilities qualify; Piercing, Electrical, etc. do not independently apply extra effects.
@@ -43,7 +43,7 @@ All seven feats have saved selection slots and visible descriptions in the Pilot
 - True Tank adds its bonus per enabled defensive item (positive Defense field), following the existing per-item activation rules.
 - Shield Master adds its flat bonus once to combined positive Shield HP, from any active ability slot and any contributing source. It does not create a shield by itself.
 - Evasion Master grants +1 Armor per rank per enabled reaction-boosting item, including fixed equipment with reaction modifiers. It no longer grants extra Reaction.
-- Economized Shooting grants +1 maximum heat to heat-rated weapons while active. Calculated weapons expose `maximum_heat` and `heat_capacity_bonus`; pass the current bonus to `use_weapon()`. Deactivation lowers capacity without clearing heat or immediately breaking the weapon. A subsequent use at/above capacity works once and then breaks it.
+- Energy rules replace Heat and Vent entirely. Economized Shooting applies automatic cost reduction; Demolitionist is tracked at the table.
 - Wimp, Cross Eyed, Slowpoke, Bad Armor and all ranks are removed from runtime catalogs. Conversion records the retired source rows; the original workbook is retained. Retired ability IDs are rejected.
 
 ## Range input follow-up

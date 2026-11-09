@@ -57,7 +57,8 @@ class EquipmentRuleTests(unittest.TestCase):
     def test_assist_eligibility_tracks_source_heading(self):
         heading = self.catalog.find("armaments", "ASSIST")["source"]["row"]
         items = self.catalog.tables["armaments"]["records"]
-        expected = {r["id"] for r in items if r["source"]["row"] > heading and r["kind"] in {"record", "dynamic"}}
+        expected = {r["id"] for r in items if r["kind"] in {"record", "dynamic"} and
+                    (r["source"].get("row", 0) > heading or r["source"].get("owner_defined") and r["assist_eligible"])}
         self.assertEqual({r["id"] for r in eligible_equipment("Saberlion", "back", self.catalog)}, expected)
         self.assertEqual({r["id"] for r in eligible_equipment("Saberlion", "left", self.catalog)},
                          {r["id"] for r in items if r["kind"] in {"record", "dynamic"}})
@@ -99,4 +100,4 @@ class EquipmentRuleTests(unittest.TestCase):
         tags = weapon_tags(self.catalog.column(zoid, 33))
         self.assertTrue({"ranged", "bullet"} <= tags)
         self.assertNotIn("piercing", tags)
-        self.assertEqual(self.catalog.find("feats", "Demolitionist")["handling"], "automated")
+        self.assertEqual(self.catalog.find("feats", "Demolitionist")["handling"], "player_managed")

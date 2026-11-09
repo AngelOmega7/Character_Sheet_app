@@ -44,6 +44,7 @@ class Upgrades:
     capacity: int = 0
     accuracy: int = 0
     armor: int = 0
+    ept: int = 0
     # Legacy positional data retained for old save/ownership migrations only.
     # These fields no longer contribute to combat statistics.
     damage: tuple[int, ...] = (0, 0, 0, 0)
@@ -98,7 +99,7 @@ class CharacterBuild:
 def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     """Calculate base, pilot, current stats and all eight weapon displays.
 
-    Combat resources (current health, heat, broken status, gold) are deliberately
+    Combat resources (current health, energy, broken status, gold) are deliberately
     not modified or recomputed here. Activation is separate from firing.
     """
     catalog = catalog or Catalog()
@@ -140,6 +141,19 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         if match:
             return damage_note(zoid, int(match[1]))
         return record.get("damage_notes", {}).get(key)
+
+    def equipment_energy_cost(record):
+        if record is None:
+            return None
+        expression = record["dynamic_fields"].get("name")
+        if expression:
+            match = re.fullmatch(r"vlookup\(Zoid!C4,Zoid_DB\[\],(\d+),FALSE(?:\(\))?\)", expression, re.I)
+            if not match or int(match[1]) not in (47, 54, 61, 66):
+                raise RuleError(f"Unresolved equipment energy reference: {record['id']}")
+            # Resolve by template identity, not the slot where it is mounted.
+            index = (47, 54, 61, 66).index(int(match[1])) + 4
+            return zoid["energy_costs"][index]
+        return record.get("energy_cost")
 
     def contains(needle, haystack):
         # Source SEARCH is case-insensitive. Blank numeric lookup cells behave
@@ -202,6 +216,8 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         bool(e and e["kind"] != "placeholder" and (active or contains("Passive", col(e, 13))))
         for e, active in zip(equipment, build.equipment_active)
     ]
+    pilot["health"] += sum(e.get("maximum_health_bonus", 0) for e, enabled in zip(equipment, equipment_enabled) if enabled)
+    maximum_energy = zoid["energy"] + sum(e.get("maximum_energy_bonus", 0) for e, enabled in zip(equipment, equipment_enabled) if enabled)
     # Only fixed slots 2 and 3 have these stat-modifier fields in the source.
     fixed_modifiers_enabled = [
         active or contains("Passive", col(zoid, activation_column))
@@ -218,7 +234,6 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     reaction_items = sum(enabled and n(e, 10) > 0 for e, enabled in zip(equipment, equipment_enabled))
     reaction_items += sum(enabled and n(zoid, column) > 0 for column, enabled in zip((27, 38), fixed_modifiers_enabled))
     evasion_rank = sum(a.get("armor_per_reaction_item", 0) for a in abilities if a)
-    heat_capacity_bonus = sum(a.get("heat_capacity_bonus", 0) for a in abilities if a)
 
     current = {
         "armor": sheet_round(pilot["armor"] + equipment_bonus(7) + reaction_items * evasion_rank),
@@ -260,7 +275,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
             "damage_bonus": damage_bonus, "base_to_hit": base_hit,
             "damage_upgrade": 0, "damage_percent": org["damage"],
             "to_hit": sheet_round(base_hit * (1 + n(progression, 6) + all_stats + org["to_hit"]) + hit_bonus + skill_hit) + (u.accuracy if raw_damage is not None else 0),
-            "heat_rating": col(zoid, 85 + i),
+            "energy_cost": zoid["energy_costs"][i],
         })
     for slot, e in zip(("back", "left", "right", "chest"), equipment):
         raw_damage = col(e, 2)
@@ -275,13 +290,16 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
             "damage_upgrade": 0, "damage_percent": org["damage"],
             "damage_note": damage_note(e, 2),
             "base_to_hit": n(e, 5), "to_hit": sheet_round(n(e, 5) * (1 + n(progression, 6) + all_stats + org["to_hit"]) + hit_bonus + weapon_skill_bonus(col(e, 3))) + (u.accuracy if raw_damage is not None else 0),
-            "heat_rating": col(e, 16),
+            "energy_cost": equipment_energy_cost(e),
+            "energy_restore": e.get("energy_restore", 0) if e else 0,
         })
+    energy_reduction = max((a.get("ranged_energy_cost_reduction", 0) for a in abilities if a), default=0)
     for weapon in weapons:
-        weapon["heat_capacity_bonus"] = heat_capacity_bonus if weapon["heat_rating"] is not None else 0
-        weapon["maximum_heat"] = weapon["heat_rating"] + weapon["heat_capacity_bonus"] if weapon["heat_rating"] is not None else None
+        if weapon["energy_cost"] is not None and "ranged" in weapon_tags(weapon["damage_type"]):
+            weapon["energy_cost"] = max(0, weapon["energy_cost"] - energy_reduction)
     return {
-        "ruleset": "owner-corrected-v14", "zoid_id": zoid["id"],
+        "ruleset": "energy-v17", "zoid_id": zoid["id"],
+        "energy": maximum_energy, "energy_recharge": zoid["energy_recharge"] + u.ept,
         "size_bonus": all_stats,
         "bonus_levels": bonus_levels, "effective_level": effective_level,
         "base": base, "pilot": pilot, "current": current,

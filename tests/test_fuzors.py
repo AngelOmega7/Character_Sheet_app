@@ -147,7 +147,7 @@ class FuzorTests(unittest.TestCase):
         c = equip_owned_equipment(c, "left", c.inventory[0].id, self.catalog)
         original = c.owned_zoids[0]
         weapon_id = self.catalog.find("zoids", original.base_zoid)["fixed_weapon_ids"][0]
-        original = replace(original, weapon_conditions=(FixedWeaponCondition(weapon_id, WeaponCondition(2, True, 17)),))
+        original = replace(original, current_energy=7, weapon_conditions=(FixedWeaponCondition(weapon_id, WeaponCondition(True, 17)),))
         c = validate_character(replace(c, current_health=7, owned_zoids=(original, *c.owned_zoids[1:])), self.catalog)
         expected = tuple(replace(o, forms=tuple(replace(f, equipment=(None,) * 4, equipment_ids=(None,) * 4,
                             equipment_active=(False,) * 4) for f in o.forms)) for o in c.owned_zoids)

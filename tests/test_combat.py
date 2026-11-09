@@ -1,132 +1,98 @@
 import unittest
 
 from zoids_app.combat import (
-    RuleError, WeaponState, repair_health, rest_weapons, restore_repaired_weapon,
-    use_weapon, vent_weapon, repair_weapon, RepairConfirmationRequired,
+    RuleError, WeaponState, repair_health, restore_repaired_weapon,
+    use_weapon, repair_weapon, RepairConfirmationRequired,
 )
 
 
-class HeatRulesTests(unittest.TestCase):
-    def test_each_rating_allows_capacity_then_one_final_shot(self):
-        for rating in (1, 2, 3):
-            with self.subTest(rating=rating):
-                weapon = WeaponState(heat_rating=rating)
-                for _ in range(rating):
-                    result = use_weapon(weapon)
-                    self.assertFalse(result.broke_after_use)
-                    weapon = result.weapon
-                self.assertEqual(weapon.heat, rating)
-                result = use_weapon(weapon)
-                self.assertTrue(result.broke_after_use)
-                self.assertEqual(result.weapon.heat, rating + 1)
-                with self.assertRaises(RuleError):
-                    use_weapon(result.weapon)
-
-    def test_vent_before_overheat_allows_another_safe_use(self):
-        weapon = WeaponState(heat_rating=3, heat=3)
-        result = use_weapon(vent_weapon(weapon))
-        self.assertEqual(result.weapon.heat, 3)
+class EnergyRulesTests(unittest.TestCase):
+    def test_exact_energy_and_zero_cost(self):
+        result = use_weapon(WeaponState(), current_energy=12, energy_cost=12)
+        self.assertEqual(result.energy, 0)
         self.assertFalse(result.weapon.broken)
+        self.assertEqual(use_weapon(result.weapon, current_energy=0, energy_cost=0).energy, 0)
 
-    def test_cooling_cannot_repair_broken_weapon(self):
-        broken = use_weapon(WeaponState(heat_rating=1, heat=1)).weapon
-        for cooled in (vent_weapon(broken), rest_weapons((broken,))[0]):
-            self.assertTrue(cooled.broken)
+    def test_unaffordable_or_broken_weapon_cannot_fire(self):
+        for state, energy in ((WeaponState(), 11), (WeaponState(True), 20)):
             with self.assertRaises(RuleError):
-                use_weapon(cooled)
+                use_weapon(state, current_energy=energy, energy_cost=12)
 
-    def test_unrated_weapons_do_not_overheat(self):
-        weapon = WeaponState()
-        for _ in range(100):
-            weapon = use_weapon(weapon).weapon
-        self.assertEqual(weapon, WeaponState())
-
-    def test_repair_resets_heat_and_restores_full_safe_capacity(self):
-        for rating in (1, 2, 3):
-            with self.subTest(rating=rating):
-                broken = use_weapon(WeaponState(rating, heat=rating)).weapon
-                repaired = restore_repaired_weapon(broken)
-                self.assertEqual(repaired, WeaponState(rating))
-                for _ in range(rating):
-                    repaired = use_weapon(repaired).weapon
-                    self.assertFalse(repaired.broken)
-                self.assertTrue(use_weapon(repaired).weapon.broken)
-
-    def test_vent_at_zero_and_rest_all_slots(self):
-        self.assertEqual(vent_weapon(WeaponState(1)).heat, 0)
-        weapons = tuple(WeaponState(3, heat=2) for _ in range(8))
-        self.assertTrue(all(w.heat == 0 for w in rest_weapons(weapons)))
+    def test_invalid_energy_rejected(self):
+        for invalid in (-1, True, 1.5, None):
+            with self.assertRaises(RuleError):
+                use_weapon(WeaponState(), current_energy=invalid, energy_cost=0)
+            with self.assertRaises(RuleError):
+                use_weapon(WeaponState(), current_energy=10, energy_cost=invalid)
 
 
 class WeaponRepairTests(unittest.TestCase):
-    def test_flat_price_for_each_heat_rating(self):
-        for rating in (1, 2, 3):
-            with self.subTest(rating=rating):
-                result = repair_weapon(WeaponState(rating, rating + 1, True), 12_000, current_health=100, maximum_health=100)
-                self.assertEqual(result.weapon, WeaponState(rating))
-                self.assertEqual((result.gold, result.cost), (2_000, 10_000))
+    def test_flat_price(self):
+        result = repair_weapon(WeaponState(True), 12_000, current_health=100, maximum_health=100)
+        self.assertEqual(result.weapon, WeaponState())
+        self.assertEqual((result.gold, result.cost), (2_000, 10_000))
 
     def test_exact_funds_and_no_duplicate_charge(self):
-        result = repair_weapon(WeaponState(1, 2, True), 10_000, current_health=100, maximum_health=100)
+        result = repair_weapon(WeaponState(True), 10_000, current_health=100, maximum_health=100)
         self.assertEqual(result.gold, 0)
         again = repair_weapon(result.weapon, result.gold, current_health=100, maximum_health=100)
         self.assertEqual((again.gold, again.cost), (0, 0))
 
-    def test_insufficient_funds_leave_weapon_broken_and_hot(self):
-        weapon = WeaponState(3, 4, True)
+    def test_insufficient_funds_leave_weapon_broken(self):
+        weapon = WeaponState(True)
         with self.assertRaises(RuleError):
             repair_weapon(weapon, 9_999, current_health=100, maximum_health=100)
-        self.assertEqual(weapon, WeaponState(3, 4, True))
+        self.assertEqual(weapon, WeaponState(True))
 
-    def test_intact_weapon_is_not_charged_or_cooled(self):
-        weapon = WeaponState(3, 2)
+    def test_intact_weapon_is_not_charged(self):
+        weapon = WeaponState()
         result = repair_weapon(weapon, 20_000, current_health=100, maximum_health=100)
         self.assertEqual((result.weapon, result.gold, result.cost), (weapon, 20_000, 0))
 
     def test_invalid_gold_rejected(self):
         for gold in (-1, True, 10_000.5):
             with self.assertRaises(RuleError):
-                repair_weapon(WeaponState(1, 2, True), gold, current_health=100, maximum_health=100)
+                repair_weapon(WeaponState(True), gold, current_health=100, maximum_health=100)
 
     def test_confirmation_threshold_is_strict_and_not_rounded(self):
-        weapon = WeaponState(3, 4, True)
+        weapon = WeaponState(True)
         for current, maximum in ((75, 100), (76, 100), (100, 100)):
             result = repair_weapon(weapon, 20_000, current_health=current, maximum_health=maximum)
             self.assertFalse(result.weapon.broken)
         for current, maximum in ((74, 100), (0, 100), (75, 101)):
             with self.assertRaises(RepairConfirmationRequired):
                 repair_weapon(weapon, 20_000, current_health=current, maximum_health=maximum)
-        self.assertEqual(weapon, WeaponState(3, 4, True))
+        self.assertEqual(weapon, WeaponState(True))
 
     def test_warning_quotes_costs_and_health_shortfall(self):
         with self.assertRaises(RepairConfirmationRequired) as caught:
-            repair_weapon(WeaponState(1, 2, True), 10_100, current_health=50, maximum_health=100)
+            repair_weapon(WeaponState(True), 10_100, current_health=50, maximum_health=100)
         warning = caught.exception
         self.assertEqual((warning.weapon_repair_cost, warning.gold_after_repair, warning.health_repair_cost), (10_000, 100, 500))
         self.assertIn("not have enough gold", str(warning))
 
     def test_warning_even_when_health_repair_is_affordable(self):
         with self.assertRaises(RepairConfirmationRequired) as caught:
-            repair_weapon(WeaponState(1, 2, True), 20_000, current_health=50, maximum_health=100)
+            repair_weapon(WeaponState(True), 20_000, current_health=50, maximum_health=100)
         self.assertNotIn("not have enough gold", str(caught.exception))
 
     def test_confirmed_repair_charges_once_and_preserves_rules(self):
-        result = repair_weapon(WeaponState(1, 2, True), 10_000, current_health=50, maximum_health=100, confirmed=True)
-        self.assertEqual((result.weapon, result.gold, result.cost), (WeaponState(1), 0, 10_000))
+        result = repair_weapon(WeaponState(True), 10_000, current_health=50, maximum_health=100, confirmed=True)
+        self.assertEqual((result.weapon, result.gold, result.cost), (WeaponState(), 0, 10_000))
         with self.assertRaises(RuleError) as caught:
-            repair_weapon(WeaponState(1, 2, True), 9_999, current_health=50, maximum_health=100, confirmed=True)
+            repair_weapon(WeaponState(True), 9_999, current_health=50, maximum_health=100, confirmed=True)
         self.assertNotIsInstance(caught.exception, RepairConfirmationRequired)
 
     def test_intact_weapon_needs_no_confirmation(self):
-        result = repair_weapon(WeaponState(1), 10_000, current_health=50, maximum_health=100)
+        result = repair_weapon(WeaponState(), 10_000, current_health=50, maximum_health=100)
         self.assertEqual(result.cost, 0)
 
     def test_invalid_health_and_confirmation_rejected(self):
         for current, maximum in ((-1, 100), (0, 0), (1, -1), (True, 100)):
             with self.assertRaises(RuleError):
-                repair_weapon(WeaponState(1, 2, True), 10_000, current_health=current, maximum_health=maximum)
+                repair_weapon(WeaponState(True), 10_000, current_health=current, maximum_health=maximum)
         with self.assertRaises(RuleError):
-            repair_weapon(WeaponState(1, 2, True), 10_000, current_health=50, maximum_health=100, confirmed="yes")
+            repair_weapon(WeaponState(True), 10_000, current_health=50, maximum_health=100, confirmed="yes")
 
 
 class HealthRepairTests(unittest.TestCase):

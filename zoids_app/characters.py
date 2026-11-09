@@ -64,6 +64,7 @@ class OwnedZoid:
     defense_down: int = 0
     weapon_conditions: tuple[FixedWeaponCondition, ...] = ()
     fusion_components: tuple["OwnedZoid", ...] | None = None
+    current_energy: int | None = None
 
 
 @dataclass(frozen=True)
@@ -105,6 +106,7 @@ class Character:
     transport_notes: str = ""
     starter_pending: bool = False
     stored_fuzors: tuple[StoredFuzor, ...] = ()
+    current_energy: int | None = None
 
 
 def _nonnegative(value, name):
@@ -179,8 +181,15 @@ def _capture(character, owned, catalog):
             weapons[key] = WeaponUpgrade(key, damage, hit)
     return replace(owned, forms=tuple(_loadout(build, f.equipment_ids, f.build_parts) if f.zoid == build.zoid else f for f in owned.forms),
                    frame=replace(build.upgrades, damage=(0,) * 4, to_hit=(0,) * 4),
-                   weapons=tuple(weapons.values()), current_health=character.current_health,
+                   weapons=tuple(weapons.values()), current_health=character.current_health, current_energy=character.current_energy,
                    shield_adjustment=build.shield_adjustment, defense_up=build.defense_up, defense_down=build.defense_down)
+
+
+def _owned_energy_maximum(pilot_build, owned, catalog):
+    form = next((f for f in owned.forms if f.zoid == owned.active_form), None)
+    if form is None:
+        raise RuleError("Owned Zoid has no matching selected form")
+    return calculate_stats(_project(pilot_build, owned, form, catalog), catalog)["energy"]
 
 
 def validate_character(character, catalog=None):
@@ -193,6 +202,8 @@ def validate_character(character, catalog=None):
     if len(character.name.strip()) > 100:
         raise RuleError("Character name must be at most 100 characters")
     _nonnegative(character.current_health, "current_health")
+    if character.current_energy is not None:
+        _nonnegative(character.current_energy, "current_energy")
     _nonnegative(character.gold, "gold")
     if type(character.starter_pending) is not bool or not isinstance(character.transport_notes, str):
         raise RuleError("Invalid pilot workflow fields")
@@ -276,9 +287,17 @@ def validate_character(character, catalog=None):
         abilities = tuple(catalog.find("abilities", a)["id"] if a else None for a in build.abilities)
         inactive = tuple(catalog.find("abilities", a)["id"] for a in build.inactive_abilities)
         validate_loadout(AbilityLoadout(abilities, inactive), catalog)
-        return replace(character, name=character.name.strip(), build=replace(build, abilities=abilities, inactive_abilities=inactive))
+        return replace(character, name=character.name.strip(), current_energy=0,
+                       build=replace(build, abilities=abilities, inactive_abilities=inactive))
     build = _validate_build(character.build, catalog)
     character = replace(character, name=character.name.strip(), build=build)
+    maximum_energy = calculate_stats(build, catalog)["energy"]
+    if character.current_energy is None:
+        active = next((o for o in character.owned_zoids if o.id == character.active_zoid_id), None)
+        energy = active.current_energy if active and active.current_energy is not None else maximum_energy // 2
+        character = replace(character, current_energy=min(energy, maximum_energy))
+    if character.current_energy > maximum_energy:
+        raise RuleError(f"Current energy cannot exceed total energy ({maximum_energy})")
     seen_ids, seen_bases, roster = set(), set(), []
     assigned_chassis = {}
     for owned in character.owned_zoids:
@@ -325,6 +344,12 @@ def validate_character(character, catalog=None):
             if owned.active_form != build.zoid:
                 raise RuleError("Use the owned-Zoid switch action to select a different Zoid or form")
             owned = _capture(character, owned, catalog)
+        maximum = _owned_energy_maximum(build, owned, catalog)
+        if owned.current_energy is None:
+            owned = replace(owned, current_energy=maximum // 2)
+        _nonnegative(owned.current_energy, "current_energy")
+        if owned.current_energy > maximum:
+            raise RuleError("Stored energy cannot exceed the selected form's total energy")
         for form in owned.forms:
             if len(form.equipment_ids) != 4:
                 raise RuleError("Four inventory-copy references are required for each form")
@@ -400,10 +425,11 @@ def acquire_zoid(character, zoid, catalog=None, *, host_id=None):
                               upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0)
         health = calculate_stats(fresh_build, catalog)["pilot"]["health"]
         owned = OwnedZoid(str(uuid4()), base, (FormLoadout(base),), base, Upgrades(), (), health)
+        owned = replace(owned, current_energy=record["energy"] // 2)
         roster = (*character.owned_zoids, owned)
     if not character.owned_zoids:
         return validate_character(replace(character, owned_zoids=roster, active_zoid_id=owned.id,
-                                          build=fresh_build, current_health=health), catalog)
+                                          build=fresh_build, current_health=health, current_energy=owned.current_energy), catalog)
     return validate_character(replace(character, owned_zoids=roster), catalog)
 
 
@@ -419,9 +445,11 @@ def switch_zoid(character, owned_id, form_id=None, catalog=None):
     if form is None:
         raise RuleError("This CAU form has not been obtained")
     owned = replace(owned, active_form=form_id)
+    owned = replace(owned, current_energy=min(owned.current_energy, _owned_energy_maximum(character.build, owned, catalog)))
     roster = tuple(owned if o.id == owned.id else o for o in character.owned_zoids)
     build = _project(character.build, owned, form, catalog)
     return validate_character(replace(character, build=build, current_health=owned.current_health,
+                                      current_energy=owned.current_energy,
                                       owned_zoids=roster, active_zoid_id=owned.id), catalog)
 
 
@@ -470,14 +498,19 @@ def assign_pilot_ability(character, slot, ability=None, catalog=None):
 
 def restore_roster_selection(character, catalog):
     """Reproject a migrated roster, leaving a pilot without Zoids unassigned."""
+    # Detaching/replacing an active CAU can select a lower-capacity base form.
+    character = replace(character, owned_zoids=tuple(
+        replace(o, current_energy=min(o.current_energy, _owned_energy_maximum(character.build, o, catalog)))
+        if o.current_energy is not None else o for o in character.owned_zoids))
     if character.owned_zoids:
         owned = next((o for o in character.owned_zoids if o.id == character.active_zoid_id), character.owned_zoids[0])
         form = next((f for f in owned.forms if f.zoid == owned.active_form), None)
         if form is None:
             raise RuleError("Migrated Zoid has no matching selected form")
         return replace(character, active_zoid_id=owned.id, current_health=owned.current_health,
+                       current_energy=owned.current_energy,
                        build=_project(character.build, owned, form, catalog))
-    return replace(character, active_zoid_id="", current_health=0,
+    return replace(character, active_zoid_id="", current_health=0, current_energy=0,
                    build=replace(character.build, zoid="", equipment=(None,) * 4,
                                  equipment_active=(False,) * 4, fixed_active=(False,) * 4,
                                   upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0))
@@ -573,8 +606,9 @@ def equip_owned_equipment(character, slot, copy_id=None, catalog=None):
     form = replace(form, equipment=tuple(equipment), equipment_ids=tuple(ids), equipment_active=tuple(flags))
     owner = replace(owner, forms=tuple(form if f.zoid == form.zoid else f for f in owner.forms))
     roster = tuple(owner if o.id == owner.id else o for o in character.owned_zoids)
-    return validate_character(replace(character, owned_zoids=roster,
-        build=replace(character.build, equipment=form.equipment, equipment_active=form.equipment_active)), catalog)
+    build = replace(character.build, equipment=form.equipment, equipment_active=form.equipment_active)
+    return validate_character(replace(character, owned_zoids=roster, build=build,
+        current_energy=min(character.current_energy, calculate_stats(build, catalog)["energy"])), catalog)
 
 
 def delete_equipment(character, copy_id, catalog=None):

@@ -394,6 +394,8 @@ def build():
     manifest["workflow_sources"] = {name: hashlib.sha256((ROOT / "assets" / name).read_bytes()).hexdigest()
                                     for name in ("zoid_cost.csv", "CAU_expand.txt", "CAU_expand_2.txt")}
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
+    from tools.import_energy import apply_energy
+    apply_energy(output, companion=False)
     (ROOT / "docs/generated/damage-conversions.json").write_text(json.dumps(damage_conversions, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(counts, indent=2))
     print(f"Converted {len(damage_conversions)} legacy damage fields/descriptions")

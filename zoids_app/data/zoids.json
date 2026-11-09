@@ -85,10 +85,6 @@
     "second_attack_gif",
     "third_attack_gif",
     "fourth_attack_gif",
-    "weapon_1_heat",
-    "weapon_2_heat",
-    "weapon_3_heat",
-    "weapon_4_heat",
     "column_83"
   ],
   "source_headers": [
@@ -176,10 +172,6 @@
     "Second attack gif",
     "Third attack gif",
     "Fourth attack gif",
-    "Weapon 1 Heat",
-    "Weapon 2 Heat",
-    "Weapon 3 Heat",
-    "Weapon 4 Heat",
     "Column 83"
   ],
   "records": [
@@ -276,10 +268,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -322,7 +310,20 @@
       "legacy_names": [
         "Zaber Fang Old"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 23,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        3,
+        2,
+        1,
+        6,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zaber_fang",
@@ -417,10 +418,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -523,7 +520,20 @@
       "legacy_names": [
         "Zaber Fang"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        3,
+        1,
+        2,
+        6,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zaber_fang_rs",
@@ -618,10 +628,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -659,7 +665,20 @@
       "legacy_names": [
         "Zaber Fang RS"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        3,
+        1,
+        null,
+        6,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zaber_fang_ss",
@@ -754,10 +773,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -795,7 +810,20 @@
       "legacy_names": [
         "Zaber Fang SS"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        3,
+        10,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zaber_fang_at",
@@ -890,10 +918,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -921,7 +945,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        10,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zaber_fang_ts",
@@ -1016,10 +1053,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -1047,7 +1080,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:proto_zaber",
@@ -1142,10 +1188,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -1193,7 +1235,20 @@
       "legacy_names": [
         "Proto Zaber"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        8,
+        1,
+        1,
+        7,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:great_zaber",
@@ -1289,10 +1344,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": 1,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -1320,7 +1371,25 @@
       "legacy_names": [
         "Great Zaber"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        0,
+        10,
+        10,
+        1,
+        7,
+        6,
+        null,
+        null
+      ],
+      "energy_source": "Owner-approved proposal",
+      "zoid_equipment_mounts": {
+        "armaments:zoid_equipment_slot_2": [
+          "left"
+        ]
+      }
     },
     {
       "id": "zoids:diablo_tiger",
@@ -1415,10 +1484,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -1456,7 +1521,20 @@
       "legacy_names": [
         "Diablo Tiger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 7,
+      "energy_costs": [
+        14,
+        6,
+        10,
+        10,
+        null,
+        null,
+        null,
+        3
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:blitz_tiger",
@@ -1551,10 +1629,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -1592,7 +1666,20 @@
       "legacy_names": [
         "Blitz Tiger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        3,
+        28,
+        14,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:atak_kat",
@@ -1687,10 +1774,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -1728,7 +1811,20 @@
       "legacy_names": [
         "Atak Kat"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        2,
+        3,
+        1,
+        null,
+        3,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:lightning_saix",
@@ -1823,10 +1919,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -1970,7 +2062,20 @@
           "2": 3
         },
         "removable_template": "armaments:zoid_equipment_slot_1"
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        6,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:lightning_saix_bs",
@@ -2065,10 +2170,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -2212,7 +2313,20 @@
           "2": 3
         },
         "removable_template": "armaments:zoid_equipment_slot_1"
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        8,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gun_tiger",
@@ -2307,10 +2421,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -2343,7 +2453,20 @@
       "legacy_names": [
         "Gun Tiger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        7,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:liger_zero",
@@ -2438,10 +2561,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {
@@ -2476,7 +2595,20 @@
       "legacy_names": [
         "Liger Zero"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zero_schneider_cau",
@@ -2571,10 +2703,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -2608,7 +2736,20 @@
         "Zero Schneider (CAU)",
         "Zero Schneider"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        30,
+        3,
+        6,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zero_jager_cau",
@@ -2703,10 +2844,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -2745,7 +2882,20 @@
         "Zero Jager (CAU)",
         "Zero Jager"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        2,
+        2,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zero_panzer_cau",
@@ -2840,10 +2990,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 2,
-        "weapon_3_heat": 1,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -2882,7 +3028,20 @@
         "Zero Panzer (CAU)",
         "Zero Panzer"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        20,
+        25,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zero_empire_cau",
@@ -2977,10 +3136,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -3014,7 +3169,20 @@
         "Zero Empire (CAU)",
         "Zero Empire"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zero_x_cau",
@@ -3109,10 +3277,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -3156,7 +3320,20 @@
         "Zero X (CAU)",
         "Zero X"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        5,
+        18,
+        2,
+        3,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:trinity_liger",
@@ -3251,10 +3428,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -3287,7 +3460,20 @@
       "legacy_names": [
         "Trinity Liger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        6,
+        2,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:trinity_liger_ba",
@@ -3382,10 +3568,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -3423,7 +3605,20 @@
       "legacy_names": [
         "Trinity Liger BA"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        6,
+        8,
+        16,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:shield_liger",
@@ -3518,10 +3713,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -3549,7 +3740,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:shield_liger_dcs",
@@ -3644,10 +3848,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -3680,7 +3880,20 @@
       "legacy_names": [
         "Shield Liger DCS"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        5,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:shield_liger_dcs_j",
@@ -3775,10 +3988,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -3811,7 +4020,20 @@
       "legacy_names": [
         "Shield Liger DCS-J"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 27,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        10,
+        3,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:spark_liger",
@@ -3906,10 +4128,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -3947,7 +4165,20 @@
       "legacy_names": [
         "Spark Liger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 27,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        2,
+        10,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:blade_liger",
@@ -4042,10 +4273,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -4073,7 +4300,20 @@
       "legacy_names": [
         "Blade Liger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        3,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:blade_liger_ab",
@@ -4168,10 +4408,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -4204,7 +4440,20 @@
       "legacy_names": [
         "Blade Liger AB"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        8,
+        3,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:liger_aero",
@@ -4299,10 +4548,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -4330,7 +4575,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        5,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:saberlion",
@@ -4425,10 +4683,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -4461,7 +4715,20 @@
       "legacy_names": [
         "Saberlion"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        6,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:command_wolf",
@@ -4556,10 +4823,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -4592,7 +4855,20 @@
       "legacy_names": [
         "Command Wolf"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 18,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        1,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:command_wolf_town",
@@ -4687,10 +4963,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -4719,7 +4991,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:command_wolf_ac",
@@ -4814,10 +5099,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -4845,7 +5126,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 23,
+      "energy_recharge": 3,
+      "energy_costs": [
+        3,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:command_wolf_is",
@@ -4940,10 +5234,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -5049,7 +5339,20 @@
         "destination": 3,
         "old_fixed_moves": {},
         "removable_template": "armaments:zoid_equipment_slot_1"
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        1,
+        1,
+        6,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:cerberus",
@@ -5144,10 +5447,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -5180,7 +5479,20 @@
       "legacy_names": [
         "Cerberus"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        12,
+        14,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:climber_wolf",
@@ -5275,10 +5587,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -5311,7 +5619,20 @@
       "legacy_names": [
         "Climber Wolf"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 3,
+      "energy_costs": [
+        4,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:shadow_fox",
@@ -5406,10 +5727,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -5555,7 +5872,20 @@
           "3": 4
         },
         "removable_template": "armaments:zoid_equipment_slot_1"
-      }
+      },
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        1,
+        1,
+        10,
+        3,
+        null,
+        null,
+        null,
+        3
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:konig_wolf",
@@ -5650,10 +5980,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -5686,7 +6012,20 @@
       "legacy_names": [
         "Konig Wolf"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 3,
+      "energy_costs": [
+        2,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:konig_wolf_dsr_cau",
@@ -5781,10 +6120,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -5823,7 +6158,20 @@
         "Konig Wolf DSR (CAU)",
         "Konig Wolf DSR"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 38,
+      "energy_recharge": 3,
+      "energy_costs": [
+        2,
+        10,
+        1,
+        1,
+        null,
+        10,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:iron_kong",
@@ -5918,10 +6266,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -5949,7 +6293,20 @@
       "legacy_names": [
         "Iron Kong"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        8,
+        10,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:iron_kong_pk",
@@ -6044,10 +6401,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -6085,7 +6438,20 @@
       "legacy_names": [
         "Iron Kong PK"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        10,
+        8,
+        12,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:iron_kong_maneuver",
@@ -6180,10 +6546,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -6211,7 +6573,20 @@
       "legacy_names": [
         "Iron Kong Maneuver"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        8,
+        8,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:iron_kong_ss",
@@ -6306,10 +6681,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -6347,7 +6718,20 @@
       "legacy_names": [
         "Iron Kong SS"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        10,
+        8,
+        12,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:iron_drill",
@@ -6442,10 +6826,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -6478,7 +6858,20 @@
       "legacy_names": [
         "Iron Drill"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 4,
+      "energy_costs": [
+        12,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:hammer_rock",
@@ -6573,10 +6966,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -6609,7 +6998,20 @@
       "legacy_names": [
         "Hammer Rock"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:dibison",
@@ -6704,10 +7106,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -6740,7 +7138,20 @@
       "legacy_names": [
         "Dibison"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        10,
+        0,
+        20,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gravity_bison",
@@ -6835,10 +7246,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -6866,7 +7273,20 @@
       "legacy_names": [
         "Gravity Bison"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        12,
+        10,
+        15,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:black_rhimos",
@@ -6961,10 +7381,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -6997,7 +7413,20 @@
       "legacy_names": [
         "Black Rhimos"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        5,
+        0,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:cyclops",
@@ -7092,10 +7521,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -7116,7 +7541,20 @@
       "legacy_names": [
         "Cyclops"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 50,
+      "energy_recharge": 3,
+      "energy_costs": [
+        5,
+        2,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:cyclops_2",
@@ -7211,10 +7649,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -7242,7 +7676,20 @@
       "legacy_names": [
         "Cyclops 2"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 50,
+      "energy_recharge": 3,
+      "energy_costs": [
+        5,
+        2,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:elephander",
@@ -7337,10 +7784,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -7383,7 +7826,20 @@
       "legacy_names": [
         "Elephander"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 5,
+      "energy_costs": [
+        10,
+        10,
+        12,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:elephander_ag",
@@ -7478,10 +7934,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -7524,7 +7976,20 @@
       "legacy_names": [
         "Elephander AG"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 5,
+      "energy_costs": [
+        10,
+        14,
+        10,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:geno_saurer",
@@ -7619,10 +8084,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 2,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -7660,7 +8121,20 @@
       "legacy_names": [
         "Geno Saurer"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        7,
+        15,
+        12,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:psycho_geno_saurer",
@@ -7755,10 +8229,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 2,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -7796,7 +8266,20 @@
       "legacy_names": [
         "Psycho Geno Saurer"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        2,
+        15,
+        12,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:geno_breaker",
@@ -7891,10 +8374,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -7927,7 +8406,20 @@
       "legacy_names": [
         "Geno Breaker"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        5,
+        25,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:proto_breaker",
@@ -8022,10 +8514,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 2,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -8063,7 +8551,20 @@
       "legacy_names": [
         "Proto Breaker"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 4,
+      "energy_costs": [
+        4,
+        25,
+        12,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:geno_scissors",
@@ -8158,10 +8659,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -8199,7 +8696,20 @@
       "legacy_names": [
         "Geno Scissors"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        6,
+        25,
+        8,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:geno_trooper",
@@ -8294,10 +8804,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -8335,7 +8841,20 @@
       "legacy_names": [
         "Geno Trooper"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        2,
+        25,
+        18,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:geno_flame",
@@ -8430,10 +8949,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -8466,7 +8981,20 @@
       "legacy_names": [
         "Geno Flame"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 45,
+      "energy_recharge": 4,
+      "energy_costs": [
+        12,
+        20,
+        5,
+        4,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:berserk_fury",
@@ -8561,10 +9089,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -8602,7 +9126,20 @@
       "legacy_names": [
         "Berserk Fury"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        6,
+        25,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:sturm_fury_cau",
@@ -8697,10 +9234,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -8739,7 +9272,20 @@
         "Sturm Fury (CAU)",
         "Sturm Fury"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        8,
+        25,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:jagd_fury_cau",
@@ -8834,10 +9380,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -8871,7 +9413,20 @@
         "Jagd Fury (CAU)",
         "Jagd Fury"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        10,
+        25,
+        15,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:berserk_fury_z_cau",
@@ -8966,10 +9521,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -9003,7 +9554,20 @@
         "Berserk Fury Z (CAU)",
         "Berserk Fury Z"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 50,
+      "energy_recharge": 20,
+      "energy_costs": [
+        10,
+        25,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:geno_hydra",
@@ -9098,10 +9662,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": 1,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -9144,7 +9704,20 @@
       "legacy_names": [
         "Geno Hydra"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        12,
+        8,
+        25,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:geno_hydra_ka",
@@ -9239,10 +9812,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -9275,7 +9844,20 @@
       "legacy_names": [
         "Geno Hydra KA"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        20,
+        25,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:dark_spiner",
@@ -9370,10 +9952,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -9421,7 +9999,20 @@
       "legacy_names": [
         "Dark Spiner"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 37,
+      "energy_recharge": 4,
+      "energy_costs": [
+        6,
+        3,
+        10,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:killer_spiner",
@@ -9516,10 +10107,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -9552,7 +10139,20 @@
       "legacy_names": [
         "Killer Spiner"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        14,
+        12,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gun_sniper",
@@ -9647,10 +10247,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -9698,7 +10294,20 @@
       "legacy_names": [
         "Gun Sniper"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        8,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gun_sniper_weasel",
@@ -9793,10 +10402,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -9829,7 +10434,20 @@
       "legacy_names": [
         "Gun Sniper Weasel"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 2,
+      "energy_costs": [
+        10,
+        8,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gun_sniper_ls",
@@ -9924,10 +10542,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -9961,7 +10575,20 @@
         "Gun sniper LS",
         "Gun Sniper LS"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 2,
+      "energy_costs": [
+        8,
+        6,
+        16,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gun_sniper_ns",
@@ -10056,10 +10683,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -10097,7 +10720,20 @@
       "legacy_names": [
         "Gun Sniper NS"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 2,
+      "energy_costs": [
+        10,
+        8,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:snipe_master",
@@ -10192,10 +10828,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -10233,7 +10865,20 @@
       "legacy_names": [
         "Snipe Master"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        3,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:snipe_master_fb",
@@ -10328,10 +10973,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -10369,7 +11010,20 @@
       "legacy_names": [
         "Snipe Master FB"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        2,
+        3,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:snipe_master_as",
@@ -10464,10 +11118,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -10510,7 +11160,20 @@
       "legacy_names": [
         "Snipe Master AS"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        3,
+        8,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:rev_raptor",
@@ -10605,10 +11268,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -10641,7 +11300,20 @@
       "legacy_names": [
         "Rev Raptor"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:rev_raptor_pile_bunker",
@@ -10736,10 +11408,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -10773,7 +11441,20 @@
         "Rev Raptor Pile Bunker",
         "Rev Raptor Pilebunker"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        3,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:rev_hunter",
@@ -10868,10 +11549,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -10899,7 +11576,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 27,
+      "energy_recharge": 2,
+      "energy_costs": [
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:hellrunner",
@@ -10994,10 +11684,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -11025,7 +11711,20 @@
       "legacy_names": [
         "Hellrunner"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 6,
+      "energy_recharge": 1,
+      "energy_costs": [
+        2,
+        4,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:ultra_saurus",
@@ -11120,10 +11819,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -11144,7 +11839,20 @@
       "legacy_names": [
         "Ultra Saurus"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 80,
+      "energy_recharge": 8,
+      "energy_costs": [
+        10,
+        20,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:ultra_phalanx",
@@ -11239,10 +11947,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -11267,7 +11971,20 @@
       "legacy_names": [
         "Ultra Phalanx"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 100,
+      "energy_recharge": 10,
+      "energy_costs": [
+        10,
+        25,
+        15,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gordos",
@@ -11362,10 +12079,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -11403,7 +12116,20 @@
       "legacy_names": [
         "Gordos"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        3,
+        3,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gorhecks",
@@ -11498,10 +12224,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -11534,7 +12256,20 @@
       "legacy_names": [
         "Gorhecks"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 18,
+      "energy_recharge": 2,
+      "energy_costs": [
+        8,
+        5,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gordos_lr",
@@ -11629,10 +12364,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -11660,7 +12391,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        4,
+        4,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:red_horn",
@@ -11755,10 +12499,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -11791,7 +12531,20 @@
       "legacy_names": [
         "Red Horn"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        5,
+        3,
+        6,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:red_horn_bg",
@@ -11886,10 +12639,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -11927,7 +12676,20 @@
       "legacy_names": [
         "Red Horn BG"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        5,
+        3,
+        10,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:dark_horn",
@@ -12022,10 +12784,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -12058,7 +12816,20 @@
       "legacy_names": [
         "Dark Horn"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        10,
+        12,
+        12,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:dark_horn_hs",
@@ -12153,10 +12924,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -12194,7 +12961,20 @@
       "legacy_names": [
         "Dark Horn HS"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        10,
+        14,
+        17,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:mad_thunder",
@@ -12289,10 +13069,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -12320,7 +13096,20 @@
       "legacy_names": [
         "Mad Thunder"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 70,
+      "energy_recharge": 15,
+      "energy_costs": [
+        8,
+        2,
+        35,
+        5,
+        null,
+        null,
+        null,
+        2
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gun_blaster",
@@ -12415,10 +13204,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -12451,7 +13236,20 @@
       "legacy_names": [
         "Gun Blaster"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 50,
+      "energy_recharge": 3,
+      "energy_costs": [
+        20,
+        3,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:brachios",
@@ -12546,10 +13344,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -12582,7 +13376,20 @@
       "legacy_names": [
         "Brachios"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        4,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gilvader",
@@ -12677,10 +13484,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -12713,7 +13516,20 @@
       "legacy_names": [
         "Gilvader"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 70,
+      "energy_recharge": 15,
+      "energy_costs": [
+        18,
+        10,
+        60,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gojulas",
@@ -12808,10 +13624,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -12849,7 +13661,20 @@
       "legacy_names": [
         "Gojulas"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 28,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        4,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gojulas_the_ogre",
@@ -12944,10 +13769,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -12980,7 +13801,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 50,
+      "energy_recharge": 5,
+      "energy_costs": [
+        1,
+        0,
+        10,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gojulas_gunner",
@@ -13075,10 +13909,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -13111,7 +13941,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 33,
+      "energy_recharge": 3,
+      "energy_costs": [
+        1,
+        0,
+        14,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gojulas_giga",
@@ -13206,10 +14049,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -13247,7 +14086,20 @@
       "legacy_names": [
         "Gojulas Giga"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 45,
+      "energy_recharge": 6,
+      "energy_costs": [
+        1,
+        4,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gojulas_giga_cannon",
@@ -13342,10 +14194,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -13383,7 +14231,20 @@
       "legacy_names": [
         "Gojulas Giga Cannon"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 50,
+      "energy_recharge": 5,
+      "energy_costs": [
+        1,
+        4,
+        13,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:king_gojulas",
@@ -13478,10 +14339,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -13519,7 +14376,20 @@
       "legacy_names": [
         "King Gojulas"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 150,
+      "energy_recharge": 20,
+      "energy_costs": [
+        20,
+        7,
+        12,
+        10,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:death_saurer",
@@ -13614,10 +14484,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": 2,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -13655,7 +14521,20 @@
       "legacy_names": [
         "Death Saurer"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 100,
+      "energy_recharge": 10,
+      "energy_costs": [
+        40,
+        10,
+        5,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:bloody_demon",
@@ -13750,10 +14629,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": 2,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -13791,7 +14666,20 @@
       "legacy_names": [
         "Bloody Demon"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 3,
+      "energy_costs": [
+        20,
+        8,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:death_meteor",
@@ -13886,10 +14774,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": 2,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -13932,7 +14816,20 @@
       "legacy_names": [
         "Death Meteor"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 120,
+      "energy_recharge": 20,
+      "energy_costs": [
+        50,
+        5,
+        6,
+        10,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:godos",
@@ -14027,10 +14924,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -14063,7 +14956,20 @@
       "legacy_names": [
         "Godos"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 12,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:allosaurer",
@@ -14158,10 +15064,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -14199,7 +15101,20 @@
       "legacy_names": [
         "Allosaurer"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        7,
+        2,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:iguan",
@@ -14294,10 +15209,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -14330,7 +15241,20 @@
       "legacy_names": [
         "Iguan"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 12,
+      "energy_recharge": 2,
+      "energy_costs": [
+        2,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:leo_blaze",
@@ -14425,10 +15349,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -14471,7 +15391,20 @@
       "legacy_names": [
         "Leo Blaze"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        2,
+        3,
+        3,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:unenlagia",
@@ -14566,10 +15499,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -14617,7 +15546,20 @@
       "legacy_names": [
         "Unenlagia"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        3,
+        4,
+        3,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:mosasledge",
@@ -14712,10 +15654,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -14748,7 +15686,20 @@
       "legacy_names": [
         "Mosasledge"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        3,
+        3,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:nightwise",
@@ -14843,10 +15794,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -14874,7 +15821,20 @@
           "corrected": "Melee, Anti-Air",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 25,
+      "energy_recharge": 3,
+      "energy_costs": [
+        8,
+        0,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:buster_eagle",
@@ -14969,10 +15929,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -15000,7 +15956,20 @@
           "corrected": "Flying",
           "reason": "Owner assigned game types to implemented BLOX designs"
         }
-      }
+      },
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        10,
+        8,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:flyscissors",
@@ -15095,10 +16064,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -15141,7 +16106,20 @@
       "legacy_names": [
         "Flyscissors"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 27,
+      "energy_recharge": 3,
+      "energy_costs": [
+        3,
+        0,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:shell_karn",
@@ -15236,10 +16214,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -15277,7 +16251,20 @@
       "legacy_names": [
         "Shell Karn"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 27,
+      "energy_recharge": 3,
+      "energy_costs": [
+        7,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:diplo_gun",
@@ -15372,10 +16359,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -15408,7 +16391,20 @@
       "legacy_names": [
         "Diplo Gun"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 27,
+      "energy_recharge": 3,
+      "energy_costs": [
+        6,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:demon_s_head",
@@ -15503,10 +16499,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -15544,7 +16536,20 @@
       "legacy_names": [
         "Demon's Head"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 27,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        3,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:fire_phoenix",
@@ -15639,10 +16644,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -15670,7 +16671,20 @@
           "corrected": "Flying",
           "reason": "Owner assigned game types to implemented BLOX designs"
         }
-      }
+      },
+      "energy": 35,
+      "energy_recharge": 3,
+      "energy_costs": [
+        10,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:jet_falcon",
@@ -15765,10 +16779,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -15806,7 +16816,20 @@
       "legacy_names": [
         "Jet Falcon"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 50,
+      "energy_recharge": 4,
+      "energy_costs": [
+        16,
+        18,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zero_phoenix",
@@ -15901,10 +16924,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -15942,7 +16961,20 @@
       "legacy_names": [
         "Zero Phoenix"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 3,
+      "energy_costs": [
+        0,
+        12,
+        0,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zero_falcon",
@@ -16037,10 +17069,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -16083,7 +17111,20 @@
       "legacy_names": [
         "Zero Falcon"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 65,
+      "energy_recharge": 7,
+      "energy_costs": [
+        18,
+        14,
+        7,
+        22,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:fuzor_dragon",
@@ -16178,10 +17219,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -16219,7 +17256,20 @@
       "legacy_names": [
         "Fuzor Dragon"
       ],
-      "is_fuzor": true
+      "is_fuzor": true,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        8,
+        4,
+        3,
+        30,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:chimera_dragon",
@@ -16314,10 +17364,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -16350,7 +17396,20 @@
       "legacy_names": [
         "Chimera Dragon"
       ],
-      "is_fuzor": true
+      "is_fuzor": true,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        10,
+        10,
+        30,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gojulox",
@@ -16445,10 +17504,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -16491,7 +17546,20 @@
       "legacy_names": [
         "Gojulox"
       ],
-      "is_fuzor": true
+      "is_fuzor": true,
+      "energy": 60,
+      "energy_recharge": 6,
+      "energy_costs": [
+        2,
+        12,
+        14,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:2_arm_lizard",
@@ -16586,10 +17654,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -16632,7 +17696,20 @@
       "legacy_names": [
         "2-Arm Lizard"
       ],
-      "is_fuzor": true
+      "is_fuzor": true,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        2,
+        6,
+        10,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:griffin",
@@ -16727,10 +17804,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -16758,7 +17831,20 @@
       "legacy_names": [
         "Griffin"
       ],
-      "is_fuzor": true
+      "is_fuzor": true,
+      "energy": 40,
+      "energy_recharge": 4,
+      "energy_costs": [
+        1,
+        10,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:lord_gale",
@@ -16853,10 +17939,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -16884,7 +17966,20 @@
       "legacy_names": [
         "Lord Gale"
       ],
-      "is_fuzor": true
+      "is_fuzor": true,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        12,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:death_stinger",
@@ -16979,10 +18074,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 2,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -17015,7 +18106,20 @@
       "legacy_names": [
         "Death Stinger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 50,
+      "energy_recharge": 5,
+      "energy_costs": [
+        3,
+        20,
+        12,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:jagged_stinger",
@@ -17110,10 +18214,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -17146,7 +18246,20 @@
       "legacy_names": [
         "Jagged Stinger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 60,
+      "energy_recharge": 5,
+      "energy_costs": [
+        3,
+        30,
+        7,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:guysack",
@@ -17241,10 +18354,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -17277,7 +18386,20 @@
       "legacy_names": [
         "Guysack"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        5,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:guysack_stinger",
@@ -17372,10 +18494,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -17413,7 +18531,20 @@
       "legacy_names": [
         "Guysack Stinger"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 2,
+      "energy_costs": [
+        10,
+        8,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:molga",
@@ -17508,10 +18639,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -17544,7 +18671,20 @@
       "legacy_names": [
         "Molga"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 10,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:molga_cannonry",
@@ -17639,10 +18779,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -17681,7 +18817,20 @@
         "Molga Cannonry",
         "Cannonry Molga"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:dark_poison",
@@ -17776,10 +18925,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -17807,7 +18952,20 @@
       "legacy_names": [
         "Dark Poison"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:saicurtis",
@@ -17902,10 +19060,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -17943,7 +19097,20 @@
       "legacy_names": [
         "Saicurtis"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 10,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        4,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:double_sworder",
@@ -18038,10 +19205,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -18079,7 +19242,20 @@
       "legacy_names": [
         "Double Sworder"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 10,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:killer_dome",
@@ -18174,10 +19350,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -18215,7 +19387,20 @@
       "legacy_names": [
         "Killer Dome"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 10,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        6,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:cannon_tortoise",
@@ -18310,10 +19495,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -18341,7 +19522,20 @@
       "legacy_names": [
         "Cannon Tortoise"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:cannon_tortoise_bc",
@@ -18436,10 +19630,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -18472,7 +19662,20 @@
       "legacy_names": [
         "Cannon Tortoise BC"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:gator",
@@ -18567,10 +19770,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -18603,7 +19802,20 @@
       "legacy_names": [
         "Gator"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 10,
+      "energy_recharge": 2,
+      "energy_costs": [
+        2,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:barigator",
@@ -18698,10 +19910,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -18729,7 +19937,20 @@
           "corrected": "Melee",
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
-      }
+      },
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:stealth_viper",
@@ -18824,10 +20045,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -18870,7 +20087,20 @@
       "legacy_names": [
         "Stealth Viper"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        0,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:hammer_head",
@@ -18965,10 +20195,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -19001,7 +20227,20 @@
       "legacy_names": [
         "Hammer Head"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        8,
+        8,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:hammer_head_vl",
@@ -19096,10 +20335,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -19127,7 +20362,20 @@
       "legacy_names": [
         "Hammer Head VL"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:wardick",
@@ -19222,10 +20470,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -19258,7 +20502,20 @@
       "legacy_names": [
         "Wardick"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 2,
+      "energy_costs": [
+        7,
+        8,
+        15,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:sea_striker",
@@ -19353,10 +20610,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -19389,7 +20642,20 @@
       "legacy_names": [
         "Sea Striker"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        2,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:redler",
@@ -19484,10 +20750,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -19520,7 +20782,20 @@
       "legacy_names": [
         "Redler"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        0,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:redler_boostc",
@@ -19615,10 +20890,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -19652,7 +20923,20 @@
         "Redler BoostC",
         "Redler BC"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        10,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:redler_interceptor",
@@ -19747,10 +21031,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -19778,7 +21058,20 @@
       "legacy_names": [
         "Redler Interceptor"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 25,
+      "energy_recharge": 2,
+      "energy_costs": [
+        8,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:bloodler",
@@ -19873,10 +21166,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -19904,7 +21193,20 @@
       "legacy_names": [
         "Bloodler"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        10,
+        0,
+        5,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:pteras",
@@ -19999,10 +21301,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -20035,7 +21333,20 @@
       "legacy_names": [
         "Pteras"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:pteras_bomber",
@@ -20130,10 +21441,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -20166,7 +21473,20 @@
       "legacy_names": [
         "Pteras Bomber"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:pteras_radome",
@@ -20261,10 +21581,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -20297,7 +21613,20 @@
       "legacy_names": [
         "Pteras Radome"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 15,
+      "energy_recharge": 2,
+      "energy_costs": [
+        1,
+        1,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:storm_sworder",
@@ -20392,10 +21721,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -20428,7 +21753,20 @@
       "legacy_names": [
         "Storm Sworder"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 2,
+      "energy_costs": [
+        8,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:stormsworder_f",
@@ -20523,10 +21861,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -20559,7 +21893,20 @@
       "legacy_names": [
         "Stormsworder F"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 2,
+      "energy_costs": [
+        4,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:stormsworder_fx",
@@ -20654,10 +22001,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -20695,7 +22038,20 @@
       "legacy_names": [
         "Stormsworder FX"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 35,
+      "energy_recharge": 4,
+      "energy_costs": [
+        6,
+        15,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:zabat",
@@ -20790,10 +22146,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -20826,7 +22178,20 @@
       "legacy_names": [
         "Zabat"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 10,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:raynos",
@@ -20921,10 +22286,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -20952,7 +22313,20 @@
       "legacy_names": [
         "Raynos"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 20,
+      "energy_recharge": 2,
+      "energy_costs": [
+        3,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:pteramander",
@@ -21047,10 +22421,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -21083,7 +22453,20 @@
       "legacy_names": [
         "Pteramander"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 30,
+      "energy_recharge": 3,
+      "energy_costs": [
+        13,
+        6,
+        8,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "zoids:buster_fury",
@@ -21178,10 +22561,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": 1,
-        "weapon_2_heat": 1,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -21214,7 +22593,20 @@
       "legacy_names": [
         "Buster Fury"
       ],
-      "is_fuzor": false
+      "is_fuzor": false,
+      "energy": 40,
+      "energy_recharge": 5,
+      "energy_costs": [
+        20,
+        25,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Owner-approved proposal"
     }
   ],
   "excluded_rows": [

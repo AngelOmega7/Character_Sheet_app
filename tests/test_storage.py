@@ -287,6 +287,7 @@ class StorageTests(unittest.TestCase):
         character = equip_owned_equipment(character, "left", copy_id, self.catalog)
         with patch("zoids_app.combat_controller.random.randint", side_effect=[3, 20, 7]):
             for slot in ("fixed_2", "fixed_2", "left"):
+                character = replace(character, current_energy=40)
                 character = weapon_action(character, slot, "use", catalog=self.catalog).character
         character = equip_owned_equipment(character, "left", None, self.catalog)
         character = replace(character, current_health=30, gold=20000, build=replace(character.build, shield_adjustment=19))
@@ -294,16 +295,18 @@ class StorageTests(unittest.TestCase):
         loaded = CharacterStore(self.path, self.catalog).load(saved.id)
         self.assertEqual(loaded, saved)
         self.assertEqual((loaded.current_health, loaded.gold, loaded.build.shield_adjustment), (30, 20000, 19))
-        self.assertEqual(loaded.inventory[0].condition.heat, 1)
+        self.assertEqual(loaded.current_energy, 28)
         self.assertEqual(loaded.inventory[0].condition.last_roll, 7)
         self.assertIsNone(loaded.build.equipment[1])
         switched = switch_zoid(loaded, owner, "zoids:sturm_fury_cau", self.catalog)
         condition = combat_snapshot(switched, self.catalog)[1]["fixed_2"]["condition"]
-        self.assertEqual((condition.heat, condition.broken), (2, True))
+        self.assertFalse(condition.broken)
+        self.assertEqual(switched.current_energy, 28)
         self.assertEqual(condition.last_roll, 20)
 
     def test_v4_migration_preserves_inventory_ids_and_initializes_conditions(self):
         character = acquire_equipment(new_character(self.catalog), "Particle Cannon", catalog=self.catalog)
+        character = replace(character, current_energy=10)
         character = equip_owned_equipment(character, "left", character.inventory[0].id, self.catalog)
         values = asdict(character)
         for item in values["inventory"]:
@@ -317,18 +320,18 @@ class StorageTests(unittest.TestCase):
         loaded = CharacterStore(self.path, self.catalog).load(character.id)
         self.assertEqual(loaded, character)
         self.assertEqual(loaded.inventory[0].id, character.inventory[0].id)
-        self.assertEqual(loaded.inventory[0].condition.heat, 0)
+        self.assertFalse(hasattr(loaded.inventory[0].condition, "heat"))
         self.assertFalse(loaded.inventory[0].condition.broken)
 
     def test_v5_migration_preserves_conditions_without_inventing_rolls(self):
         character = acquire_equipment(new_character(self.catalog), "Particle Cannon", catalog=self.catalog)
         character = equip_owned_equipment(character, "left", character.inventory[0].id, self.catalog)
-        for _ in range(4):
-            character = weapon_action(character, "left", "use", catalog=self.catalog).character
+        character = weapon_action(character, "left", "use", catalog=self.catalog).character
         character = weapon_action(character, "fixed_1", "use", catalog=self.catalog).character
         values = asdict(character)
         for item in values["inventory"]:
             item["condition"].pop("last_roll")
+            item["condition"].update(heat=4, broken=True)
         for owner in values["owned_zoids"]:
             for weapon in owner["weapon_conditions"]:
                 weapon["condition"].pop("last_roll")
@@ -338,7 +341,9 @@ class StorageTests(unittest.TestCase):
             db.execute("PRAGMA user_version=5")
         with patch("zoids_app.combat_controller.random.randint") as roll:
             loaded = CharacterStore(self.path, self.catalog).load(character.id)
-            self.assertEqual((loaded.inventory[0].condition.heat, loaded.inventory[0].condition.broken), (4, True))
+            self.assertFalse(hasattr(loaded.inventory[0].condition, "heat"))
+            self.assertTrue(loaded.inventory[0].condition.broken)
+            self.assertEqual(loaded.current_energy, 10)
             self.assertIsNone(loaded.inventory[0].condition.last_roll)
             self.assertIsNone(combat_snapshot(loaded, self.catalog)[1]["fixed_1"]["condition"].last_roll)
             self.assertEqual(loaded.inventory[0].id, character.inventory[0].id)

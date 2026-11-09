@@ -31,7 +31,7 @@ def calculate_attack(
 
     Range bands are mutually exclusive per attack, not global activation flags.
     Ranged attacks require a band; melee attacks ignore the range selection.
-    This does not fire a weapon or change heat, health, gold, or broken status.
+    This does not fire a weapon or change energy, health, gold, or broken status.
     """
     if type(current_health) is not int or current_health < 0:
         raise RuleError("Current health must be a nonnegative integer")

@@ -37,6 +37,34 @@ def migrate_expanded_caus(character, catalog):
     return restore_roster_selection(result, catalog)
 
 
+def migrate_equipment_mounts(character, catalog):
+    """Move legacy Great Zaber rifles into slot 6 without deleting owned copies."""
+    rifle = "armaments:zoid_equipment_slot_2"
+    roster = []
+    for owner in character.owned_zoids:
+        forms = []
+        for form in owner.forms:
+            if form.zoid != "zoids:great_zaber":
+                forms.append(form)
+                continue
+            equipment, ids, active = list(form.equipment), list(form.equipment_ids), list(form.equipment_active)
+            for index in (0, 2, 3):
+                if equipment[index] != rifle:
+                    continue
+                if equipment[1] == rifle:
+                    # A second copy cannot share slot 6; retain it unattached.
+                    equipment[index], ids[index], active[index] = None, None, False
+                else:
+                    # Great Zaber's former weapon mounts (5/7) also accept the
+                    # displaced slot-6 equipment. Preserve copy IDs and flags.
+                    for values in (equipment, ids, active):
+                        values[1], values[index] = values[index], values[1]
+            forms.append(replace(form, equipment=tuple(equipment), equipment_ids=tuple(ids), equipment_active=tuple(active)))
+        roster.append(replace(owner, forms=tuple(forms)))
+    result = replace(character, owned_zoids=tuple(roster))
+    return restore_roster_selection(result, catalog) if result != character else character
+
+
 def migrate_workflow(character, catalog):
     roster, archive = [], list(character.archived_content)
     transport = character.transport
@@ -71,7 +99,7 @@ def migrate_workflow(character, catalog):
                         if copy:
                             before = transferred.get(target, WeaponCondition())
                             state = copy.condition
-                            transferred[target] = WeaponCondition(max(before.heat, state.heat), before.broken or state.broken,
+                            transferred[target] = WeaponCondition(before.broken or state.broken,
                                                                   state.last_roll if state.last_roll is not None else before.last_roll)
                         equipment[index], ids[index], enabled[index] = None, None, False
             forms.append(replace(form, fixed_active=tuple(flags), equipment=tuple(equipment), equipment_ids=tuple(ids), equipment_active=tuple(enabled)))

@@ -5574,7 +5574,7 @@
       },
       "fields": {
         "name": "Economized Shooting",
-        "description": "While active, increase maximum heat of every heat-rated weapon by 1.",
+        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 2, to a minimum of 0.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5600,7 +5600,10 @@
           "reason": "Owner replaced one-use exception with heat capacity bonus"
         }
       },
-      "heat_capacity_bonus": 1
+      "ranged_energy_cost_reduction": 2,
+      "legacy_names": [
+        "Economized Shooting 1"
+      ]
     },
     {
       "id": "abilities:counter_attack",
@@ -5665,6 +5668,99 @@
       "eligible_types": [],
       "eligible_sizes": [],
       "handling": "player_managed"
+    },
+    {
+      "id": "abilities:economized_shooting_2",
+      "name": "Economized Shooting 2",
+      "kind": "record",
+      "source": {
+        "owner_defined": true
+      },
+      "fields": {
+        "name": "Economized Shooting 2",
+        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 4, to a minimum of 0.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "economized_shooting",
+      "rank": 2,
+      "eligible_types": [],
+      "eligible_sizes": [],
+      "ranged_energy_cost_reduction": 4
+    },
+    {
+      "id": "abilities:economized_shooting_3",
+      "name": "Economized Shooting 3",
+      "kind": "record",
+      "source": {
+        "owner_defined": true
+      },
+      "fields": {
+        "name": "Economized Shooting 3",
+        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 6, to a minimum of 0.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "economized_shooting",
+      "rank": 3,
+      "eligible_types": [],
+      "eligible_sizes": [],
+      "ranged_energy_cost_reduction": 6
+    },
+    {
+      "id": "abilities:economized_shooting_4",
+      "name": "Economized Shooting 4",
+      "kind": "record",
+      "source": {
+        "owner_defined": true
+      },
+      "fields": {
+        "name": "Economized Shooting 4",
+        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 8, to a minimum of 0.",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "economized_shooting",
+      "rank": 4,
+      "eligible_types": [],
+      "eligible_sizes": [],
+      "ranged_energy_cost_reduction": 8
     }
   ],
   "excluded_rows": [

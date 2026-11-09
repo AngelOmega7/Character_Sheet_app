@@ -39,13 +39,11 @@ def _nonnegative_integer(value: int, name: str) -> None:
 
 @dataclass(frozen=True)
 class WeaponCondition:
-    """Persistent condition independent of a form's current reference heat rating."""
-    heat: int = 0
+    """Persistent condition and last attack roll for a physical weapon."""
     broken: bool = False
     last_roll: int | None = None
 
     def __post_init__(self):
-        _nonnegative_integer(self.heat, "Heat")
         if type(self.broken) is not bool:
             raise RuleError("Broken state must be a Boolean")
         if self.last_roll is not None and (type(self.last_roll) is not int or not 1 <= self.last_roll <= 20):
@@ -54,61 +52,37 @@ class WeaponCondition:
 
 @dataclass(frozen=True)
 class WeaponState:
-    heat_rating: int | None = None
-    heat: int = 0
     broken: bool = False
 
     def __post_init__(self):
-        if self.heat_rating is not None and (
-            type(self.heat_rating) is not int or self.heat_rating not in (1, 2, 3)
-        ):
-            raise RuleError("Heat rating must be 1, 2, 3, or None")
-        _nonnegative_integer(self.heat, "Heat")
         if type(self.broken) is not bool:
             raise RuleError("Broken state must be a Boolean")
-        if self.heat_rating is None and self.heat != 0:
-            raise RuleError("A weapon without a heat rating cannot accumulate heat")
 
 
 @dataclass(frozen=True)
 class WeaponUse:
     weapon: WeaponState
-    broke_after_use: bool
+    energy: int
 
 
-def use_weapon(weapon: WeaponState, *, heat_capacity_bonus: int = 0) -> WeaponUse:
-    """A successful use at/above capacity works, then breaks the weapon.
-
-    Raising RuleError means no shot/use occurs. Otherwise the caller resolves
-    the shot even when broke_after_use is true. This does not imply a hit.
-    """
-    if type(heat_capacity_bonus) is not int or heat_capacity_bonus not in (0, 1):
-        raise RuleError("Heat capacity bonus must be 0 or 1")
+def use_weapon(weapon: WeaponState, *, current_energy: int, energy_cost: int) -> WeaponUse:
+    """Spend energy atomically; an unaffordable use never fires or rolls."""
+    _nonnegative_integer(current_energy, "Current energy")
+    _nonnegative_integer(energy_cost, "Energy cost")
     if weapon.broken:
         raise RuleError("Weapon is broken and must be repaired before use")
-    if weapon.heat_rating is None:
-        return WeaponUse(weapon, False)
-    breaks = weapon.heat >= weapon.heat_rating + heat_capacity_bonus
-    return WeaponUse(replace(weapon, heat=weapon.heat + 1, broken=breaks), breaks)
-
-
-def vent_weapon(weapon: WeaponState) -> WeaponState:
-    """Venting removes one heat; it never repairs a broken weapon."""
-    return replace(weapon, heat=max(0, weapon.heat - 1))
-
-
-def rest_weapons(weapons: tuple[WeaponState, ...]) -> tuple[WeaponState, ...]:
-    """Reset heat across slots without repairing weapons."""
-    return tuple(replace(weapon, heat=0) for weapon in weapons)
+    if energy_cost > current_energy:
+        raise RuleError(f"Not enough energy: requires {energy_cost}, available {current_energy}")
+    return WeaponUse(weapon, current_energy - energy_cost)
 
 
 def restore_repaired_weapon(weapon: WeaponState) -> WeaponState:
-    """Apply a completed repair: clear broken status and reset heat to zero.
+    """Apply a completed repair: clear broken status.
 
     This is only the state transition, not a purchase. Use repair_weapon for
     the paid transaction, including balance validation and deduction.
     """
-    return replace(weapon, heat=0, broken=False)
+    return replace(weapon, broken=False)
 
 
 @dataclass(frozen=True)
@@ -126,10 +100,10 @@ def repair_weapon(
     maximum_health: int,
     confirmed: bool = False,
 ) -> WeaponRepair:
-    """Repair one broken weapon for 10,000g, resetting its heat.
+    """Repair one broken weapon for 10,000g.
 
     Reject unaffordable repairs without changing state. An intact weapon is
-    unchanged and incurs no charge; this action is not a cooling shortcut.
+    unchanged and incurs no charge.
 
     More than 25% missing health requires explicit confirmation. The UI should
     catch RepairConfirmationRequired and offer Cancel / Repair anyway. Only

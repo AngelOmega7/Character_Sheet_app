@@ -31,7 +31,7 @@ class RetirementTests(unittest.TestCase):
         self.assertEqual(retired, [])
         for name in ("BLOXType 1", "BLOX Type 2", "BLOX Type 3", "BLOX Type 4", "BLOX Type 5"):
             self.assertEqual(self.catalog.find("abilities", name)["eligible_types"], ["BLOX"])
-        self.assertEqual(sum(r["kind"] == "record" for r in self.catalog.tables["abilities"]["records"]), 165)
+        self.assertEqual(sum(r["kind"] == "record" for r in self.catalog.tables["abilities"]["records"]), 168)
 
     def test_transports_have_separate_reference_catalog_and_provenance(self):
         records = self.catalog.tables["transports"]["records"]

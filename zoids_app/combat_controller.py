@@ -69,7 +69,7 @@ def _set_condition(character, identity, condition):
 
 
 def weapon_action(character, slot, action, *, confirmed=False, catalog=None):
-    """Use, vent, or repair one current slot; return a new character on success."""
+    """Use or repair one current slot; return a new character on success."""
     catalog = catalog or Catalog()
     character = validate_character(character, catalog)
     stats, weapons = combat_snapshot(character, catalog)
@@ -77,42 +77,50 @@ def weapon_action(character, slot, action, *, confirmed=False, catalog=None):
         raise RuleError("Choose an occupied weapon/equipment slot")
     target = weapons[slot]
     weapon, condition = target["weapon"], target["condition"]
-    rating = weapon["heat_rating"]
-    # A form can expose a different rating. Keep stored heat even if this form
-    # is unrated, but adapt the rule helper's rated-state input without erasing it.
-    state = WeaponState(rating, condition.heat if rating is not None else 0, condition.broken)
+    state = WeaponState(condition.broken)
     cost = 0
     if action == "use":
-        result = use_weapon(state, heat_capacity_bonus=weapon["heat_capacity_bonus"])
+        result = use_weapon(state, current_energy=character.current_energy, energy_cost=weapon["energy_cost"])
         roll = random.randint(1, 20) if rolls_damage(weapon) else condition.last_roll
-        condition = WeaponCondition(result.weapon.heat if rating is not None else condition.heat, result.weapon.broken, roll)
-        message = (f"d20: {roll}. " if rolls_damage(weapon) else "Equipment use recorded. ") + ("Use resolved; weapon is now broken." if result.broke_after_use else "Resolve the effect at the table.")
-    elif action == "vent":
-        amount = max((catalog.find("feats", feat).get("vent_heat", 1)
-                      for feat in character.pilot_details.feats if feat), default=1)
-        condition = replace(condition, heat=max(0, condition.heat - amount))
-        message = f"Vented {amount} heat (minimum 0). Broken status is unchanged."
+        condition = WeaponCondition(result.weapon.broken, roll)
+        character = replace(character, current_energy=result.energy)
+        message = (f"d20: {roll}. " if rolls_damage(weapon) else "Equipment use recorded. ") + f"Spent {weapon['energy_cost']} energy. Resolve the effect at the table."
+        if weapon.get("energy_restore"):
+            energy = min(stats["energy"], result.energy + weapon["energy_restore"])
+            character = replace(character, current_energy=energy)
+            message = f"Activated {weapon['name']}. Restored {energy - result.energy} Energy."
     elif action == "repair":
         result = repair_weapon(state, character.gold, current_health=character.current_health,
                                maximum_health=stats["pilot"]["health"], confirmed=confirmed)
         if result.cost:
-            condition = replace(condition, heat=result.weapon.heat, broken=result.weapon.broken)
+            condition = replace(condition, broken=result.weapon.broken)
         character, cost = replace(character, gold=result.gold), result.cost
-        message = f"Weapon repaired for {cost:,}g; heat cleared." if cost else "Weapon is intact; no gold spent or heat cleared."
+        message = f"Weapon repaired for {cost:,}g." if cost else "Weapon is intact; no gold spent."
     else:
         raise RuleError(f"Unknown weapon action: {action}")
     character = _set_condition(character, target["identity"], condition)
     return CombatResult(validate_character(character, catalog), message, cost)
 
 
-def rest_active_loadout(character, catalog=None):
-    """Cool the current eight-slot loadout, leaving other weapons and resources alone."""
+def start_turn(character, catalog=None):
+    """Apply one turn's recharge to the active chassis, capped at total energy."""
     catalog = catalog or Catalog()
     character = validate_character(character, catalog)
-    _, weapons = combat_snapshot(character, catalog)
-    for target in weapons.values():
-        character = _set_condition(character, target["identity"], replace(target["condition"], heat=0))
-    return CombatResult(validate_character(character, catalog), "Rested the active loadout. Heat cleared; health and broken status preserved.")
+    stats, _ = combat_snapshot(character, catalog)
+    energy = min(stats["energy"], character.current_energy + stats["energy_recharge"])
+    restored = energy - character.current_energy
+    character = replace(character, current_energy=energy)
+    return CombatResult(validate_character(character, catalog), f"Turn started. Restored {restored} energy.")
+
+
+def rest(character, catalog=None):
+    """Set the active chassis to half its equipped maximum, rounded down."""
+    catalog = catalog or Catalog()
+    character = validate_character(character, catalog)
+    stats, _ = combat_snapshot(character, catalog)
+    energy = stats["energy"] // 2
+    character = replace(character, current_energy=energy)
+    return CombatResult(validate_character(character, catalog), f"Rested. Energy set to {energy} / {stats['energy']}.")
 
 
 def repair_character_health(character, points=None, catalog=None):
@@ -125,7 +133,7 @@ def repair_character_health(character, points=None, catalog=None):
 
 
 def attack_preview(character, slot, *, range_band=None, distance=None, catalog=None):
-    """Preview only: never roll, spend gold, add heat, or modify resources."""
+    """Preview only: never roll, spend gold or energy, or modify resources."""
     catalog = catalog or Catalog()
     character = validate_character(character, catalog)
     _, weapons = combat_snapshot(character, catalog)

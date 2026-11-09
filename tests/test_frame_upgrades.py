@@ -13,6 +13,8 @@ from zoids_app.combat import RuleError
 from zoids_app.commerce import change_upgrade
 from zoids_app.stats import CharacterBuild, Upgrades, calculate_stats
 from zoids_app.storage import CharacterStore, SAVE_VERSION
+from zoids_app.combat_controller import rest, start_turn
+from zoids_app.upgrade_rules import upgrade_price
 from test_support import established_character
 
 
@@ -58,6 +60,68 @@ class FrameUpgradeTests(unittest.TestCase):
             self.assertEqual(a["to_hit"] - b["to_hit"], 9 if b["base_damage"] is not None else 0)
             self.assertEqual(a["damage_bonus"], b["damage_bonus"])
             self.assertEqual(a["damage_upgrade"], 0)
+
+    def test_ept_doubles_prices_is_uncapped_and_refunds_exact_rank(self):
+        original = replace(established_character(self.catalog), gold=10_000 * (2 ** 8 - 1))
+        character = original
+        baseline = calculate_stats(character.build, self.catalog)
+        for rank in range(1, 9):
+            before = character
+            character = change_upgrade(character, "ept", 1, catalog=self.catalog)
+            self.assertEqual(before.gold - character.gold, 10_000 * 2 ** (rank - 1))
+            self.assertEqual(character.build.upgrades.ept, rank)
+            self.assertEqual(calculate_stats(character.build, self.catalog)["energy_recharge"], baseline["energy_recharge"] + rank)
+            self.assertEqual(character.current_energy, original.current_energy)
+        self.assertEqual(character.gold, 0)
+        with self.assertRaises(RuleError):
+            change_upgrade(character, "ept", 1, catalog=self.catalog)
+        recharged = start_turn(replace(character, current_energy=0), self.catalog).character
+        self.assertEqual(recharged.current_energy, min(baseline["energy"], baseline["energy_recharge"] + 8))
+        self.assertEqual(rest(recharged, self.catalog).character.current_energy, baseline["energy"] // 2)
+        for rank in range(8, 0, -1):
+            before = character
+            character = change_upgrade(character, "ept", -1, catalog=self.catalog)
+            self.assertEqual(character.gold - before.gold, upgrade_price("ept", rank))
+        self.assertEqual(character, original)
+        for invalid in (-1, True, 1.5):
+            with self.assertRaises(RuleError):
+                Upgrades(ept=invalid)
+        self.assertEqual(Upgrades(ept=100).ept, 100)
+
+    def test_ept_follows_chassis_across_forms_and_survives_save_export(self):
+        character = replace(established_character(self.catalog), gold=30_000)
+        character = acquire_zoid(character, "Liger Zero", self.catalog)
+        character = acquire_zoid(character, "Zero Jager (CAU)", self.catalog)
+        host = character.owned_zoids[-1].id
+        character = switch_zoid(character, host, catalog=self.catalog)
+        for _ in range(2):
+            character = change_upgrade(character, "ept", 1, catalog=self.catalog)
+        character = switch_zoid(character, host, "zoids:zero_jager_cau", self.catalog)
+        expected = self.catalog.find("zoids", character.build.zoid)["energy_recharge"] + 2
+        self.assertEqual(calculate_stats(character.build, self.catalog)["energy_recharge"], expected)
+        with tempfile.TemporaryDirectory() as directory:
+            store = CharacterStore(Path(directory) / "save.db", self.catalog)
+            saved = store.save(character)
+            self.assertEqual(store.load(saved.id), saved)
+            imported = store.import_character(store.export_character(saved.id))
+            self.assertEqual(imported.build.upgrades.ept, 2)
+            other = switch_zoid(imported, imported.owned_zoids[0].id, catalog=self.catalog)
+            self.assertEqual(other.build.upgrades.ept, 0)
+            returned = switch_zoid(other, host, catalog=self.catalog)
+            self.assertEqual(returned.build.upgrades.ept, 2)
+
+    def test_pre_ept_save_defaults_to_zero_without_resetting_energy(self):
+        character = replace(established_character(self.catalog), current_energy=7, gold=123)
+        values = asdict(character)
+        values["build"]["upgrades"].pop("ept")
+        for owner in values["owned_zoids"]:
+            owner["frame"].pop("ept")
+        with tempfile.TemporaryDirectory() as directory:
+            store = CharacterStore(Path(directory) / "save.db", self.catalog)
+            loaded = store.import_character(json.dumps({"save_version": 13, "character": values}))
+            self.assertEqual(loaded.build.upgrades.ept, 0)
+            self.assertEqual(loaded.owned_zoids[0].frame.ept, 0)
+            self.assertEqual((loaded.current_energy, loaded.gold), (7, 123))
 
     def legacy_character(self):
         c = acquire_zoid(established_character(self.catalog), "Liger Zero", self.catalog)

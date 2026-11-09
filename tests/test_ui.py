@@ -205,18 +205,56 @@ class EditorTests(unittest.TestCase):
     def test_upgrade_counters_show_progressive_prices_and_uncapped_tracks(self):
         for field in ("defense", "accuracy"):
             _, widget = self.editor.upgrade_counter(field.title(), 7, field)
-            minus, _, plus = widget.controls[0].controls
+            minus, _, plus, _ = widget.controls[0].controls
             self.assertFalse(plus.disabled)
             self.assertEqual(plus.tooltip, "Buy next point for 40,000g")
             self.assertEqual(minus.tooltip, "Refund 35,000g")
         _, widget = self.editor.upgrade_counter("Armor", 2, "armor")
-        minus, _, plus = widget.controls[0].controls
+        minus, _, plus, _ = widget.controls[0].controls
         self.assertEqual(minus.tooltip, "Refund 30,000g")
         self.assertEqual(plus.tooltip, "Buy next point for 35,000g")
         for field in ("speed", "reaction", "capacity", "armor"):
             _, widget = self.editor.upgrade_counter(field.title(), 5, field)
             self.assertTrue(widget.controls[0].controls[2].disabled)
             self.assertEqual(widget.controls[1].value, "Maximum 5")
+        _, widget = self.editor.upgrade_counter("EPT", 7, "ept")
+        minus, _, plus, _ = widget.controls[0].controls
+        self.assertFalse(plus.disabled)
+        self.assertEqual(minus.tooltip, "Refund 640,000g")
+        self.assertEqual(plus.tooltip, "Buy next point for 1,280,000g")
+        self.assertEqual(widget.controls[1].value, "Next: 1,280,000g")
+
+    def test_upgrade_base_stats_are_beside_boxes_and_follow_form_without_bonuses(self):
+        editor = self.editor
+        record = editor.catalog.find("zoids", editor.character.build.zoid)
+        for key, source in (("speed", "speed"), ("reaction", "reaction"), ("defense", "defense"),
+                            ("capacity", "carry_capacity"), ("armor", "armor")):
+            self.assertEqual(editor.upgrade_base_labels[key].value, f"Base: {record['fields'][source]}")
+        original_labels = {key: label.value for key, label in editor.upgrade_base_labels.items()}
+        self.assertEqual(original_labels["ept"], f"Base: {record['energy_recharge']}")
+        self.assertIn("F1:", original_labels["accuracy"])
+        control, widget = editor.upgrade_counter("EPT", 0, "ept", base_stat=editor.upgrade_base_labels["ept"])
+        self.assertIs(widget.controls[0].controls[1], control)
+        self.assertEqual(widget.controls[0].controls[2].icon, flet.Icons.ADD)
+        self.assertIs(widget.controls[0].controls[3], editor.upgrade_base_labels["ept"])
+        editor.gold_input.value = "100000"
+        energy_before = editor.character.current_energy
+        editor.adjust_upgrade("ept", 1)
+        editor.adjust_upgrade("ept", 1)
+        self.assertEqual(editor.character.gold, 70000)
+        self.assertEqual(editor.frame_fields["ept"].value, "2")
+        self.assertEqual(editor.character.current_energy, energy_before)
+        editor.adjust_upgrade("speed", 1)
+        self.assertEqual({key: label.value for key, label in editor.upgrade_base_labels.items()}, original_labels)
+        for name in ("Liger Zero", "Zero Jager (CAU)"):
+            editor.character = acquire_zoid(editor.character, name, editor.catalog)
+        owner = editor.character.owned_zoids[-1]
+        editor.character = switch_zoid(editor.character, owner.id, "zoids:zero_jager_cau", editor.catalog)
+        editor.render()
+        selected = editor.catalog.find("zoids", editor.character.build.zoid)
+        self.assertEqual(editor.upgrade_base_labels["speed"].value, f"Base: {selected['fields']['speed']}")
+        self.assertEqual(editor.upgrade_base_labels["ept"].value, f"Base: {selected['energy_recharge']}")
+        self.assertEqual(editor.frame_fields["ept"].value, "0")
 
     def test_unsaved_switch_can_be_cancelled(self):
         editor = self.editor
@@ -598,6 +636,57 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(editor.character.build.equipment[1], "armaments:zoid_equipment_slot_1")
         self.assertEqual(editor.inventory_labels[copy.id], "Double Beam Cannon · copy 1")
 
+    def acquire_specific_item(self, name):
+        editor = self.editor
+        choice = next(o for o in editor.equipment_to_acquire.options if o.text.startswith(name + " · source:"))
+        editor.equipment_to_acquire.value, editor.equipment_to_acquire.text = choice.key, choice.text
+        editor.obtain_equipment()
+        return editor.character.inventory[-1]
+
+    def test_great_zaber_specific_weapons_can_both_be_equipped_and_saved(self):
+        editor = self.editor
+        editor.character = acquire_zoid(editor.character, "Great Zaber", editor.catalog)
+        editor.character = switch_zoid(editor.character, editor.character.owned_zoids[-1].id, catalog=editor.catalog)
+        editor.render()
+        cannon = self.acquire_specific_item("Double Beam Cannon")
+        rifle = self.acquire_specific_item("20mm Solid Rifle")
+        self.assertIn(rifle.id, {o.key for o in editor.equipment_dropdowns["left"].options})
+        for slot in ("back", "right", "chest"):
+            self.assertNotIn(rifle.id, {o.key for o in editor.equipment_dropdowns[slot].options})
+        editor.change_equipment("back", cannon.id)
+        editor.change_equipment("left", rifle.id)
+        self.assertEqual(editor.equipment_dropdowns["back"].value, cannon.id)
+        self.assertEqual(editor.equipment_dropdowns["left"].value, rifle.id)
+        editor.save()
+        saved = editor.character
+        editor.new()
+        editor.saved.value = saved.id
+        editor.open_saved()
+        self.assertEqual(editor.character, saved)
+        self.assertEqual(editor.equipment_dropdowns["left"].value, rifle.id)
+
+    def test_konig_missiles_and_shadow_fox_utility_slot_options(self):
+        editor = self.editor
+        for name in ("Konig Wolf", "Konig Wolf DSR (CAU)"):
+            editor.character = acquire_zoid(editor.character, name, editor.catalog)
+        owner = next(o for o in editor.character.owned_zoids if o.base_zoid == "zoids:konig_wolf")
+        form = editor.catalog.find("zoids", "Konig Wolf DSR (CAU)")["id"]
+        editor.character = switch_zoid(editor.character, owner.id, form, editor.catalog)
+        editor.render()
+        missiles = self.acquire_specific_item("5-Shot Missile Pod")
+        for slot in ("left", "right"):
+            self.assertIn(missiles.id, {o.key for o in editor.equipment_dropdowns[slot].options})
+        editor.change_equipment("right", missiles.id)
+        self.assertEqual(editor.equipment_dropdowns["right"].value, missiles.id)
+        editor.character = acquire_zoid(editor.character, "Shadow Fox", editor.catalog)
+        editor.character = switch_zoid(editor.character, editor.character.owned_zoids[-1].id, catalog=editor.catalog)
+        editor.render()
+        camouflage = self.acquire_specific_item("Optical Camouflage")
+        for slot in ("back", "left", "right", "chest"):
+            self.assertIn(camouflage.id, {o.key for o in editor.equipment_dropdowns[slot].options})
+        editor.change_equipment("chest", camouflage.id)
+        self.assertEqual(editor.equipment_dropdowns["chest"].value, camouflage.id)
+
     def combat_pilot(self, health=27, gold=20000):
         self.acquire_item("Particle Cannon")
         self.editor.change_equipment("left", self.editor.character.inventory[0].id)
@@ -618,7 +707,7 @@ class EditorTests(unittest.TestCase):
         editor.change_attack_range(target["identity"], "long")
         self.assertEqual(editor.attack_previews["left"]["to_hit"], normal["to_hit"] + 4)
         self.assertEqual(editor.attack_previews["left"]["damage"], 78)
-        self.assertEqual(editor.character.inventory[0].condition.heat, 0)
+        self.assertEqual(editor.character.current_energy, 20)
         self.assertNotIn("fixed_1", editor.range_controls)  # Melee has no range selector.
         editor.health_input.value = "28"
         editor.apply_resources()
@@ -628,28 +717,28 @@ class EditorTests(unittest.TestCase):
         editor.apply_resources()
         self.assertEqual(editor.character, before)
 
-    def test_use_vent_rest_and_save_preserve_broken_status(self):
+    def test_use_start_turn_bars_and_save_track_energy(self):
         editor = self.combat_pilot()
-        for _ in range(4):
-            editor.weapon_action("left", "use")
-        self.assertTrue(editor.character.inventory[0].condition.broken)
-        self.assertEqual(editor.character.inventory[0].condition.heat, 4)
+        editor.weapon_action("left", "use")
+        self.assertFalse(editor.character.inventory[0].condition.broken)
+        self.assertEqual(editor.character.current_energy, 8)
+        self.assertEqual(editor.energy_bar.value, 0.4)
+        self.assertEqual(editor.health_bar.value, 27 / calculate_stats(editor.character.build)["pilot"]["health"])
         before = editor.character
         editor.weapon_action("left", "use")
         self.assertEqual(editor.character, before)
-        editor.weapon_action("left", "vent")
-        self.assertEqual(editor.character.inventory[0].condition.heat, 3)
-        editor.rest()
-        self.assertEqual(editor.character.inventory[0].condition.heat, 0)
-        self.assertTrue(editor.character.inventory[0].condition.broken)
+        editor.start_turn()
+        self.assertEqual(editor.character.current_energy, 10)
+        self.assertEqual(editor.energy_bar.value, 0.5)
         self.assertEqual((editor.character.current_health, editor.character.gold, editor.character.build.shield_adjustment), (27, 20000, 9))
         editor.save()
         self.assertEqual(self.store.load(editor.character.id), editor.character)
 
     def test_weapon_repair_cancel_stale_quote_and_confirmed_payment(self):
         editor = self.combat_pilot(health=20, gold=10100)
-        for _ in range(4):
-            editor.weapon_action("left", "use")
+        item = editor.character.inventory[0]
+        editor.character = replace(editor.character, inventory=(replace(item, condition=replace(item.condition, broken=True)),))
+        editor.render()
         before = editor.character
         editor.weapon_action("left", "repair")
         self.assertEqual(editor.character, before)
@@ -667,7 +756,7 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(editor.character.gold, 101)
         self.assertEqual(editor.character.current_health, 20)
         self.assertFalse(editor.character.inventory[0].condition.broken)
-        self.assertEqual(editor.character.inventory[0].condition.heat, 0)
+        self.assertEqual(editor.character.current_energy, 20)
         confirm(None)
         self.assertEqual(editor.character.gold, 101)
 
@@ -677,7 +766,7 @@ class EditorTests(unittest.TestCase):
         editor.health_repair_points.value = "5"
         editor.repair_health()
         self.assertEqual((editor.character.current_health, editor.character.gold), (105, 150))
-        self.assertEqual(editor.character.inventory[0].condition.heat, 1)
+        self.assertEqual(editor.character.current_energy, 8)
         self.assertEqual(editor.character.build.shield_adjustment, 9)
         before = editor.character
         editor.repair_health()  # Blank/full repair is unaffordable.
@@ -693,14 +782,13 @@ class EditorTests(unittest.TestCase):
         with patch("zoids_app.combat_controller.random.randint", side_effect=[20, 1]) as roll:
             editor.weapon_action("left", "use")
             self.assertEqual(displayed("left"), "20")
-            self.assertEqual(editor.character.inventory[0].condition.heat, 1)
+            self.assertEqual(editor.character.current_energy, 8)
             editor.weapon_action("fixed_1", "use")
             self.assertEqual(displayed("fixed_1"), "1")
             self.assertEqual(displayed("left"), "20")
             target = combat_snapshot(editor.character, editor.catalog)[1]["left"]
             editor.change_attack_range(target["identity"], "long")
-            editor.weapon_action("left", "vent")
-            editor.rest()
+            editor.start_turn()
             editor.render()
             editor.save()
             saved_id = editor.character.id
@@ -723,7 +811,7 @@ class EditorTests(unittest.TestCase):
         editor.change_feat(6, "feats:demolitionist")
         self.assertEqual(calculate_stats(editor.character.build, editor.catalog), baseline)
         self.assertIn("advantage", editor.feat_descriptions[0].value)
-        self.assertIn("vent", editor.feat_descriptions[6].value)
+        self.assertEqual(editor.feat_descriptions[6].value, "Once per Rest, you may completely fill your Zoid's Energy.")
         editor.organoid_color.value = "White"
         editor.apply_organoid()
         self.assertEqual(editor.personality.value, "Outspoken")
@@ -741,6 +829,44 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(editor.feat_slots[6].value, "feats:demolitionist")
         editor.change_feat(6, "")
         self.assertNotIn("feats:demolitionist", editor.character.pilot_details.feats)
+
+    def test_reinforcer_bars_and_container_activation(self):
+        editor = self.editor
+        self.acquire_item("Energy Reinforcer Unit")
+        editor.change_equipment("left", editor.character.inventory[-1].id)
+        self.acquire_item("Physics Reinforcer Unit")
+        editor.change_equipment("right", editor.character.inventory[-1].id)
+        self.acquire_item("Energy Container")
+        editor.change_equipment("chest", editor.character.inventory[-1].id)
+        stats = calculate_stats(editor.character.build, editor.catalog)
+        self.assertEqual(stats["energy"], 40)
+        self.assertEqual(editor.health_bar.value, editor.character.current_health / stats["pilot"]["health"])
+        editor.energy_input.value = "5"
+        editor.apply_resources()
+        with patch("zoids_app.combat_controller.random.randint") as roll:
+            editor.activate(3, True)
+            self.assertEqual(editor.character.current_energy, 25)
+            self.assertEqual(editor.energy_bar.value, 25 / 40)
+            editor.render()
+            self.assertEqual(editor.character.current_energy, 25)
+            editor.weapon_action("chest", "use")
+            self.assertEqual(editor.character.current_energy, 40)
+            self.assertEqual(editor.energy_bar.value, 1)
+            editor.save()
+            self.assertEqual(self.store.load(editor.character.id).current_energy, 40)
+            roll.assert_not_called()
+    def test_rest_button_sets_half_energy_from_both_directions(self):
+        editor = self.editor
+        self.acquire_item("Energy Reinforcer Unit")
+        editor.change_equipment("chest", editor.character.inventory[-1].id)
+        for value in ("0", "40"):
+            editor.energy_input.value = value
+            editor.rest()
+            self.assertEqual(editor.character.current_energy, 20)
+            self.assertEqual(editor.energy_bar.value, 0.5)
+            self.assertEqual(editor.energy_input.value, "20")
+        editor.save()
+        self.assertEqual(self.store.load(editor.character.id).current_energy, 20)
 
     def test_invalid_pilot_details_or_feat_does_not_overwrite_state(self):
         editor = self.editor

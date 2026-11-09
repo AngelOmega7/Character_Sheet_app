@@ -109,11 +109,10 @@
       },
       "fields": {
         "name": "Demolitionist",
-        "description": "While this feat is selected, venting a weapon removes 2 heat instead of 1 (minimum 0). Only the selected weapon is affected."
+        "description": "Once per Rest, you may completely fill your Zoid's Energy."
       },
       "dynamic_fields": {},
-      "handling": "automated",
-      "vent_heat": 2
+      "handling": "player_managed"
     },
     {
       "id": "feats:none",

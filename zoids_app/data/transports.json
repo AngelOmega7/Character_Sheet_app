@@ -85,10 +85,6 @@
     "second_attack_gif",
     "third_attack_gif",
     "fourth_attack_gif",
-    "weapon_1_heat",
-    "weapon_2_heat",
-    "weapon_3_heat",
-    "weapon_4_heat",
     "column_83"
   ],
   "source_headers": [
@@ -176,10 +172,6 @@
     "Second attack gif",
     "Third attack gif",
     "Fourth attack gif",
-    "Weapon 1 Heat",
-    "Weapon 2 Heat",
-    "Weapon 3 Heat",
-    "Weapon 4 Heat",
     "Column 83"
   ],
   "records": [
@@ -276,10 +268,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -303,7 +291,20 @@
       "is_fuzor": false,
       "legacy_zoid_id": "zoids:gustav",
       "hangar_capacity": 2,
-      "hangar_size": "Medium"
+      "hangar_size": "Medium",
+      "energy": 20,
+      "energy_recharge": 1,
+      "energy_costs": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "transports:hover_cargo",
@@ -398,10 +399,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -425,7 +422,20 @@
       "is_fuzor": false,
       "legacy_zoid_id": "zoids:hover_cargo",
       "hangar_capacity": 6,
-      "hangar_size": "Large"
+      "hangar_size": "Large",
+      "energy": 50,
+      "energy_recharge": 5,
+      "energy_costs": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "transports:dragoon_nest",
@@ -520,10 +530,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -541,7 +547,20 @@
       "is_fuzor": false,
       "legacy_zoid_id": "zoids:dragon_nest",
       "hangar_capacity": 12,
-      "hangar_size": "Large Large"
+      "hangar_size": "Large Large",
+      "energy": 80,
+      "energy_recharge": 8,
+      "energy_costs": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     },
     {
       "id": "transports:whale_king",
@@ -636,10 +655,6 @@
         "second_attack_gif": null,
         "third_attack_gif": null,
         "fourth_attack_gif": null,
-        "weapon_1_heat": null,
-        "weapon_2_heat": null,
-        "weapon_3_heat": null,
-        "weapon_4_heat": null,
         "column_83": null
       },
       "dynamic_fields": {},
@@ -656,7 +671,20 @@
       "is_fuzor": false,
       "legacy_zoid_id": "zoids:whale_king",
       "hangar_capacity": 24,
-      "hangar_size": "Extra Large"
+      "hangar_size": "Extra Large",
+      "energy": 1000,
+      "energy_recharge": 10,
+      "energy_costs": [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "energy_source": "Energy_Addition.ods (matched by weapon name)"
     }
   ],
   "excluded_rows": []

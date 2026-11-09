@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "data_version": "workflow-v15",
+  "data_version": "energy-v17",
   "source_sha256": "4958f748ce85f2ec0a3bc4679a0daf34d2e60c8c5cc764c1eb30053aa6138822",
   "datasets": {
     "transports": {
@@ -23,15 +23,15 @@
       "moved_rows": 4
     },
     "armaments": {
-      "records": 161,
-      "selectable": 154,
+      "records": 164,
+      "selectable": 157,
       "excluded_empty_rows": 1,
       "excluded_retired_rows": 0,
       "moved_rows": 0
     },
     "abilities": {
-      "records": 166,
-      "selectable": 165,
+      "records": 169,
+      "selectable": 168,
       "excluded_empty_rows": 1,
       "excluded_retired_rows": 16,
       "moved_rows": 0
@@ -132,5 +132,9 @@
     "CAU_expand_2.txt": "e77b076f5cd56e544234fdd77d3c90240ad9260eca09a850c0b4eafdc3823be0",
     "Equipment_Guide.txt": "e3f4b8f3c7edd702d03d52ef82cc34d3c4569de009a2793778fddde5c9a55196",
     "ZOIDS_Companion.txt": "b5fe601e67deddffe0af8b9624367d7b5e56e1b8abeda7de5bea1af802ae0090"
+  },
+  "energy_sources": {
+    "Energy_Addition.ods": "f334665edc5d160996098f4103e88f940ee8484859984b544f2e9da14895c585",
+    "Generic_Energy.ods": "b9c785e6fded62ad0e61322ac5dcceea38a08f196d2b3c590caaf31e59b9353f"
   }
 }

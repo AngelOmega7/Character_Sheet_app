@@ -1,5 +1,7 @@
 # Apps Script behavior and offline replacements
 
+Historical audit — the Heat/Vent rules below are retired. Current behavior is documented in `energy-rules.md` (energy-v17, save schema 14). The original scripts remain source provenance.
+
 Sources: owner-provided `Heat Script.txt` and `Gifs Script.txt`.
 
 ## Confirmed app rules (supersede missing spreadsheet behavior)

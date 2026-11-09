@@ -1,7 +1,7 @@
 ==============================================================================
 ZOIDS - STAT BLOCK COMPANION
 ==============================================================================
-154 Zoids: 100 base entries and 54 CAU forms; plus 4 transport Zoids.
+155 Zoids: 101 base entries and 54 CAU forms; plus 4 transport Zoids.
 
 HOW TO USE THIS REFERENCE
 Entries use the current Character Sheet app reference data. Base Zoids are
@@ -10,7 +10,9 @@ complete, independent stat block. Transport Zoids appear in an appendix.
 Stats are catalog values before pilot bonuses, upgrades, Organoids, equipment
 modifiers, or combat conditions. Active/passive system bonuses are listed
 separately. A missing value means not listed in the catalog; explicit zeroes
-are retained. Heat is shown wherever explicitly recorded.
+are retained. Energy recharges at Start Turn, capped at total energy.
+Starting Energy and Rest Energy are half of maximum, rounded down. Rest sets
+current Energy to that value even if it was higher before resting.
 Weapon effects and source damage notes preserve the catalog wording. Build
 requirements are listed where available.
 
@@ -178,21 +180,26 @@ T01-T04  Transport Zoids (appendix)
 Classification: Fuzor
   Type: BLOX | Size: Medium | Required level: 12
   Health: 240 | Armor: 22 | Defense: 28
+  Energy: 30 | Energy recharge: 3
   Speed: 130 | Reaction: 12 | Range: 600 | Carry capacity: 30
   Listed base/component Zoids: Leoblaze, Unenlagia
 
 FIXED WEAPONS & SYSTEMS
   1. Handgun
+     Energy cost: 2
      Damage: 90 | Type: Ranged, Bullet | To hit: 16
      Effect: Hand mounted guns. Targets up to two opponents. Damage is split
      between the targets.
   2. Tail Rifle
+     Energy cost: 6
      Damage: 210 | Type: Ranged, Bullet, Long Range | To hit: 18
      Effect: Back mounted sniper rifle. Targets a single opponent.
   3. Zan Blade
+     Energy cost: 10
      Damage: 250 | Type: Melee | To hit: 18
      Effect: Tail attack. Targets a single opponent.
   4. Bite Fang
+     Energy cost: 2
      Damage: 180 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -211,16 +218,20 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Medium | Required level: 7
   Health: 120 | Armor: 22 | Defense: 10
+  Energy: 15 | Energy recharge: 2
   Speed: 170 | Reaction: 15 | Range: 150 | Carry capacity: 20
   Listed base/component Zoids: Godos
 
 FIXED WEAPONS & SYSTEMS
   1. Double Beam Cannon
+     Energy cost: 7
      Damage: 70 | Type: Ranged, Laser | To hit: 18
   2. Electric Claw
+     Energy cost: 2
      Damage: 70 | Type: Melee, Electrical | To hit: 16
      Effect: Claw attack. Targets a single opponent.
   3. Energy Bite Fang
+     Energy cost: 10
      Damage: 80 | Type: Melee | To hit: 15
      Effect: Bite Attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -240,25 +251,30 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Small | Required level: 7
   Health: 100 | Armor: 20 | Defense: 9
+  Energy: 15 | Energy recharge: 2
   Speed: 190 | Reaction: 16 | Range: 1800 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Laser Machine Gun
+     Energy cost: 2
      Damage: 30 | Type: Ranged, Laser | To hit: 17
      Effect: Chest mounted energy gun. Can target up to two Zoids. Shoots two
      energy bolts dealing 18 energy
   2. Optical Camouflage
+     Energy cost: 3
      Activation: Active
      Effect: Self targeting stealth field. Turn “invisible”. Lasts for 5
      turns. Disadvantage on attack rolls against you. Advantage on stealth
      checks.
   3. Go for Broke
+     Energy cost: 1
      Damage: 60 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Weapon and Assist | Equipment: Double Beam Cannon
+     Energy cost: 3
      Damage: 60 | Type: Ranged, Laser | To hit: 17 | Weight: 8
      Effect: back mounted energy weapon. Targets a single opponent. Ranged
      (Atak Kat Only)
@@ -275,13 +291,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Small | Required level: 2
   Health: 70 | Armor: 23 | Defense: 8
+  Energy: 15 | Energy recharge: 2
   Speed: 180 | Reaction: 16 | Range: 800 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Missile Pod
+     Energy cost: 2
      Damage: 40 | Type: Ranged, Explosive | To hit: 17
      Effect: Back mounted missile pods. Targets a single opponent.
   2. Bite Fang
+     Energy cost: 1
      Damage: 35 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -302,21 +321,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 20
   Health: 380 | Armor: 24 | Defense: 50
+  Energy: 40 | Energy recharge: 5
   Speed: 340 | Reaction: 14 | Range: 450 | Carry capacity: 45
 
 FIXED WEAPONS & SYSTEMS
   1. Buster Claw
+     Energy cost: 6
      Damage: 280 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   2. Diffuse Particle Cannon
-     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
+     Energy cost: 25
+     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17
      Effect: Mouth fired particle cannon. Fires in a straight line 30m wide.
      Opponents in the line of fire must make a reaction save against the
      attack roll. Successful saves take no damage.
   3. Energy Shield
+     Energy cost: 5
      Shield health: 400 | Activation: Active
      Effect: Curved energy shield. Blocks 400 damage before dispersing.
   4. Strike Laser Claw
+     Energy cost: 3
      Damage: 230 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent. Melee
 
@@ -337,20 +361,24 @@ PURCHASE & BUILD REFERENCE
 CAU base: Berserk Fury
   Type: T-Rex | Size: Large | Required level: 20
   Health: 530 | Armor: 25 | Defense: 75
+  Energy: 50 | Energy recharge: 20
   Speed: 600 | Reaction: 16 | Range: 500 | Carry capacity: 50
   Listed base/component Zoids: Berserk Fury
 
 FIXED WEAPONS & SYSTEMS
   1. 12-Shot Missile Pod
+     Energy cost: 10
      Damage: 240 | Type: Ranged, Explosive, Homing | To hit: 18
      Effect: Back mounted missile pod. Targets up to four Zoids. Shoots four
      clusters of missiles dealing 60 explosive
   2. Diffuse Particle Cannon
-     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
+     Energy cost: 25
+     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17
      Effect: Mouth fired particle cannon. Fires in a straight line 30m wide.
      Opponents in the line of fire must make a reaction save against the
      attack roll. Successful saves take no damage.
   3. Strike Laser Claw
+     Energy cost: 10
      Damage: 350 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -371,25 +399,30 @@ PURCHASE & BUILD REFERENCE
 CAU base: Berserk Fury
   Type: T-Rex | Size: Large | Required level: 20
   Health: 380 | Armor: 24 | Defense: 50
+  Energy: 40 | Energy recharge: 5
   Speed: 380 | Reaction: 16 | Range: 500 | Carry capacity: 45
   Listed base/component Zoids: Berserk Fury, Buster Eagle
 
 FIXED WEAPONS & SYSTEMS
   1. Buster Cannon
+     Energy cost: 20
      Damage: 400 | Type: Ranged, Anti-Air, Explosive, Long Range | To hit: 14
-     | Heat: 1
+
      Activation: Buster Cannon:
      Effect: Back mounted cannon. Targets a single opponent.
      Source note: the activation field above contains a weapon name.
   2. Diffuse Particle Cannon
-     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
+     Energy cost: 25
+     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17
      Effect: Mouth fired particle cannon. Fires in a straight line 30m wide.
      Opponents in the line of fire must make a reaction save against the
      attack roll. Successful saves take no damage.
   3. Energy Shield
+     Energy cost: 5
      Shield health: 400 | Activation: Active
      Effect: Curved energy shield. Blocks 400 damage before dispersing.
   4. Strike Laser Claw
+     Energy cost: 3
      Damage: 230 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent. Melee
 
@@ -409,20 +442,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Berserk Fury
   Type: T-Rex | Size: Large | Required level: 20
   Health: 420 | Armor: 26 | Defense: 65
+  Energy: 40 | Energy recharge: 5
   Speed: 290 | Reaction: 13 | Range: 450 | Carry capacity: 40
   Listed base/component Zoids: Berserk Fury
 
 FIXED WEAPONS & SYSTEMS
   1. Long Range Cannon
+     Energy cost: 10
      Damage: 350 | Type: Ranged, Anti-Air, Explosive, Long Range | To hit: 15
      Effect: Back mounted cannon.
   2. Diffuse Particle Cannon
-     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
+     Energy cost: 25
+     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17
      Effect: Mouth fired energy damage. Fires in a straight line 30m wide.
   3. Missile Pod
+     Energy cost: 15
      Damage: 170 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Back mounted missile pod. Targets an area 90m by 90m.
   4. Strike Laser Claw
+     Energy cost: 3
      Damage: 210 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent. Melee
 
@@ -442,19 +480,23 @@ PURCHASE & BUILD REFERENCE
 CAU base: Berserk Fury
   Type: T-Rex | Size: Large | Required level: 20
   Health: 420 | Armor: 25 | Defense: 65
+  Energy: 40 | Energy recharge: 5
   Speed: 360 | Reaction: 15 | Range: 360 | Carry capacity: 40
   Listed base/component Zoids: Berserk Fury
 
 FIXED WEAPONS & SYSTEMS
   1. X Breaker
+     Energy cost: 8
      Damage: 360 | Type: Melee, Piercing | To hit: 15
      Effect: Slashing attack. Targets a single opponent.
   2. Diffuse Particle Cannon
-     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 1
+     Energy cost: 25
+     Damage: 250 | Type: Ranged, Anti-Air, Particle | To hit: 17
      Effect: Mouth fired energy cannon. Fires in a line 30m wide. Opponents in
      the line of fire must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. Strike Laser Claw
+     Energy cost: 3
      Damage: 250 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -474,17 +516,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Medium | Required level: 3
   Health: 150 | Armor: 27 | Defense: 11
+  Energy: 15 | Energy recharge: 2
   Speed: 180 | Reaction: 10 | Range: 350 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
   1. Large Electro-Magnetic Cannon
+     Energy cost: 5
      Damage: 25 | Type: Ranged, Electrical | To hit: 14
      Effect: Back mounted electric cannon. Targets up to two opponents, the
      second must be within 50m of the first.
   2. Double Shock Cannon
+     Energy cost: 0
      Damage: 80 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
   3. Hard Drill
+     Energy cost: 2
      Damage: 70 | Type: Melee, Piercing | To hit: 12
      Effect: Horn attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -504,18 +550,22 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 13
   Health: 280 | Armor: 21 | Defense: 25
+  Energy: 30 | Energy recharge: 3
   Speed: 305 | Reaction: 15 | Range: 400 | Carry capacity: 50
   Listed base/component Zoids: Shield Liger
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Explosive | To hit: 15
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Energy Shield
+     Energy cost: 3
      Shield health: 200 | Activation: Active
      Effect: Deploys a curved semi domed shield in front of the Zoid. Blocks
      200 damage before dispersing.
   3. Laser Blade
+     Energy cost: 3
      Damage: 220 | Type: Melee, Energy | To hit: 14
      Effect: Blades fold down and extend out from the side. Targets a single
      opponent.
@@ -538,20 +588,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Blade Liger
   Type: Liger | Size: Large | Required level: 16
   Health: 300 | Armor: 23 | Defense: 25
+  Energy: 35 | Energy recharge: 3
   Speed: 320 | Reaction: 17 | Range: 400 | Carry capacity: 45
   Listed base/component Zoids: Blade Liger
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 160 | Type: Ranged, Explosive | To hit: 15
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Attack Booster Cannon
+     Energy cost: 8
      Damage: 230 | Type: Ranged, Laser | To hit: 19
      Effect: Back mounted dual cannons. Targets a single opponent.
   3. Energy Shield
+     Energy cost: 3
      Shield health: 200 | Activation: Active
      Effect: Curved energy shield. Blocks 200 damage before dispersing.
   4. Laser Saber
+     Energy cost: 2
      Damage: 230 | Type: Melee | To hit: 15
      Effect: Bite attack. Targets a single opponent.
 
@@ -570,22 +625,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Large
   Health: 400 | Armor: 23 | Defense: 75
+  Energy: 40 | Energy recharge: 5
   Speed: 320 | Reaction: 14 | Range: 500 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Thunder Claw
+     Energy cost: 3
      Damage: 180 | Type: Melee, Electrical | To hit: 15
      Effect: Claw electric attack. Targets a single opponent.
   2. Lightning Attack
+     Energy cost: 28
      Damage: 360 | Type: Melee, Electrical | To hit: 16
      Effect: Head and shoulder mounted blades shift forward. Targets a
      single opponent.
   3. Volt Cannon
+     Energy cost: 14
      Damage: 120 | Type: Ranged, Electrical | To hit: 12
      Effect: Back mounted electric cannon. Targets an area of 45m by 135m.
      Must make a reaction save against the attack roll. On a successful save
      you take no damage.
   4. Crusher Saber
+     Energy cost: 0
      Damage: 250 | Type: Melee, Piercing | To hit: 14
      Effect: Bite attack. Targets a single opponent.
 
@@ -604,22 +664,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 15
   Health: 250 | Armor: 18 | Defense: 15
+  Energy: 30 | Energy recharge: 2
   Speed: 350 | Reaction: 16 | Range: 600 | Carry capacity: 30
   Listed base/component Zoids: Redler
 
 FIXED WEAPONS & SYSTEMS
   1. Dragon Claw
+     Energy cost: 1
      Damage: 180 | Type: Melee, Piercing | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Guided Missile
+     Energy cost: 10
      Damage: 90 | Type: Ranged, Anti-Air, Homing, Explosive | To hit: 18
      Effect: Chest mounted missile. Targets a single opponent.
   3. Stealth System
+     Energy cost: 0
      Activation: Passive
      Effect: Stealth generator. Self targeting stealth field. Turn
      "invisible". Lasts for 5 turns. Disadvatage on attack rolls against you.
      Advantage on stealth cheacks.
   4. Laser Cutter
+     Energy cost: 5
      Damage: 250 | Type: Melee | To hit: 14
      Effect: Tail blade. Targets a single opponent.
 
@@ -638,22 +703,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Extra Large | Required level: 30
   Health: 500 | Armor: 17 | Defense: 40
+  Energy: 40 | Energy recharge: 3
   Speed: 90 | Reaction: 7 | Range: 300 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
   1. Large Particle Cannon
-     Damage: 240 | Type: Ranged, Anti-Air, Particle | To hit: 13 | Heat: 2
+     Energy cost: 20
+     Damage: 240 | Type: Ranged, Anti-Air, Particle | To hit: 13
      Effect: Mouth fired energy cannon. Particle beam is 60m wide. Opponents
      in the line of attack must make a reaction save against the attack roll.
      Successful rolls take no damage.
   2. Large Gatling Gun
+     Energy cost: 8
      Damage: 100 | Type: Ranged, Bullet, Close Range | To hit: 17
      Effect: Back mounted gatling gun. Targets up to two opponents. Shoots two
      bursts that split the damage.
   3. Smash Tail
+     Energy cost: 5
      Damage: 80 | Type: Melee | To hit: 13
      Effect: Tail attack. Targets a single opponent.
   4. Bite Fang
+     Energy cost: 3
      Damage: 250 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -672,13 +742,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Medium | Required level: 3
   Health: 130 | Armor: 25 | Defense: 10
+  Energy: 20 | Energy recharge: 2
   Speed: 140 | Reaction: 8 | Range: 300 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
   1. Linear Laser
+     Energy cost: 4
      Damage: 50 | Type: Ranged, Penetrate, Laser | To hit: 17
      Effect: Back mounted energy gun. Targets a single opponent.
   2. Bite Fang
+     Energy cost: 1
      Damage: 65 | Type: Melee | To hit: 12
      Effect: Bite attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -699,18 +772,22 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 11
   Health: 210 | Armor: 21 | Defense: 20
+  Energy: 30 | Energy recharge: 3
   Speed: 2000 | Reaction: 18 | Range: 300 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Buster Cannon
+     Energy cost: 10
      Damage: 280 | Type: Ranged, Anti-Air, Explosive, Long Range | To hit: 10
      Effect: Back mounted cannon. Targets a single opponent.
   2. Anti-Zoids Missile
+     Energy cost: 8
      Damage: 60 | Type: Ranged, Anti-Air, Homing, Explosive | To hit: 18
      Effect: Side mounted missile pods. Targets an area 60m by 60m. Opponents
      in the area of effect must make a reaction save against your attack roll.
      Successful rolls take no damage.
   3. Buster Claw
+     Energy cost: 1
      Damage: 180 | Type: Melee, Anti-Air, Piercing | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -730,13 +807,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Small | Required level: 2
   Health: 90 | Armor: 28 | Defense: 13
+  Energy: 15 | Energy recharge: 2
   Speed: 100 | Reaction: 8 | Range: 300 | Carry capacity: 25
 
 FIXED WEAPONS & SYSTEMS
   1. Liquid Cooled Particle Cannon
+     Energy cost: 3
      Damage: 35 | Type: Ranged, Particle | To hit: 16
      Effect: Back mounted particle cannon. Targets a single opponent.
   2. Go 4 Broke
+     Energy cost: 1
      Damage: 40 | Type: Melee | To hit: 13
      Effect: Ramming attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -758,19 +838,23 @@ PURCHASE & BUILD REFERENCE
 CAU base: Cannon Tortoise
   Type: Reptile | Size: Small | Required level: 3
   Health: 100 | Armor: 28 | Defense: 13
+  Energy: 15 | Energy recharge: 2
   Speed: 80 | Reaction: 7 | Range: 1200 | Carry capacity: 15
   Listed base/component Zoids: Cannon Tortoise
 
 FIXED WEAPONS & SYSTEMS
   1. Liquid Cooled Particle Cannon
+     Energy cost: 3
      Damage: 35 | Type: Ranged, Penetrate, Particle | To hit: 16
      Effect: Bottom back mounted particle cannon. Targets a single opponent.
      If the damage exceeds the remaining health of the target Zoid the energy
      beam continues on with the remaining damage.
   2. Large Beam Cannon
+     Energy cost: 5
      Damage: 45 | Type: Ranged, Laser | To hit: 17
      Effect: Top back mounted energy cannon. Targets a single opponent.
   3. Go 4 Broke
+     Energy cost: 1
      Damage: 55 | Type: Melee | To hit: 14
      Effect: Ramming attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -790,21 +874,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Wolf | Size: Medium | Required level: 16
   Health: 200 | Armor: 23 | Defense: 20
+  Energy: 25 | Energy recharge: 3
   Speed: 190 | Reaction: 13 | Range: 1200 | Carry capacity: 30
   Listed base/component Zoids: Command Wolf
 
 FIXED WEAPONS & SYSTEMS
   1. Double Beam Cannon
+     Energy cost: 12
      Damage: 220 | Type: Ranged, Laser | To hit: 18
      Effect: Back mounted energy cannon. Targets a single opponent.
   2. Beam Vulcan
+     Energy cost: 14
      Damage: 80 | Type: Ranged, Laser | To hit: 17
      Effect: Shoulder mounted energy cannon. Targets a single opponent.
   3. Smoke Unit
+     Energy cost: 1
      Activation: Active
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   4. Double Fang
+     Energy cost: 2
      Damage: 180 | Type: Melee, Piercing | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -824,22 +913,27 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Large | Required level: 13
   Health: 320 | Armor: 22 | Defense: 30
+  Energy: 40 | Energy recharge: 5
   Speed: 1200 | Reaction: 2 | Range: 200 | Carry capacity: 40
   Listed base/component Zoids: Demonshead, Diplogun, Shell Karn, Flyscissors.
 
 FIXED WEAPONS & SYSTEMS
   1. Rail Cannon
+     Energy cost: 10
      Damage: 180 | Type: Ranged, Anti-Air, Bullet, Long Range | To hit: 17
      Effect: Right shoulder mounted rail cannon. Targets a single opponent.
   2. Missile Launcher
+     Energy cost: 10
      Damage: 70 | Type: Ranged, Anti-Air, Homing, Explosive | To hit: 18
      Effect: Forward facing missile launcher. Targets an area 90m by 90m.
      Opponents inside the area of effect must make a reaction save against the
      attack roll. successful rolls take no damage.
   3. Hells Gate
+     Energy cost: 30
      Damage: 360 | Type: Melee, Anti-Air, Piercing | To hit: 15
      Effect: Spear flips forward. Targets a single opponent.
   4. Hammer Knuckle
+     Energy cost: 1
      Damage: 190 | Type: Melee | To hit: 19
      Effect: Punch attack. Targets a single opponents.
 
@@ -858,14 +952,17 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Wolf | Size: Medium | Required level: 4
   Health: 120 | Armor: 22 | Defense: 10
+  Energy: 18 | Energy recharge: 2
   Speed: 210 | Reaction: 14 | Range: 800 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Smoke Unit
+     Energy cost: 1
      Activation: Active
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   2. Bite Fang
+     Energy cost: 1
      Damage: 60 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -873,6 +970,7 @@ FIXED WEAPONS & SYSTEMS
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Weapon and Assist | Equipment: Double Beam Cannon: back
+     Energy cost: 3
   mounted energy cannon. Targets a single opponent. Ranged (Command Wolf Only)
      Damage: 70 | Type: Ranged, Laser | To hit: 14 | Weight: 13
   2. Slot type: Weapon and Assist | Equipment: None listed
@@ -889,16 +987,19 @@ PURCHASE & BUILD REFERENCE
 CAU base: Command Wolf
   Type: Wolf | Size: Medium | Required level: 8
   Health: 130 | Armor: 22 | Defense: 10
+  Energy: 20 | Energy recharge: 3
   Speed: 200 | Reaction: 14 | Range: 800 | Carry capacity: 30
   Listed base/component Zoids: Command Wolf
 
 FIXED WEAPONS & SYSTEMS
   1. Double Laser
+     Energy cost: 4
      Damage: 50 | Type: Ranged, Penetrate, Laser | To hit: 18
      Effect: Back mounted laser cannon. Targets a single opponent. If damage
      exceeds remaining Zoids health the remaining energy bolts continues in a
      straight line.
   2. Bite Fang
+     Energy cost: 1
      Damage: 85 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -920,19 +1021,23 @@ PURCHASE & BUILD REFERENCE
 CAU base: Command Wolf
   Type: Wolf | Size: Medium | Required level: 8
   Health: 170 | Armor: 22 | Defense: 12
+  Energy: 23 | Energy recharge: 3
   Speed: 200 | Reaction: 14 | Range: 800 | Carry capacity: 30
   Listed base/component Zoids: Command Wolf
 
 FIXED WEAPONS & SYSTEMS
   1. Long Range Cannon
+     Energy cost: 3
      Damage: 95 | Type: Ranged, Explosive, Long Range | To hit: 18
      Effect: Back mounted cannon. Targets a single opponent. Minimum range of
      100m.
   2. Smoke Unit
+     Energy cost: 1
      Activation: Active
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   3. Bite Fang
+     Energy cost: 1
      Damage: 85 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -953,18 +1058,22 @@ PURCHASE & BUILD REFERENCE
 CAU base: Command Wolf
   Type: Wolf | Size: Medium | Required level: 11
   Health: 180 | Armor: 22 | Defense: 16
+  Energy: 25 | Energy recharge: 3
   Speed: 200 | Reaction: 15 | Range: 800 | Carry capacity: 25
   Listed base/component Zoids: Command Wolf
 
 FIXED WEAPONS & SYSTEMS
   1. Smoke Unit
+     Energy cost: 1
      Activation: Active
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   2. Bite Fang
+     Energy cost: 1
      Damage: 120 | Type: Melee | To hit: 14
      Effect: Bite attack. Targets a single opponent.
   3. Long Range Rifle
+     Energy cost: 6
      Damage: 130 | Type: Ranged, Bullet, Long Range | To hit: 19
      Effect: back mounted rifle. Targets a single opponent. Minimum range of
      100m. Ranged (Command Wolf Only)
@@ -986,19 +1095,23 @@ PURCHASE & BUILD REFERENCE
 CAU base: Command Wolf
   Type: Wolf | Size: Medium | Required level: 5
   Health: 140 | Armor: 22 | Defense: 12
+  Energy: 20 | Energy recharge: 2
   Speed: 195 | Reaction: 12 | Range: 600 | Carry capacity: 25
   Listed base/component Zoids: Command Wolf
 
 FIXED WEAPONS & SYSTEMS
   1. Rocket Gun
+     Energy cost: 3
      Damage: 50 | Type: Ranged, Explosive | To hit: 13
      Effect: Back mounted rocket pods. Targets up to two opponents. Fires two
      rockets, each dealing half the damage.
   2. Smoke Unit
+     Energy cost: 1
      Activation: Active
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   3. Bite Fang
+     Energy cost: 1
      Damage: 85 | Type: Melee | To hit: 17
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -1018,18 +1131,22 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Medium | Required level: 25
   Health: 400 | Armor: 28 | Defense: 65
+  Energy: 50 | Energy recharge: 3
   Speed: 180 | Reaction: 13 | Range: 100 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
   1. Iron Cannon
+     Energy cost: 5
      Damage: 300 | Type: Ranged, Explosive | To hit: 10
      Effect: Back mounted cannon. Targets a single opponent.
   2. Smoke Sprayer
+     Energy cost: 2
      Activation: Active
      Effect: Deploys smoke in a 60m square around the Zoid. While the Zoid is
      in the smoke attack rolls against it have disadvantage. Lasts for three
      turns.
   3. Long Spear
+     Energy cost: 10
      Damage: 500 | Type: Melee, Piercing | To hit: 10
      Effect: Horn attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -1049,17 +1166,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Medium | Required level: 25
   Health: 380 | Armor: 29 | Defense: 65
+  Energy: 50 | Energy recharge: 3
   Speed: 180 | Reaction: 13 | Range: 100 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
   1. Iron Cannon
+     Energy cost: 5
      Damage: 300 | Type: Ranged, Explosive | To hit: 10
      Effect: Back mounted cannon. Targets a single opponent.
   2. Smoke Sprayer
+     Energy cost: 2
      Activation: Active
      Effect: Deploys smoke in a 60m square around the Zoid. While the Zoid is
      in the smoke attacks against it have disadvantage. Lasts for three turns
   3. Split Horn
+     Energy cost: 10
      Damage: 350 | Type: Melee | To hit: 12
      Effect: Horn attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -1079,24 +1200,29 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large | Required level: 13
   Health: 300 | Armor: 28 | Defense: 35
+  Energy: 30 | Energy recharge: 3
   Speed: 130 | Reaction: 10 | Range: 400 | Carry capacity: 55
   Listed base/component Zoids: Red Horn
 
 FIXED WEAPONS & SYSTEMS
   1. 3-Barrel Linear Cannon
+     Energy cost: 10
      Damage: 220 | Type: Ranged, Laser | To hit: 16
      Effect: Back mounted energy cannon. Targets a single opponent.
   2. Missile Pod
+     Energy cost: 12
      Damage: 100 | Type: Ranged, Homing, Explosive, Close Range | To hit: 18
      Effect: Back mounted missile pods. Targets a single opponent. Maximum
      range of 200m.
   3. Energy Gatling
+     Energy cost: 12
      Damage: 90 | Type: Ranged, Laser, Close Range | To hit: 16
      Effect: Back mounted energy gatling. Targets a horizontal area 45m wide
      by 135m long. Maximum range of 200m. Opponents in the area of effect must
      make a reaction save against the attack roll. Successful saves take no
      damage.
   4. Crusher Horn
+     Energy cost: 1
      Damage: 200 | Type: Melee, Piercing | To hit: 12
      Effect: Horn attack. Targets a single opponent.
 
@@ -1116,23 +1242,28 @@ PURCHASE & BUILD REFERENCE
 CAU base: Dark Horn
   Type: Dinosaur, Land | Size: Large | Required level: 14
   Health: 320 | Armor: 28 | Defense: 35
+  Energy: 30 | Energy recharge: 3
   Speed: 130 | Reaction: 10 | Range: 400 | Carry capacity: 50
   Listed base/component Zoids: Dark Horn
 
 FIXED WEAPONS & SYSTEMS
   1. 3-Barrel Linear Cannon
+     Energy cost: 10
      Damage: 220 | Type: Ranged, Laser, Close Range | To hit: 16
      Effect: Bottom back mounted energy cannon. Targets a single opponent.
      Maximum range of 200m.
   2. Hybrid Vulcan
+     Energy cost: 14
      Damage: 100 | Type: Ranged, Laser, Close Range | To hit: 16
      Effect: Back mounted Gatling cannon. Targets a horizontal area 45m wide
      by 90m long. Targets in the area of effect must make a reaction save
      against the attack roll. Successful saves make take no damage.
   3. Beam Cannon
+     Energy cost: 17
      Damage: 230 | Type: Ranged, Laser | To hit: 17
      Effect: Large back mounted energy cannon. Targets a single opponent.
   4. Crusher Horn
+     Energy cost: 1
      Damage: 200 | Type: Melee, Piercing | To hit: 12
      Effect: Horn attack. Targets a single opponent.
 
@@ -1151,14 +1282,17 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 8
   Health: 130 | Armor: 28 | Defense: 15
+  Energy: 20 | Energy recharge: 2
   Speed: 250 | Reaction: 12 | Range: 300 | Carry capacity: 20
   Listed base/component Zoids: Molga
 
 FIXED WEAPONS & SYSTEMS
   1. Strategic Missile
+     Energy cost: 1
      Damage: 50 | Type: Ranged, Explosive | To hit: 16
      Effect: Back mounted missiles. Targets a single opponent.
   2. Go 4 Broke
+     Energy cost: 1
      Damage: 90 | Type: Melee | To hit: 17
      Effect: Ramming attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -1179,22 +1313,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large | Required level: 14
   Health: 310 | Armor: 23 | Defense: 43
+  Energy: 37 | Energy recharge: 4
   Speed: 240 | Reaction: 12 | Range: 800 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
   1. 114mm Machine Gun
+     Energy cost: 6
      Damage: 140 | Type: Ranged, Bullet | To hit: 19
      Effect: Back mounted machine gun. Targets up to two opponents. Shoots two
      bursts of 70.
   2. Double Cannon
+     Energy cost: 3
      Damage: 130 | Type: Ranged, Explosive | To hit: 16
      Effect: Back mounted cannons. Targets a single opponent.
   3. Jamming Blade
+     Energy cost: 10
      Damage: 130 | Type: Ranged, Electrical | To hit: 14
      Effect: Back sail discharges electricity. Targets an area 90m by 90m.
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   4. Electro-Magnetic Fang
+     Energy cost: 5
      Damage: 100 | Type: Melee, Electrical | To hit: 12
      Effect: Bite attack. Targets a single opponent.
 
@@ -1214,23 +1353,28 @@ PURCHASE & BUILD REFERENCE
 CAU base: Dark Spiner
   Type: Dinosaur, Land | Size: Large | Required level: 21
   Health: 380 | Armor: 23 | Defense: 75
+  Energy: 35 | Energy recharge: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 60
   Listed base/component Zoids: Dark Spiner
 
 FIXED WEAPONS & SYSTEMS
   1. Laser Cannon
+     Energy cost: 14
      Damage: 260 | Type: Ranged, Laser | To hit: 18
      Effect: Fired from crab. Targets a single opponent.
   2. Pulse Laser Cannon
+     Energy cost: 12
      Damage: 130 | Type: Ranged, Laser, Close Range | To hit: 17
      Effect: Close range energy cannon fired from crab. Max range of 75m.
      Targets a single opponent.
   3. 3D Energy Radar
+     Energy cost: 2
      Type: Anti-Air
      To-hit increase: 10 | Activation: Active
      Effect: Increase hit rate for self and ally's. Gain +10 to Hit. Lasts for
      three turns. Gain +20 against flying Zoids.
   4. Giant Crab
+     Energy cost: 1
      Damage: 200 | Type: Melee, Piercing | To hit: 14
      Effect: Crab claw attack. Targets a single opponent.
 
@@ -1249,21 +1393,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large Large | Required level: 33
   Health: 1500 | Armor: 29 | Defense: 35
+  Energy: 120 | Energy recharge: 20
   Speed: 90 | Reaction: 8 | Range: 500 | Carry capacity: 70
 
 FIXED WEAPONS & SYSTEMS
   1. Large Beam Cannon
-     Damage: 480 | Type: Ranged, Laser | To hit: 17 | Heat: 2
+     Energy cost: 50
+     Damage: 480 | Type: Ranged, Laser | To hit: 17
      Effect: Mouth fired particle cannon. Shoots in a straight line 30m wide.
      Opponents in the line of attack must make a reaction save against the
      attack roll. Successful rolls take no damage.
   2. Death Claw
+     Energy cost: 5
      Damage: 320 | Type: Melee | To hit: 14
      Effect: Swiping claws attack.
   3. Smash Tail
+     Energy cost: 6
      Damage: 300 | Type: Melee | To hit: 13
      Effect: Swiping tail attack. 180° arc around your Zoid.
   4. Killer Bite Fang
+     Energy cost: 10
      Damage: 500 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -1282,21 +1431,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Extra Large | Required level: 30
   Health: 1000 | Armor: 29 | Defense: 100
+  Energy: 100 | Energy recharge: 10
   Speed: 90 | Reaction: 8 | Range: 500 | Carry capacity: 70
 
 FIXED WEAPONS & SYSTEMS
   1. Large Particle Cannon
-     Damage: 400 | Type: Ranged, Anti-Air, Particle | To hit: 17 | Heat: 2
+     Energy cost: 40
+     Damage: 400 | Type: Ranged, Anti-Air, Particle | To hit: 17
      Effect: Mouth fired particle cannon. Fires in a straight line 30m wide.
      Opponents in the line of attack must make a reaction save against the
      attack roll. Successful rolls take no damage.
   2. Beam Gun
+     Energy cost: 10
      Damage: 320 | Type: Ranged, Laser | To hit: 18
      Effect: Head mounted energy gun. Targets a single opponent.
   3. Smash Tail
+     Energy cost: 5
      Damage: 230 | Type: Melee | To hit: 13
      Effect: Tail attack. 180° arc tail attack. Reach of 30m.
   4. Bite Fang
+     Energy cost: 5
      Damage: 230 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -1315,23 +1469,28 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Large Large | Required level: 27
   Health: 600 | Armor: 28 | Defense: 75
+  Energy: 50 | Energy recharge: 5
   Speed: 185 | Reaction: 15 | Range: 400 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Gun
+     Energy cost: 3
      Damage: 220 | Type: Ranged, Explosive | To hit: 16
      Effect: Back mounted cannons. Targets a single opponent.
   2. Charged Particle Gun
-     Damage: 200 | Type: Ranged, Particle | To hit: 18 | Heat: 2
+     Energy cost: 20
+     Damage: 200 | Type: Ranged, Particle | To hit: 18
      Effect: Tail tip particle gun. Shoots two beams 30m wide for a total of
      60m. Opponents in the path must make a reaction save against the attack
      roll. Successful saves take no damage.
   3. Hyper Laser Gun
+     Energy cost: 12
      Damage: 160 | Type: Ranged, Laser, Piercing | To hit: 19
      Effect: Tail tip energy gun. Shoots a single piercing energy beam. If the
      damage exceeds the health remaining on the Zoid the energy beam pierces
      the Zoid and continues on until the remaining damage is expelled.
   4. SB Scissors
+     Energy cost: 5
      Damage: 300 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
 
@@ -1350,19 +1509,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 7
   Health: 150 | Armor: 24 | Defense: 18
+  Energy: 27 | Energy recharge: 3
   Speed: 80 | Reaction: 8 | Range: 100 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Magnet Claw
+     Energy cost: 0
      Damage: 85 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
   2. Magnezer Spear
+     Energy cost: 3
      Damage: 140 | Type: Melee, Piercing | To hit: 14
      Effect: Spears flip forward. Targets a single opponent.
   3. Magnezer Tail
+     Energy cost: 1
      Damage: 130 | Type: Melee | To hit: 13
      Effect: Tail attack. Targets a single opponent.
   4. Magnezer Fang
+     Energy cost: 2
      Damage: 150 | Type: Melee | To hit: 12
      Effect: Bite attack. Targets a single opponent.
 
@@ -1381,24 +1545,29 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Medium | Required level: 25
   Health: 350 | Armor: 23 | Defense: 75
+  Energy: 35 | Energy recharge: 7
   Speed: 240 | Reaction: 18 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Cyber Cannon
+     Energy cost: 14
      Damage: 180 | Type: Ranged, Laser | To hit: 18
      Effect: Back mounted cannon. Targets a vertical area 30m wide by 60m
      long. Opponents in the area of effect must make a reaction save against
      the attack roll. Successful saves take no damage.
   2. Cyber Claw
+     Energy cost: 6
      Damage: 350 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   3. Optical Camouflage
+     Energy cost: 10
      Damage: 0
      Activation: Active
      Effect: Stealth generator. Self targeting stealth field. Turn
      "invisible". Lasts for 5 turns. Disadvatage on attack rolls against you.
      Advantage on stealth cheacks.
   4. Cyber Fang
+     Energy cost: 10
      Damage: 400 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -1407,6 +1576,7 @@ REMOVABLE EQUIPMENT SLOTS
   2. Slot type: Weapon and Assist | Equipment: None listed
   3. Slot type: Weapon and Assist | Equipment: None listed
   4. Slot type: Assist | Equipment: Auto Repair Unit: self repair function.
+     Energy cost: 3
      Weight: 15 | Activation: Active
      Effect: 50 healing. must recharg for two turns before next use
 
@@ -1419,21 +1589,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Large | Required level: 14
   Health: 300 | Armor: 24 | Defense: 25
+  Energy: 30 | Energy recharge: 3
   Speed: 130 | Reaction: 10 | Range: 700 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
   1. 8-Missile Pod
+     Energy cost: 10
      Damage: 85 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Forward mounted missile pods. Targets an area 90m by 90m.
   2. 3-Barrel Acceleration Shock Cannon
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Explosive | To hit: 17
      Effect: Chest mounted triple barreled cannon. Targets a single opponent.
   3. Megalo Max
+     Energy cost: 20
      Damage: 230 | Type: Ranged, Laser | To hit: 15
      Effect: Back mounted energy cannons. Targets an area 90m by 90m.
      Opponents in the area must make a reaction save against the attack roll.
      Successful saves take no damage.
   4. Crusher Horn
+     Energy cost: 1
      Damage: 180 | Type: Melee, Piercing | To hit: 12
      Effect: Horn attack. Targets a single opponent.
 
@@ -1452,17 +1627,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 7
   Health: 150 | Armor: 22 | Defense: 18
+  Energy: 27 | Energy recharge: 3
   Speed: 200 | Reaction: 3 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Railcannon
+     Energy cost: 6
      Damage: 120 | Type: Ranged, Bullet, Long Range | To hit: 17
      Effect: Railgun that runs the whole length of the Zoid. Targets a single
      opponent.
   2. Ion Booster
+     Energy cost: 1
      Speed increase: 500 | Activation: Active
      Effect: Gain +500 speed. Lasts for three turn.
   3. Diplo Cutter
+     Energy cost: 0
      Damage: 80 | Type: Melee, Anti-Air | To hit: 14
      Effect: Side mounted blades. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -1482,19 +1661,23 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 2
   Health: 50 | Armor: 22 | Defense: 9
+  Energy: 10 | Energy recharge: 2
   Speed: 180 | Reaction: 20 | Range: 2000 | Carry capacity: 12
   Listed base/component Zoids: Saicurtis
 
 FIXED WEAPONS & SYSTEMS
   1. 4-Barrel Machine Gun
+     Energy cost: 1
      Damage: 18 | Type: Ranged, Bullet | To hit: 16
      Effect: Back mounted machine gun. Shoots an area of 15m by 45m wide.
      Opponents in the area of effect must make a reaction save against your
      attack roll. Successful saves take no damage.
   2. 2-Barrel Beam Cannon
+     Energy cost: 2
      Damage: 40 | Type: Ranged, Laser | To hit: 17
      Effect: Back mounted energy cannon. Targets a single opponent.
   3. Break Sword
+     Energy cost: 1
      Damage: 35 | Type: Melee | To hit: 14
      Effect: Slashing attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -1514,22 +1697,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Large | Required level: 14
   Health: 350 | Armor: 25 | Defense: 50
+  Energy: 35 | Energy recharge: 5
   Speed: 130 | Reaction: 10 | Range: 800 | Carry capacity: 70
 
 FIXED WEAPONS & SYSTEMS
   1. Double Beam Gun
+     Energy cost: 10
      Damage: 80 | Type: Ranged, Laser | To hit: 17
      Effect: Head mounted energy gun. Targets up to two opponents. Shoots two
      beams that each deal 40 energy
   2. Beam Gun
+     Energy cost: 10
      Damage: 250 | Type: Ranged, Laser | To hit: 17
      Effect: Trunk mounted energy gun. Targets a single opponent.
   3. Pulse Laser Gun
+     Energy cost: 12
      Damage: 100 | Type: Ranged, Anti-Air, Laser | To hit: 18
      Effect: Back mounted energy gun. Targets a single opponents. If the
      damage exceeds there remaining health of the Zoid the beam pierces
      through and continues on dealing the reaming damage.
   4. Crusher Tusk
+     Energy cost: 3
      Damage: 230 | Type: Melee | To hit: 14
      Effect: Tusk slash attack. Targets a single opponent.
 
@@ -1549,24 +1737,29 @@ PURCHASE & BUILD REFERENCE
 CAU base: Elephander
   Type: Mammal | Size: Large | Required level: 16
   Health: 350 | Armor: 25 | Defense: 20
+  Energy: 35 | Energy recharge: 5
   Speed: 130 | Reaction: 10 | Range: 600 | Carry capacity: 70
   Listed base/component Zoids: Elephander
 
 FIXED WEAPONS & SYSTEMS
   1. Double Bream Gun
+     Energy cost: 10
      Damage: 80 | Type: Ranged, Laser | To hit: 17
      Effect: Head mounted energy gun. Targets up to two opponents. Shoots two
      beams that each deal 40 energy
   2. Hyper Laser Gun
+     Energy cost: 14
      Damage: 150 | Type: Ranged, Penetrate, Laser | To hit: 19
      Effect: Trunk mounted energy gun. Targets a single opponent. If the
      damage exceeds the remaining health of the opponent it pierces through
      and continues on with the remaining damage.
   3. Assault Gatling
+     Energy cost: 10
      Damage: 150 | Type: Ranged, Anti-Air, Laser, Close Range | To hit: 12
      Effect: Back mounted energy gatling. Targets up to three opponents.
      Shoots three bursts of 50 energy.
   4. Crusher Tusk
+     Energy cost: 5
      Damage: 250 | Type: Melee | To hit: 14
      Effect: Tusk slash attack. Targets a single opponent.
 
@@ -1585,13 +1778,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 10
   Health: 200 | Armor: 18 | Defense: 16
+  Energy: 35 | Energy recharge: 3
   Speed: 2000 | Reaction: 20 | Range: 400 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
   1. Charge Missile
+     Energy cost: 10
      Damage: 230 | Type: Ranged, Anti-Air, Explosive | To hit: 11
      Effect: Chest mounted rocket. Targets a single opponent.
   2. Laser Claw
+     Energy cost: 2
      Effect: Energy claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
   4. No fixed weapon/system listed
@@ -1611,19 +1807,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 7
   Health: 150 | Armor: 18 | Defense: 15
+  Energy: 27 | Energy recharge: 3
   Speed: 2800 | Reaction: 3 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. X-Scissor
+     Energy cost: 3
      Damage: 160 | Type: Melee, Anti-Air | To hit: 12
      Effect: Front pincer attack. Targets a single opponent.
   2. X Claws
+     Energy cost: 0
      Damage: 85 | Type: Melee, Anti-Air | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   3. Smash Tail
+     Energy cost: 1
      Damage: 120 | Type: Melee, Anti-Air | To hit: 13
      Effect: Tail attack. Targets a single opponent.
   4. Strike Claw
+     Energy cost: 1
      Damage: 120 | Type: Melee, Anti-Air | To hit: 15
      Effect: Claw attack. Targets a single opponent.
 
@@ -1643,21 +1844,26 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Large | Required level: 13
   Health: 300 | Armor: 20 | Defense: 30
+  Energy: 40 | Energy recharge: 5
   Speed: 1800 | Reaction: 8 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Leoblaze, Unenlagia, Mosasledge, Nightwise.
 
 FIXED WEAPONS & SYSTEMS
   1. Handgun
+     Energy cost: 8
      Damage: 120 | Type: Ranged, Anti-Air, Bullet | To hit: 19
      Effect: Hand mounted guns. Targets up to two Zoids. Shoots two bursts of
      60
   2. Tail Saw
+     Energy cost: 4
      Damage: 210 | Type: Melee, Anti-Air | To hit: 16
      Effect: Tail blade attack. Targets a single opponent.
   3. Energy Shield
+     Energy cost: 3
      Shield health: 200 | Activation: Active
      Effect: Curved energy shield. Blocks 200 damage before dispersing.
   4. Dragon Tooth
+     Energy cost: 30
      Damage: 350 | Type: Melee, Piercing | To hit: 17
      Effect: Bite attack. Targets a single opponent.
 
@@ -1676,16 +1882,20 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Small | Required level: 1
   Health: 40 | Armor: 22 | Defense: 8
+  Energy: 10 | Energy recharge: 2
   Speed: 200 | Reaction: 10 | Range: 1200 | Carry capacity: 18
 
 FIXED WEAPONS & SYSTEMS
   1. Small Beam Cannon
+     Energy cost: 2
      Damage: 23 | Type: Ranged, Laser | To hit: 18
      Effect: Back mounted energy cannon. Targets a single opponent.
   2. GPS Magnetic Detector
+     Energy cost: 2
      Range increase: 500 | Activation: Active
      Effect: Gain +500 range to your and your ally's Zoids. Lasts three turns
   3. Go 4 Broke
+     Energy cost: 1
      Damage: 20 | Type: Melee | To hit: 13
      Effect: Ramming attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -1705,21 +1915,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 24
   Health: 370 | Armor: 24 | Defense: 43
+  Energy: 40 | Energy recharge: 5
   Speed: 340 | Reaction: 14 | Range: 400 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
   1. Gatling Head
+     Energy cost: 12
      Damage: 90 | Type: Ranged, Laser, Close Range | To hit: 16
      Effect: Left mounted gatling gun. Targets an area 30m by 90m.
   2. Saucer Head
+     Energy cost: 8
      Damage: 250 | Type: Melee | To hit: 13
      Effect: Right arm mounted blade. Targets a single opponent.
   3. Diffused Charged Particle Cannon
-     Damage: 250 | Type: Ranged, Anti-Air, Laser | To hit: 17 | Heat: 1
+     Energy cost: 25
+     Damage: 250 | Type: Ranged, Anti-Air, Laser | To hit: 17
      Effect: Mouth fired energy cannon. Fires in a straight line 45m wide.
      Opponents in the line of fire must make a reaction saving throw against
      the attack roll. Successful saves take no damage.
   4. Claw Head
+     Energy cost: 1
      Damage: 150 | Type: Melee | To hit: 15
      Effect: Blade head attack. Targets a single opponent.
 
@@ -1738,21 +1953,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 26
   Health: 430 | Armor: 25 | Defense: 60
+  Energy: 40 | Energy recharge: 5
   Speed: 350 | Reaction: 15 | Range: 400 | Carry capacity: 30
   Listed base/component Zoids: Geno Hydra
 
 FIXED WEAPONS & SYSTEMS
   1. Plasma Cannon
+     Energy cost: 20
      Damage: 300 | Type: Ranged, Laser | To hit: 16
      Effect: Back mounted energy cannon. Targets an area 60m by 60m. Opponents
      in the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   2. Diffused Charged Particle Cannon
-     Damage: 250 | Type: Ranged, Particle | To hit: 17 | Heat: 1
+     Energy cost: 25
+     Damage: 250 | Type: Ranged, Particle | To hit: 17
      Effect: Mouth fired particle cannon. Fires in a straight line 30m wide.
      Opponents in the line of fire must make a reaction saving throw against
      the attack roll. Successful saves take no damage.
   3. Tail Claw
+     Energy cost: 3
      Damage: 230 | Type: Melee | To hit: 15
      Effect: Tail slashing attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -1773,23 +1992,28 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 15
   Health: 300 | Armor: 23 | Defense: 40
+  Energy: 35 | Energy recharge: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
   1. Laser Gun
+     Energy cost: 7
      Damage: 130 | Type: Ranged, Laser | To hit: 19
      Effect: Top of head mounted energy gun. Targets a single opponent.
   2. Charged Particle Cannon
-     Damage: 200 | Type: Ranged, Particle | To hit: 18 | Heat: 2
+     Energy cost: 15
+     Damage: 200 | Type: Ranged, Particle | To hit: 18
      Effect: Mouth fired particle cannon. Fires in straight line 30m wide.
      Opponents in the line of fire must make a reaction save against the
      attack roll successful saves take no damage.
   3. Long Range Laser
+     Energy cost: 12
      Damage: 75 | Type: Ranged, Laser, Long Range | To hit: 18
      Effect: Back mounted energy gun. Targets a single opponent. If damage
      exceeds the remaining health of the Zoid the attack continues through
      with the remaining damage.
   4. Hyper Killer Claw
+     Energy cost: 1
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
@@ -1810,20 +2034,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Geno Saurer
   Type: T-Rex | Size: Large | Required level: 15
   Health: 400 | Armor: 24 | Defense: 50
+  Energy: 40 | Energy recharge: 5
   Speed: 345 | Reaction: 14 | Range: 300 | Carry capacity: 50
   Listed base/component Zoids: Geno Saurer
 
 FIXED WEAPONS & SYSTEMS
   1. X Breaker
+     Energy cost: 5
      Damage: 250 | Type: Melee, Piercing | To hit: 12
      Effect: Large forward facing pincers. Targets a single opponent.
   2. Focused Charged Particle Cannon
-     Damage: 300 | Type: Ranged, Particle | To hit: 19 | Heat: 1
+     Energy cost: 25
+     Damage: 300 | Type: Ranged, Particle | To hit: 19
      Effect: Mouth fired particle cannon. Fires in a straight line 15m wide.
   3. Laser Blade
+     Energy cost: 3
      Damage: 250 | Type: Melee, Energy | To hit: 14
      Effect: Head mounted energy blade attack. Targets a single opponent.
   4. Hyper Killer Claw
+     Energy cost: 1
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent. Melee
 
@@ -1842,22 +2071,27 @@ PURCHASE & BUILD REFERENCE
 CAU base: Geno Saurer
   Type: T-Rex | Size: Large | Required level: 24
   Health: 450 | Armor: 26 | Defense: 60
+  Energy: 45 | Energy recharge: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 45
   Listed base/component Zoids: Geno Saurer
 
 FIXED WEAPONS & SYSTEMS
   1. EXPG Beam Cannon
+     Energy cost: 12
      Damage: 360 | Type: Ranged, Laser | To hit: 18
      Effect: Back mounted energy cannon. Targets a single opponent.
   2. Diffused Charged Particle Cannon
-     Damage: 250 | Type: Ranged, Particle | To hit: 17 | Heat: 1
+     Energy cost: 20
+     Damage: 250 | Type: Ranged, Particle | To hit: 17
      Effect: Mouth fired particle cannon. Fires in a line 60m wide. Opponents
      in the line of fire must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. Hyper Energy Shield
+     Energy cost: 5
      Shield health: 400 | Activation: Active
      Effect: Curved energy shield. Blocks 400 damage before dispersing.
   4. Flame Claw
+     Energy cost: 4
      Damage: 230 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent. Melee
 
@@ -1876,22 +2110,27 @@ PURCHASE & BUILD REFERENCE
 CAU base: Geno Saurer
   Type: T-Rex | Size: Large | Required level: 18
   Health: 380 | Armor: 23 | Defense: 50
+  Energy: 40 | Energy recharge: 5
   Speed: 320 | Reaction: 13 | Range: 350 | Carry capacity: 35
   Listed base/component Zoids: Geno Breaker
 
 FIXED WEAPONS & SYSTEMS
   1. X Breaker
+     Energy cost: 6
      Damage: 300 | Type: Melee | To hit: 12
      Effect: Forward facing blades. Targets a single opponent.
   2. Focused Charged Particle Cannon
-     Damage: 300 | Type: Ranged, Particle | To hit: 19 | Heat: 1
+     Energy cost: 25
+     Damage: 300 | Type: Ranged, Particle | To hit: 19
      Effect: Mouth fired particle cannon. Fires in a 15m wide beam. Opponents
      in the line of fire must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. Assault Beam Cannon
+     Energy cost: 8
      Damage: 150 | Type: Ranged, Laser | To hit: 17
      Effect: Back mounted energy cannon. Targets a single opponent.
   4. Hyper Killer Claw
+     Energy cost: 1
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent. Melee
 
@@ -1911,23 +2150,28 @@ PURCHASE & BUILD REFERENCE
 CAU base: Geno Saurer
   Type: T-Rex | Size: Large | Required level: 18
   Health: 370 | Armor: 22 | Defense: 45
+  Energy: 40 | Energy recharge: 5
   Speed: 2100 | Reaction: 4 | Range: 450 | Carry capacity: 30
   Listed base/component Zoids: Geno Breaker
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan
+     Energy cost: 2
      Damage: 80 | Type: Ranged, Anti-Air, Bullet | To hit: 17
      Effect: Head mounted gun. Targets a single opponent.
   2. Focused Charged Particle Cannon
-     Damage: 300 | Type: Ranged, Particle | To hit: 19 | Heat: 1
+     Energy cost: 25
+     Damage: 300 | Type: Ranged, Particle | To hit: 19
      Effect: Mouth fired particle cannon. Fires in a straight line 15m wide.
      Opponents in the line of fire must make a reaction save against the
      attack roll. Successful saves take no damage.
   3. 4-Laser
+     Energy cost: 18
      Damage: 120 | Type: Ranged, Laser | To hit: 19
      Effect: Back mounted laser cannons. Targets up to two opponents. Fires
      two beams of 60 energy
   4. Hyper Killer Claw
+     Energy cost: 1
      Damage: 200 | Type: Melee, Anti-Air | To hit: 13
      Effect: Claw attack. Targets a single opponent. Melee
 
@@ -1946,20 +2190,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Extra Large | Required level: 33
   Health: 1200 | Armor: 25 | Defense: 90
+  Energy: 70 | Energy recharge: 15
   Speed: 4000 | Reaction: 15 | Range: 1000 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
   1. Plasma Particle Cannon
+     Energy cost: 18
      Damage: 200 | Type: Ranged, Anti-Air, Particle | To hit: 17
      Effect: Chest mounted particle cannon. Shoots in a straight line 15m
      wide.
   2. Beam Smasher
+     Energy cost: 10
      Damage: 350 | Type: Ranged, Anti-Air, Laser | To hit: 15
      Effect: Back mounted energy cannon. Targets a single opponent.
   3. Gravity Gun
+     Energy cost: 60
      Damage: 500 | Type: Ranged, Anti-Air, Force | To hit: 14
      Effect: Back mounted gravity manipulator. 75m centered on self.
   4. Rear Cutting Wing
+     Energy cost: 1
      Damage: 230 | Type: Melee, Anti-Air | To hit: 14
      Effect: Tail attack. Targets a single opponent.
 
@@ -1978,13 +2227,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Small | Required level: 2
   Health: 80 | Armor: 22 | Defense: 8
+  Energy: 12 | Energy recharge: 2
   Speed: 150 | Reaction: 16 | Range: 100 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Small Beam Cannon
+     Energy cost: 1
      Damage: 38 | Type: Ranged, Laser | To hit: 17
      Effect: Chest mounted beam cannon. Targets a single opponent.
   2. Crusher Claw
+     Energy cost: 1
      Damage: 35 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -2005,16 +2257,20 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large Large | Required level: 18
   Health: 350 | Armor: 25 | Defense: 35
+  Energy: 28 | Energy recharge: 3
   Speed: 75 | Reaction: 10 | Range: 200 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
   1. Crusher Claw
+     Energy cost: 0
      Damage: 150 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   2. Beam Gun
+     Energy cost: 4
      Damage: 100 | Type: Ranged, Laser | To hit: 17
      Effect: Left arm mounted energy gun. Targets a single opponent.
   3. Hyper Fang
+     Energy cost: 1
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -2035,21 +2291,26 @@ PURCHASE & BUILD REFERENCE
 CAU base: Gojulas
   Type: T-Rex | Size: Large Large | Required level: 20
   Health: 350 | Armor: 25 | Defense: 38
+  Energy: 33 | Energy recharge: 3
   Speed: 60 | Reaction: 9 | Range: 300 | Carry capacity: 55
   Listed base/component Zoids: Gojulas
 
 FIXED WEAPONS & SYSTEMS
   1. Crusher Claw
+     Energy cost: 1
      Damage: 180 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   2. 4-Barrel Shock Cannon
+     Energy cost: 0
      Damage: 180 | Type: Ranged, Explosive | To hit: 14
      Effect: Arm mounted cannons. Targets a single opponent.
   3. Long Range Cannon
+     Energy cost: 14
      Damage: 300 | Type: Ranged, Explosive, Long Range | To hit: 16
      Effect: Back mounted cannons. Targets a single opponent. Minimum range
      75m.
   4. Hyper Fang
+     Energy cost: 3
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -2068,21 +2329,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large Large | Required level: 22
   Health: 500 | Armor: 26 | Defense: 75
+  Energy: 45 | Energy recharge: 6
   Speed: 180 | Reaction: 12 | Range: 400 | Carry capacity: 60
   Listed base/component Zoids: Gojulas
 
 FIXED WEAPONS & SYSTEMS
   1. Hyper Press Manipulator
+     Energy cost: 1
      Damage: 280 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Crusher Tail
+     Energy cost: 4
      Damage: 280 | Type: Melee | To hit: 13
      Effect: Tail slash attack. Swing tail in 180° arc hitting any opponent in
      its path. 15m reach.
   3. Hyper energy Shield
+     Energy cost: 5
      Shield health: 300 | Activation: Active
      Effect: Curved energy shield. Blocks 300 damage before dispersing.
   4. Crusher Fang
+     Energy cost: 3
      Damage: 320 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -2103,22 +2369,27 @@ PURCHASE & BUILD REFERENCE
 CAU base: Gojulas Giga
   Type: T-Rex | Size: Large Large | Required level: 24
   Health: 700 | Armor: 26 | Defense: 75
+  Energy: 50 | Energy recharge: 5
   Speed: 74 | Reaction: 12 | Range: 400 | Carry capacity: 50
   Listed base/component Zoids: Gojulas Giga
 
 FIXED WEAPONS & SYSTEMS
   1. Hyper Press Manipulator
+     Energy cost: 1
      Damage: 300 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Crusher Tail
+     Energy cost: 4
      Damage: 280 | Type: Melee | To hit: 13
      Effect: Tail slash attack. Swing tail in 180° arc hitting any opponent in
      its path. 15m reach.
   3. Buster Cannon
+     Energy cost: 13
      Damage: 380 | Type: Ranged, Anti-Air, Explosive | To hit: 15
      Effect: Back mounted cannon. Targets a single opponent. Minimum range
      75m.
   4. Crusher Fang
+     Energy cost: 3
      Damage: 320 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -2137,21 +2408,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large Large | Required level: 20
   Health: 500 | Armor: 27 | Defense: 60
+  Energy: 50 | Energy recharge: 5
   Speed: 125 | Reaction: 9 | Range: 350 | Carry capacity: 60
   Listed base/component Zoids: Gojulas
 
 FIXED WEAPONS & SYSTEMS
   1. Crusher Claw
+     Energy cost: 1
      Damage: 180 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   2. 4-Barrel Shock Cannon
+     Energy cost: 0
      Damage: 180 | Type: Ranged, Explosive | To hit: 17
      Effect: Arm mounted cannons. Targets a single opponent.
   3. Buster cannon
+     Energy cost: 10
      Damage: 350 | Type: Ranged, Explosive | To hit: 12
      Effect: Back mounted cannons. Targets a single opponent. Minimum range of
      75m.
   4. Hyper Fang
+     Energy cost: 3
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -2172,23 +2448,28 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Large | Required level: 24
   Health: 450 | Armor: 24 | Defense: 90
+  Energy: 60 | Energy recharge: 6
   Speed: 130 | Reaction: 10 | Range: 500 | Carry capacity: 60
   Listed base/component Zoids: Diploguns, Demonshead, Nightwise, Shellkarn,
   Unenlagia, Leoblaze.
 
 FIXED WEAPONS & SYSTEMS
   1. Magnezer Fang
+     Energy cost: 2
      Damage: 150 | Type: Melee, Piercing | To hit: 16
      Effect: Bite attack. Targets a single opponent.
   2. Rail Cannon
+     Energy cost: 12
      Damage: 240 | Type: Ranged, Bullet, Puncture | To hit: 17
      Effect: Both shoulder mounted rail cannons. Targets a single opponent. If
      the damage exceeds the health of the target it continues on.
   3. Handgun
+     Energy cost: 14
      Damage: 210 | Type: Ranged, Anti-Air, Bullet | To hit: 19
      Effect: Hand mounted guns. Targets up to two Zoids. Damage is split
      between the targets.
   4. Strike Laser Claw
+     Energy cost: 5
      Damage: 320 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
 
@@ -2208,19 +2489,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large Large | Required level: 8
   Health: 250 | Armor: 22 | Defense: 14
+  Energy: 25 | Energy recharge: 3
   Speed: 80 | Reaction: 8 | Range: 1000 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Gun
+     Energy cost: 3
      Damage: 80 | Type: Ranged, Laser | To hit: 17
      Effect: Back mounted energy gun. Targets a single opponent.
   2. Railgun
+     Energy cost: 3
      Damage: 70 | Type: Ranged, Bullet, Long Range | To hit: 18
      Effect: Back mounted railgun. Targets a single opponent.
   3. GPS mine detection
+     Energy cost: 2
      Range increase: 1000 | Activation: Active
      Effect: Increases the range by 1,000. Lasts three turns
   4. Hyper Bite Fang
+     Energy cost: 1
      Damage: 80 | Type: Melee | To hit: 12
      Effect: Bite attack. Targets a single opponent. Melee
 
@@ -2239,20 +2525,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large Large | Required level: 10
   Health: 250 | Armor: 22 | Defense: 24
+  Energy: 25 | Energy recharge: 3
   Speed: 60 | Reaction: 7 | Range: 1000 | Carry capacity: 20
   Listed base/component Zoids: Gordos
 
 FIXED WEAPONS & SYSTEMS
   1. 4-Barrel Shock Cannon
+     Energy cost: 4
      Damage: 140 | Type: Ranged, Explosive | To hit: 14
      Effect: Side mounted cannon. Targets a single opponent.
   2. Long Range Cannon
+     Energy cost: 4
      Damage: 140 | Type: Ranged, Explosive | To hit: 18
      Effect: Back mounted cannon. Targets a single opponent.
   3. GPS Mine Detector
+     Energy cost: 2
      Range increase: 1000 | Activation: Active
      Effect: Increases range by +1,000. Lasts three turns.
   4. Hyper Bite Fang
+     Energy cost: 1
      Damage: 150 | Type: Melee | To hit: 12
      Effect: Bite attack. Targets a single opponent.
 
@@ -2271,22 +2562,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Medium | Required level: 9
   Health: 150 | Armor: 11 | Defense: 8
+  Energy: 18 | Energy recharge: 2
   Speed: 120 | Reaction: 8 | Range: 500 | Carry capacity: 35
   Listed base/component Zoids: Gordos
 
 FIXED WEAPONS & SYSTEMS
   1. Double Beam Cannon
+     Energy cost: 8
      Damage: 70 | Type: Ranged, Laser | To hit: 16
      Effect: Neck mounted energy cannon. Targets a single opponent.
   2. 2-Missile
+     Energy cost: 5
      Damage: 60 | Type: Ranged, Explosive, Homing | To hit: 13
      Effect: Belly mounted missile pods. Targets a horizontal area 30m by 60m.
      Opponents in the area must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. 3D Antenna
+     Energy cost: 1
      To-hit increase: 4 | Activation: Active
      Effect: Increases to Hit by +4
   4. Go For Broke
+     Energy cost: 3
      Damage: 95 | Type: Melee | To hit: 15
      Effect: Ramming attack. Targets a single opponent.
 
@@ -2305,22 +2601,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Large | Required level: 16
   Health: 320 | Armor: 25 | Defense: 33
+  Energy: 35 | Energy recharge: 4
   Speed: 120 | Reaction: 11 | Range: 800 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
   1. Maneuver Missiles
+     Energy cost: 12
      Damage: 100 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Forward facing missile pods. Targets up to two opponents. Two
      missiles each dealing 50 explosive
   2. 3-Barrel Anti-Zoid Shock cannon
+     Energy cost: 10
      Damage: 160 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannons. Targets a single opponent.
   3. 20-barrel Assault Gun
+     Energy cost: 15
      Damage: 180 | Type: Ranged, Bullet | To hit: 13
      Effect: Back mounted cannons. Targets an area 90m by 90m. Opponents in
      the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   4. Drill Horn
+     Energy cost: 3
      Damage: 210 | Type: Melee, Piercing | To hit: 12
      Effect: Horn attack. Targets a single opponent.
 
@@ -2340,19 +2641,23 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Large | Required level: 15
   Health: 400 | Armor: 19 | Defense: 30
+  Energy: 40 | Energy recharge: 4
   Speed: 1500 | Reaction: 4 | Range: 400 | Carry capacity: 40
   Listed base/component Zoids: Leoblaze, Unenlagia, Buster Eagle.
 
 FIXED WEAPONS & SYSTEMS
   1. Killer Beak
+     Energy cost: 1
      Damage: 230 | Type: Melee, Anti-Air, Piercing | To hit: 14
      Effect: Beak attack. Targets a single opponent.
   2. AZ Missile
+     Energy cost: 10
      Damage: 130 | Type: Ranged, Anti-Air, Explosive | To hit: 18
      Effect: Back mounted missile pods. Targets an area 90m by 90m. Opponents
      inside the area of effect must make a reaction save against the attack
      roll. successful rolls take no damage.
   3. Buster Claw
+     Energy cost: 5
      Damage: 320 | Type: Melee, Anti-Air | To hit: 13
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -2372,22 +2677,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large | Required level: 19
   Health: 400 | Armor: 28 | Defense: 60
+  Energy: 50 | Energy recharge: 3
   Speed: 120 | Reaction: 6 | Range: 500 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Rolling Cannon
+     Energy cost: 20
      Damage: 230 | Type: Ranged, Penetrate, Bullet | To hit: 18
      Effect: Fires all the front facing cannons. Targets a single opponent. If
      damage exceeds the remaining health of the Zoid the attack continues into
      any opponent in direct line
   2. 3d Radar
+     Energy cost: 3
      To-hit increase: 10 | Activation: Active
      Effect: Increases hit rate for self and ally's by 10. Lasts for three
      turns.
   3. Electromagnetic Shield Horn
+     Energy cost: 5
      Shield health: 300 | Activation: Active
      Effect: Curved energy shield. Blocks 300 damage before dispersing.
   4. Electromagnetic Bite Fang
+     Energy cost: 1
      Damage: 180 | Type: Melee, Electrical | To hit: 14
      Effect: Bite attack. Targets a single opponent.
 
@@ -2406,23 +2716,28 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 5
   Health: 130 | Armor: 20 | Defense: 10
+  Energy: 20 | Energy recharge: 2
   Speed: 200 | Reaction: 12 | Range: 1200 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Machine Gun
+     Energy cost: 3
      Damage: 40 | Type: Ranged, Laser | To hit: 18
      Effect: Hand mounted energy guns. Targets up to two opponents. Shoots two
      burts of 20 energy.
   2. 8-Missile Pod
+     Energy cost: 8
      Damage: 30 | Type: Ranged, Homing, Laser | To hit: 18
      Effect: Back mounted missile pod. Targets an area 30m by 30m. Opponents
      on the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. Sniper Rifle
+     Energy cost: 2
      Damage: 70 | Type: Ranged, Bullet, Long Range | To hit: 19
      Effect: Tail stiffens, claws clamp into the ground. Targets a single
      opponent. Minimum range of 75m.
   4. Anchor Claw
+     Energy cost: 1
      Damage: 65 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
@@ -2443,24 +2758,29 @@ PURCHASE & BUILD REFERENCE
 CAU base: Gun Sniper
   Type: Raptor | Size: Small | Required level: 12
   Health: 160 | Armor: 22 | Defense: 20
+  Energy: 30 | Energy recharge: 2
   Speed: 200 | Reaction: 16 | Range: 3000 | Carry capacity: 20
   Listed base/component Zoids: Gun Sniper Weasel
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Machine Gun
+     Energy cost: 10
      Damage: 80 | Type: Ranged, Laser | To hit: 18
      Effect: Wrist mounted energy guns. Targets up to two opponents. Shoots
      two energy beams that deal 40 energy
   2. 8-Missile Pod
+     Energy cost: 8
      Damage: 65 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Back mounted missile pods. Targets an area 45m by 45m. Opponents
      in the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. Sniper Rifle
+     Energy cost: 2
      Damage: 160 | Type: Ranged, Bullet, Long Range | To hit: 19
      Effect: Tail stiffens, claws clamp into the ground. Targets a single
      opponent. Minimum range of 75m.
   4. Anchor Claw
+     Energy cost: 1
      Damage: 120 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
@@ -2478,23 +2798,28 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 6
   Health: 150 | Armor: 22 | Defense: 17
+  Energy: 25 | Energy recharge: 2
   Speed: 160 | Reaction: 12 | Range: 800 | Carry capacity: 10
   Listed base/component Zoids: Gun Sniper
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Machine Gun
+     Energy cost: 10
      Damage: 180 | Type: Ranged, Laser | To hit: 18
      Effect: Left arm mounted energy gun. Targets up to two opponents. Shoots
      two bursts of 90 energy
   2. 8-Missile Pod
+     Energy cost: 8
      Damage: 50 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Back mounted missile pods. Targets an area 45m by 45m. Opponents
      in the area of effect must make a reaction against the attack roll.
      Successful saves take no damage.
   3. Multi-Beam Gun
+     Energy cost: 5
      Damage: 60 | Type: Ranged, Explosive | To hit: 16
      Effect: Right arm mounted energy damage. Targets a single opponent.
   4. Anchor Claw
+     Energy cost: 1
      Damage: 120 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
@@ -2515,26 +2840,31 @@ PURCHASE & BUILD REFERENCE
 CAU base: Gun Sniper Weasel
   Type: Raptor | Size: Small | Required level: 12
   Health: 180 | Armor: 22 | Defense: 20
+  Energy: 30 | Energy recharge: 2
   Speed: 120 | Reaction: 14 | Range: 600 | Carry capacity: 5
   Listed base/component Zoids: Gun Sniper Weasel
 
 FIXED WEAPONS & SYSTEMS
   1. Missile Pod
+     Energy cost: 8
      Damage: 65 | Type: Ranged, Homing, Explosive | To hit: 16
      Effect: Back mounted missile pods. Targets an area 45m by 45m. Opponents
      in the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   2. Beam Gatling
+     Energy cost: 6
      Damage: 70 | Type: Ranged, Bullet, Close Range | To hit: 16
      Effect: Shoulder mounted gatling guns. Targets a vertical area 30m by
      90m. Opponents in the area of effect must make a reaction save against
      the attack roll. Successful saves take no damage.
   3. Full Burst
+     Energy cost: 16
      Damage: 160 | Type: Ranged, Homing, Explosive | To hit: 16
      Effect: Launches all missiles. Targets an area 90m by 90m. Opponents in
      the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   4. Anchor Claw
+     Energy cost: 1
      Damage: 120 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
@@ -2553,19 +2883,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Small | Required level: 3
   Health: 85 | Armor: 18 | Defense: 8
+  Energy: 20 | Energy recharge: 2
   Speed: 270 | Reaction: 18 | Range: 500 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. High Wave Frequency Claw
+     Energy cost: 0
      Damage: 35 | Type: Melee | To hit: 17
      Effect: Claw attack. Targets a single opponent.
   2. Static Minigun
+     Energy cost: 7
      Damage: 65 | Type: Ranged, Bullet | To hit: 16
      Effect: Shoulder mounted minigun. Targets a single opponent.
   3. Ion Booster
+     Energy cost: 1
      Speed increase: 300 | Activation: Active
      Effect: Back mounted boosters. 300 speed for three turns
   4. High Wave Frequency Fang
+     Energy cost: 1
      Damage: 40 | Type: Melee, Piercing | To hit: 14
      Effect: Bite attack. Targets a single opponent.
 
@@ -2584,19 +2919,23 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 4
   Health: 60 | Armor: 22 | Defense: 8
+  Energy: 15 | Energy recharge: 2
   Speed: 120 | Reaction: 20 | Range: 1200 | Carry capacity: 18
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Rifle
+     Energy cost: 5
      Damage: 40 | Type: Ranged, Laser | To hit: 18
      Effect: Tail mounted energy rifle. Targets a single opponent. Max range-
      750m.
   2. Smoke Unit
+     Energy cost: 1
      Activation: Active
      Effect: Deploy smoke to obscure Zoid. Covers an area of 30m square.
      Disadvantage on attacks against you while in the smoke. Lasts for three
      turns.
   3. Laser Claw
+     Energy cost: 3
      Damage: 37 | Type: Melee | To hit: 13
      Effect: Claw energy attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -2617,21 +2956,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Guysack
   Type: Insect | Size: Small | Required level: 10
   Health: 180 | Armor: 24 | Defense: 18
+  Energy: 25 | Energy recharge: 2
   Speed: 120 | Reaction: 16 | Range: 1500 | Carry capacity: 40
   Listed base/component Zoids: Guysack
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Gun
+     Energy cost: 10
      Damage: 120 | Type: Ranged, Laser | To hit: 16
      Effect: Tail mounted energy gun. Max range 750m. Targets a single
      opponent.
   2. Paralyzing Mist
+     Energy cost: 8
      Damage: 30 | Type: Ranged, Electrical | To hit: 14
      Effect: Deploys a mist that targets the Zoids systems. Canister deploys
      mist in a 30m by 60m wide wall. Targets the systems. Targets inside the
      area of effect must make a reaction roll against your attack. On a
      success they dodge the attack.
   3. Laser Claw
+     Energy cost: 3
      Damage: 140 | Type: Melee | To hit: 13
      Effect: Claw energy attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -2650,19 +2993,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Medium | Required level: 10
   Health: 200 | Armor: 24 | Defense: 15
+  Energy: 25 | Energy recharge: 2
   Speed: 1000 | Reaction: 4 | Range: 300 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Hyper Shock Gun
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Anti-Air, Explosive | To hit: 16
      Effect: Forward mounted guns. Targets a single opponent.
   2. Hyper Beam Cannon
+     Energy cost: 8
      Damage: 170 | Type: Ranged, Anti-Air, Laser | To hit: 16
      Effect: Back mounted energy cannon. Targets a single opponent.
   3. Missile Pod
+     Energy cost: 8
      Damage: 65 | Type: Ranged, Anti-Air, Explosive | To hit: 18
      Effect: Forward mounted missile pods. Targets an area 60m by 60m.
   4. Go for Broke
+     Energy cost: 1
      Damage: 120 | Type: Melee, Anti-Air | To hit: 14
      Effect: Ramming attack. Targets a single opponent.
 
@@ -2682,17 +3030,21 @@ PURCHASE & BUILD REFERENCE
 CAU base: Hammer Head
   Type: Reptile | Size: Medium | Required level: 12
   Health: 200 | Armor: 24 | Defense: 25
+  Energy: 30 | Energy recharge: 2
   Speed: 1000 | Reaction: 4 | Range: 300 | Carry capacity: 5
   Listed base/component Zoids: Hammer Head
 
 FIXED WEAPONS & SYSTEMS
   1. Hyper Shock Gun
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Anti-Air, Bullet | To hit: 16
      Effect: Back mounted guns. Targets a single opponent.
   2. 3D Radome
+     Energy cost: 2
      To-hit increase: 10 | Activation: Active
      Effect: An ally of your choice gains +10 to Hit. Lasts for three turns
   3. Lance Attack
+     Energy cost: 2
      Damage: 200 | Type: Melee, Piercing | To hit: 12
      Effect: Forward mounted spears. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -2712,17 +3064,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Gorilla | Size: Small | Required level: 6
   Health: 110 | Armor: 26 | Defense: 13
+  Energy: 20 | Energy recharge: 2
   Speed: 180 | Reaction: 12 | Range: 200 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan Pack
+     Energy cost: 1
      Damage: 30 | Type: Ranged, Anti-Air, Explosive | To hit: 16
      Effect: Left shoulder mounted rocket pods. Targets up to two opponents.
      Shoots two rockets. Damage is split between the rockets.
   2. Multi Beam Gun
+     Energy cost: 3
      Damage: 65 | Type: Ranged, Anti-Air, Laser | To hit: 16
      Effect: Right shoulder mounted energy gun. Targets a single opponent.
   3. Hammer Knuckle
+     Energy cost: 1
      Damage: 60 | Type: Melee | To hit: 18
      Effect: Punch attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -2742,17 +3098,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 1
   Health: 30 | Armor: 20 | Defense: 9
+  Energy: 6 | Energy recharge: 1
   Speed: 500 | Reaction: 8 | Range: 50 | Carry capacity: 15
 
 FIXED WEAPONS & SYSTEMS
   1. Small Guided Missile
+     Energy cost: 2
      Damage: 25 | Type: Ranged, Explosive | To hit: 15
      Effect: Back mounted missile launcher. Targets a single opponent.
   2. Hovering
+     Energy cost: 4
      Speed increase: 250 | Activation: Active
      Effect: Booster raises the Zoid above the ground to increase speed by
      250. Lasts for three turns.
   3. Go for Broke
+     Energy cost: 1
      Damage: 20 | Type: Melee | To hit: 15
      Effect: Ramming attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -2772,17 +3132,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Small | Required level: 2
   Health: 80 | Armor: 21 | Defense: 9
+  Energy: 12 | Energy recharge: 2
   Speed: 200 | Reaction: 16 | Range: 50 | Carry capacity: 18
   Listed base/component Zoids: Godos
 
 FIXED WEAPONS & SYSTEMS
   1. Impact Gun
+     Energy cost: 2
      Damage: 30 | Type: Ranged, Laser | To hit: 17
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Thruster
+     Energy cost: 1
      Reaction increase: 10 | Activation: Active
      Effect: Gain +10 to reaction for three turns.
   3. Crusher Vice
+     Energy cost: 0
      Damage: 40 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -2802,20 +3166,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Gorilla | Size: Large | Required level: 10
   Health: 240 | Armor: 23 | Defense: 25
+  Energy: 25 | Energy recharge: 3
   Speed: 150 | Reaction: 6 | Range: 600 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
   1. 6-shot Missile Pod
+     Energy cost: 8
      Damage: 70 | Type: Ranged, Homing, Explosive | To hit: 13
      Effect: Shoulder mouted missile pod. Targets an area 45m by 90m.
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   2. 10-Shot Rocket
+     Energy cost: 10
      Damage: 60 | Type: Ranged, Explosive | To hit: 13
      Effect: Back mounted rocket pod. Targets an area 90m by 90m. Opponents in
      the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. Hammer Knuckle
+     Energy cost: 1
      Damage: 150 | Type: Melee | To hit: 15
      Effect: Punch attack. Targets a single opponent. Melee
   4. No fixed weapon/system listed
@@ -2836,14 +3204,17 @@ PURCHASE & BUILD REFERENCE
 CAU base: Iron Kong
   Type: Gorilla | Size: Large | Required level: 15
   Health: 350 | Armor: 23 | Defense: 50
+  Energy: 40 | Energy recharge: 4
   Speed: 150 | Reaction: 11 | Range: 1200 | Carry capacity: 55
   Listed base/component Zoids: Iron Kong
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Bazooka
+     Energy cost: 12
      Damage: 260 | Type: Ranged, Laser | To hit: 17
      Effect: Shoulder mounted energy cannon. Targets a single opponent.
   2. Iron Knuckle
+     Energy cost: 2
      Damage: 220 | Type: Melee | To hit: 19
      Effect: Punch attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -2864,24 +3235,29 @@ PURCHASE & BUILD REFERENCE
 CAU base: Iron Kong
   Type: Gorilla | Size: Large | Required level: 12
   Health: 260 | Armor: 23 | Defense: 30
+  Energy: 30 | Energy recharge: 3
   Speed: 180 | Reaction: 14 | Range: 600 | Carry capacity: 45
   Listed base/component Zoids: Iron Kong
 
 FIXED WEAPONS & SYSTEMS
   1. 6-shot Missile Pod
+     Energy cost: 8
      Damage: 100 | Type: Ranged, Explosive | To hit: 18
      Effect: Right Shoulder mounted missile pod. Targets an area 30m by 60m.
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   2. 10-Shot Rocket
+     Energy cost: 8
      Damage: 60 | Type: Ranged, Explosive | To hit: 13
      Effect: Left shoulder mounted rocket pod. Targets an area 60m by 60m.
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   3. High mobility Unit
+     Energy cost: 1
      Reaction increase: 10 | Activation: Active
      Effect: Increased reaction. Gain +10 to reaction. Lasts three turns
   4. Hammer Knuckle
+     Energy cost: 1
      Damage: 200 | Type: Melee | To hit: 17
      Effect: Punch attack. Targets a single opponent.
 
@@ -2901,21 +3277,26 @@ PURCHASE & BUILD REFERENCE
 CAU base: Iron Kong
   Type: Gorilla | Size: Large | Required level: 15
   Health: 330 | Armor: 25 | Defense: 60
+  Energy: 35 | Energy recharge: 4
   Speed: 170 | Reaction: 12 | Range: 1000 | Carry capacity: 50
   Listed base/component Zoids: Iron Kong
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Launcher
+     Energy cost: 10
      Damage: 120 | Type: Ranged, Laser | To hit: 17
      Effect: Right shoulder mounted energy gun. Targets up to two opponents.
      Shoots two bursts of energy. Damage is split between the bursts.
   2. 10-shot Rocket
+     Energy cost: 8
      Damage: 60 | Type: Ranged, Explosive | To hit: 13
      Effect: Left shoulder mounted rocket pods. Targets an area 90m by 90m.
   3. Pulse Laser Gun
+     Energy cost: 12
      Damage: 130 | Type: Ranged, Laser | To hit: 18
      Effect: Left forearm mounted laser gun. Targets up two two opponents.
   4. Hammer Knuckle
+     Energy cost: 1
      Damage: 230 | Type: Melee | To hit: 17
      Effect: Punch attack. Targets a single opponent.
 
@@ -2935,26 +3316,31 @@ PURCHASE & BUILD REFERENCE
 CAU base: Iron Kong
   Type: Gorilla | Size: Large | Required level: 14
   Health: 300 | Armor: 23 | Defense: 50
+  Energy: 35 | Energy recharge: 4
   Speed: 160 | Reaction: 13 | Range: 1000 | Carry capacity: 55
   Listed base/component Zoids: Iron Kong
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Gatling
+     Energy cost: 10
      Damage: 90 | Type: Ranged, Laser, Close Range | To hit: 16
      Effect: Right shoulder mounted energy gatling gun. Targets up to two
      opponents. Max range of 150m. Shoots two bursts of energy. Damage is
      split between the bursts.
   2. 10-Shot Rocket
+     Energy cost: 8
      Damage: 60 | Type: Ranged, Explosive | To hit: 16
      Effect: Left shoulder mounted rocket pods. Targets an area 60m by 60m.
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   3. Pulse Laser Gun
+     Energy cost: 12
      Damage: 130 | Type: Ranged, Penetrate, Laser | To hit: 18
      Effect: Left forearm mounted laser gun. Targets a single opponent. If
      damage exceeds the reaming health of the target Zoid the remains energy
      damage will continue on.
   4. Hammer Knuckle
+     Energy cost: 1
      Damage: 220 | Type: Melee | To hit: 17
      Effect: Punch attack. Targets a single opponent.
 
@@ -2973,22 +3359,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Large Large | Required level: 29
   Health: 700 | Armor: 28 | Defense: 80
+  Energy: 60 | Energy recharge: 5
   Speed: 320 | Reaction: 15 | Range: 400 | Carry capacity: 60
   Listed base/component Zoids: Death Stinger
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Gun
+     Energy cost: 3
      Damage: 220 | Type: Ranged, Explosive | To hit: 16
      Effect: Back mounted cannon. Targets a single opponent.
   2. Double Charged Particle Gun
-     Damage: 350 | Type: Ranged, Particle | To hit: 18 | Heat: 1
+     Energy cost: 30
+     Damage: 350 | Type: Ranged, Particle | To hit: 18
      Effect: Tail tip particle gun. Shoots two beams 20m wide for a total of
      40m. Opponents in the path of the beams must make a reaction against the
      attack roll. Successful saves take no damage.
   3. Beam Gun
+     Energy cost: 7
      Damage: 240 | Type: Ranged, Laser | To hit: 19
      Effect: Side mounted energy gun. Targets a single opponent. Ranged
   4. Strike Laser Bite Scissors
+     Energy cost: 5
      Damage: 300 | Type: Melee | To hit: 15
      Effect: Energy claw attack. Targets a single opponent.
 
@@ -3007,19 +3398,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 10
   Health: 300 | Armor: 18 | Defense: 10
+  Energy: 50 | Energy recharge: 4
   Speed: 3000 | Reaction: 14 | Range: 450 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 16
      Damage: 150 | Type: Ranged, Anti-Air, Explosive | To hit: 14
      Effect: Back mounted cannon. Targets a single opponent.
   2. Buster Claw
+     Energy cost: 18
      Damage: 190 | Type: Melee, Anti-Air | To hit: 16
      Effect: Chest mounted claw attack. Targets a single opponent.
   3. Magna Wing
+     Energy cost: 4
      Speed increase: 500
      Effect: Increase speed by 500. Lasts for three turns.
   4. Smash Claw
+     Energy cost: 5
      Damage: 130 | Type: Melee | To hit: 16
      Effect: Claw attack. Targets a single opponent.
 
@@ -3038,24 +3434,29 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 4
   Health: 80 | Armor: 28 | Defense: 12
+  Energy: 10 | Energy recharge: 2
   Speed: 150 | Reaction: 8 | Range: 3000 | Carry capacity: 15
 
 FIXED WEAPONS & SYSTEMS
   1. Laser Cannon
+     Energy cost: 3
      Damage: 45 | Type: Ranged, Laser | To hit: 17
      Effect: Shoots in a 15m by 30m deep line. Opponents in the area of effect
      must make a reaction save against your attack roll. Successful saves take
      no damage.
   2. Pulse Laser Cannon
+     Energy cost: 6
      Damage: 25 | Type: Ranged, Laser | To hit: 17
      Effect: Shoots an area of 15m by 45m wide. Opponents in the area of
      effect must make a reaction save against your attack roll. Successful
      saves take no damage.
   3. 3D E. Radar
+     Energy cost: 2
      Type: Anti-Air
      To-hit increase: 10 | Activation: Active
      Effect: Increase the hit rate by +10. Lasts for three turns. Gain
   4. Giant Crab
+     Energy cost: 1
      Damage: 35 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
 
@@ -3074,23 +3475,28 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Extra Large | Required level: 40
   Health: 2000 | Armor: 28 | Defense: 150
+  Energy: 150 | Energy recharge: 20
   Speed: 140 | Reaction: 4 | Range: 800 | Carry capacity: 150
   Listed base/component Zoids: Gojulas
 
 FIXED WEAPONS & SYSTEMS
   1. Super Gatling
+     Energy cost: 20
      Damage: 350 | Type: Ranged, Bullet, Close Range | To hit: 16
      Effect: Chest mounted gatling gun. Targets an area 75m by 225m. Opponents
      in the area of effect must make a reaction save agains the attack roll.
      Successful saves take no damage.
   2. Big Claw
+     Energy cost: 7
      Damage: 360 | Type: Melee | To hit: 14
      Effect: Swiping claw attack. Hits in a 30m line.
   3. Crusher Tail
+     Energy cost: 12
      Damage: 300 | Type: Melee | To hit: 13
      Effect: Tail slash attack. Swings tail in 180° arc hitting any opponent
      in its path. Reach of 30m.
   4. Blade Horn
+     Energy cost: 10
      Damage: 620 | Type: Melee, Piercing | To hit: 12
      Effect: Head mounted horn attack. Targets a single opponent. Melee
 
@@ -3110,16 +3516,20 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Wolf | Size: Large | Required level: 13
   Health: 250 | Armor: 22 | Defense: 28
+  Energy: 35 | Energy recharge: 3
   Speed: 290 | Reaction: 18 | Range: 500 | Carry capacity: 200
 
 FIXED WEAPONS & SYSTEMS
   1. Strike Claw
+     Energy cost: 2
      Damage: 190 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Head Gear
+     Energy cost: 1
      To-hit increase: 20 | Activation: Active
      Effect: Gain +20 to Hit. Lasts three turns.
   3. Electron Bite Fang
+     Energy cost: 1
      Damage: 180 | Type: Melee, Electrical | To hit: 14
      Effect: Bite attack. Targets a single opponent. Melee
   4. No fixed weapon/system listed
@@ -3141,26 +3551,32 @@ PURCHASE & BUILD REFERENCE
 CAU base: Konig Wolf
   Type: Wolf | Size: Large | Required level: 13
   Health: 280 | Armor: 22 | Defense: 28
+  Energy: 38 | Energy recharge: 3
   Speed: 290 | Reaction: 18 | Range: 1000 | Carry capacity: 40
   Listed base/component Zoids: Konig Wolf
 
 FIXED WEAPONS & SYSTEMS
   1. Strike Claw
+     Energy cost: 2
      Damage: 190 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Dual Sniper Rifle
+     Energy cost: 10
      Damage: 300 | Type: Ranged, Bullet, Long Range | To hit: 19
      Effect: Back mounted foldable dual snipers. Targets a single opponent.
   3. Head Gear
+     Energy cost: 1
      To-hit increase: 20 | Activation: Active
      Effect: Increases hit rate. Gain +20 to Hit. Lasts three turns
   4. Electron Bite Fang
+     Energy cost: 1
      Damage: 180 | Type: Melee, Electrical | To hit: 14
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Assist | Equipment: None listed
   2. Slot type: Weapon and Assist | Equipment: 5-Shot Missile Pod
+     Energy cost: 10
      Damage: 120 | To hit: 19 | Type: Ranged, Explosive | Weight: 18
      Effect: Outside shoulder mounted missie pods. Targets an area 45m by 90m.
      Opponents in the area of effect must make a reaction save against the
@@ -3177,19 +3593,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 8
   Health: 140 | Armor: 21 | Defense: 18
+  Energy: 25 | Energy recharge: 3
   Speed: 220 | Reaction: 14 | Range: 300 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Strike Laser Claw
+     Energy cost: 2
      Damage: 100 | Type: Melee, Energy | To hit: 17
      Effect: Energy claw attack. Targets a single opponent.
   2. Zan Blade
+     Energy cost: 3
      Damage: 130 | Type: Melee | To hit: 12
      Effect: Tail blade. Targets a single opponent.
   3. Energy Shield
+     Energy cost: 3
      Shield health: 100 | Activation: Active
      Effect: Curved energy shield. Blocks 100 damage before dispersing.
   4. Bite Fang
+     Energy cost: 0
      Damage: 80 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -3208,18 +3629,22 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 13
   Health: 230 | Armor: 22 | Defense: 23
+  Energy: 25 | Energy recharge: 2
   Speed: 280 | Reaction: 19 | Range: 500 | Carry capacity: 30
   Listed base/component Zoids: Shield Liger
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Gun
+     Energy cost: 0
      Damage: 170 | Type: Ranged, Explosive | To hit: 17
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Energy Shield
+     Energy cost: 5
      Shield health: 300 | Activation: Active
      Effect: Deploys a curved semi domed shield in front of the Zoid. Blocks
      300 damage before dispersing.
   3. Laser Saber
+     Energy cost: 2
      Damage: 200 | Type: Melee | To hit: 17
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -3239,17 +3664,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 15
   Health: 260 | Armor: 23 | Defense: 28
+  Energy: 35 | Energy recharge: 3
   Speed: 307 | Reaction: 15 | Range: 350 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 160 | Type: Ranged, Explosive | To hit: 15
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Ion Boosters
+     Energy cost: 1
      Speed increase: equal to pilot-adjusted Speed (doubles Speed when active)
      | Activation: Active
      Effect: Back mounted boosters. Doubles speed for three turns
   3. Strike Laser Claw
+     Energy cost: 3
      Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -3271,18 +3700,22 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 15
   Health: 260 | Armor: 22 | Defense: 28
+  Energy: 35 | Energy recharge: 3
   Speed: 307 | Reaction: 15 | Range: 400 | Carry capacity: 40
   Listed base/component Zoids: Liger Zero
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 160 | Type: Ranged, Explosive | To hit: 15
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Ion Booster
+     Energy cost: 1
      Speed increase: 400 | Activation: Active
      Effect: Back mounted boosters that increases your Zoids speed by 400 for
      three turns.
   3. Strike Laser Claw
+     Energy cost: 3
      Damage: 210 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -3302,20 +3735,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 16
   Health: 494 | Armor: 24 | Defense: 28
+  Energy: 65 | Energy recharge: 7
   Speed: 400 | Reaction: 21 | Range: 300 | Carry capacity: 45
   Listed base/component Zoids: Liger Zero, Jet Falcon
 
 FIXED WEAPONS & SYSTEMS
   1. Double Shock Gun
+     Energy cost: 18
      Damage: 260 | Type: Ranged, Explosive | To hit: 16
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Strike Laser Claw
+     Energy cost: 14
      Damage: 340 | Type: Melee, Energy | To hit: 18
      Effect: Back mounted energy claw attack. Targets a single opponent.
   3. Magna Wing
+     Energy cost: 7
      Speed increase: 300
      Effect: Back mounted boosters. Increases speed by 300 for three turns.
   4. Smash Claw
+     Energy cost: 22
      Damage: 260 | Type: Melee | To hit: 16
      Effect: Front claw attack. Targets a single opponent.
 
@@ -3335,20 +3773,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 17
   Health: 260 | Armor: 24 | Defense: 28
+  Energy: 35 | Energy recharge: 3
   Speed: 330 | Reaction: 18 | Range: 400 | Carry capacity: 30
   Listed base/component Zoids: Liger Zero
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 160 | Type: Ranged, Explosive | To hit: 15
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Vulcan Pod
+     Energy cost: 2
      Damage: 95 | Type: Ranged, Bullet | To hit: 17
      Effect: Head mounted guns. Targets a single opponent.
   3. Ion Boosters
+     Energy cost: 2
      Speed increase: 500 | Activation: Active
      Effect: Back mounted boosters. Increases speed by 500 for three turns.
   4. Strike Laser Claw
+     Energy cost: 3
      Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
 
@@ -3368,25 +3811,30 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 20
   Health: 300 | Armor: 26 | Defense: 40
+  Energy: 35 | Energy recharge: 2
   Speed: 285 | Reaction: 15 | Range: 200 | Carry capacity: 30
   Listed base/component Zoids: Liger Zero
 
 FIXED WEAPONS & SYSTEMS
   1. Grenade Launcher
+     Energy cost: 0
      Damage: 200 | Type: Ranged, Explosive | To hit: 18
      Effect: Chest mounted grenade launcher. Targets a single opponent.
   2. Hybrid Cannons
-     Damage: 250 | Type: Ranged, Bullet, Long Range | To hit: 18 | Heat: 2
+     Energy cost: 20
+     Damage: 250 | Type: Ranged, Bullet, Long Range | To hit: 18
      Effect: Back mounted cannons. Targets an area of 90m square. Targets in
      the area must make a reaction save against the attack roll. Successful
      saves take no damage.
   3. Burning Big Bang
-     Damage: 300 | Type: Ranged, Homing, Explosive | To hit: 16 | Heat: 1
+     Energy cost: 25
+     Damage: 300 | Type: Ranged, Homing, Explosive | To hit: 16
      Effect: All out barrage using all guns. Can only be used twice per
      battle. Targets an area 120m square. Targets in the area of effect must
      make a reaction save against your attack roll. Successful saves take no
      damage.
   4. Strike Laser Claw
+     Energy cost: 3
      Damage: 240 | Type: Melee, Energy | To hit: 12
      Effect: Energy claw attack. Targets a single opponent.
 
@@ -3406,20 +3854,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 15
   Health: 452 | Armor: 24 | Defense: 25
+  Energy: 40 | Energy recharge: 3
   Speed: 340 | Reaction: 20 | Range: 300 | Carry capacity: 35
   Listed base/component Zoids: Liger Zero, Fire Phoenix
 
 FIXED WEAPONS & SYSTEMS
   1. Double Shock Gun
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Shock Gun
+     Energy cost: 12
      Damage: 250 | Type: Ranged, Explosive | To hit: 15
      Effect: Back mounted cannon. Targets a single opponent.
   3. Charge Missile
+     Energy cost: 0
      Damage: 180 | Type: Ranged, Explosive | To hit: 11
      Effect: Back mounted missile pod. Targets a single opponent.
   4. Strike Laser Claw
+     Energy cost: 5
      Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
 
@@ -3439,22 +3892,27 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 17
   Health: 290 | Armor: 24 | Defense: 28
+  Energy: 35 | Energy recharge: 2
   Speed: 310 | Reaction: 16 | Range: 200 | Carry capacity: 30
   Listed base/component Zoids: Liger Zero
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 160 | Type: Ranged, Explosive | To hit: 15
      Effect: Chest mounted cannon. Targets a single opponent.
   2. 5-Blades
-     Damage: 400 | Type: Melee | To hit: 10 | Heat: 1
+     Energy cost: 30
+     Damage: 400 | Type: Melee | To hit: 10
      Effect: Five blades flip forward from the back. Targets a single
      opponent.
   3. Energy Shield
+     Energy cost: 3
      Shield health: 200 | Activation: Active
      Effect: Curved domed energy shield. Blocks 200 damage before dispersing.
      Must recharge for two turns
   4. Laser Blade
+     Energy cost: 6
      Damage: 270 | Type: Melee | To hit: 14
      Effect: Two blades flip down and out from the sides. Targets a single
      opponent.
@@ -3475,27 +3933,33 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 15
   Health: 280 | Armor: 24 | Defense: 30
+  Energy: 35 | Energy recharge: 3
   Speed: 317 | Reaction: 15 | Range: 300 | Carry capacity: 30
   Listed base/component Zoids: Liger Zero
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 160 | Type: Ranged, Explosive | To hit: 15
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Stun Blade
+     Energy cost: 5
      Damage: 180 | Type: Melee, Electrical | To hit: 15
      Effect: Blades flip down and out to side. Targets a single opponent.
   3. Electron Driver
+     Energy cost: 18
      Damage: 150 | Type: Ranged, Freezing, Electrical | To hit: 14
      Effect: Blades on back point forward above the head towards the sky.
      Targets an area 90m by 90m. Opponents in the area of effect must make a
      reaction save against the attack roll. Successful saves take no damage.
   4. Strike Laser Claw
+     Energy cost: 2
      Damage: 240 | Type: Melee, Energy | To hit: 18
      Effect: Energy claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Assist | Equipment: Stealth Generator
+     Energy cost: 3
      Weight: 10
      Effect: Generates Optical Camoflage and dampens sound when used outside
      of combat
@@ -3512,19 +3976,23 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Medium | Required level: 12
   Health: 230 | Armor: 22 | Defense: 17
+  Energy: 25 | Energy recharge: 2
   Speed: 325 | Reaction: 18 | Range: 200 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. 2-Barrel Vulcan Cannon
+     Energy cost: 3
      Damage: 55 | Type: Ranged, Bullet | To hit: 17
      Effect: Head mounted machine gun. Covers an area of 60m by 60m. Targets
      in the area must make a reaction against the attack roll. Successful
      saves take no damage.
   2. Pulse Laser Gun
+     Energy cost: 6
      Damage: 110 | Type: Ranged, Laser | To hit: 18
      Effect: back mounted energy gun. Targets up to two opponents. Ranged
      (Lightning Saix Only)
   3. Killer Fang
+     Energy cost: 1
      Damage: 130 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -3545,18 +4013,22 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Medium | Required level: 13
   Health: 230 | Armor: 22 | Defense: 17
+  Energy: 25 | Energy recharge: 2
   Speed: 310 | Reaction: 17 | Range: 200 | Carry capacity: 25
   Listed base/component Zoids: Lightning Saix
 
 FIXED WEAPONS & SYSTEMS
   1. 2-Barrel Vulcan Cannon
+     Energy cost: 3
      Damage: 55 | Type: Ranged, Bullet | To hit: 17
      Effect: Head mounted machine gun. Covers an area of 60m by 60m.
   2. Pulse Laser Gun
+     Energy cost: 8
      Damage: 130 | Type: Ranged, Laser | To hit: 19
      Effect: back mounted energy gun. Targets up to two opponents. Ranged
      (Lightning Saix Only)
   3. Killer Fang
+     Energy cost: 1
      Damage: 130 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -3577,14 +4049,17 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Medium | Required level: 12
   Health: 250 | Armor: 21 | Defense: 28
+  Energy: 30 | Energy recharge: 3
   Speed: 300 | Reaction: 16 | Range: 500 | Carry capacity: 25
   Listed base/component Zoids: DiploGun, Flyscissors, Demonshead, Shellkarn.
 
 FIXED WEAPONS & SYSTEMS
   1. X-Scissor
+     Energy cost: 12
      Damage: 280 | Type: Melee, Anti-Air | To hit: 16
      Effect: Right arm attack. Targets a single opponent.
   2. Magnezer Spear
+     Energy cost: 2
      Damage: 180 | Type: Melee, Piercing | To hit: 16
      Effect: Left arm spear attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -3605,19 +4080,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Extra Large | Required level: 25
   Health: 800 | Armor: 29 | Defense: 125
+  Energy: 70 | Energy recharge: 15
   Speed: 100 | Reaction: 6 | Range: 300 | Carry capacity: 90
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Cannon
+     Energy cost: 8
      Damage: 300 | Type: Ranged, Laser | To hit: 18
      Effect: Back mounted cannon. Targets a single opponent.
   2. Double Shock Cannon
+     Energy cost: 2
      Damage: 200 | Type: Ranged, Explosive | To hit: 12
      Effect: Back shoulder mounted cannon. Targets a single opponent.
   3. Magnezer Drill
+     Energy cost: 35
      Damage: 450 | Type: Melee, Piercing | To hit: 13
      Effect: Large spinning drill attack. Targets a single opponent.
   4. Thunder Horn
+     Energy cost: 5
      Damage: 250 | Type: Melee, Piercing | To hit: 14
      Effect: Horn attack. Targets a single opponent.
 
@@ -3626,6 +4106,7 @@ REMOVABLE EQUIPMENT SLOTS
   2. Slot type: Weapon and Assist | Equipment: None listed
   3. Slot type: Weapon and Assist | Equipment: None listed
   4. Slot type: Assist | Equipment: Anti-Particle Beam Shield
+     Energy cost: 2
      Weight: 30 | Solo-shield defense increase: 200 | Activation: Passive
      Effect: Increases defense by 200. Halves particle damage.
 
@@ -3638,15 +4119,18 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 1
   Health: 50 | Armor: 28 | Defense: 12
+  Energy: 10 | Energy recharge: 2
   Speed: 200 | Reaction: 12 | Range: 200 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Gatling
+     Energy cost: 3
      Damage: 20 | Type: Ranged, Bullet, Close Range | To hit: 16
      Effect: Head mounted gatling gun. Shoots in a 15m by 45m wide line.
      Targets in the area of effect must make a reaction roll against the
      attack roll. Successful saves take no damage.
   2. Go for Broke
+     Energy cost: 1
      Damage: 25 | Type: Melee | To hit: 13
      Effect: Ramming attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -3668,19 +4152,23 @@ PURCHASE & BUILD REFERENCE
 CAU base: Molga
   Type: Insect | Size: Small | Required level: 2
   Health: 50 | Armor: 28 | Defense: 12
+  Energy: 15 | Energy recharge: 2
   Speed: 180 | Reaction: 12 | Range: 300 | Carry capacity: 15
   Listed base/component Zoids: Molga
 
 FIXED WEAPONS & SYSTEMS
   1. Gatling
+     Energy cost: 3
      Damage: 20 | Type: Ranged, Bullet, Close Range | To hit: 16
      Effect: Head mounted gatling gun. Shoots in a 15m by 45m wide line.
      Targets in the area of effect must make a reaction roll against the
      attack roll. Successful saves take no damage.
   2. Cannon Unit
+     Energy cost: 1
      Damage: 50 | Type: Ranged, Laser | To hit: 16
      Effect: Back mounted cannon. Targets a single opponent.
   3. Go for Broke
+     Energy cost: 1
      Damage: 30 | Type: Melee | To hit: 13
      Effect: Ramming attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -3701,20 +4189,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 6
   Health: 140 | Armor: 22 | Defense: 18
+  Energy: 25 | Energy recharge: 3
   Speed: 100 | Reaction: 4 | Range: 100 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Torpedo Pod
+     Energy cost: 3
      Damage: 45 | Type: Ranged, Explosive | To hit: 15
      Effect: Back mounted torpedo. Targets up to two opponnents. Fires two
      torpedos with the damage split between them.
   2. Tail Saw
+     Energy cost: 3
      Damage: 130 | Type: Melee | To hit: 14
      Effect: Tail attack. Targets a single opponent.
   3. Ion Booster
+     Energy cost: 1
      Speed increase: 300 | Activation: Active
      Effect: Increases speed. Gains +300 to speed. Lasts for three turns
   4. Bite Fang
+     Energy cost: 0
      Damage: 100 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -3733,21 +4226,26 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 6
   Health: 140 | Armor: 18 | Defense: 27
+  Energy: 25 | Energy recharge: 3
   Speed: 3100 | Reaction: 2 | Range: 2000 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Missile Pod
+     Energy cost: 8
      Damage: 65 | Type: Ranged, Anti-Air, Explosive | To hit: 18
      Effect: Underwing mounted missile pods. Targets an area 30m by 30m.
      Opponents inside the area of effect must make a reaction save against the
      attack roll. successful rolls take no damage.
   2. Inferred Sensor
+     Energy cost: 0
      Range increase: 1000 | Activation: Active
      Effect: Gains +1,000 range. Lasts three turns.
   3. Ion Booster
+     Energy cost: 1
      Speed increase: 500 | Activation: Active
      Effect: Increases speed. Gains +500 to speed. Lasts three turns.
   4. Crusher Claw
+     Energy cost: 0
      Damage: 75 | Type: Melee, Anti-Air | To hit: 15
      Effect: Claw attack. Targets a single opponent.
 
@@ -3766,22 +4264,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 16
   Health: 350 | Armor: 22 | Defense: 50
+  Energy: 40 | Energy recharge: 4
   Speed: 330 | Reaction: 13 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Geno Saurer
 
 FIXED WEAPONS & SYSTEMS
   1. X Breaker
+     Energy cost: 4
      Damage: 230 | Type: Melee | To hit: 12
      Effect: Side mounted blades rotate forward. Targets a single opponent.
   2. Charged Particle Cannon
-     Damage: 200 | Type: Ranged, Particle | To hit: 18 | Heat: 2
+     Energy cost: 25
+     Damage: 200 | Type: Ranged, Particle | To hit: 18
      Effect: Mouth fired particle cannon. Fires in a straight line 30m wide.
      Opponents in the line of fire must make a reaction save against the
      attack roll. Successful saves take no damage.
   3. Long Range Laser
+     Energy cost: 12
      Damage: 75 | Type: Ranged, Laser, Long Range | To hit: 18
      Effect: Back mounted energy gun. Targets a single opponent.
   4. Hyper Killer Claw
+     Energy cost: 1
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent. Melee
 
@@ -3800,26 +4303,32 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Large | Required level: 18
   Health: 260 | Armor: 22 | Defense: 25
+  Energy: 30 | Energy recharge: 3
   Speed: 250 | Reaction: 14 | Range: 300 | Carry capacity: 30
   Listed base/component Zoids: Zaber Fang
 
 FIXED WEAPONS & SYSTEMS
   1. Triple Impact Cannon
+     Energy cost: 0
      Damage: 170 | Type: Ranged, Explosive | To hit: 17
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Linear Laser Gun
+     Energy cost: 8
      Damage: 100 | Type: Ranged, Laser | To hit: 17
      Effect: Shoulder mounted laser beam gun. Targets a single opponent.
   3. SR Vulcan
+     Energy cost: 1
      Damage: 80 | Type: Ranged, Bullet | To hit: 17
      Effect: Shoulder mounted machine gun. Targets up to two Zoids. Two bursts
      that deals 40.
   4. Killer Saber
+     Energy cost: 1
      Damage: 180 | Type: Melee | To hit: 17
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Weapon and Assist | Equipment: Double Beam Cannon: back
+     Energy cost: 7
   mounted energy cannon. Targets a single opponent. Ranged (Proto Fang Only)
      Damage: 200 | Type: Ranged, Laser | To hit: 18 | Weight: 17
   2. Slot type: Weapon and Assist | Equipment: None listed
@@ -3835,29 +4344,36 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
     Type: Tiger | Size: Large | Required level: 20
   Health: 300 | Armor: 24 | Defense: 40
+  Energy: 35 | Energy recharge: 4
   Speed: 240 | Reaction: 16 | Range: 300 | Carry capacity: 45
   Listed base/component Zoids: Proto Zaber
 
 FIXED WEAPONS & SYSTEMS
   1. Triple Impact Cannon
+     Energy cost: 0
      Damage: 200 | Type: Ranged, Explosive | To hit: 17
      Effect: Chest mounted cannon. Targets a single opponent.
   2. 8-Shot Missile Pod
+     Energy cost: 10
      Damage: 100 | Type: Ranged, Explosive, Homing | To hit: 17
      Effect: Back mounted missile pod. Targets up to four opponents. Shoots
      four missiles with the damage split between them.
   3. Concentrated Acid Gun
-     Damage: 20 | Type: Ranged, Acid, Defense | To hit: 15 | Heat: 1
+     Energy cost: 10
+     Damage: 20 | Type: Ranged, Acid, Defense | To hit: 15
      Effect: Fires a single canister of acid. Targets a single opponent.
   4. Killer Saber
+     Energy cost: 1
      Damage: 240 | Type: Melee | To hit: 19
      Effect: Bite attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Weapon and Assist | Equipment: Double Beam Cannon: back
+     Energy cost: 7
   mounted energy cannon. Targets a single opponent. Ranged (Great Zaber Only)
      Damage: 200 | Type: Ranged, Laser | To hit: 18 | Weight: 17
   2. Slot type: Weapon and Assist | Equipment: 20mm Solid Rifle: shoulder mounted LR rifle. Targets a
+     Energy cost: 6
   single opponent. Ranged (Great Zaber only)
      Damage: 200 | Type: Ranged, Long Range, Bullet | To hit: 17 | Weight: 15
   3. Slot type: Weapon and Assist | Equipment: None listed
@@ -3873,24 +4389,29 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 15
   Health: 320 | Armor: 23 | Defense: 40
+  Energy: 35 | Energy recharge: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Geno Saurer
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan
+     Energy cost: 2
      Damage: 80 | Type: Ranged, Bullet | To hit: 17
      Effect: Head mounted gun. Targets a single opponent.
   2. Charged Particle Cannon
-     Damage: 200 | Type: Ranged, Particle | To hit: 18 | Heat: 2
+     Energy cost: 15
+     Damage: 200 | Type: Ranged, Particle | To hit: 18
      Effect: Mouth fired particle cannon. Straight line 30m wide. Opponents in
      the line of fire must make a reaction save against the attack roll
      successful saves take no damage.
   3. Long Range Laser
+     Energy cost: 12
      Damage: 75 | Type: Ranged, Laser, Long Range | To hit: 18
      Effect: Back mounted energy cannon. Targets a single opponent. If damage
      exceeds the remaining health of the opponent the attack pierces through
      and continues on with remaining damage.
   4. Hyper Killer Claw
+     Energy cost: 1
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent. Melee
 
@@ -3909,19 +4430,23 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Large Large | Required level: 20
   Health: 450 | Armor: 21 | Defense: 33
+  Energy: 30 | Energy recharge: 3
   Speed: 2000 | Reaction: 22 | Range: 1000 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
   1. Double Anti-Air Laser
+     Energy cost: 13
      Damage: 200 | Type: Ranged, Anti-Air, Laser | To hit: 19
      Effect: Wing tip mounted energy guns. Can target up to two Zoids. Shoots
      two bursts of 100 energy
   2. Multi Vulcan
+     Energy cost: 6
      Damage: 160 | Type: Ranged, Bullet | To hit: 17
      Effect: Chest mounted gun. Shoots in a horizontal line 45m deep by 135m
      wide. Opponents in the area of effect must make a reaction save against
      the attack roll. Successful rolls take no damage.
   3. Flame Thrower
+     Energy cost: 8
      Damage: 220 | Type: Ranged, Defense, Fire | To hit: 12
      Effect: Breathes fire from the mouth, reaching 100m and widening to 45m
      at the end. Each time a Zoid takes damage from this weapon, its Armor is
@@ -3944,18 +4469,22 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Small | Required level: 2
   Health: 55 | Armor: 20 | Defense: 10
+  Energy: 15 | Energy recharge: 2
   Speed: 2000 | Reaction: 14 | Range: 1000 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan
+     Energy cost: 1
      Damage: 30 | Type: Ranged, Anti-Air, Bullet | To hit: 18
      Effect: Mouth mounted machine gun. Fires in a horizontal line 15m by 60m
      long. Opponents in the area of effect must make a reaction save against
      the attack roll. Successful saves take no damage.
   2. 2-Shot Missile Pod
+     Energy cost: 1
      Damage: 40 | Type: Ranged, Anti-Air, Homing, Explosive | To hit: 18
      Effect: Back mounted missiles. Targets a single opponent.
   3. Go 4 Broke
+     Energy cost: 1
      Damage: 30 | Type: Melee, Anti-Air | To hit: 14
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -3976,22 +4505,27 @@ PURCHASE & BUILD REFERENCE
 CAU base: Pteras
   Type: Dinosaur, Flying | Size: Small | Required level: 4
   Health: 60 | Armor: 20 | Defense: 10
+  Energy: 15 | Energy recharge: 2
   Speed: 1200 | Reaction: 14 | Range: 1500 | Carry capacity: 13
   Listed base/component Zoids: Pteras
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan
+     Energy cost: 1
      Damage: 30 | Type: Ranged, Bullet | To hit: 18
      Effect: Head mounted guns. Targets a vertical area 15m wide by 30m long.
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   2. 2-Shot Missile
+     Energy cost: 1
      Damage: 50 | Type: Ranged, Anti-Air, Homing, Explosive | To hit: 18
      Effect: Chest mounted missile launchers. Targets a single opponent.
   3. Air Raid Missile
+     Energy cost: 1
      Damage: 65 | Type: Ranged, Homing, Explosive | To hit: 17
      Effect: Back mounted missiles. Targets a single opponent.
   4. Go 4 Broke
+     Energy cost: 1
      Damage: 50 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
@@ -4011,23 +4545,28 @@ PURCHASE & BUILD REFERENCE
 CAU base: Pteras
   Type: Dinosaur, Flying | Size: Small | Required level: 5
   Health: 140 | Armor: 18 | Defense: 10
+  Energy: 15 | Energy recharge: 2
   Speed: 2100 | Reaction: 15 | Range: 2000 | Carry capacity: 20
   Listed base/component Zoids: Pteras
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan
+     Energy cost: 1
      Damage: 30 | Type: Ranged, Bullet | To hit: 18
      Effect: Head mounted guns. Targets a vertical area 15m wide by 30m long.
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   2. 2-Shot Missile
+     Energy cost: 1
      Damage: 50 | Type: Ranged, Anti-Air, Homing, Explosive | To hit: 18
      Effect: Chest mounted missile launchers. Targets a single opponent.
   3. 3D Radar
+     Energy cost: 2
      To-hit increase: 10 | Activation: Active
      Effect: Increaseas hit rate for self and ally's. You and ally's gain +10
      to Hit
   4. Go 4 Broke
+     Energy cost: 1
      Damage: 55 | Type: Melee, Anti-Air | To hit: 14
      Effect: Claw attack. Targets a single opponent.
 
@@ -4046,16 +4585,20 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 8
   Health: 160 | Armor: 21 | Defense: 10
+  Energy: 20 | Energy recharge: 2
   Speed: 3300 | Reaction: 17 | Range: 1500 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Triple Beam Cannon
+     Energy cost: 3
      Damage: 90 | Type: Ranged, Anti-Air, Laser | To hit: 18
      Effect: Chest mounted energy cannon.
   2. 3D Radar
+     Energy cost: 2
      To-hit increase: 6 | Activation: Active
      Effect: Gain +6 to Hit. Lasts three turns. +12 against flying Zoids.
   3. Strum Claw
+     Energy cost: 1
      Damage: 75 | Type: Melee, Anti-Air, Piercing | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4075,20 +4618,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large | Required level: 8
   Health: 240 | Armor: 28 | Defense: 15
+  Energy: 25 | Energy recharge: 3
   Speed: 130 | Reaction: 10 | Range: 300 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
   1. 3-Barrel Linear Cannon
+     Energy cost: 5
      Damage: 130 | Type: Ranged, Explosive | To hit: 16
      Effect: Back mounted cannon. Targets a single opponent.
   2. Missile Pod
+     Energy cost: 3
      Damage: 65 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Back mounted missile pods. Targets a vertical area 45m wide and
      90m long.
   3. Anti-Air Beam Cannon
+     Energy cost: 6
      Damage: 110 | Type: Ranged, Anti-Air, Laser | To hit: 17
      Effect: Back mounted energy cannon. Targets a single opponent.
   4. Crusher Horn
+     Energy cost: 1
      Damage: 140 | Type: Melee | To hit: 12
      Effect: Horn attack. Targets a single opponent.
 
@@ -4108,23 +4656,28 @@ PURCHASE & BUILD REFERENCE
 CAU base: Red Horn
   Type: Dinosaur, Land | Size: Large | Required level: 10
   Health: 240 | Armor: 28 | Defense: 20
+  Energy: 25 | Energy recharge: 3
   Speed: 130 | Reaction: 10 | Range: 300 | Carry capacity: 45
   Listed base/component Zoids: Red Horn
 
 FIXED WEAPONS & SYSTEMS
   1. 3-Barrel Linear Cannon
+     Energy cost: 5
      Damage: 130 | Type: Ranged, Laser | To hit: 16
      Effect: Back mounted energy cannon. Targets a single opponent.
   2. Missile Pod
+     Energy cost: 3
      Damage: 65 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Back mounted missile pods. Targets a vertical area 45m wide by
      90m long. Opponents in the area of effect must make a reaction save
      against the attack roll. Successful saves take no damage.
   3. Energy Gatling
+     Energy cost: 10
      Damage: 90 | Type: Ranged, Laser, Close Range | To hit: 16
      Effect: Back mounted energy gatling. Targets a horizontal area 45m wide
      by 90m long.
   4. Crusher Horn
+     Energy cost: 1
      Damage: 170 | Type: Melee | To hit: 12
      Effect: Horn attack. Targets a single opponent.
 
@@ -4143,13 +4696,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 5
   Health: 80 | Armor: 16 | Defense: 9
+  Energy: 15 | Energy recharge: 2
   Speed: 3000 | Reaction: 14 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Strike Claw
+     Energy cost: 0
      Damage: 50 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Laser Blade
+     Energy cost: 3
      Damage: 75 | Type: Ranged, Anti-Air, Laser | To hit: 14
      Effect: Energy wing attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -4171,17 +4727,21 @@ PURCHASE & BUILD REFERENCE
 CAU base: Redler
   Type: Dinosaur, Flying | Size: Medium | Required level: 9
   Health: 150 | Armor: 17 | Defense: 10
+  Energy: 20 | Energy recharge: 2
   Speed: 3300 | Reaction: 14 | Range: 300 | Carry capacity: 18
   Listed base/component Zoids: Redler
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Cannon
+     Energy cost: 10
      Damage: 130 | Type: Ranged, Anti-Air, Laser | To hit: 17
      Effect: Back mounted energy cannon. Targets a single opponent.
   2. Booster
+     Energy cost: 1
      Speed increase: 500 | Activation: Active
      Effect: Back mounted booster. Gains +500 speed. Lasts three turns.
   3. Strike Claw
+     Energy cost: 0
      Damage: 100 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4202,17 +4762,21 @@ PURCHASE & BUILD REFERENCE
 CAU base: Redler
   Type: Dinosaur, Flying | Size: Medium | Required level: 10
   Health: 200 | Armor: 18 | Defense: 13
+  Energy: 25 | Energy recharge: 2
   Speed: 3000 | Reaction: 16 | Range: 450 | Carry capacity: 15
   Listed base/component Zoids: Redler
 
 FIXED WEAPONS & SYSTEMS
   1. Cannon
+     Energy cost: 8
      Damage: 90 | Type: Ranged, Explosive | To hit: 18
      Effect: Back mounted cannon. Targets a single opponent.
   2. Booster
+     Energy cost: 1
      Speed increase: 400 | Activation: Active
      Effect: Back mounted booster. Gain +400 speed. Lasts three turns.
   3. Anchor Claw
+     Energy cost: 1
      Damage: 130 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4231,13 +4795,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 5
   Health: 120 | Armor: 20 | Defense: 10
+  Energy: 20 | Energy recharge: 2
   Speed: 210 | Reaction: 13 | Range: 800 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Counter Scythe
+     Energy cost: 1
      Damage: 70 | Type: Melee | To hit: 14
      Effect: Side mounted scythes flip forward. Targets a single opponent.
   2. Hyper Claw
+     Energy cost: 0
      Damage: 60 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -4260,14 +4827,17 @@ PURCHASE & BUILD REFERENCE
 CAU base: Rev Raptor
   Type: Raptor | Size: Small | Required level: 11
   Health: 200 | Armor: 20 | Defense: 20
+  Energy: 27 | Energy recharge: 2
   Speed: 250 | Reaction: 13 | Range: 900 | Carry capacity: 25
   Listed base/component Zoids: Rev Raptor
 
 FIXED WEAPONS & SYSTEMS
   1. Killer Lance
+     Energy cost: 2
      Damage: 160 | Type: Melee, Piercing | To hit: 17
      Effect: shoulder mounted claws. Targets a single opponent.
   2. Hyper Claw
+     Energy cost: 1
      Damage: 120 | Type: Melee | To hit: 17
      Effect: Claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -4288,17 +4858,21 @@ PURCHASE & BUILD REFERENCE
 CAU base: Rev Raptor
   Type: Raptor | Size: Small | Required level: 5
   Health: 120 | Armor: 22 | Defense: 13
+  Energy: 20 | Energy recharge: 2
   Speed: 205 | Reaction: 12 | Range: 600 | Carry capacity: 10
   Listed base/component Zoids: Rev Raptor
 
 FIXED WEAPONS & SYSTEMS
   1. Counter Scythe
+     Energy cost: 1
      Damage: 130 | Type: Melee | To hit: 12
      Effect: Side mounted scythes flip forward. Targets a single opponent.
   2. Pile Bunker
+     Energy cost: 3
      Damage: 150 | Type: Melee, Piercing | To hit: 13
      Effect: Back mounted spear. Targets a single opponent.
   3. Hyper Claw
+     Energy cost: 0
      Damage: 100 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4318,20 +4892,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Small | Required level: 3
   Health: 90 | Armor: 18 | Defense: 8
+  Energy: 20 | Energy recharge: 2
   Speed: 255 | Reaction: 18 | Range: 500 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. High Frequency Wave Claw
+     Energy cost: 0
      Damage: 35 | Type: Melee | To hit: 17
      Effect: Claw attack. Targets a single opponent.
   2. High Frequency Wave Blade
+     Energy cost: 6
      Damage: 70 | Type: Melee | To hit: 13
      Effect: Blade on top of head flips down. Targets a single opponent.
   3. Smoke Unit
+     Energy cost: 1
      Activation: Active
      Effect: Deploys smoke in a 30m square. While in the smoke attacks have
      disadvantage against you. Lasts three turns.
   4. High Frequency Wave Fang
+     Energy cost: 1
      Damage: 40 | Type: Melee, Piercing | To hit: 16
      Effect: Bite attack. Targets a single opponent.
 
@@ -4350,19 +4929,23 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 2
   Health: 50 | Armor: 22 | Defense: 8
+  Energy: 10 | Energy recharge: 2
   Speed: 390 | Reaction: 16 | Range: 600 | Carry capacity: 12
 
 FIXED WEAPONS & SYSTEMS
   1. 2-Barrel Beam Cannon
+     Energy cost: 3
      Damage: 40 | Type: Ranged, Laser | To hit: 17
      Effect: Front arm guns. Targets a single opponent.
   2. Small Beam Cannon
+     Energy cost: 4
      Damage: 30 | Type: Ranged, Anti-Air, Laser | To hit: 17
      Effect: Forward mounted energy cannon. Shoots in a 15m by 30m deep line.
      Opponents in the area of effect must make a reaction roll against the
      attack. Successful saves take no damage. Flying Zoids roll with
      disadvantage.
   3. Go 4 Broke
+     Energy cost: 1
      Damage: 30 | Type: Melee | To hit: 14
      Effect: Slashing attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4382,16 +4965,20 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Small | Required level: 2
   Health: 60 | Armor: 22 | Defense: 10
+  Energy: 15 | Energy recharge: 2
   Speed: 900 | Reaction: 3 | Range: 300 | Carry capacity: 15
 
 FIXED WEAPONS & SYSTEMS
   1. Homing Torpedo
+     Energy cost: 2
      Damage: 40 | Type: Ranged, Homing, Explosive | To hit: 19
      Effect: Chest mounted torpedo pods. Targets a single opponent.
   2. Go for Broke
+     Energy cost: 2
      Damage: 40 | Type: Melee, Anti-Air | To hit: 14
      Effect: Ramming attack. Targets a single opponent.
   3. Accelerated Beam Cannon
+     Energy cost: 1
      Damage: 45 | Type: Ranged, Laser | To hit: 17
      Effect: Front mounted energy cannon. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4411,20 +4998,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Wolf | Size: Medium | Required level: 12
   Health: 220 | Armor: 22 | Defense: 20
+  Energy: 30 | Energy recharge: 3
   Speed: 290 | Reaction: 18 | Range: 1000 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
   1. Electro-Magnetic Bite Fang
+     Energy cost: 1
      Damage: 180 | Type: Melee, Electrical | To hit: 14
      Effect: Bite attack. Targets a single opponent.
   2. Smoke Unit
+     Energy cost: 1
      Activation: Active
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
   3. Laser Vulcan Gun
+     Energy cost: 10
      Damage: 30 | Type: Ranged, Laser | To hit: 17
      Source damage note: Shoots three bursts of 30
   4. Strike Laser Claw
+     Energy cost: 3
      Damage: 220 | Type: Melee, Energy | To hit: 15
      Effect: Claw attack. Targets a single opponent.
 
@@ -4433,6 +5025,7 @@ REMOVABLE EQUIPMENT SLOTS
   2. Slot type: Weapon and Assist | Equipment: None listed
   3. Slot type: Weapon and Assist | Equipment: None listed
   4. Slot type: Assist | Equipment: Optical Camouflage
+     Energy cost: 3
      Weight: 5 | Activation: Active
      Effect: Self targeting stealth generator. Turns the Zoid "invisible".
      Lasts for three turns. Attack rolls have disadvantage against your Zoid.
@@ -4447,16 +5040,20 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 7
   Health: 150 | Armor: 27 | Defense: 18
+  Energy: 27 | Energy recharge: 3
   Speed: 80 | Reaction: 10 | Range: 100 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Electro-Magnetic Cannon
+     Energy cost: 7
      Damage: 30 | Type: Ranged, Laser | To hit: 12
      Effect: Shoulder mounted energy cannon. Targets a single opponent.
   2. Hammer Knuckle
+     Energy cost: 1
      Damage: 150 | Type: Melee | To hit: 13
      Effect: Punch attack. Targets a single opponent.
   3. Bite Fang
+     Energy cost: 0
      Damage: 90 | Type: Melee | To hit: 15
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4476,17 +5073,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 7
   Health: 210 | Armor: 22 | Defense: 13
+  Energy: 25 | Energy recharge: 3
   Speed: 250 | Reaction: 15 | Range: 300 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 100 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Energy Shield
+     Energy cost: 2
      Shield health: 150 | Activation: Active
      Effect: Deploys a curved semi domed shield in front of the Zoid. Blocks
      150 damage before dispersing.
   3. Laser Saber
+     Energy cost: 2
      Damage: 150 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4507,20 +5108,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Shield Liger
   Type: Liger | Size: Large | Required level: 8
   Health: 210 | Armor: 22 | Defense: 13
+  Energy: 25 | Energy recharge: 3
   Speed: 250 | Reaction: 10 | Range: 300 | Carry capacity: 30
   Listed base/component Zoids: Shield Liger
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 100 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Beam Cannon
+     Energy cost: 5
      Damage: 140 | Type: Ranged, Laser | To hit: 18
      Effect: Back mounted energy cannon. Targets a single opponent.
   3. Energy Shield
+     Energy cost: 2
      Shield health: 150 | Activation: Active
      Effect: Curved energy shield. Blocks 150 damage before dispersing.
   4. Laser Saber
+     Energy cost: 2
      Damage: 150 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
@@ -4540,20 +5146,25 @@ PURCHASE & BUILD REFERENCE
 CAU base: Shield Liger
   Type: Liger | Size: Large | Required level: 13
   Health: 250 | Armor: 23 | Defense: 23
+  Energy: 27 | Energy recharge: 2
   Speed: 285 | Reaction: 12 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Shield Liger DCS
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Cannon
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Beam Cannon
+     Energy cost: 10
      Damage: 230 | Type: Ranged, Laser | To hit: 18
      Effect: Back mounted energy cannon. Targets a single opponent.
   3. Energy Shield
+     Energy cost: 3
      Shield health: 200 | Activation: Active
      Effect: Curved energy shield. Blocks 200 damage before dispersing.
   4. Laser Saber
+     Energy cost: 2
      Damage: 200 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -4572,18 +5183,22 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 8
   Health: 150 | Armor: 21 | Defense: 15
+  Energy: 20 | Energy recharge: 2
   Speed: 195 | Reaction: 13 | Range: 800 | Carry capacity: 20
   Listed base/component Zoids: Gun Sniper
 
 FIXED WEAPONS & SYSTEMS
   1. Zan Smasher
+     Energy cost: 1
      Damage: 100 | Type: Melee | To hit: 15
      Effect: Front claw attack. Targets a single opponent.
   2. Sniper Rifle
+     Energy cost: 3
      Damage: 80 | Type: Ranged, Bullet, Long Range | To hit: 19
      Effect: Tail stiffens, claws clamp into the ground. Targets a single
      opponent. Minimum range of 75m.
   3. Bite Fang
+     Energy cost: 0
      Damage: 85 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4604,21 +5219,26 @@ PURCHASE & BUILD REFERENCE
 CAU base: Snipe Master
   Type: Raptor | Size: Small | Required level: 10
   Health: 170 | Armor: 26 | Defense: 18
+  Energy: 20 | Energy recharge: 2
   Speed: 190 | Reaction: 14 | Range: 1500 | Carry capacity: 10
   Listed base/component Zoids: Snipe Master
 
 FIXED WEAPONS & SYSTEMS
   1. Strike Tonfa
+     Energy cost: 3
      Damage: 160 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   2. Sniper Rifle
+     Energy cost: 3
      Damage: 100 | Type: Ranged, Bullet, Long Range | To hit: 19
      Effect: Tail stiffens, claws clamp into ground. Targets a single
      opponent. Minimum range of 75m.
   3. Beam Cannon
+     Energy cost: 8
      Damage: 150 | Type: Ranged, Laser | To hit: 16
      Effect: Wrist mounted energy cannons. Targets a single opponent.
   4. Bite Fang
+     Energy cost: 0
      Damage: 95 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -4638,21 +5258,26 @@ PURCHASE & BUILD REFERENCE
 CAU base: Snipe Master
   Type: Raptor | Size: Small | Required level: 10
   Health: 170 | Armor: 23 | Defense: 16
+  Energy: 20 | Energy recharge: 2
   Speed: 205 | Reaction: 16 | Range: 1500 | Carry capacity: 10
   Listed base/component Zoids: Snipe Master
 
 FIXED WEAPONS & SYSTEMS
   1. Long Range Rifle
+     Energy cost: 2
      Damage: 80 | Type: Ranged, Bullet, Long Range | To hit: 18
      Effect: Back mounted rifle. Targets a single opponent.
   2. Sniper Rifle
+     Energy cost: 3
      Damage: 100 | Type: Ranged, Bullet, Long Range | To hit: 19
      Effect: Tail stiffens, claws clamp into the ground. Targets a single
      opponent. Minimum range of 75m.
   3. Flexible Booster
+     Energy cost: 1
      Reaction increase: 10 | Activation: Active
      Effect: Increases reaction. Gain +10 to reaction. Lasts three turns.
   4. Bite Fang
+     Energy cost: 0
      Damage: 95 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -4671,20 +5296,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 15
   Health: 240 | Armor: 23 | Defense: 23
+  Energy: 27 | Energy recharge: 2
   Speed: 250 | Reaction: 13 | Range: 250 | Carry capacity: 40
   Listed base/component Zoids: Shield Liger
 
 FIXED WEAPONS & SYSTEMS
   1. Shock Gun
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted cannon. Targets a single opponent.
   2. Laser Claw
+     Energy cost: 2
      Damage: 180 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   3. Potential Difference Generator
+     Energy cost: 10
      Damage: 25 | Type: Ranged, Electrical | To hit: 14
      Effect: Head mounted lightning generator. Targets a single opponent.
   4. Laser Saber
+     Energy cost: 2
      Damage: 190 | Type: Melee, Energy | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -4704,19 +5334,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Medium | Required level: 3
   Health: 80 | Armor: 23 | Defense: 3
+  Energy: 15 | Energy recharge: 2
   Speed: 180 | Reaction: 16 | Range: 800 | Carry capacity: 15
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan
+     Energy cost: 1
      Damage: 30 | Type: Ranged, Bullet | To hit: 17
      Effect: Head mounted gun. Targets a single opponent.
   2. Heavy Machine Gun
+     Energy cost: 0
      Damage: 40 | Type: Ranged, Bullet | To hit: 17
      Effect: Head mounted gun. Targets a single opponent.
   3. Small Laser Machine Gun
+     Energy cost: 3
      Damage: 30 | Type: Ranged, Laser | To hit: 17
      Effect: Back mounted energy gun. Targets a single opponent.
   4. Go for Broke
+     Energy cost: 1
      Damage: 35 | Type: Melee | To hit: 14
      Effect: Ramming attack. Targets a single opponent.
 
@@ -4735,13 +5370,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Large | Required level: 13
   Health: 220 | Armor: 21 | Defense: 20
+  Energy: 30 | Energy recharge: 2
   Speed: 3200 | Reaction: 16 | Range: 2000 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Pulse Laser
+     Energy cost: 8
      Damage: 75 | Type: Ranged, Anti-Air, Laser | To hit: 17
      Effect: Chest mounted energy gun. Targets a single opponent.
   2. Anchor Claw
+     Energy cost: 3
      Damage: 190 | Type: Melee | To hit: 14
      Effect: Claw attack targets a single opponent.
   3. No fixed weapon/system listed
@@ -4764,16 +5402,19 @@ PURCHASE & BUILD REFERENCE
 CAU base: Storm Sworder
   Type: Dinosaur, Flying | Size: Large | Required level: 14
   Health: 220 | Armor: 20 | Defense: 18
+  Energy: 30 | Energy recharge: 2
   Speed: 3100 | Reaction: 15 | Range: 600 | Carry capacity: 40
   Listed base/component Zoids: Storm Sworder
 
 FIXED WEAPONS & SYSTEMS
   1. Vulcan Gun
+     Energy cost: 4
      Damage: 65 | Type: Ranged, Anti-Air, Bullet | To hit: 17
      Effect: Neck mounted machine gun. Targets an area 90m by 90m. Opponents
      in the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   2. Iron Claws
+     Energy cost: 1
      Damage: 150 | Type: Melee, Anti-Air | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -4795,21 +5436,26 @@ PURCHASE & BUILD REFERENCE
 CAU base: Storm Sworder
   Type: Dinosaur, Flying | Size: Large | Required level: 17
   Health: 280 | Armor: 20 | Defense: 28
+  Energy: 35 | Energy recharge: 4
   Speed: 4000 | Reaction: 22 | Range: 650 | Carry capacity: 30
   Listed base/component Zoids: Storm Sworder
 
 FIXED WEAPONS & SYSTEMS
   1. Long Range Cannon
+     Energy cost: 6
      Damage: 230 | Type: Ranged, Anti-Air, Bullet, Long Range | To hit: 17
      Effect: Chest mounted cannon. Targets a single opponent.
   2. 4-Beam Gun
+     Energy cost: 15
      Damage: 150 | Type: Ranged, Anti-Air, Laser | To hit: 17
      Effect: Chest mounted energy gun. Targets up to four opponents. Damage is
      split between targets.
   3. Energy Shield
+     Energy cost: 5
      Shield health: 300 | Activation: Active
      Effect: Curved energy shield. Blocks 300 damage before dispersing.
   4. Iron Claw
+     Energy cost: 1
      Damage: 200 | Type: Melee, Anti-Air | To hit: 19
      Effect: Wing claw attack. Targets a single opponent.
 
@@ -4827,19 +5473,24 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 20
   Health: 300 | Armor: 23 | Defense: 28
+  Energy: 35 | Energy recharge: 4
   Speed: 315 | Reaction: 15 | Range: 500 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Gun
+     Energy cost: 6
      Damage: 200 | Type: Ranged, Laser | To hit: 17
      Effect: Head mounted gun. Targets a single opponent.
   2. Multi Radar
+     Energy cost: 2
      To-hit increase: 20
      Effect: Increases hit rate by 20 for three turns.
   3. Turbine
+     Energy cost: 1
      Reaction increase: 10 | Activation: Active
      Effect: Increase reaction for self. 10 to reaction for three turns.
   4. Armor Claw
+     Energy cost: 1
      Damage: 230 | Type: Melee | To hit: 14
      Effect: Claw attack. Targets a single opponent.
 
@@ -4859,23 +5510,28 @@ PURCHASE & BUILD REFERENCE
 CAU base: Trinity Liger
   Type: Liger | Size: Large | Required level: 22
   Health: 350 | Armor: 23 | Defense: 28
+  Energy: 35 | Energy recharge: 4
   Speed: 295 | Reaction: 16 | Range: 500 | Carry capacity: 25
   Listed base/component Zoids: Trinity Liger
 
 FIXED WEAPONS & SYSTEMS
   1. Beam Gun
+     Energy cost: 6
      Damage: 280 | Type: Ranged, Laser | To hit: 17
      Effect: Head mounted gun. Targets a single opponent.
   2. Fast Gatling
+     Energy cost: 8
      Damage: 200 | Type: Ranged, Bullet, Close Range | To hit: 17
      Effect: Back mounted twin gatling guns. Targets up to two opponents.
      Shoots two bursts that split the damage between them.
   3. Micro Missile
+     Energy cost: 16
      Damage: 180 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Lower back missile pods. Targets an area 90m by 90m. Targets in
      the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   4. Dozer Claw
+     Energy cost: 2
      Damage: 250 | Type: Melee | To hit: 15
      Effect: Claw attack. Targets a single opponent.
 
@@ -4894,26 +5550,31 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Extra Large | Required level: 30
   Health: 1500 | Armor: 28 | Defense: 100
+  Energy: 100 | Energy recharge: 10
   Speed: 40 | Reaction: 4 | Range: 400 | Carry capacity: 180
   Listed base/component Zoids: Ultra Saurus
 
 FIXED WEAPONS & SYSTEMS
   1. 8-Shot Missile Pod
+     Energy cost: 10
      Damage: 200 | Type: Ranged, Homing, Explosive | To hit: 18
      Effect: Chest mounted missile pods. Targets an area 150m by 150m.
      Opponents in the area of effect must make a reaction save against the
      attack roll. Successful saves take no damage.
   2. 3-Shot Mortar
+     Energy cost: 25
      Damage: 400 | Type: Ranged, Explosive | To hit: 12
      Effect: Back mounted mortar. Targets a horizontal area 60m by 120m.
      Minimum range of 200m. Opponents in the area of effect must make a
      reaction save against the attack roll. Successful saves take no damage.
   3. Chest Mortar
+     Energy cost: 15
      Damage: 180 | Type: Ranged, Explosive | To hit: 15
      Effect: Chest mounted mortar. Targets up to two opponents. Shoots two
      mortar rounds dealing 90 explosive.
      Source damage note: 180 explosive
   4. Hyper Bite Fang
+     Energy cost: 5
      Damage: 300 | Type: Melee, Piercing | To hit: 10
      Effect: Bite attack. Targets a single opponent.
 
@@ -4932,17 +5593,21 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Extra Large | Required level: 28
   Health: 1300 | Armor: 28 | Defense: 100
+  Energy: 80 | Energy recharge: 8
   Speed: 50 | Reaction: 4 | Range: 400 | Carry capacity: 200
 
 FIXED WEAPONS & SYSTEMS
   1. 8-Shot Missile Pod
+     Energy cost: 10
      Damage: 200 | Type: Ranged, Explosive, Homing | To hit: 18
      Effect: Chest mounted missile pods. Targets an area 150m by 150m.
   2. Linear Cannon
+     Energy cost: 20
      Damage: 280 | Type: Ranged, Explosive | To hit: 12
      Effect: Shoulder mounted cannon. Targets up to two opponents. Shoots two
      rounds that split the damage.
   3. Hyper Fang
+     Energy cost: 5
      Damage: 300 | Type: Melee, Piercing | To hit: 10
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -4962,20 +5627,25 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 6
   Health: 140 | Armor: 20 | Defense: 18
+  Energy: 25 | Energy recharge: 3
   Speed: 195 | Reaction: 12 | Range: 600 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
   1. Strike Laser Claw
+     Energy cost: 3
      Damage: 100 | Type: Melee, Energy | To hit: 14
      Effect: Claw energy attack. Targets a single opponent.
   2. Hand Gun
+     Energy cost: 4
      Damage: 65 | Type: Ranged, Bullet | To hit: 16
      Effect: Hand mounted guns. Targets up to two opponents. Shoots two bursts
      that split the damage.
   3. Tail Rifle
+     Energy cost: 3
      Damage: 100 | Type: Ranged, Bullet, Long Range | To hit: 18
      Effect: Tail sniper rifle. Targets a single opponent.
   4. Bite Fang
+     Energy cost: 0
      Damage: 80 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
 
@@ -4994,22 +5664,27 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Medium | Required level: 14
   Health: 250 | Armor: 25 | Defense: 33
+  Energy: 35 | Energy recharge: 2
   Speed: 70 | Reaction: 10 | Range: 500 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
   1. Medium Bore Beam Cannon
+     Energy cost: 7
      Damage: 180 | Type: Ranged, Laser | To hit: 17
      Effect: Back mounted energy cannon. Targets a single opponent.
   2. Missile Launcher
+     Energy cost: 8
      Damage: 60 | Type: Ranged, Explosive | To hit: 18
      Effect: Back mounted missile pod. Targets an area 60m by 60m. Opponents
      in the area of effect must make a reaction save against the attack roll.
      Successful saves take no damage.
   3. Sound Wave Cannon
+     Energy cost: 15
      Damage: 150 | Type: Ranged, Pilot, Sonic | To hit: 15
      Effect: Launch sound waves. Targets a single opponent. Opponents become
      disoriented and have disadvantage on attack rolls. Lasts for three turns.
   4. Go for Broke
+     Energy cost: 2
      Damage: 150 | Type: Melee | To hit: 15
      Effect: Ramming attack. Targets a single opponent.
 
@@ -5029,13 +5704,16 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Small | Required level: 3
   Health: 60 | Armor: 14 | Defense: 10
+  Energy: 10 | Energy recharge: 2
   Speed: 2800 | Reaction: 22 | Range: 600 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
   1. Laser Gun
+     Energy cost: 3
      Damage: 27 | Type: Ranged, Anti-Air, Laser | To hit: 18
      Effect: Shoulder mounted energy gun. Targets a single opponent.
   2. Hyper Claw
+     Energy cost: 1
      Damage: 65 | Type: Melee, Anti-Air | To hit: 15
      Effect: Claw attack. Targets a single opponent.
   3. No fixed weapon/system listed
@@ -5056,24 +5734,30 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Large | Required level: 8
   Health: 220 | Armor: 23 | Defense: 15
+  Energy: 25 | Energy recharge: 3
   Speed: 240 | Reaction: 15 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Zaber Fang Old
 
 FIXED WEAPONS & SYSTEMS
   1. 3 Barrel Shock Cannon
+     Energy cost: 0
      Damage: 120 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted triple barrled cannon. Targets a single opponent.
   2. 20mm
+     Energy cost: 3
      Damage: 120 | Type: Ranged, Particle | To hit: 17
      Effect: Shoulder mounted lasers. Targets a single opponent.
   3. Laser Machine Gun
+     Energy cost: 1
      Damage: 45 | Type: Ranged, Laser, Close Range | To hit: 17
   4. Killer Saber
+     Energy cost: 2
      Damage: 140 | Type: Melee | To hit: 13
      Effect: Front claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Weapon and Assist | Equipment: Double Beam Cannon
+     Energy cost: 6
      Damage: 120 | Type: Ranged, Laser | To hit: 18 | Weight: 15
      Effect: Back mounted removable cannon. Targets a single opponent. (Zaber
      Fang Only)
@@ -5091,18 +5775,22 @@ PURCHASE & BUILD REFERENCE
 CAU base: Zaber Fang
   Type: Tiger | Size: Large | Required level: 10
   Health: 230 | Armor: 23 | Defense: 17
+  Energy: 25 | Energy recharge: 3
   Speed: 250 | Reaction: 15 | Range: 400 | Carry capacity: 40
   Listed base/component Zoids: Zaber Fang
 
 FIXED WEAPONS & SYSTEMS
   1. 3 Barrel Shock Cannon
+     Energy cost: 0
      Damage: 120 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted triple barrel cannon. Targets a single opponent.
   2. 8-Missile Pod
+     Energy cost: 10
      Damage: 75 | Type: Ranged, Explosive, Homing | To hit: 18
      Effect: Back mounted missile pod. Targets up to four opponents. Shoots
      four missiles with the damage split between them.
   3. Killer Saber
+     Energy cost: 1
      Damage: 160 | Type: Melee | To hit: 13
      Effect: Bite attack. targets a single opponent
   4. No fixed weapon/system listed
@@ -5123,23 +5811,28 @@ PURCHASE & BUILD REFERENCE
 CAU base: Zaber Fang
   Type: Tiger | Size: Large | Required level: 13
   Health: 250 | Armor: 23 | Defense: 22
+  Energy: 25 | Energy recharge: 3
   Speed: 240 | Reaction: 16 | Range: 500 | Carry capacity: 50
   Listed base/component Zoids: Zaber Fang
 
 FIXED WEAPONS & SYSTEMS
   1. 3 Barrel Shock Cannon
+     Energy cost: 0
      Damage: 120 | Type: Ranged, Explosive | To hit: 16
      Effect: Chest mounted triple barrel cannon. Targets a single opponent.
   2. 20mm
+     Energy cost: 3
      Damage: 60 | Type: Ranged, Laser | To hit: 17
      Effect: Shoulder mounted lasers. Targets a single opponent.
   3. Killer Saber
+     Energy cost: 1
      Damage: 160 | Type: Melee | To hit: 13
      Effect: Front claws attack. Targets a single opponent.
   4. No fixed weapon/system listed
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Weapon and Assist | Equipment: Double Beam Cannon
+     Energy cost: 6
      Damage: 120 | Type: Ranged, Laser | To hit: 18 | Weight: 15
      Effect: Back mounted removable cannon. Targets a single opponnent. (Zaber
      Fang Only)
@@ -5156,21 +5849,26 @@ PURCHASE & BUILD REFERENCE
 CAU base: Zaber Fang
   Type: Tiger | Size: Large | Required level: 11
   Health: 220 | Armor: 23 | Defense: 20
+  Energy: 25 | Energy recharge: 3
   Speed: 240 | Reaction: 16 | Range: 500 | Carry capacity: 40
   Listed base/component Zoids: Zaber Fang
 
 FIXED WEAPONS & SYSTEMS
   1. 3 Barrel Shock Cannon
+     Energy cost: 0
      Damage: 120 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted triple barrel cannon. Targets a single opponent.
   2. Beam Gun
+     Energy cost: 3
      Damage: 60 | Type: Ranged, Laser | To hit: 17
      Effect: Back mounted energy gun. Targets a single opponent.
   3. Beam Gatling
+     Energy cost: 10
      Damage: 90 | Type: Ranged, Laser, Close Range | To hit: 16
      Effect: Target up to two opponents. Shoots two bursts of energy that
      split the damage.
   4. Killer Saber
+     Energy cost: 1
      Damage: 160 | Type: Melee | To hit: 13
      Effect: Claw attack. Targets a single opponent.
 
@@ -5190,17 +5888,21 @@ PURCHASE & BUILD REFERENCE
 CAU base: Zaber Fang
   Type: Tiger | Size: Large | Required level: 8
   Health: 230 | Armor: 23 | Defense: 20
+  Energy: 25 | Energy recharge: 3
   Speed: 250 | Reaction: 15 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Zaber Fang AT
 
 FIXED WEAPONS & SYSTEMS
   1. 3 Barrel Shock Cannon
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted triple barrel cannon. Targets a single opponent.
   2. Short Range Cannon
+     Energy cost: 2
      Damage: 160 | Type: Ranged, Explosive | To hit: 13
      Effect: Back mounted cannon. Targets a single opponent.
   3. Killer Saber
+     Energy cost: 1
      Damage: 160 | Type: Melee | To hit: 13
      Effect: Bite attack. Targets a single opponent.
   4. No fixed weapon/system listed
@@ -5221,25 +5923,31 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Large | Required level: 6
   Health: 200 | Armor: 22 | Defense: 10
+  Energy: 23 | Energy recharge: 3
   Speed: 200 | Reaction: 15 | Range: 300 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
   1. 3 Shock Cannon
+     Energy cost: 0
      Damage: 80 | Type: Ranged, Explosive | To hit: 14
      Effect: Chest mounted triple barreled cannon. Targets a single opponent.
   2. 20mm
+     Energy cost: 3
      Damage: 60 | Type: Ranged, Laser | To hit: 17
      Effect: Shoulder mounted laser gun. Targets a single opponent. Ranged
   3. Laser Machine Gun
+     Energy cost: 2
      Damage: 45 | Type: Ranged, Laser | To hit: 17
      Effect: Chest mounted laser gun. Targets up to two opponents. Two bursts
      of energy bolts that split that damage between them.
   4. Killer Saber
+     Energy cost: 1
      Damage: 130 | Type: Melee | To hit: 13
      Effect: Front claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
   1. Slot type: Weapon and Assist | Equipment: Double Beam Cannon
+     Energy cost: 6
      Damage: 120 | Type: Ranged, Laser | To hit: 18 | Weight: 15
      Effect: Back mounted removable cannon. Targets a single opponent. (Only
      usable by Zaber Fang Old)
@@ -5259,11 +5967,13 @@ APPENDIX - TRANSPORT ZOIDS
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Extra Large | Required level: 16
   Health: 800 | Armor: 28 | Defense: 35
+  Energy: 80 | Energy recharge: 8
   Speed: 120 | Reaction: 10 | Range: 1500 | Carry capacity: 850
   Hangar capacity: 12 | Hangar size: Large Large
 
 FIXED WEAPONS & SYSTEMS
   1. Assisting Fire
+     Energy cost: 0
      Damage: 250 | Type: Ranged, Homing, Explosive | To hit: 13
      Effect: Front mounted rocket pods. Targets a single opponent.
   2. No fixed weapon/system listed
@@ -5281,11 +5991,13 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
   Type: Insect | Size: Medium | Required level: 6
   Health: 200 | Armor: 28 | Defense: 15
+  Energy: 20 | Energy recharge: 1
   Speed: 135 | Reaction: 4 | Range: 500 | Carry capacity: 100
   Hangar capacity: 2 | Hangar size: Medium
 
 FIXED WEAPONS & SYSTEMS
   1. Assisting Fire
+     Energy cost: 0
      Damage: 140 | Type: Ranged, Laser | To hit: 10
      Effect: Front mounted energy guns. Targets a single opponent
   2. No fixed weapon/system listed
@@ -5303,11 +6015,13 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
   Type: Insect | Size: Extra Large | Required level: 10
   Health: 350 | Armor: 25 | Defense: 30
+  Energy: 50 | Energy recharge: 5
   Speed: 410 | Reaction: 3 | Range: 1500 | Carry capacity: 500
   Hangar capacity: 6 | Hangar size: Large
 
 FIXED WEAPONS & SYSTEMS
   1. Assisting Fire
+     Energy cost: 0
      Damage: 180 | Type: Ranged, Laser | To hit: 15
      Effect: Front mounted energy guns. Targets a single opponent.
   2. No fixed weapon/system listed
@@ -5325,11 +6039,13 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Extra Large | Required level: 18
   Health: 1000 | Armor: 28 | Defense: 35
+  Energy: 1000 | Energy recharge: 10
   Speed: 827 | Reaction: 2 | Range: 2000 | Carry capacity: 950
   Hangar capacity: 24 | Hangar size: Extra Large
 
 FIXED WEAPONS & SYSTEMS
   1. Assisting Fire
+     Energy cost: 0
      Damage: 350 | Type: Ranged, Homing, Explosive | To hit: 15
      Effect: Front mounted rocket pods. Targets a single opponent.
   2. No fixed weapon/system listed
