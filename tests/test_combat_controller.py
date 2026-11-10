@@ -51,11 +51,11 @@ class CombatControllerTests(unittest.TestCase):
         character = return_equipment_to_inventory(character, copy_id, self.catalog)
         character = acquire_zoid(character, "Liger Zero", self.catalog)
         character = switch_zoid(character, character.owned_zoids[-1].id, catalog=self.catalog)
-        self.assertEqual(character.current_energy, 17)
+        self.assertEqual(character.current_energy, 18)
         character = equip_owned_equipment(character, "right", copy_id, self.catalog)
         self.assertEqual(self.condition(character, "right").last_roll, 10)
         character = self.act(character, slot="right")
-        self.assertEqual(character.current_energy, 5)
+        self.assertEqual(character.current_energy, 6)
         character = switch_zoid(character, old_id, catalog=self.catalog)
         self.assertEqual(character.current_energy, 8)
 
@@ -85,7 +85,7 @@ class CombatControllerTests(unittest.TestCase):
         self.assertEqual(result.inventory, before.inventory)
         self.assertEqual((result.current_health, result.gold, result.build.shield_adjustment), (27, 123, 19))
         capped = start_turn(replace(result, current_energy=19), self.catalog).character
-        self.assertEqual(capped.current_energy, 20)
+        self.assertEqual(capped.current_energy, 21)
         self.assertEqual(start_turn(capped, self.catalog).character, capped)
 
     def test_economized_reduces_spending_demolitionist_is_manual_and_vent_is_rejected(self):
@@ -145,6 +145,6 @@ class CombatControllerTests(unittest.TestCase):
         self.assertEqual(self.roll.call_count, 1)
 
     def test_invalid_current_energy_rejected(self):
-        for energy in (-1, True, 1.5, 21):
+        for energy in (-1, True, 1.5, 22):
             with self.assertRaises(RuleError):
                 validate_character(replace(self.pilot(), current_energy=energy), self.catalog)

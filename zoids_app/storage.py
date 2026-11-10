@@ -166,7 +166,8 @@ class CharacterStore:
                 def migrate_condition(condition):
                     condition.pop("heat", None)
                 def migrate_owned(owned):
-                    owned["current_energy"] = self.catalog.find("zoids", owned["active_form"])["energy"] // 2
+                    owned["current_energy"] = (self.catalog.find("zoids", owned["active_form"])["energy"]
+                                               + values["build"].get("pilot_level", 1)) // 2
                     for weapon in owned.get("weapon_conditions", []):
                         migrate_condition(weapon["condition"])
                     for component in owned.get("fusion_components") or []:

@@ -23,18 +23,40 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
         pilot = acquire_equipment(pilot, name, catalog=self.catalog)
         return equip_owned_equipment(pilot, slot, pilot.inventory[-1].id, self.catalog)
 
+    def test_maximum_adds_actual_level_not_type_bonus_and_leveling_does_not_refill(self):
+        build = CharacterBuild("Saberlion", pilot_level=10, abilities=("Lion Type 2",),
+                               equipment=(None, None, None, "Energy Reinforcer Unit"))
+        stats = calculate_stats(build, self.catalog)
+        self.assertEqual(stats["effective_level"], 20)
+        self.assertEqual(stats["energy"], 20 + 10 + 20)
+        plain = calculate_stats(replace(build, abilities=()), self.catalog)
+        self.assertEqual(stats["energy"], plain["energy"])
+        self.assertEqual(stats["energy_recharge"], plain["energy_recharge"])
+        pilot = acquire_zoid(replace(new_character(), build=CharacterBuild("", pilot_level=10)),
+                             "Saberlion", self.catalog)
+        self.assertEqual(pilot.current_energy, 15)
+        leveled = validate_character(replace(pilot, build=replace(pilot.build, pilot_level=12)), self.catalog)
+        self.assertEqual(leveled.current_energy, 15)
+        self.assertEqual(rest(leveled, self.catalog).character.current_energy, 16)
+        self.assertEqual(calculate_stats(leveled.build, self.catalog)["energy_recharge"], 2)
+        with tempfile.TemporaryDirectory() as directory:
+            store = CharacterStore(Path(directory) / "save.db", self.catalog)
+            loaded = store.load(store.save(leveled).id)
+            self.assertEqual(loaded.current_energy, 15)
+            self.assertEqual(calculate_stats(loaded.build, self.catalog)["energy"], 32)
+
     def test_new_and_unspecified_energy_default_to_half_maximum_rounded_down(self):
-        for name, expected in (("Saberlion", 10), ("Zaber Fang", 12)):
+        for name, expected in (("Saberlion", 10), ("Zaber Fang", 13)):
             pilot = acquire_zoid(new_character(), name, self.catalog)
             self.assertEqual(pilot.current_energy, expected)
             self.assertEqual(pilot.owned_zoids[0].current_energy, expected)
         pilot = self.equip(pilot, "Energy Reinforcer Unit", "chest")
         owner = replace(pilot.owned_zoids[0], current_energy=None)
         pilot = validate_character(replace(pilot, current_energy=None, owned_zoids=(owner,)), self.catalog)
-        self.assertEqual(pilot.current_energy, 22)  # Equipped maximum 45.
+        self.assertEqual(pilot.current_energy, 23)  # Equipped maximum 46, including pilot level 1.
         pilot = acquire_zoid(pilot, "Berserk Fury", self.catalog)
         self.assertEqual(pilot.owned_zoids[-1].current_energy, 20)
-        self.assertEqual(pilot.current_energy, 22)
+        self.assertEqual(pilot.current_energy, 23)
 
     def test_rest_sets_half_equipped_maximum_from_above_and_below(self):
         pilot = acquire_zoid(new_character(), "Zaber Fang", self.catalog)
@@ -47,7 +69,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
             for energy in (0, 21, 22, 23, 45):
                 before = validate_character(replace(pilot, current_energy=energy), self.catalog)
                 rested = rest(before, self.catalog).character
-                expected = validate_character(replace(before, current_energy=22), self.catalog)
+                expected = validate_character(replace(before, current_energy=23), self.catalog)
                 self.assertEqual(rested, expected)
                 self.assertEqual(rested.owned_zoids[-1], before.owned_zoids[-1])
                 self.assertEqual(rest(rested, self.catalog).character, rested)
@@ -64,7 +86,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
                 loaded = store.load(saved.id)
                 self.assertEqual(loaded.current_energy, energy)
                 rested = store.save(rest(loaded, self.catalog).character)
-                self.assertEqual(store.load(rested.id).current_energy, 12)
+                self.assertEqual(store.load(rested.id).current_energy, 13)
 
     def test_all_economized_ranks_reduce_only_ranged_costs_to_zero(self):
         build = CharacterBuild("Berserk Fury", equipment=("Particle Cannon", "Mini Laser", "Energy Container", None))
@@ -106,18 +128,18 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
         pilot = self.equip(pilot, "Energy Reinforcer Unit", "chest")
         stats = calculate_stats(pilot.build, self.catalog)
         self.assertEqual(stats["pilot"]["health"], baseline["pilot"]["health"] + 100)
-        self.assertEqual(stats["energy"], 60)
+        self.assertEqual(stats["energy"], 140)
         self.assertEqual(stats["carry_load"], 6)
         self.assertEqual((pilot.current_health, pilot.current_energy), (health, energy))
         self.assertFalse(any(pilot.build.equipment_active))
         self.assertEqual(calculate_stats(replace(pilot.build, equipment_active=(True,) * 4), self.catalog), stats)
-        pilot = replace(pilot, current_energy=59)
+        pilot = replace(pilot, current_energy=139)
         pilot = start_turn(pilot, self.catalog).character
-        self.assertEqual(pilot.current_energy, 60)
+        self.assertEqual(pilot.current_energy, 140)
         pilot = equip_owned_equipment(pilot, "chest", None, self.catalog)
-        self.assertEqual(pilot.current_energy, 40)
+        self.assertEqual(pilot.current_energy, 120)
         pilot = equip_owned_equipment(pilot, "chest", pilot.inventory[-1].id, self.catalog)
-        self.assertEqual(pilot.current_energy, 40)
+        self.assertEqual(pilot.current_energy, 120)
 
     def test_equipped_energy_bonus_survives_save_switch_and_inventory_return(self):
         pilot = acquire_zoid(new_character(), "Berserk Fury", self.catalog)
@@ -132,7 +154,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
             pilot = switch_zoid(pilot, identity, catalog=self.catalog)
             self.assertEqual(pilot.current_energy, 60)
             pilot = return_equipment_to_inventory(pilot, item, self.catalog)
-            self.assertEqual(pilot.current_energy, 40)
+            self.assertEqual(pilot.current_energy, 41)
 
     def test_container_activation_is_capped_and_does_not_roll_or_change_other_resources(self):
         pilot = acquire_zoid(new_character(), "Berserk Fury", self.catalog)
@@ -143,7 +165,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
             used = weapon_action(replace(pilot, current_energy=0), "chest", "use", catalog=self.catalog).character
             self.assertEqual(used.current_energy, 20)
             used = weapon_action(replace(used, current_energy=55), "chest", "use", catalog=self.catalog).character
-            self.assertEqual(used.current_energy, 60)
+            self.assertEqual(used.current_energy, 61)
             again = weapon_action(used, "chest", "use", catalog=self.catalog).character
             self.assertEqual(again, used)
             self.assertEqual((used.current_health, used.gold, used.inventory), (pilot.current_health, pilot.gold, pilot.inventory))
@@ -191,7 +213,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
         stats = calculate_stats(pilot.build, self.catalog)
         self.assertEqual(stats["weapons"][5]["energy_cost"], 6)
         used = weapon_action(pilot, "left", "use", catalog=self.catalog).character
-        self.assertEqual(used.current_energy, 6)
+        self.assertEqual(used.current_energy, 7)
 
     def test_form_switch_clamps_without_refill(self):
         pilot = acquire_zoid(new_character(), "Berserk Fury", self.catalog)
@@ -201,9 +223,9 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
         self.assertEqual(pilot.current_energy, 20)
         pilot = replace(pilot, current_energy=50)
         pilot = switch_zoid(pilot, identity, "zoids:berserk_fury", self.catalog)
-        self.assertEqual(pilot.current_energy, 40)
+        self.assertEqual(pilot.current_energy, 41)
         pilot = switch_zoid(pilot, identity, "zoids:berserk_fury_z_cau", self.catalog)
-        self.assertEqual(pilot.current_energy, 40)
+        self.assertEqual(pilot.current_energy, 41)
 
     def test_v11_export_discards_heat_and_preserves_rolls_damage_and_pilot_options(self):
         pilot = acquire_zoid(new_character(), "Berserk Fury", self.catalog)

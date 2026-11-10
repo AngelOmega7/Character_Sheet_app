@@ -9,6 +9,11 @@ from zoids_app.equipment import (SLOT_COLUMNS, ZOID_EQUIPMENT_COLUMNS,
 
 ROOT = Path(__file__).resolve().parents[1]
 RULES = """ENERGY RULES (energy-v17)
+Maximum Energy = base Zoid Energy + actual pilot level + active Organoid level
++ equipment bonuses. Inactive Organoids add nothing. Activation does not refill
+Energy; deactivation or reducing Organoid level clamps Energy to the new maximum.
+Type abilities' bonus levels do not count. Level increases do not refill current
+Energy or increase EPT. Stat blocks list base Energy before this pilot bonus.
 EPT means Energy Per Turn. Start Turn adds EPT once at the beginning of your
 turn, capped at maximum Energy. New Zoids start at half maximum, rounded down.
 Rest sets current Energy to half the equipped maximum, rounded down, whether

@@ -17,7 +17,7 @@ from .commerce import change_upgrade, detach_cau, purchase_zoid, quote_purchase,
 from .upgrade_rules import UPGRADE_LIMITS, upgrade_price
 from .transport import load_zoid, select_transport
 from .equipment import SLOT_COLUMNS, equipment_template_name, resolved_equipment_name
-from .stats import Upgrades
+from .stats import Upgrades, calculate_stats
 from .storage import CharacterStore
 from .tags import weapon_tags
 
@@ -261,7 +261,7 @@ class CharacterEditor:
                 self.message(str(exc), True)
         self.confirm_switch(action)
 
-    def profile_candidate(self):
+    def profile_candidate(self, clamp_energy=False):
         try:
             level, mental = int(self.level.value), int(self.mental.value)
         except (ValueError, TypeError) as exc:
@@ -287,7 +287,11 @@ class CharacterEditor:
         build = replace(self.character.build, pilot_level=level, mental=mental,
                         pilot_style=self.style.value, upgrades=upgrades,
                         organoid_color=self.organoid_color.value, organoid_level=organoid_level,
-                        organoid_enabled=self.organoid_enabled.value, shield_adjustment=shields)
+                         organoid_enabled=self.organoid_enabled.value, shield_adjustment=shields)
+        if clamp_energy and build.zoid:
+            maximum = calculate_stats(build, self.catalog)["energy"]
+            if maximum < calculate_stats(self.character.build, self.catalog)["energy"]:
+                energy = min(energy, maximum)
         return validate_character(replace(self.character, name=self.name.value, build=build, current_health=health,
                                           current_energy=energy, gold=gold, pilot_details=details, transport_notes=self.transport_notes.value), self.catalog)
 
@@ -469,7 +473,7 @@ class CharacterEditor:
         try:
             if self.organoid_color.value == "None":
                 self.organoid_enabled.value = False
-            self.character = self.profile_candidate()
+            self.character = self.profile_candidate(clamp_energy=True)
             self.dirty = True
             self.render()
             self.message("Organoid settings applied. Current health preserved. Unsaved changes.")

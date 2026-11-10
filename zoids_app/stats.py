@@ -217,7 +217,9 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         for e, active in zip(equipment, build.equipment_active)
     ]
     pilot["health"] += sum(e.get("maximum_health_bonus", 0) for e, enabled in zip(equipment, equipment_enabled) if enabled)
-    maximum_energy = zoid["energy"] + sum(e.get("maximum_energy_bonus", 0) for e, enabled in zip(equipment, equipment_enabled) if enabled)
+    maximum_energy = (zoid["energy"] + build.pilot_level
+                      + (build.organoid_level if build.organoid_enabled else 0)
+                      + sum(e.get("maximum_energy_bonus", 0) for e, enabled in zip(equipment, equipment_enabled) if enabled))
     # Only fixed slots 2 and 3 have these stat-modifier fields in the source.
     fixed_modifiers_enabled = [
         active or contains("Passive", col(zoid, activation_column))

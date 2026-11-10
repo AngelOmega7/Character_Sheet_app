@@ -425,7 +425,7 @@ def acquire_zoid(character, zoid, catalog=None, *, host_id=None):
                               upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0)
         health = calculate_stats(fresh_build, catalog)["pilot"]["health"]
         owned = OwnedZoid(str(uuid4()), base, (FormLoadout(base),), base, Upgrades(), (), health)
-        owned = replace(owned, current_energy=record["energy"] // 2)
+        owned = replace(owned, current_energy=calculate_stats(fresh_build, catalog)["energy"] // 2)
         roster = (*character.owned_zoids, owned)
     if not character.owned_zoids:
         return validate_character(replace(character, owned_zoids=roster, active_zoid_id=owned.id,

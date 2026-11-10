@@ -722,14 +722,14 @@ class EditorTests(unittest.TestCase):
         editor.weapon_action("left", "use")
         self.assertFalse(editor.character.inventory[0].condition.broken)
         self.assertEqual(editor.character.current_energy, 8)
-        self.assertEqual(editor.energy_bar.value, 0.4)
+        self.assertEqual(editor.energy_bar.value, 8 / 21)
         self.assertEqual(editor.health_bar.value, 27 / calculate_stats(editor.character.build)["pilot"]["health"])
         before = editor.character
         editor.weapon_action("left", "use")
         self.assertEqual(editor.character, before)
         editor.start_turn()
         self.assertEqual(editor.character.current_energy, 10)
-        self.assertEqual(editor.energy_bar.value, 0.5)
+        self.assertEqual(editor.energy_bar.value, 10 / 21)
         self.assertEqual((editor.character.current_health, editor.character.gold, editor.character.build.shield_adjustment), (27, 20000, 9))
         editor.save()
         self.assertEqual(self.store.load(editor.character.id), editor.character)
@@ -839,22 +839,52 @@ class EditorTests(unittest.TestCase):
         self.acquire_item("Energy Container")
         editor.change_equipment("chest", editor.character.inventory[-1].id)
         stats = calculate_stats(editor.character.build, editor.catalog)
-        self.assertEqual(stats["energy"], 40)
+        self.assertEqual(stats["energy"], 41)
         self.assertEqual(editor.health_bar.value, editor.character.current_health / stats["pilot"]["health"])
         editor.energy_input.value = "5"
         editor.apply_resources()
         with patch("zoids_app.combat_controller.random.randint") as roll:
             editor.activate(3, True)
             self.assertEqual(editor.character.current_energy, 25)
-            self.assertEqual(editor.energy_bar.value, 25 / 40)
+            self.assertEqual(editor.energy_bar.value, 25 / 41)
             editor.render()
             self.assertEqual(editor.character.current_energy, 25)
             editor.weapon_action("chest", "use")
-            self.assertEqual(editor.character.current_energy, 40)
+            self.assertEqual(editor.character.current_energy, 41)
             self.assertEqual(editor.energy_bar.value, 1)
             editor.save()
-            self.assertEqual(self.store.load(editor.character.id).current_energy, 40)
+            self.assertEqual(self.store.load(editor.character.id).current_energy, 41)
             roll.assert_not_called()
+
+    def test_organoid_energy_bonus_activation_reduction_and_save(self):
+        editor = self.editor
+        base = calculate_stats(editor.character.build, editor.catalog)
+        original_energy = editor.character.current_energy
+        for color in ("Black", "White", "Red", "Blue"):
+            editor.organoid_color.value = color
+            editor.organoid_level.value = "10"
+            editor.organoid_enabled.value = True
+            editor.apply_organoid()
+            stats = calculate_stats(editor.character.build, editor.catalog)
+            self.assertEqual(stats["energy"], base["energy"] + 10)
+            self.assertEqual(stats["energy_recharge"], base["energy_recharge"])
+            self.assertEqual(editor.character.current_energy, original_energy)
+        editor.energy_input.value = str(base["energy"] + 10)
+        editor.apply_resources()
+        editor.organoid_level.value = "5"
+        editor.apply_organoid()
+        self.assertEqual(editor.character.current_energy, base["energy"] + 5)
+        editor.save()
+        loaded = self.store.load(editor.character.id)
+        self.assertEqual(calculate_stats(loaded.build, editor.catalog)["energy"], base["energy"] + 5)
+        editor.organoid_enabled.value = False
+        editor.apply_organoid()
+        self.assertEqual(editor.character.current_energy, base["energy"])
+        self.assertEqual(calculate_stats(editor.character.build, editor.catalog)["energy"], base["energy"])
+        editor.organoid_enabled.value = True
+        editor.apply_organoid()
+        self.assertEqual(editor.character.current_energy, base["energy"])
+
     def test_rest_button_sets_half_energy_from_both_directions(self):
         editor = self.editor
         self.acquire_item("Energy Reinforcer Unit")
@@ -863,7 +893,7 @@ class EditorTests(unittest.TestCase):
             editor.energy_input.value = value
             editor.rest()
             self.assertEqual(editor.character.current_energy, 20)
-            self.assertEqual(editor.energy_bar.value, 0.5)
+            self.assertEqual(editor.energy_bar.value, 20 / 41)
             self.assertEqual(editor.energy_input.value, "20")
         editor.save()
         self.assertEqual(self.store.load(editor.character.id).current_energy, 20)
