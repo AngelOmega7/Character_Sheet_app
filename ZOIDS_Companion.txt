@@ -16,6 +16,37 @@ current Energy to that value even if it was higher before resting.
 Weapon effects and source damage notes preserve the catalog wording. Build
 requirements are listed where available.
 
+ENERGY RULES (energy-v17)
+EPT means Energy Per Turn. Start Turn adds EPT once at the beginning of your
+turn, capped at maximum Energy. New Zoids start at half maximum, rounded down.
+Rest sets current Energy to half the equipped maximum, rounded down, whether
+it was previously higher or lower. Rest does not heal or repair the Zoid.
+Use spends the displayed Energy Cost. Insufficient Energy or a broken weapon
+prevents use; spending exactly your remaining Energy is allowed. Zero-cost
+items remain usable at zero Energy. Heat, overheating, and Vent are retired;
+using a weapon no longer breaks it. Utility systems also pay their listed cost.
+Equipping, loading, repairing, and changing forms do not recharge Energy.
+CAU forms share their chassis's pool; a lower maximum clamps current Energy.
+
+Economized Shooting has four ranks: while active, reduce Ranged-tagged weapon
+costs by 2/4/6/8, minimum zero. Higher ranks replace lower ranks, rather than
+stacking. This applies to fixed, generic, and Zoid-specific weapons.
+Demolitionist: Once per Rest, you may completely fill your Zoid's Energy.
+Track that limit at the table and set current Energy to its maximum when used.
+
+EPT upgrades add +1 EPT each with no cap. Rank N costs 10,000g x 2^(N-1):
+10,000g, 20,000g, 40,000g, 80,000g, and so on. Removing a rank refunds its
+full purchase price. These chassis upgrades follow CAU forms and do not
+increase maximum Energy, refill current Energy, or change the Rest fraction.
+Listed EPT and costs are base catalog values before upgrades or abilities.
+
+Physics Reinforcer Unit: passive, weight 3, +100 maximum Health after stat
+multipliers; does not heal. Energy Reinforcer Unit: passive, weight 3,
++20 maximum Energy; does not refill Energy. Removing it clamps current Energy.
+Energy Container: active, weight 10, restores 20 Energy immediately, capped at
+maximum. No usage limit or consumption is specified. All three cost 0 Energy.
+Compatible equipped Reinforcer copies contribute their bonuses independently.
+
 CONTENTS - BASE ZOID FAMILIES
 001  2-Arm Lizard
 002  Allosaurer
@@ -180,7 +211,7 @@ T01-T04  Transport Zoids (appendix)
 Classification: Fuzor
   Type: BLOX | Size: Medium | Required level: 12
   Health: 240 | Armor: 22 | Defense: 28
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 130 | Reaction: 12 | Range: 600 | Carry capacity: 30
   Listed base/component Zoids: Leoblaze, Unenlagia
 
@@ -218,7 +249,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Medium | Required level: 7
   Health: 120 | Armor: 22 | Defense: 10
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 170 | Reaction: 15 | Range: 150 | Carry capacity: 20
   Listed base/component Zoids: Godos
 
@@ -251,7 +282,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Small | Required level: 7
   Health: 100 | Armor: 20 | Defense: 9
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 190 | Reaction: 16 | Range: 1800 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -291,7 +322,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Small | Required level: 2
   Health: 70 | Armor: 23 | Defense: 8
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 180 | Reaction: 16 | Range: 800 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -321,7 +352,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 20
   Health: 380 | Armor: 24 | Defense: 50
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 340 | Reaction: 14 | Range: 450 | Carry capacity: 45
 
 FIXED WEAPONS & SYSTEMS
@@ -361,7 +392,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Berserk Fury
   Type: T-Rex | Size: Large | Required level: 20
   Health: 530 | Armor: 25 | Defense: 75
-  Energy: 50 | Energy recharge: 20
+  Energy: 50 | EPT: 20
   Speed: 600 | Reaction: 16 | Range: 500 | Carry capacity: 50
   Listed base/component Zoids: Berserk Fury
 
@@ -399,7 +430,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Berserk Fury
   Type: T-Rex | Size: Large | Required level: 20
   Health: 380 | Armor: 24 | Defense: 50
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 380 | Reaction: 16 | Range: 500 | Carry capacity: 45
   Listed base/component Zoids: Berserk Fury, Buster Eagle
 
@@ -442,7 +473,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Berserk Fury
   Type: T-Rex | Size: Large | Required level: 20
   Health: 420 | Armor: 26 | Defense: 65
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 290 | Reaction: 13 | Range: 450 | Carry capacity: 40
   Listed base/component Zoids: Berserk Fury
 
@@ -480,7 +511,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Berserk Fury
   Type: T-Rex | Size: Large | Required level: 20
   Health: 420 | Armor: 25 | Defense: 65
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 360 | Reaction: 15 | Range: 360 | Carry capacity: 40
   Listed base/component Zoids: Berserk Fury
 
@@ -516,7 +547,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Medium | Required level: 3
   Health: 150 | Armor: 27 | Defense: 11
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 180 | Reaction: 10 | Range: 350 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
@@ -550,7 +581,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 13
   Health: 280 | Armor: 21 | Defense: 25
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 305 | Reaction: 15 | Range: 400 | Carry capacity: 50
   Listed base/component Zoids: Shield Liger
 
@@ -588,7 +619,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Blade Liger
   Type: Liger | Size: Large | Required level: 16
   Health: 300 | Armor: 23 | Defense: 25
-  Energy: 35 | Energy recharge: 3
+  Energy: 35 | EPT: 3
   Speed: 320 | Reaction: 17 | Range: 400 | Carry capacity: 45
   Listed base/component Zoids: Blade Liger
 
@@ -625,7 +656,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Large
   Health: 400 | Armor: 23 | Defense: 75
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 320 | Reaction: 14 | Range: 500 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -664,7 +695,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 15
   Health: 250 | Armor: 18 | Defense: 15
-  Energy: 30 | Energy recharge: 2
+  Energy: 30 | EPT: 2
   Speed: 350 | Reaction: 16 | Range: 600 | Carry capacity: 30
   Listed base/component Zoids: Redler
 
@@ -703,7 +734,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Extra Large | Required level: 30
   Health: 500 | Armor: 17 | Defense: 40
-  Energy: 40 | Energy recharge: 3
+  Energy: 40 | EPT: 3
   Speed: 90 | Reaction: 7 | Range: 300 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
@@ -742,7 +773,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Medium | Required level: 3
   Health: 130 | Armor: 25 | Defense: 10
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 140 | Reaction: 8 | Range: 300 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
@@ -772,7 +803,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 11
   Health: 210 | Armor: 21 | Defense: 20
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 2000 | Reaction: 18 | Range: 300 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -807,7 +838,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Small | Required level: 2
   Health: 90 | Armor: 28 | Defense: 13
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 100 | Reaction: 8 | Range: 300 | Carry capacity: 25
 
 FIXED WEAPONS & SYSTEMS
@@ -838,7 +869,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Cannon Tortoise
   Type: Reptile | Size: Small | Required level: 3
   Health: 100 | Armor: 28 | Defense: 13
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 80 | Reaction: 7 | Range: 1200 | Carry capacity: 15
   Listed base/component Zoids: Cannon Tortoise
 
@@ -874,7 +905,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Wolf | Size: Medium | Required level: 16
   Health: 200 | Armor: 23 | Defense: 20
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 190 | Reaction: 13 | Range: 1200 | Carry capacity: 30
   Listed base/component Zoids: Command Wolf
 
@@ -913,7 +944,7 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Large | Required level: 13
   Health: 320 | Armor: 22 | Defense: 30
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 1200 | Reaction: 2 | Range: 200 | Carry capacity: 40
   Listed base/component Zoids: Demonshead, Diplogun, Shell Karn, Flyscissors.
 
@@ -952,7 +983,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Wolf | Size: Medium | Required level: 4
   Health: 120 | Armor: 22 | Defense: 10
-  Energy: 18 | Energy recharge: 2
+  Energy: 18 | EPT: 2
   Speed: 210 | Reaction: 14 | Range: 800 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -987,7 +1018,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Command Wolf
   Type: Wolf | Size: Medium | Required level: 8
   Health: 130 | Armor: 22 | Defense: 10
-  Energy: 20 | Energy recharge: 3
+  Energy: 20 | EPT: 3
   Speed: 200 | Reaction: 14 | Range: 800 | Carry capacity: 30
   Listed base/component Zoids: Command Wolf
 
@@ -1021,7 +1052,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Command Wolf
   Type: Wolf | Size: Medium | Required level: 8
   Health: 170 | Armor: 22 | Defense: 12
-  Energy: 23 | Energy recharge: 3
+  Energy: 23 | EPT: 3
   Speed: 200 | Reaction: 14 | Range: 800 | Carry capacity: 30
   Listed base/component Zoids: Command Wolf
 
@@ -1058,7 +1089,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Command Wolf
   Type: Wolf | Size: Medium | Required level: 11
   Health: 180 | Armor: 22 | Defense: 16
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 200 | Reaction: 15 | Range: 800 | Carry capacity: 25
   Listed base/component Zoids: Command Wolf
 
@@ -1095,7 +1126,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Command Wolf
   Type: Wolf | Size: Medium | Required level: 5
   Health: 140 | Armor: 22 | Defense: 12
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 195 | Reaction: 12 | Range: 600 | Carry capacity: 25
   Listed base/component Zoids: Command Wolf
 
@@ -1131,7 +1162,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Medium | Required level: 25
   Health: 400 | Armor: 28 | Defense: 65
-  Energy: 50 | Energy recharge: 3
+  Energy: 50 | EPT: 3
   Speed: 180 | Reaction: 13 | Range: 100 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
@@ -1166,7 +1197,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Medium | Required level: 25
   Health: 380 | Armor: 29 | Defense: 65
-  Energy: 50 | Energy recharge: 3
+  Energy: 50 | EPT: 3
   Speed: 180 | Reaction: 13 | Range: 100 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
@@ -1200,7 +1231,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large | Required level: 13
   Health: 300 | Armor: 28 | Defense: 35
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 400 | Carry capacity: 55
   Listed base/component Zoids: Red Horn
 
@@ -1242,7 +1273,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Dark Horn
   Type: Dinosaur, Land | Size: Large | Required level: 14
   Health: 320 | Armor: 28 | Defense: 35
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 400 | Carry capacity: 50
   Listed base/component Zoids: Dark Horn
 
@@ -1282,7 +1313,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 8
   Health: 130 | Armor: 28 | Defense: 15
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 250 | Reaction: 12 | Range: 300 | Carry capacity: 20
   Listed base/component Zoids: Molga
 
@@ -1313,7 +1344,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large | Required level: 14
   Health: 310 | Armor: 23 | Defense: 43
-  Energy: 37 | Energy recharge: 4
+  Energy: 37 | EPT: 4
   Speed: 240 | Reaction: 12 | Range: 800 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
@@ -1353,7 +1384,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Dark Spiner
   Type: Dinosaur, Land | Size: Large | Required level: 21
   Health: 380 | Armor: 23 | Defense: 75
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 60
   Listed base/component Zoids: Dark Spiner
 
@@ -1393,7 +1424,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large Large | Required level: 33
   Health: 1500 | Armor: 29 | Defense: 35
-  Energy: 120 | Energy recharge: 20
+  Energy: 120 | EPT: 20
   Speed: 90 | Reaction: 8 | Range: 500 | Carry capacity: 70
 
 FIXED WEAPONS & SYSTEMS
@@ -1431,7 +1462,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Extra Large | Required level: 30
   Health: 1000 | Armor: 29 | Defense: 100
-  Energy: 100 | Energy recharge: 10
+  Energy: 100 | EPT: 10
   Speed: 90 | Reaction: 8 | Range: 500 | Carry capacity: 70
 
 FIXED WEAPONS & SYSTEMS
@@ -1469,7 +1500,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Large Large | Required level: 27
   Health: 600 | Armor: 28 | Defense: 75
-  Energy: 50 | Energy recharge: 5
+  Energy: 50 | EPT: 5
   Speed: 185 | Reaction: 15 | Range: 400 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
@@ -1509,7 +1540,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 7
   Health: 150 | Armor: 24 | Defense: 18
-  Energy: 27 | Energy recharge: 3
+  Energy: 27 | EPT: 3
   Speed: 80 | Reaction: 8 | Range: 100 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -1545,7 +1576,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Medium | Required level: 25
   Health: 350 | Armor: 23 | Defense: 75
-  Energy: 35 | Energy recharge: 7
+  Energy: 35 | EPT: 7
   Speed: 240 | Reaction: 18 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -1589,7 +1620,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Large | Required level: 14
   Health: 300 | Armor: 24 | Defense: 25
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 700 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
@@ -1627,7 +1658,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 7
   Health: 150 | Armor: 22 | Defense: 18
-  Energy: 27 | Energy recharge: 3
+  Energy: 27 | EPT: 3
   Speed: 200 | Reaction: 3 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -1661,7 +1692,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 2
   Health: 50 | Armor: 22 | Defense: 9
-  Energy: 10 | Energy recharge: 2
+  Energy: 10 | EPT: 2
   Speed: 180 | Reaction: 20 | Range: 2000 | Carry capacity: 12
   Listed base/component Zoids: Saicurtis
 
@@ -1697,7 +1728,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Large | Required level: 14
   Health: 350 | Armor: 25 | Defense: 50
-  Energy: 35 | Energy recharge: 5
+  Energy: 35 | EPT: 5
   Speed: 130 | Reaction: 10 | Range: 800 | Carry capacity: 70
 
 FIXED WEAPONS & SYSTEMS
@@ -1737,7 +1768,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Elephander
   Type: Mammal | Size: Large | Required level: 16
   Health: 350 | Armor: 25 | Defense: 20
-  Energy: 35 | Energy recharge: 5
+  Energy: 35 | EPT: 5
   Speed: 130 | Reaction: 10 | Range: 600 | Carry capacity: 70
   Listed base/component Zoids: Elephander
 
@@ -1778,7 +1809,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 10
   Health: 200 | Armor: 18 | Defense: 16
-  Energy: 35 | Energy recharge: 3
+  Energy: 35 | EPT: 3
   Speed: 2000 | Reaction: 20 | Range: 400 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
@@ -1807,7 +1838,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 7
   Health: 150 | Armor: 18 | Defense: 15
-  Energy: 27 | Energy recharge: 3
+  Energy: 27 | EPT: 3
   Speed: 2800 | Reaction: 3 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -1844,7 +1875,7 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Large | Required level: 13
   Health: 300 | Armor: 20 | Defense: 30
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 1800 | Reaction: 8 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Leoblaze, Unenlagia, Mosasledge, Nightwise.
 
@@ -1882,7 +1913,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Small | Required level: 1
   Health: 40 | Armor: 22 | Defense: 8
-  Energy: 10 | Energy recharge: 2
+  Energy: 10 | EPT: 2
   Speed: 200 | Reaction: 10 | Range: 1200 | Carry capacity: 18
 
 FIXED WEAPONS & SYSTEMS
@@ -1915,7 +1946,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 24
   Health: 370 | Armor: 24 | Defense: 43
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 340 | Reaction: 14 | Range: 400 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
@@ -1953,7 +1984,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 26
   Health: 430 | Armor: 25 | Defense: 60
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 350 | Reaction: 15 | Range: 400 | Carry capacity: 30
   Listed base/component Zoids: Geno Hydra
 
@@ -1992,7 +2023,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 15
   Health: 300 | Armor: 23 | Defense: 40
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
@@ -2034,7 +2065,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Geno Saurer
   Type: T-Rex | Size: Large | Required level: 15
   Health: 400 | Armor: 24 | Defense: 50
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 345 | Reaction: 14 | Range: 300 | Carry capacity: 50
   Listed base/component Zoids: Geno Saurer
 
@@ -2071,7 +2102,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Geno Saurer
   Type: T-Rex | Size: Large | Required level: 24
   Health: 450 | Armor: 26 | Defense: 60
-  Energy: 45 | Energy recharge: 4
+  Energy: 45 | EPT: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 45
   Listed base/component Zoids: Geno Saurer
 
@@ -2110,7 +2141,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Geno Saurer
   Type: T-Rex | Size: Large | Required level: 18
   Health: 380 | Armor: 23 | Defense: 50
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 320 | Reaction: 13 | Range: 350 | Carry capacity: 35
   Listed base/component Zoids: Geno Breaker
 
@@ -2150,7 +2181,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Geno Saurer
   Type: T-Rex | Size: Large | Required level: 18
   Health: 370 | Armor: 22 | Defense: 45
-  Energy: 40 | Energy recharge: 5
+  Energy: 40 | EPT: 5
   Speed: 2100 | Reaction: 4 | Range: 450 | Carry capacity: 30
   Listed base/component Zoids: Geno Breaker
 
@@ -2190,7 +2221,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Extra Large | Required level: 33
   Health: 1200 | Armor: 25 | Defense: 90
-  Energy: 70 | Energy recharge: 15
+  Energy: 70 | EPT: 15
   Speed: 4000 | Reaction: 15 | Range: 1000 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
@@ -2227,7 +2258,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Small | Required level: 2
   Health: 80 | Armor: 22 | Defense: 8
-  Energy: 12 | Energy recharge: 2
+  Energy: 12 | EPT: 2
   Speed: 150 | Reaction: 16 | Range: 100 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -2257,7 +2288,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large Large | Required level: 18
   Health: 350 | Armor: 25 | Defense: 35
-  Energy: 28 | Energy recharge: 3
+  Energy: 28 | EPT: 3
   Speed: 75 | Reaction: 10 | Range: 200 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
@@ -2291,7 +2322,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Gojulas
   Type: T-Rex | Size: Large Large | Required level: 20
   Health: 350 | Armor: 25 | Defense: 38
-  Energy: 33 | Energy recharge: 3
+  Energy: 33 | EPT: 3
   Speed: 60 | Reaction: 9 | Range: 300 | Carry capacity: 55
   Listed base/component Zoids: Gojulas
 
@@ -2329,7 +2360,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large Large | Required level: 22
   Health: 500 | Armor: 26 | Defense: 75
-  Energy: 45 | Energy recharge: 6
+  Energy: 45 | EPT: 6
   Speed: 180 | Reaction: 12 | Range: 400 | Carry capacity: 60
   Listed base/component Zoids: Gojulas
 
@@ -2369,7 +2400,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Gojulas Giga
   Type: T-Rex | Size: Large Large | Required level: 24
   Health: 700 | Armor: 26 | Defense: 75
-  Energy: 50 | Energy recharge: 5
+  Energy: 50 | EPT: 5
   Speed: 74 | Reaction: 12 | Range: 400 | Carry capacity: 50
   Listed base/component Zoids: Gojulas Giga
 
@@ -2408,7 +2439,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large Large | Required level: 20
   Health: 500 | Armor: 27 | Defense: 60
-  Energy: 50 | Energy recharge: 5
+  Energy: 50 | EPT: 5
   Speed: 125 | Reaction: 9 | Range: 350 | Carry capacity: 60
   Listed base/component Zoids: Gojulas
 
@@ -2448,7 +2479,7 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Large | Required level: 24
   Health: 450 | Armor: 24 | Defense: 90
-  Energy: 60 | Energy recharge: 6
+  Energy: 60 | EPT: 6
   Speed: 130 | Reaction: 10 | Range: 500 | Carry capacity: 60
   Listed base/component Zoids: Diploguns, Demonshead, Nightwise, Shellkarn,
   Unenlagia, Leoblaze.
@@ -2489,7 +2520,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large Large | Required level: 8
   Health: 250 | Armor: 22 | Defense: 14
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 80 | Reaction: 8 | Range: 1000 | Carry capacity: 60
 
 FIXED WEAPONS & SYSTEMS
@@ -2525,7 +2556,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large Large | Required level: 10
   Health: 250 | Armor: 22 | Defense: 24
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 60 | Reaction: 7 | Range: 1000 | Carry capacity: 20
   Listed base/component Zoids: Gordos
 
@@ -2562,7 +2593,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Medium | Required level: 9
   Health: 150 | Armor: 11 | Defense: 8
-  Energy: 18 | Energy recharge: 2
+  Energy: 18 | EPT: 2
   Speed: 120 | Reaction: 8 | Range: 500 | Carry capacity: 35
   Listed base/component Zoids: Gordos
 
@@ -2601,7 +2632,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Mammal | Size: Large | Required level: 16
   Health: 320 | Armor: 25 | Defense: 33
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 120 | Reaction: 11 | Range: 800 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
@@ -2641,7 +2672,7 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Large | Required level: 15
   Health: 400 | Armor: 19 | Defense: 30
-  Energy: 40 | Energy recharge: 4
+  Energy: 40 | EPT: 4
   Speed: 1500 | Reaction: 4 | Range: 400 | Carry capacity: 40
   Listed base/component Zoids: Leoblaze, Unenlagia, Buster Eagle.
 
@@ -2677,7 +2708,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large | Required level: 19
   Health: 400 | Armor: 28 | Defense: 60
-  Energy: 50 | Energy recharge: 3
+  Energy: 50 | EPT: 3
   Speed: 120 | Reaction: 6 | Range: 500 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -2716,7 +2747,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 5
   Health: 130 | Armor: 20 | Defense: 10
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 200 | Reaction: 12 | Range: 1200 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -2758,7 +2789,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Gun Sniper
   Type: Raptor | Size: Small | Required level: 12
   Health: 160 | Armor: 22 | Defense: 20
-  Energy: 30 | Energy recharge: 2
+  Energy: 30 | EPT: 2
   Speed: 200 | Reaction: 16 | Range: 3000 | Carry capacity: 20
   Listed base/component Zoids: Gun Sniper Weasel
 
@@ -2798,7 +2829,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 6
   Health: 150 | Armor: 22 | Defense: 17
-  Energy: 25 | Energy recharge: 2
+  Energy: 25 | EPT: 2
   Speed: 160 | Reaction: 12 | Range: 800 | Carry capacity: 10
   Listed base/component Zoids: Gun Sniper
 
@@ -2840,7 +2871,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Gun Sniper Weasel
   Type: Raptor | Size: Small | Required level: 12
   Health: 180 | Armor: 22 | Defense: 20
-  Energy: 30 | Energy recharge: 2
+  Energy: 30 | EPT: 2
   Speed: 120 | Reaction: 14 | Range: 600 | Carry capacity: 5
   Listed base/component Zoids: Gun Sniper Weasel
 
@@ -2883,7 +2914,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Small | Required level: 3
   Health: 85 | Armor: 18 | Defense: 8
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 270 | Reaction: 18 | Range: 500 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -2919,7 +2950,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 4
   Health: 60 | Armor: 22 | Defense: 8
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 120 | Reaction: 20 | Range: 1200 | Carry capacity: 18
 
 FIXED WEAPONS & SYSTEMS
@@ -2956,7 +2987,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Guysack
   Type: Insect | Size: Small | Required level: 10
   Health: 180 | Armor: 24 | Defense: 18
-  Energy: 25 | Energy recharge: 2
+  Energy: 25 | EPT: 2
   Speed: 120 | Reaction: 16 | Range: 1500 | Carry capacity: 40
   Listed base/component Zoids: Guysack
 
@@ -2993,7 +3024,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Medium | Required level: 10
   Health: 200 | Armor: 24 | Defense: 15
-  Energy: 25 | Energy recharge: 2
+  Energy: 25 | EPT: 2
   Speed: 1000 | Reaction: 4 | Range: 300 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -3030,7 +3061,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Hammer Head
   Type: Reptile | Size: Medium | Required level: 12
   Health: 200 | Armor: 24 | Defense: 25
-  Energy: 30 | Energy recharge: 2
+  Energy: 30 | EPT: 2
   Speed: 1000 | Reaction: 4 | Range: 300 | Carry capacity: 5
   Listed base/component Zoids: Hammer Head
 
@@ -3064,7 +3095,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Gorilla | Size: Small | Required level: 6
   Health: 110 | Armor: 26 | Defense: 13
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 180 | Reaction: 12 | Range: 200 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -3098,7 +3129,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 1
   Health: 30 | Armor: 20 | Defense: 9
-  Energy: 6 | Energy recharge: 1
+  Energy: 6 | EPT: 1
   Speed: 500 | Reaction: 8 | Range: 50 | Carry capacity: 15
 
 FIXED WEAPONS & SYSTEMS
@@ -3132,7 +3163,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Small | Required level: 2
   Health: 80 | Armor: 21 | Defense: 9
-  Energy: 12 | Energy recharge: 2
+  Energy: 12 | EPT: 2
   Speed: 200 | Reaction: 16 | Range: 50 | Carry capacity: 18
   Listed base/component Zoids: Godos
 
@@ -3166,7 +3197,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Gorilla | Size: Large | Required level: 10
   Health: 240 | Armor: 23 | Defense: 25
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 150 | Reaction: 6 | Range: 600 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
@@ -3204,7 +3235,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Iron Kong
   Type: Gorilla | Size: Large | Required level: 15
   Health: 350 | Armor: 23 | Defense: 50
-  Energy: 40 | Energy recharge: 4
+  Energy: 40 | EPT: 4
   Speed: 150 | Reaction: 11 | Range: 1200 | Carry capacity: 55
   Listed base/component Zoids: Iron Kong
 
@@ -3235,7 +3266,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Iron Kong
   Type: Gorilla | Size: Large | Required level: 12
   Health: 260 | Armor: 23 | Defense: 30
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 180 | Reaction: 14 | Range: 600 | Carry capacity: 45
   Listed base/component Zoids: Iron Kong
 
@@ -3277,7 +3308,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Iron Kong
   Type: Gorilla | Size: Large | Required level: 15
   Health: 330 | Armor: 25 | Defense: 60
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 170 | Reaction: 12 | Range: 1000 | Carry capacity: 50
   Listed base/component Zoids: Iron Kong
 
@@ -3316,7 +3347,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Iron Kong
   Type: Gorilla | Size: Large | Required level: 14
   Health: 300 | Armor: 23 | Defense: 50
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 160 | Reaction: 13 | Range: 1000 | Carry capacity: 55
   Listed base/component Zoids: Iron Kong
 
@@ -3359,7 +3390,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Large Large | Required level: 29
   Health: 700 | Armor: 28 | Defense: 80
-  Energy: 60 | Energy recharge: 5
+  Energy: 60 | EPT: 5
   Speed: 320 | Reaction: 15 | Range: 400 | Carry capacity: 60
   Listed base/component Zoids: Death Stinger
 
@@ -3398,7 +3429,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Flying | Size: Medium | Required level: 10
   Health: 300 | Armor: 18 | Defense: 10
-  Energy: 50 | Energy recharge: 4
+  Energy: 50 | EPT: 4
   Speed: 3000 | Reaction: 14 | Range: 450 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
@@ -3434,7 +3465,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 4
   Health: 80 | Armor: 28 | Defense: 12
-  Energy: 10 | Energy recharge: 2
+  Energy: 10 | EPT: 2
   Speed: 150 | Reaction: 8 | Range: 3000 | Carry capacity: 15
 
 FIXED WEAPONS & SYSTEMS
@@ -3475,7 +3506,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Extra Large | Required level: 40
   Health: 2000 | Armor: 28 | Defense: 150
-  Energy: 150 | Energy recharge: 20
+  Energy: 150 | EPT: 20
   Speed: 140 | Reaction: 4 | Range: 800 | Carry capacity: 150
   Listed base/component Zoids: Gojulas
 
@@ -3516,7 +3547,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Wolf | Size: Large | Required level: 13
   Health: 250 | Armor: 22 | Defense: 28
-  Energy: 35 | Energy recharge: 3
+  Energy: 35 | EPT: 3
   Speed: 290 | Reaction: 18 | Range: 500 | Carry capacity: 200
 
 FIXED WEAPONS & SYSTEMS
@@ -3551,7 +3582,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Konig Wolf
   Type: Wolf | Size: Large | Required level: 13
   Health: 280 | Armor: 22 | Defense: 28
-  Energy: 38 | Energy recharge: 3
+  Energy: 38 | EPT: 3
   Speed: 290 | Reaction: 18 | Range: 1000 | Carry capacity: 40
   Listed base/component Zoids: Konig Wolf
 
@@ -3593,7 +3624,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 8
   Health: 140 | Armor: 21 | Defense: 18
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 220 | Reaction: 14 | Range: 300 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -3629,7 +3660,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 13
   Health: 230 | Armor: 22 | Defense: 23
-  Energy: 25 | Energy recharge: 2
+  Energy: 25 | EPT: 2
   Speed: 280 | Reaction: 19 | Range: 500 | Carry capacity: 30
   Listed base/component Zoids: Shield Liger
 
@@ -3664,7 +3695,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 15
   Health: 260 | Armor: 23 | Defense: 28
-  Energy: 35 | Energy recharge: 3
+  Energy: 35 | EPT: 3
   Speed: 307 | Reaction: 15 | Range: 350 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
@@ -3700,7 +3731,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 15
   Health: 260 | Armor: 22 | Defense: 28
-  Energy: 35 | Energy recharge: 3
+  Energy: 35 | EPT: 3
   Speed: 307 | Reaction: 15 | Range: 400 | Carry capacity: 40
   Listed base/component Zoids: Liger Zero
 
@@ -3735,7 +3766,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 16
   Health: 494 | Armor: 24 | Defense: 28
-  Energy: 65 | Energy recharge: 7
+  Energy: 65 | EPT: 7
   Speed: 400 | Reaction: 21 | Range: 300 | Carry capacity: 45
   Listed base/component Zoids: Liger Zero, Jet Falcon
 
@@ -3773,7 +3804,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 17
   Health: 260 | Armor: 24 | Defense: 28
-  Energy: 35 | Energy recharge: 3
+  Energy: 35 | EPT: 3
   Speed: 330 | Reaction: 18 | Range: 400 | Carry capacity: 30
   Listed base/component Zoids: Liger Zero
 
@@ -3811,7 +3842,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 20
   Health: 300 | Armor: 26 | Defense: 40
-  Energy: 35 | Energy recharge: 2
+  Energy: 35 | EPT: 2
   Speed: 285 | Reaction: 15 | Range: 200 | Carry capacity: 30
   Listed base/component Zoids: Liger Zero
 
@@ -3854,7 +3885,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 15
   Health: 452 | Armor: 24 | Defense: 25
-  Energy: 40 | Energy recharge: 3
+  Energy: 40 | EPT: 3
   Speed: 340 | Reaction: 20 | Range: 300 | Carry capacity: 35
   Listed base/component Zoids: Liger Zero, Fire Phoenix
 
@@ -3892,7 +3923,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 17
   Health: 290 | Armor: 24 | Defense: 28
-  Energy: 35 | Energy recharge: 2
+  Energy: 35 | EPT: 2
   Speed: 310 | Reaction: 16 | Range: 200 | Carry capacity: 30
   Listed base/component Zoids: Liger Zero
 
@@ -3933,7 +3964,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Liger Zero
   Type: Liger | Size: Large | Required level: 15
   Health: 280 | Armor: 24 | Defense: 30
-  Energy: 35 | Energy recharge: 3
+  Energy: 35 | EPT: 3
   Speed: 317 | Reaction: 15 | Range: 300 | Carry capacity: 30
   Listed base/component Zoids: Liger Zero
 
@@ -3976,7 +4007,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Medium | Required level: 12
   Health: 230 | Armor: 22 | Defense: 17
-  Energy: 25 | Energy recharge: 2
+  Energy: 25 | EPT: 2
   Speed: 325 | Reaction: 18 | Range: 200 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -4013,7 +4044,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Medium | Required level: 13
   Health: 230 | Armor: 22 | Defense: 17
-  Energy: 25 | Energy recharge: 2
+  Energy: 25 | EPT: 2
   Speed: 310 | Reaction: 17 | Range: 200 | Carry capacity: 25
   Listed base/component Zoids: Lightning Saix
 
@@ -4049,7 +4080,7 @@ PURCHASE & BUILD REFERENCE
 Classification: Fuzor
   Type: BLOX | Size: Medium | Required level: 12
   Health: 250 | Armor: 21 | Defense: 28
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 300 | Reaction: 16 | Range: 500 | Carry capacity: 25
   Listed base/component Zoids: DiploGun, Flyscissors, Demonshead, Shellkarn.
 
@@ -4080,7 +4111,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Extra Large | Required level: 25
   Health: 800 | Armor: 29 | Defense: 125
-  Energy: 70 | Energy recharge: 15
+  Energy: 70 | EPT: 15
   Speed: 100 | Reaction: 6 | Range: 300 | Carry capacity: 90
 
 FIXED WEAPONS & SYSTEMS
@@ -4119,7 +4150,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 1
   Health: 50 | Armor: 28 | Defense: 12
-  Energy: 10 | Energy recharge: 2
+  Energy: 10 | EPT: 2
   Speed: 200 | Reaction: 12 | Range: 200 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -4152,7 +4183,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Molga
   Type: Insect | Size: Small | Required level: 2
   Health: 50 | Armor: 28 | Defense: 12
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 180 | Reaction: 12 | Range: 300 | Carry capacity: 15
   Listed base/component Zoids: Molga
 
@@ -4189,7 +4220,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 6
   Health: 140 | Armor: 22 | Defense: 18
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 100 | Reaction: 4 | Range: 100 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -4226,7 +4257,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 6
   Health: 140 | Armor: 18 | Defense: 27
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 3100 | Reaction: 2 | Range: 2000 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -4264,7 +4295,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 16
   Health: 350 | Armor: 22 | Defense: 50
-  Energy: 40 | Energy recharge: 4
+  Energy: 40 | EPT: 4
   Speed: 330 | Reaction: 13 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Geno Saurer
 
@@ -4303,7 +4334,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Large | Required level: 18
   Health: 260 | Armor: 22 | Defense: 25
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 250 | Reaction: 14 | Range: 300 | Carry capacity: 30
   Listed base/component Zoids: Zaber Fang
 
@@ -4344,7 +4375,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
     Type: Tiger | Size: Large | Required level: 20
   Health: 300 | Armor: 24 | Defense: 40
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 240 | Reaction: 16 | Range: 300 | Carry capacity: 45
   Listed base/component Zoids: Proto Zaber
 
@@ -4389,7 +4420,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: T-Rex | Size: Large | Required level: 15
   Health: 320 | Armor: 23 | Defense: 40
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Geno Saurer
 
@@ -4430,7 +4461,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Large Large | Required level: 20
   Health: 450 | Armor: 21 | Defense: 33
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 2000 | Reaction: 22 | Range: 1000 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
@@ -4469,7 +4500,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Small | Required level: 2
   Health: 55 | Armor: 20 | Defense: 10
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 2000 | Reaction: 14 | Range: 1000 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -4505,7 +4536,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Pteras
   Type: Dinosaur, Flying | Size: Small | Required level: 4
   Health: 60 | Armor: 20 | Defense: 10
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 1200 | Reaction: 14 | Range: 1500 | Carry capacity: 13
   Listed base/component Zoids: Pteras
 
@@ -4545,7 +4576,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Pteras
   Type: Dinosaur, Flying | Size: Small | Required level: 5
   Health: 140 | Armor: 18 | Defense: 10
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 2100 | Reaction: 15 | Range: 2000 | Carry capacity: 20
   Listed base/component Zoids: Pteras
 
@@ -4585,7 +4616,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 8
   Health: 160 | Armor: 21 | Defense: 10
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 3300 | Reaction: 17 | Range: 1500 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -4618,7 +4649,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Large | Required level: 8
   Health: 240 | Armor: 28 | Defense: 15
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 300 | Carry capacity: 50
 
 FIXED WEAPONS & SYSTEMS
@@ -4656,7 +4687,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Red Horn
   Type: Dinosaur, Land | Size: Large | Required level: 10
   Health: 240 | Armor: 28 | Defense: 20
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 300 | Carry capacity: 45
   Listed base/component Zoids: Red Horn
 
@@ -4696,7 +4727,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Medium | Required level: 5
   Health: 80 | Armor: 16 | Defense: 9
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 3000 | Reaction: 14 | Range: 300 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -4727,7 +4758,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Redler
   Type: Dinosaur, Flying | Size: Medium | Required level: 9
   Health: 150 | Armor: 17 | Defense: 10
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 3300 | Reaction: 14 | Range: 300 | Carry capacity: 18
   Listed base/component Zoids: Redler
 
@@ -4762,7 +4793,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Redler
   Type: Dinosaur, Flying | Size: Medium | Required level: 10
   Health: 200 | Armor: 18 | Defense: 13
-  Energy: 25 | Energy recharge: 2
+  Energy: 25 | EPT: 2
   Speed: 3000 | Reaction: 16 | Range: 450 | Carry capacity: 15
   Listed base/component Zoids: Redler
 
@@ -4795,7 +4826,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 5
   Health: 120 | Armor: 20 | Defense: 10
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 210 | Reaction: 13 | Range: 800 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -4827,7 +4858,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Rev Raptor
   Type: Raptor | Size: Small | Required level: 11
   Health: 200 | Armor: 20 | Defense: 20
-  Energy: 27 | Energy recharge: 2
+  Energy: 27 | EPT: 2
   Speed: 250 | Reaction: 13 | Range: 900 | Carry capacity: 25
   Listed base/component Zoids: Rev Raptor
 
@@ -4858,7 +4889,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Rev Raptor
   Type: Raptor | Size: Small | Required level: 5
   Health: 120 | Armor: 22 | Defense: 13
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 205 | Reaction: 12 | Range: 600 | Carry capacity: 10
   Listed base/component Zoids: Rev Raptor
 
@@ -4892,7 +4923,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Small | Required level: 3
   Health: 90 | Armor: 18 | Defense: 8
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 255 | Reaction: 18 | Range: 500 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -4929,7 +4960,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Insect | Size: Small | Required level: 2
   Health: 50 | Armor: 22 | Defense: 8
-  Energy: 10 | Energy recharge: 2
+  Energy: 10 | EPT: 2
   Speed: 390 | Reaction: 16 | Range: 600 | Carry capacity: 12
 
 FIXED WEAPONS & SYSTEMS
@@ -4965,7 +4996,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Small | Required level: 2
   Health: 60 | Armor: 22 | Defense: 10
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 900 | Reaction: 3 | Range: 300 | Carry capacity: 15
 
 FIXED WEAPONS & SYSTEMS
@@ -4998,7 +5029,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Wolf | Size: Medium | Required level: 12
   Health: 220 | Armor: 22 | Defense: 20
-  Energy: 30 | Energy recharge: 3
+  Energy: 30 | EPT: 3
   Speed: 290 | Reaction: 18 | Range: 1000 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
@@ -5040,7 +5071,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 7
   Health: 150 | Armor: 27 | Defense: 18
-  Energy: 27 | Energy recharge: 3
+  Energy: 27 | EPT: 3
   Speed: 80 | Reaction: 10 | Range: 100 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -5073,7 +5104,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 7
   Health: 210 | Armor: 22 | Defense: 13
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 250 | Reaction: 15 | Range: 300 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
@@ -5108,7 +5139,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Shield Liger
   Type: Liger | Size: Large | Required level: 8
   Health: 210 | Armor: 22 | Defense: 13
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 250 | Reaction: 10 | Range: 300 | Carry capacity: 30
   Listed base/component Zoids: Shield Liger
 
@@ -5146,7 +5177,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Shield Liger
   Type: Liger | Size: Large | Required level: 13
   Health: 250 | Armor: 23 | Defense: 23
-  Energy: 27 | Energy recharge: 2
+  Energy: 27 | EPT: 2
   Speed: 285 | Reaction: 12 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Shield Liger DCS
 
@@ -5183,7 +5214,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Raptor | Size: Small | Required level: 8
   Health: 150 | Armor: 21 | Defense: 15
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 195 | Reaction: 13 | Range: 800 | Carry capacity: 20
   Listed base/component Zoids: Gun Sniper
 
@@ -5219,7 +5250,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Snipe Master
   Type: Raptor | Size: Small | Required level: 10
   Health: 170 | Armor: 26 | Defense: 18
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 190 | Reaction: 14 | Range: 1500 | Carry capacity: 10
   Listed base/component Zoids: Snipe Master
 
@@ -5258,7 +5289,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Snipe Master
   Type: Raptor | Size: Small | Required level: 10
   Health: 170 | Armor: 23 | Defense: 16
-  Energy: 20 | Energy recharge: 2
+  Energy: 20 | EPT: 2
   Speed: 205 | Reaction: 16 | Range: 1500 | Carry capacity: 10
   Listed base/component Zoids: Snipe Master
 
@@ -5296,7 +5327,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 15
   Health: 240 | Armor: 23 | Defense: 23
-  Energy: 27 | Energy recharge: 2
+  Energy: 27 | EPT: 2
   Speed: 250 | Reaction: 13 | Range: 250 | Carry capacity: 40
   Listed base/component Zoids: Shield Liger
 
@@ -5334,7 +5365,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Medium | Required level: 3
   Health: 80 | Armor: 23 | Defense: 3
-  Energy: 15 | Energy recharge: 2
+  Energy: 15 | EPT: 2
   Speed: 180 | Reaction: 16 | Range: 800 | Carry capacity: 15
 
 FIXED WEAPONS & SYSTEMS
@@ -5370,7 +5401,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Large | Required level: 13
   Health: 220 | Armor: 21 | Defense: 20
-  Energy: 30 | Energy recharge: 2
+  Energy: 30 | EPT: 2
   Speed: 3200 | Reaction: 16 | Range: 2000 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -5402,7 +5433,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Storm Sworder
   Type: Dinosaur, Flying | Size: Large | Required level: 14
   Health: 220 | Armor: 20 | Defense: 18
-  Energy: 30 | Energy recharge: 2
+  Energy: 30 | EPT: 2
   Speed: 3100 | Reaction: 15 | Range: 600 | Carry capacity: 40
   Listed base/component Zoids: Storm Sworder
 
@@ -5436,7 +5467,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Storm Sworder
   Type: Dinosaur, Flying | Size: Large | Required level: 17
   Health: 280 | Armor: 20 | Defense: 28
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 4000 | Reaction: 22 | Range: 650 | Carry capacity: 30
   Listed base/component Zoids: Storm Sworder
 
@@ -5473,7 +5504,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Liger | Size: Large | Required level: 20
   Health: 300 | Armor: 23 | Defense: 28
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 315 | Reaction: 15 | Range: 500 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -5510,7 +5541,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Trinity Liger
   Type: Liger | Size: Large | Required level: 22
   Health: 350 | Armor: 23 | Defense: 28
-  Energy: 35 | Energy recharge: 4
+  Energy: 35 | EPT: 4
   Speed: 295 | Reaction: 16 | Range: 500 | Carry capacity: 25
   Listed base/component Zoids: Trinity Liger
 
@@ -5550,7 +5581,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Extra Large | Required level: 30
   Health: 1500 | Armor: 28 | Defense: 100
-  Energy: 100 | Energy recharge: 10
+  Energy: 100 | EPT: 10
   Speed: 40 | Reaction: 4 | Range: 400 | Carry capacity: 180
   Listed base/component Zoids: Ultra Saurus
 
@@ -5593,7 +5624,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Land | Size: Extra Large | Required level: 28
   Health: 1300 | Armor: 28 | Defense: 100
-  Energy: 80 | Energy recharge: 8
+  Energy: 80 | EPT: 8
   Speed: 50 | Reaction: 4 | Range: 400 | Carry capacity: 200
 
 FIXED WEAPONS & SYSTEMS
@@ -5627,7 +5658,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: BLOX | Size: Small | Required level: 6
   Health: 140 | Armor: 20 | Defense: 18
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 195 | Reaction: 12 | Range: 600 | Carry capacity: 30
 
 FIXED WEAPONS & SYSTEMS
@@ -5664,7 +5695,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Medium | Required level: 14
   Health: 250 | Armor: 25 | Defense: 33
-  Energy: 35 | Energy recharge: 2
+  Energy: 35 | EPT: 2
   Speed: 70 | Reaction: 10 | Range: 500 | Carry capacity: 35
 
 FIXED WEAPONS & SYSTEMS
@@ -5704,7 +5735,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Dinosaur, Flying | Size: Small | Required level: 3
   Health: 60 | Armor: 14 | Defense: 10
-  Energy: 10 | Energy recharge: 2
+  Energy: 10 | EPT: 2
   Speed: 2800 | Reaction: 22 | Range: 600 | Carry capacity: 20
 
 FIXED WEAPONS & SYSTEMS
@@ -5734,7 +5765,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Large | Required level: 8
   Health: 220 | Armor: 23 | Defense: 15
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 240 | Reaction: 15 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Zaber Fang Old
 
@@ -5775,7 +5806,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Zaber Fang
   Type: Tiger | Size: Large | Required level: 10
   Health: 230 | Armor: 23 | Defense: 17
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 250 | Reaction: 15 | Range: 400 | Carry capacity: 40
   Listed base/component Zoids: Zaber Fang
 
@@ -5811,7 +5842,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Zaber Fang
   Type: Tiger | Size: Large | Required level: 13
   Health: 250 | Armor: 23 | Defense: 22
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 240 | Reaction: 16 | Range: 500 | Carry capacity: 50
   Listed base/component Zoids: Zaber Fang
 
@@ -5849,7 +5880,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Zaber Fang
   Type: Tiger | Size: Large | Required level: 11
   Health: 220 | Armor: 23 | Defense: 20
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 240 | Reaction: 16 | Range: 500 | Carry capacity: 40
   Listed base/component Zoids: Zaber Fang
 
@@ -5888,7 +5919,7 @@ PURCHASE & BUILD REFERENCE
 CAU base: Zaber Fang
   Type: Tiger | Size: Large | Required level: 8
   Health: 230 | Armor: 23 | Defense: 20
-  Energy: 25 | Energy recharge: 3
+  Energy: 25 | EPT: 3
   Speed: 250 | Reaction: 15 | Range: 300 | Carry capacity: 40
   Listed base/component Zoids: Zaber Fang AT
 
@@ -5923,7 +5954,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
   Type: Tiger | Size: Large | Required level: 6
   Health: 200 | Armor: 22 | Defense: 10
-  Energy: 23 | Energy recharge: 3
+  Energy: 23 | EPT: 3
   Speed: 200 | Reaction: 15 | Range: 300 | Carry capacity: 40
 
 FIXED WEAPONS & SYSTEMS
@@ -5967,7 +5998,7 @@ APPENDIX - TRANSPORT ZOIDS
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Extra Large | Required level: 16
   Health: 800 | Armor: 28 | Defense: 35
-  Energy: 80 | Energy recharge: 8
+  Energy: 80 | EPT: 8
   Speed: 120 | Reaction: 10 | Range: 1500 | Carry capacity: 850
   Hangar capacity: 12 | Hangar size: Large Large
 
@@ -5991,7 +6022,7 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
   Type: Insect | Size: Medium | Required level: 6
   Health: 200 | Armor: 28 | Defense: 15
-  Energy: 20 | Energy recharge: 1
+  Energy: 20 | EPT: 1
   Speed: 135 | Reaction: 4 | Range: 500 | Carry capacity: 100
   Hangar capacity: 2 | Hangar size: Medium
 
@@ -6015,7 +6046,7 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
   Type: Insect | Size: Extra Large | Required level: 10
   Health: 350 | Armor: 25 | Defense: 30
-  Energy: 50 | Energy recharge: 5
+  Energy: 50 | EPT: 5
   Speed: 410 | Reaction: 3 | Range: 1500 | Carry capacity: 500
   Hangar capacity: 6 | Hangar size: Large
 
@@ -6039,7 +6070,7 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
   Type: Reptile | Size: Extra Large | Required level: 18
   Health: 1000 | Armor: 28 | Defense: 35
-  Energy: 1000 | Energy recharge: 10
+  Energy: 1000 | EPT: 10
   Speed: 827 | Reaction: 2 | Range: 2000 | Carry capacity: 950
   Hangar capacity: 24 | Hangar size: Extra Large
 

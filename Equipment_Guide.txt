@@ -1,8 +1,8 @@
 ==============================================================================
 REMOVABLE EQUIPMENT - STAT BLOCK COMPANION
 ==============================================================================
-91 catalog weapons; 7 Zoid-specific removable weapon entries.
-61 catalog assist items; 4 Zoid-specific assist entries.
+91 catalog weapons; 9 Zoid-specific removable weapon entries.
+66 catalog assist items; 4 Zoid-specific assist entries.
 
 Gravity Cannon is unpriced by design.
 These prices belong to this companion document, not the app's catalog.
@@ -14,12 +14,46 @@ catalog items alphabetically, followed by Zoid-specific entries. Separate Zoid
 versions retain their individual stats and source restrictions, even when
 names match.
 Values are catalog stats before pilot bonuses, upgrades, Organoids, or combat
-conditions. Missing values mean not listed, not zero. Heat and other optional
-modifiers appear wherever recorded. Effects preserve the catalog wording,
+conditions. Missing stat values mean not listed, not zero. Energy Costs
+include explicit zeroes. Effects preserve the catalog wording,
 including descriptions embedded in item names.
 Assist equipment includes armor, shields, sensors, boosters, and other support
 systems. Catalog assist items can use Assist or Weapon and Assist slots.
-Zoid-specific entries retain their source slot types and restrictions.
+Zoid-specific entries list allowed overall slots (5-8). Source E5-E8
+identifies the item, not a mounting restriction. Utility equipment can
+use Assist or Weapon and Assist slots. Costs follow the item identity;
+Zoid-specific costs can differ from similarly named generic items.
+
+ENERGY RULES (energy-v17)
+EPT means Energy Per Turn. Start Turn adds EPT once at the beginning of your
+turn, capped at maximum Energy. New Zoids start at half maximum, rounded down.
+Rest sets current Energy to half the equipped maximum, rounded down, whether
+it was previously higher or lower. Rest does not heal or repair the Zoid.
+Use spends the displayed Energy Cost. Insufficient Energy or a broken weapon
+prevents use; spending exactly your remaining Energy is allowed. Zero-cost
+items remain usable at zero Energy. Heat, overheating, and Vent are retired;
+using a weapon no longer breaks it. Utility systems also pay their listed cost.
+Equipping, loading, repairing, and changing forms do not recharge Energy.
+CAU forms share their chassis's pool; a lower maximum clamps current Energy.
+
+Economized Shooting has four ranks: while active, reduce Ranged-tagged weapon
+costs by 2/4/6/8, minimum zero. Higher ranks replace lower ranks, rather than
+stacking. This applies to fixed, generic, and Zoid-specific weapons.
+Demolitionist: Once per Rest, you may completely fill your Zoid's Energy.
+Track that limit at the table and set current Energy to its maximum when used.
+
+EPT upgrades add +1 EPT each with no cap. Rank N costs 10,000g x 2^(N-1):
+10,000g, 20,000g, 40,000g, 80,000g, and so on. Removing a rank refunds its
+full purchase price. These chassis upgrades follow CAU forms and do not
+increase maximum Energy, refill current Energy, or change the Rest fraction.
+Listed EPT and costs are base catalog values before upgrades or abilities.
+
+Physics Reinforcer Unit: passive, weight 3, +100 maximum Health after stat
+multipliers; does not heal. Energy Reinforcer Unit: passive, weight 3,
++20 maximum Energy; does not refill Energy. Removing it clamps current Energy.
+Energy Container: active, weight 10, restores 20 Energy immediately, capped at
+maximum. No usage limit or consumption is specified. All three cost 0 Energy.
+Compatible equipped Reinforcer copies contribute their bonuses independently.
 
 CONTENTS - CATALOG WEAPONS
 001  16-Set Missile
@@ -123,6 +157,10 @@ Z05  Double Beam Cannon - Zaber Fang
 Z06  Double Beam Cannon - Zaber Fang Old
 Z07  Double Beam Cannon - Zaber Fang RS (CAU)
 
+Z08  Double Beam Cannon - Great Zaber
+
+Z09  20mm Solid Rifle - Great Zaber
+
 CONTENTS - SECTION 2: ASSIST EQUIPMENT
 A001  3D Radar
 A002  Accelerator Equipment
@@ -188,6 +226,12 @@ A061  ZOS Prototype
 A062  Acid Neutralizer Unit
 A063  EMP Hardened Circuits
 
+A064  Physics Reinforcer Unit
+
+A065  Energy Reinforcer Unit
+
+A066  Energy Container
+
 CONTENTS - ZOID-SPECIFIC ASSIST EQUIPMENT
 ZA01  Anti-Particle Beam Shield - Mad Thunder
 ZA02  Auto Repair Unit - Diablo Tiger
@@ -200,6 +244,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [001] 16-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Weapon and Assist
   Proposed price: 9,250g
   Pricing basis: Damage/accuracy base 7,800g; +10% split-damage targeting,
@@ -207,13 +252,13 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
   Damage: 120 | To hit: 18
   Weight: 26
-  Heat: 2
   Effect: Fires sixteen missiles. Can target up to eight Zoids. Damage is
   split between them.
 
 ------------------------------------------------------------------------------
 [002] 2-Set Anti-Air Laser
 ------------------------------------------------------------------------------
+  Energy cost: 8
   Slot eligibility: Weapon and Assist
   Proposed price: 6,250g
   Pricing basis: Damage/accuracy base 5,200g; +10% split-damage targeting,
@@ -227,6 +272,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [003] 2-Set High Speed Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 7
   Slot eligibility: Weapon and Assist
   Proposed price: 4,500g
   Pricing basis: Damage/accuracy base 4,900g; -10% range restriction.
@@ -239,6 +285,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [004] 2-Set Laser
 ------------------------------------------------------------------------------
+  Energy cost: 4
   Slot eligibility: Weapon and Assist
   Proposed price: 5,750g
   Pricing basis: Damage/accuracy base 5,200g; +10% split-damage targeting.
@@ -251,6 +298,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [005] 2-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
   Pricing basis: Damage/accuracy base 3,250g; +10% homing.
@@ -262,6 +310,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [006] 3-Set Anti-Air Laser
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 8,500g
   Pricing basis: Damage/accuracy base 7,150g; +10% split-damage targeting,
@@ -275,6 +324,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [007] 3-Set Impact Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Weapon and Assist
   Proposed price: 8,000g
   Pricing basis: Damage/accuracy base 8,000g.
@@ -286,6 +336,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [008] 3-Set Laser
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 7,750g
   Pricing basis: Damage/accuracy base 7,150g; +10% split-damage targeting.
@@ -298,6 +349,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [009] 4-Set Anti-Air Laser
 ------------------------------------------------------------------------------
+  Energy cost: 18
   Slot eligibility: Weapon and Assist
   Proposed price: 12,500g
   Pricing basis: Damage/accuracy base 10,500g; +10% split-damage targeting,
@@ -311,6 +363,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [010] 4-Set Laser
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 11,500g
   Pricing basis: Damage/accuracy base 10,500g; +10% split-damage targeting.
@@ -323,6 +376,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [011] 4-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Weapon and Assist
   Proposed price: 4,000g
   Pricing basis: Damage/accuracy base 3,250g; +10% split-damage targeting,
@@ -336,6 +390,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [012] 6-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 8
   Slot eligibility: Weapon and Assist
   Proposed price: 5,500g
   Pricing basis: Damage/accuracy base 4,550g; +10% split-damage targeting,
@@ -349,6 +404,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [013] 8-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 6,250g
   Pricing basis: Damage/accuracy base 5,200g; +10% split-damage targeting,
@@ -362,6 +418,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [014] Accelerated Cannons
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Weapon and Assist
   Proposed price: 3,250g
   Pricing basis: Damage/accuracy base 3,600g; -10% range restriction.
@@ -373,6 +430,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [015] Accelerated Gatling
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Weapon and Assist
   Proposed price: 16,750g
   Pricing basis: Damage/accuracy base 4,200g x4 multi-target minimum; rounded
@@ -388,6 +446,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [016] Accelerated Impact Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Weapon and Assist
   Proposed price: 5,500g
   Pricing basis: Damage/accuracy base 6,000g; -10% range restriction.
@@ -399,6 +458,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [017] Acid Blade
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Weapon and Assist
   Proposed price: 6,250g
   Pricing basis: Damage/accuracy base 5,000g; +25% defense reduction.
@@ -410,6 +470,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [018] Acid Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 18
   Slot eligibility: Weapon and Assist
   Proposed price: 6,250g
   Pricing basis: Damage/accuracy base 5,000g; +25% defense reduction.
@@ -421,6 +482,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [019] Anti-Air 16-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Weapon and Assist
   Proposed price: 10,250g
   Pricing basis: Damage/accuracy base 7,800g; +10% split-damage targeting,
@@ -428,13 +490,13 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Explosive, Anti-Air, Homing
   Damage: 120 | To hit: 18
   Weight: 15
-  Heat: 2
   Effect: Fires sixteen missiles. Can target up to eight Zoids. Damage is
   split between them.
 
 ------------------------------------------------------------------------------
 [020] Anti-Air 2-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 4
   Slot eligibility: Weapon and Assist
   Proposed price: 4,750g
   Pricing basis: Damage/accuracy base 3,900g; +10% anti-air, +10% homing.
@@ -446,6 +508,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [021] Anti-Air 4-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 6
   Slot eligibility: Weapon and Assist
   Proposed price: 5,000g
   Pricing basis: Damage/accuracy base 3,900g; +10% split-damage targeting,
@@ -459,6 +522,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [022] Anti-Air 8-Set Missile
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 7,500g
   Pricing basis: Damage/accuracy base 5,850g; +10% split-damage targeting,
@@ -472,6 +536,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [023] Anti-Air Gatling
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Weapon and Assist
   Proposed price: 4,500g
   Pricing basis: Damage/accuracy base 2,250g x2 multi-target minimum; rounded
@@ -486,6 +551,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [024] Anti-Air Laser
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
   Pricing basis: Damage/accuracy base 3,250g; +10% anti-air.
@@ -497,6 +563,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [025] Anti-Air Machine Gun
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Weapon and Assist
   Proposed price: 3,000g
   Pricing basis: Damage/accuracy base 2,800g; +10% anti-air.
@@ -508,6 +575,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [026] Anti-Air Mega Vulcan
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Weapon and Assist
   Proposed price: 16,750g
   Pricing basis: Damage/accuracy base 4,200g x4 multi-target minimum; rounded
@@ -522,6 +590,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [027] Anti-Air Vulcan
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Weapon and Assist
   Proposed price: 12,000g
   Pricing basis: Damage/accuracy base 3,000g x4 multi-target minimum; rounded
@@ -536,6 +605,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [028] Assault Beam Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Weapon and Assist
   Proposed price: 4,500g
   Pricing basis: Damage/accuracy base 4,500g.
@@ -548,18 +618,19 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [029] Assault Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 8
   Slot eligibility: Weapon and Assist
   Proposed price: 10,000g
   Pricing basis: Damage/accuracy base 10,000g.
   Weapon class: Ranged | Damage type: Ranged, Explosive
   Damage: 250 | To hit: 13
   Weight: 23
-  Heat: 2
   Effect: Double barrel cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
 [030] Assault Rifle
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Weapon and Assist
   Proposed price: 8,500g
   Pricing basis: Damage/accuracy base 8,400g.
@@ -572,6 +643,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [031] Beam Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 8
   Slot eligibility: Weapon and Assist
   Proposed price: 7,750g
   Pricing basis: Damage/accuracy base 7,700g.
@@ -583,6 +655,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [032] Beam Needle
 ------------------------------------------------------------------------------
+  Energy cost: 8
   Slot eligibility: Weapon and Assist
   Proposed price: 14,500g
   Pricing basis: Damage/accuracy base 7,200g x2 multi-target minimum; rounded
@@ -596,6 +669,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [033] Beam Rifle
 ------------------------------------------------------------------------------
+  Energy cost: 4
   Slot eligibility: Weapon and Assist
   Proposed price: 6,500g
   Pricing basis: Damage/accuracy base 6,500g.
@@ -608,19 +682,20 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [034] Buster Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 20
   Slot eligibility: Weapon and Assist
   Proposed price: 18,000g
   Pricing basis: Damage/accuracy base 20,000g; -10% range restriction.
   Weapon class: Ranged | Damage type: Ranged, Explosive, Long Range
   Damage: 400 | To hit: 15
   Weight: 35
-  Heat: 1
   Effect: Large single barrel cannon. Targets a single opponent. Minimum range
   of 225m
 
 ------------------------------------------------------------------------------
 [035] Charge Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 20
   Slot eligibility: Weapon and Assist
   Proposed price: 15,500g
   Pricing basis: Damage/accuracy base 13,000g; +10% split-damage targeting,
@@ -628,7 +703,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Particle
   Damage: 200 | To hit: 18
   Weight: 50
-  Heat: 1
   Effect: Fires two narrow particle beams. Targets up to two opponents. If
   damage exceeds the remaining health of the targeted Zoids it punctures
   through the zoid and continues on for the remaining damage. damage is split
@@ -637,6 +711,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [036] Close-Range Rail Gun
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 8,750g
   Pricing basis: Damage/accuracy base 9,750g; -10% range restriction.
@@ -648,6 +723,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [037] Concentrate Acid Blade
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Weapon and Assist
   Proposed price: 12,500g
   Pricing basis: Damage/accuracy base 10,000g; +25% defense reduction.
@@ -659,6 +735,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [038] Concentrate Acid Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 20
   Slot eligibility: Weapon and Assist
   Proposed price: 12,500g
   Pricing basis: Damage/accuracy base 10,000g; +25% defense reduction.
@@ -670,6 +747,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [039] Double Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Weapon and Assist
   Proposed price: 4,250g
   Pricing basis: Damage/accuracy base 4,800g; -10% range restriction.
@@ -682,6 +760,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [040] Ele Shot
 ------------------------------------------------------------------------------
+  Energy cost: 20
   Slot eligibility: Weapon and Assist
   Proposed price: 16,750g
   Pricing basis: Damage/accuracy base 8,400g x2 multi-target minimum; rounded
@@ -696,18 +775,19 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [041] External Charge Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Weapon and Assist
   Proposed price: 13,250g
   Pricing basis: Damage/accuracy base 12,000g; +10% split-damage targeting.
   Weapon class: Ranged | Damage type: Ranged, Particle
   Damage: 200 | To hit: 17
   Weight: 40
-  Heat: 1
   Effect: can target up to four opponents. Each shot deals 50 damage.
 
 ------------------------------------------------------------------------------
 [042] Extra Electro Magnetic Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Weapon and Assist
   Proposed price: 13,250g
   Pricing basis: Damage/accuracy base 6,600g x2 multi-target minimum; rounded
@@ -722,13 +802,13 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [043] Focus Charge Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 30
   Slot eligibility: Weapon and Assist
   Proposed price: 23,000g
   Pricing basis: Damage/accuracy base 21,000g; +10% penetration.
   Weapon class: Ranged | Damage type: Ranged, Particle
   Damage: 300 | To hit: 19
   Weight: 50
-  Heat: 1
   Effect: Fires a narrow particle beam. If damage exceeds health threshold it
   punctures through the Zoid to hit whatever is behind it for the remaining
   damage.
@@ -736,6 +816,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [044] Gatling Beam
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 33,500g
   Pricing basis: Damage/accuracy base 8,400g x4 multi-target minimum; rounded
@@ -748,6 +829,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [045] Gatling Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
   Pricing basis: Damage/accuracy base 1,800g x2 multi-target minimum; rounded
@@ -762,14 +844,15 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [046] Gravity Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 60
   Slot eligibility: Weapon and Assist
   Weight: 100
-  Heat: 1
   Effect: An immense weapon with devastating fire-power.
 
 ------------------------------------------------------------------------------
 [047] Great Charge Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 40
   Slot eligibility: Weapon and Assist
   Proposed price: 98,000g
   Pricing basis: Damage/accuracy base 24,500g x4 multi-target minimum; rounded
@@ -777,7 +860,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Particle, Anti-Air
   Damage: 350 | To hit: 19
   Weight: 80
-  Heat: 1
   Effect: Fires a 60m wide particle beam. Each Zoid in the path of the beam
   must make a reaction save against the attack roll. Successful saves take no
   damage. Must recharge for three turns.
@@ -785,6 +867,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [048] Heavy Gatling
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Weapon and Assist
   Proposed price: 10,750g
   Pricing basis: Damage/accuracy base 2,700g x4 multi-target minimum; rounded
@@ -799,6 +882,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [049] Heavy Machine Gun
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Weapon and Assist
   Proposed price: 5,500g
   Pricing basis: Damage/accuracy base 5,600g.
@@ -810,6 +894,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [050] Heavy Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 18,750g
   Pricing basis: Damage/accuracy base 4,675g x4 multi-target minimum; rounded
@@ -817,7 +902,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Particle
   Damage: 85 | To hit: 16
   Weight: 25
-  Heat: 3
   Effect: larger particle cannon. Each shot is a 30m wide particle beam. Each
   Zoid in the path must make a reaction against your attack roll or take
   damage.
@@ -825,6 +909,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [051] High Speed Gatling
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Weapon and Assist
   Proposed price: 13,500g
   Pricing basis: Damage/accuracy base 3,375g x4 multi-target minimum; rounded
@@ -837,6 +922,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [052] High Speed Rail Gun
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 6,500g
   Pricing basis: Damage/accuracy base 5,400g; +10% anti-air, +10% penetration.
@@ -851,32 +937,33 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [053] Hybrid Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 20
   Slot eligibility: Weapon and Assist
   Proposed price: 11,750g
   Pricing basis: Damage/accuracy base 13,000g; -10% range restriction.
   Weapon class: Ranged | Damage type: Ranged, Laser, Long Range
   Damage: 200 | To hit: 18
   Weight: 40
-  Heat: 3
   Effect: Single barrel energy cannon. Fires a single bolt. Targets a single
   opponent. Minimum range of 100m.
 
 ------------------------------------------------------------------------------
 [054] Hyper Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Weapon and Assist
   Proposed price: 17,500g
   Pricing basis: Damage/accuracy base 17,500g; no special-effect adjustments.
   Weapon class: Ranged | Damage type: Ranged, Bullet
   Damage: 350 | To hit: 15
   Weight: 30
-  Heat: 1
   Effect: Targets a single opponent. Deals the listed damage with no
   additional effects.
 
 ------------------------------------------------------------------------------
 [055] Hyper Machine Gun
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Weapon and Assist
   Proposed price: 22,500g
   Pricing basis: Damage/accuracy base 5,600g x4 multi-target minimum; rounded
@@ -891,6 +978,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [056] Hyper Missile
 ------------------------------------------------------------------------------
+  Energy cost: 20
   Slot eligibility: Weapon and Assist
   Proposed price: 65,000g
   Pricing basis: Damage/accuracy base 16,250g x4 multi-target minimum; rounded
@@ -898,7 +986,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
   Damage: 250 | To hit: 18
   Weight: 30
-  Heat: 1
   Effect: Large missile. Targets an area 90m by 90m. Opponents in the area
   must make a reaction save against the attack roll. Successful saves take no
   damage.
@@ -906,6 +993,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [057] Hyper Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 14
   Slot eligibility: Weapon and Assist
   Proposed price: 22,000g
   Pricing basis: Damage/accuracy base 5,500g x4 multi-target minimum; rounded
@@ -913,7 +1001,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Particle
   Damage: 100 | To hit: 16
   Weight: 27
-  Heat: 2
   Effect: Particle cannon. Fires a 30m wide particle beam. Each Zoid in the
   path must make a reaction save against the attack roll. A failed save takes
   the listed damage; a successful save takes no damage.
@@ -921,6 +1008,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [058] Hyper Rail Gun
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Weapon and Assist
   Proposed price: 10,000g
   Pricing basis: Damage/accuracy base 9,000g; +10% penetration.
@@ -934,6 +1022,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [059] Impact Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Weapon and Assist
   Proposed price: 2,750g
   Pricing basis: Damage/accuracy base 3,000g; -10% range restriction.
@@ -945,6 +1034,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [060] Large Missile
 ------------------------------------------------------------------------------
+  Energy cost: 8
   Slot eligibility: Weapon and Assist
   Proposed price: 8,500g
   Pricing basis: Damage/accuracy base 8,450g; +10% homing, -10% range
@@ -957,6 +1047,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [061] Laser Machine Gun
 ------------------------------------------------------------------------------
+  Energy cost: 4
   Slot eligibility: Weapon and Assist
   Proposed price: 4,250g
   Pricing basis: Damage/accuracy base 3,600g; +10% split-damage targeting,
@@ -970,18 +1061,19 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [062] Linear Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 6
   Slot eligibility: Weapon and Assist
   Proposed price: 7,750g
   Pricing basis: Damage/accuracy base 7,700g.
   Weapon class: Ranged | Damage type: Ranged, Explosive
   Damage: 220 | To hit: 12
   Weight: 20
-  Heat: 2
   Effect: Single fire cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
 [063] Long-Range Missile
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Weapon and Assist
   Proposed price: 5,500g
   Pricing basis: Damage/accuracy base 5,500g; +10% homing, -10% range
@@ -994,6 +1086,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [064] Long-Range Rifle
 ------------------------------------------------------------------------------
+  Energy cost: 8
   Slot eligibility: Weapon and Assist
   Proposed price: 11,250g
   Pricing basis: Damage/accuracy base 12,600g; -10% range restriction.
@@ -1006,6 +1099,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [065] Machine Gun
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Weapon and Assist
   Proposed price: 2,000g
   Pricing basis: Damage/accuracy base 2,100g.
@@ -1017,6 +1111,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [066] Mega Vulcan
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Weapon and Assist
   Proposed price: 14,500g
   Pricing basis: Damage/accuracy base 3,600g x4 multi-target minimum; rounded
@@ -1031,6 +1126,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [067] Mini Laser
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
   Pricing basis: Damage/accuracy base 3,250g; +10% penetration.
@@ -1043,6 +1139,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [068] Napalm Missile
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 28,750g
   Pricing basis: Damage/accuracy base 7,200g x4 multi-target minimum; rounded
@@ -1060,6 +1157,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [069] Neutron Missile
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Weapon and Assist
   Proposed price: 30,000g
   Pricing basis: Damage/accuracy base 7,500g x4 multi-target minimum; rounded
@@ -1067,7 +1165,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
   Damage: 150 | To hit: 15
   Weight: 30
-  Heat: 1
   Effect: Large missile. Targets an area 90m by 90m. Opponents in the area
   must make a reaction save against the attack roll. Successful saves take no
   damage.
@@ -1075,6 +1172,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [070] Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 7,250g
   Pricing basis: Damage/accuracy base 3,575g x2 multi-target minimum; rounded
@@ -1082,20 +1180,19 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Particle
   Damage: 65 | To hit: 16
   Weight: 20
-  Heat: 3
   Effect: fires dense particle beams in a 15m wide straight line. Each Zoid in
   the path must make a reaction against your attack roll or take damage.
 
 ------------------------------------------------------------------------------
 [071] Photon Paticle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 18
   Slot eligibility: Weapon and Assist
   Proposed price: 12,750g
   Pricing basis: Damage/accuracy base 11,700g; +10% penetration.
   Weapon class: Ranged | Damage type: Ranged, Particle
   Damage: 180 | To hit: 18
   Weight: 30
-  Heat: 1
   Effect: shoots a piercing particle beam. If damage exceeds health threshold
   it punctures through the Zoid to hit whatever is behind it for the remaining
   damage.
@@ -1103,6 +1200,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [072] Plasma Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 16
   Slot eligibility: Weapon and Assist
   Proposed price: 31,250g
   Pricing basis: Damage/accuracy base 7,800g x4 multi-target minimum; rounded
@@ -1110,13 +1208,13 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Particle
   Damage: 130 | To hit: 17
   Weight: 35
-  Heat: 2
   Effect: shoots dense particle blasts. Targets up to four opponents. Deals
   the listed damage to each target; damage is not split.
 
 ------------------------------------------------------------------------------
 [073] Poison Cloud Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 20
   Slot eligibility: Weapon and Assist
   Proposed price: 24,000g
   Pricing basis: Damage/accuracy base 6,000g x4 multi-target minimum; rounded
@@ -1133,6 +1231,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [074] Poison Gas Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 8,750g
   Pricing basis: Damage/accuracy base 2,200g x4 multi-target minimum; rounded
@@ -1148,6 +1247,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [075] Poison Mist Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 12
   Slot eligibility: Weapon and Assist
   Proposed price: 18,000g
   Pricing basis: Damage/accuracy base 4,500g x4 multi-target minimum; rounded
@@ -1164,6 +1264,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [076] Pulse Laser Gun
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Weapon and Assist
   Proposed price: 6,000g
   Pricing basis: Damage/accuracy base 5,400g; +10% anti-air.
@@ -1175,6 +1276,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [077] Rail Gun
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 8,500g
   Pricing basis: Damage/accuracy base 8,450g.
@@ -1186,6 +1288,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [078] Ray Storm
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Weapon and Assist
   Proposed price: 11,250g
   Pricing basis: Damage/accuracy base 9,360g; +10% split-damage targeting,
@@ -1200,6 +1303,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [079] Reaction Missile
 ------------------------------------------------------------------------------
+  Energy cost: 60
   Slot eligibility: Weapon and Assist
   Proposed price: 60,000g
   Pricing basis: Damage/accuracy base 15,000g x4 multi-target minimum; rounded
@@ -1207,7 +1311,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Explosive, Homing
   Damage: 300 | To hit: 15
   Weight: 80
-  Heat: 1
   Effect: Large missile. Targets an area 90m by 90m. Opponents in the area
   must make a reaction save against the attack roll. Successful saves take no
   damage.
@@ -1215,6 +1318,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [080] Rolling Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 18
   Slot eligibility: Weapon and Assist
   Proposed price: 8,750g
   Pricing basis: Damage/accuracy base 8,000g; +10% penetration.
@@ -1227,6 +1331,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [081] Shock Gun
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 3,250g
   Pricing basis: Damage/accuracy base 3,300g.
@@ -1238,6 +1343,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [082] Sonic Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 7,500g
   Pricing basis: Damage/accuracy base 5,000g; +50% disabling effect.
@@ -1252,6 +1358,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [083] Spark Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 3,750g
   Pricing basis: Damage/accuracy base 2,500g; +50% disabling effect.
@@ -1263,6 +1370,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [084] Spread Charge Particle Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 35
   Slot eligibility: Weapon and Assist
   Proposed price: 60,000g
   Pricing basis: Damage/accuracy base 15,000g x4 multi-target minimum; rounded
@@ -1270,7 +1378,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Particle, Anti-Air
   Damage: 250 | To hit: 17
   Weight: 60
-  Heat: 1
   Effect: Fires a 45m wide particle beam. Each Zoid in the path of the beam
   must make a reaction save against the attack roll. Successful saves take no
   damage. Must recharge for three turns.
@@ -1278,6 +1385,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [085] Spread Missile
 ------------------------------------------------------------------------------
+  Energy cost: 14
   Slot eligibility: Weapon and Assist
   Proposed price: 26,000g
   Pricing basis: Damage/accuracy base 6,500g x4 multi-target minimum; rounded
@@ -1285,7 +1393,6 @@ SECTION 1 - REMOVABLE WEAPONS
   Weapon class: Ranged | Damage type: Ranged, Explosive
   Damage: 130 | To hit: 15
   Weight: 10
-  Heat: 1
   Effect: A single missile divides into multiple smaller missiles. Targets 4
   targets within an area 90m by 90m. Deals the listed damage to each target;
   damage is not split.
@@ -1293,6 +1400,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [086] Super Sonic Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Weapon and Assist
   Proposed price: 11,250g
   Pricing basis: Damage/accuracy base 7,500g; +50% disabling effect.
@@ -1307,6 +1415,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [087] Super Spark Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 3,500g
   Pricing basis: Damage/accuracy base 2,500g; +50% disabling effect, -10%
@@ -1320,6 +1429,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [088] Super Speed Rail Gun
 ------------------------------------------------------------------------------
+  Energy cost: 17
   Slot eligibility: Weapon and Assist
   Proposed price: 10,750g
   Pricing basis: Damage/accuracy base 9,750g; +10% penetration.
@@ -1333,6 +1443,7 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [089] Triple Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 10
   Slot eligibility: Weapon and Assist
   Proposed price: 7,500g
   Pricing basis: Damage/accuracy base 7,500g.
@@ -1344,18 +1455,19 @@ SECTION 1 - REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [090] Ultra Cannon
 ------------------------------------------------------------------------------
+  Energy cost: 30
   Slot eligibility: Weapon and Assist
   Proposed price: 30,000g
   Pricing basis: Damage/accuracy base 30,000g.
   Weapon class: Ranged | Damage type: Ranged, Explosive
   Damage: 600 | To hit: 15
   Weight: 40
-  Heat: 1
   Effect: Large single barrel cannon. Targets a single opponent.
 
 ------------------------------------------------------------------------------
 [091] Vulcan Gun
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Weapon and Assist
   Proposed price: 4,750g
   Pricing basis: Damage/accuracy base 2,400g x2 multi-target minimum; rounded
@@ -1373,8 +1485,10 @@ APPENDIX - ZOID-SPECIFIC REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [Z01] 5-Shot Missile Pod - Konig Wolf DSR (CAU)
 ------------------------------------------------------------------------------
-  Listed on: Konig Wolf DSR (CAU) | Removable slot: 2
-  Source slot type: Weapon and Assist
+  Energy cost: 10
+  Source identity: E6
+  Allowed slots: 6, 7
+  Listed on: Konig Wolf DSR (CAU)
   Damage type: Ranged, Explosive
   Damage: 120 | To hit: 19
   Weight: 18
@@ -1385,8 +1499,10 @@ APPENDIX - ZOID-SPECIFIC REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [Z02] Double Beam Cannon - Atak Kat
 ------------------------------------------------------------------------------
-  Listed on: Atak Kat | Removable slot: 1
-  Source slot type: Weapon and Assist
+  Energy cost: 3
+  Source identity: E5
+  Allowed slots: 5, 6, 7
+  Listed on: Atak Kat
   Damage type: Ranged, Laser
   Damage: 60 | To hit: 17
   Weight: 8
@@ -1396,8 +1512,10 @@ APPENDIX - ZOID-SPECIFIC REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [Z03] Double Beam Cannon - Command Wolf
 ------------------------------------------------------------------------------
-  Listed on: Command Wolf | Removable slot: 1
-  Source slot type: Weapon and Assist
+  Energy cost: 3
+  Source identity: E5
+  Allowed slots: 5, 6, 7
+  Listed on: Command Wolf
   Damage type: Ranged, Laser
   Damage: 70 | To hit: 14
   Weight: 13
@@ -1408,8 +1526,10 @@ APPENDIX - ZOID-SPECIFIC REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [Z04] Double Beam Cannon - Proto Zaber
 ------------------------------------------------------------------------------
-  Listed on: Proto Zaber | Removable slot: 1
-  Source slot type: Weapon and Assist
+  Energy cost: 7
+  Source identity: E5
+  Allowed slots: 5, 6, 7
+  Listed on: Proto Zaber
   Damage type: Ranged, Laser
   Damage: 200 | To hit: 18
   Weight: 17
@@ -1420,8 +1540,10 @@ APPENDIX - ZOID-SPECIFIC REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [Z05] Double Beam Cannon - Zaber Fang
 ------------------------------------------------------------------------------
-  Listed on: Zaber Fang | Removable slot: 1
-  Source slot type: Weapon and Assist
+  Energy cost: 6
+  Source identity: E5
+  Allowed slots: 5, 6, 7
+  Listed on: Zaber Fang
   Damage type: Ranged, Laser
   Damage: 120 | To hit: 18
   Weight: 15
@@ -1431,8 +1553,10 @@ APPENDIX - ZOID-SPECIFIC REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [Z06] Double Beam Cannon - Zaber Fang Old
 ------------------------------------------------------------------------------
-  Listed on: Zaber Fang Old | Removable slot: 1
-  Source slot type: Weapon and Assist
+  Energy cost: 6
+  Source identity: E5
+  Allowed slots: 5, 6, 7
+  Listed on: Zaber Fang Old
   Damage type: Ranged, Laser
   Damage: 120 | To hit: 18
   Weight: 15
@@ -1442,13 +1566,39 @@ APPENDIX - ZOID-SPECIFIC REMOVABLE WEAPONS
 ------------------------------------------------------------------------------
 [Z07] Double Beam Cannon - Zaber Fang RS (CAU)
 ------------------------------------------------------------------------------
-  Listed on: Zaber Fang RS (CAU) | Removable slot: 1
-  Source slot type: Weapon and Assist
+  Energy cost: 6
+  Source identity: E5
+  Allowed slots: 5, 6, 7
+  Listed on: Zaber Fang RS (CAU)
   Damage type: Ranged, Laser
   Damage: 120 | To hit: 18
   Weight: 15
   Effect: Back mounted removable cannon. Targets a single opponnent. (Zaber
   Fang Only)
+
+------------------------------------------------------------------------------
+[Z08] Double Beam Cannon - Great Zaber
+------------------------------------------------------------------------------
+  Energy cost: 7
+  Source identity: E5
+  Allowed slots: 5, 6, 7
+  Listed on: Great Zaber
+  Damage: 200 | To hit: 18
+  Damage type: Ranged, Laser
+  Weight: 17
+  Effect: Back mounted energy cannon. Targets a single opponent.
+
+------------------------------------------------------------------------------
+[Z09] 20mm Solid Rifle - Great Zaber
+------------------------------------------------------------------------------
+  Energy cost: 6
+  Source identity: E6
+  Allowed slots: 6
+  Listed on: Great Zaber
+  Damage: 200 | To hit: 17
+  Damage type: Ranged, Long Range, Bullet
+  Weight: 15
+  Effect: Shoulder mounted long-range rifle. Targets a single opponent.
 
 ==============================================================================
 SECTION 2 - ASSIST EQUIPMENT
@@ -1456,6 +1606,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A001] 3D Radar
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 13,000g
   Pricing basis: Stat-benefit base 10,500g; x0.75 for three-turn duration;
@@ -1471,12 +1622,13 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A002] Accelerator Equipment
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 15,000g
   Pricing basis: Stat-benefit base 20,000g; x0.75 for three-turn duration.
   To hit: 0
   Weight: 10
-  Heat: 1 | Activation: Active
+  Activation: Active
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 20 | Speed increase: 1000
   Effect: Boosters to increase speed by 1,000 and reaction by 20. Lasts three
@@ -1485,6 +1637,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A003] After Burner
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 5,750g
   Pricing basis: Stat-benefit base 10,000g; x0.75 for three-turn duration;
@@ -1500,6 +1653,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A004] All-Weather Radar
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 11,250g
   Pricing basis: Stat-benefit base 15,000g; x0.75 for three-turn duration.
@@ -1513,6 +1667,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A005] Anti Charge Particle Shield
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 25,000g
   Pricing basis: Stat-benefit base 20,000g; +5,000g damage-resistance premium.
@@ -1527,6 +1682,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A006] Anti-Laser Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 65,000g
   Pricing basis: Armor 10 x 5,000g; Defense 100 x 100g. +5,000g damage-
@@ -1542,6 +1698,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A007] Chobam Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 33,000g
   Pricing basis: Armor 6 x 5,000g; Defense 30 x 100g.
@@ -1555,6 +1712,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A008] Composite Sensor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 4,500g
   Pricing basis: Stat-benefit base 4,500g.
@@ -1568,6 +1726,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A009] Core Enhance Unit
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 5,000g
   Pricing basis: Permanent +100 maximum health: 50g per health.
@@ -1581,6 +1740,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A010] E-Protector
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 13,500g
   Pricing basis: Stat-benefit base 6,000g; +7,500g damage-resistance premium.
@@ -1595,12 +1755,13 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A011] E-Shield Generator
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 4,000g
   Pricing basis: Stat-benefit base 4,000g.
   To hit: 0
   Weight: 5
-  Heat: 2 | Activation: Active | Shield health: 200
+  Activation: Active | Shield health: 200
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
   Effect: A domed energy shield that blocks 200 damage before dispersing.
@@ -1608,11 +1769,11 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A012] ECM
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 10,000g
   Pricing basis: Three-turn allied targeting-disruption utility tier.
   Weight: 3
-  Heat: 1
   To-hit increase: 0
   Effect: System that disrupts enemies targeting systems againt you and your
   ally's. Attacks have disadvantage against you. Lasts three turns.
@@ -1620,12 +1781,12 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A013] Electro-Magnetic Jammer
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 12,500g
   Pricing basis: Armor 3 x 5,000g; Reaction 3 x 500g. x0.75 for three-turn
   duration.
   Weight: 10
-  Heat: 1
   Activation: Active
   Armor increase: 3 | To-hit increase: 0 | Reaction increase: 3
   Effect: Increases Armor by 3 and Reaction by 3 for three turns.
@@ -1633,6 +1794,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A014] Electron Disruptor Equipment
 ------------------------------------------------------------------------------
+  Energy cost: 8
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 11,250g
   Pricing basis: Attack-bonus reduction valued at 20 x 750g;
@@ -1646,6 +1808,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A015] Enhanced Chobam Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 35,000g
   Pricing basis: Armor 6 x 5,000g; Defense 50 x 100g.
@@ -1659,6 +1822,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A016] Enhanced Composite Sensor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 7,000g
   Pricing basis: Stat-benefit base 7,000g.
@@ -1672,6 +1836,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A017] Enhanced Fused Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 140,000g
   Pricing basis: Armor 20 x 5,000g; Defense 150 x 100g. +25,000g damage-
@@ -1687,6 +1852,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A018] Enhanced Laser Sensor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 2,500g
   Pricing basis: Stat-benefit base 2,500g.
@@ -1700,6 +1866,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A019] Enhanced Micro Sensor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 1,500g
   Pricing basis: Stat-benefit base 1,500g.
@@ -1713,11 +1880,11 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A020] Enhanced Optical Camouflage
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 10,000g
   Pricing basis: Six-turn camouflage utility tier.
   Weight: 10
-  Heat: 1
   To-hit increase: 0
   Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
   against you while active. Lasts six turns.
@@ -1725,6 +1892,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A021] Enhanced Radar System
 ------------------------------------------------------------------------------
+  Energy cost: 4
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 13,500g
   Pricing basis: Stat-benefit base 12,000g; x0.75 for three-turn duration;
@@ -1740,6 +1908,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A022] Extension Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 25,500g
   Pricing basis: Armor 5 x 5,000g; Defense 5 x 100g.
@@ -1753,6 +1922,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A023] F-Round Shield
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 92,000g
   Pricing basis: Armor 16 x 5,000g; Defense 70 x 100g. +5,000g damage-
@@ -1768,6 +1938,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A024] Full Armor System
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 95,000g
   Pricing basis: Armor 18 x 5,000g; Defense 50 x 100g.
@@ -1781,6 +1952,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A025] Fused Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 71,000g
   Pricing basis: Armor 10 x 5,000g; Defense 60 x 100g. +15,000g damage-
@@ -1796,6 +1968,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A026] GPS Magnetism Detector
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 4,500g
   Pricing basis: Stat-benefit base 4,000g; x0.75 for three-turn duration; x1.5
@@ -1811,6 +1984,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A027] High Mobility Thruster
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 5,750g
   Pricing basis: Stat-benefit base 7,500g; x0.75 for three-turn duration.
@@ -1824,6 +1998,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A028] I-Field Generator
 ------------------------------------------------------------------------------
+  Energy cost: 15
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 20,000g
   Pricing basis: 100 group healing with three-turn recharge.
@@ -1838,6 +2013,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A029] Infra-Red Scanner
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 6,750g
   Pricing basis: Stat-benefit base 9,000g; x0.75 for three-turn duration.
@@ -1851,6 +2027,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A030] Infra-Red Scope
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 11,250g
   Pricing basis: Stat-benefit base 15,000g; x0.75 for three-turn duration.
@@ -1864,6 +2041,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A031] Ion Projector
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 8,000g
   Pricing basis: 100 self-healing with two-turn recharge.
@@ -1877,12 +2055,13 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A032] Large E-Shield Generator
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 6,000g
   Pricing basis: Stat-benefit base 6,000g.
   To hit: 0
   Weight: 10
-  Heat: 1 | Activation: Active | Shield health: 300
+  Activation: Active | Shield health: 300
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
   Effect: A large domed energy shield that blocks 300 damage before
@@ -1891,6 +2070,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A033] Large Extension Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 51,000g
   Pricing basis: Armor 10 x 5,000g; Defense 10 x 100g.
@@ -1904,6 +2084,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A034] Large GPS Magnetism Detector
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 9,000g
   Pricing basis: +1,600 range x 5g; x0.75 for three-turn duration;
@@ -1919,6 +2100,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A035] Large Magnetism Detector
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 9,000g
   Pricing basis: Stat-benefit base 8,000g; x0.75 for three-turn duration; x1.5
@@ -1934,6 +2116,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A036] Large Multiple Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 32,000g
   Pricing basis: Armor 6 x 5,000g; Defense 20 x 100g.
@@ -1947,6 +2130,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A037] Large Radar
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 9,000g
   Pricing basis: 16 x 750g x 0.75 for three-turn duration.
@@ -1960,12 +2144,13 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A038] Large Smokescreen Generator
 ------------------------------------------------------------------------------
+  Energy cost: 4
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 5,000g
   Pricing basis: Larger smoke-area utility tier.
   To hit: 0
   Weight: 3
-  Heat: 2 | Activation: Active
+  Activation: Active
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
   Effect: Deploys thick smoke in 60m centered on you. Attacks have
@@ -1974,6 +2159,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A039] Large Sonic Detector
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 5,000g
   Pricing basis: Stat-benefit base 4,500g; x0.75 for three-turn duration; x1.5
@@ -1989,6 +2175,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A040] Large Super-Heavy Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 47,000g
   Pricing basis: Armor 8 x 5,000g; Defense 70 x 100g.
@@ -2002,12 +2189,13 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A041] Laser Diffusion Equipment
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 15,000g
   Pricing basis: Stat-benefit base 10,000g; +5,000g damage-resistance premium.
   To hit: 0
   Weight: 5
-  Heat: 1 | Activation: Active
+  Activation: Active
   Defense increase: 100 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
   Effect: Increases your Zoids defense by 100. Reduces energy damage taken by
@@ -2016,6 +2204,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A042] Laser Sensor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 1,500g
   Pricing basis: Stat-benefit base 2,000g; x0.75 for three-turn duration.
@@ -2030,6 +2219,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A043] Magnetism Detector
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 3,750g
   Pricing basis: Stat-benefit base 4,000g; x0.75 for three-turn duration;
@@ -2045,6 +2235,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A044] Micro Sensor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 750g
   Pricing basis: Stat-benefit base 1,000g; x0.75 for three-turn duration.
@@ -2058,6 +2249,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A045] Multiple Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 500g
   Pricing basis: Stat-benefit base 400g.
@@ -2071,12 +2263,13 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A046] Optical Camouflage
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 6,000g
   Pricing basis: Three-turn camouflage utility tier.
   To hit: 0
   Weight: 5
-  Heat: 2 | Activation: Active
+  Activation: Active
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
   Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
@@ -2085,6 +2278,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A047] Radar
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 4,000g
   Pricing basis: 7 x 750g x 0.75 for three-turn duration; rounded to 250g.
@@ -2098,6 +2292,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A048] Radar System
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 5,750g
   Pricing basis: Stat-benefit base 7,500g; x0.75 for three-turn duration.
@@ -2111,6 +2306,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A049] Radome Unit
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 17,000g
   Pricing basis: Stat-benefit base 15,000g; x0.75 for three-turn duration;
@@ -2125,6 +2321,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A050] Rare Metal Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 55,500g
   Pricing basis: Armor 8 x 5,000g; Defense 80 x 100g. +7,500g damage-
@@ -2140,6 +2337,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A051] Self Recovery Unit
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 15,000g
   Pricing basis: Passive 50 self-healing each turn.
@@ -2153,12 +2351,13 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A052] Small E-Shield Generator
 ------------------------------------------------------------------------------
+  Energy cost: 2
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 2,000g
   Pricing basis: Stat-benefit base 2,000g.
   To hit: 0
   Weight: 3
-  Heat: 3 | Activation: Active | Shield health: 100
+  Activation: Active | Shield health: 100
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
   Effect: A small domed energy shield that blocks 100 damage before
@@ -2167,12 +2366,13 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A053] Smokescreen Generator
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 4,000g
   Pricing basis: Smoke/disadvantage utility tier.
   To hit: 0
   Weight: 1
-  Heat: 3 | Activation: Active
+  Activation: Active
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
   Effect: Deploys thick smoke in 45m centered on you. While in the smoke
@@ -2181,6 +2381,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A054] Sonic Detector
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 3,500g
   Pricing basis: Stat-benefit base 3,000g; x0.75 for three-turn duration; x1.5
@@ -2196,11 +2397,11 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A055] Stealth System
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 8,000g
   Pricing basis: Camouflage plus anti-air bonus suppression.
   Weight: 10
-  Heat: 2
   To-hit increase: 0
   Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
   against you while active. Nullifies opponents Anti-Air attack bonus against
@@ -2209,6 +2410,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A056] Super-Heavy Armor
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 1,000g
   Pricing basis: Stat-benefit base 1,000g.
@@ -2222,6 +2424,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A057] Thruster
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 3,750g
   Pricing basis: Stat-benefit base 5,000g; x0.75 for three-turn duration.
@@ -2235,6 +2438,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A058] Turbo Charger
 ------------------------------------------------------------------------------
+  Energy cost: 1
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 1,500g
   Pricing basis: 200 x 10g x 0.75 for three-turn duration.
@@ -2248,6 +2452,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A059] ZOS Enhanced Type
 ------------------------------------------------------------------------------
+  Energy cost: 5
   Slot eligibility: Assist; Weapon and Assist
   Availability: Not purchasable.
   Weight: 10
@@ -2259,6 +2464,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A060] ZOS Mass Produced
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Proposed price: 15,000g
   Pricing basis: 20,000g extra-action baseline, discounted 25% for once-per-
@@ -2272,6 +2478,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A061] ZOS Prototype
 ------------------------------------------------------------------------------
+  Energy cost: 3
   Slot eligibility: Assist; Weapon and Assist
   Availability: Not purchasable.
   Weight: 10
@@ -2283,6 +2490,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A062] Acid Neutralizer Unit
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Availability: 20,000g
   Weight: 5
@@ -2294,6 +2502,7 @@ SECTION 2 - ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [A063] EMP Hardened Circuits
 ------------------------------------------------------------------------------
+  Energy cost: 0
   Slot eligibility: Assist; Weapon and Assist
   Availability: 50,000g
   Weight: 5
@@ -2302,13 +2511,42 @@ SECTION 2 - ASSIST EQUIPMENT
   negated. This ability can be used once, and resets every time a Zoid
   Rests or Repairs.
   
+------------------------------------------------------------------------------
+[A064] Physics Reinforcer Unit
+------------------------------------------------------------------------------
+  Energy cost: 0
+  Slot eligibility: Assist or Weapon and Assist
+  Weight: 3
+  Activation: Passive
+  Effect: Increases a Zoid's maximum health by 100.
+
+------------------------------------------------------------------------------
+[A065] Energy Reinforcer Unit
+------------------------------------------------------------------------------
+  Energy cost: 0
+  Slot eligibility: Assist or Weapon and Assist
+  Weight: 3
+  Activation: Passive
+  Effect: Increases a Zoid's maximum Energy by 20.
+
+------------------------------------------------------------------------------
+[A066] Energy Container
+------------------------------------------------------------------------------
+  Energy cost: 0
+  Slot eligibility: Assist or Weapon and Assist
+  Weight: 10
+  Activation: Active
+  Effect: Restores 20 Energy when activated, up to the Zoid's maximum Energy.
+
 ZOID-SPECIFIC ASSIST EQUIPMENT
 ==============================================================================
 ------------------------------------------------------------------------------
 [ZA01] Anti-Particle Beam Shield - Mad Thunder
 ------------------------------------------------------------------------------
-  Listed on: Mad Thunder | Removable slot: 4
-  Source slot type: Assist
+  Energy cost: 2
+  Source identity: E8
+  Allowed slots: 5, 6, 7, 8
+  Listed on: Mad Thunder
   Weight: 30
   Activation: Passive
   Defense increase: 200
@@ -2317,8 +2555,10 @@ ZOID-SPECIFIC ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [ZA02] Auto Repair Unit - Diablo Tiger
 ------------------------------------------------------------------------------
-  Listed on: Diablo Tiger | Removable slot: 4
-  Source slot type: Assist
+  Energy cost: 3
+  Source identity: E8
+  Allowed slots: 5, 6, 7, 8
+  Listed on: Diablo Tiger
   Weight: 15
   Activation: Active
   Description from source name: self repair function.
@@ -2327,8 +2567,10 @@ ZOID-SPECIFIC ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [ZA03] Optical Camouflage - Shadow Fox
 ------------------------------------------------------------------------------
-  Listed on: Shadow Fox | Removable slot: 4
-  Source slot type: Assist
+  Energy cost: 3
+  Source identity: E8
+  Allowed slots: 5, 6, 7, 8
+  Listed on: Shadow Fox
   Weight: 5
   Activation: Active
   Effect: Self targeting stealth generator. Turns the Zoid "invisible". Lasts
@@ -2337,8 +2579,10 @@ ZOID-SPECIFIC ASSIST EQUIPMENT
 ------------------------------------------------------------------------------
 [ZA04] Stealth Generator - Zero X (CAU)
 ------------------------------------------------------------------------------
-  Listed on: Zero X (CAU) | Removable slot: 1
-  Source slot type: Assist
+  Energy cost: 3
+  Source identity: E5
+  Allowed slots: 5, 6, 7, 8
+  Listed on: Zero X (CAU)
   Weight: 10
   Effect: Generates Optical Camoflage and dampens sound when used outside of
   combat

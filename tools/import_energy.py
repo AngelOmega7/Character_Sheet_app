@@ -162,7 +162,7 @@ def update_companion(tables):
             continue
         lines.append(line)
         if current and line.startswith("  Health:"):
-            lines.append(f"  Energy: {current['energy']} | Energy recharge: {current['energy_recharge']}")
+            lines.append(f"  Energy: {current['energy']} | EPT: {current['energy_recharge']}")
         if line == "FIXED WEAPONS & SYSTEMS":
             section = 0
         elif line == "REMOVABLE EQUIPMENT SLOTS":
