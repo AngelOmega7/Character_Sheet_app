@@ -22,6 +22,8 @@ Pilot Mental adds directly to the Zoid's final Reaction. Activating an Organoid 
 
 The compact Calculated stats card includes the active Zoid/form's base picture from the workbook. Great Zaber shares Proto Zaber's picture. Transport pictures appear only on the Transport page. Images are bundled for offline use in `assets/zoids` and `assets/transports`; refresh them with `python -m tools.import_zoid_pictures` (requires Pillow) after changing the source workbook's **Zoid List → Zoid Picture Base** images.
 
+On the Transport page, **Load ally** reserves one bay for another player's Zoid as **Ally 1**, **Ally 2**, etc. Allies share hangar capacity with owned Zoids and can be unloaded individually. Remaining allies keep their labels; loading another ally reuses the first free number. Changing or removing the Transport clears all cargo, including allies. Save schema **v15** persists these placeholders through saves and export/import; older saves start with no allies.
+
 Later purchases check funds, General Inventory quantities, the required Base Zoid/CAU, and the target's known-design entry. Confirmed normal purchases deduct the CSV price, consume one of each required Core/Parts item, and consume the selected eligible base instance. Consumed chassis must own no CAUs. Replacements start without inherited upgrades; removable equipment remains in pilot inventory. With multiple eligible bases, select the specific instance.
 
 When recipe checks fail, a separate **GM Override** confirmation grants the build without spending gold or consuming materials/external base chassis. A CAU still requires a particular owned host and cannot be duplicated on that host. Upgraded CAUs supersede their predecessor form, including on override; the host remains.

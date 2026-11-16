@@ -16,6 +16,9 @@ current Energy to that value even if it was higher before resting.
 Weapon effects and source damage notes preserve the catalog wording. Build
 requirements are listed where available.
 
+Zoids have no required pilot level. Low pilot level does not reduce Zoid stats.
+Carry-capacity penalties still apply when overloaded.
+
 ENERGY RULES (energy-v17)
 Maximum Energy = base Zoid Energy + actual pilot level + active Organoid level
 + equipment bonuses. Inactive Organoids add nothing. Activation does not refill
@@ -214,7 +217,7 @@ T01-T04  Transport Zoids (appendix)
 [001] 2-Arm Lizard
 ------------------------------------------------------------------------------
 Classification: Fuzor
-  Type: BLOX | Size: Medium | Required level: 12
+  Type: BLOX | Size: Medium
   Health: 240 | Armor: 22 | Defense: 28
   Energy: 30 | EPT: 3
   Speed: 130 | Reaction: 12 | Range: 600 | Carry capacity: 30
@@ -252,7 +255,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [002] Allosaurer
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Medium | Required level: 7
+  Type: Dinosaur, Land | Size: Medium
   Health: 120 | Armor: 22 | Defense: 10
   Energy: 15 | EPT: 2
   Speed: 170 | Reaction: 15 | Range: 150 | Carry capacity: 20
@@ -285,7 +288,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [003] Atak Kat
 ------------------------------------------------------------------------------
-  Type: Tiger | Size: Small | Required level: 7
+  Type: Tiger | Size: Small
   Health: 100 | Armor: 20 | Defense: 9
   Energy: 15 | EPT: 2
   Speed: 190 | Reaction: 16 | Range: 1800 | Carry capacity: 20
@@ -325,7 +328,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [004] Barigator
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Small | Required level: 2
+  Type: Reptile | Size: Small
   Health: 70 | Armor: 23 | Defense: 8
   Energy: 15 | EPT: 2
   Speed: 180 | Reaction: 16 | Range: 800 | Carry capacity: 20
@@ -355,7 +358,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [005] Berserk Fury
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large | Required level: 20
+  Type: T-Rex | Size: Large
   Health: 380 | Armor: 24 | Defense: 50
   Energy: 40 | EPT: 5
   Speed: 340 | Reaction: 14 | Range: 450 | Carry capacity: 45
@@ -395,7 +398,7 @@ PURCHASE & BUILD REFERENCE
 [005.01] Berserk Fury Z (CAU)
 ------------------------------------------------------------------------------
 CAU base: Berserk Fury
-  Type: T-Rex | Size: Large | Required level: 20
+  Type: T-Rex | Size: Large
   Health: 530 | Armor: 25 | Defense: 75
   Energy: 50 | EPT: 20
   Speed: 600 | Reaction: 16 | Range: 500 | Carry capacity: 50
@@ -433,7 +436,7 @@ PURCHASE & BUILD REFERENCE
 [005.02] Buster Fury (CAU)
 ------------------------------------------------------------------------------
 CAU base: Berserk Fury
-  Type: T-Rex | Size: Large | Required level: 20
+  Type: T-Rex | Size: Large
   Health: 380 | Armor: 24 | Defense: 50
   Energy: 40 | EPT: 5
   Speed: 380 | Reaction: 16 | Range: 500 | Carry capacity: 45
@@ -476,7 +479,7 @@ PURCHASE & BUILD REFERENCE
 [005.03] Jagd Fury (CAU)
 ------------------------------------------------------------------------------
 CAU base: Berserk Fury
-  Type: T-Rex | Size: Large | Required level: 20
+  Type: T-Rex | Size: Large
   Health: 420 | Armor: 26 | Defense: 65
   Energy: 40 | EPT: 5
   Speed: 290 | Reaction: 13 | Range: 450 | Carry capacity: 40
@@ -514,7 +517,7 @@ PURCHASE & BUILD REFERENCE
 [005.04] Sturm Fury (CAU)
 ------------------------------------------------------------------------------
 CAU base: Berserk Fury
-  Type: T-Rex | Size: Large | Required level: 20
+  Type: T-Rex | Size: Large
   Health: 420 | Armor: 25 | Defense: 65
   Energy: 40 | EPT: 5
   Speed: 360 | Reaction: 15 | Range: 360 | Carry capacity: 40
@@ -550,7 +553,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [006] Black Rhimos
 ------------------------------------------------------------------------------
-  Type: Mammal | Size: Medium | Required level: 3
+  Type: Mammal | Size: Medium
   Health: 150 | Armor: 27 | Defense: 11
   Energy: 15 | EPT: 2
   Speed: 180 | Reaction: 10 | Range: 350 | Carry capacity: 40
@@ -584,7 +587,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [007] Blade Liger
 ------------------------------------------------------------------------------
-  Type: Liger | Size: Large | Required level: 13
+  Type: Liger | Size: Large
   Health: 280 | Armor: 21 | Defense: 25
   Energy: 30 | EPT: 3
   Speed: 305 | Reaction: 15 | Range: 400 | Carry capacity: 50
@@ -622,7 +625,7 @@ PURCHASE & BUILD REFERENCE
 [007.01] Blade Liger AB (CAU)
 ------------------------------------------------------------------------------
 CAU base: Blade Liger
-  Type: Liger | Size: Large | Required level: 16
+  Type: Liger | Size: Large
   Health: 300 | Armor: 23 | Defense: 25
   Energy: 35 | EPT: 3
   Speed: 320 | Reaction: 17 | Range: 400 | Carry capacity: 45
@@ -698,7 +701,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [009] Bloodler
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Flying | Size: Medium | Required level: 15
+  Type: Dinosaur, Flying | Size: Medium
   Health: 250 | Armor: 18 | Defense: 15
   Energy: 30 | EPT: 2
   Speed: 350 | Reaction: 16 | Range: 600 | Carry capacity: 30
@@ -737,7 +740,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [010] Bloody Demon
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Extra Large | Required level: 30
+  Type: T-Rex | Size: Extra Large
   Health: 500 | Armor: 17 | Defense: 40
   Energy: 40 | EPT: 3
   Speed: 90 | Reaction: 7 | Range: 300 | Carry capacity: 50
@@ -776,7 +779,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [011] Brachios
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Medium | Required level: 3
+  Type: Dinosaur, Land | Size: Medium
   Health: 130 | Armor: 25 | Defense: 10
   Energy: 20 | EPT: 2
   Speed: 140 | Reaction: 8 | Range: 300 | Carry capacity: 35
@@ -806,7 +809,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [012] Buster Eagle
 ------------------------------------------------------------------------------
-  Type: Flying | Size: Medium | Required level: 11
+  Type: Flying | Size: Medium
   Health: 210 | Armor: 21 | Defense: 20
   Energy: 30 | EPT: 3
   Speed: 2000 | Reaction: 18 | Range: 300 | Carry capacity: 30
@@ -841,7 +844,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [013] Cannon Tortoise
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Small | Required level: 2
+  Type: Reptile | Size: Small
   Health: 90 | Armor: 28 | Defense: 13
   Energy: 15 | EPT: 2
   Speed: 100 | Reaction: 8 | Range: 300 | Carry capacity: 25
@@ -872,7 +875,7 @@ PURCHASE & BUILD REFERENCE
 [013.01] Cannon Tortoise BC (CAU)
 ------------------------------------------------------------------------------
 CAU base: Cannon Tortoise
-  Type: Reptile | Size: Small | Required level: 3
+  Type: Reptile | Size: Small
   Health: 100 | Armor: 28 | Defense: 13
   Energy: 15 | EPT: 2
   Speed: 80 | Reaction: 7 | Range: 1200 | Carry capacity: 15
@@ -908,7 +911,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [014] Cerberus
 ------------------------------------------------------------------------------
-  Type: Wolf | Size: Medium | Required level: 16
+  Type: Wolf | Size: Medium
   Health: 200 | Armor: 23 | Defense: 20
   Energy: 25 | EPT: 3
   Speed: 190 | Reaction: 13 | Range: 1200 | Carry capacity: 30
@@ -947,7 +950,7 @@ PURCHASE & BUILD REFERENCE
 [015] Chimera Dragon
 ------------------------------------------------------------------------------
 Classification: Fuzor
-  Type: BLOX | Size: Large | Required level: 13
+  Type: BLOX | Size: Large
   Health: 320 | Armor: 22 | Defense: 30
   Energy: 40 | EPT: 5
   Speed: 1200 | Reaction: 2 | Range: 200 | Carry capacity: 40
@@ -986,7 +989,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [016] Command Wolf
 ------------------------------------------------------------------------------
-  Type: Wolf | Size: Medium | Required level: 4
+  Type: Wolf | Size: Medium
   Health: 120 | Armor: 22 | Defense: 10
   Energy: 18 | EPT: 2
   Speed: 210 | Reaction: 14 | Range: 800 | Carry capacity: 30
@@ -1021,7 +1024,7 @@ PURCHASE & BUILD REFERENCE
 [016.01] Climber Wolf (CAU)
 ------------------------------------------------------------------------------
 CAU base: Command Wolf
-  Type: Wolf | Size: Medium | Required level: 8
+  Type: Wolf | Size: Medium
   Health: 130 | Armor: 22 | Defense: 10
   Energy: 20 | EPT: 3
   Speed: 200 | Reaction: 14 | Range: 800 | Carry capacity: 30
@@ -1055,7 +1058,7 @@ PURCHASE & BUILD REFERENCE
 [016.02] Command Wolf AC (CAU)
 ------------------------------------------------------------------------------
 CAU base: Command Wolf
-  Type: Wolf | Size: Medium | Required level: 8
+  Type: Wolf | Size: Medium
   Health: 170 | Armor: 22 | Defense: 12
   Energy: 23 | EPT: 3
   Speed: 200 | Reaction: 14 | Range: 800 | Carry capacity: 30
@@ -1092,7 +1095,7 @@ PURCHASE & BUILD REFERENCE
 [016.03] Command Wolf IS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Command Wolf
-  Type: Wolf | Size: Medium | Required level: 11
+  Type: Wolf | Size: Medium
   Health: 180 | Armor: 22 | Defense: 16
   Energy: 25 | EPT: 3
   Speed: 200 | Reaction: 15 | Range: 800 | Carry capacity: 25
@@ -1129,7 +1132,7 @@ PURCHASE & BUILD REFERENCE
 [016.04] Command Wolf UC (CAU)
 ------------------------------------------------------------------------------
 CAU base: Command Wolf
-  Type: Wolf | Size: Medium | Required level: 5
+  Type: Wolf | Size: Medium
   Health: 140 | Armor: 22 | Defense: 12
   Energy: 20 | EPT: 2
   Speed: 195 | Reaction: 12 | Range: 600 | Carry capacity: 25
@@ -1165,7 +1168,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [017] Cyclops
 ------------------------------------------------------------------------------
-  Type: Mammal | Size: Medium | Required level: 25
+  Type: Mammal | Size: Medium
   Health: 400 | Armor: 28 | Defense: 65
   Energy: 50 | EPT: 3
   Speed: 180 | Reaction: 13 | Range: 100 | Carry capacity: 60
@@ -1200,7 +1203,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [018] Cyclops 2
 ------------------------------------------------------------------------------
-  Type: Mammal | Size: Medium | Required level: 25
+  Type: Mammal | Size: Medium
   Health: 380 | Armor: 29 | Defense: 65
   Energy: 50 | EPT: 3
   Speed: 180 | Reaction: 13 | Range: 100 | Carry capacity: 60
@@ -1234,7 +1237,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [019] Dark Horn
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Large | Required level: 13
+  Type: Dinosaur, Land | Size: Large
   Health: 300 | Armor: 28 | Defense: 35
   Energy: 30 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 400 | Carry capacity: 55
@@ -1276,7 +1279,7 @@ PURCHASE & BUILD REFERENCE
 [019.01] Dark Horn HS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Dark Horn
-  Type: Dinosaur, Land | Size: Large | Required level: 14
+  Type: Dinosaur, Land | Size: Large
   Health: 320 | Armor: 28 | Defense: 35
   Energy: 30 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 400 | Carry capacity: 50
@@ -1316,7 +1319,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [020] Dark Poison
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Small | Required level: 8
+  Type: Insect | Size: Small
   Health: 130 | Armor: 28 | Defense: 15
   Energy: 20 | EPT: 2
   Speed: 250 | Reaction: 12 | Range: 300 | Carry capacity: 20
@@ -1347,7 +1350,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [021] Dark Spiner
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Large | Required level: 14
+  Type: Dinosaur, Land | Size: Large
   Health: 310 | Armor: 23 | Defense: 43
   Energy: 37 | EPT: 4
   Speed: 240 | Reaction: 12 | Range: 800 | Carry capacity: 50
@@ -1387,7 +1390,7 @@ PURCHASE & BUILD REFERENCE
 [021.01] Killer Spiner (CAU)
 ------------------------------------------------------------------------------
 CAU base: Dark Spiner
-  Type: Dinosaur, Land | Size: Large | Required level: 21
+  Type: Dinosaur, Land | Size: Large
   Health: 380 | Armor: 23 | Defense: 75
   Energy: 35 | EPT: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 60
@@ -1427,7 +1430,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [022] Death Meteor
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large Large | Required level: 33
+  Type: T-Rex | Size: Large Large
   Health: 1500 | Armor: 29 | Defense: 35
   Energy: 120 | EPT: 20
   Speed: 90 | Reaction: 8 | Range: 500 | Carry capacity: 70
@@ -1465,7 +1468,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [023] Death Saurer
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Extra Large | Required level: 30
+  Type: T-Rex | Size: Extra Large
   Health: 1000 | Armor: 29 | Defense: 100
   Energy: 100 | EPT: 10
   Speed: 90 | Reaction: 8 | Range: 500 | Carry capacity: 70
@@ -1503,7 +1506,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [024] Death Stinger
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Large Large | Required level: 27
+  Type: Insect | Size: Large Large
   Health: 600 | Armor: 28 | Defense: 75
   Energy: 50 | EPT: 5
   Speed: 185 | Reaction: 15 | Range: 400 | Carry capacity: 60
@@ -1543,7 +1546,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [025] Demon's Head
 ------------------------------------------------------------------------------
-  Type: BLOX | Size: Small | Required level: 7
+  Type: BLOX | Size: Small
   Health: 150 | Armor: 24 | Defense: 18
   Energy: 27 | EPT: 3
   Speed: 80 | Reaction: 8 | Range: 100 | Carry capacity: 30
@@ -1579,7 +1582,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [026] Diablo Tiger
 ------------------------------------------------------------------------------
-  Type: Tiger | Size: Medium | Required level: 25
+  Type: Tiger | Size: Medium
   Health: 350 | Armor: 23 | Defense: 75
   Energy: 35 | EPT: 7
   Speed: 240 | Reaction: 18 | Range: 300 | Carry capacity: 20
@@ -1623,7 +1626,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [027] Dibison
 ------------------------------------------------------------------------------
-  Type: Mammal | Size: Large | Required level: 14
+  Type: Mammal | Size: Large
   Health: 300 | Armor: 24 | Defense: 25
   Energy: 30 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 700 | Carry capacity: 50
@@ -1661,7 +1664,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [028] Diplo Gun
 ------------------------------------------------------------------------------
-  Type: BLOX | Size: Small | Required level: 7
+  Type: BLOX | Size: Small
   Health: 150 | Armor: 22 | Defense: 18
   Energy: 27 | EPT: 3
   Speed: 200 | Reaction: 3 | Range: 300 | Carry capacity: 20
@@ -1695,7 +1698,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [029] Double Sworder
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Small | Required level: 2
+  Type: Insect | Size: Small
   Health: 50 | Armor: 22 | Defense: 9
   Energy: 10 | EPT: 2
   Speed: 180 | Reaction: 20 | Range: 2000 | Carry capacity: 12
@@ -1731,7 +1734,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [030] Elephander
 ------------------------------------------------------------------------------
-  Type: Mammal | Size: Large | Required level: 14
+  Type: Mammal | Size: Large
   Health: 350 | Armor: 25 | Defense: 50
   Energy: 35 | EPT: 5
   Speed: 130 | Reaction: 10 | Range: 800 | Carry capacity: 70
@@ -1771,7 +1774,7 @@ PURCHASE & BUILD REFERENCE
 [030.01] Elephander AG (CAU)
 ------------------------------------------------------------------------------
 CAU base: Elephander
-  Type: Mammal | Size: Large | Required level: 16
+  Type: Mammal | Size: Large
   Health: 350 | Armor: 25 | Defense: 20
   Energy: 35 | EPT: 5
   Speed: 130 | Reaction: 10 | Range: 600 | Carry capacity: 70
@@ -1812,7 +1815,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [031] Fire Phoenix
 ------------------------------------------------------------------------------
-  Type: Flying | Size: Medium | Required level: 10
+  Type: Flying | Size: Medium
   Health: 200 | Armor: 18 | Defense: 16
   Energy: 35 | EPT: 3
   Speed: 2000 | Reaction: 20 | Range: 400 | Carry capacity: 35
@@ -1841,7 +1844,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [032] Flyscissors
 ------------------------------------------------------------------------------
-  Type: BLOX | Size: Small | Required level: 7
+  Type: BLOX | Size: Small
   Health: 150 | Armor: 18 | Defense: 15
   Energy: 27 | EPT: 3
   Speed: 2800 | Reaction: 3 | Range: 300 | Carry capacity: 20
@@ -1878,7 +1881,7 @@ PURCHASE & BUILD REFERENCE
 [033] Fuzor Dragon
 ------------------------------------------------------------------------------
 Classification: Fuzor
-  Type: BLOX | Size: Large | Required level: 13
+  Type: BLOX | Size: Large
   Health: 300 | Armor: 20 | Defense: 30
   Energy: 40 | EPT: 5
   Speed: 1800 | Reaction: 8 | Range: 300 | Carry capacity: 40
@@ -1916,7 +1919,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [034] Gator
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Small | Required level: 1
+  Type: Reptile | Size: Small
   Health: 40 | Armor: 22 | Defense: 8
   Energy: 10 | EPT: 2
   Speed: 200 | Reaction: 10 | Range: 1200 | Carry capacity: 18
@@ -1949,7 +1952,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [035] Geno Hydra
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large | Required level: 24
+  Type: T-Rex | Size: Large
   Health: 370 | Armor: 24 | Defense: 43
   Energy: 40 | EPT: 5
   Speed: 340 | Reaction: 14 | Range: 400 | Carry capacity: 35
@@ -1987,7 +1990,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [036] Geno Hydra KA
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large | Required level: 26
+  Type: T-Rex | Size: Large
   Health: 430 | Armor: 25 | Defense: 60
   Energy: 40 | EPT: 5
   Speed: 350 | Reaction: 15 | Range: 400 | Carry capacity: 30
@@ -2026,7 +2029,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [037] Geno Saurer
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large | Required level: 15
+  Type: T-Rex | Size: Large
   Health: 300 | Armor: 23 | Defense: 40
   Energy: 35 | EPT: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 40
@@ -2068,7 +2071,7 @@ PURCHASE & BUILD REFERENCE
 [037.01] Geno Breaker (CAU)
 ------------------------------------------------------------------------------
 CAU base: Geno Saurer
-  Type: T-Rex | Size: Large | Required level: 15
+  Type: T-Rex | Size: Large
   Health: 400 | Armor: 24 | Defense: 50
   Energy: 40 | EPT: 5
   Speed: 345 | Reaction: 14 | Range: 300 | Carry capacity: 50
@@ -2105,7 +2108,7 @@ PURCHASE & BUILD REFERENCE
 [037.02] Geno Flame (CAU)
 ------------------------------------------------------------------------------
 CAU base: Geno Saurer
-  Type: T-Rex | Size: Large | Required level: 24
+  Type: T-Rex | Size: Large
   Health: 450 | Armor: 26 | Defense: 60
   Energy: 45 | EPT: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 45
@@ -2144,7 +2147,7 @@ PURCHASE & BUILD REFERENCE
 [037.03] Geno Scissors (CAU)
 ------------------------------------------------------------------------------
 CAU base: Geno Saurer
-  Type: T-Rex | Size: Large | Required level: 18
+  Type: T-Rex | Size: Large
   Health: 380 | Armor: 23 | Defense: 50
   Energy: 40 | EPT: 5
   Speed: 320 | Reaction: 13 | Range: 350 | Carry capacity: 35
@@ -2184,7 +2187,7 @@ PURCHASE & BUILD REFERENCE
 [037.04] Geno Trooper (CAU)
 ------------------------------------------------------------------------------
 CAU base: Geno Saurer
-  Type: T-Rex | Size: Large | Required level: 18
+  Type: T-Rex | Size: Large
   Health: 370 | Armor: 22 | Defense: 45
   Energy: 40 | EPT: 5
   Speed: 2100 | Reaction: 4 | Range: 450 | Carry capacity: 30
@@ -2224,7 +2227,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [038] Gilvader
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Flying | Size: Extra Large | Required level: 33
+  Type: Dinosaur, Flying | Size: Extra Large
   Health: 1200 | Armor: 25 | Defense: 90
   Energy: 70 | EPT: 15
   Speed: 4000 | Reaction: 15 | Range: 1000 | Carry capacity: 60
@@ -2261,7 +2264,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [039] Godos
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Small | Required level: 2
+  Type: Dinosaur, Land | Size: Small
   Health: 80 | Armor: 22 | Defense: 8
   Energy: 12 | EPT: 2
   Speed: 150 | Reaction: 16 | Range: 100 | Carry capacity: 20
@@ -2291,7 +2294,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [040] Gojulas
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large Large | Required level: 18
+  Type: T-Rex | Size: Large Large
   Health: 350 | Armor: 25 | Defense: 35
   Energy: 28 | EPT: 3
   Speed: 75 | Reaction: 10 | Range: 200 | Carry capacity: 60
@@ -2325,7 +2328,7 @@ PURCHASE & BUILD REFERENCE
 [040.01] Gojulas Gunner (CAU)
 ------------------------------------------------------------------------------
 CAU base: Gojulas
-  Type: T-Rex | Size: Large Large | Required level: 20
+  Type: T-Rex | Size: Large Large
   Health: 350 | Armor: 25 | Defense: 38
   Energy: 33 | EPT: 3
   Speed: 60 | Reaction: 9 | Range: 300 | Carry capacity: 55
@@ -2363,7 +2366,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [041] Gojulas Giga
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large Large | Required level: 22
+  Type: T-Rex | Size: Large Large
   Health: 500 | Armor: 26 | Defense: 75
   Energy: 45 | EPT: 6
   Speed: 180 | Reaction: 12 | Range: 400 | Carry capacity: 60
@@ -2403,7 +2406,7 @@ PURCHASE & BUILD REFERENCE
 [041.01] Gojulas Giga Cannon (CAU)
 ------------------------------------------------------------------------------
 CAU base: Gojulas Giga
-  Type: T-Rex | Size: Large Large | Required level: 24
+  Type: T-Rex | Size: Large Large
   Health: 700 | Armor: 26 | Defense: 75
   Energy: 50 | EPT: 5
   Speed: 74 | Reaction: 12 | Range: 400 | Carry capacity: 50
@@ -2442,7 +2445,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [042] Gojulas the Ogre
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large Large | Required level: 20
+  Type: T-Rex | Size: Large Large
   Health: 500 | Armor: 27 | Defense: 60
   Energy: 50 | EPT: 5
   Speed: 125 | Reaction: 9 | Range: 350 | Carry capacity: 60
@@ -2482,7 +2485,7 @@ PURCHASE & BUILD REFERENCE
 [043] Gojulox
 ------------------------------------------------------------------------------
 Classification: Fuzor
-  Type: BLOX | Size: Large | Required level: 24
+  Type: BLOX | Size: Large
   Health: 450 | Armor: 24 | Defense: 90
   Energy: 60 | EPT: 6
   Speed: 130 | Reaction: 10 | Range: 500 | Carry capacity: 60
@@ -2523,7 +2526,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [044] Gordos
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Large Large | Required level: 8
+  Type: Dinosaur, Land | Size: Large Large
   Health: 250 | Armor: 22 | Defense: 14
   Energy: 25 | EPT: 3
   Speed: 80 | Reaction: 8 | Range: 1000 | Carry capacity: 60
@@ -2559,7 +2562,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [045] Gordos LR
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Large Large | Required level: 10
+  Type: Dinosaur, Land | Size: Large Large
   Health: 250 | Armor: 22 | Defense: 24
   Energy: 25 | EPT: 3
   Speed: 60 | Reaction: 7 | Range: 1000 | Carry capacity: 20
@@ -2596,7 +2599,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [046] Gorhecks
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Medium | Required level: 9
+  Type: Dinosaur, Land | Size: Medium
   Health: 150 | Armor: 11 | Defense: 8
   Energy: 18 | EPT: 2
   Speed: 120 | Reaction: 8 | Range: 500 | Carry capacity: 35
@@ -2635,7 +2638,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [047] Gravity Bison
 ------------------------------------------------------------------------------
-  Type: Mammal | Size: Large | Required level: 16
+  Type: Mammal | Size: Large
   Health: 320 | Armor: 25 | Defense: 33
   Energy: 35 | EPT: 4
   Speed: 120 | Reaction: 11 | Range: 800 | Carry capacity: 50
@@ -2675,7 +2678,7 @@ PURCHASE & BUILD REFERENCE
 [048] Griffin
 ------------------------------------------------------------------------------
 Classification: Fuzor
-  Type: BLOX | Size: Large | Required level: 15
+  Type: BLOX | Size: Large
   Health: 400 | Armor: 19 | Defense: 30
   Energy: 40 | EPT: 4
   Speed: 1500 | Reaction: 4 | Range: 400 | Carry capacity: 40
@@ -2711,7 +2714,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [049] Gun Blaster
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Large | Required level: 19
+  Type: Dinosaur, Land | Size: Large
   Health: 400 | Armor: 28 | Defense: 60
   Energy: 50 | EPT: 3
   Speed: 120 | Reaction: 6 | Range: 500 | Carry capacity: 30
@@ -2750,7 +2753,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [050] Gun Sniper
 ------------------------------------------------------------------------------
-  Type: Raptor | Size: Small | Required level: 5
+  Type: Raptor | Size: Small
   Health: 130 | Armor: 20 | Defense: 10
   Energy: 20 | EPT: 2
   Speed: 200 | Reaction: 12 | Range: 1200 | Carry capacity: 20
@@ -2792,7 +2795,7 @@ PURCHASE & BUILD REFERENCE
 [050.01] Gun Sniper NS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Gun Sniper
-  Type: Raptor | Size: Small | Required level: 12
+  Type: Raptor | Size: Small
   Health: 160 | Armor: 22 | Defense: 20
   Energy: 30 | EPT: 2
   Speed: 200 | Reaction: 16 | Range: 3000 | Carry capacity: 20
@@ -2832,7 +2835,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [051] Gun Sniper Weasel
 ------------------------------------------------------------------------------
-  Type: Raptor | Size: Small | Required level: 6
+  Type: Raptor | Size: Small
   Health: 150 | Armor: 22 | Defense: 17
   Energy: 25 | EPT: 2
   Speed: 160 | Reaction: 12 | Range: 800 | Carry capacity: 10
@@ -2874,7 +2877,7 @@ PURCHASE & BUILD REFERENCE
 [051.01] Gun Sniper LS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Gun Sniper Weasel
-  Type: Raptor | Size: Small | Required level: 12
+  Type: Raptor | Size: Small
   Health: 180 | Armor: 22 | Defense: 20
   Energy: 30 | EPT: 2
   Speed: 120 | Reaction: 14 | Range: 600 | Carry capacity: 5
@@ -2917,7 +2920,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [052] Gun Tiger
 ------------------------------------------------------------------------------
-  Type: Tiger | Size: Small | Required level: 3
+  Type: Tiger | Size: Small
   Health: 85 | Armor: 18 | Defense: 8
   Energy: 20 | EPT: 2
   Speed: 270 | Reaction: 18 | Range: 500 | Carry capacity: 20
@@ -2953,7 +2956,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [053] Guysack
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Small | Required level: 4
+  Type: Insect | Size: Small
   Health: 60 | Armor: 22 | Defense: 8
   Energy: 15 | EPT: 2
   Speed: 120 | Reaction: 20 | Range: 1200 | Carry capacity: 18
@@ -2990,7 +2993,7 @@ PURCHASE & BUILD REFERENCE
 [053.01] Guysack Stinger (CAU)
 ------------------------------------------------------------------------------
 CAU base: Guysack
-  Type: Insect | Size: Small | Required level: 10
+  Type: Insect | Size: Small
   Health: 180 | Armor: 24 | Defense: 18
   Energy: 25 | EPT: 2
   Speed: 120 | Reaction: 16 | Range: 1500 | Carry capacity: 40
@@ -3027,7 +3030,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [054] Hammer Head
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Medium | Required level: 10
+  Type: Reptile | Size: Medium
   Health: 200 | Armor: 24 | Defense: 15
   Energy: 25 | EPT: 2
   Speed: 1000 | Reaction: 4 | Range: 300 | Carry capacity: 30
@@ -3064,7 +3067,7 @@ PURCHASE & BUILD REFERENCE
 [054.01] Hammer Head VL (CAU)
 ------------------------------------------------------------------------------
 CAU base: Hammer Head
-  Type: Reptile | Size: Medium | Required level: 12
+  Type: Reptile | Size: Medium
   Health: 200 | Armor: 24 | Defense: 25
   Energy: 30 | EPT: 2
   Speed: 1000 | Reaction: 4 | Range: 300 | Carry capacity: 5
@@ -3098,7 +3101,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [055] Hammer Rock
 ------------------------------------------------------------------------------
-  Type: Gorilla | Size: Small | Required level: 6
+  Type: Gorilla | Size: Small
   Health: 110 | Armor: 26 | Defense: 13
   Energy: 20 | EPT: 2
   Speed: 180 | Reaction: 12 | Range: 200 | Carry capacity: 20
@@ -3132,7 +3135,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [056] Hellrunner
 ------------------------------------------------------------------------------
-  Type: Raptor | Size: Small | Required level: 1
+  Type: Raptor | Size: Small
   Health: 30 | Armor: 20 | Defense: 9
   Energy: 6 | EPT: 1
   Speed: 500 | Reaction: 8 | Range: 50 | Carry capacity: 15
@@ -3166,7 +3169,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [057] Iguan
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Small | Required level: 2
+  Type: Dinosaur, Land | Size: Small
   Health: 80 | Armor: 21 | Defense: 9
   Energy: 12 | EPT: 2
   Speed: 200 | Reaction: 16 | Range: 50 | Carry capacity: 18
@@ -3200,7 +3203,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [058] Iron Kong
 ------------------------------------------------------------------------------
-  Type: Gorilla | Size: Large | Required level: 10
+  Type: Gorilla | Size: Large
   Health: 240 | Armor: 23 | Defense: 25
   Energy: 25 | EPT: 3
   Speed: 150 | Reaction: 6 | Range: 600 | Carry capacity: 50
@@ -3238,7 +3241,7 @@ PURCHASE & BUILD REFERENCE
 [058.01] Iron Drill (CAU)
 ------------------------------------------------------------------------------
 CAU base: Iron Kong
-  Type: Gorilla | Size: Large | Required level: 15
+  Type: Gorilla | Size: Large
   Health: 350 | Armor: 23 | Defense: 50
   Energy: 40 | EPT: 4
   Speed: 150 | Reaction: 11 | Range: 1200 | Carry capacity: 55
@@ -3269,7 +3272,7 @@ PURCHASE & BUILD REFERENCE
 [058.02] Iron Kong Maneuver (CAU)
 ------------------------------------------------------------------------------
 CAU base: Iron Kong
-  Type: Gorilla | Size: Large | Required level: 12
+  Type: Gorilla | Size: Large
   Health: 260 | Armor: 23 | Defense: 30
   Energy: 30 | EPT: 3
   Speed: 180 | Reaction: 14 | Range: 600 | Carry capacity: 45
@@ -3311,7 +3314,7 @@ PURCHASE & BUILD REFERENCE
 [058.03] Iron Kong PK (CAU)
 ------------------------------------------------------------------------------
 CAU base: Iron Kong
-  Type: Gorilla | Size: Large | Required level: 15
+  Type: Gorilla | Size: Large
   Health: 330 | Armor: 25 | Defense: 60
   Energy: 35 | EPT: 4
   Speed: 170 | Reaction: 12 | Range: 1000 | Carry capacity: 50
@@ -3350,7 +3353,7 @@ PURCHASE & BUILD REFERENCE
 [058.04] Iron Kong SS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Iron Kong
-  Type: Gorilla | Size: Large | Required level: 14
+  Type: Gorilla | Size: Large
   Health: 300 | Armor: 23 | Defense: 50
   Energy: 35 | EPT: 4
   Speed: 160 | Reaction: 13 | Range: 1000 | Carry capacity: 55
@@ -3393,7 +3396,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [059] Jagged Stinger
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Large Large | Required level: 29
+  Type: Insect | Size: Large Large
   Health: 700 | Armor: 28 | Defense: 80
   Energy: 60 | EPT: 5
   Speed: 320 | Reaction: 15 | Range: 400 | Carry capacity: 60
@@ -3432,7 +3435,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [060] Jet Falcon
 ------------------------------------------------------------------------------
-  Type: Flying | Size: Medium | Required level: 10
+  Type: Flying | Size: Medium
   Health: 300 | Armor: 18 | Defense: 10
   Energy: 50 | EPT: 4
   Speed: 3000 | Reaction: 14 | Range: 450 | Carry capacity: 35
@@ -3468,7 +3471,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [061] Killer Dome
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Small | Required level: 4
+  Type: Insect | Size: Small
   Health: 80 | Armor: 28 | Defense: 12
   Energy: 10 | EPT: 2
   Speed: 150 | Reaction: 8 | Range: 3000 | Carry capacity: 15
@@ -3509,7 +3512,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [062] King Gojulas
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Extra Large | Required level: 40
+  Type: T-Rex | Size: Extra Large
   Health: 2000 | Armor: 28 | Defense: 150
   Energy: 150 | EPT: 20
   Speed: 140 | Reaction: 4 | Range: 800 | Carry capacity: 150
@@ -3550,7 +3553,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [063] Konig Wolf
 ------------------------------------------------------------------------------
-  Type: Wolf | Size: Large | Required level: 13
+  Type: Wolf | Size: Large
   Health: 250 | Armor: 22 | Defense: 28
   Energy: 35 | EPT: 3
   Speed: 290 | Reaction: 18 | Range: 500 | Carry capacity: 200
@@ -3585,7 +3588,7 @@ PURCHASE & BUILD REFERENCE
 [063.01] Konig Wolf DSR (CAU)
 ------------------------------------------------------------------------------
 CAU base: Konig Wolf
-  Type: Wolf | Size: Large | Required level: 13
+  Type: Wolf | Size: Large
   Health: 280 | Armor: 22 | Defense: 28
   Energy: 38 | EPT: 3
   Speed: 290 | Reaction: 18 | Range: 1000 | Carry capacity: 40
@@ -3627,7 +3630,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [064] Leo Blaze
 ------------------------------------------------------------------------------
-  Type: BLOX | Size: Small | Required level: 8
+  Type: BLOX | Size: Small
   Health: 140 | Armor: 21 | Defense: 18
   Energy: 25 | EPT: 3
   Speed: 220 | Reaction: 14 | Range: 300 | Carry capacity: 30
@@ -3663,7 +3666,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [065] Liger Aero
 ------------------------------------------------------------------------------
-  Type: Liger | Size: Large | Required level: 13
+  Type: Liger | Size: Large
   Health: 230 | Armor: 22 | Defense: 23
   Energy: 25 | EPT: 2
   Speed: 280 | Reaction: 19 | Range: 500 | Carry capacity: 30
@@ -3698,7 +3701,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [066] Liger Zero
 ------------------------------------------------------------------------------
-  Type: Liger | Size: Large | Required level: 15
+  Type: Liger | Size: Large
   Health: 260 | Armor: 23 | Defense: 28
   Energy: 35 | EPT: 3
   Speed: 307 | Reaction: 15 | Range: 350 | Carry capacity: 40
@@ -3734,7 +3737,7 @@ PURCHASE & BUILD REFERENCE
 [066.01] Zero Empire (CAU)
 ------------------------------------------------------------------------------
 CAU base: Liger Zero
-  Type: Liger | Size: Large | Required level: 15
+  Type: Liger | Size: Large
   Health: 260 | Armor: 22 | Defense: 28
   Energy: 35 | EPT: 3
   Speed: 307 | Reaction: 15 | Range: 400 | Carry capacity: 40
@@ -3769,7 +3772,7 @@ PURCHASE & BUILD REFERENCE
 [066.02] Zero Falcon (CAU)
 ------------------------------------------------------------------------------
 CAU base: Liger Zero
-  Type: Liger | Size: Large | Required level: 16
+  Type: Liger | Size: Large
   Health: 494 | Armor: 24 | Defense: 28
   Energy: 65 | EPT: 7
   Speed: 400 | Reaction: 21 | Range: 300 | Carry capacity: 45
@@ -3807,7 +3810,7 @@ PURCHASE & BUILD REFERENCE
 [066.03] Zero Jager (CAU)
 ------------------------------------------------------------------------------
 CAU base: Liger Zero
-  Type: Liger | Size: Large | Required level: 17
+  Type: Liger | Size: Large
   Health: 260 | Armor: 24 | Defense: 28
   Energy: 35 | EPT: 3
   Speed: 330 | Reaction: 18 | Range: 400 | Carry capacity: 30
@@ -3845,7 +3848,7 @@ PURCHASE & BUILD REFERENCE
 [066.04] Zero Panzer (CAU)
 ------------------------------------------------------------------------------
 CAU base: Liger Zero
-  Type: Liger | Size: Large | Required level: 20
+  Type: Liger | Size: Large
   Health: 300 | Armor: 26 | Defense: 40
   Energy: 35 | EPT: 2
   Speed: 285 | Reaction: 15 | Range: 200 | Carry capacity: 30
@@ -3888,7 +3891,7 @@ PURCHASE & BUILD REFERENCE
 [066.05] Zero Phoenix (CAU)
 ------------------------------------------------------------------------------
 CAU base: Liger Zero
-  Type: Liger | Size: Large | Required level: 15
+  Type: Liger | Size: Large
   Health: 452 | Armor: 24 | Defense: 25
   Energy: 40 | EPT: 3
   Speed: 340 | Reaction: 20 | Range: 300 | Carry capacity: 35
@@ -3926,7 +3929,7 @@ PURCHASE & BUILD REFERENCE
 [066.06] Zero Schneider (CAU)
 ------------------------------------------------------------------------------
 CAU base: Liger Zero
-  Type: Liger | Size: Large | Required level: 17
+  Type: Liger | Size: Large
   Health: 290 | Armor: 24 | Defense: 28
   Energy: 35 | EPT: 2
   Speed: 310 | Reaction: 16 | Range: 200 | Carry capacity: 30
@@ -3967,7 +3970,7 @@ PURCHASE & BUILD REFERENCE
 [066.07] Zero X (CAU)
 ------------------------------------------------------------------------------
 CAU base: Liger Zero
-  Type: Liger | Size: Large | Required level: 15
+  Type: Liger | Size: Large
   Health: 280 | Armor: 24 | Defense: 30
   Energy: 35 | EPT: 3
   Speed: 317 | Reaction: 15 | Range: 300 | Carry capacity: 30
@@ -4010,7 +4013,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [067] Lightning Saix
 ------------------------------------------------------------------------------
-  Type: Tiger | Size: Medium | Required level: 12
+  Type: Tiger | Size: Medium
   Health: 230 | Armor: 22 | Defense: 17
   Energy: 25 | EPT: 2
   Speed: 325 | Reaction: 18 | Range: 200 | Carry capacity: 30
@@ -4047,7 +4050,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [068] Lightning Saix BS
 ------------------------------------------------------------------------------
-  Type: Tiger | Size: Medium | Required level: 13
+  Type: Tiger | Size: Medium
   Health: 230 | Armor: 22 | Defense: 17
   Energy: 25 | EPT: 2
   Speed: 310 | Reaction: 17 | Range: 200 | Carry capacity: 25
@@ -4083,7 +4086,7 @@ PURCHASE & BUILD REFERENCE
 [069] Lord Gale
 ------------------------------------------------------------------------------
 Classification: Fuzor
-  Type: BLOX | Size: Medium | Required level: 12
+  Type: BLOX | Size: Medium
   Health: 250 | Armor: 21 | Defense: 28
   Energy: 30 | EPT: 3
   Speed: 300 | Reaction: 16 | Range: 500 | Carry capacity: 25
@@ -4114,7 +4117,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [070] Mad Thunder
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Extra Large | Required level: 25
+  Type: Dinosaur, Land | Size: Extra Large
   Health: 800 | Armor: 29 | Defense: 125
   Energy: 70 | EPT: 15
   Speed: 100 | Reaction: 6 | Range: 300 | Carry capacity: 90
@@ -4153,7 +4156,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [071] Molga
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Small | Required level: 1
+  Type: Insect | Size: Small
   Health: 50 | Armor: 28 | Defense: 12
   Energy: 10 | EPT: 2
   Speed: 200 | Reaction: 12 | Range: 200 | Carry capacity: 20
@@ -4186,7 +4189,7 @@ PURCHASE & BUILD REFERENCE
 [071.01] Cannonry Molga (CAU)
 ------------------------------------------------------------------------------
 CAU base: Molga
-  Type: Insect | Size: Small | Required level: 2
+  Type: Insect | Size: Small
   Health: 50 | Armor: 28 | Defense: 12
   Energy: 15 | EPT: 2
   Speed: 180 | Reaction: 12 | Range: 300 | Carry capacity: 15
@@ -4223,7 +4226,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [072] Mosasledge
 ------------------------------------------------------------------------------
-  Type: BLOX | Size: Small | Required level: 6
+  Type: BLOX | Size: Small
   Health: 140 | Armor: 22 | Defense: 18
   Energy: 25 | EPT: 3
   Speed: 100 | Reaction: 4 | Range: 100 | Carry capacity: 30
@@ -4260,7 +4263,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [073] Nightwise
 ------------------------------------------------------------------------------
-  Type: BLOX | Size: Small | Required level: 6
+  Type: BLOX | Size: Small
   Health: 140 | Armor: 18 | Defense: 27
   Energy: 25 | EPT: 3
   Speed: 3100 | Reaction: 2 | Range: 2000 | Carry capacity: 20
@@ -4298,7 +4301,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [074] Proto Breaker
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large | Required level: 16
+  Type: T-Rex | Size: Large
   Health: 350 | Armor: 22 | Defense: 50
   Energy: 40 | EPT: 4
   Speed: 330 | Reaction: 13 | Range: 300 | Carry capacity: 40
@@ -4337,7 +4340,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [075] Proto Zaber
 ------------------------------------------------------------------------------
-  Type: Tiger | Size: Large | Required level: 18
+  Type: Tiger | Size: Large
   Health: 260 | Armor: 22 | Defense: 25
   Energy: 30 | EPT: 3
   Speed: 250 | Reaction: 14 | Range: 300 | Carry capacity: 30
@@ -4378,7 +4381,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [075.01] Great Zaber
 ------------------------------------------------------------------------------
-    Type: Tiger | Size: Large | Required level: 20
+    Type: Tiger | Size: Large
   Health: 300 | Armor: 24 | Defense: 40
   Energy: 35 | EPT: 4
   Speed: 240 | Reaction: 16 | Range: 300 | Carry capacity: 45
@@ -4423,7 +4426,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [076] Psycho Geno Saurer
 ------------------------------------------------------------------------------
-  Type: T-Rex | Size: Large | Required level: 15
+  Type: T-Rex | Size: Large
   Health: 320 | Armor: 23 | Defense: 40
   Energy: 35 | EPT: 4
   Speed: 260 | Reaction: 13 | Range: 300 | Carry capacity: 40
@@ -4464,7 +4467,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [077] Pteramander
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Flying | Size: Large Large | Required level: 20
+  Type: Dinosaur, Flying | Size: Large Large
   Health: 450 | Armor: 21 | Defense: 33
   Energy: 30 | EPT: 3
   Speed: 2000 | Reaction: 22 | Range: 1000 | Carry capacity: 50
@@ -4503,7 +4506,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [078] Pteras
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Flying | Size: Small | Required level: 2
+  Type: Dinosaur, Flying | Size: Small
   Health: 55 | Armor: 20 | Defense: 10
   Energy: 15 | EPT: 2
   Speed: 2000 | Reaction: 14 | Range: 1000 | Carry capacity: 20
@@ -4539,7 +4542,7 @@ PURCHASE & BUILD REFERENCE
 [078.01] Pteras Bomber (CAU)
 ------------------------------------------------------------------------------
 CAU base: Pteras
-  Type: Dinosaur, Flying | Size: Small | Required level: 4
+  Type: Dinosaur, Flying | Size: Small
   Health: 60 | Armor: 20 | Defense: 10
   Energy: 15 | EPT: 2
   Speed: 1200 | Reaction: 14 | Range: 1500 | Carry capacity: 13
@@ -4579,7 +4582,7 @@ PURCHASE & BUILD REFERENCE
 [078.02] Pteras Radome (CAU)
 ------------------------------------------------------------------------------
 CAU base: Pteras
-  Type: Dinosaur, Flying | Size: Small | Required level: 5
+  Type: Dinosaur, Flying | Size: Small
   Health: 140 | Armor: 18 | Defense: 10
   Energy: 15 | EPT: 2
   Speed: 2100 | Reaction: 15 | Range: 2000 | Carry capacity: 20
@@ -4619,7 +4622,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [079] Raynos
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Flying | Size: Medium | Required level: 8
+  Type: Dinosaur, Flying | Size: Medium
   Health: 160 | Armor: 21 | Defense: 10
   Energy: 20 | EPT: 2
   Speed: 3300 | Reaction: 17 | Range: 1500 | Carry capacity: 20
@@ -4652,7 +4655,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [080] Red Horn
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Large | Required level: 8
+  Type: Dinosaur, Land | Size: Large
   Health: 240 | Armor: 28 | Defense: 15
   Energy: 25 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 300 | Carry capacity: 50
@@ -4690,7 +4693,7 @@ PURCHASE & BUILD REFERENCE
 [080.01] Red Horn BG (CAU)
 ------------------------------------------------------------------------------
 CAU base: Red Horn
-  Type: Dinosaur, Land | Size: Large | Required level: 10
+  Type: Dinosaur, Land | Size: Large
   Health: 240 | Armor: 28 | Defense: 20
   Energy: 25 | EPT: 3
   Speed: 130 | Reaction: 10 | Range: 300 | Carry capacity: 45
@@ -4730,7 +4733,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [081] Redler
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Flying | Size: Medium | Required level: 5
+  Type: Dinosaur, Flying | Size: Medium
   Health: 80 | Armor: 16 | Defense: 9
   Energy: 15 | EPT: 2
   Speed: 3000 | Reaction: 14 | Range: 300 | Carry capacity: 20
@@ -4761,7 +4764,7 @@ PURCHASE & BUILD REFERENCE
 [081.01] Redler BC (CAU)
 ------------------------------------------------------------------------------
 CAU base: Redler
-  Type: Dinosaur, Flying | Size: Medium | Required level: 9
+  Type: Dinosaur, Flying | Size: Medium
   Health: 150 | Armor: 17 | Defense: 10
   Energy: 20 | EPT: 2
   Speed: 3300 | Reaction: 14 | Range: 300 | Carry capacity: 18
@@ -4796,7 +4799,7 @@ PURCHASE & BUILD REFERENCE
 [081.02] Redler Interceptor (CAU)
 ------------------------------------------------------------------------------
 CAU base: Redler
-  Type: Dinosaur, Flying | Size: Medium | Required level: 10
+  Type: Dinosaur, Flying | Size: Medium
   Health: 200 | Armor: 18 | Defense: 13
   Energy: 25 | EPT: 2
   Speed: 3000 | Reaction: 16 | Range: 450 | Carry capacity: 15
@@ -4829,7 +4832,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [082] Rev Raptor
 ------------------------------------------------------------------------------
-  Type: Raptor | Size: Small | Required level: 5
+  Type: Raptor | Size: Small
   Health: 120 | Armor: 20 | Defense: 10
   Energy: 20 | EPT: 2
   Speed: 210 | Reaction: 13 | Range: 800 | Carry capacity: 20
@@ -4861,7 +4864,7 @@ PURCHASE & BUILD REFERENCE
 [082.01] Rev Hunter (CAU)
 ------------------------------------------------------------------------------
 CAU base: Rev Raptor
-  Type: Raptor | Size: Small | Required level: 11
+  Type: Raptor | Size: Small
   Health: 200 | Armor: 20 | Defense: 20
   Energy: 27 | EPT: 2
   Speed: 250 | Reaction: 13 | Range: 900 | Carry capacity: 25
@@ -4892,7 +4895,7 @@ PURCHASE & BUILD REFERENCE
 [082.02] Rev Raptor Pilebunker (CAU)
 ------------------------------------------------------------------------------
 CAU base: Rev Raptor
-  Type: Raptor | Size: Small | Required level: 5
+  Type: Raptor | Size: Small
   Health: 120 | Armor: 22 | Defense: 13
   Energy: 20 | EPT: 2
   Speed: 205 | Reaction: 12 | Range: 600 | Carry capacity: 10
@@ -4926,7 +4929,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [083] Saberlion
 ------------------------------------------------------------------------------
-  Type: Liger | Size: Small | Required level: 3
+  Type: Liger | Size: Small
   Health: 90 | Armor: 18 | Defense: 8
   Energy: 20 | EPT: 2
   Speed: 255 | Reaction: 18 | Range: 500 | Carry capacity: 20
@@ -4963,7 +4966,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [084] Saicurtis
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Small | Required level: 2
+  Type: Insect | Size: Small
   Health: 50 | Armor: 22 | Defense: 8
   Energy: 10 | EPT: 2
   Speed: 390 | Reaction: 16 | Range: 600 | Carry capacity: 12
@@ -4999,7 +5002,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [085] Sea Striker
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Small | Required level: 2
+  Type: Reptile | Size: Small
   Health: 60 | Armor: 22 | Defense: 10
   Energy: 15 | EPT: 2
   Speed: 900 | Reaction: 3 | Range: 300 | Carry capacity: 15
@@ -5032,7 +5035,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [086] Shadow Fox
 ------------------------------------------------------------------------------
-  Type: Wolf | Size: Medium | Required level: 12
+  Type: Wolf | Size: Medium
   Health: 220 | Armor: 22 | Defense: 20
   Energy: 30 | EPT: 3
   Speed: 290 | Reaction: 18 | Range: 1000 | Carry capacity: 35
@@ -5074,7 +5077,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [087] Shell Karn
 ------------------------------------------------------------------------------
-  Type: BLOX | Size: Small | Required level: 7
+  Type: BLOX | Size: Small
   Health: 150 | Armor: 27 | Defense: 18
   Energy: 27 | EPT: 3
   Speed: 80 | Reaction: 10 | Range: 100 | Carry capacity: 30
@@ -5107,7 +5110,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [088] Shield Liger
 ------------------------------------------------------------------------------
-  Type: Liger | Size: Large | Required level: 7
+  Type: Liger | Size: Large
   Health: 210 | Armor: 22 | Defense: 13
   Energy: 25 | EPT: 3
   Speed: 250 | Reaction: 15 | Range: 300 | Carry capacity: 40
@@ -5142,7 +5145,7 @@ PURCHASE & BUILD REFERENCE
 [088.01] Shield Liger DCS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Shield Liger
-  Type: Liger | Size: Large | Required level: 8
+  Type: Liger | Size: Large
   Health: 210 | Armor: 22 | Defense: 13
   Energy: 25 | EPT: 3
   Speed: 250 | Reaction: 10 | Range: 300 | Carry capacity: 30
@@ -5180,7 +5183,7 @@ PURCHASE & BUILD REFERENCE
 [088.02] Shield Liger DCS-J (CAU)
 ------------------------------------------------------------------------------
 CAU base: Shield Liger
-  Type: Liger | Size: Large | Required level: 13
+  Type: Liger | Size: Large
   Health: 250 | Armor: 23 | Defense: 23
   Energy: 27 | EPT: 2
   Speed: 285 | Reaction: 12 | Range: 300 | Carry capacity: 40
@@ -5217,7 +5220,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [089] Snipe Master
 ------------------------------------------------------------------------------
-  Type: Raptor | Size: Small | Required level: 8
+  Type: Raptor | Size: Small
   Health: 150 | Armor: 21 | Defense: 15
   Energy: 20 | EPT: 2
   Speed: 195 | Reaction: 13 | Range: 800 | Carry capacity: 20
@@ -5253,7 +5256,7 @@ PURCHASE & BUILD REFERENCE
 [089.01] Snipe Master AS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Snipe Master
-  Type: Raptor | Size: Small | Required level: 10
+  Type: Raptor | Size: Small
   Health: 170 | Armor: 26 | Defense: 18
   Energy: 20 | EPT: 2
   Speed: 190 | Reaction: 14 | Range: 1500 | Carry capacity: 10
@@ -5292,7 +5295,7 @@ PURCHASE & BUILD REFERENCE
 [089.02] Snipe Master FB (CAU)
 ------------------------------------------------------------------------------
 CAU base: Snipe Master
-  Type: Raptor | Size: Small | Required level: 10
+  Type: Raptor | Size: Small
   Health: 170 | Armor: 23 | Defense: 16
   Energy: 20 | EPT: 2
   Speed: 205 | Reaction: 16 | Range: 1500 | Carry capacity: 10
@@ -5330,7 +5333,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [090] Spark Liger
 ------------------------------------------------------------------------------
-  Type: Liger | Size: Large | Required level: 15
+  Type: Liger | Size: Large
   Health: 240 | Armor: 23 | Defense: 23
   Energy: 27 | EPT: 2
   Speed: 250 | Reaction: 13 | Range: 250 | Carry capacity: 40
@@ -5368,7 +5371,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [091] Stealth Viper
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Medium | Required level: 3
+  Type: Reptile | Size: Medium
   Health: 80 | Armor: 23 | Defense: 3
   Energy: 15 | EPT: 2
   Speed: 180 | Reaction: 16 | Range: 800 | Carry capacity: 15
@@ -5404,7 +5407,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [092] Storm Sworder
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Flying | Size: Large | Required level: 13
+  Type: Dinosaur, Flying | Size: Large
   Health: 220 | Armor: 21 | Defense: 20
   Energy: 30 | EPT: 2
   Speed: 3200 | Reaction: 16 | Range: 2000 | Carry capacity: 30
@@ -5436,7 +5439,7 @@ PURCHASE & BUILD REFERENCE
 [092.01] Stormsworder F (CAU)
 ------------------------------------------------------------------------------
 CAU base: Storm Sworder
-  Type: Dinosaur, Flying | Size: Large | Required level: 14
+  Type: Dinosaur, Flying | Size: Large
   Health: 220 | Armor: 20 | Defense: 18
   Energy: 30 | EPT: 2
   Speed: 3100 | Reaction: 15 | Range: 600 | Carry capacity: 40
@@ -5470,7 +5473,7 @@ PURCHASE & BUILD REFERENCE
 [092.02] Stormsworder FX (CAU)
 ------------------------------------------------------------------------------
 CAU base: Storm Sworder
-  Type: Dinosaur, Flying | Size: Large | Required level: 17
+  Type: Dinosaur, Flying | Size: Large
   Health: 280 | Armor: 20 | Defense: 28
   Energy: 35 | EPT: 4
   Speed: 4000 | Reaction: 22 | Range: 650 | Carry capacity: 30
@@ -5507,7 +5510,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [093] Trinity Liger
 ------------------------------------------------------------------------------
-  Type: Liger | Size: Large | Required level: 20
+  Type: Liger | Size: Large
   Health: 300 | Armor: 23 | Defense: 28
   Energy: 35 | EPT: 4
   Speed: 315 | Reaction: 15 | Range: 500 | Carry capacity: 30
@@ -5544,7 +5547,7 @@ PURCHASE & BUILD REFERENCE
 [093.01] Trinity Liger BA (CAU)
 ------------------------------------------------------------------------------
 CAU base: Trinity Liger
-  Type: Liger | Size: Large | Required level: 22
+  Type: Liger | Size: Large
   Health: 350 | Armor: 23 | Defense: 28
   Energy: 35 | EPT: 4
   Speed: 295 | Reaction: 16 | Range: 500 | Carry capacity: 25
@@ -5584,7 +5587,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [094] Ultra Phalanx
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Extra Large | Required level: 30
+  Type: Dinosaur, Land | Size: Extra Large
   Health: 1500 | Armor: 28 | Defense: 100
   Energy: 100 | EPT: 10
   Speed: 40 | Reaction: 4 | Range: 400 | Carry capacity: 180
@@ -5627,7 +5630,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [095] Ultra Saurus
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Land | Size: Extra Large | Required level: 28
+  Type: Dinosaur, Land | Size: Extra Large
   Health: 1300 | Armor: 28 | Defense: 100
   Energy: 80 | EPT: 8
   Speed: 50 | Reaction: 4 | Range: 400 | Carry capacity: 200
@@ -5661,7 +5664,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [096] Unenlagia
 ------------------------------------------------------------------------------
-  Type: BLOX | Size: Small | Required level: 6
+  Type: BLOX | Size: Small
   Health: 140 | Armor: 20 | Defense: 18
   Energy: 25 | EPT: 3
   Speed: 195 | Reaction: 12 | Range: 600 | Carry capacity: 30
@@ -5698,7 +5701,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [097] Wardick
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Medium | Required level: 14
+  Type: Reptile | Size: Medium
   Health: 250 | Armor: 25 | Defense: 33
   Energy: 35 | EPT: 2
   Speed: 70 | Reaction: 10 | Range: 500 | Carry capacity: 35
@@ -5738,7 +5741,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [098] Zabat
 ------------------------------------------------------------------------------
-  Type: Dinosaur, Flying | Size: Small | Required level: 3
+  Type: Dinosaur, Flying | Size: Small
   Health: 60 | Armor: 14 | Defense: 10
   Energy: 10 | EPT: 2
   Speed: 2800 | Reaction: 22 | Range: 600 | Carry capacity: 20
@@ -5768,7 +5771,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [099] Zaber Fang
 ------------------------------------------------------------------------------
-  Type: Tiger | Size: Large | Required level: 8
+  Type: Tiger | Size: Large
   Health: 220 | Armor: 23 | Defense: 15
   Energy: 25 | EPT: 3
   Speed: 240 | Reaction: 15 | Range: 300 | Carry capacity: 40
@@ -5809,7 +5812,7 @@ PURCHASE & BUILD REFERENCE
 [099.01] Zaber Fang AT (CAU)
 ------------------------------------------------------------------------------
 CAU base: Zaber Fang
-  Type: Tiger | Size: Large | Required level: 10
+  Type: Tiger | Size: Large
   Health: 230 | Armor: 23 | Defense: 17
   Energy: 25 | EPT: 3
   Speed: 250 | Reaction: 15 | Range: 400 | Carry capacity: 40
@@ -5845,7 +5848,7 @@ PURCHASE & BUILD REFERENCE
 [099.02] Zaber Fang RS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Zaber Fang
-  Type: Tiger | Size: Large | Required level: 13
+  Type: Tiger | Size: Large
   Health: 250 | Armor: 23 | Defense: 22
   Energy: 25 | EPT: 3
   Speed: 240 | Reaction: 16 | Range: 500 | Carry capacity: 50
@@ -5883,7 +5886,7 @@ PURCHASE & BUILD REFERENCE
 [099.03] Zaber Fang SS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Zaber Fang
-  Type: Tiger | Size: Large | Required level: 11
+  Type: Tiger | Size: Large
   Health: 220 | Armor: 23 | Defense: 20
   Energy: 25 | EPT: 3
   Speed: 240 | Reaction: 16 | Range: 500 | Carry capacity: 40
@@ -5922,7 +5925,7 @@ PURCHASE & BUILD REFERENCE
 [099.04] Zaber Fang TS (CAU)
 ------------------------------------------------------------------------------
 CAU base: Zaber Fang
-  Type: Tiger | Size: Large | Required level: 8
+  Type: Tiger | Size: Large
   Health: 230 | Armor: 23 | Defense: 20
   Energy: 25 | EPT: 3
   Speed: 250 | Reaction: 15 | Range: 300 | Carry capacity: 40
@@ -5957,7 +5960,7 @@ PURCHASE & BUILD REFERENCE
 ------------------------------------------------------------------------------
 [100] Zaber Fang Old
 ------------------------------------------------------------------------------
-  Type: Tiger | Size: Large | Required level: 6
+  Type: Tiger | Size: Large
   Health: 200 | Armor: 22 | Defense: 10
   Energy: 23 | EPT: 3
   Speed: 200 | Reaction: 15 | Range: 300 | Carry capacity: 40
@@ -6001,7 +6004,7 @@ APPENDIX - TRANSPORT ZOIDS
 ------------------------------------------------------------------------------
 [T01] Dragoon Nest
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Extra Large | Required level: 16
+  Type: Reptile | Size: Extra Large
   Health: 800 | Armor: 28 | Defense: 35
   Energy: 80 | EPT: 8
   Speed: 120 | Reaction: 10 | Range: 1500 | Carry capacity: 850
@@ -6025,7 +6028,7 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
 [T02] Gustav
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Medium | Required level: 6
+  Type: Insect | Size: Medium
   Health: 200 | Armor: 28 | Defense: 15
   Energy: 20 | EPT: 1
   Speed: 135 | Reaction: 4 | Range: 500 | Carry capacity: 100
@@ -6049,7 +6052,7 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
 [T03] Hover Cargo
 ------------------------------------------------------------------------------
-  Type: Insect | Size: Extra Large | Required level: 10
+  Type: Insect | Size: Extra Large
   Health: 350 | Armor: 25 | Defense: 30
   Energy: 50 | EPT: 5
   Speed: 410 | Reaction: 3 | Range: 1500 | Carry capacity: 500
@@ -6073,7 +6076,7 @@ REMOVABLE EQUIPMENT SLOTS
 ------------------------------------------------------------------------------
 [T04] Whale King
 ------------------------------------------------------------------------------
-  Type: Reptile | Size: Extra Large | Required level: 18
+  Type: Reptile | Size: Extra Large
   Health: 1000 | Armor: 28 | Defense: 35
   Energy: 1000 | EPT: 10
   Speed: 827 | Reaction: 2 | Range: 2000 | Carry capacity: 950

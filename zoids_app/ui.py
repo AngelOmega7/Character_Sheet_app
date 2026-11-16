@@ -15,7 +15,7 @@ from .combat import RepairConfirmationRequired, RuleError
 from .combat_controller import combat_snapshot, repair_character_health, rest, start_turn, rolls_damage, weapon_action
 from .commerce import STARTER_ZOIDS, change_upgrade, detach_cau, purchase_zoid, quote_purchase, recipe, recipe_parts, sell_zoid, set_known_design, set_material
 from .upgrade_rules import UPGRADE_LIMITS, upgrade_price
-from .transport import load_zoid, select_transport
+from .transport import load_ally, load_zoid, select_transport, unload_ally
 from .equipment import SLOT_COLUMNS, equipment_template_name, resolved_equipment_name
 from .stats import Upgrades, calculate_stats
 from .storage import CharacterStore
@@ -124,7 +124,7 @@ class CharacterEditor:
 
     def refresh_saved(self):
         records = self.store.list_characters()
-        self.saved.options = [option(r["id"], f"{r['name']} · {r['id'][:8]}") for r in records]
+        self.saved.options = [option(r["id"], r["name"]) for r in records]
         self.saved.disabled = not records
         self.delete_saved_button.disabled = not records
         self.export_saved_button.disabled = not records or self.file_picker is None
@@ -156,7 +156,7 @@ class CharacterEditor:
                 except (RuleError, OSError, sqlite3.Error) as exc:
                     self.message(str(exc), True)
 
-            warning = f"Permanently delete {record['name']} ({selected[:8]}) and all of its saved state? This cannot be undone."
+            warning = f"Permanently delete {record['name']} and all of its saved state? This cannot be undone."
             if self.character.id == selected:
                 warning += " Unsaved edits to this character will also be discarded."
             self.page.show_dialog(ft.AlertDialog(modal=True, scrollable=True, title=ft.Text("Delete saved character?"),
@@ -567,7 +567,8 @@ class CharacterEditor:
             if quote.host_id:
                 text += "\nHost: " + self.owner_label(next(o for o in candidate.owned_zoids if o.id == quote.host_id))
             if not override and quote.base_id:
-                text += f"\nConsumes base Zoid instance {quote.base_id[:8]}; upgrades are lost and removable equipment is returned to inventory."
+                base_owner = next(o for o in candidate.owned_zoids if o.id == quote.base_id)
+                text += f"\nConsumes {self.owner_label(base_owner)}; upgrades are lost and removable equipment is returned to inventory."
             if not override and quote.blox_ids:
                 owners = {o.id: o for o in candidate.owned_zoids}
                 text += "\nConsumes BLOX components:\n" + "\n".join(self.owner_label(owners[i]) for i in quote.blox_ids)
@@ -575,7 +576,7 @@ class CharacterEditor:
             if quote.predecessor:
                 text += "\nReplaces predecessor CAU: " + self.catalog.find("zoids", quote.predecessor)["name"]
             if quote.stored_fuzor:
-                text += f"\nRebuild stored FUZOR {quote.stored_fuzor.id[:8]} with its retained frame and weapon upgrades. This stored entry will be used up."
+                text += f"\nRebuild stored {self.stored_fuzor_label(quote.stored_fuzor)} with its retained frame and weapon upgrades. This stored entry will be used up."
             def confirm(event):
                 self.page.pop_dialog()
                 try:
@@ -799,7 +800,7 @@ class CharacterEditor:
         self.purchase_base.disabled = not candidates
         stored = [s for s in self.character.stored_fuzors if s.zoid == r["id"]]
         self.purchase_stored_fuzor.options = [option("new", "New FUZOR — no retained upgrades"),
-            *[option(s.id, f"{s.id[:8]} · Frame {s.frame.speed}/{s.frame.reaction}/{s.frame.defense}/{s.frame.capacity}"
+            *[option(s.id, f"{self.stored_fuzor_label(s)} · Frame {s.frame.speed}/{s.frame.reaction}/{s.frame.defense}/{s.frame.capacity}"
                      f" · Accuracy {s.frame.accuracy} · Armor {s.frame.armor} · EPT +{s.frame.ept}") for s in stored]]
         self.purchase_stored_fuzor.value = "new"
         self.purchase_stored_fuzor.visible = bool(stored)
@@ -816,8 +817,19 @@ class CharacterEditor:
             self.purchase_details.value += "\nFUZOR components: " + ", ".join(self.catalog.find("zoids", identity)["name"] for identity in data["blox"])
         self.page.update()
 
-    def owner_label(self, owner):
-        return f"{self.catalog.find('zoids', owner.base_zoid)['name']} · {owner.id[:8]}"
+    def owner_label(self, owner, form_id=None):
+        name = self.catalog.find("zoids", form_id or owner.base_zoid)["name"]
+        copies = [o.id for o in self.character.owned_zoids if o.base_zoid == owner.base_zoid]
+        if len(copies) > 1 and owner.id in copies:
+            return f"{name} ({copies.index(owner.id) + 1})"
+        return name
+
+    def stored_fuzor_label(self, stored):
+        name = self.catalog.find("zoids", stored.zoid)["name"]
+        copies = [s.id for s in self.character.stored_fuzors if s.zoid == stored.zoid]
+        if len(copies) > 1:
+            return f"{name} ({copies.index(stored.id) + 1})"
+        return name
 
     def detach_selected_cau(self, event=None):
         try:
@@ -995,33 +1007,43 @@ class CharacterEditor:
         except RuleError as exc:
             self.message(str(exc), True)
 
+    def change_ally_cargo(self, number=None):
+        try:
+            candidate = self.profile_candidate()
+            self.character = load_ally(candidate, self.catalog) if number is None else unload_ally(candidate, number, self.catalog)
+            self.dirty = True
+            self.render()
+            self.message("Transport cargo updated. Unsaved changes.")
+        except RuleError as exc:
+            self.message(str(exc), True)
+
     def transport_panels(self, character):
         transports = [self.catalog.find("transports", n) for n in ("Gustav", "Hover Cargo", "Dragoon Nest", "Whale King")]
         self.transport_picker = ft.Dropdown(label="Transport type", value=character.transport or "",
             options=[option("", "None"), *[option(r["id"], r["name"]) for r in transports]], on_select=self.change_transport)
         r = self.catalog.find("transports", character.transport) if character.transport else None
-        stats = [ft.Text(f"{key.title()}: {r['fields'][key]}") for key in ("health", "armor", "defense", "speed", "reaction", "range")] if r else []
-        if r:
-            stats.extend([ft.Text(f"Energy: {r['energy']} · EPT: {r['energy_recharge']}"),
-                          ft.Text(f"Shield: {(self.catalog.column(r, 24) or 0) + (self.catalog.column(r, 35) or 0)}"),
-                          ft.Text(f"Hangar Capacity: {r['hangar_capacity']} · Hangar Size: {r['hangar_size']}")])
-            stats.extend(ft.Text(f"{self.catalog.column(r, column)} · Energy cost: {r['energy_costs'][index]}")
-                         for index, column in enumerate((13, 19, 30, 41, 47, 54, 61, 66)) if self.catalog.column(r, column))
+        occupied = len(character.loaded_zoids) + len(character.loaded_allies)
+        full = not r or occupied >= r["hangar_capacity"]
+        stats = [ft.Text(f"Hangar Capacity: {r['hangar_capacity']} · Hangar Size: {r['hangar_size']}")] if r else []
         picture = zoid_picture(r, height=180) if r else None
         self.transport_section = card("Transport", [self.transport_picker, *([picture] if picture else []), *stats,
             ft.Text("GM-managed selection. Changing Transport unloads all cargo. Each owned chassis occupies one bay; its CAUs stay with it.", size=12)])
         owned, loaded = [], []
         for owner in character.owned_zoids:
             record = self.catalog.find("zoids", owner.active_form)
-            label = f"{self.owner_label(owner)} · {record['name']} · {record['fields']['size']}"
-            owned.append(ft.Row([ft.Text(label, expand=True), ft.Button("Load", disabled=not r or owner.id in character.loaded_zoids,
+            label = f"{self.owner_label(owner, owner.active_form)} · {record['fields']['size']}"
+            owned.append(ft.Row([ft.Text(label, expand=True), ft.Button("Load", disabled=full or owner.id in character.loaded_zoids,
                 on_click=lambda e, i=owner.id: self.load_cargo(i))]))
             if owner.id in character.loaded_zoids:
                 loaded.append(ft.Row([ft.Text(label, expand=True), ft.Button("Unload", on_click=lambda e, i=owner.id: self.load_cargo(i, False))]))
+        for number in character.loaded_allies:
+            loaded.append(ft.Row([ft.Text(f"Ally {number}", expand=True),
+                ft.Button("Unload", on_click=lambda e, n=number: self.change_ally_cargo(n))]))
+        self.load_ally_button = ft.Button("Load ally", disabled=full, on_click=lambda e: self.change_ally_cargo())
         self.transport_notes = ft.TextField(label="Transport notes", value=character.transport_notes,
             multiline=True, min_lines=3, max_lines=10, on_change=self.changed)
         return [self.transport_section, card("All owned Zoids", owned),
-                card(f"Loaded Zoids · {len(loaded)} / {r['hangar_capacity'] if r else 0}", loaded),
+                card(f"Loaded Zoids · {occupied} / {r['hangar_capacity'] if r else 0}", [self.load_ally_button, *loaded]),
                 card("Transport Notes", [self.transport_notes])]
 
     def render(self):
@@ -1075,7 +1097,7 @@ class CharacterEditor:
             options=[option(o.id, self.owner_label(o)) for o in character.owned_zoids],
             on_select=lambda e: self.select_owned(e.control.value))
         self.form_select = ft.Dropdown(label="Obtained form", value=build.zoid or None, menu_height=300, disabled=active is None,
-            options=[option(f.zoid, self.catalog.find("zoids", f.zoid)["name"]) for f in (active.forms if active else ())],
+            options=[option(f.zoid, self.owner_label(active, f.zoid)) for f in (active.forms if active else ())],
             on_select=lambda e: self.select_owned(active.id, e.control.value))
         owned_bases = {o.base_zoid for o in character.owned_zoids}
         obtainable = sorted([r for r in self.catalog.tables["zoids"]["records"]

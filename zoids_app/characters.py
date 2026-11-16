@@ -107,6 +107,7 @@ class Character:
     starter_pending: bool = False
     stored_fuzors: tuple[StoredFuzor, ...] = ()
     current_energy: int | None = None
+    loaded_allies: tuple[int, ...] = ()
 
 
 def _nonnegative(value, name):

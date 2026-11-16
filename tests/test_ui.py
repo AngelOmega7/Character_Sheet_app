@@ -284,7 +284,8 @@ class EditorTests(unittest.TestCase):
         editor.purchase_blox.controls[0].value = chosen.id
         editor.obtain()
         self.assertEqual(self.page.dialog.title.value, "Confirm purchase")
-        self.assertIn(chosen.id[:8], self.page.dialog.content.value)
+        self.assertIn("Leo Blaze (2)", self.page.dialog.content.value)
+        self.assertNotIn(chosen.id[:8], self.page.dialog.content.value)
         self.assertIn("preserved for recovery", self.page.dialog.content.value)
         self.page.dialog.actions[-1].on_click(None)
         self.assertEqual(editor.character.build.zoid, "zoids:2_arm_lizard")
@@ -294,7 +295,8 @@ class EditorTests(unittest.TestCase):
         fused = editor.character
         editor.sell_selected_zoid()
         self.assertIn("Original identities, upgrades, health", self.page.dialog.content.controls[0].value)
-        self.assertIn(chosen.id[:8], self.page.dialog.content.controls[0].value)
+        self.assertIn("Leo Blaze", self.page.dialog.content.controls[0].value)
+        self.assertNotIn(chosen.id[:8], self.page.dialog.content.controls[0].value)
         self.page.dialog.actions[0].on_click(None)
         self.assertEqual(editor.character, fused)
         editor.sell_selected_zoid()
@@ -310,6 +312,55 @@ class EditorTests(unittest.TestCase):
         offered = {option.key for option in editor.acquisition.options}
         self.assertEqual(offered, {"zoids:command_wolf", "zoids:redler", "zoids:gun_sniper",
                                   "zoids:rev_raptor", "zoids:shield_liger", "zoids:zaber_fang_old"})
+
+    def test_saved_character_labels_hide_ids_but_keep_distinct_keys(self):
+        first = self.store.save(replace(self.editor.character, name="Garreth"))
+        second = self.store.save(replace(established_character(self.editor.catalog), name="Garreth"))
+        self.editor.refresh_saved()
+        self.assertEqual({o.key for o in self.editor.saved.options}, {first.id, second.id})
+        self.assertEqual([o.text for o in self.editor.saved.options], ["Garreth", "Garreth"])
+
+    def test_transport_ally_controls_capacity_unload_and_save(self):
+        from zoids_app.transport import select_transport
+        editor = self.editor
+        self.assertTrue(editor.load_ally_button.disabled)
+        editor.character = select_transport(editor.character, "Gustav", editor.catalog)
+        editor.render()
+        editor.load_ally_button.on_click(None)
+        editor.load_ally_button.on_click(None)
+        self.assertEqual(editor.character.loaded_allies, (1, 2))
+        self.assertTrue(editor.load_ally_button.disabled)
+        cargo = editor.page_cards["Transport"][2].content.controls
+        self.assertEqual(cargo[0].value, "Loaded Zoids · 2 / 2")
+        self.assertEqual([row.controls[0].value for row in cargo[2:]], ["Ally 1", "Ally 2"])
+        cargo[2].controls[1].on_click(None)
+        self.assertEqual(editor.character.loaded_allies, (2,))
+        self.assertFalse(editor.load_ally_button.disabled)
+        editor.save()
+        self.assertEqual(self.store.load(editor.character.id).loaded_allies, (2,))
+
+    def test_duplicate_zoid_numbers_follow_chassis_across_forms_and_reload(self):
+        editor = self.editor
+        c = acquire_zoid(editor.character, "Command Wolf", editor.catalog)
+        first = c.owned_zoids[-1]
+        editor.character = c
+        self.assertEqual(editor.owner_label(first), "Command Wolf")
+        c = acquire_zoid(c, "Command Wolf", editor.catalog)
+        second = c.owned_zoids[-1]
+        c = acquire_zoid(c, "Command Wolf AC (CAU)", editor.catalog, host_id=second.id)
+        editor.character = self.store.load(self.store.save(c).id)
+        editor.render()
+        choices = {o.key: o.text for o in editor.owned_select.options}
+        self.assertEqual(choices[first.id], "Command Wolf (1)")
+        self.assertEqual(choices[second.id], "Command Wolf (2)")
+        editor.select_owned(second.id, editor.catalog.find("zoids", "Command Wolf AC (CAU)")["id"])
+        self.assertEqual(editor.character.active_zoid_id, second.id)
+        self.assertEqual({o.text for o in editor.form_select.options},
+                         {"Command Wolf (2)", "Command Wolf AC (CAU) (2)"})
+        editor.acquisition.value = editor.catalog.find("zoids", "Command Wolf UC (CAU)")["id"]
+        editor.purchase_selection()
+        self.assertEqual({o.key: o.text for o in editor.purchase_host.options},
+                         {first.id: "Command Wolf (1)", second.id: "Command Wolf (2)"})
 
     def test_keep_sold_fuzor_checkbox_and_select_retained_rebuild(self):
         from zoids_app.characters import set_upgrades

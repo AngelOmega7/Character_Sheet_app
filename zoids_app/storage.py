@@ -13,7 +13,7 @@ from .combat import RuleError, WeaponCondition
 from .stats import CharacterBuild, Upgrades
 from .upgrade_migration import migrate_upgrade_payload
 
-SAVE_VERSION = 14
+SAVE_VERSION = 15
 EXPORT_FORMAT = "zoids-character-export"
 EXPORT_FORMAT_VERSION = 1
 
@@ -178,6 +178,7 @@ class CharacterStore:
             values["materials"] = tuple(Material(**i) for i in values.get("materials", []))
             values["known_zoids"] = tuple(values.get("known_zoids", []))
             values["loaded_zoids"] = tuple(values.get("loaded_zoids", []))
+            values["loaded_allies"] = tuple(values.get("loaded_allies", []))
             archived = list(values.get("archived_content", []))
             removed_active = False
             if version < 3:

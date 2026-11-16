@@ -144,6 +144,7 @@ def apply_energy(output=None, companion=True):
 def update_companion(tables):
     path = ROOT / "ZOIDS_Companion.txt"
     text = path.read_text()
+    text = re.sub(r" \| Required level: [^\n|]+", "", text)
     zoids = [r for r in tables["zoids"]["records"] if r["kind"] == "record"]
     bases = sum(r["id"] == r["ownership_base_id"] for r in zoids)
     text = re.sub(r"\d+ Zoids: \d+ base entries and \d+ CAU forms; plus 4 transport Zoids\.",
