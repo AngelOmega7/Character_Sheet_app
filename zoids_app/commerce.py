@@ -9,6 +9,9 @@ from .characters import (Material, StoredFuzor, acquire_zoid, fixed_weapon_ident
 from .combat import RuleError
 from .upgrade_rules import UPGRADE_LIMITS, upgrade_price
 
+STARTER_ZOIDS = ("zoids:command_wolf", "zoids:redler", "zoids:gun_sniper",
+                 "zoids:rev_raptor", "zoids:shield_liger", "zoids:zaber_fang_old")
+
 
 def recipe(catalog, zoid):
     identity = catalog.find("zoids", zoid)["id"]
@@ -80,8 +83,8 @@ def quote_purchase(character, zoid, *, host_id=None, base_id=None, blox_ids=(), 
         raise RuleError("Select one owned instance for each BLOX component requirement")
     cau = record["id"] != record["ownership_base_id"]
     if starter:
-        if not character.starter_pending or character.owned_zoids or cau or data["cost"] > 10000 or data["base_zoid"] or components:
-            raise RuleError("Choose a non-CAU starting Zoid costing at most 10,000g with no Base Zoid or BLOX component requirement")
+        if not character.starter_pending or character.owned_zoids or record["id"] not in STARTER_ZOIDS:
+            raise RuleError("Choose Command Wolf, Redler, Gun Sniper, Rev Raptor, Shield Liger, or Zaber Fang Old as your starting Zoid")
     elif character.starter_pending:
         raise RuleError("Purchase a starting Zoid first")
     issues, predecessor = [], None
@@ -96,8 +99,9 @@ def quote_purchase(character, zoid, *, host_id=None, base_id=None, blox_ids=(), 
             raise RuleError("This host already owns that CAU")
     else:
         host_id = None
-    if character.gold < data["cost"]:
-        issues.append(f"Requires {data['cost']:,}g; available {character.gold:,}g")
+    cost = 0 if starter else data["cost"]
+    if character.gold < cost:
+        issues.append(f"Requires {cost:,}g; available {character.gold:,}g")
     required = Counter()
     if not starter:
         required.update(x for x in (data["core"], data["parts"]) if x)
@@ -138,7 +142,7 @@ def quote_purchase(character, zoid, *, host_id=None, base_id=None, blox_ids=(), 
             selected.append(requested)
             name = catalog.find("zoids", component)["name"]
             issues.append(f"BLOX {index + 1}: select a distinct owned {name} with no acquired CAUs to consume")
-    return PurchaseQuote(record["id"], data["cost"], tuple(required.items()), host_id, base_id, predecessor,
+    return PurchaseQuote(record["id"], cost, tuple(required.items()), host_id, base_id, predecessor,
                          tuple(issues), starter, tuple(selected), stored)
 
 
@@ -209,6 +213,8 @@ def purchase_zoid(character, quote, *, override=False, catalog=None):
         owner = replace(owner, forms=tuple(replace(f, build_parts=parts) if f.zoid == quote.zoid else f for f in owner.forms))
         character = replace(character, owned_zoids=tuple(owner if o.id == owner.id else o for o in character.owned_zoids))
     character = replace(character, starter_pending=False)
+    if quote.starter:
+        character = set_known_design(character, quote.zoid, catalog=catalog)
     return switch_zoid(character, owner.id, quote.zoid, catalog)
 
 

@@ -302,15 +302,14 @@ class EditorTests(unittest.TestCase):
         self.assertEqual({o.id for o in editor.character.owned_zoids}, {o.id for o in c.owned_zoids})
         self.assertEqual(editor.character.gold, c.gold)
 
-    def test_starter_picker_includes_base_blox_but_not_free_fuzors(self):
+    def test_starter_picker_offers_exactly_the_six_starters(self):
         from zoids_app.characters import new_character
         editor = self.editor
         editor.character = new_character(editor.catalog)
         editor.render()
         offered = {option.key for option in editor.acquisition.options}
-        self.assertIn("zoids:leo_blaze", offered)
-        self.assertNotIn("zoids:2_arm_lizard", offered)
-        self.assertNotIn("zoids:gojulox", offered)
+        self.assertEqual(offered, {"zoids:command_wolf", "zoids:redler", "zoids:gun_sniper",
+                                  "zoids:rev_raptor", "zoids:shield_liger", "zoids:zaber_fang_old"})
 
     def test_keep_sold_fuzor_checkbox_and_select_retained_rebuild(self):
         from zoids_app.characters import set_upgrades
@@ -445,7 +444,7 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(editor.character, before)
         self.assertIn("downgraded", editor.status.value)
 
-    def test_organoid_controls_apply_each_color_without_healing(self):
+    def test_organoid_activation_adds_maximum_resource_deltas(self):
         editor = self.editor
         editor.character = replace(editor.character, current_health=17)
         editor.render()
@@ -458,11 +457,20 @@ class EditorTests(unittest.TestCase):
                     editor.organoid_level.value = str(level)
                     editor.apply_organoid()
                     self.assertEqual(calculate_stats(editor.character.build, editor.catalog), baseline)
+                    health_before = editor.character.current_health
+                    energy_before = editor.character.current_energy
                     editor.organoid_enabled.value = True
                     editor.apply_organoid()
+                    active = calculate_stats(editor.character.build, editor.catalog)
                     expected_shield = editor.catalog.column(editor.catalog.find("organoids", str(level)), 22) if color == "White" else 0
-                    self.assertEqual(calculate_stats(editor.character.build, editor.catalog)["shields"], expected_shield)
-                    self.assertEqual(editor.character.current_health, 17)
+                    self.assertEqual(active["shields"], expected_shield)
+                    self.assertEqual(editor.character.current_health, health_before + active["pilot"]["health"] - baseline["pilot"]["health"])
+                    self.assertEqual(editor.character.current_energy, energy_before + active["energy"] - baseline["energy"])
+                    activated = editor.character
+                    editor.apply_organoid()
+                    self.assertEqual(editor.character, activated)
+                    editor.save()
+                    self.assertEqual(self.store.load(editor.character.id), editor.character)
                     editor.organoid_enabled.value = False
                     editor.apply_organoid()
                     self.assertEqual(calculate_stats(editor.character.build, editor.catalog), baseline)
@@ -631,10 +639,10 @@ class EditorTests(unittest.TestCase):
         editor.obtain_equipment()
         copy = editor.character.inventory[-1]
         self.assertEqual(copy.armament, "armaments:zoid_equipment_slot_1")
-        self.assertEqual(editor.inventory_labels[copy.id], "Double Beam Cannon · copy 1")
+        self.assertEqual(editor.inventory_labels[copy.id], "Double Beam Cannon · copy 2")
         editor.change_equipment("left", copy.id)
         self.assertEqual(editor.character.build.equipment[1], "armaments:zoid_equipment_slot_1")
-        self.assertEqual(editor.inventory_labels[copy.id], "Double Beam Cannon · copy 1")
+        self.assertEqual(editor.inventory_labels[copy.id], "Double Beam Cannon · copy 2")
 
     def acquire_specific_item(self, name):
         editor = self.editor
@@ -868,7 +876,7 @@ class EditorTests(unittest.TestCase):
             stats = calculate_stats(editor.character.build, editor.catalog)
             self.assertEqual(stats["energy"], base["energy"] + 10)
             self.assertEqual(stats["energy_recharge"], base["energy_recharge"])
-            self.assertEqual(editor.character.current_energy, original_energy)
+            self.assertEqual(editor.character.current_energy, original_energy + 10)
         editor.energy_input.value = str(base["energy"] + 10)
         editor.apply_resources()
         editor.organoid_level.value = "5"
@@ -883,7 +891,7 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(calculate_stats(editor.character.build, editor.catalog)["energy"], base["energy"])
         editor.organoid_enabled.value = True
         editor.apply_organoid()
-        self.assertEqual(editor.character.current_energy, base["energy"])
+        self.assertEqual(editor.character.current_energy, base["energy"] + 5)
 
     def test_rest_button_sets_half_energy_from_both_directions(self):
         editor = self.editor

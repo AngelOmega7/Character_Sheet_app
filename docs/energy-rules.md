@@ -8,7 +8,10 @@ These rules supersede heat references in historical workbook/script audits.
 - Each Zoid/form has total energy, recharge per turn, and named weapon/system costs.
 - Maximum Energy is base Zoid Energy + actual pilot level + active Organoid level
   + equipped Energy bonuses. Inactive Organoids contribute zero. Activating an
-  Organoid does not refill Energy; deactivating it or reducing its level clamps
+  Organoid adds the increase in maximum Energy to current Energy and the increase
+  in maximum Health to current Health, preserving existing resource deficits.
+  Reapplying settings while already active does not grant these resources again.
+  Deactivating it or reducing its level clamps
   current Energy to the reduced maximum if necessary. Type abilities' bonus
   levels do not contribute. Increasing pilot level
   increases capacity without refilling current Energy; EPT is unchanged.

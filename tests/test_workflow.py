@@ -37,14 +37,20 @@ class WorkflowTests(unittest.TestCase):
                 c = set_material(c, material, 3, self.catalog)
         return c
 
-    def test_starter_waives_materials_and_database_but_disallows_base_requirements(self):
+    def test_starters_are_free_and_teach_their_zi_data(self):
         c = new_character(self.catalog)
         self.assertEqual((c.gold, c.build.organoid_color, c.owned_zoids), (10000, "None", ()))
-        c = self.buy(c, "Godos", starter=True)  # Core and known-design requirements waived.
-        self.assertEqual(c.gold, 0)
-        self.assertEqual(c.owned_zoids[0].base_zoid, "zoids:godos")
-        self.assertFalse(c.starter_pending)
-        for name in ("Liger Zero", "Cannon Tortoise BC", "Allosaurer", "Iguan", "Zaber Fang"):
+        for name in ("Command Wolf", "Redler", "Gun Sniper", "Rev Raptor", "Shield Liger", "Zaber Fang Old"):
+            with self.subTest(name=name):
+                result = self.buy(c, name, starter=True)
+                identity = self.catalog.find("zoids", name)["id"]
+                self.assertEqual(result.gold, 10000)
+                self.assertEqual(result.owned_zoids[0].base_zoid, identity)
+                self.assertEqual(result.known_zoids, (identity,))
+                self.assertFalse(result.starter_pending)
+                with self.assertRaises(RuleError):
+                    quote_purchase(result, name, starter=True, catalog=self.catalog)
+        for name in ("Godos", "Saberlion", "Liger Zero", "Cannon Tortoise BC", "Allosaurer", "Iguan", "Zaber Fang"):
             with self.assertRaises(RuleError):
                 quote_purchase(new_character(self.catalog), name, starter=True, catalog=self.catalog)
 
@@ -304,7 +310,7 @@ class WorkflowTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "save.sqlite3"
             store = CharacterStore(path, self.catalog)
-            c = self.buy(new_character(self.catalog), "Saberlion", starter=True)
+            c = self.buy(new_character(self.catalog), "Command Wolf", starter=True)
             c = set_material(c, "Zoid Core H1", 2, self.catalog)
             c = set_known_design(c, "Godos", catalog=self.catalog)
             c = select_transport(c, "Gustav", self.catalog)

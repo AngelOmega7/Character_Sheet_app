@@ -4,7 +4,7 @@ Implemented from `assets/Polish_Workflow.txt`, `assets/CAU_expand.txt`, `assets/
 
 ## Pages and editing
 
-- **Overview:** Pilot, Organoid, owned-Zoid hangar, required level, starter/build purchase, CAU detachment.
+- **Overview:** Pilot, Organoid, owned-Zoid hangar, starter/build purchase, CAU detachment.
 - **Combat:** health/shield damage, repairs, Rest, and occupied fixed/removable weapon cards. Only numerical-damage equipment rolls and displays a d20; non-damaging utilities keep activation controls. Empty cards are hidden.
 - **Upgrades:** paid 0–5 counters, equipment-copy inventory, removable equipment assignments.
 - **Pilot:** abilities, feats, notes, gold, structured General Inventory quantities, and known-design Zi Database. Existing free-text notes are retained.
@@ -14,7 +14,13 @@ Page changes retain valid draft edits. Closing the Windows window or switching/n
 
 ## Purchases and refunds
 
-New pilots have **10,000g**, no automatically granted Zoid, and Organoid **None**. Starter choices must be non-CAU designs costing at most 10,000g with **no Base Zoid requirement in the CSV**. Core, Parts, and Zi Database requirements are waived. Both the picker and transaction validation enforce this restriction.
+New pilots have **10,000g**, no automatically granted Zoid, and Organoid **None**. Choose one free starter: **Command Wolf, Redler, Gun Sniper, Rev Raptor, Shield Liger, or Zaber Fang Old**. Starting gold is retained; no Core or Parts are needed. Selecting the starter automatically adds its Zi Data to the character's known designs. Both the picker and transaction validation enforce this list.
+
+Zoids have no required pilot level, and low pilot level does not reduce their stats. Carry-capacity penalties still apply when overloaded.
+
+Pilot Mental adds directly to the Zoid's final Reaction. Activating an Organoid increases current Health and Energy by the same amounts as their respective maximums increase, preserving existing damage and spent Energy.
+
+The compact Calculated stats card includes the active Zoid/form's base picture from the workbook. Great Zaber shares Proto Zaber's picture. Transport pictures appear only on the Transport page. Images are bundled for offline use in `assets/zoids` and `assets/transports`; refresh them with `python -m tools.import_zoid_pictures` (requires Pillow) after changing the source workbook's **Zoid List → Zoid Picture Base** images.
 
 Later purchases check funds, General Inventory quantities, the required Base Zoid/CAU, and the target's known-design entry. Confirmed normal purchases deduct the CSV price, consume one of each required Core/Parts item, and consume the selected eligible base instance. Consumed chassis must own no CAUs. Replacements start without inherited upgrades; removable equipment remains in pilot inventory. With multiple eligible bases, select the specific instance.
 
@@ -24,7 +30,7 @@ When recipe checks fail, a separate **GM Override** confirmation grants the buil
 - Shield Liger DCS-J replaces DCS; Zaber Fang TS replaces AT. Neither predecessor stays as an acquired form.
 - Detaching a CAU refunds **half its current CSV price**, including GM-granted forms. Returned Parts include predecessor-CAU Parts. Form-specific upgrades/conditions are removed; host/shared upgrades remain. Assigned removable copies remain owned.
 - EPT (Energy Per Turn) upgrades add +1 recharge per point, are uncapped, and cost **10,000g × 2^(N−1)** for rank N. Other frame upgrades cost **5,000g × N**, with an additional **20,000g per Armor point**. Defense, Accuracy, and EPT are uncapped; Speed, Reaction, Capacity, and Armor cap at 5. Accuracy adds +1 to every attack, and Armor adds +1 Armor per point. Old weapon upgrades have migrated into frame Accuracy. Each track is independent. Decreasing a counter refunds the full removed rank's cost. The selected form's unmodified base stats appear beside the upgrade boxes; Accuracy shows fixed-weapon base to-hit values.
-- Removable equipment acquisition remains GM-managed; no equipment purchasing cost is applied. Zoid-specific removable equipment appears under its resolved name whenever the matching Zoid/form is owned (for example, Command Wolf's **Double Beam Cannon**). Source template labels identify E5–E8 data, not required mounting positions. Utility equipment fits slots 5–8; Konig Wolf DSR missiles fit slots 6/7; Great Zaber's 20mm Solid Rifle uses slot 6 and can be equipped alongside its cannon in slot 5/7. It resolves against the Zoid it is equipped to. See `generated/zoid-equipment-audit.md`.
+- Every newly acquired Zoid or CAU form automatically grants inventory copies of its named Zoid-specific removable weapons/equipment and equips them in their source slots. This includes starters and later purchases; each acquisition gets distinct copies. Switching forms or loading a save does not grant extra copies. Fixed weapons are already built into the loadout. Additional removable equipment acquisition remains GM-managed; no equipment purchasing cost is applied. Zoid-specific removable equipment appears under its resolved name whenever the matching Zoid/form is owned (for example, Command Wolf's **Double Beam Cannon**). Source template labels identify E5–E8 data, not required mounting positions. Utility equipment fits slots 5–8; Konig Wolf DSR missiles fit slots 6/7; Great Zaber's 20mm Solid Rifle uses slot 6 and can be equipped alongside its cannon in slot 5/7. It resolves against the Zoid it is equipped to. See `generated/zoid-equipment-audit.md`.
 
 ## Selling and deleting
 
@@ -80,7 +86,7 @@ The numbered `BLOX 1`, `BLOX 2`, etc. CSV columns specify component designs. Eac
 | Griffin | Leo Blaze, Unenlagia, Buster Eagle |
 | Lord Gale | Diplo Gun, Shell Karn, Demon's Head, Flyscissors |
 
-FUZOR recipes cost **0g**, require their Zi Database design, and consume every selected component atomically. Component identities, upgrades, health, shield/defense adjustments, fixed activation flags, and fixed-weapon conditions are preserved inside the FUZOR. Inventory copies remain owned and become unassigned; consumed chassis are unloaded from Transport. The result is a new independent chassis with no inherited upgrades. Purchase confirmation identifies every consumed instance. GM Override retains its existing explicit-confirmation behavior and consumes no gold, materials, or component Zoids. FUZORs cannot be starters; the eight base BLOX designs can be starters at their CSV prices of 8,000g or 9,000g. Blank CSV cost is accepted as zero only for the six FUZOR recipes.
+FUZOR recipes cost **0g**, require their Zi Database design, and consume every selected component atomically. Component identities, upgrades, health, shield/defense adjustments, fixed activation flags, and fixed-weapon conditions are preserved inside the FUZOR. Inventory copies remain owned and become unassigned; consumed chassis are unloaded from Transport. The result is a new independent chassis with no inherited upgrades. Purchase confirmation identifies every consumed instance. GM Override retains its existing explicit-confirmation behavior and consumes no gold, materials, or component Zoids. Neither FUZORs nor base BLOX designs are starters. Blank CSV cost is accepted as zero only for the six FUZOR recipes.
 
 Selling a FUZOR restores its saved component chassis in their pre-fusion state. FUZOR-specific upgrades are discarded by default, and no component purchase price is refunded as gold. Removable equipment stays in inventory rather than being automatically re-equipped; recovered Zoids remain unloaded from Transport. Confirmation lists the returned instances. New GM-override builds record an empty history and return no components. Older/untracked FUZORs have no recoverable history and return fresh, unupgraded copies from the current recipe; the confirmation explicitly identifies this fallback. Recovery survives save/reload and JSON export/import. A FUZOR can only be sold once, and different FUZORs keep independent histories.
 

@@ -7,7 +7,9 @@ import unittest
 from tools.audit_zoid_equipment import equipment_audit
 from zoids_app.catalog import Catalog
 from zoids_app.characters import (acquire_equipment, acquire_zoid, available_equipment,
-                                  equip_owned_equipment, new_character, switch_zoid)
+                                  delete_equipment, equip_owned_equipment, new_character,
+                                  return_equipment_to_inventory, switch_zoid)
+from zoids_app.commerce import purchase_zoid, quote_purchase
 from zoids_app.combat import RuleError
 from zoids_app.combat_controller import weapon_action
 from zoids_app.equipment import SLOT_COLUMNS, eligible_equipment
@@ -26,7 +28,60 @@ class ZoidEquipmentTests(unittest.TestCase):
         if record["id"] != record["ownership_base_id"]:
             character = acquire_zoid(character, record["id"], self.catalog)
             character = switch_zoid(character, character.active_zoid_id, record["id"], self.catalog)
+        # Mount-placement and legacy-save tests construct their own inventory.
+        for item in character.inventory:
+            character = return_equipment_to_inventory(character, item.id, self.catalog)
+            character = delete_equipment(character, item.id, self.catalog)
         return character
+
+    def test_starter_purchase_grants_and_equips_cannon_and_persists(self):
+        for name in ("Command Wolf", "Zaber Fang Old"):
+            with self.subTest(name=name):
+                pilot = new_character()
+                quote = quote_purchase(pilot, name, starter=True, catalog=self.catalog)
+                pilot = purchase_zoid(pilot, quote, catalog=self.catalog)
+                self.assertEqual(len(pilot.inventory), 1)
+                cannon = pilot.inventory[0]
+                self.assertEqual(pilot.build.equipment, (cannon.armament, None, None, None))
+                self.assertEqual(pilot.owned_zoids[0].forms[0].equipment_ids, (cannon.id, None, None, None))
+                with tempfile.TemporaryDirectory() as directory:
+                    store = CharacterStore(Path(directory) / "save.db", self.catalog)
+                    self.assertEqual(store.load(store.save(pilot).id), pilot)
+
+    def test_later_acquisitions_get_distinct_copies_without_changing_active_loadout(self):
+        pilot = acquire_zoid(new_character(), "Command Wolf", self.catalog)
+        original = pilot.owned_zoids[0]
+        for _ in range(2):
+            pilot = acquire_zoid(pilot, "Great Zaber", self.catalog)
+            self.assertEqual(pilot.owned_zoids[0], original)
+            self.assertEqual(pilot.active_zoid_id, original.id)
+            form = pilot.owned_zoids[-1].forms[0]
+            self.assertEqual(form.equipment, ("armaments:zoid_equipment_slot_1", "armaments:zoid_equipment_slot_2", None, None))
+            self.assertEqual(form.equipment_ids[:2], tuple(i.id for i in pilot.inventory[-2:]))
+        self.assertEqual(len({i.id for i in pilot.inventory}), 5)
+
+    def test_later_purchase_equips_both_great_zaber_weapons(self):
+        pilot = new_character()
+        pilot = purchase_zoid(pilot, quote_purchase(pilot, "Command Wolf", starter=True, catalog=self.catalog), catalog=self.catalog)
+        quote = quote_purchase(pilot, "Great Zaber", catalog=self.catalog)
+        pilot = purchase_zoid(pilot, quote, override=True, catalog=self.catalog)
+        self.assertEqual(pilot.build.zoid, "zoids:great_zaber")
+        self.assertEqual(pilot.build.equipment, ("armaments:zoid_equipment_slot_1", "armaments:zoid_equipment_slot_2", None, None))
+        self.assertEqual(len(pilot.inventory), 3)
+
+    def test_cau_grants_utility_and_switching_does_not_grant_it_again(self):
+        pilot = acquire_zoid(new_character(), "Liger Zero", self.catalog)
+        pilot = acquire_zoid(pilot, "Zero X (CAU)", self.catalog)
+        self.assertEqual(len(pilot.inventory), 1)
+        form = pilot.owned_zoids[0].forms[-1]
+        self.assertEqual(form.equipment_ids, (pilot.inventory[0].id, None, None, None))
+        pilot = switch_zoid(pilot, pilot.active_zoid_id, form.zoid, self.catalog)
+        self.assertEqual(pilot.build.equipment, form.equipment)
+        pilot = switch_zoid(pilot, pilot.active_zoid_id, "zoids:liger_zero", self.catalog)
+        pilot = switch_zoid(pilot, pilot.active_zoid_id, form.zoid, self.catalog)
+        self.assertEqual(len(pilot.inventory), 1)
+        with self.assertRaises(RuleError):
+            acquire_zoid(pilot, form.zoid, self.catalog)
 
     def acquire(self, character, template):
         return acquire_equipment(character, f"armaments:zoid_equipment_slot_{template}", catalog=self.catalog)

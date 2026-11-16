@@ -192,7 +192,8 @@ def build():
         elif dataset == "feats":
             keys = ["name", "description"]
         elif dataset == "zoids":
-            keys[:12] = ["name", "base_zoid", "type", "size", "required_level", "health", "armor", "defense", "speed", "reaction", "range", "carry_capacity"]
+            # Keep source column positions stable; the retired level column has no field.
+            keys[:12] = ["name", "base_zoid", "type", "size", None, "health", "armor", "defense", "speed", "reaction", "range", "carry_capacity"]
         records, excluded = [], []
         assist_row = next((int(address[1:]) for address, cell in cells.items()
                            if re.fullmatch(r"A\d+", address) and str(cell.get("value", "")).strip().casefold() == "assist"), None) if dataset == "armaments" else None
@@ -201,7 +202,7 @@ def build():
             if not any(row_cells):
                 excluded.append({"row": row, "reason": "empty"})
                 continue
-            fields = {key: value(cell) for key, cell in zip(keys, row_cells)}
+            fields = {key: value(cell) for key, cell in zip(keys, row_cells) if key is not None}
             first = fields[keys[0]]
             name = str(first).strip() if first is not None else None
             kind = "record"
@@ -227,7 +228,7 @@ def build():
             if dataset == "feats" and kind == "record":
                 record["handling"] = "player_managed"
             for key, cell in zip(keys, row_cells):
-                if "formula" not in cell:
+                if key is None or "formula" not in cell:
                     continue
                 expression = cell["formula"]
                 if expression is None:

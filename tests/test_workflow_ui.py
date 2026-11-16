@@ -45,7 +45,7 @@ class WorkflowUITests(unittest.TestCase):
         self.editor = CharacterEditor(self.page, self.store, self.catalog)
 
     def starter(self):
-        self.editor.acquisition.value = "zoids:saberlion"
+        self.editor.acquisition.value = "zoids:command_wolf"
         self.editor.obtain()
         self.assertEqual(self.page.dialog.title.value, "Confirm purchase")
         self.page.dialog.actions[-1].on_click(None)
@@ -59,7 +59,8 @@ class WorkflowUITests(unittest.TestCase):
         for option in editor.acquisition.options:
             self.assertIsNone(recipe(self.catalog, option.key)["base_zoid"])
         self.starter()
-        self.assertEqual(editor.character.gold, 4000)
+        self.assertEqual(editor.character.gold, 10000)
+        self.assertIn("zoids:command_wolf", editor.character.known_zoids)
         self.assertFalse(editor.character.starter_pending)
         editor.name.value = "Pilot A"
         editor.switch_page("Pilot")
@@ -71,7 +72,7 @@ class WorkflowUITests(unittest.TestCase):
             title = editor.body.controls[0].content.controls[0].value
             self.assertEqual(title, "Transport" if page == "Transport" else "Calculated stats")
         editor.switch_page("Overview")
-        self.assertTrue(any(isinstance(c, ft.Text) and "Required level:" in c.value for c in editor.page_cards["Overview"][2].content.controls))
+        self.assertFalse(any(isinstance(c, ft.Text) and "Required level:" in c.value for c in editor.page_cards["Overview"][2].content.controls))
 
     def test_purchase_confirmation_cancel_override_and_material_editing(self):
         self.starter()
@@ -213,7 +214,7 @@ class WorkflowUITests(unittest.TestCase):
         editor = self.editor
         before = editor.character
         editor.sell_selected_zoid()
-        self.assertIn("4,500g", self.page.dialog.content.value)
+        self.assertIn("18,750g", self.page.dialog.content.value)
         self.page.dialog.actions[0].on_click(None)
         self.assertEqual(editor.character, before)
         editor.sell_selected_zoid()
@@ -225,10 +226,10 @@ class WorkflowUITests(unittest.TestCase):
         editor.sell_selected_zoid()
         confirm = self.page.dialog.actions[-1].on_click
         confirm(None)
-        self.assertEqual(editor.character.gold, 9500)
+        self.assertEqual(editor.character.gold, 23750)
         self.assertEqual(editor.character.owned_zoids, ())
         self.assertFalse(editor.character.starter_pending)
         confirm(None)
-        self.assertEqual(editor.character.gold, 9500)
+        self.assertEqual(editor.character.gold, 23750)
         editor.save()
         self.assertEqual(self.store.load(editor.character.id), editor.character)

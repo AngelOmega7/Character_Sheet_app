@@ -63,7 +63,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
         pilot = self.equip(pilot, "Energy Reinforcer Unit", "chest")
         pilot = acquire_zoid(pilot, "Berserk Fury", self.catalog)
         item = replace(pilot.inventory[0], condition=WeaponCondition(True, 19))
-        pilot = replace(pilot, current_health=17, gold=123, inventory=(item,),
+        pilot = replace(pilot, current_health=17, gold=123, inventory=(item, *pilot.inventory[1:]),
                         build=replace(pilot.build, shield_adjustment=3))
         with patch("zoids_app.combat_controller.random.randint") as roll:
             for energy in (0, 21, 22, 23, 45):
@@ -208,7 +208,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
 
     def test_zoid_specific_template_cost_follows_identity_not_mount_position(self):
         pilot = acquire_zoid(new_character(), "Zaber Fang", self.catalog)
-        pilot = acquire_equipment(pilot, "armaments:zoid_equipment_slot_1", catalog=self.catalog)
+        pilot = return_equipment_to_inventory(pilot, pilot.inventory[0].id, self.catalog)
         pilot = equip_owned_equipment(pilot, "left", pilot.inventory[0].id, self.catalog)
         stats = calculate_stats(pilot.build, self.catalog)
         self.assertEqual(stats["weapons"][5]["energy_cost"], 6)

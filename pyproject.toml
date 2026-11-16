@@ -14,7 +14,7 @@ build_number = 1
 [tool.flet.app]
 path = "."
 module = "main"
-include = ["zoids_app/data", "assets/icon.png", "assets/icon.ico"]
+include = ["zoids_app/data", "assets/icon.png", "assets/icon.ico", "assets/zoids", "assets/transports"]
 exclude = [
     ".venv", "venv", ".git", "build", "dist", "docs", "source", "tests", "tools", "saves",
     "__pycache__", "**/__pycache__", "*.sqlite", "*.sqlite-*", "*.sqlite3", "*.sqlite3-*",

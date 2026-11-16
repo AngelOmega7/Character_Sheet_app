@@ -13,7 +13,7 @@ from .characters import (PilotDetails, acquire_equipment, acquire_zoid, assign_p
 from .attacks import calculate_attack
 from .combat import RepairConfirmationRequired, RuleError
 from .combat_controller import combat_snapshot, repair_character_health, rest, start_turn, rolls_damage, weapon_action
-from .commerce import change_upgrade, detach_cau, purchase_zoid, quote_purchase, recipe, recipe_parts, sell_zoid, set_known_design, set_material
+from .commerce import STARTER_ZOIDS, change_upgrade, detach_cau, purchase_zoid, quote_purchase, recipe, recipe_parts, sell_zoid, set_known_design, set_material
 from .upgrade_rules import UPGRADE_LIMITS, upgrade_price
 from .transport import load_zoid, select_transport
 from .equipment import SLOT_COLUMNS, equipment_template_name, resolved_equipment_name
@@ -53,6 +53,14 @@ def selected_entry(dropdown):
 def card(title, controls):
     return ft.Container(content=ft.Column([ft.Text(title, size=20, weight=ft.FontWeight.BOLD), *controls], spacing=14),
                         padding=20, bgcolor="#172333", border_radius=12)
+
+
+def zoid_picture(record, height=140):
+    identity = "zoids:proto_zaber" if record["id"] == "zoids:great_zaber" else record["id"]
+    dataset, name = identity.split(":", 1)
+    source = f"{dataset}/{name}.png"
+    return ft.Image(src=source, height=height, fit=ft.BoxFit.CONTAIN,
+                    semantics_label=record["name"]) if (ASSETS_DIR / source).is_file() else None
 
 
 class CharacterEditor:
@@ -287,7 +295,12 @@ class CharacterEditor:
         build = replace(self.character.build, pilot_level=level, mental=mental,
                         pilot_style=self.style.value, upgrades=upgrades,
                         organoid_color=self.organoid_color.value, organoid_level=organoid_level,
-                         organoid_enabled=self.organoid_enabled.value, shield_adjustment=shields)
+                          organoid_enabled=self.organoid_enabled.value, shield_adjustment=shields)
+        if build.zoid and build.organoid_enabled and not self.character.build.organoid_enabled:
+            inactive = calculate_stats(replace(build, organoid_enabled=False), self.catalog)
+            active = calculate_stats(build, self.catalog)
+            health += active["pilot"]["health"] - inactive["pilot"]["health"]
+            energy += active["energy"] - inactive["energy"]
         if clamp_energy and build.zoid:
             maximum = calculate_stats(build, self.catalog)["energy"]
             if maximum < calculate_stats(self.character.build, self.catalog)["energy"]:
@@ -313,7 +326,7 @@ class CharacterEditor:
     def feat_panel(self, character):
         records = sorted([r for r in self.catalog.tables["feats"]["records"] if r["kind"] == "record"], key=lambda r: r["name"])
         self.feat_slots, self.feat_descriptions = [], []
-        controls = [ft.Text("Seven feat slots, matching the pilot sheet. Feat effects and eligibility are player-tracked. For Demolitionist, set current energy to its total when you use it and track its once-per-Rest limit at the table.", size=13)]
+        controls = []
         feats = character.pilot_details.feats
         for slot in range(7):
             selected = feats[slot] if slot < len(feats) else None
@@ -426,9 +439,7 @@ class CharacterEditor:
             self.health_repair_points,
             ft.Row([ft.Button("Repair health · 10g/point", on_click=self.repair_health, disabled=stats is None),
                     ft.Button("Start Turn", on_click=self.start_turn, disabled=stats is None),
-                    ft.Button("Rest", on_click=self.rest, disabled=stats is None)], wrap=True),
-            ft.Text("Rest sets current Energy to half of maximum (rounded down), even if it was higher before.", size=12),
-            ft.Text("Press Start Turn once at the start of your turn to recharge energy, up to its total. Use spends the listed energy cost and rolls one d20 for attacks. Activation toggles only apply stat bonuses; use the system to pay its cost. Save character to keep combat changes and last rolls.", size=12)])
+                    ft.Button("Rest", on_click=self.rest, disabled=stats is None)], wrap=True)])
 
     def learn_selected_ability(self, event=None):
         if not self.ability_to_learn.value:
@@ -476,7 +487,7 @@ class CharacterEditor:
             self.character = self.profile_candidate(clamp_energy=True)
             self.dirty = True
             self.render()
-            self.message("Organoid settings applied. Current health preserved. Unsaved changes.")
+            self.message("Organoid settings applied. Activation adds the maximum Health and Energy bonuses to current resources. Unsaved changes.")
         except RuleError as exc:
             build = self.character.build
             self.organoid_color.value = build.organoid_color
@@ -515,7 +526,6 @@ class CharacterEditor:
                 handling = "Player-managed. " if current.get("handling") == "player_managed" else ""
                 slot_controls.append(ft.Text(handling + (current["fields"]["description"] or ""), size=12, selectable=True))
         return card("Abilities", [
-            ft.Text("Six active slots; one active size ability. Replacing a slot returns its ability to inactive ownership. Higher ranks permanently replace lower ranks.", size=13),
             self.ability_to_learn, self.ability_description,
             ft.Button("Learn / upgrade", on_click=self.learn_selected_ability, disabled=not learnable),
             *slot_controls,
@@ -525,7 +535,6 @@ class CharacterEditor:
                 ft.Button("Remove", on_click=lambda e, ability=r["id"]: self.remove_inactive_ability(ability)),
             ]) for r in inactive],
             ft.Text("No inactive abilities yet." if not inactive else "Select an inactive ability in an active slot to activate it.", size=12),
-            ft.Text("Weapon-card attack previews include range/health-dependent bonuses. Player-managed effects remain descriptive.", size=12, color="#AAC0D6"),
         ])
 
     def select_owned(self, owned_id, form_id=None):
@@ -750,7 +759,6 @@ class CharacterEditor:
             ft.Text(f"{len(character.inventory)} owned copies · {loose} unattached", size=13),
             self.equipment_to_acquire, self.equipment_quantity,
             ft.Button("Acquire equipment", on_click=self.obtain_equipment),
-            ft.Text("Record equipment acquired in play; no gold is charged. Copies can be reused across CAU forms of the same Zoid, but never assigned to different Zoids or two slots in one form. Zoid-specific entries resolve against the Zoid they are equipped to.", size=12),
             *rows,
         ])
 
@@ -999,7 +1007,8 @@ class CharacterEditor:
                           ft.Text(f"Hangar Capacity: {r['hangar_capacity']} · Hangar Size: {r['hangar_size']}")])
             stats.extend(ft.Text(f"{self.catalog.column(r, column)} · Energy cost: {r['energy_costs'][index]}")
                          for index, column in enumerate((13, 19, 30, 41, 47, 54, 61, 66)) if self.catalog.column(r, column))
-        self.transport_section = card("Transport", [self.transport_picker, *stats,
+        picture = zoid_picture(r, height=180) if r else None
+        self.transport_section = card("Transport", [self.transport_picker, *([picture] if picture else []), *stats,
             ft.Text("GM-managed selection. Changing Transport unloads all cargo. Each owned chassis occupies one bay; its CAUs stay with it.", size=12)])
         owned, loaded = [], []
         for owner in character.owned_zoids:
@@ -1043,8 +1052,7 @@ class CharacterEditor:
                         ft.ResponsiveRow([ft.Container(self.level, col=6), ft.Container(self.mental, col=6)]),
                         ft.ResponsiveRow([ft.Container(self.physical, col=6), ft.Container(self.social, col=6)]),
                          ft.Button("Apply pilot details", on_click=self.apply_profile)])
-        pilot_notes = card("Pilot notes · tracking", [self.gold_input, self.personality, self.inventory_notes, self.database_notes,
-            ft.Text("These notes and Physical/Social are player-managed. Equipment copies are tracked separately in the equipment inventory.", size=12)])
+        pilot_notes = card("Pilot notes · tracking", [self.gold_input, self.personality, self.inventory_notes, self.database_notes])
         feats = self.feat_panel(character)
         self.organoid_color = ft.Dropdown(label="Organoid color", value=build.organoid_color,
             options=[option(color, color) for color in ("None", "White", "Red", "Blue", "Black")], on_select=self.apply_organoid)
@@ -1053,8 +1061,14 @@ class CharacterEditor:
         self.organoid_enabled = ft.Checkbox(label="Organoid activated", value=build.organoid_enabled,
             disabled=build.organoid_color == "None", on_change=self.apply_organoid)
         self.organoid_level.disabled = build.organoid_color == "None"
+        construction_os = "No active Zoid"
+        if build.zoid:
+            base = self.catalog.find("zoids", build.zoid)["ownership_base_id"]
+            parts = (*recipe_parts(self.catalog, base), *recipe_parts(self.catalog, build.zoid))
+            required_os = [name for name in ("Limited OS", "Normal OS", "WildZ OS", "WildG OS") if name in parts]
+            construction_os = ", ".join(required_os) or "None required"
         organoid = card("Organoid", [self.organoid_color, self.organoid_level, self.organoid_enabled,
-            ft.Text("Bonuses apply only while activated. Only White generates shields, using Organoid level. These pilot-wide settings follow Zoid and CAU switches; current health is preserved.", size=12)])
+            ft.Text(f"Construction OS: {construction_os}")])
         abilities = self.ability_panel(build)
         active = next((o for o in character.owned_zoids if o.id == character.active_zoid_id), None)
         self.owned_select = ft.Dropdown(label="Owned Zoid", value=active.id if active else None, menu_height=300, disabled=active is None,
@@ -1066,12 +1080,10 @@ class CharacterEditor:
         owned_bases = {o.base_zoid for o in character.owned_zoids}
         obtainable = sorted([r for r in self.catalog.tables["zoids"]["records"]
             if (r["ownership_base_id"] == r["id"] or any(o.base_zoid == r["ownership_base_id"] and all(f.zoid != r["id"] for f in o.forms) for o in character.owned_zoids))
-            and (not character.starter_pending or (r["ownership_base_id"] == r["id"] and recipe(self.catalog, r["id"])["cost"] <= 10000
-                                                   and not recipe(self.catalog, r["id"])["base_zoid"]
-                                                   and not recipe(self.catalog, r["id"]).get("blox")))],
+            and (not character.starter_pending or r["id"] in STARTER_ZOIDS)],
             key=lambda r: r["name"])
-        self.acquisition = searchable_dropdown(label="Purchase starting Zoid" if character.starter_pending else "Purchase Zoid / CAU form",
-            options=[option(r["id"], f"{r['name']} · {recipe(self.catalog, r['id'])['cost']:,}g") for r in obtainable],
+        self.acquisition = searchable_dropdown(label="Select starting Zoid" if character.starter_pending else "Purchase Zoid / CAU form",
+            options=[option(r["id"], r['name'] if character.starter_pending else f"{r['name']} · {recipe(self.catalog, r['id'])['cost']:,}g") for r in obtainable],
             disabled=not obtainable, on_select=self.purchase_selection)
         self.purchase_host = ft.Dropdown(label="CAU host instance", options=[], disabled=True)
         self.purchase_base = ft.Dropdown(label="Base Zoid instance to consume", options=[], disabled=True)
@@ -1081,8 +1093,8 @@ class CharacterEditor:
         self.purchase_details = ft.Text("Select a design to view its recipe.", size=13)
         roster = card("Owned-Zoid hangar", [self.owned_select, self.form_select,
             ft.Text(f"{len(character.owned_zoids)} owned Zoid(s) · {len(active.forms) if active else 0} form(s) for this chassis", size=12),
-            ft.Text(f"Required level: {self.catalog.find('zoids', build.zoid)['fields']['required_level']} · Type: {self.catalog.find('zoids', build.zoid)['fields'].get('type', 'Unknown')}" if active else "No active Zoid"),
-            ft.Text("Starter: non-CAU, up to 10,000g, no Base Zoid or BLOX component requirement. Core, Parts, and Zi Database requirements are waived." if character.starter_pending else "Multiple copies are allowed. Select specific host/base/component instances when needed.", size=12),
+            ft.Text(f"Type: {self.catalog.find('zoids', build.zoid)['fields'].get('type', 'Unknown')}" if active else "No active Zoid"),
+            *([ft.Text("Choose a free starting Zoid. No Core or Parts are needed, and its Zi Data is automatically added to your database.", size=12)] if character.starter_pending else []),
             ft.Text(f"{len(character.stored_fuzors)} stored FUZOR rebuild(s). Select a matching design to reuse its identity and upgrades.",
                     size=12, visible=bool(character.stored_fuzors)),
             self.acquisition, self.purchase_details, self.purchase_host, self.purchase_base, self.purchase_blox, self.purchase_stored_fuzor,
@@ -1102,7 +1114,7 @@ class CharacterEditor:
         upgrades_card = card("Frame upgrades", upgrade_controls)
         upgrades_card.visible = active is not None
         inventory_card = self.inventory_panel(character)
-        equipment_controls = [ft.Text("Only compatible owned copies are listed. Zoid-specific source slot numbers identify the item, not where it must be equipped. Non-weapon Zoid-specific equipment fits Assist and Weapon and Assist slots. Unequipping clears this form's assignment; use Return to inventory to free a copy from all forms.", size=12)]
+        equipment_controls = []
         self.equipment_dropdowns = {}
         active_form = next((f for f in active.forms if f.zoid == build.zoid), None) if active else None
         zoid_record = self.catalog.find("zoids", build.zoid) if active else None
@@ -1128,17 +1140,24 @@ class CharacterEditor:
                        "Defense": stats["current"]["defense"], "Speed": stats["current"]["speed"],
                        "Reaction": stats["current"]["reaction"], "Range (m)": stats["current"]["range"],
                        "Shields remaining": max(0, stats["shields"]), "Carry": f"{stats['carry_load']} / {stats['carry_capacity']}"} if stats else {}
-        tiles = [ft.Container(ft.Column([ft.Text(label, size=12, color="#AAC0D6"), ft.Text(str(value), size=24)]),
-                              padding=12, bgcolor="#213349", border_radius=8, col={"xs": 6, "md": 3})
+        tiles = [ft.Container(ft.Column([ft.Text(label, size=11, color="#AAC0D6"), ft.Text(str(value), size=20)], spacing=2),
+                              padding=8, bgcolor="#213349", border_radius=8, col={"xs": 6, "sm": 3})
                  for label, value in stat_values.items()]
         notes = []
         if not stats:
             notes.append("No playable Zoid is currently owned. Obtain a Zoid to start a new loadout.")
-        if stats and stats["underleveled"]:
-            notes.append("Under required Zoid level: speed and reaction penalties apply.")
         if stats and stats["overloaded"]:
             notes.append("Over carry capacity: speed, reaction, and fixed attack penalties apply.")
-        summary = card("Calculated stats", [ft.ResponsiveRow(tiles), *[ft.Text(note, color="#FFD08A") for note in notes]])
+        picture = zoid_picture(zoid_record) if zoid_record else None
+        stat_grid = ft.ResponsiveRow(tiles, spacing=6, run_spacing=6)
+        summary_content = [ft.Container(stat_grid, col={"xs": 8, "sm": 9} if picture else 12)]
+        if picture:
+            summary_content.append(ft.Container(ft.Column([picture, ft.Text(zoid_record["name"], size=12, text_align=ft.TextAlign.CENTER)],
+                spacing=4, horizontal_alignment=ft.CrossAxisAlignment.CENTER), col={"xs": 4, "sm": 3}))
+        summary = card("Calculated stats", [ft.ResponsiveRow(summary_content, spacing=10, run_spacing=6),
+            *[ft.Text(note, color="#FFD08A") for note in notes]])
+        summary.padding = 12
+        summary.content.spacing = 8
         weapon_cards = []
         self.attack_previews, self.range_controls = {}, {}
         self.roll_boxes = {}

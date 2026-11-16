@@ -115,13 +115,10 @@ class FuzorTests(unittest.TestCase):
                 stats = calculate_stats(CharacterBuild(zoid=name, abilities=loadout.active), self.catalog)
                 self.assertEqual(stats["bonus_levels"], rank * 5 if name in ("Leo Blaze", "Fuzor Dragon") else 0)
 
-    def test_base_blox_starter_uses_csv_price_and_waives_core(self):
+    def test_base_blox_is_not_a_starter(self):
         c = new_character(self.catalog)
-        quote = quote_purchase(c, "Leo Blaze", starter=True, catalog=self.catalog)
-        self.assertEqual((quote.cost, quote.materials, quote.issues), (8000, (), ()))
-        result = purchase_zoid(c, quote, catalog=self.catalog)
-        self.assertEqual(result.gold, 2000)
-        self.assertEqual(result.build.zoid, "zoids:leo_blaze")
+        with self.assertRaises(RuleError):
+            quote_purchase(c, "Leo Blaze", starter=True, catalog=self.catalog)
 
     def test_repeated_component_recipe_requires_distinct_owned_copies(self):
         data = recipe(self.catalog, "2-Arm Lizard")

@@ -193,8 +193,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     capacity = n(zoid, 12) + u.capacity * 10
     load = sum((n(e, 12) for e in equipment), Decimal(0))
     overloaded = load > capacity
-    underleveled = effective_level < n(zoid, 5)
-    penalty = Decimal("0.6") if overloaded or underleveled else Decimal(1)
+    penalty = Decimal("0.6") if overloaded else Decimal(1)
     base = {
         "health": n(zoid, 6), "armor": n(zoid, 7),
         "defense": n(zoid, 8) + u.defense * 5,
@@ -306,6 +305,6 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         "bonus_levels": bonus_levels, "effective_level": effective_level,
         "base": base, "pilot": pilot, "current": current,
         "carry_capacity": capacity, "carry_load": load, "overloaded": overloaded,
-        "underleveled": underleveled, "standard_weapon_range": pilot["range"] / 2,
+        "standard_weapon_range": pilot["range"] / 2,
         "shields": sheet_round(shields), "weapons": weapons, "warnings": warnings,
     }

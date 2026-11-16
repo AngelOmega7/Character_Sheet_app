@@ -5,7 +5,7 @@ from uuid import uuid4
 from .catalog import Catalog
 from .abilities import AbilityLoadout, activate_ability, deactivate_ability, learn_ability, validate_loadout
 from .combat import RuleError, WeaponCondition
-from .equipment import SLOT_COLUMNS, eligible_equipment
+from .equipment import SLOT_COLUMNS, ZOID_EQUIPMENT_COLUMNS, eligible_equipment
 from .stats import CharacterBuild, Upgrades, calculate_stats
 
 
@@ -417,14 +417,27 @@ def acquire_zoid(character, zoid, catalog=None, *, host_id=None):
             raise RuleError("Obtain the base Zoid before obtaining a CAU form")
         if any(f.zoid == record["id"] for f in existing.forms):
             raise RuleError("This CAU form is already owned")
-        updated = replace(existing, forms=(*existing.forms, FormLoadout(record["id"])))
+    equipment, equipment_ids, inventory = [None] * 4, [None] * 4, list(character.inventory)
+    for index, (name_column, _) in enumerate(ZOID_EQUIPMENT_COLUMNS):
+        if catalog.column(record, name_column):
+            armament = catalog.find("armaments", f"armaments:zoid_equipment_slot_{index + 1}")
+            slot = list(SLOT_COLUMNS)[index]
+            if armament not in eligible_equipment(record["id"], slot, catalog):
+                raise RuleError(f"Zoid-specific equipment cannot be equipped in its {slot} slot")
+            item = OwnedEquipment(str(uuid4()), armament["id"])
+            inventory.append(item)
+            equipment[index], equipment_ids[index] = item.armament, item.id
+    form = FormLoadout(record["id"], equipment=tuple(equipment), equipment_ids=tuple(equipment_ids))
+    character = replace(character, inventory=tuple(inventory))
+    if record["id"] != base:
+        updated = replace(existing, forms=(*existing.forms, form))
         roster = tuple(updated if o.id == existing.id else o for o in character.owned_zoids)
     else:
-        fresh_build = replace(character.build, zoid=base, equipment=(None,) * 4,
+        fresh_build = replace(character.build, zoid=base, equipment=form.equipment,
                               equipment_active=(False,) * 4, fixed_active=(False,) * 4,
                               upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0)
         health = calculate_stats(fresh_build, catalog)["pilot"]["health"]
-        owned = OwnedZoid(str(uuid4()), base, (FormLoadout(base),), base, Upgrades(), (), health)
+        owned = OwnedZoid(str(uuid4()), base, (form,), base, Upgrades(), (), health)
         owned = replace(owned, current_energy=calculate_stats(fresh_build, catalog)["energy"] // 2)
         roster = (*character.owned_zoids, owned)
     if not character.owned_zoids:

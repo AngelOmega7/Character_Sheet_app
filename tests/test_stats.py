@@ -36,6 +36,14 @@ class StatsTests(unittest.TestCase):
         self.assertEqual(sheet_roundup("-2.01"), -3)
         self.assertEqual(sheet_roundup("2.01"), 3)
 
+    def test_mental_adds_directly_to_final_reaction(self):
+        for equipment in ((None,) * 4, ("Particle Cannon", "Extension Armor", None, None)):
+            with self.subTest(equipment=equipment):
+                baseline = self.calc(mental=0, equipment=equipment)
+                result = self.calc(mental=7, equipment=equipment)
+                self.assertEqual(result["current"]["reaction"], baseline["current"]["reaction"] + 7)
+                self.assertEqual(result["base"]["reaction"], baseline["base"]["reaction"])
+
     def test_multiple_ranks_of_a_type_ability_are_rejected(self):
         with self.assertRaises(RuleError):
             self.calc(abilities=("Lion Type 1", "Lion Type 2"))
@@ -64,11 +72,11 @@ class StatsTests(unittest.TestCase):
         with self.assertRaises(RuleError):
             self.calc(abilities=("Small Expert", "Medium Expert"))
 
-    def test_underlevel_penalty_does_not_penalize_weapon_hit(self):
+    def test_low_level_pilot_receives_full_zoid_stats(self):
         result = self.calc(abilities=())
-        self.assertTrue(result["underleveled"])
-        self.assertEqual(result["base"]["speed"], 153)
-        self.assertEqual(result["base"]["reaction"], 11)
+        self.assertNotIn("underleveled", result)
+        self.assertEqual(result["base"]["speed"], 255)
+        self.assertEqual(result["base"]["reaction"], 18)
         self.assertEqual(result["weapons"][0]["base_to_hit"], 17)
 
     def test_capacity_boundary_and_overload(self):
@@ -83,8 +91,8 @@ class StatsTests(unittest.TestCase):
 
     def test_frame_upgrade_units_and_order(self):
         result = self.calc(abilities=(), upgrades=Upgrades(speed=2, reaction=2, defense=2, capacity=2))
-        self.assertEqual(result["base"]["speed"], 213)
-        self.assertEqual(result["base"]["reaction"], 13)
+        self.assertEqual(result["base"]["speed"], 315)
+        self.assertEqual(result["base"]["reaction"], 20)
         self.assertEqual(result["base"]["defense"], 18)
         self.assertEqual(result["carry_capacity"], 40)
 
