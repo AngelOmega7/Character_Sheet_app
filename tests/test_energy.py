@@ -199,8 +199,8 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
                 self.assertGreaterEqual(item["energy_cost"], 0)
 
     def test_named_cost_mapping_retains_current_slot_positions(self):
-        expected = {"Zaber Fang": [0, 3, 1, 2], "Lightning Saix": [3, 6, 1, None],
-                    "Command Wolf IS (CAU)": [1, 1, 6, None]}
+        expected = {"Zaber Fang": [0, 3, 1, 2], "Lightning Saix": [3, None, 1, None],
+                    "Command Wolf IS (CAU)": [1, 1, None, None]}
         for name, costs in expected.items():
             with self.subTest(name=name):
                 stats = calculate_stats(CharacterBuild(name), self.catalog)

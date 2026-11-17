@@ -31,7 +31,7 @@ class DamageConversionTests(unittest.TestCase):
                         if isinstance(value, str) and not value.startswith(("http://", "https://")):
                             self.assertIsNone(DICE_DAMAGE.search(value))
         notes = catalog.find("zoids", "Shadow Fox")["damage_notes"]
-        self.assertIn("Shoots three bursts of 30", notes.values())
+        self.assertNotIn("Shoots three bursts of 30", notes.values())
 
 
 if __name__ == "__main__":

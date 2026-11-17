@@ -63,9 +63,13 @@ Size order is Small < Medium < Large < Large Large < Extra Large. Ultra Saurus's
 
 Dragon Nest is now **Dragoon Nest** in Transport. Catalog Lion terminology is now **Liger**, while the name Saberlion is retained. Legacy reference IDs/aliases remain readable for save compatibility.
 
-- Lightning Saix and BS: Pulse Laser Gun is fixed slot 2; Killer Fang moves to slot 3.
-- Shadow Fox: Laser Vulcan Gun is fixed slot 3; Strike Laser Claw moves to slot 4.
-- Command Wolf IS: Long Range Rifle is fixed slot 3.
+- Lightning Saix and BS: Pulse Laser Gun is Zoid-specific removable slot 5; Killer Fang remains fixed slot 3.
+- Shadow Fox: Laser Vulcan Gun is Zoid-specific removable slot 5; Strike Laser Claw remains fixed slot 4.
+- Command Wolf IS: Long Range Rifle is Zoid-specific removable slot 5.
+
+Save schema **v16** converts the former fixed weapons into equipped inventory copies, preserving broken status, last rolls, and activation. Existing slot-5 equipment stays in inventory. New acquisitions include and equip these weapons automatically. Refresh the bundled catalog conversion with `python -m tools.restore_removable_weapons`.
+
+Frame upgrades also include **Melee Damage** and **Ranged Damage**, each capped at 5 points. Each point adds a flat **+20 damage** to matching fixed, generic removable, and Zoid-specific removable weapons, after Organoid/Comeback percentages. Melee-tagged attacks use Melee Damage; Ranged-tagged attacks without Melee use Ranged Damage. Utilities receive no damage bonus. Each track costs the same as Defense: 5,000g × resulting rank, with a full refund of that rank's price when removed. Both tracks belong to the chassis and follow its CAU forms. Save schema **v17** stores the tracks; older saves default both to zero.
 - These newly fixed weapons are upgradeable and removed from their old unique-removable reference fields.
 - All CAU families in `CAU_expand.txt` and `CAU_expand_2.txt` are incorporated. Snipe Master AS and FB are separate forms. Approved display-name aliases are normalized during conversion.
 - Buster Fury (CAU) belongs to Berserk Fury and costs 50,000g plus an owned Buster Eagle. Zero Falcon (CAU) and Zero Phoenix (CAU) belong to Liger Zero and each cost 20,000g plus an owned Jet Falcon or Fire Phoenix, respectively. The component is consumed; the host remains.

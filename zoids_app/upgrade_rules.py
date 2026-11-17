@@ -4,6 +4,7 @@ from .combat import RuleError
 UPGRADE_LIMITS = {
     "speed": 5, "reaction": 5, "defense": None, "capacity": 5,
     "accuracy": None, "armor": 5, "ept": None,
+    "melee_damage": 5, "ranged_damage": 5,
 }
 
 

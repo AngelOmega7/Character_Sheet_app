@@ -57,10 +57,9 @@ def calculate_attack(
         (number(a["fields"]["damage_bonus"]) for a in skills if a.get("family") == "comeback"),
         number(0),
     ) if stats["pilot"]["health"] > 0 and current_health * 5 <= stats["pilot"]["health"] else number(0)
-    upgraded_damage = number(weapon["base_damage"]) + weapon["damage_upgrade"]
-    # Percentage bonuses add to the same upgraded base, with one final rounding.
+    # Frame damage upgrades are flat additions after percentage bonuses.
     percent = number(weapon["damage_percent"]) + comeback_percent
-    total_damage = number(weapon["base_damage"]) + sheet_round(weapon["damage_upgrade"] + upgraded_damage * percent)
+    total_damage = number(weapon["base_damage"]) + sheet_round(number(weapon["base_damage"]) * percent) + weapon["damage_upgrade"]
     return {
         "slot": slot, "name": weapon["name"], "ranged": is_ranged,
         "range_band": range_band if is_ranged else None,

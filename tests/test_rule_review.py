@@ -54,10 +54,10 @@ class RuleReviewTests(unittest.TestCase):
         self.assertEqual(clean_weapon_tags("Melee, Energy"), "Melee, Energy")
 
     def test_zoid_specific_lasers_receive_sniper_and_laser_expert_bonuses(self):
-        build = CharacterBuild("Lightning Saix", pilot_level=20, equipment=(None, "armaments:zoid_equipment_slot_1", None, None))
-        base = calculate_attack(build, "fixed_2", current_health=100, range_band="long", catalog=self.catalog)
+        build = CharacterBuild("Lightning Saix", pilot_level=20, equipment=("armaments:zoid_equipment_slot_1", None, None, None))
+        base = calculate_attack(build, "back", current_health=100, range_band="long", catalog=self.catalog)
         self.assertTrue(base["ranged"])
-        expert = calculate_attack(replace(build, abilities=("Laser Expert 4", "Sniper 4")), "fixed_2",
+        expert = calculate_attack(replace(build, abilities=("Laser Expert 4", "Sniper 4")), "back",
                                   current_health=100, range_band="long", catalog=self.catalog)
         self.assertEqual(expert["to_hit"], base["to_hit"] + 8)
         rs = self.catalog.find("zoids", "Zaber Fang RS")

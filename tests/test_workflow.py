@@ -279,7 +279,7 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(c.loaded_zoids, ())
         self.assertEqual(len(c.owned_zoids), 3)
 
-    def test_npc_none_liger_and_fixed_weapon_layout(self):
+    def test_npc_none_liger_and_restored_removable_weapon_layout(self):
         b = CharacterBuild("Saberlion", pilot_style="NPC", pilot_level=20, organoid_color="None")
         stats = calculate_stats(b, self.catalog)
         self.assertEqual(stats["pilot"]["health"], stats["base"]["health"])
@@ -290,10 +290,11 @@ class WorkflowTests(unittest.TestCase):
         for name, slot, weapon in (("Lightning Saix", 1, "Pulse Laser Gun:"), ("Lightning Saix BS", 1, "Pulse Laser Gun:"),
                                    ("Shadow Fox", 2, "Laser Vulcan Gun"), ("Command Wolf IS", 2, "Long Range Rifle")):
             record = self.catalog.find("zoids", name)
-            actual = calculate_stats(CharacterBuild(record["id"]), self.catalog)
-            self.assertEqual(actual["weapons"][slot]["name"], weapon)
-            self.assertIsNotNone(record["fixed_weapon_ids"][slot])
-            self.assertIsNone(self.catalog.column(record, 47))
+            actual = calculate_stats(CharacterBuild(record["id"], equipment=("armaments:zoid_equipment_slot_1", None, None, None)), self.catalog)
+            self.assertEqual(actual["weapons"][4]["name"], weapon)
+            self.assertIsNone(record["fixed_weapon_ids"][slot])
+            self.assertIsNone(actual["weapons"][slot]["name"])
+            self.assertEqual(self.catalog.column(record, 47), weapon)
 
     def test_utilities_do_not_roll_and_csv_corrections_are_applied(self):
         c = acquire_zoid(established_character(self.catalog), "Liger Zero", self.catalog)

@@ -37,6 +37,17 @@ full purchase price. These chassis upgrades follow CAU forms and do not
 increase maximum Energy, refill current Energy, or change the Rest fraction.
 Listed EPT and costs are base catalog values before upgrades or abilities.
 
+FRAME DAMAGE UPGRADES
+Melee Damage and Ranged Damage each have a maximum of 5 upgrade points.
+Each point adds +20 damage to all matching weapons used by the Zoid, including
+fixed weapons and generic or Zoid-specific removable weapons. The bonus is flat,
+applied after Organoid and Comeback percentages. Non-damaging systems gain no
+damage. Melee-tagged attacks use Melee Damage; Ranged attacks without the Melee
+tag use Ranged Damage. Each track costs the same as Defense upgrades:
+5,000g, 10,000g, 15,000g, 20,000g, and 25,000g for ranks 1 through 5.
+Removing a point refunds its rank's cost. These upgrades follow the chassis
+across its CAU forms.
+
 Physics Reinforcer Unit: passive, weight 3, +100 maximum Health after stat
 multipliers; does not heal. Energy Reinforcer Unit: passive, weight 3,
 +20 maximum Energy; does not refill Energy. Removing it clamps current Energy.

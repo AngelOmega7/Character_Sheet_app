@@ -320,6 +320,21 @@ class EditorTests(unittest.TestCase):
         self.assertEqual({o.key for o in self.editor.saved.options}, {first.id, second.id})
         self.assertEqual([o.text for o in self.editor.saved.options], ["Garreth", "Garreth"])
 
+    def test_frame_damage_upgrade_controls_update_and_cap_at_five(self):
+        editor = self.editor
+        editor.character = replace(editor.character, gold=200000)
+        editor.render()
+        for field, label in (("melee_damage", "Melee Damage"), ("ranged_damage", "Ranged Damage")):
+            self.assertEqual(editor.frame_fields[field].label, label)
+            for _ in range(5):
+                editor.adjust_upgrade(field, 1)
+            self.assertEqual(editor.frame_fields[field].value, "5")
+            before = editor.character
+            editor.adjust_upgrade(field, 1)
+            self.assertEqual(editor.character, before)
+            editor.adjust_upgrade(field, -1)
+            self.assertEqual(editor.frame_fields[field].value, "4")
+
     def test_transport_ally_controls_capacity_unload_and_save(self):
         from zoids_app.transport import select_transport
         editor = self.editor

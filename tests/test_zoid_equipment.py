@@ -90,11 +90,11 @@ class ZoidEquipmentTests(unittest.TestCase):
         result = equipment_audit(self.catalog)
         self.assertFalse(result["missing_cost_items"])
         self.assertFalse(result["unknown_zoids"])
-        self.assertEqual(len(result["designs"]), 12)
-        self.assertEqual(sum(len(d["items"]) for d in result["designs"]), 13)
+        self.assertEqual(len(result["designs"]), 15)
+        self.assertEqual(sum(len(d["items"]) for d in result["designs"]), 17)
         for design in result["designs"]:
             self.assertTrue(design["assignments"], design["name"])
-        self.assertEqual([d["name"] for d in result["designs"] if len(d["items"]) > 1], ["Great Zaber"])
+        self.assertEqual({d["name"] for d in result["designs"] if len(d["items"]) > 1}, {"Great Zaber", "Shadow Fox"})
 
     def test_all_zoid_specific_utilities_fit_slots_five_through_eight(self):
         cases = (("Diablo Tiger", 4, 15, 3), ("Zero X (CAU)", 1, 10, 3),

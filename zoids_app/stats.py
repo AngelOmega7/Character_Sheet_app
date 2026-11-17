@@ -49,6 +49,8 @@ class Upgrades:
     # These fields no longer contribute to combat statistics.
     damage: tuple[int, ...] = (0, 0, 0, 0)
     to_hit: tuple[int, ...] = (0, 0, 0, 0)
+    melee_damage: int = 0
+    ranged_damage: int = 0
 
     def __post_init__(self):
         if len(self.damage) != 4 or len(self.to_hit) != 4:
@@ -56,7 +58,7 @@ class Upgrades:
         for name, limit in UPGRADE_LIMITS.items():
             points = getattr(self, name)
             if type(points) is not int or points < 0 or (limit is not None and points > limit):
-                raise RuleError(f"{name.title()} upgrade points must be nonnegative integers" +
+                raise RuleError(f"{name.replace('_', ' ').title()} upgrade points must be nonnegative integers" +
                                 (f" from 0 through {limit}" if limit is not None else ""))
         for points in (*self.damage, *self.to_hit):
             if type(points) is not int or not 0 <= points <= 5:
@@ -296,7 +298,12 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         })
     energy_reduction = max((a.get("ranged_energy_cost_reduction", 0) for a in abilities if a), default=0)
     for weapon in weapons:
-        if weapon["energy_cost"] is not None and "ranged" in weapon_tags(weapon["damage_type"]):
+        tags = weapon_tags(weapon["damage_type"])
+        if weapon["name"] and weapon["base_damage"] is not None and weapon["damage_bonus"] is not None:
+            points = u.melee_damage if "melee" in tags else u.ranged_damage if "ranged" in tags else 0
+            weapon["damage_upgrade"] = 20 * points
+            weapon["damage_bonus"] += weapon["damage_upgrade"]
+        if weapon["energy_cost"] is not None and "ranged" in tags:
             weapon["energy_cost"] = max(0, weapon["energy_cost"] - energy_reduction)
     return {
         "ruleset": "energy-v17", "zoid_id": zoid["id"],

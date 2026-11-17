@@ -13,7 +13,7 @@ from .combat import RuleError, WeaponCondition
 from .stats import CharacterBuild, Upgrades
 from .upgrade_migration import migrate_upgrade_payload
 
-SAVE_VERSION = 15
+SAVE_VERSION = 17
 EXPORT_FORMAT = "zoids-character-export"
 EXPORT_FORMAT_VERSION = 1
 
@@ -266,6 +266,9 @@ class CharacterStore:
             if version < 13:
                 from .workflow_migration import migrate_equipment_mounts
                 character = migrate_equipment_mounts(character, self.catalog)
+            if version < 16:
+                from .workflow_migration import migrate_restored_removable_weapons
+                character = migrate_restored_removable_weapons(character, self.catalog)
             return validate_character(character, self.catalog)
         except (KeyError, TypeError, ValueError, AttributeError) as exc:
             raise RuleError(f"Cannot load character: {exc}") from exc

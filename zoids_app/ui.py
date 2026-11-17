@@ -801,7 +801,8 @@ class CharacterEditor:
         stored = [s for s in self.character.stored_fuzors if s.zoid == r["id"]]
         self.purchase_stored_fuzor.options = [option("new", "New FUZOR — no retained upgrades"),
             *[option(s.id, f"{self.stored_fuzor_label(s)} · Frame {s.frame.speed}/{s.frame.reaction}/{s.frame.defense}/{s.frame.capacity}"
-                     f" · Accuracy {s.frame.accuracy} · Armor {s.frame.armor} · EPT +{s.frame.ept}") for s in stored]]
+                     f" · Accuracy {s.frame.accuracy} · Armor {s.frame.armor} · EPT +{s.frame.ept}"
+                     f" · Melee Damage {s.frame.melee_damage} · Ranged Damage {s.frame.ranged_damage}") for s in stored]]
         self.purchase_stored_fuzor.value = "new"
         self.purchase_stored_fuzor.visible = bool(stored)
         self.purchase_blox.controls = []
@@ -915,7 +916,8 @@ class CharacterEditor:
             self.message(str(exc), True)
 
     def upgrade_counter(self, label, value, field, slot=None, disabled=False, base_stat=None):
-        control = ft.TextField(label=label, value=str(value), read_only=True, width=100, disabled=disabled)
+        control = ft.TextField(label=label, value=str(value), read_only=True,
+                               width=140 if field.endswith("_damage") else 100, disabled=disabled)
         limit = UPGRADE_LIMITS[field]
         maximum = limit is not None and value >= limit
         refund = upgrade_price(field, value) if value else 0
@@ -932,6 +934,8 @@ class CharacterEditor:
 
     def upgrade_base_stat(self, field, record):
         """Raw selected-form values, before pilot, equipment, or upgrade effects."""
+        if field in ("melee_damage", "ranged_damage"):
+            return ft.Text("+20 damage / point", size=12, expand=True)
         if record is None:
             return ft.Text("Base: —", size=12, expand=True)
         if field == "accuracy":
@@ -1128,7 +1132,7 @@ class CharacterEditor:
         for key in UPGRADE_LIMITS:
             base_stat = self.upgrade_base_stat(key, upgrade_record)
             self.upgrade_base_labels[key] = base_stat
-            control, widget = self.upgrade_counter("EPT" if key == "ept" else key.title(), getattr(build.upgrades, key), key,
+            control, widget = self.upgrade_counter("EPT" if key == "ept" else key.replace("_", " ").title(), getattr(build.upgrades, key), key,
                                                    disabled=not active, base_stat=base_stat)
             self.frame_fields[key] = control
             frame_widgets.append(ft.Container(widget, col={"xs": 12, "md": 6}))

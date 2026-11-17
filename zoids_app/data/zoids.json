@@ -1841,11 +1841,11 @@
         "type_1_16": "Ranged, Bullet",
         "to_hit_1_17": 17,
         "active_passive3_18": null,
-        "weapon_2_19": "Pulse Laser Gun:",
-        "effect_3_20": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
-        "damage_2_21": 110,
-        "type_2_22": "Ranged, Laser",
-        "to_hit_2_23": 18,
+        "weapon_2_19": null,
+        "effect_3_20": null,
+        "damage_2_21": null,
+        "type_2_22": null,
+        "to_hit_2_23": null,
         "shield_health_24": null,
         "speed_increase_25": null,
         "to_hit_increase_26": null,
@@ -1869,12 +1869,12 @@
         "type_4_44": null,
         "to_hit_4_45": null,
         "re_equip_slot_type_1_46": "Weapon and Assist",
-        "removable_equipment_47": null,
-        "effect_6_48": null,
-        "damage_5_49": null,
-        "damage_type_50": null,
-        "to_hit_5_51": null,
-        "weight_52": null,
+        "removable_equipment_47": "Pulse Laser Gun:",
+        "effect_6_48": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
+        "damage_5_49": 110,
+        "damage_type_50": "Ranged, Laser",
+        "to_hit_5_51": 18,
+        "weight_52": 20,
         "re_equip_slot_type_2_53": "Weapon and Assist",
         "removable_equipment_2_54": null,
         "damage_6_55": null,
@@ -2028,7 +2028,7 @@
       "ownership_base_id": "zoids:lightning_saix",
       "fixed_weapon_ids": [
         "zoids:lightning_saix:weapon:2_barrel_vulcan_cannon",
-        "zoids:lightning_saix:weapon:pulse_laser_gun",
+        null,
         "zoids:lightning_saix:weapon:killer_fang",
         null
       ],
@@ -2055,15 +2055,26 @@
       "energy_recharge": 2,
       "energy_costs": [
         3,
-        6,
+        null,
         1,
         null,
-        null,
+        6,
         null,
         null,
         null
       ],
-      "energy_source": "Energy_Addition.ods (matched by weapon name)"
+      "energy_source": "Energy_Addition.ods (matched by weapon name)",
+      "zoid_equipment_mounts": {
+        "armaments:zoid_equipment_slot_1": [
+          "back"
+        ]
+      },
+      "removable_weapon_restore": {
+        "fixed_slot": 2,
+        "fixed_weapon_id": "zoids:lightning_saix:weapon:pulse_laser_gun",
+        "template": "armaments:zoid_equipment_slot_1",
+        "slot": "back"
+      }
     },
     {
       "id": "zoids:lightning_saix_bs",
@@ -2091,11 +2102,11 @@
         "type_1_16": "Ranged, Bullet",
         "to_hit_1_17": 17,
         "active_passive3_18": null,
-        "weapon_2_19": "Pulse Laser Gun:",
-        "effect_3_20": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
-        "damage_2_21": 130,
-        "type_2_22": "Ranged, Laser",
-        "to_hit_2_23": 19,
+        "weapon_2_19": null,
+        "effect_3_20": null,
+        "damage_2_21": null,
+        "type_2_22": null,
+        "to_hit_2_23": null,
         "shield_health_24": null,
         "speed_increase_25": null,
         "to_hit_increase_26": null,
@@ -2119,12 +2130,12 @@
         "type_4_44": null,
         "to_hit_4_45": null,
         "re_equip_slot_type_1_46": "Weapon and Assist",
-        "removable_equipment_47": null,
-        "effect_6_48": null,
-        "damage_5_49": null,
-        "damage_type_50": null,
-        "to_hit_5_51": null,
-        "weight_52": null,
+        "removable_equipment_47": "Pulse Laser Gun:",
+        "effect_6_48": "back mounted energy gun. Targets up to two opponents. Ranged (Lightning Saix Only)",
+        "damage_5_49": 130,
+        "damage_type_50": "Ranged, Laser",
+        "to_hit_5_51": 19,
+        "weight_52": 22,
         "re_equip_slot_type_2_53": "Weapon and Assist",
         "removable_equipment_2_54": null,
         "damage_6_55": null,
@@ -2278,7 +2289,7 @@
       "ownership_base_id": "zoids:lightning_saix_bs",
       "fixed_weapon_ids": [
         "zoids:lightning_saix_bs:weapon:2_barrel_vulcan_cannon",
-        "zoids:lightning_saix_bs:weapon:pulse_laser_gun",
+        null,
         "zoids:lightning_saix_bs:weapon:killer_fang",
         null
       ],
@@ -2305,15 +2316,26 @@
       "energy_recharge": 2,
       "energy_costs": [
         3,
-        8,
+        null,
         1,
         null,
-        null,
+        8,
         null,
         null,
         null
       ],
-      "energy_source": "Energy_Addition.ods (matched by weapon name)"
+      "energy_source": "Energy_Addition.ods (matched by weapon name)",
+      "zoid_equipment_mounts": {
+        "armaments:zoid_equipment_slot_1": [
+          "back"
+        ]
+      },
+      "removable_weapon_restore": {
+        "fixed_slot": 2,
+        "fixed_weapon_id": "zoids:lightning_saix_bs:weapon:pulse_laser_gun",
+        "template": "armaments:zoid_equipment_slot_1",
+        "slot": "back"
+      }
     },
     {
       "id": "zoids:gun_tiger",
@@ -5145,11 +5167,11 @@
         "reaction_increase_2_27": null,
         "range_increase_28": null,
         "active_passive_29": null,
-        "weapon_3_30": "Long Range Rifle",
-        "effect_4_31": "back mounted rifle. Targets a single opponent. Minimum range of 100m. Ranged (Command Wolf Only)",
-        "damage_3_32": 130,
-        "type_3_33": "Ranged, Bullet, Long Range",
-        "to_hit_3_34": 19,
+        "weapon_3_30": null,
+        "effect_4_31": null,
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
         "shield_health_2_35": null,
         "speed_increase_2_36": null,
         "to_hit_increase_2_37": null,
@@ -5162,12 +5184,12 @@
         "type_4_44": null,
         "to_hit_4_45": null,
         "re_equip_slot_type_1_46": "Weapon and Assist",
-        "removable_equipment_47": null,
-        "effect_6_48": null,
-        "damage_5_49": null,
-        "damage_type_50": null,
-        "to_hit_5_51": null,
-        "weight_52": null,
+        "removable_equipment_47": "Long Range Rifle",
+        "effect_6_48": "back mounted rifle. Targets a single opponent. Minimum range of 100m. Ranged (Command Wolf Only)",
+        "damage_5_49": 130,
+        "damage_type_50": "Ranged, Bullet, Long Range",
+        "to_hit_5_51": 19,
+        "weight_52": 18,
         "re_equip_slot_type_2_53": "Weapon and Assist",
         "removable_equipment_2_54": null,
         "damage_6_55": null,
@@ -5286,7 +5308,7 @@
       "fixed_weapon_ids": [
         null,
         "zoids:command_wolf:weapon:bite_fang",
-        "zoids:command_wolf_is:weapon:long_range_rifle",
+        null,
         null
       ],
       "legacy_fixed_weapon_ids": [
@@ -5311,14 +5333,25 @@
       "energy_costs": [
         1,
         1,
+        null,
+        null,
         6,
-        null,
-        null,
         null,
         null,
         null
       ],
-      "energy_source": "Energy_Addition.ods (matched by weapon name)"
+      "energy_source": "Energy_Addition.ods (matched by weapon name)",
+      "zoid_equipment_mounts": {
+        "armaments:zoid_equipment_slot_1": [
+          "back"
+        ]
+      },
+      "removable_weapon_restore": {
+        "fixed_slot": 3,
+        "fixed_weapon_id": "zoids:command_wolf_is:weapon:long_range_rifle",
+        "template": "armaments:zoid_equipment_slot_1",
+        "slot": "back"
+      }
     },
     {
       "id": "zoids:cerberus",
@@ -5635,11 +5668,11 @@
         "reaction_increase_2_27": null,
         "range_increase_28": null,
         "active_passive_29": "Active",
-        "weapon_3_30": "Laser Vulcan Gun",
+        "weapon_3_30": null,
         "effect_4_31": null,
-        "damage_3_32": 30,
-        "type_3_33": "Ranged, Laser",
-        "to_hit_3_34": 17,
+        "damage_3_32": null,
+        "type_3_33": null,
+        "to_hit_3_34": null,
         "shield_health_2_35": null,
         "speed_increase_2_36": null,
         "to_hit_increase_2_37": null,
@@ -5652,11 +5685,11 @@
         "type_4_44": "Melee, Energy",
         "to_hit_4_45": 15,
         "re_equip_slot_type_1_46": "Weapon and Assist",
-        "removable_equipment_47": null,
-        "effect_6_48": null,
-        "damage_5_49": null,
-        "damage_type_50": null,
-        "to_hit_5_51": null,
+        "removable_equipment_47": "Laser Vulcan Gun",
+        "effect_6_48": "Back-mounted gun. AoE attack targeting a 30m by 90m area. (Shadow Fox Only)",
+        "damage_5_49": 90,
+        "damage_type_50": "Ranged, Laser, Close Range",
+        "to_hit_5_51": 17,
         "weight_52": null,
         "re_equip_slot_type_2_53": "Weapon and Assist ",
         "removable_equipment_2_54": null,
@@ -5808,14 +5841,12 @@
           "reason": "Owner revision in ZOIDS_Companion.txt."
         }
       },
-      "damage_notes": {
-        "damage_3_32": "Shoots three bursts of 30"
-      },
+      "damage_notes": {},
       "ownership_base_id": "zoids:shadow_fox",
       "fixed_weapon_ids": [
         "zoids:shadow_fox:weapon:electro_magnetic_bite_fang",
         null,
-        "zoids:shadow_fox:weapon:laser_vulcan_gun",
+        null,
         "zoids:shadow_fox:weapon:strike_laser_claw"
       ],
       "legacy_fixed_weapon_ids": [
@@ -5841,14 +5872,25 @@
       "energy_costs": [
         1,
         1,
-        10,
-        3,
         null,
+        3,
+        8,
         null,
         null,
         3
       ],
-      "energy_source": "Energy_Addition.ods (matched by weapon name)"
+      "energy_source": "Energy_Addition.ods (matched by weapon name)",
+      "zoid_equipment_mounts": {
+        "armaments:zoid_equipment_slot_1": [
+          "back"
+        ]
+      },
+      "removable_weapon_restore": {
+        "fixed_slot": 3,
+        "fixed_weapon_id": "zoids:shadow_fox:weapon:laser_vulcan_gun",
+        "template": "armaments:zoid_equipment_slot_1",
+        "slot": "back"
+      }
     },
     {
       "id": "zoids:konig_wolf",

@@ -9,6 +9,7 @@ from decimal import Decimal
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.workflow_data import TRANSPORTS, apply_workflow, write_purchases
+from tools.restore_removable_weapons import restore_weapons
 DICE_DAMAGE = re.compile(r"\b(\d+)\s*[dD]\s*(\d+)\b")
 CAU_BASES = {
     "Zero Jager (CAU)": "Liger Zero", "Zero Schneider (CAU)": "Liger Zero",
@@ -376,6 +377,7 @@ def build():
             (output / "transports.json").write_text(json.dumps(transport_data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
             counts["transports"] = dict(records=len(transports), selectable=len(transports), excluded_empty_rows=0, excluded_retired_rows=0)
             add_ownership_metadata(records, keys, families)
+            restore_weapons(records, keys)
             n = write_purchases(output, records, ROOT)
             counts["purchases"] = dict(records=n, selectable=n, excluded_empty_rows=0, excluded_retired_rows=0)
         if dataset == "abilities":

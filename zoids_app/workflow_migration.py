@@ -1,7 +1,8 @@
 """One-time migration of pre-workflow ownership and moved weapon identities."""
 from dataclasses import asdict, replace
+from uuid import NAMESPACE_URL, uuid5
 
-from .characters import (FixedWeaponCondition, FormLoadout, WeaponUpgrade,
+from .characters import (FixedWeaponCondition, FormLoadout, OwnedEquipment, WeaponUpgrade,
                          fixed_weapon_identity, restore_roster_selection)
 from .combat import WeaponCondition
 
@@ -120,3 +121,50 @@ def migrate_workflow(character, catalog):
     result = replace(character, owned_zoids=tuple(roster), archived_content=tuple(archive), transport=transport,
                      loaded_zoids=(), starter_pending=False)
     return restore_roster_selection(result, catalog)
+
+
+def migrate_restored_removable_weapons(character, catalog):
+    """Turn former fixed weapons into equipped copies, retaining damage and rolls."""
+    inventory = {item.id: item for item in character.inventory}
+    roster = []
+    for owner in character.owned_zoids:
+        forms, removed = [], set()
+        conditions = {w.weapon_id: w.condition for w in owner.weapon_conditions}
+        for form in owner.forms:
+            record = catalog.find("zoids", form.zoid)
+            move = record.get("removable_weapon_restore")
+            if not move:
+                forms.append(form)
+                continue
+            index = move["fixed_slot"] - 1
+            identities = (move["fixed_weapon_id"], f"{record['id']}:fixed_{index + 1}")
+            removed.update(identities)
+            equipment, ids, enabled = list(form.equipment), list(form.equipment_ids), list(form.equipment_active)
+            prior = next((i for i, item in enumerate(equipment) if item == move["template"] and ids[i] in inventory), None)
+            if prior is not None:
+                item = inventory[ids[prior]]
+                active = enabled[prior]
+                equipment[prior], ids[prior], enabled[prior] = None, None, False
+            else:
+                identity = str(uuid5(NAMESPACE_URL, f"{owner.id}/{form.zoid}/restored-slot-5"))
+                item = OwnedEquipment(identity, move["template"])
+                active = False
+            condition = item.condition
+            for key in identities:
+                state = conditions.get(key)
+                if state:
+                    condition = WeaponCondition(condition.broken or state.broken,
+                        state.last_roll if state.last_roll is not None else condition.last_roll)
+            inventory[item.id] = replace(item, condition=condition)
+            # Displaced Slot 5 equipment remains owned but becomes unassigned here.
+            equipment[0], ids[0] = item.armament, item.id
+            enabled[0] = active or form.fixed_active[index]
+            fixed = list(form.fixed_active)
+            fixed[index] = False
+            forms.append(replace(form, equipment=tuple(equipment), equipment_ids=tuple(ids),
+                                 equipment_active=tuple(enabled), fixed_active=tuple(fixed)))
+        roster.append(replace(owner, forms=tuple(forms),
+            weapons=tuple(w for w in owner.weapons if w.weapon_id not in removed),
+            weapon_conditions=tuple(w for w in owner.weapon_conditions if w.weapon_id not in removed)))
+    result = replace(character, inventory=tuple(inventory.values()), owned_zoids=tuple(roster))
+    return restore_roster_selection(result, catalog) if result != character else character

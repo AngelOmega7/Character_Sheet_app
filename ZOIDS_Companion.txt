@@ -48,6 +48,17 @@ full purchase price. These chassis upgrades follow CAU forms and do not
 increase maximum Energy, refill current Energy, or change the Rest fraction.
 Listed EPT and costs are base catalog values before upgrades or abilities.
 
+FRAME DAMAGE UPGRADES
+Melee Damage and Ranged Damage each have a maximum of 5 upgrade points.
+Each point adds +20 damage to all matching weapons used by the Zoid, including
+fixed weapons and generic or Zoid-specific removable weapons. The bonus is flat,
+applied after Organoid and Comeback percentages. Non-damaging systems gain no
+damage. Melee-tagged attacks use Melee Damage; Ranged attacks without the Melee
+tag use Ranged Damage. Each track costs the same as Defense upgrades:
+5,000g, 10,000g, 15,000g, 20,000g, and 25,000g for ranks 1 through 5.
+Removing a point refunds its rank's cost. These upgrades follow the chassis
+across its CAU forms.
+
 Physics Reinforcer Unit: passive, weight 3, +100 maximum Health after stat
 multipliers; does not heal. Energy Reinforcer Unit: passive, weight 3,
 +20 maximum Energy; does not refill Energy. Removing it clamps current Energy.
@@ -1111,15 +1122,15 @@ FIXED WEAPONS & SYSTEMS
      Energy cost: 1
      Damage: 120 | Type: Melee | To hit: 14
      Effect: Bite attack. Targets a single opponent.
-  3. Long Range Rifle
-     Energy cost: 6
-     Damage: 130 | Type: Ranged, Bullet, Long Range | To hit: 19
-     Effect: back mounted rifle. Targets a single opponent. Minimum range of
-     100m. Ranged (Command Wolf Only)
+  3. No fixed weapon/system listed
   4. No fixed weapon/system listed
 
 REMOVABLE EQUIPMENT SLOTS
-  1. Slot type: Weapon and Assist | Equipment: None listed
+  1. Slot type: Weapon and Assist | Equipment: Long Range Rifle
+     Energy cost: 6
+     Damage: 130 | Type: Ranged, Bullet, Long Range | To hit: 19 | Weight: 18
+     Effect: back mounted rifle. Targets a single opponent. Minimum range of
+     100m. Ranged (Command Wolf Only)
   2. Slot type: Weapon and Assist | Equipment: None listed
   3. Slot type: Weapon and Assist | Equipment: None listed
   4. Slot type: Assist | Equipment: None listed
@@ -4025,11 +4036,7 @@ FIXED WEAPONS & SYSTEMS
      Effect: Head mounted machine gun. Covers an area of 60m by 60m. Targets
      in the area must make a reaction against the attack roll. Successful
      saves take no damage.
-  2. Pulse Laser Gun
-     Energy cost: 6
-     Damage: 110 | Type: Ranged, Laser | To hit: 18
-     Effect: back mounted energy gun. Targets up to two opponents. Ranged
-     (Lightning Saix Only)
+  2. No fixed weapon/system listed
   3. Killer Fang
      Energy cost: 1
      Damage: 130 | Type: Melee | To hit: 13
@@ -4037,7 +4044,11 @@ FIXED WEAPONS & SYSTEMS
   4. No fixed weapon/system listed
 
 REMOVABLE EQUIPMENT SLOTS
-  1. Slot type: Weapon and Assist | Equipment: None listed
+  1. Slot type: Weapon and Assist | Equipment: Pulse Laser Gun
+     Energy cost: 6
+     Damage: 110 | Type: Ranged, Laser | To hit: 18 | Weight: 20
+     Effect: back mounted energy gun. Targets up to two opponents. Ranged
+     (Lightning Saix Only)
   2. Slot type: Weapon and Assist | Equipment: None listed
   3. Slot type: Weapon and Assist | Equipment: None listed
   4. Slot type: Assist | Equipment: None listed
@@ -4061,11 +4072,7 @@ FIXED WEAPONS & SYSTEMS
      Energy cost: 3
      Damage: 55 | Type: Ranged, Bullet | To hit: 17
      Effect: Head mounted machine gun. Covers an area of 60m by 60m.
-  2. Pulse Laser Gun
-     Energy cost: 8
-     Damage: 130 | Type: Ranged, Laser | To hit: 19
-     Effect: back mounted energy gun. Targets up to two opponents. Ranged
-     (Lightning Saix Only)
+  2. No fixed weapon/system listed
   3. Killer Fang
      Energy cost: 1
      Damage: 130 | Type: Melee | To hit: 13
@@ -4073,7 +4080,11 @@ FIXED WEAPONS & SYSTEMS
   4. No fixed weapon/system listed
 
 REMOVABLE EQUIPMENT SLOTS
-  1. Slot type: Weapon and Assist | Equipment: None listed
+  1. Slot type: Weapon and Assist | Equipment: Pulse Laser Gun
+     Energy cost: 8
+     Damage: 130 | Type: Ranged, Laser | To hit: 19 | Weight: 22
+     Effect: back mounted energy gun. Targets up to two opponents. Ranged
+     (Lightning Saix Only)
   2. Slot type: Weapon and Assist | Equipment: None listed
   3. Slot type: Weapon and Assist | Equipment: None listed
   4. Slot type: Assist | Equipment: None listed
@@ -5050,17 +5061,18 @@ FIXED WEAPONS & SYSTEMS
      Activation: Active
      Effect: Deploys smoke in a 60m square. While in the smoke the attacks
      against the Zoid have disadvantage. Lasts three turns
-  3. Laser Vulcan Gun
-     Energy cost: 10
-     Damage: 30 | Type: Ranged, Laser | To hit: 17
-     Source damage note: Shoots three bursts of 30
+  3. No fixed weapon/system listed
   4. Strike Laser Claw
      Energy cost: 3
      Damage: 220 | Type: Melee, Energy | To hit: 15
      Effect: Claw attack. Targets a single opponent.
 
 REMOVABLE EQUIPMENT SLOTS
-  1. Slot type: Weapon and Assist | Equipment: None listed
+  1. Slot type: Weapon and Assist | Equipment: Laser Vulcan Gun
+     Energy cost: 8
+     Damage: 90 | Type: Ranged, Laser, Close Range | To hit: 17
+     Effect: Back-mounted gun. AoE attack targeting a 30m by 90m area.
+     (Shadow Fox Only)
   2. Slot type: Weapon and Assist | Equipment: None listed
   3. Slot type: Weapon and Assist | Equipment: None listed
   4. Slot type: Assist | Equipment: Optical Camouflage

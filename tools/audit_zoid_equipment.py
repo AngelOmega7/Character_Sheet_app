@@ -38,8 +38,8 @@ def write_report():
     assert all(design["assignments"] for design in result["designs"])
     lines = ["# Zoid-specific equipment audit", "",
              "Every named entry in the Zoid energy-cost spreadsheet maps to an implemented fixed or removable item. No missing named items were found.", "",
-             "Great Zaber and Buster Fury are absent from that spreadsheet; their approved app entries were also checked. Great Zaber is the only current design with two removable Zoid-specific items. Both can be equipped simultaneously.", "",
-             "Source E5–E8 identifies the catalog lookup, not a required mounting position. Weapons use Weapon and Assist slots, subject to explicit mounting restrictions: Great Zaber's 20mm Solid Rifle uses slot 6. Named non-weapon equipment uses either Assist or Weapon and Assist slots, including slots 5–8 on every design listed below. One physical copy still occupies only one slot per form.", "",
+              "Great Zaber and Buster Fury are absent from that spreadsheet; their approved app entries were also checked. Great Zaber and Shadow Fox each have two removable Zoid-specific items that can be equipped simultaneously.", "",
+              "Source E5–E8 identifies the catalog lookup. Weapons use Weapon and Assist slots, subject to explicit mounting restrictions: Great Zaber's 20mm Solid Rifle uses slot 6; the four restored unique weapons use slot 5. Named non-weapon equipment uses either Assist or Weapon and Assist slots, including slots 5–8 on every design listed below. One physical copy still occupies only one slot per form.", "",
              "| Zoid | Item | Type | Source | Allowed slots | Energy cost |",
              "| --- | --- | --- | --- | --- | --- |"]
     for design in result["designs"]:
@@ -51,7 +51,7 @@ def write_report():
             for assignment in design["assignments"]:
                 lines.append(f"- {design['name']}: " + "; ".join(f"{item['name']} in slot {slot}" for item, slot in zip(design["items"], assignment)) + ".")
     lines += ["", "The Konig Wolf DSR's Dual Sniper Rifle is already fixed equipment; its removable 5-Shot Missile Pod can mount in slot 6 or 7 alongside it.", "",
-              "Lightning Saix/BS Pulse Laser Gun, Command Wolf IS Long Range Rifle, and Shadow Fox Laser Vulcan Gun were moved from source removable positions to fixed weapons in the app. Their costs follow their current fixed positions; they are not missing items.", "",
+              "Lightning Saix/BS Pulse Laser Gun, Command Wolf IS Long Range Rifle, and Shadow Fox Laser Vulcan Gun are restored to Zoid-specific removable slot 5. Their Energy costs, damage, and accuracy follow the removable item.", "",
               "Reproduce with `python3 -m tools.audit_zoid_equipment`.", ""]
     path = ROOT / "docs/generated/zoid-equipment-audit.md"
     path.write_text("\n".join(lines))

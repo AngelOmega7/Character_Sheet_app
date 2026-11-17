@@ -96,6 +96,8 @@ def apply_energy(output=None, companion=True):
                     assert not weapon or costs[slot] is not None, (entry["name"], slot, weapon)
                 source = "Energy_Addition.ods (matched by weapon name)"
             record.update(energy=energy, energy_recharge=recharge, energy_costs=costs, energy_source=source)
+            if record["id"] == "zoids:shadow_fox":
+                record["energy_costs"][4] = 8  # Owner's revised Slot 5 AoE weapon cost.
             if record["id"] == "zoids:great_zaber":
                 record["zoid_equipment_mounts"] = {"armaments:zoid_equipment_slot_2": ["left"]}
     generic = {normalize(row[0]): int(row[1]) if row[1] else 0 for row in workbook_rows("Generic_Energy.ods")}
@@ -110,7 +112,7 @@ def apply_energy(output=None, companion=True):
     unknown = set(generic) - used - {"assist"}
     assert not unknown, unknown
     for name, table in tables.items():
-        removed = {key for key in table["columns"] if "heat" in key}
+        removed = {key for key in table["columns"] if key and "heat" in key}
         pairs = [(key, header) for key, header in zip(table["columns"], table["source_headers"]) if key not in removed]
         table["columns"], table["source_headers"] = map(list, zip(*pairs))
         for record in table["records"]:
@@ -138,6 +140,7 @@ def apply_energy(output=None, companion=True):
         "Great Zaber: energy 35, recharge 4; E1–E8 costs: 0, 10, 10, 1, 7, 6, —, —.\n\n"
         "Buster Fury: energy 40, recharge 5; E1–E8 costs: 20, 25, 5, 3, —, —, —, —.\n\n"
         "Additional approved costs: Zero X Stealth Generator 3; Acid Blade 3; Concentrate Acid Blade 5; Acid Neutralizer Unit 0; EMP Hardened Circuits 0.\n\n"
+        "Shadow Fox Laser Vulcan Gun (E5): owner-revised Energy cost 8, replacing the source cost of 10. Damage 90; 30m by 90m AoE; Ranged, Laser, Close Range.\n\n"
         "Generic spreadsheet blanks are explicit zero cost, as approved. Zoid-specific templates use the Zoid's cost, not the generic similarly named item's cost.\n")
 
 
