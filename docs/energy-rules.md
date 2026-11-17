@@ -5,6 +5,11 @@ These rules supersede heat references in historical workbook/script audits.
 
 ## Combat
 
+- While an Organoid is active, Pilot Mental is added to EPT on top of base
+  Zoid recharge and purchased EPT upgrades. This bonus ends when deactivated.
+- Smoke and invisibility systems prevent the Zoid from being targeted by
+  attacks, but it can still be hit by AoE attacks. Listed areas and durations apply.
+
 - Each Zoid/form has total energy, recharge per turn, and named weapon/system costs.
 - Maximum Energy is base Zoid Energy + actual pilot level + active Organoid level
   + equipped Energy bonuses. Inactive Organoids contribute zero. Activating an

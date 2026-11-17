@@ -307,7 +307,8 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
             weapon["energy_cost"] = max(0, weapon["energy_cost"] - energy_reduction)
     return {
         "ruleset": "energy-v17", "zoid_id": zoid["id"],
-        "energy": maximum_energy, "energy_recharge": zoid["energy_recharge"] + u.ept,
+        "energy": maximum_energy,
+        "energy_recharge": zoid["energy_recharge"] + u.ept + (build.mental if build.organoid_enabled else 0),
         "size_bonus": all_stats,
         "bonus_levels": bonus_levels, "effective_level": effective_level,
         "base": base, "pilot": pilot, "current": current,

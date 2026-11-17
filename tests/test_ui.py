@@ -932,6 +932,8 @@ class EditorTests(unittest.TestCase):
 
     def test_organoid_energy_bonus_activation_reduction_and_save(self):
         editor = self.editor
+        editor.mental.value = "5"
+        editor.apply_profile()
         base = calculate_stats(editor.character.build, editor.catalog)
         original_energy = editor.character.current_energy
         for color in ("Black", "White", "Red", "Blue"):
@@ -941,7 +943,7 @@ class EditorTests(unittest.TestCase):
             editor.apply_organoid()
             stats = calculate_stats(editor.character.build, editor.catalog)
             self.assertEqual(stats["energy"], base["energy"] + 10)
-            self.assertEqual(stats["energy_recharge"], base["energy_recharge"])
+            self.assertEqual(stats["energy_recharge"], base["energy_recharge"] + 5)
             self.assertEqual(editor.character.current_energy, original_energy + 10)
         editor.energy_input.value = str(base["energy"] + 10)
         editor.apply_resources()
@@ -955,6 +957,7 @@ class EditorTests(unittest.TestCase):
         editor.apply_organoid()
         self.assertEqual(editor.character.current_energy, base["energy"])
         self.assertEqual(calculate_stats(editor.character.build, editor.catalog)["energy"], base["energy"])
+        self.assertEqual(calculate_stats(editor.character.build, editor.catalog)["energy_recharge"], base["energy_recharge"])
         editor.organoid_enabled.value = True
         editor.apply_organoid()
         self.assertEqual(editor.character.current_energy, base["energy"] + 5)

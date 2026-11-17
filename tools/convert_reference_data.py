@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.workflow_data import TRANSPORTS, apply_workflow, write_purchases
 from tools.restore_removable_weapons import restore_weapons
+from tools.update_concealment import revise_concealment
 DICE_DAMAGE = re.compile(r"\b(\d+)\s*[dD]\s*(\d+)\b")
 CAU_BASES = {
     "Zero Jager (CAU)": "Liger Zero", "Zero Schneider (CAU)": "Liger Zero",
@@ -264,6 +265,8 @@ def build():
                 key = keys[index - 1]
                 original = fields[key]
                 converted = flatten_damage(original, numeric=index in damage_columns)
+                if index in effect_columns:
+                    converted = revise_concealment(converted)
                 if converted != original:
                     fields[key] = converted
                     if index in damage_columns and DICE_DAMAGE.fullmatch(original.strip()) is None:

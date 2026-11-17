@@ -26,12 +26,14 @@ Zoid-specific costs can differ from similarly named generic items.
 
 ENERGY RULES (energy-v17)
 Maximum Energy = base Zoid Energy + actual pilot level + active Organoid level
-+ equipment bonuses. Inactive Organoids add nothing. Activation does not refill
-Energy; deactivation or reducing Organoid level clamps Energy to the new maximum.
++ equipment bonuses. Inactive Organoids add nothing. Activation adds the maximum
+Health and Energy increases to current resources. Deactivation or reducing
+Organoid level clamps current Energy to the new maximum when needed.
 Type abilities' bonus levels do not count. Level increases do not refill current
 Energy or increase EPT. Stat blocks list base Energy before this pilot bonus.
 EPT means Energy Per Turn. Start Turn adds EPT once at the beginning of your
 turn, capped at maximum Energy. New Zoids start at half maximum, rounded down.
+While an Organoid is active, add Pilot Mental to EPT, in addition to EPT upgrades.
 Rest sets current Energy to half the equipped maximum, rounded down, whether
 it was previously higher or lower. Rest does not heal or repair the Zoid.
 Use spends the displayed Energy Cost. Insufficient Energy or a broken weapon
@@ -1891,8 +1893,9 @@ SECTION 2 - ASSIST EQUIPMENT
   Pricing basis: Six-turn camouflage utility tier.
   Weight: 10
   To-hit increase: 0
-  Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
-  against you while active. Lasts six turns.
+  Effect: Turns the Zoid nearly invisible. The Zoid cannot be targeted by
+  attacks, but can still be hit by AoE attacks while active. Lasts six
+  turns.
 
 ------------------------------------------------------------------------------
 [A021] Enhanced Radar System
@@ -2158,8 +2161,9 @@ SECTION 2 - ASSIST EQUIPMENT
   Activation: Active
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
-  Effect: Deploys thick smoke in 60m centered on you. Attacks have
-  disadvantage against this zoid while in the smoke. Lasts three turns.
+  Effect: Deploys thick smoke in 60m centered on you. The Zoid cannot be
+  targeted by attacks, but can still be hit by AoE attacks while in the
+  smoke. Lasts three turns.
 
 ------------------------------------------------------------------------------
 [A039] Large Sonic Detector
@@ -2277,8 +2281,9 @@ SECTION 2 - ASSIST EQUIPMENT
   Activation: Active
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
-  Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
-  against you while active. Lasts three turns.
+  Effect: Turns the Zoid nearly invisible. The Zoid cannot be targeted by
+  attacks, but can still be hit by AoE attacks while active. Lasts three
+  turns.
 
 ------------------------------------------------------------------------------
 [A047] Radar
@@ -2380,8 +2385,9 @@ SECTION 2 - ASSIST EQUIPMENT
   Activation: Active
   Defense increase: 0 | Armor increase: 0 | To-hit increase: 0 | Range
   increase: 0 | Reaction increase: 0 | Speed increase: 0
-  Effect: Deploys thick smoke in 45m centered on you. While in the smoke
-  attacks against you have disadvantage. Lasts for three turns.
+  Effect: Deploys thick smoke in 45m centered on you. While in the smoke the
+  Zoid cannot be targeted by attacks, but can still be hit by AoE attacks.
+  Lasts for three turns.
 
 ------------------------------------------------------------------------------
 [A054] Sonic Detector
@@ -2408,9 +2414,10 @@ SECTION 2 - ASSIST EQUIPMENT
   Pricing basis: Camouflage plus anti-air bonus suppression.
   Weight: 10
   To-hit increase: 0
-  Effect: Turns the Zoid nearly invisible. Gain disadvantage on attacks
-  against you while active. Nullifies opponents Anti-Air attack bonus against
-  the equipped Zoid. Lasts three turns.
+  Effect: Turns the Zoid nearly invisible. The Zoid cannot be targeted by
+  attacks, but can still be hit by AoE attacks while active. Nullifies
+  opponents Anti-Air attack bonus against the equipped Zoid. Lasts three
+  turns.
 
 ------------------------------------------------------------------------------
 [A056] Super-Heavy Armor
@@ -2578,8 +2585,9 @@ ZOID-SPECIFIC ASSIST EQUIPMENT
   Listed on: Shadow Fox
   Weight: 5
   Activation: Active
-  Effect: Self targeting stealth generator. Turns the Zoid "invisible". Lasts
-  for three turns. Attack rolls have disadvantage against your Zoid.
+  Effect: Self targeting stealth generator. Turns the Zoid "invisible".
+  Lasts for three turns. The Zoid cannot be targeted by attacks, but can
+  still be hit by AoE attacks.
 
 ------------------------------------------------------------------------------
 [ZA04] Stealth Generator - Zero X (CAU)

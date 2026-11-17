@@ -10,12 +10,14 @@ from zoids_app.equipment import (SLOT_COLUMNS, ZOID_EQUIPMENT_COLUMNS,
 ROOT = Path(__file__).resolve().parents[1]
 RULES = """ENERGY RULES (energy-v17)
 Maximum Energy = base Zoid Energy + actual pilot level + active Organoid level
-+ equipment bonuses. Inactive Organoids add nothing. Activation does not refill
-Energy; deactivation or reducing Organoid level clamps Energy to the new maximum.
++ equipment bonuses. Inactive Organoids add nothing. Activation adds the maximum
+Health and Energy increases to current resources. Deactivation or reducing
+Organoid level clamps current Energy to the new maximum when needed.
 Type abilities' bonus levels do not count. Level increases do not refill current
 Energy or increase EPT. Stat blocks list base Energy before this pilot bonus.
 EPT means Energy Per Turn. Start Turn adds EPT once at the beginning of your
 turn, capped at maximum Energy. New Zoids start at half maximum, rounded down.
+While an Organoid is active, add Pilot Mental to EPT, in addition to EPT upgrades.
 Rest sets current Energy to half the equipped maximum, rounded down, whether
 it was previously higher or lower. Rest does not heal or repair the Zoid.
 Use spends the displayed Energy Cost. Insufficient Energy or a broken weapon
@@ -54,6 +56,9 @@ multipliers; does not heal. Energy Reinforcer Unit: passive, weight 3,
 Energy Container: active, weight 10, restores 20 Energy immediately, capped at
 maximum. No usage limit or consumption is specified. All three cost 0 Energy.
 Compatible equipped Reinforcer copies contribute their bonuses independently.
+
+Smoke and invisibility: the Zoid cannot be targeted by attacks, but can still
+be hit by AoE attacks. Each system retains its listed area and duration.
 
 """
 

@@ -21,12 +21,14 @@ Carry-capacity penalties still apply when overloaded.
 
 ENERGY RULES (energy-v17)
 Maximum Energy = base Zoid Energy + actual pilot level + active Organoid level
-+ equipment bonuses. Inactive Organoids add nothing. Activation does not refill
-Energy; deactivation or reducing Organoid level clamps Energy to the new maximum.
++ equipment bonuses. Inactive Organoids add nothing. Activation adds the maximum
+Health and Energy increases to current resources. Deactivation or reducing
+Organoid level clamps current Energy to the new maximum when needed.
 Type abilities' bonus levels do not count. Level increases do not refill current
 Energy or increase EPT. Stat blocks list base Energy before this pilot bonus.
 EPT means Energy Per Turn. Start Turn adds EPT once at the beginning of your
 turn, capped at maximum Energy. New Zoids start at half maximum, rounded down.
+While an Organoid is active, add Pilot Mental to EPT, in addition to EPT upgrades.
 Rest sets current Energy to half the equipped maximum, rounded down, whether
 it was previously higher or lower. Rest does not heal or repair the Zoid.
 Use spends the displayed Energy Cost. Insufficient Energy or a broken weapon
@@ -314,8 +316,8 @@ FIXED WEAPONS & SYSTEMS
      Energy cost: 3
      Activation: Active
      Effect: Self targeting stealth field. Turn “invisible”. Lasts for 5
-     turns. Disadvantage on attack rolls against you. Advantage on stealth
-     checks.
+     turns. The Zoid cannot be targeted by attacks, but can still be hit by
+     AoE attacks. Advantage on stealth checks.
   3. Go for Broke
      Energy cost: 1
      Damage: 60 | Type: Melee | To hit: 13
@@ -731,8 +733,8 @@ FIXED WEAPONS & SYSTEMS
      Energy cost: 0
      Activation: Passive
      Effect: Stealth generator. Self targeting stealth field. Turn
-     "invisible". Lasts for 5 turns. Disadvatage on attack rolls against you.
-     Advantage on stealth cheacks.
+     "invisible". Lasts for 5 turns. The Zoid cannot be targeted by attacks,
+     but can still be hit by AoE attacks. Advantage on stealth cheacks.
   4. Laser Cutter
      Energy cost: 5
      Damage: 250 | Type: Melee | To hit: 14
@@ -940,8 +942,9 @@ FIXED WEAPONS & SYSTEMS
   3. Smoke Unit
      Energy cost: 1
      Activation: Active
-     Effect: Deploys smoke in a 60m square. While in the smoke the attacks
-     against the Zoid have disadvantage. Lasts three turns
+     Effect: Deploys smoke in a 60m square. While in the smoke the Zoid
+     cannot be targeted by attacks, but can still be hit by AoE attacks.
+     Lasts three turns
   4. Double Fang
      Energy cost: 2
      Damage: 180 | Type: Melee, Piercing | To hit: 13
@@ -1009,8 +1012,9 @@ FIXED WEAPONS & SYSTEMS
   1. Smoke Unit
      Energy cost: 1
      Activation: Active
-     Effect: Deploys smoke in a 60m square. While in the smoke the attacks
-     against the Zoid have disadvantage. Lasts three turns
+     Effect: Deploys smoke in a 60m square. While in the smoke the Zoid
+     cannot be targeted by attacks, but can still be hit by AoE attacks.
+     Lasts three turns
   2. Bite Fang
      Energy cost: 1
      Damage: 60 | Type: Melee | To hit: 13
@@ -1084,8 +1088,9 @@ FIXED WEAPONS & SYSTEMS
   2. Smoke Unit
      Energy cost: 1
      Activation: Active
-     Effect: Deploys smoke in a 60m square. While in the smoke the attacks
-     against the Zoid have disadvantage. Lasts three turns
+     Effect: Deploys smoke in a 60m square. While in the smoke the Zoid
+     cannot be targeted by attacks, but can still be hit by AoE attacks.
+     Lasts three turns
   3. Bite Fang
      Energy cost: 1
      Damage: 85 | Type: Melee | To hit: 13
@@ -1116,8 +1121,9 @@ FIXED WEAPONS & SYSTEMS
   1. Smoke Unit
      Energy cost: 1
      Activation: Active
-     Effect: Deploys smoke in a 60m square. While in the smoke the attacks
-     against the Zoid have disadvantage. Lasts three turns
+     Effect: Deploys smoke in a 60m square. While in the smoke the Zoid
+     cannot be targeted by attacks, but can still be hit by AoE attacks.
+     Lasts three turns
   2. Bite Fang
      Energy cost: 1
      Damage: 120 | Type: Melee | To hit: 14
@@ -1158,8 +1164,9 @@ FIXED WEAPONS & SYSTEMS
   2. Smoke Unit
      Energy cost: 1
      Activation: Active
-     Effect: Deploys smoke in a 60m square. While in the smoke the attacks
-     against the Zoid have disadvantage. Lasts three turns
+     Effect: Deploys smoke in a 60m square. While in the smoke the Zoid
+     cannot be targeted by attacks, but can still be hit by AoE attacks.
+     Lasts three turns
   3. Bite Fang
      Energy cost: 1
      Damage: 85 | Type: Melee | To hit: 17
@@ -1192,9 +1199,9 @@ FIXED WEAPONS & SYSTEMS
   2. Smoke Sprayer
      Energy cost: 2
      Activation: Active
-     Effect: Deploys smoke in a 60m square around the Zoid. While the Zoid is
-     in the smoke attack rolls against it have disadvantage. Lasts for three
-     turns.
+     Effect: Deploys smoke in a 60m square around the Zoid. While the Zoid
+     is in the smoke the Zoid cannot be targeted by attacks, but can still
+     be hit by AoE attacks. Lasts for three turns.
   3. Long Spear
      Energy cost: 10
      Damage: 500 | Type: Melee, Piercing | To hit: 10
@@ -1227,8 +1234,9 @@ FIXED WEAPONS & SYSTEMS
   2. Smoke Sprayer
      Energy cost: 2
      Activation: Active
-     Effect: Deploys smoke in a 60m square around the Zoid. While the Zoid is
-     in the smoke attacks against it have disadvantage. Lasts for three turns
+     Effect: Deploys smoke in a 60m square around the Zoid. While the Zoid
+     is in the smoke the Zoid cannot be targeted by attacks, but can still
+     be hit by AoE attacks. Lasts for three turns
   3. Split Horn
      Energy cost: 10
      Damage: 350 | Type: Melee | To hit: 12
@@ -1614,8 +1622,8 @@ FIXED WEAPONS & SYSTEMS
      Damage: 0
      Activation: Active
      Effect: Stealth generator. Self targeting stealth field. Turn
-     "invisible". Lasts for 5 turns. Disadvatage on attack rolls against you.
-     Advantage on stealth cheacks.
+     "invisible". Lasts for 5 turns. The Zoid cannot be targeted by attacks,
+     but can still be hit by AoE attacks. Advantage on stealth cheacks.
   4. Cyber Fang
      Energy cost: 10
      Damage: 400 | Type: Melee | To hit: 13
@@ -2981,9 +2989,9 @@ FIXED WEAPONS & SYSTEMS
   2. Smoke Unit
      Energy cost: 1
      Activation: Active
-     Effect: Deploy smoke to obscure Zoid. Covers an area of 30m square.
-     Disadvantage on attacks against you while in the smoke. Lasts for three
-     turns.
+     Effect: Deploy smoke to obscure Zoid. Covers an area of 30m square. The
+     Zoid cannot be targeted by attacks, but can still be hit by AoE attacks
+     while in the smoke. Lasts for three turns.
   3. Laser Claw
      Energy cost: 3
      Damage: 37 | Type: Melee | To hit: 13
@@ -4957,8 +4965,9 @@ FIXED WEAPONS & SYSTEMS
   3. Smoke Unit
      Energy cost: 1
      Activation: Active
-     Effect: Deploys smoke in a 30m square. While in the smoke attacks have
-     disadvantage against you. Lasts three turns.
+     Effect: Deploys smoke in a 30m square. While in the smoke the Zoid
+     cannot be targeted by attacks, but can still be hit by AoE attacks.
+     Lasts three turns.
   4. High Frequency Wave Fang
      Energy cost: 1
      Damage: 40 | Type: Melee, Piercing | To hit: 16
@@ -5059,8 +5068,9 @@ FIXED WEAPONS & SYSTEMS
   2. Smoke Unit
      Energy cost: 1
      Activation: Active
-     Effect: Deploys smoke in a 60m square. While in the smoke the attacks
-     against the Zoid have disadvantage. Lasts three turns
+     Effect: Deploys smoke in a 60m square. While in the smoke the Zoid
+     cannot be targeted by attacks, but can still be hit by AoE attacks.
+     Lasts three turns
   3. No fixed weapon/system listed
   4. Strike Laser Claw
      Energy cost: 3
@@ -5079,7 +5089,8 @@ REMOVABLE EQUIPMENT SLOTS
      Energy cost: 3
      Weight: 5 | Activation: Active
      Effect: Self targeting stealth generator. Turns the Zoid "invisible".
-     Lasts for three turns. Attack rolls have disadvantage against your Zoid.
+     Lasts for three turns. The Zoid cannot be targeted by attacks, but can
+     still be hit by AoE attacks.
 
 PURCHASE & BUILD REFERENCE
   Cost: 38,000g
