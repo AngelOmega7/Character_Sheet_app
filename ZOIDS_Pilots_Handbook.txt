@@ -1,0 +1,1477 @@
+==============================================================================
+                         ZOIDS: PILOT'S HANDBOOK
+                         Current Campaign Rules
+==============================================================================
+
+Steel claws strike the earth. A particle cannon gathers light between armored
+jaws. Within the cockpit, a pilot must decide whether to fire, raise a shield,
+or save enough Energy to survive the next exchange.
+
+Your Zoid is more than a weapon. It is a fighting machine with its own
+strengths, a chassis you can improve, and the center of a growing collection
+of equipment, forms, and hard-earned experience. This book explains how to
+build your Pilot and manage your Zoid for use in the ZOIDS Roleplaying Game.
+
+CONTENTS
+  1. Becoming a Pilot
+  2. Understanding Your Zoid
+  3. Equipment and Loadouts
+  4. Combat, Energy, and Rest
+  5. Shields, Smoke, and Invisibility
+  6. Pilot Abilities
+  7. Feats
+  8. Organoids
+  9. Upgrades and Repairs
+ 10. The Hangar: Construction, Forms, and Transport
+ 11. Movement, Travel, and Terrain
+ 12. Conditions
+ Appendix A. Using the Companion Apps
+ Appendix B. Rules Requiring a Table Ruling
+ Appendix C. Quick Reference
+
+
+==============================================================================
+CHAPTER 1: BECOMING A PILOT
+==============================================================================
+
+A pilot brings judgment, training, and personality to a Zoid's mechanical
+strength. Begin with a name, a pilot style, and the details that distinguish
+your character from every other warrior in the cockpit.
+
+STARTING RESOURCES
+------------------
+A new pilot begins with 10,000g and may choose one free starting Zoid:
+
+  Command Wolf       Redler             Gun Sniper
+  Rev Raptor         Shield Liger       Zaber Fang Old
+
+Your starter costs no gold, Core, or Parts. Its Zi Data is added to your known
+designs. You begin without an Organoid unless the GM grants one.
+
+NOTE: Your GM may, at their discretion, authorize or require a particular
+starting Zoid, even if it is not included in the above list.
+
+PILOT STYLE AND LEVEL
+---------------------
+Choose Fighter, Tank, Scout, or Almighty. Your style's advancement table
+determines the percentage bonuses you receive to Health, Armor, Reaction,
+Range, and weapon accuracy. The Character Sheet calculates these values.
+
+Pilot level ranges from 1 to 100. The NPC style supplies no style-progression
+bonuses and is available for GM-created characters.
+
+Your actual pilot level increases maximum Energy. A Type ability can increase
+your effective level for style progression, but those bonus levels do not
+increase maximum Energy. Use the available progression-table entries; no
+advancement beyond the supplied tables is defined here.
+
+PILOT ATTRIBUTES
+----------------
+At level 1, assign the scores 1, 2, and 3 among Physical (PHY), Mental (MEN),
+and Social (SOC), using each score once. These attributes chiefly describe the
+pilot's own capabilities rather than Zoid statistics.
+
+For an attribute check, roll a d20 and add the relevant attribute. The result
+is then compared by the GM to a hidden difficulty value in order to determine
+success or failure.
+For advantage, roll two d20s and use the higher result. For disadvantage, roll
+two d20s and use the lower result. You can only benefit from one source of
+advantage at a time, and likewise for disadvantage. Multiple sources granting
+both advantage and disadvantage cancel each other out.
+
+Mental adds directly to your Zoid's final Reaction stat (after other bonuses
+are applied). While an Organoid is active, Mental also adds to Energy Per Turn.
+
+Physical helps you withstand impacts and high-speed maneuvers. When your Zoid
+reaches zero Health, roll d20 + PHY against 15 to avoid losing consciousness.
+If unconscious, you may repeat this check each round to awaken. Physical also
+governs the G-force checks for sustained speed boosts described in Chapter 3.
+
+Mental helps with emergency System Down repairs and clearing weapon jams, in
+addition to its Reaction and Organoid benefits. Social is used for roleplaying
+interactions.
+
+PERSONALITY AND STYLE CHANGES
+-----------------------------
+Your personality can guide the color of an Organoid or Wild Organoid System.
+White is associated with joy, kindness, and nurturing; Red with aggression,
+protectiveness, and firmness; Blue with energy, recklessness, and humor; Black
+with reserve, strategy, pride, or sinister intent. These are roleplaying cues,
+not compulsory behavior. The GM judges changes in an Organoid's color.
+
+You may change pilot style at a Zoid Institute or another facility capable of
+Zoid Development.
+
+Record your personality, possessions, cargo, and campaign discoveries on your
+pilot sheet. Gold, learned abilities, feats, and Organoid settings belong to
+the pilot; individual Zoids retain their own combat resources.
+
+ABILITIES AND FEATS
+-------------------
+You may have up to six active pilot abilities. You may own additional inactive
+abilities, which provide no active bonuses. The sheet also records up to seven
+feats. The advancement schedule below governs when you gain them.
+
+ADVANCEMENT
+-----------
+The ZOIDS Roleplaying Game uses milestone advancement rather than experience
+points. As a guideline, gain one level for every three notable battles won or
+every ruin explored. The GM may also award a level for a significant narrative
+accomplishment and may adjust the pace to suit the campaign. Maximum pilot
+level is 100.
+
+Begin with one Zoid ability at level 1. Gain a new ability at each subsequent
+level, or use that gain to raise an owned ability by one rank. Higher ranks
+require the following actual pilot levels:
+
+  Ability rank      1      2      3      4      5
+  Pilot level       1      5     10     15     20
+
+Be sure to increase your style bonuses according to its progression table
+every time you level up. You gain one Pilot Attribute point at levels 4, 8,
+12, and every further multiple of 4. You gain a feat at level 10 and every ten
+levels thereafter, if unlearned feats are available.
+
+You may swap active abilities after completing a long rest. When you learn a new
+ability, you may immediately swap it into an active slot. Learning a higher rank
+replaces its lower rank as described in Chapter 6.
+
+==============================================================================
+CHAPTER 2: UNDERSTANDING YOUR ZOID
+==============================================================================
+
+A Zoid's catalog entry provides its starting statistics. Pilot training,
+abilities, equipment, upgrades, and Organoids modify those values.
+
+HEALTH
+  Records the Zoid's remaining structural endurance. Maximum Health and current
+  Health are separate values. Increasing a maximum does not normally repair
+  existing damage. At zero Health, a player Zoid suffers System Down; see
+  Chapter 4.
+
+ARMOR
+  Armor is the target number for most attacks. A modified attack roll equal
+  to or greater than Armor hits. Armor and Defense are distinct; an effect
+  that changes one does not change the other. Armor Breaker specifically lowers
+  Armor, not Defense.
+
+DEFENSE
+  Subtract applicable Defense from the damage of a normal hit to Health.
+  Defense cannot reduce that damage below 1. Critical hits normally bypass
+  Defense; True Tank and other explicit exceptions can change this.
+  Equipment that restricts its protection to particular damage types only
+  contributes against those types. Some sources may abbreviate Melee, Laser,
+  Explosive, Particle, and Bullet as M, L, E, P, and B for such equipment.
+
+REACTION
+  Records the Zoid's Reaction statistic. Some attacks explicitly target
+  Reaction; Evasion Master penalizes attacks made against this statistic.
+  Reaction also determines initiative and is added to area-attack avoidance
+  rolls. A Pilot's Mental attribute may be added to a Zoid's Reaction.
+
+SPEED AND RANGE
+  Speed measures the Zoid's movement capability. Range establishes the range
+  bands used by ranged-attacks. Specific weapon text may impose its own
+  limits or targeting requirements. In combat, move up to Speed in meters per
+  move action. Narrative travel uses Speed in kilometers per hour. See Chapter
+  11 for terrain and special movement, and Chapter 4 for attack-range penalties.
+
+ENERGY AND EPT
+  Energy powers attacks and active equipment. Energy Per Turn, abbreviated EPT,
+  is the amount restored at the beginning of a turn before upkeep is paid.
+
+SHIELDS
+  Shields provide a separate pool of protection while their sources are active.
+  Shield damage is recorded separately from Health damage. You do not normally
+  subtract Defense from damage done to shields.
+
+SIZE
+----
+The size categories, from smallest to largest, are:
+
+  S: Small   M: Medium   L: Large   LL: Large Large   XL: Extra Large
+
+Size requirements are exact unless an effect names several categories. An
+ability for Large Zoids does not automatically apply to LL or XL Zoids.
+
+CARRY CAPACITY
+--------------
+Add the weight of all equipped removable items, whether active or inactive.
+Items left in inventory do not add to the active Zoid's load.
+Ordinary human supplies such as food, clothing, and small arms have negligible
+weight on the Zoid Carry-capacity scale and are not charged against it.
+
+You are overloaded only when equipped weight exceeds Carry capacity. At exactly
+your capacity, you suffer no overload penalty.
+
+When overloaded, the Zoid's base stats become 60% of catalog Speed, catalog
+Reaction, and fixed and removable weapon base to-hit, rounding those reduced
+values upward before later bonuses. This is not a blanket 40% reduction to
+every final statistic.
+
+TEMPORARY ARMOR AND DEFENSE
+---------------------------
+Temporary effects can raise or lower Armor and Defense, or modify other stats.
+These adjustments normally persist until cleared by Resting, unless otherwise
+stated.
+
+
+==============================================================================
+CHAPTER 3: EQUIPMENT AND LOADOUTS
+==============================================================================
+
+Your Zoid has up to four fixed weapon or system positions and four removable
+equipment positions. A position may contain a weapon, a shield, a sensor, or
+another utility system; an empty position grants no benefit.
+
+FIXED AND REMOVABLE EQUIPMENT
+-----------------------------
+Fixed equipment is part of the selected Zoid form. Removable equipment is owned
+as individual copies and assigned to compatible slots.
+
+Assist slots accept compatible utility equipment. Weapon and Assist slots
+accept both compatible weapons and utilities. Some Zoid-specific items have
+additional mounting restrictions; their catalog entry takes precedence.
+
+An item may be assigned to alternate forms of the same physical chassis. It
+cannot be used simultaneously by two different owned Zoids. Owning two copies
+allows the copies to be assigned separately.
+
+Newly acquired Zoids and forms receive their named Zoid-specific removable
+equipment.
+
+PASSIVE AND ACTIVE SYSTEMS
+--------------------------
+A passive item contributes its bonuses whenever it is equipped. An active item
+contributes its activated benefits only while enabled. Each item uses its own
+state; activating one system does not activate another.
+
+When an active piece of equipment is activated, you must pay its Energy Cost.
+Active shields and invisibility equipment also pay upkeep at the Start of each
+Turn, as described in Chapter 4.
+
+Observe each item's listed duration. Expired or destroyed systems are
+deactivated.
+
+ACTIVATING EQUIPMENT IN COMBAT
+------------------------------
+Activating non-weapon equipment normally uses your standard action. A specific
+ability may permit a bonus action instead, such as Fleet Footed, Shield Master,
+or Smoke Master at the appropriate rank. You may only use a single bonus action
+on a turn.
+
+When you activate a speed-boosting unit as a standard action, you may also Dash
+as part of that action. While the boost is active, you must use your entire
+available movement, including the boost, each turn. Failing to do so ends the
+boost. Activation by bonus action (as per the Fleet Footed ability) does not
+itself grant the standard-action Dash benefit unless another rule says so.
+
+At the start of a subsequent turn with speed-boosting equipment active, roll
+d20 + PHY against 10 to withstand the G-force. On a failure, the boost ends at
+the end of that turn.
+You may voluntarily deactivate a speed boost as a free action.
+
+Equipment that increases weapon Range or attack bonus may be activated using
+your move action instead of your standard action. While it remains active,
+moving deactivates it. Coasting in a flying Zoid does not count as movement for
+this purpose.
+
+WEAPON TAGS
+-----------
+Tags identify an attack's properties and which abilities apply to it. Examples
+include Melee, Ranged, Laser, Particle, Explosive, Bullet, Piercing, and
+Anti-Air.
+
+Laser Expert requires the Laser tag. Rifle Expert requires both Ranged and
+Bullet.
+
+WEAPON PROPERTIES
+-----------------
+Ranged: Normal-range attacks have no range disadvantage. Close and Long attacks
+normally have disadvantage. See Chapter 4 for the current band boundaries.
+
+Close Range: May fire within 60m without range disadvantage and may be used
+for attacks of opportunity. Its maximum range is half the Zoid's Range unless
+the weapon explicitly states otherwise; it cannot fire at Long range.
+
+Long Range: May fire at Long range, up to the Zoid's maximum Range, without
+range disadvantage. It cannot fire within 60m.
+
+Melee: May be used for attacks of opportunity and attacks within Reach:
+30m for S, M, and L Zoids; 60m for LL; 90m for XL. This size-specific property
+supplies the detail absent from the SRD's general 30m melee summary.
+
+Laser, Explosive, Bullet, Particle: Respectively describe intense light/heat,
+concussive force, physical projectiles, and high-energy particles. They identify
+damage types for equipment and abilities; they do not alone grant extra damage.
+
+Anti-Air: Removes the usual -10 penalty for attacking a flying Zoid. A flying
+attacker does not gain this property benefit. Anti-Air Pro is a separate pilot
+ability and still applies against flying targets regardless of weapon tags.
+
+Piercing: Bypasses shields and damages the Zoid without damaging the shield.
+Shield Master 4 overrides this property: Piercing-tagged weapons do not ignore
+that pilot's shields. Piercing alone does not bypass Defense.
+
+Acid/Defense: Attacks Reaction instead of Armor. On a hit, it deals no Health
+damage; reduce Defense by the weapon's damage value and also reduce Armor by 3.
+This is separate from the revised Armor Breaker ability, which uses its own
+rank-based Armor reduction and does not add to the old Defense-reduction rule.
+
+Homing: After a missed attack, you may reroll against the target's Reaction
+instead of Armor. If that reroll hits, halve damage before applying defenses.
+This is a reroll of the same attack, not permission to fire another weapon.
+The SRD's phrase "before applying armor" is read as damage mitigation, since
+Armor is a target number and Defense is the damage-reducing statistic.
+
+Electrical: A hit can also cause System Freeze. A weapon with this tag has a
+50% chance to apply this effect on a hit, and a 10% chance after a miss whose
+attack total exceeds the target's Reaction. A miss that causes Freeze deals
+no damage. An affected target may reroll at the end of its turn to shake off
+the effect.
+
+==============================================================================
+CHAPTER 4: COMBAT, ENERGY, AND REST
+==============================================================================
+
+Combat is a succession of decisions about position, targets, and resources.
+
+INITIATIVE AND THE ROUND
+------------------------
+Use a 30m hex grid for ordinary Zoid combat. When combat begins, order the
+participants by Reaction, highest first. Player pilots add Mental to Reaction,
+as do certain NPCs at the GM's discretion.
+Initiative ties should be resolved in favor of the players, in the case of
+player vs. NPC, and at the discretion of the player or GM in the case of ally
+vs. ally. In the case of player vs. player combat, resolve ties at the GM's
+discretion.
+
+A round represents six seconds. Each combatant takes one turn in initiative
+order, then resolve the round's remaining environmental effects.
+
+At the beginning of combat, set current Energy to half maximum, rounded down,
+unless the GM states otherwise.
+
+YOUR TURN AND REACTION
+----------------------
+On your turn you have one move action and one standard action. You need not
+use either. You may split your movement around your standard action.
+
+A standard action can attack, activate equipment, use a repair kit, or perform
+another suitable task. Speech is a free action, subject to the six-second
+round and the GM's limit on lengthy discussions. Other brief or simultaneous
+activities may be free actions at the GM's discretion.
+
+Some abilities permit specific bonus actions. Only one bonus action may be
+taken per round.
+
+You may use one reaction per round. Your reaction becomes available again at
+the start of your next turn. Counter Attack and attacks of opportunity share
+that allowance unless a specific rule says otherwise.
+
+In very rare circumstances, you may be granted an additional action on your
+turn. You may only take more than one action on your turn if a specific rule
+states that you may.
+
+AT THE START OF YOUR TURN
+-------------------------
+Follow these steps to track your Zoid's Energy Upkeep:
+
+  1. Add EPT to current Energy, up to maximum Energy.
+  2. Add the upkeep costs of your active shields and invisibility equipment.
+  3. Subtract that total from the current Energy.
+
+Each qualifying item costs its listed Energy Cost every turn it remains active.
+An item that provides both shielding and invisibility is charged once, not
+twice. Organoid-provided shields have no upkeep. Having an Organoid shield does
+not make a separate equipment shield free. Smoke alone has no upkeep.
+
+If Energy after recharge cannot pay the entire upkeep bill, all active
+equipment is deactivated.
+
+Example: Your Energy is 12 of 20 and your EPT is 4. An active shield costs 3
+and active camouflage costs 5. Recharge raises Energy to 16; upkeep reduces
+it to 8. If you instead began at 20, recharge would still stop at 20 and upkeep
+would leave 12. Upkeep is paid after the cap is applied.
+
+MAXIMUM ENERGY
+--------------
+For a player Zoid, maximum Energy equals:
+
+  Catalog Energy + actual pilot level + active Organoid level
+  + enabled equipment Energy bonuses.
+
+EPT equals catalog recharge plus EPT upgrades, plus the pilot's Mental while
+an Organoid is active. Type-ability bonus levels do not increase either the
+actual-level Energy contribution or EPT.
+
+A Zoid that is not in combat typically maintains an operating Energy level
+equal to half of its maximum. Exceptions to this standard may be allowed at
+the GM's discretion.
+
+MAKING AN ATTACK
+----------------
+Choose a weapon and a target, determine the appropriate range or other
+conditions, and check that the weapon is intact and affordable. Pay the listed
+Energy Cost when you use it. A weapon attack rolls a d20; add the weapon's
+to-hit modifier and any applicable condition modifiers. A total equal to or
+greater than the target's Armor hits. If the attack explicitly targets
+Reaction instead, use Reaction in place of Armor.
+
+For an area-of-effect attack, every Zoid in the affected area may attempt to
+dodge: roll d20 + Reaction. A result greater than or equal to the attacker's
+modified attack roll avoids half of the damage.
+Physical cover does not protect against an attack that hits all targets in
+the area. Apply the weapon's additional targeting instructions where given.
+
+After resolving damage, apply the weapon's additional effects and track any
+recharge interval. Energy is spent even if the attack misses.
+
+You may spend exactly your remaining Energy. Zero-cost equipment remains usable
+at zero Energy.
+
+MULTIPLE ATTACKS
+----------------
+Resolve each attack's targeting, Energy payment, and effects separately. A
+Multi Attack ability does not waive the cost of the additional attacks. Its
+rank-specific restrictions appear in Chapter 6.
+
+Multiple Attacks per the Multi Attack abilities are all considered to be part
+of the same action. If you lose your action on a turn, or use your action for
+another purpose, the Multi Attack abilities do not give you an additional
+action.
+
+OTHER COMBAT ACTIONS
+--------------------
+Dash: Spend your standard action to gain an additional movement allowance up
+to your Speed. A speed unit activated as a standard action can include this
+Dash as described in Chapter 3.
+
+Disengage: Spend your standard action to move out of enemy melee range without
+provoking attacks of opportunity.
+
+Aim: Spend your standard action to gain +10 to attacks on your next attack
+action.
+
+Dodge: Spend your standard action to gain +10 Armor and +10 Reaction until
+the start of your next turn.
+
+Feint: Spend your standard action to distract an enemy. Attacks against that
+enemy by Zoids other than yours gain the Distracted modifier until the start
+of your next turn.
+
+Charge Energy: Spend your standard action to add your Zoid's EPT plus your
+Mental to current Energy, capped at maximum. This is separate from the upkeep
+at the Start of your Turn and does not pay upkeep on active equipment.
+
+ATTACKS OF OPPORTUNITY
+----------------------
+Leaving an enemy's melee Reach provokes an attack of opportunity unless you
+Disengage or another effect prevents it. The enemy must spend its reaction in
+order to make an attack of opportunity. Only Melee and Close Range weapons can
+make these attacks. Use the ordinary attack and Energy rules, including the
+weapon's cost and target restrictions. The Mobile feat prevents these attacks
+for the rest of a round in which you Dash.
+
+RANGE BANDS
+-----------
+The Character Sheet uses these mutually exclusive bands for ranged attacks:
+
+  Close:  Distance of 60m or less.
+  Normal: More than 60m, up to and including half your current maximum Range.
+  Long:   Beyond half your current maximum Range.
+
+Close takes precedence. If your maximum Range is 100m, an attack at 55m is
+Close, not Long. There is no Normal band for that maximum Range. If your
+maximum Range is 500m, 250m is Normal and 251m is Long.
+
+The Sniper ability's bonus applies only to Long-range ranged attacks.
+
+Ordinary ranged attacks have disadvantage at Close and Long range, but not at
+Normal range. Close Range and Long Range weapon properties modify these rules
+as described in Chapter 3. A ranged attack cannot exceed the Zoid's maximum
+Range in combat; a weapon may impose a shorter limit. At exactly maximum Range,
+the attack is still in range, subject to its applicable range disadvantage.
+
+Outside combat, the GM may allow a carefully lined-up long-distance shot or
+a shot at an enormous target beyond the normal combat limit. This does not
+extend combat Range automatically. Range previews do not enforce these target
+limits or roll disadvantage for you.
+
+DAMAGE
+------
+Current weapon profiles use flat damage. Apply the
+weapon's listed special instructions, including any separate bursts or attacks.
+
+For the Character Sheet's ordinary numerical damage preview:
+
+  Damage = base damage
+           + rounded(base damage x combined applicable damage percentage)
+           + flat frame damage upgrade.
+
+Organoid and Comeback percentages add together rather than multiplying one
+another. Frame Melee Damage or Ranged Damage adds 20 damage per upgrade point,
+and is applied after percentage multipliers.
+
+Example: A weapon deals 100 base damage. A 20% Organoid damage bonus and 30%
+Comeback bonus add 50 damage. Two matching damage-upgrade points add another
+40, for 190 before critical hits and the target's defenses are resolved.
+
+RESOLVING A NORMAL HIT
+----------------------
+If a shield intercepts the hit, apply damage to the shield as described in
+Chapter 5. Otherwise subtract applicable Defense from the attack's damage
+and deduct the result from Health. Defense cannot reduce the damage of a
+normal hit below 1. Armor is not also subtracted; it was the target number
+used to determine whether the attack hit.
+
+Example: A normal hit deals 90 damage to an unshielded Zoid with 25 applicable
+Defense. The target loses 65 Health. If applicable Defense were 100, it would
+instead lose 1 Health. Attacks explicitly dealing no Health damage, such as
+Armor Breaker, do not gain 1 damage from this minimum.
+
+CRITICAL HITS
+-------------
+A natural 20 on the attack d20 is a critical hit. Ordinary critical hits
+bypass Defense; they do not inherently double damage. A critical hit on a
+shield deactivates that shield, and damage exceeding its remaining HP is
+dealt to the Zoid's Health. See Chapter 5 for this shield-specific procedure.
+
+Some abilities expand critical-hit range, change critical damage, or defend
+against critical hits. Weapon Expert rank 2 allows a critical hit on a roll
+of 19; ranks 3 and 4 crit on a roll of 18. At rank 4, critical hits with
+qualifying weapons deal double damage. That doubling is not a bonus to every
+ordinary hit.
+
+Small Expert, certain size-Expert rank 4 abilities, Sniper 4, True Tank, and
+Weapon Breaker add further critical-hit effects.
+
+CRITICAL MISSES AND JAMS
+------------------------
+A natural 1 is a critical miss. A ranged weapon also jams. Clear the jam with
+a standard action before firing it again, or immediately attempt d20 + MEN
+against 15 to clear it without spending an action. The immediate Mental check
+is available to a pilot, not an unpiloted wild Zoid.
+A critical miss still costs the Energy paid
+for that use.
+
+SYSTEM DOWN AND CORE DAMAGE
+---------------------------
+When a player Zoid, or a named NPC Zoid designated by the GM, reaches zero
+Health, it suffers System Down. It is incapacitated, cannot move, and cannot
+take actions. Its pilot checks d20 + PHY against 15 to remain conscious; an
+unconscious pilot may retry that check each round.
+
+On a conscious pilot's turn, attempt an emergency repair with d20 + MEN:
+
+  Total 10 or less: The Core suffers 1 point of Core damage.
+  Total 11-19:     The Zoid remains System Down, with no recovery.
+  Total 20 or more: End System Down and restore the Zoid to 1 Health.
+
+Each damaging attack received while System Down causes 1 Core damage. At
+3 Core damage, the Core is permanently destroyed and must be replaced.
+Lesser Core damage does not recover naturally; repair it at a Zoid Laboratory
+by repairing all damage to the Zoid. Core damage is a separate tally, not
+negative Health.
+
+If the pilot loses consciousness but the Zoid can still act, use Pilot Down
+in Chapter 12. That condition does not make a System Down chassis operational.
+
+REST
+----
+Rest sets current Energy to half your equipped maximum, rounded down. It can
+lower Energy that was above half as well as restore Energy that was below half.
+
+Rest also clears the temporary Armor and Defense, or other stat adjustments.
+It does not automatically heal Health, repair weapons, clear recorded shield
+damage, or deactivate equipment.
+
+The GM determines when a Rest is permitted and how long it takes.
+
+
+==============================================================================
+CHAPTER 5: SHIELDS, SMOKE, AND INVISIBILITY
+==============================================================================
+
+SHIELD POOLS
+------------
+Add the shield HP supplied by every active equipment shield and any active
+White Organoid shield. If the combined pool is positive, add Shield Master's
+bonus once. Multiple shield generators do not each receive a separate copy
+of that ability's bonus.
+
+Record shield damage separately from Health. Whenever a shield is activated
+(even if deactivated and reactivated on the same turn), its Energy Cost is paid
+and its health is set to its maximum. Follow the particular system's recharge
+and duration text.
+
+NORMAL HITS, CRITICAL HITS, AND PIERCING
+----------------------------------------
+A normal hit intercepted by a shield damages the shield instead of Health.
+If it exhausts the shield, deactivate it. Any damage left over from that
+ordinary hit is lost; it does not spill into Health.
+
+A critical hit deactivates the shield even if damage is less than its remaining
+HP. If the critical damage exceeds the shield's remaining HP, the excess
+damages Health and normally bypasses Defense.
+
+A Piercing-tagged attack bypasses shields without damaging them unless Shield
+Master 4 prevents that bypass. Normal Defense still applies to a noncritical
+Piercing hit to Health.
+
+Example: A shield with 40 HP intercepts an ordinary 70-damage hit and fails;
+the remaining 30 damage is lost. If the same hit is critical, the shield fails
+and the 30 excess damages Health before any explicit critical-hit protection.
+
+If multiple shields from different sources are active when struck by a
+critical hit, and the damage would not exceed the remaining shield HP, only
+the shield with the most HP remaining after damage calculation is deactivated.
+
+Example: Two active 200-HP shields and Shield Master 2 provide 550 total shield
+HP: 200 + 200 + 150. After 120 shield damage, 430 remain. Both generators pay
+their own upkeep at Start Turn. If instead the hit was a critical hit, after
+the damage is calculated, both shields remain active. The critical hit
+deactivates the one with the most HP remaining (200 + 30 from Shield Master),
+leaving 200.
+
+Shield Master 3 allows half your Defense to apply to damage done to shields.
+Rank 4 retains that benefit and prevents Piercing-tagged weapons from ignoring
+your shields. Resolve mitigation before recording the resulting shield damage.
+
+SMOKE AND INVISIBILITY
+----------------------
+While protected by the relevant smoke or invisibility effect, a Zoid cannot
+be targeted by attacks, but it can still be hit by area-of-effect attacks.
+Observe the item's listed area, duration, and other restrictions.
+The old Concealed attack modifiers do not override this newer prohibition on
+targeting a Zoid protected by smoke or invisibility. Ordinary concealment from
+terrain or other causes still uses the condition rules in Chapter 12.
+
+Smoke Master modifies smoke coverage and duration, grants faster activation,
+and at higher ranks extends its benefits to invisibility and allows
+smoke/invisibility effects to persist briefly after leaving the
+smoke/invisibility. It grants no protection from AoE attacks.
+
+Invisibility equipment pays its Energy Cost each Start Turn while active.
+Smoke equipment does not have an upkeep cost. Keep track of durations.
+
+
+==============================================================================
+CHAPTER 6: PILOT ABILITIES
+==============================================================================
+
+An ability is training you can bring to bear while piloting. Only active
+abilities grant their active effects. A newly learned ability family begins
+inactive.
+Learning a higher rank replaces the lower rank of that ability; ranks are not
+separate bonuses that can be stacked in multiple slots.
+
+You may have six active abilities, including no more than one size-Expert
+ability. A displaced or deactivated ability remains owned and inactive.
+
+Unless explicitly stated to be cumulative, use the current rank's text rather
+than adding every numerical bonus from lower ranks.
+
+TYPE ABILITIES
+--------------
+Ranks 1 through 5 grant +5, +10, +15, +20, and +25 effective pilot levels while
+piloting a matching Zoid type. This affects style progression, not actual pilot
+level or its Energy contribution. Use the strongest matching level bonus.
+
+The catalog includes Tiger, Liger, Wolf, Insect, Gorilla, Raptor, T-Rex, Mammal,
+Dinosaur, Flying, Reptile, and BLOX Type abilities. Eligibility follows the
+listed type, not a broader biological interpretation. A Flying-type design is
+not automatically treated as every type its animal shape might suggest.
+
+SIZE EXPERTS
+------------
+These families grant 10%, 15%, 20%, and 25% at ranks 1 through 4 while piloting
+an eligible size. The percentage contributes to Health, Armor, Reaction, Range,
+and weapon to-hit. It does not increase every statistic on the sheet.
+
+  Family                    Eligible size
+  Small Expert              S
+  Medium Expert             M
+  Medium Under Expert       S or M
+  Large Expert              L
+  Large Large Expert        LL
+  Large Large Over Expert   LL or XL
+  Extra Large Expert        XL
+
+Small Expert 2 also states: "Enemies of Size L or larger lose the benefits of
+Critical Hits against you."
+
+Small Expert 4, Medium Expert 4, and Medium Under Expert 4 also state:
+"When making an attack against a target of size LL or XL, you subtract 2 from
+your critical hit range."
+
+Small Expert 3 and 4 retain rank 2's protection against critical hits from
+enemies of Size L or larger.
+
+WEAPON EXPERTS
+--------------
+Five families improve accuracy with qualifying weapons:
+
+  Laser Expert      Weapons with the Laser tag.
+  Missile Expert    Weapons with the Explosive tag.
+  Particle Expert   Weapons with the Particle tag.
+  Melee Expert      Weapons with the Melee tag.
+  Rifle Expert      Weapons with both Ranged and Bullet tags.
+
+  Rank    To-hit bonus    Additional critical-hit benefit
+    1         +2          No additional critical rule in this rank.
+    2         +3          Critical hits on a roll of 19.
+    3         +4          Critical hits on a roll of 18.
+    4         +5          Critical hits on a roll of 18; critical hits deal
+                          double damage.
+
+Only the strongest matching Weapon Expert to-hit bonus applies to a particular
+weapon. Two matching Experts do not add their accuracy bonuses together.
+Different weapons may benefit from different Experts. These rules apply to
+fixed and removable weapons alike.
+
+ANTI-AIR PRO
+------------
+All attacks against flying Zoids gain +2, +3, +4, or +5 to hit at ranks 1-4.
+This is a benefit against the target, not a benefit restricted to weapons with
+the Anti-Air tag. Apply it manually when the target qualifies.
+
+FLEET FOOTED
+------------
+Gain +50, +100, +150, or +200 Speed at ranks 1-4.
+At ranks 2, 3, and 4, speed-boosting equipment may be activated as a bonus
+action.
+
+HONED
+-----
+Gain +5, +10, +15, or +20 Reaction at ranks 1-4.
+
+IRON DEFENSE
+------------
+Gain +10, +20, +30, or +40 Defense at ranks 1-4.
+
+COMEBACK
+--------
+While current Health is at or below 20% of maximum Health, your attacks gain
+20%, 30%, 40%, or 50% damage at ranks 1-4. The threshold includes exactly 20%.
+This applies to melee and ranged attacks. See Chapter 4 for the calculation.
+
+SNIPER
+------
+Gain +2, +4, +6, or +8 to hit at ranks 1-4 on qualifying long-range attacks.
+The sheet applies this only to ranged attacks in the Long band.
+
+Rank 4 also states: "Your critical range is reduced by 1."
+
+TRUE TANK
+---------
+For every full 10 points of Defense gained from removable equipment,
+gain 1 Armor. Total the eligible Defense before dividing by 10.
+
+  Rank    Maximum Armor bonus    Additional benefit
+    1             +5             None.
+    2            +10             None.
+    3            +10             Half your Defense is subtracted from damage
+                                 you take from critical hits.
+    4            +10             Your full Defense is subtracted from damage
+                                 you take from critical hits.
+
+The Armor cap stops increasing after rank 2.
+
+Base Defense, Defense upgrades, Iron Defense, and temporary Defense adjustments
+do not supply the removable-equipment Defense used to earn True Tank Armor.
+The critical-hit benefit refers to your Defense, not only equipment Defense.
+
+Example: Your removable equipment supplies 65 Defense. True Tank 1 grants 5
+Armor because of its cap. True Tank 2, 3, or 4 grants 6 Armor. A separate
+temporary +10 Defense does not increase that equipment-derived Armor bonus.
+
+ARMOR BREAKER
+-------------
+When making an attack, you may make it against the target's Reaction. If it
+hits, it deals no damage. Instead, reduce the target's Armor by your Armor
+Breaker rank: 1, 2, 3, or 4. This is not additional normal damage and does not
+reduce Defense.
+
+EVASION MASTER
+--------------
+Attacks made against your Reaction take a -4, -8, -12, or -16 penalty to hit
+you at ranks 1-4. This ability does not grant an Armor bonus or increase your
+Reaction statistic. Apply the penalty to the incoming attack.
+
+SHIELD MASTER
+-------------
+Increase the combined positive shield pool by the following amount:
+
+  Rank    Shield HP bonus    Benefits gained at this rank
+    1          +100         No additional benefit.
+    2          +150         Shields can be activated as a bonus action.
+    3          +200         Apply half Defense to damage done to shields.
+    4          +250         Piercing-tagged weapons do not ignore your shields.
+
+The additional benefits are cumulative. Rank 4 has all three additional
+benefits, but its numerical bonus is +250, not the sum of ranks 1-4.
+The ability does not create a shield when you have no active shield source.
+The bonus Shield HP can be applied to one Shield at a time. Subsequent shields
+activated simultaneously are not affected.
+
+SMOKE MASTER
+------------
+Smoke units cover additional distance and gain the following cumulative effects:
+
+  Rank    Extra coverage    Benefit gained at this rank
+    1          15m         Smoke units last twice as long.
+    2          15m         Smoke units can be activated as a bonus action.
+    3          45m         Smoke Master applies to invisibility as well.
+    4          45m         Smoke effects persist for 1 round after you leave
+                           the smoke.
+
+Each higher rank retains the earlier special benefits. Extra coverage is the
+listed value for your rank, not the sum of all earlier values. Rank 4 does not
+protect you from area-of-effect attacks.
+
+ECONOMIZED SHOOTING
+-------------------
+Reduce the Energy Cost of Ranged-tagged weapons by 2, 4, 6, or 8 at ranks 1-4.
+The reduced cost cannot fall below 2. A weapon whose original cost is already
+below 2 keeps that cost; the ability does not make it more expensive.
+
+Example: A cost-6 ranged weapon costs 4 with rank 1, and 2 with ranks 2-4.
+An originally free weapon remains free.
+
+MELEE MULTI ATTACK
+------------------
+Ranks 1-4 grant one, two, three, or four extra melee attacks per turn.
+
+Only two melee attacks may be made against a single target with
+a single action. Additional attacks from higher ranks must have a new target.
+
+RANGED MULTI ATTACK
+-------------------
+Ranks 1-4 grant one, two, three, or four extra ranged attacks per turn.
+
+Each ranged weapon can be fired only twice with one action.
+Additional ranged attacks from higher ranks must be made with a different
+ranged weapon.
+
+WEAPON BREAKER
+--------------
+Rank 1: When you score a critical hit with a melee weapon, one of the target's
+weapons is destroyed at random.
+
+Rank 2: When you score a critical hit with a melee weapon, choose one of the
+target's weapons to destroy.
+
+COUNTER ATTACK
+--------------
+Rank 1: When an enemy rolls a 1 on an attack against you, you may make a single
+weapon attack against that enemy as a reaction.
+
+Rank 2: When an enemy rolls a 5 or lower on an attack against you, you may make
+a single weapon attack against that enemy as a reaction, whether or not its
+attack hit.
+
+==============================================================================
+CHAPTER 7: FEATS
+==============================================================================
+
+Feats are distinctive talents that pilots pick up as they become highly skilled.
+You gain a feat at level 10 and every ten levels thereafter.
+
+PHALANX FIRE
+When attacking an enemy Zoid with a ranged weapon, you gain advantage on the
+attack roll if an ally has dealt damage to that enemy Zoid this round.
+
+SCRAPPY
+If no allied Zoids are within 60m of you and at least two enemy Zoids are within
+60m of you, gain advantage on all attack rolls you make.
+
+MOBILE
+When you use your action to dash, you do not provoke attacks of opportunity for
+the rest of the round.
+
+OVERTUNED
+Your non-weapon Zoid equipment lasts twice as many rounds.
+
+PIT STOP
+Spend only one action to perform a CAS swap during combat. You may reenter
+battle on your next turn.
+
+DEADSHOT
+If you do not move on your turn, gain +10 to ranged attacks.
+
+DEMOLITIONIST
+Once per Rest, you may completely fill your Zoid's Energy as a free action.
+Record that use at the table and set current Energy to its maximum when you
+invoke the feat.
+
+==============================================================================
+CHAPTER 8: ORGANOIDS
+==============================================================================
+
+An Organoid can transform the performance of its partner Zoid. The Character
+Sheet supports White, Red, Blue, and Black Organoids at levels 0-40.
+
+ORGANOIDS AND ORGANOID SYSTEMS
+------------------------------
+Zoids possess a measure of sentience, and wild Zoids can act without pilots.
+A true Organoid is an exceptionally rare intelligent partner. An Organoid
+System, or OS, is technology designed to reproduce its functions.
+
+  Limited OS: Grants no statistical bonuses, but allows autonomous operation
+  if the pilot is unconscious. No numerical Organoid level is specified. Do
+  not assign statistical bonuses to a Limited OS merely because it enables
+  autonomous behavior.
+
+  Normal OS: Its level equals half the pilot's actual level, rounded down.
+  Its color is set when the Zoid is constructed.
+
+  True Organoid: Its level equals the pilot's actual level, to a maximum of 40.
+  Its color follows the pilot's personality, as judged by the GM.
+
+  Wild OS: Reverse-engineered from a deceased Organoid. It functions like a
+  true Organoid and follows personality-based color, but always remains active.
+  If it is a white color, its shield is activated when initiative order is
+  determined.
+
+Choose the color and level, then activate the Organoid as an action to gain
+its benefits. Selecting those settings without activation grants no bonuses.
+Use the appropriate color-and-level table for its Health, Armor, Speed, Range,
+attack, and damage contributions.
+
+Only an active White Organoid provides Organoid shield HP. Red, Blue, and Black
+Organoids do not create shield HP. White shield strength uses Organoid level,
+not pilot level.
+
+ACTIVATION AND RESOURCES
+------------------------
+An Organoid or OS normally requires a standard action to activate. Wild OS
+uses its special rule above. It remains active only while a pilot occupies
+the cockpit, and deactivates when the pilot leaves or the Zoid is destroyed
+or suffers System Down. An unconscious pilot is still in the cockpit; see
+Pilot Down for autonomous operation.
+
+Activating an Organoid adds the increase in maximum Health to current Health
+and the increase in maximum Energy to current Energy. Existing damage and
+spent-Energy deficits are therefore preserved.
+
+While active, add Organoid level to maximum Energy and pilot Mental to EPT.
+Deactivation removes its bonuses; current Energy is clamped
+to the reduced maximum where necessary.
+
+Organoid shields pay no per-turn Energy upkeep. Other active shields and
+invisibility equipment continue to pay their own costs.
+
+
+==============================================================================
+CHAPTER 9: UPGRADES AND REPAIRS
+==============================================================================
+
+FRAME UPGRADES
+--------------
+Upgrades belong to a physical chassis and follow its acquired CAU forms.
+Each track has its own rank and price progression.
+
+  Track           Benefit per point                Maximum points
+  Speed           +30 Speed                        5
+  Reaction        +1 Reaction                      5
+  Defense         +5 Defense                       No cap
+  Capacity        +10 Carry capacity               5
+  Accuracy        +1 to final attack accuracy      No cap
+  Armor           +1 Armor                         5
+  EPT             +1 Energy Per Turn               No cap
+  Melee Damage    +20 matching weapon damage       5
+  Ranged Damage   +20 matching weapon damage       5
+
+Accuracy applies to fixed and removable attacks. Armor is a flat addition
+after percentage bonuses. Damage tracks apply to matching fixed, generic
+removable, and Zoid-specific removable weapons, after damage percentages.
+Melee-tagged weapons use Melee Damage; Ranged weapons without Melee use Ranged
+Damage. Non-damaging utilities gain no damage bonus.
+
+PRICE OF THE NEXT POINT
+-----------------------
+For tracks other than Armor and EPT, buying rank N costs 5,000g x N.
+Armor rank N costs (5,000g x N) + 20,000g.
+EPT rank N costs 10,000g x 2^(N-1).
+
+  Rank      Ordinary track     Armor         EPT
+    1           5,000g         25,000g       10,000g
+    2          10,000g         30,000g       20,000g
+    3          15,000g         35,000g       40,000g
+    4          20,000g         40,000g       80,000g
+    5          25,000g         45,000g      160,000g
+
+These are the prices of individual points, not the total price of reaching a
+rank. EPT upgrades do not refill Energy or change the half-maximum Rest rule.
+
+REPAIRS
+-------
+Health repair costs 10g per point actually restored, up to current maximum
+Health. You may perform a limited repair or repair all missing Health.
+
+Repairing a broken weapon costs 10,000g. An intact weapon requires no payment.
+
+Health repair does not repair weapons. Weapon repair does not repair Health.
+Repairs by hand require a Zoid Institute or comparable facilities, sufficient
+time, and repair parts worth the stated 10g per Health restored. Unless
+specified by the GM, repairs can be completed over the course of a Rest.
+
+CONSUMABLE REPAIR KITS
+----------------------
+CA Ion repair kits are rare consumables based on ancient technology. Using
+one in combat takes a bonus action. The listed sizes restore:
+
+  S: 50 Health     M: 150 Health     L: 300 Health     Z: 50% HP
+
+Follow a kit's current equipment entry where it provides more detail. Do not
+exceed maximum Health.
+
+Core damage uses the Laboratory and full-repair requirement in Chapter 4;
+ordinary Rest does not erase it.
+
+==============================================================================
+CHAPTER 10: THE HANGAR
+==============================================================================
+
+KNOWN DESIGNS AND CONSTRUCTION
+------------------------------
+After your free starter, a normal Zoid purchase requires the design's Zi Data,
+its listed gold price, the required Core and Parts, and any required owned
+prerequisite Zoid or form.
+
+The recipe specifies what is consumed. Where several owned copies qualify,
+choose the particular chassis to use. A chassis that still owns CAUs cannot
+be consumed as an ordinary construction component. Ordinary replacement
+builds do not inherit their consumed chassis's upgrades.
+
+Keep gold, known designs, and material quantities accurate. Removable equipment
+remains owned when its host is consumed or sold.
+
+THE COMPONENTS OF DEVELOPMENT
+-----------------------------
+Zi Data contains the design's blueprints, operating system, control code, and
+the interface between its Core and body. Knowing a design is distinct from
+owning the materials needed to build it.
+
+A Zoid Core contains the creature's biomechanical organs. An intact recovered
+Core can be reused in a compatible new body requiring that Core type. If a
+development recipe replaces a base Zoid's Core with a different type, its old
+Core can be retained or sold. Record such recovery manually; it does not waive
+the current recipe's required inputs or change its purchase price.
+
+Rare Parts must be found, bought, or salvaged. Standardized generic parts are
+represented by the recipe's gold price; you need not list every manufactured
+component.
+
+PAINT AND PERSONALIZATION
+-------------------------
+A basic custom-color paint job costs 500g for an S Zoid, 1,000g for M or L,
+5,000g for LL, and 10,000g for XL. This is an optional expense and provides no
+statistical benefit outside of roleplaying.
+
+SALVAGE
+-------
+When you destroy an enemy Zoid outside an organized Battle, choose what you
+are trying to preserve: its Core, Zi Data, Rare Parts, or Supplies. Harvest
+the selected category rather than claiming all four. The choice is made when
+the Zoid is destroyed, reflecting the care needed to preserve useful salvage.
+
+Supplies are generic parts worth half the destroyed Zoid's Development Cost.
+They may be sold or credited toward a new build. A usable Core can supply a
+compatible recipe, and Rare Parts can supply their listed construction needs.
+The GM must determine recoverability and record the salvage or credit.
+
+When salvaging Zi Data, you may take the data for one of the destroyed Zoid's
+construction-chain base designs instead of its own design. This grants the
+chosen design, not every design in the chain.
+
+Example: You already know Proto Zaber's design but lack Zaber Fang Old, one
+of its construction ancestors. You may choose that ancestor's Zi Data rather
+than Proto Zaber's data or another salvage category. These salvage rules are
+distinct from the 75% sale refund for an owned Zoid.
+
+CAU FORMS
+---------
+An acquired CAU is an alternate form belonging to its host chassis. Each form
+has its own loadout and activation states, while chassis upgrades and current
+resources remain associated with the physical Zoid.
+
+Forms share current Health. Changing to a form with a lower Health maximum
+clamps the pool; changing back does not refill it. Switching forms is not a
+repair or a way to erase damage.
+
+Some forms supersede earlier forms. For example, Shield Liger DCS-J replaces
+DCS, and Zaber Fang TS replaces AT. Use the current recipe for prerequisites.
+
+Detaching a CAU refunds half its current listed price and returns its applicable
+Parts. Host upgrades remain; form-specific records are removed. Removable
+equipment stays owned.
+
+CHANGING ARMOR IN COMBAT
+------------------------
+CAS means Changing Armor System; a CAU is a Changing Armor Unit. Move to a CAU
+station and spend a standard action to begin the swap. Spend one standard
+action on each of two subsequent turns to complete it. Once begun, the swap
+cannot be aborted. On the completion turn, you may use movement to return to
+the battle.
+
+Pit Stop requires you to spend only one action to perform the swap, and you
+may reenter battle on your next turn.
+
+SELLING A ZOID
+--------------
+Selling an owned chassis and its acquired CAUs returns 75% of their combined
+current listed prices, rounded down if necessary. It removes that chassis,
+its forms, and its upgrades. Removable equipment remains in your inventory.
+Parts and upgrades do not receive an additional sale refund.
+
+FUZOR CONSTRUCTION
+------------------
+FUZOR recipes require the known design and distinct owned component Zoids.
+Their listed fusion gold cost is 0g. Components with acquired CAUs cannot be
+consumed. A newly assembled FUZOR is an independent chassis; it does not add
+its components' upgrades to its own statistics.
+
+  Fuzor Dragon:  Leo Blaze, Unenlagia, Mosasledge, Nightwise.
+  Chimera Dragon: Diplo Gun, Shell Karn, Demon's Head, Flyscissors.
+  Gojulox:       Diplo Gun, Shell Karn, Demon's Head, Leo Blaze,
+                 Unenlagia, Nightwise.
+  2-Arm Lizard:  Leo Blaze, Unenlagia.
+  Griffin:      Leo Blaze, Unenlagia, Buster Eagle.
+  Lord Gale:    Diplo Gun, Shell Karn, Demon's Head, Flyscissors.
+
+As an action in combat, a pilot may take the Fuze action. If allied Zoids within
+60m take the Fuze action within the next round, the Zoids may Fuze if they meet
+the requirements listed above.
+
+TRANSPORTS
+----------
+Each loaded owned chassis occupies one bay; its acquired CAUs travel with it.
+Use its selected form to check the maximum permitted size. An allied Zoid also
+occupies one bay.
+
+  Transport       Bays       Largest permitted Zoid
+  Gustav            2        M
+  Hover Cargo       6        L
+  Dragoon Nest     12        LL
+  Whale King       24        XL
+
+You cannot exceed either capacity or size restrictions. Unload a Zoid before
+changing to a form that its current Transport cannot carry.
+
+==============================================================================
+CHAPTER 11: MOVEMENT, TRAVEL, AND TERRAIN
+==============================================================================
+
+COMBAT MOVEMENT
+---------------
+The standard battle map uses 30m hexes. On your turn, your move action allows
+you to travel up to your Speed in meters. You may move, take a standard action,
+and then spend the rest of your movement. Dash adds another movement allowance
+up to Speed. A round lasts six seconds; do not multiply Speed by six to find
+your movement allowance.
+
+For grid movement, round distances to the nearest increment of the grid size,
+normally 30m.
+
+NARRATIVE TRAVEL
+----------------
+Outside turn-by-turn situations, read Speed as kilometers per hour. Use this
+for long-distance travel and exploration without immediate hazards. The GM
+accounts for routes, obstacles, and circumstances rather than resolving every
+six-second round. Flying or swimming routes may shorten travel by bypassing
+obstacles and taking a more direct path.
+
+JUMPING
+-------
+A land-based Zoid can make a running jump up to one-third of its maximum Speed,
+rounded to the nearest 30m, if it has room to run the same distance before
+jumping. From a standstill, it can jump only 30m. Jumping uses the move action;
+it is not a separate free movement allowance. Temporary Speed boosts increase
+running-jump distance.
+
+FLYING, SWIMMING, AND COASTING
+------------------------------
+A Zoid cannot fly or swim unless it is specifically designed to do so.
+An aerial or marine design moves through its intended medium at its Speed.
+
+A flying Zoid must move at least 60m each turn or stall and fall. This mandatory
+movement is Coasting. If it moves only those 60m and no more, treat it as not
+having moved for other rules, including equipment that requires stationary
+operation and attacks of opportunity. Coasting still changes its position.
+
+Restrained flying Zoids fall 180m each turn and take 50 damage per 180m fallen,
+ignoring Armor.
+
+DIFFICULT TERRAIN
+-----------------
+Ice, bogs, loose sand, shallow water, or similar terrain may hinder a Zoid not
+designed for it. If the GM determines the terrain is hazardous for that design,
+halve its Speed while moving on that terrain.
+
+STEALTH
+-------
+Without special equipment, hiding a multi-ton machine is usually a matter of
+route, cover, and sensor exposure rather than a quiet step. Use terrain to
+avoid detection, or equip technology designed to conceal the Zoid and dampen
+its sound. The GM determines detection based on the situation and equipment.
+
+
+==============================================================================
+CHAPTER 12: CONDITIONS
+==============================================================================
+
+Conditions describe changes to what a Zoid can do and how attacks involving
+it are resolved. Apply their modifiers manually. If both attacker and defender
+have a condition, apply both relevant modifiers unless a specific rule prevents
+the attack altogether.
+
+SYSTEM DOWN
+  The Zoid is incapacitated and cannot move or take actions. Use the emergency
+  repairs and Core damage rules in Chapter 4. Incoming melee attacks
+  automatically score critical hits; incoming ranged attacks gain +10 to hit.
+
+SYSTEM FREEZE
+  The Zoid is stunned and cannot move until the condition ends. Incoming melee
+  attacks automatically score critical hits; incoming ranged attacks gain
+  +10 to hit. Use the causing effect's duration or recovery rule.
+
+PILOT DOWN
+  The pilot is unconscious. A Zoid capable of continuing autonomously acts
+  without the pilot's active abilities. For this condition, treat pilot level
+  as 1, or as the Organoid System's level if it has one. This is a temporary
+  combat calculation, not permanent loss of levels or learned abilities.
+
+RESTRAINED
+  The Zoid cannot use movement. Its ranged attacks take -5 to hit; ranged
+  attacks against it gain +5. A restrained flying Zoid falls as described in
+  Chapter 11.
+
+BLINDED
+  Visual optics cannot see. Radar or another system may still detect objects.
+  The Zoid's attacks take -20 to hit; attacks against it gain +10.
+
+SLOWED
+  The Zoid's attacks take -5 to hit; attacks against it gain +5. Its Speed is
+  also reduced by half unless another amount is specified.
+
+HIGH GROUND
+  A Zoid standing on solid ground at least 100m above another Zoid has High
+  Ground relative to it. Its ranged attacks gain +10 to hit, and ranged
+  attacks against it take -5. Merely flying overhead is not High Ground.
+
+CONCEALED
+  Apply this to an exchange where at least one Zoid is not visible to the
+  other. Radar detection is not, by itself, visual sight. The GM judges
+  visibility and equipment interactions. A Concealed attacker gains +10 to
+  hit; attacks against a Concealed defender take -20. Blinded can also apply.
+  The newer smoke/invisibility rule takes precedence: a protected Zoid cannot
+  be targeted by attacks, though AoE may still hit it. Do not use a Concealed
+  penalty to turn that prohibited targeted attack into an allowed one.
+
+COVERED
+  A physical obstacle obscures at least half of the Zoid from the attacker's
+  sight, as determined by the GM. Another Zoid can provide such an obstacle.
+  Ranged attacks against the Covered Zoid have disadvantage. Attacks affecting
+  all targets in an area ignore this cover.
+
+FLYING
+  The Zoid gains +10 to its attacks. Attacks against it take -10 unless the
+  attack benefits from the Anti-Air property. A flying attacker cannot benefit
+  from that property.
+
+AIMING
+  Gain +10 to attacks on your next attack action after taking Aim.
+
+DODGING
+  Gain +10 Armor and +10 Reaction until the start of your next turn after
+  taking Dodge.
+
+DISTRACTED
+  Attacks against the Zoid gain +10 to hit. When Feint causes the condition,
+  it benefits attackers other than the feinting Zoid until the start of the
+  feinting Zoid's next turn.
+
+
+==============================================================================
+APPENDIX A: USING THE COMPANION APPS
+==============================================================================
+
+THE CHARACTER SHEET
+-------------------
+Use Overview for pilot details, Organoids, and your owned-Zoid hangar. Combat
+records resources and weapon use. Upgrades manages frame improvements and
+equipment copies. Pilot holds abilities, feats, notes, materials, and known
+designs. Transport manages your carrier and its cargo.
+
+The sheet calculates supported modifiers, attack previews, Energy payments,
+upkeep, and purchases. It does not select targets or decide hits, criticals,
+status effects, damage mitigation, or most action-economy permissions for you.
+Normal OS mode calculates half the actual pilot level, rounded down, within
+the supported level range of 0-40. Manual Organoid levels remain available.
+The Combat page shows the AoE half-damage rule; resolve that roll at the table.
+The supplementary SRD procedures in this handbook are tabletop rules, not new
+automations. In particular, milestone awards, rank prerequisites, rest-based
+ability swaps, initiative, Energy resets at combat start, advantage, jams,
+conditions, G-force checks, Charge Energy, Core damage, and salvage are manual.
+
+Use the displayed modifier with the recorded raw d20. Enter resulting Health
+and shield damage after resolving incoming attacks. Save the character to keep
+your changes; recalculating or previewing an attack does not spend resources.
+
+THE ENCOUNTER TRACKER
+---------------------
+Each enemy has independent editable statistics, Energy, EPT, and equipment
+costs. Its calculator applies supported catalog and ability bonuses; the GM
+may edit the results for the encounter.
+
+For equipment, mark Active, enter Shield HP where applicable, and mark Grants
+invisibility where applicable. Known systems are populated from the catalog.
+The tracker combines active shield HP, adds Shield Master once, and subtracts
+recorded shield damage. Organoid shield HP is a separate upkeep-free input.
+
+Start Turn recharges, then pays upkeep using the displayed costs. Shield damage,
+custom capacities, activation states, and invisibility flags are saved with
+the enemy set. Older saved sets begin with equipment inactive when that state
+was not previously recorded.
+
+Enemy sets intentionally preserve saved numerical edits. Refresh an enemy's
+catalog loadout deliberately when you want newly calculated values. The tracker
+does not reproduce all player-sheet systems: contextual Sniper bonuses, full
+Organoid stat progression, equipment-derived True Tank Armor, critical effects,
+and targeting rules still require GM handling. It also retains its own enemy
+required-level data for encounter construction.
+
+
+==============================================================================
+APPENDIX B: RULES REQUIRING A TABLE RULING
+==============================================================================
+
+The SRD supplies initiative, six-second rounds, move and standard actions,
+one reaction per round, movement allowances, attack target numbers and attack
+ties, AoE avoidance, normal Defense mitigation, advantage/disadvantage rolls,
+natural criticals, System Down, advancement, repair facilities, and the basic
+combat CAS procedure. Those rules now appear in their relevant chapters.
+The following narrower questions still need a ruling; lack of app automation
+alone does not make an otherwise defined tabletop rule unresolved.
+
+CRITICAL-HIT INTERACTIONS
+  How expanded critical ranges combine with Sniper 4 and size-Expert effects;
+  whether a listed critical roll establishes a threshold including higher
+  rolls; whether an expanded critical result automatically hits an otherwise
+  unreachable target number; and the order of Weapon Expert doubling, Shield
+  Master mitigation, and True Tank Defense deductions. Natural 20 criticals
+  and their normal Defense bypass/shield effects are now defined in Chapter 4.
+  No automatic stacking or minimum critical threshold has been added.
+
+MITIGATION AND RESTORATION
+  Rounding half Defense, half Homing damage, or half AoE damage; whether the
+  normal minimum of 1 damage extends to shield/critical mitigation; and the
+  duration or removal of Armor Breaker's reduction. Chapter 5 establishes
+  shield restoration on activation and which shield a critical deactivates
+  when damage does not exceed the combined pool. Allocation of damage between
+  individual shields and ties between remaining shield HP still need a ruling.
+  The temporary-stat Rest reset remains an app behavior, not a universal rule
+  for lasting injuries.
+
+CONDITIONS AND WEAPON PROPERTIES
+  Any resistance check for Feint; exactly which nonmovement actions System
+  Freeze prevents; and Limited OS's numerical Pilot Down level. Electrical's
+  hit and miss chances are 50% and 10%; its end-of-turn recovery reroll still
+  lacks a specified target or success rule.
+
+MOVEMENT EDGE CASES
+  Ordinary stall/fall resolution beyond the restrained-flyer rule, partial
+  falling distances, and whether falling damage's "ignoring armor" also
+  bypasses Defense. The SRD refers to turning-radius rules but supplies none.
+
+DURATION AND ACTIVATION
+  How Overtuned combines with Smoke Master's doubled duration; which Smoke
+  Master benefits map to each invisibility system; timing of upkeep relative
+  to an effect expiring; and any limits on repeatedly using Energy Containers.
+  Apply explicit equipment duration and recharge text where it answers the
+  question. The apps do not automatically count these durations.
+
+ADVANCEMENT AND DOWNTIME
+  Exact Rest duration; the basis/rounding of the Z repair kit's "50% HP"; and
+  general equipment prices or custom-Zoid construction. Chapter 1 establishes
+  starting Attributes, the learn-or-upgrade schedule, and feats awarded only
+  while unlearned feats remain. Repairs normally take a Rest, and Pit Stop's
+  one-action swap and next-turn return are defined in Chapters 7 and 10.
+
+PILOTS ON FOOT
+  The SRD lists an on-foot chapter in its contents but does not include it.
+  Apart from the attribute checks described here, pilot Health, personal
+  equipment statistics, and a complete on-foot combat/check system still need
+  rules.
+
+
+==============================================================================
+APPENDIX C: QUICK REFERENCE
+==============================================================================
+
+ROUND AND TURN
+  Six-second rounds; initiative by Reaction, highest first. One move action
+  and one standard action per turn. One reaction, refreshed at your next turn.
+  Abilities grant specific bonus-action permissions, limited to one per round.
+  Reset Energy to half at combat start unless the GM says otherwise; this is
+  a manual step, not Start Turn.
+
+ATTACKS
+  d20 + modifiers >= Armor hits; substitute Reaction where instructed.
+  An AoE avoidance roll equal to or above the attack total avoids half damage.
+  Advantage: higher of two d20s. Disadvantage: lower of two d20s.
+  Normal unshielded damage: subtract applicable Defense, minimum 1.
+  Natural 20: critical; normally bypasses Defense and deactivates a shield,
+  with critical excess damage reaching Health. Natural 1: critical miss;
+  a ranged weapon jams.
+
+START TURN
+  Recharge to maximum, then subtract all active shield/invisibility upkeep.
+  Organoid shields are free. If upkeep is unaffordable, deactivate all active
+  equipment.
+
+USE
+  Pay listed Energy. Numerical-damage weapons roll a raw d20. Utilities do not.
+  A broken weapon or unaffordable cost prevents the use.
+
+REST
+  Set Energy to half maximum, rounded down. Reset temporary Armor and Defense.
+  Do not automatically heal, repair weapons, or erase shield damage.
+
+ABILITIES
+  Six active slots. One active size Expert. Higher ranks replace lower ranks.
+
+KEY RANK VALUES                     Rank 1    Rank 2    Rank 3    Rank 4
+  Iron Defense                         +10       +20       +30       +40
+  Weapon Expert to-hit                  +2        +3        +4        +5
+  Anti-Air Pro to-hit                   +2        +3        +4        +5
+  Sniper to-hit                         +2        +4        +6        +8
+  Shield Master HP                    +100      +150      +200      +250
+  True Tank Armor cap                   +5       +10       +10       +10
+  Evasion Master incoming penalty       -4        -8       -12       -16
+  Economized Shooting reduction          2         4         6         8
+  Smoke Master extra coverage          15m       15m       45m       45m
+
+ECONOMIZED SHOOTING
+  Minimum reduced cost 2. Originally lower costs are unchanged.
+
+REPAIRS
+  Health: 10g per point restored. Broken weapon: 10,000g.
+
+SAVE YOUR RECORDS
+  Each physical Zoid keeps its own resources. Forms share their chassis's pool.
+  Saving preserves the battle's results; reopening does not restore resources.
+
+==============================================================================
+END OF HANDBOOK
+==============================================================================
+
+Prepared from the current handbook's ability and equipment rules, Character
+Sheet calculations and combat commands, upgrade and ownership rules, Encounter
+Tracker shield/Energy behavior, and supplementary material from
+source/ZOIDS TTRPG SRD.txt. The pre-integration handbook takes precedence over
+conflicting SRD text. Earlier ability values, upgrade caps/prices, no-bonus-
+action wording, and concealment rules do not override the newer rules.
+See docs/SRD_integration_notes.md for the source coverage and conflict record.

@@ -2199,7 +2199,7 @@
       },
       "fields": {
         "name": "Small Expert 3",
-        "description": "When piloting a Small sized Zoid stats are increased by 20%",
+        "description": "When piloting a Small sized Zoid stats are increased by 20%. Enemies of Size L or larger lose the benefits of Critical Hits against you.",
         "bonus_levels": null,
         "zoid_sizes": "Small",
         "all_stats_bonus": 0.2,
@@ -2232,7 +2232,7 @@
       },
       "fields": {
         "name": "Small Expert 4",
-        "description": "When piloting a Small sized Zoid stats are increased by 25%. When making an attack against a target of size LL or XL, you subtract 2 from your critical hit range.",
+        "description": "When piloting a Small sized Zoid stats are increased by 25%. Enemies of Size L or larger lose the benefits of Critical Hits against you. When making an attack against a target of size LL or XL, you subtract 2 from your critical hit range.",
         "bonus_levels": null,
         "zoid_sizes": "Small",
         "all_stats_bonus": 0.25,
@@ -3296,7 +3296,7 @@
       },
       "fields": {
         "name": "Ranged Multi Attack 4",
-        "description": "Gain a fourth ranged attack roll per turn. Each ranged weapon can only be fired twice with one action. Additional ranged attacks must be made with a different ranged weapon.",
+        "description": "Gain four extra ranged attack rolls per turn as part of your attack action. Each ranged weapon can only be fired twice with one action. Additional ranged attacks must be made with a different ranged weapon.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5423,7 +5423,7 @@
       },
       "fields": {
         "name": "Smoke Master 2",
-        "description": "Smoke units cover an additional 20m. Smoke units last twice as long. Smoke Units can be activated as a bonus action.",
+        "description": "Smoke units cover an additional 15m. Smoke units last twice as long. Smoke Units can be activated as a bonus action.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5455,7 +5455,7 @@
       },
       "fields": {
         "name": "Smoke Master 3",
-        "description": "Smoke units cover an additional 30m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. Smoke Master Applies to Invisibility as well.",
+        "description": "Smoke units cover an additional 45m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. Smoke Master Applies to Invisibility as well.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5487,7 +5487,7 @@
       },
       "fields": {
         "name": "Smoke Master 4",
-        "description": "Smoke units cover an additional 40m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. Smoke Master Applies to Invisibility as well. The effects of Smoke persist for 1 round after you leave the Smoke.",
+        "description": "Smoke units cover an additional 45m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. Smoke Master Applies to Invisibility as well. The effects of Smoke persist for 1 round after you leave the Smoke.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5656,7 +5656,7 @@
       },
       "fields": {
         "name": "Counter Attack 2",
-        "description": "When an enemy rolls a 5 on an attack against you, you may make a single weapon attack against that enemy as a reaction, regardless of whether the enemy attack hit you.",
+        "description": "When an enemy rolls a 5 or lower on an attack against you, you may make a single weapon attack against that enemy as a reaction, regardless of whether the enemy attack hit you.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,

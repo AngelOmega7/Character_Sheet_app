@@ -295,6 +295,7 @@ class CharacterEditor:
         build = replace(self.character.build, pilot_level=level, mental=mental,
                         pilot_style=self.style.value, upgrades=upgrades,
                         organoid_color=self.organoid_color.value, organoid_level=organoid_level,
+                        normal_os=self.normal_os.value,
                           organoid_enabled=self.organoid_enabled.value, shield_adjustment=shields)
         if build.zoid and build.organoid_enabled and not self.character.build.organoid_enabled:
             inactive = calculate_stats(replace(build, organoid_enabled=False), self.catalog)
@@ -506,6 +507,7 @@ class CharacterEditor:
             self.organoid_color.value = build.organoid_color
             self.organoid_level.value = str(build.organoid_level)
             self.organoid_enabled.value = build.organoid_enabled
+            self.normal_os.value = build.normal_os
             self.message(str(exc), True)
 
     def ability_panel(self, build):
@@ -1102,13 +1104,17 @@ class CharacterEditor:
         self.organoid_enabled = ft.Checkbox(label="Organoid activated", value=build.organoid_enabled,
             disabled=build.organoid_color == "None", on_change=self.apply_organoid)
         self.organoid_level.disabled = build.organoid_color == "None"
+        self.normal_os = ft.Checkbox(label="Normal OS: half pilot level, rounded down (maximum 40)",
+            value=build.normal_os, on_change=self.apply_organoid)
+        self.organoid_level.disabled = self.organoid_level.disabled or build.normal_os
         construction_os = "No active Zoid"
         if build.zoid:
             base = self.catalog.find("zoids", build.zoid)["ownership_base_id"]
             parts = (*recipe_parts(self.catalog, base), *recipe_parts(self.catalog, build.zoid))
             required_os = [name for name in ("Limited OS", "Normal OS", "WildZ OS", "WildG OS") if name in parts]
             construction_os = ", ".join(required_os) or "None required"
-        organoid = card("Organoid", [self.organoid_color, self.organoid_level, self.organoid_enabled,
+        organoid = card("Organoid", [self.organoid_color, self.normal_os, self.organoid_level,
+            ft.Text(f"Effective Organoid level: {build.effective_organoid_level}"), self.organoid_enabled,
             ft.Text(f"Construction OS: {construction_os}")])
         abilities = self.ability_panel(build)
         active = next((o for o in character.owned_zoids if o.id == character.active_zoid_id), None)
@@ -1197,7 +1203,7 @@ class CharacterEditor:
         if not stats:
             notes.append("No playable Zoid is currently owned. Obtain a Zoid to start a new loadout.")
         if stats and stats["overloaded"]:
-            notes.append("Over carry capacity: speed, reaction, and fixed attack penalties apply.")
+            notes.append("Over carry capacity: speed, reaction, and fixed/removable attack penalties apply.")
         picture = zoid_picture(zoid_record) if zoid_record else None
         stat_grid = ft.ResponsiveRow(tiles, spacing=6, run_spacing=6)
         summary_content = [ft.Container(stat_grid, col={"xs": 8, "sm": 9} if picture else 12)]
@@ -1284,7 +1290,10 @@ class CharacterEditor:
             ], spacing=12, run_spacing=12, vertical_alignment=ft.CrossAxisAlignment.START),
                 col={"xs": 12, "xl": 4}),
         ], spacing=12, run_spacing=12, vertical_alignment=ft.CrossAxisAlignment.START)
-        self.page_cards = {"Overview": [profile, organoid, roster], "Combat": [resources, ft.ResponsiveRow(weapon_cards)],
+        self.page_cards = {"Overview": [profile, organoid, roster], "Combat": [resources, ft.ResponsiveRow(weapon_cards),
+            card("Area-of-effect attacks", [ft.Text(
+                "Each affected Zoid rolls d20 + Reaction. A total equal to or greater than the attacker's modified attack roll avoids half the damage. A lower total takes full damage. Resolve defenses and record the resulting damage manually.")]),
+            ],
             "Upgrades": [upgrades_card, inventory_card, equipment_card],
             "Pilot": [pilot_layout], "Transport": transport_cards}
         self.navigation.controls = [ft.Button(name, bgcolor="#213349" if name == self.view else None,

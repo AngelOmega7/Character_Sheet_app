@@ -65,6 +65,25 @@ class EditorTests(unittest.TestCase):
         self.editor.character = established_character(catalog)
         self.editor.render()
 
+    def test_normal_os_setting_survives_save_and_follows_pilot_level(self):
+        editor = self.editor
+        editor.level.value = "19"
+        editor.normal_os.value = True
+        editor.apply_organoid()
+        self.assertTrue(editor.character.build.normal_os)
+        self.assertEqual(editor.character.build.effective_organoid_level, 9)
+        self.assertTrue(editor.organoid_level.disabled)
+        editor.save()
+        saved = self.store.load(editor.character.id)
+        self.assertTrue(saved.build.normal_os)
+        self.assertEqual(saved.build.effective_organoid_level, 9)
+        editor.level.value = "21"
+        editor.apply_organoid()
+        self.assertEqual(editor.character.build.effective_organoid_level, 10)
+        editor.normal_os.value = False
+        editor.apply_organoid()
+        self.assertEqual(editor.character.build.effective_organoid_level, saved.build.organoid_level)
+
     def test_temporary_stats_survive_save_and_reset_on_rest(self):
         editor = self.editor
         baseline = calculate_stats(editor.character.build, editor.catalog)["current"]

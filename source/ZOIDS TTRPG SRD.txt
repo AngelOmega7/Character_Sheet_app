@@ -1,0 +1,600 @@
+﻿Contents
+
+
+Part 1: Pilots
+* Chapter 1: Pilot Stats
+* Chapter 2: Step-by-Step Characters
+* Chapter 3: Leveling Up
+
+
+Part 2: Zoids
+* Chapter 4: Zoid Types and Stats
+* Chapter 5: Organoids
+* Chapter 6: Equipment
+* Chapter 7: Zoid Development
+
+
+Part 3: Playing the Game
+* Chapter 8: Movement and Travel
+* Chapter 9: Combat
+* Chapter 10: Using Pilot Attributes in Zoids
+* Chapter 11: On Foot
+
+
+Appendix A: Conditions
+Appendix B: Weapon Properties
+________________
+
+
+Part I: Pilots
+
+
+Introduction:
+The following are a few terms you will need to know:
+* D20: a 20 sided dice roll
+* Advantage: rolling a D20 twice and taking the higher result
+* Disadvantage: rolling a D20 twice and taking the lower result
+
+
+Chapter 1: Pilot Stats
+
+
+Zoids is primarily about combat between giant mechanized beasts, though exploration of ancient ruins and scientific research are also important themes. Compared to other TTRPGs you may be familiar with, ZOIDS will probably have fewer stats associated with your character.
+
+
+Attributes:
+This game uses three primary attributes for player characters (called “Pilots”). These stats are Physical (PHY), Mental (MEN), and Social (SOC). One of the biggest differences between ZOIDS and many other popular TTRPGs is that your Pilot’s attributes have very little impact on combat. While each attribute does provide a minor bonus to combat, these bonuses are highly situational. Most of the time, combat is going to be impacted by the Pilot’s overall level, the Pilot’s “Fighting Style” and the Zoid being piloted.
+In ZOIDS, the pilot’s stats are instead used for primarily for Roleplaying purposes.
+
+
+At level 1, a Pilot starts with a 1, a 2 and a 3 that they may assign to their Attributes.
+Example: Zeru chooses to order his attributes as follows:
+* PHY: 1
+* MEN: 3
+* SOC: 2
+For more on how Pilot Attributes are used, see Part 3: Chapter 10.
+
+
+Personality:
+        The personality of a Pilot has little affect on gameplay, although it does impact which stats are boosted by some organoid systems. If this becomes relevant during gameplay, your GM may notify you that a particular color is associated with your personality. Do not feel constrained by this in making roleplaying decisions. Organoids change based upon their owner’s personality. It is up to the GM to track how your roleplaying decisions impact an organoid, you only need the color reference to know which of your stats are being boosted. You may be deemed a particular color because you fit all of the descriptors, or because you exhibit one very strongly.
+* White: Joyous, Kind, Nurturing, Happy
+* Red: Aggressive, Protective, Firm, Rude
+* Blue: Energetic, Reckless, Humorous, Friendly
+* Black: Reserved, Strategic, Haughty, Sinister
+Example: Arrow and Raven’s organoids are both Black. Arrow’s is black because he is a particularly strategic fighter, and doesn’t talk much. Raven’s is black because of his sinister bent. Both are black, but for very different reasons.
+
+
+Abilities:
+        Along with Fighting Style, a Pilot’s abilities are what really impact Zoids Combat. Every Pilot starts at level 1 with a single Zoid Ability and gains a new ability with every level.
+A Pilot may only have 6 Zoid abilities active at a time, though they may learn more than that. Active abilities may be swapped for inactive abilities after finishing a long rest, with one exception: when a new ability is learned, it may immediately be swapped for an active ability.
+Most Abilities have ranks. Whenever you would learn a new ability, you may instead increase the rank of an ability you already know by 1.
+In order to increase an ability’s rank, you must be of the prerequisite level, as shown below:
+* Rank 1/Level 1
+* Rank 2/Level 5
+* Rank 3/Level 10
+* Rank 4/Level 15
+* Rank 5/Level 20
+
+
+Zoid Abilities
+* (Type) (1-5)
+   * Choose a Type of Zoid. Add 5 to your Pilot Level when piloting a Zoid of the chosen Type. Increase this bonus by 5 for each additional rank of (Type) that you have.
+* (Size) Expert (1-4)
+   * Choose a Size of Zoid. Add 10% to the stats of any Zoid you pilot of the chosen size. Increase this bonus by 5% for each additional rank of (Size) Expert that you have.
+* Melee Multi-Attack (1-4)
+   * Gain an additional melee attack each turn for every rank of Melee Multi-Attack that you have.
+* Ranged Multi-Attack (1-4)
+   * Gain an additional melee attack each turn for every rank of Melee Multi-Attack that you have.
+* Laser Expert (1-4)
+   * Gain +1 to hit per rank with weapons that deal energy damage.
+* Missile Expert (1-4)
+   * Gain +1 to hit per rank with weapons that deal explosive damage
+* Particle Expert (1-4)
+   * Gain +1 to hit per rank with weapons that deal particle damage
+* Melee Expert (1-4)
+   * Gain +1 to hit per rank with melee weapons
+* Rifle Expert (1-4)
+   * Gain +1 to hit per rank with  weapons that deal Bullet damage
+* Anti-Air Pro (1-4)
+   * Gain 1 + 1/rank to hit with Anti-Air Weapons
+* Fleetfooted (1-4)
+   * Gain +50 speed per rank
+* Honed (1-4)
+   * Gain +5 reaction per rank
+* Comeback (1-4)
+   * Deal an extra die per rank of damage when below 20% health
+* Iron Defense (1-4)
+   * Gain +5 defense per rank
+* Sniper
+   * Gain +2 to hit with ranged attacks
+* True Tank (1-4)
+   * Defensive Equipment adds an additional +5 to Defense per rank
+* Armor Breaker (1-4)
+   * When using a weapon that lowers defense, lower defense by an additional 2 per rank
+* Evasion Master (1-4)
+   * Equipment that boosts reaction gives a +2 boost to Reaction per rank
+* Shield Master (1-4)
+   * Durability of Shields is increased by 25 per rank
+* Smoke Master (1-4)
+   * Increases the radius on Smoke Units by 10m per rank (+15m for rank 1 only)
+
+
+
+
+Chapter 2: Step-by-Step Pilot Creation
+
+
+1. Choose Starting Skills and Abilities
+At first level, you begin with 1 Zoid Ability and 1 Pilot Attribute Point. You gain an additional Zoid Ability every level, and an additional Pilot Attribute Point at level 4, and every 4 additional levels after that: 8, 12, 16, etc. At every odd level, you may upgrade one of your Zoid abilities.
+
+
+2. Choose a Starting Zoid
+Select a starting Zoid from the following list: Command Wolf, Redler, Gun Sniper, Rev Raptor, Shield Liger, Zaber Fang Old.
+Alternate starting Zoids are up to the GM’s discretion.
+See Chapter 12: Zoid Development for the rules on developing Zoids and the ZOIDS Companion for a Database of Zoids to choose from.
+
+
+3. Choose Your Fighting Style
+
+
+Pilot style functions almost like a second class. It is what determines how a Pilot’s attributes and skills impact the statistics of their Zoid. A Pilot’s Strength is not usually indicative of the damage their Zoid’s melee attacks will do. Rather, timing and accuracy are more likely to have an impact. Likewise, a big and burly pilot may not have a preference for big and burly Zoids, and how they pilot their Zoids may look very different from how they fight when not in a Zoid. Due to the complexity of how one character’s stats affect another character’s stats, Pilot Style has been introduced to simplify this. 
+Your Pilot Style is not set in stone at character creation: it can be changed whenever you have access to a Zoid’s Institute or another facility capable of Zoid Development. Your Pilot Style is the current role you’re filling in your party, and will likely change as your Zoid and the Zoids of your fellow party members changes.
+
+
+4. Flesh out your Pilot
+
+
+Give your pilot some personality and a description of their appearance. You know… roleplaying.
+
+
+Chapter 3: Leveling Up
+As a Pilot’s prowess increases, so too does their impact on their Zoid’s stats. This impact is mostly dependent on their Pilot Style. A few stats get modified aside from the Pilot Style improvements. See Chapter 11: Equipment for more on Fixed Weapons and Removable Equipment.
+
+
+There is already too much to track in this game to bother with tracking experience points. This game relies on the assumption that for every 3 notable battles that the players win, or every ruin the players explore, they should level up once. The GM should also consider awarding levels when narratively significant things are accomplished. As the GM, it is always your prerogative to slow advancement or speed it up as appropriate for the pacing of your game.
+
+
+Example: Will has won 6 notable battles and explored an old war research center. He has leveled up 3 times from those achievements. He has also discovered how to fuse his Leo Blaze with his party member RD’s Liger Zero. This accomplishment earned him another level.
+
+
+The maximum level of a Pilot is 100. 
+When a character levels up they gain the following benefits:
+* They gain a new Zoid Ability at every level.
+* They gain a new Pilot Attribute point at level 4 and every 4 levels after that (4, 8, 12, 16, etc.).
+* Their Pilot Style Bonuses increase. Honestly, just use the Google Sheet for this. The math is alot to track. If you really want to do the math yourself, see Appendix B: Pilot Style Tables.
+Feats
+When a pilot reaches level 10, and then every 10 levels after, they gain a Feat, as listed below:
+* Phalanx Fire- When attacking an enemy Zoid with a ranged weapon, gain advantage on the attack roll if an ally has dealt damage to that enemy Zoid this round.
+* Scrappy- If there are no ally Zoids within 60m of you, while there are two or more enemy Zoids within 60m of you, gain advantage on all attack rolls you make.
+* Mobile- When you use your action to dash, you do not provoke attacks of opportunity for the rest of the round.
+* Overtuned- Your non-weapon Zoid Equipment lasts for twice the number of rounds.
+* Pit Stop- It only takes you half as many rounds to complete a CAS swap during combat.
+* Deadshot- You may forgo your movement on your turn to fire all ranged weapons at your maximum range without penalty.
+* Demolitionist- Once per rest, you may set your Zoid’s Energy to its Maximum as a free action
+
+
+________________
+
+
+Part II: Zoids
+
+
+Chapter 4: Zoid Types and Stats
+
+
+Type: Every Zoid has a Type, which represents the class of Zoid it fits into. Zoids of the same Type handle similarly, and proficiency with a specific type is largely transferable among Zoids of that type.
+* Types
+   *  Tiger, Liger, Wolf, Insect, Gorilla, Raptor, T-Rex, Mammal, Dinosaur, Flying, Reptile, BLOX
+
+
+Size: Zoids come in several size categories, which can affect how pilots handle them. Sizes range from: Small, Medium, Large, Very Large,and Extra Large (S, M, L, LL, XL).
+
+
+Health: How much Damage a Zoid can take before being incapacitated. Note: Zoid HP is not on the same scale as Pilot HP. 1 point of Zoid HP/Damage equals 10 points of Pilot HP/Damage. This means that Pilot small arms will likely be completely unable to damage a Zoid.
+
+
+Armor: This measures how hard it is to land a hit on a Zoid, combining both the Zoid’s ability to avoid an attack, and the capability of the Zoid’s armor to nullify an attack.
+
+
+Defense: This tracks a Zoid’s ability to mitigate damage when hit. Defense is subtracted from the total damage a Zoid takes when hit by an attack. Defense cannot reduce damage to less than 1 point of damage. 
+Some equipped armor affects only certain types of damage. There are 5 damage types: Melee, Laser, Explosive, Particle, and Bullet. An armor unit that lists M, L, E, P, B, or any combination of those only reduces damage from sources dealing those types of damage.
+
+
+Speed: Simply put, this is how fast a Zoid can move. In combat, a Zoid can move a number of meters up to their speed in a single round using their move action.
+
+
+Reaction: This stat measures a Zoid’s ability to react to danger. It is used both to determine initiative order, and to avoid Area of Effect attacks. A few weapons make attacks versus Reaction instead of Armor Class.
+
+
+Range: The maximum range at which a Zoid can accurately fire a ranged weapon. A Zoid may not make a ranged attack roll at a target beyond this range while in combat. Most weapons can only be fired accurately at half of this range without suffering penalties.
+Under certain circumstances, a Zoid can shoot something beyond this range: a long range rifle attached to a Zoid may be able to be fired at longer ranges when the Zoid is not in combat and is able to slowly line up a shot; if the target is particularly massive, like the side of a mountain, and the Zoid isn’t concerned with hitting a particular part of the mountain, they don’t need to bother aiming.
+
+
+Carry Capacity: A measure of how much equipment a Zoid can carry. Human equipment like food rations, clothing, small arms, etc. is not tracked, as its weight is negligible compared to a single point of a Zoid’s CC. A zoid can be outfitted with more equipment that CC allows, but they suffer penalties.
+
+
+Energy: The Zoid’s maximum Energy capacity, which is used for attacking with weapons and activating equipment. The default value of current Energy is equal to half of a Zoid’s maximum Energy. Any time initiative is rolled, set current energy to this default value unless the GM states otherwise.
+A player may add their Pilot level (not counting Level bonuses from abilities) to their Zoid’s maximum Energy.
+If an Organoid or Organoid System is active, add that Organoid’s level to the Zoid’s maximum Energy.
+
+
+EPT: Energy Per Turn is the value of how much Energy the Zoid naturally recharges in a single round. At the start of every Zoid’s turn, add its EPT to its current Energy.
+
+
+Chapter 5: Organoids
+
+
+All Zoids have some manner of sentience, and Wild Zoids are capable of acting autonomously without a pilot. However, most of these Zoids have very little true intelligence. Organoids change that.
+There are 2 types of Organoids: Organoids and Organoid Systems. Organoids function as a second pilot, but are unbelievably rare, thought to have all died out during the Calamity.
+Organoid systems are still rare, but more easily found. An organoid system is a device made to mimic the functionality of an Organoid. 
+Whether a legitimate organoid or an organoid system, they impact a Zoid’s stats in the same way.
+On the Zoid page of the Character Sheet, there is a section for Organoids. When active, the organoid modifies the Zoid’s stats and provides certain abilities.
+An organoid’s Level Capacity varies depending on the type of Organoid.
+* Limited OS: a Limited OS provides no bonuses, but still allows the Zoid to act as if it had an organoid if the Pilot is knocked unconscious.
+* Normal OS: the level of the Organoid equals ½ the level of the Pilot
+* Organoid: the level of the Organoid equals the Pilot’s level, up to a maximum of 40
+   * Wild Organoid System: this is an organoid system that has been reverse engineered from a deceased organoid. It functions identically to a real Organoid, but it remains active at all times. In combat, for the purpose of tracking stats, consider a Wild OS to be activated as a free action before the initiative order is set.
+Organoid Color: color is determined based upon the type of Organoid
+* Limited OS and Normal OS: color is set when the Zoid is constructed
+* Organoid and Wild OS: color is based upon Pilot personality, as shown below, and can change
+   * White: Jovial
+   * Blue: Energetic
+   * Red: Aggressive
+   * Black: Reserved
+Organoids and Organoid Systems require an action to activate, and can only remain active so long as there is a Pilot piloting the active Zoid. If the Pilot leaves the cockpit, or the Zoid is knocked out (destroyed or “System Down”) the Organoid is deactivated.
+
+
+HP and EP: When an organoid is activated, it will increase the Zoid’s maximum HP and EP by a certain amount. Be sure to increase the Zoid’s current HP and EP by the same amount.
+
+Chapter 6: Equipment
+
+
+When you activate an equipped unit as an action, and that unit increases your Zoid’s speed (e.g. the Liger Zero’s Ion Boosters), you may also Dash as part of the same action. You must use your entire available movement each turn while a speed boosting unit is active. Failing to use your entire movement deactivates the speed boost.
+When you activate an equipped unit that increases your Attack Bonus, and ONLY your attack bonus (e.g. the Konig Wolf’s Head Gear), you spend all of your movement instead of your regular action. Moving while an Attack boosting unit is active will deactivate the unit.
+
+
+For more info on Equipment, see the Equipment Guide.
+
+
+Chapter 7: Zoid Development
+
+
+Zoid Development is the process of constructing a new Zoid. To develop a Zoid, several components are required.
+
+
+Zi Data: The specific data governing a Zoid’s functions. It contains blueprints, an operating system, and code specific to the Zoid, as well as a driver for interfacing between the Zoid Core and the Zoid’s body.
+
+
+Zoid Core: The Biomechanical component of a Zoid. Zoids evolved to contain all their organs within their Core. This allows a core to be transferred to a new body if the old body is destroyed, so long as the Core is intact. Specific types of Zoid Cores are required, though a Zoid Core can be reused if the Zoid in development requires the same type of Core. For example: Zeru’s Command Wolf is totaled in a battle, but its core remains intact. Instead of rebuilding the Command Wolf body, he reuses the H1 Core and builds a Shield Liger, which requires the same H1 Core.
+
+
+Rare Parts: Some Zoids require specific parts to construct, which aren’t readily available from normal manufacturers. These parts must be specifically sourced, either by tracking down a seller, salvaging them from another Zoid, or looting them from Ruins. For example: Athle is developing a Lightning Saix. This Zoid requires a GR Core, as well as a Limited Organoid System. Organoid Systems are rare technology, and not readily available from manufacturers. Instead of searching for a seller who may have one, he hunts down a wild Gun Sniper Zoid, and salvages its Lmt. OS to reuse in his new Lightning Saix.
+
+
+Base Zoids: Some Zoids require a base Zoid to build upon. Sometimes this is a straight upgrade, and does not require a new Zoid Core. Other times, the new Zoid developed is a more significant change from the old Zoid, and requires a new Zoid Core. When a new core is required, the old Core is refunded and may be kept for later use or sold.
+
+
+Generic Parts: The manufacture of Zoids parts is a massive industry, and many of the parts are standardized. The majority of a new Zoid’s body, armor, and weaponry can be purchased from manufacturers in any major city. This component of Zoid Development is noted in the ZiData with a parts cost. If a player can afford the parts cost, they do not need to bother with collecting all the required parts.
+
+
+Paint (Optional): Zoids parts are largely standardized, which means most newly developed Zoids will be in a standardized Color. But many Zoids pilots customize their Zoids, both for performance, and for character. There is an entire industry surrounding Zoids paint jobs. For a Small Size Zoid, a basic color paint job costs 500g, with prices increasing by size: M-L, 1000g; LL, 5000g; XL, 10,000g.
+
+
+Salvaging a Zoid: Zoids can be salvaged when destroyed. However, doing so requires care be taken in destroying it. When a player destroys an enemy Zoid, and that Zoid is not destroyed as part of an organized Battle, that Zoid may be salvaged. The Pilot must choose between the Zoid Core, ZiData, Rare Parts, or Supplies, when they destroy the Zoid. They can then harvest the parts they selected, which can be reused for Zoid Development. Salvaging Supplies provides Generic Parts in value of half that Zoid’s Development Cost. These can either be sold or used to reduce the Development Cost of a new Zoid.
+
+
+(Collecting ZiData of Base Zoids): When a player would collect ZiData from a destroyed Zoid, they may instead choose to collect the ZiData of a Zoid used as a base Zoid for that Zoid’s construction. For example: Arrow destroyed a Proto Zaber. He already has the Zi Data for the Proto Zaber, but is missing the data for the Old Zaber Fang, the first base Zoid in the construction chain for the Proto Zaber. He chooses to extract this data from the Proto Zaber instead of salvaging anything specific to the Proto Zaber.
+
+
+Upgrading a Zoid: Dedicated Zoid pilots are seldom content to rely on factory settings and specs. Many of the statistics of a Zoid can be upgraded. Each stat that can be upgraded can be upgraded a total of 5 times.
+
+
+NOTE: UPGRADE COSTS ARE STILL BEING BALANCED
+
+
+Speed: By increasing generator output, the Zoid’s top speed can be increased. Each speed upgrade costs 5000g x the number of upgrades^, and increases speed by 30m, up to a maximum of +150m with 5 upgrades.
+
+
+Reaction: By upgrading the Zoid’s circuit conductivity, the Zoid’s Reaction time can be upgraded. Each upgrade costs 5000g x the number of upgrades and increases Reaction by 1, up to a maximum of +5 with 5 upgrades.
+
+
+Defense: By bonding lightweight layers of armor to the Zoid’s frame, the Zoid’s defense can be upgraded slightly without impacting its carry weight. Each upgrade costs 5000g x the number of upgrades and increases Defense by 5, up to a maximum of +25 with 5 upgrades.
+
+
+Carry Weight: By upgrading the suspension in the joints of the Zoid’s frame, its Carry Weight limit can be increased. Each upgrade costs 5000g x the number of upgrades and increases Carry Weight by 10, up to a maximum of +50 with 5 upgrades.
+
+
+Weapon Damage*: By increasing generator output to the weapons, the damage they do can be increased. Each upgrade costs 10,000g x the number of upgrades and increases damage by 20, up to a maximum of 100 with 5 upgrades.
+
+
+Weapon Accuracy*: By tightening the tolerances of gun bores, upgrading guidance systems or missiles, and loading better targeting algorithms, the accuracy of weapons can be increased. Each upgrade costs 10,000g x the number of upgrades and increases Attack Bonus by 1, to a maximum of +5 with 5 upgrades.
+________________
+
+
+Part 3: Playing the Game
+
+
+Chapter 8: Movement
+        
+Km/h or m/s?
+Every Zoid has a Speed stat, which represents its max Speed. This number is calculated in kilometers per hour. However, this is not a terribly useful number for use in grid based combat. This game chooses to fudge the math a bit, and simplify down to meters per second. The reasoning? Meters per every 4 seconds is about the same speed as kilometers per hour. If we say one round lasts 6 seconds, that allows us to move and do another action in one turn with the timing feeling reasonably realistic.
+        This simplification of movement allows the same speed stat to be used in both narrative time and turn-based time.
+
+
+Turn Based Movement:
+        When tracking gameplay in turn based time, a Zoid can move up to its maximum speed on its turn, plus an additional dash action. In turn based movement, the speed stat is represented in meters per second.
+        Turn based movement is best for combat, traversing hazardous terrain, or anytime that rapidly occurring events with important stakes need to be tracked.
+        When tracking movement on a grid, round to the nearest increment of the grid’s size, e.g. round to the nearest increment of 30m for a 30m grid.
+
+
+
+
+
+
+
+
+Narrative Movement:
+        When tracking gameplay in narrative time, a Zoid’s speed stat is represented in kilometers per hour. 
+Narrative movement is best for traveling long distances or exploring expansive ruins with few hazards.
+
+
+Jumping
+A Land-based Zoid can jump a distance of up to ⅓ its max speed, rounded to the nearest increment of 30m, if it has room to run that same distance before it jumps. From a standstill, a Zoid may only jump 30m. Temporary increases in a Zoid’s speed also increase its max Jump distance.
+Example: Bit Cloud activates the Ion Boosters on his Liger Zero Jager. He could normally jump 110m with a running start. With the Ion Boosters, his speed is doubled, and his jump distance becomes 220m.
+
+
+Flying and Swimming
+        Moving a multi-ton metal creature through the air or the water is difficult to do. Unless specifically designed for it, Zoids are unable to fly or swim.
+        Zoids that are specifically designed for aerial or marine deployment travel through the sky or the water at their speed.
+        During narrative travel, the GM should reduce travel times for flying or swimming Zoids to account for a lack of obstacles and the ability to travel “as the Pteras flies”.
+
+
+Stealth
+        Like swimming, moving a Zoid quietly is quite the feat. Without specific stealth technology equipped, stealthy movement in a Zoid is more a question of logistics than agility: no matter how agile a Zoid is, several tons of metal taking a step is going to make noise. 
+        While certain Zoids have stealth technology to dampen the noise they make and hide their large forms, stealth with Zoids is mostly about staying under the radar, not sneaking past guards.
+        Example: Zeru wants to sneak past military checkpoint in his Liger Zero. One option is to take a route through the bottom of a series of box canyons, using the geography to hide his Zoid from remote sensors. Another option is to equip his X CAU, and use its stealth field generator to move through the sensor field undetected.
+
+
+Difficult Terrain
+        Certain terrain slows down Zoids not specifically designed to deal with it. Ice, bog, loose sand and shallow water can all cause trouble. If the GM determines that terrain poses a hazard for your Zoid, your speed is halved when moving on that terrain.
+
+
+Coasting
+        Flying Zoids can not cease moving, or they will stall out and fall. A Flying Zoid MUST use 60m of movement each turn. This is called Coasting, and as long as it uses no additional movement than is required to Coast, they are considered as not having moved for the purposes of other rules, e.g. certain equipment units and Attacks of Opportunity.
+
+
+Chapter 9: Combat
+ZOIDS uses a 30m hex grid as its base unit for grid based combat.
+
+
+Initiative
+        When combat begins, the first step is to determine Initiative. This is done by ranking all Zoids participating in the combat by their Reaction stats. Player Pilots (and certain NPCs at the DM’s discretion) may add their MEN to their Reaction. This initiative determines the turn order.
+
+
+
+
+The Round
+        One round takes place over the course of 6 seconds. This may seem like a short amount of time, but sit and count out 6 seconds, and then ask yourself how many times you could pull a trigger in 6 seconds.
+        For the purpose of a TTRPG, it would be unreasonable to attempt to resolve ever combatant’s actions simultaneously, but in a real battle, everyone would be acting at the same time. Thus, we break it down into 6 second increments, and let each turn in the round represent what each combatant is doing in those 6 seconds. A round is over when every combatant in the initiative has taken a turn, and any environmental effects have been accounted.
+
+
+The Turn
+        One turn represents a single character’s actions during a round. On a character’s turn, they may take 2 actions: a move action and a standard action. There are no bonus actions in ZOIDS. Communicating by speech is always allowed as a free action, though it is up to the GM’s discretion to cut off lengthy discussion in character discussions during combat due to the 6 second nature of each round. Other free actions may be allowed at the GM’s discretion for things that either take relatively little time, or can be done simultaneously with other actions.
+* Move: a Zoid may move up to its maximum movement speed in m/s. This movement can be split: you can move some, take your standard action, and then move some more. Zoids that have speed boosting equipment active MUST use their entire movement each turn. See Note: Turning Radius later in this chapter.
+   * Jumping is considered part of the Move action
+* Act: a standard action may be used once per turn, though it is not required. Common actions in combat are attacking with a weapon (or weapons. See Note: Multiple Attacks later in this chapter), using a healing item, or activating an equipped unit, though anything other than movement may qualify as a standard action.
+At the Start of each Turn, increase your Zoid’s current energy by its EPT.
+
+
+Making an Attack: Step By Step
+1. When you decide to make an attack, first select which weapon you are using, and then select a target of the attack that is in range. 
+2. Next, roll a d20 and record the result.
+3. Calculate what bonuses to add to the roll, including the specific weapon’s to hit modifier and any bonuses from the Pilot’s Fighting Style and/or Abilities, as well as modifications that have been made to the weapon.
+   1. If you are using the Google Sheets character sheet, this calculation is handled for you.
+4. Apply any conditional modifiers from Appendix A.
+5. Compare the result of the roll to the target’s Armor. If the result is equal or greater than the Target’s Armor, the attack hits.
+   1. If the weapon hits an area rather than a specific target, every Zoid in that area may attempt to dodge by rolling a d20 and adding their Reaction. If the result is greater than the attacks roll to hit, that Zoid avoids taking any damage.
+6. Calculate Damage:
+   1. If the target has an active Energy Shield, subtract the weapon’s Damage value from the Shield’s current HP. If this reduces the Shield’s HP to zero, the shield is deactivated and any leftover damage is lost.
+   2. If the target does not have a shield, substract the target’s Defense from the weapon’s damage value. Subtract the result from the target’s HP.
+7. Resolve additional Effects:
+   1. Check whether the weapon has any effects other than damage and apply those per the weapon’s description.
+   2. Check whether the weapon requires recharging to use again and keep track.
+   3. Subtract the weapon’s Energy cost from your Zoid’s current Energy
+
+
+Critical Hits
+        When an attack is rolled and the d20 rolls a 20 (without modifiers), it is a critical hit. Critical Hits bypass Defense and pierce shields. When calculating damage from a Critical Hit, do not subtract the target's Defense from the damage. 
+If a shield is hit with a Critical Hit, it is deactivated regardless of how many HP it has left. If the damage was more than the remaining HP of the shield, the difference is dealt to the target’s HP as Damage.
+
+
+Critical Misses
+        When an attack is rolled and the d20 rolls a 1 (without modifiers), it is a critical miss. If it is a ranged weapon, the weapon jams and must be unjammed as an action before it can be used again. A pilot (not a wild zoid) may make a Mental check vs 15 to clear the jam immediately without needing to use an action to do so.
+
+
+Activating Non-Weapon Equipment
+        When you use equipment other than weapons, you use your action (most of the time). Declare that you are activating the equipment as an action, and then apply its effects.
+        When equipment is activated that boosts your speed, you must also use the additional movement you have gained and the turn you activated it, and every turn that it remains active. On subsequent turns, remember that your Pilot must succeed on a G-Force check (1d20 + PHY >= 10) or the speed boost must be deactivated. Speed boosts may be deactivated as a free action.
+        When equipment that increases your range or your attack bonus with a weapon is activated, you may use your move action to activate it instead of your standard action. You may not move while such a unit is active, as doing so will deactivate the unit. (See Note: Coasting in this chapter 8.)
+
+
+Other Actions in Combat
+        Sometimes, the most optimal thing a Zoid can do isn’t to make an attack or activate equipment. Coordinating with your team can be more effective than fighting on your own. Below are three examples of other actions you can take in combat.
+
+
+Aim: use your action to give yourself a +10 on attacks on your next turn.
+
+
+Dodge: Use your action to boost your Armor and Reaction until the start of your next turn.
+
+
+Feint: Use your action to give an enemy Zoid the Distracted condition when resolving attacks coming from Zoids other than yours.
+
+
+CAS Units
+        CAS stands for Changing Armor System. CAS Units, or CAUs, are designed to change the fixed weapons on a Zoid rapidly. Only specific Zoids have CAU capability.
+        In order to change CAUs in combat, the Zoid must first move to a CAU station and use an action to activate it. They then must spend 2 standard actions on subsequent turns to complete the CAS. Once CAS starts, it cannot be aborted until complete. On the turn CAS completes, the Zoid may use their movement to begin moving back towards the battle.
+
+
+Attack Range
+        The range of an attack varies. Melee attacks may be made against targets that are within 30m. Ranged attacks get more complicated.
+        Most Ranged attacks can be fired without penalty at any target within ½ of a Zoid’s Range stat.
+        Targets more than ½ the distance but less than the maximum Range can be attacked with Disadvantage.
+        Ranged weapons can only be fired at targets within 60m with disadvantage.
+        If a weapon has the Long Range property, it can be fired up to the Zoid’s maximum range without disadvantage, but cannot be fired at targets within 60m.
+        If a weapon has the Close Range property, it can be fired at targets within 60m without disadvantage but has a maximum range equal to ½ the Zoid’s range unless otherwise stated in the weapon’s description.
+
+
+Energy Cost
+        While most Zoid weapons do not have to worry about ammunition, being designed for sustained combat, they use a particularly high amount of energy and therefore require judicious use.
+        All weapons have an Energy Cost rating, which represents the amount of power required to make an attack with the weapon. Each time a weapon or piece of equipment is used, subtract the Energy Cost of the weapon from the Zoid’s current Energy. A weapon or piece of equipment cannot be used if it would reduce the Zoid’s current energy below zero.
+        A pilot may take the Charge Energy action on their turn, adding their Zoids EPT + the Pilot’s Mental Attribute to their Zoid’s current energy.
+
+
+Attacks of Opportunity
+Moving out of melee range of an enemy Zoid provokes an attack of opportunity, unless the Disengage action is taken. Making an attack of opportunity requires the Zoid to spend its reaction. Only 1 reaction can be used per round, and it resets at the start of the Zoid’s next turn.
+
+
+Core Damage and “System Down”
+        When a player Pilot’s Zoid (or the Zoid of a named NPC determined by the GM) is reduced to 0 HP, it suffers a system down. The Zoid becomes incapacitated, and can take no actions. On the Pilot’s turn, they can attempt to make a repair check to restore the Zoid to functionality with 1 HP.
+        To make a repair check, roll 1d20 and add the Pilot’s MEN. If the result is a 10 or lower, the Pilot’s efforts damage the Core, and it suffers 1 point of Core damage. If the result is 20 or higher, the Zoid loses the “System Down” condition and regains 1 HP.
+If a Zoid with the “system down” condition takes damage from an attack, they suffer one point of Core Damage. If a Zoid accumulates 3 points of Core Damage, its core is permanently destroyed and must be replaced. Core Damage less than 3 does not naturally recover, and can only be repaired at a Zoid Laboratory by repairing all damage to the Zoid.
+
+
+Repairing Damage
+        Zoid damage can be repaired in 2 ways: Consumable Repair Kits and Zoid Institutes (or comparable facilities).
+        A Consumable Repair Kit (also abbreviated to CA Ion “X”) comes in 4 sizes: S (50 HP), M (150 HP), L (300 HP), and Z (50% HP). Using a CA Ion in battle requires an action. Such Kits are powerful, but rare, and rely on ancient technology that is not fully understood.
+        Zoids can also be repaired by hand, so long as they have access to the appropriate facilities and the time. Doing so requires repair parts valued at 10g per point of damage repaired.
+        Weapons broken by other Zoids can also be repaired, at a cost of 10,000g per weapon (the same cost as upgrading the damage).
+
+
+Chapter 10: Using Pilot Attributes In Zoids
+        As mentioned in Part 1, there are three Pilot attributes. While Chapter 11 will delve into how these should be used when a Pilot is not Piloting a Zoid, there are a few ways these attributes become relevant while inside a Zoid cockpit.
+        PHY affects how well a pilot can withstand the physical strain and g-force inherent in piloting a Zoid. This becomes relevant in two ways: resisting being knocked unconscious, and maintaining high speeds.
+* When a Zoid suffers a “System Down” because its health reaches 0, the Pilot must make a d20 roll to avoid being knocked unconscious by the impact. A roll of 15 or higher is required, and may be reattempted each round the pilot is unconscious. The pilot may add their PHY to the roll.
+* When a speed boosting equipment unit is active at the start of a pilot’s turn, the pilot must make a d20 roll. If the result is less than 10, the speed boosting unit is deactivated at the end of that turn. The pilot may add their PHY to the roll.
+
+
+        MEN affects how well the pilot maintains focus during combat and their ability to keep their Zoid running in spite of damage.
+* When a Zoid suffers a “System Down” (either from damage or due to another effect), the Pilot may add their MEN to the roll to get the Zoid active again.
+* A Pilot adds their MEN to their Zoid’s Reaction stat
+
+
+        SOC affects a pilot’s ability to handle difficult Zoids. If a pilot’s Level + SOC is equal or greater than the Zoid’s level requirement, they can ignore the penalties from being under the level requirement. Do not include SOC when calculating stat increases from Pilot Level.
+
+
+
+
+
+
+
+
+________________
+
+
+Appendix A: Conditions
+
+
+System Down: The Zoid is unconscious and on the brink of destruction. It cannot move until repaired.
+
+
+System Freeze: The Zoid is stunned and cannot move until the System Freeze condition is lost.
+
+
+Pilot Down: The pilot loses consciousness, though the Zoid may still fight without its pilot’s input. The pilot’s level is temporarily set to 1 and the effects of any Pilot abilities are lost. If the Zoid has an organoid system, the Pilot’s level is reduced to the Organoid’s level.
+Example: Zeru is level 20, with the Liger Type 2 ability. He is piloting a Blade Liger with a Normal OS. When he is knocked unconscious, the Blade Liger can continue to act, using Zeru’s stats as if he were a level 13 pilot, but does not get the bonuses of any of Zeru’s abilities.
+
+
+Restrained: The Zoid cannot use its movement. Flying Zoids stall out and fall 180m each turn, taking 50 damage per 180m fallen, ignoring armor.
+
+
+Blinded: the Zoid cannot see using its visual optics. It may still be able to detect things using Radar or other equipment.
+
+
+Slowed: the Zoid’s speed and ability to avoid attacks is reduced.
+
+
+
+
+High Ground: If a Zoid has an altitude advantage over another Zoid of 100m or more, and is still standing on solid ground (e.g. on a cliff overlooking the enemy Zoid), that Zoid gains the High Ground condition.
+
+
+Concealed: The concealed condition applies to attack rolls between any two Zoids in which at least one of them is not visible to the other. “Visible” includes only actual sight; radar and some other methods of detection do not make a Zoid visible, though their bonuses may still apply. The GM determines whether a Zoid is visible due to another Zoid’s equipment. The Concealed condition may sometimes be applied at the same time as the Blinded condition, as in the case of Smokescreens (generally, if you are in a Smokescreen, you can still see things outside the Smokescreen, but not other things inside the Smokescreen with you).
+
+
+Covered: If you are 50% or more obscured from an enemy’s sight (determined by the GM) by a physical obstacle (Including another enemy Zoid) ranged attacks against you have disadvantage. Attacks that hit all targets in an area of effect ignore cover.
+
+
+Flying: A flying Zoid gains a +10 bonus to attacks. Attacks made against a flying Zoid have a -10 to hit unless they have the Anti-Air property. Flying Zoids do not gain the benefit of the Anti-Air property on weapons.
+
+
+Aiming: A Zoid with the aiming condition gets +10 on attacks they make.
+
+
+Dodging: a Zoid with the dodging condition gets +10 to armor and reaction.
+
+
+Distracted: Attacks against a Distracted Zoid gain a +10 bonus to hit.
+
+
+The following table lists the bonus to attack rolls when certain conditions are applied to the attacker or defender. The attacker column shows the modifier applied to the attack roll when the attacker has the condition. The defender column shows the modifier to the attack roll when the defender has the condition. If both have the same condition, both modifiers are applied (and in some cases cancel each other out).
+
+
+Condition
+	Attacker Modifier
+	Defender Modifier
+	System Down/System Freeze
+	NA
+	Melee automatically crit; +10 to ranged
+	Slowed
+	-5
+	+5
+	Restrained
+	-5 to ranged
+	+5 to ranged
+	Blinded
+	-20
+	+10
+	High Ground
+	+10 to ranged
+	-5 to ranged
+	Concealed
+	+10
+	-20
+	Covered
+	NA
+	Disadvantage to ranged
+	Flying
+	+10
+	-10
+	Aiming
+	+10
+	NA
+	Dodging
+	NA
+	-10
+	Distracted
+	NA
+	+10
+	
+
+
+
+________________
+
+
+Appendix B: Weapon Properties
+
+
+Ranged: Attack is made at range. Attacks closer than 60m are made at disadvantage. Attacks beyond Normal Range (further than ½ maximum range) are made at disadvantage.
+Close Range: Ranged attacks made at Close Range (within 60m) are not made with disadvantage. Cannot be fired at Long Range. Can be used for Attacks of Opportunity.
+Long Range: Ranged attacks at Long Range (beyond Normal range) are not made with disadvantage. Cannot be fired at Close Range.
+Melee: May be used to attack a target within Reach (30m for Small, Medium and Large Zoids. 60m for LL and 90m for XL). Can be used for Attacks of Opportunity.
+Laser: Attacks use intense light and heat to cause damage.
+Explosive: Attacks use concussive force to cause damage.
+Bullet: Attacks use a hardened physical projectile to cause damage.
+Particle: Attacks use high energy particles to cause damage.
+Electrical: Electrical attacks, in addition to their damage, have a change to Freeze the target. On a hit, there is a 50% (1d100<=49) chance that the target is frozen. If the attack misses but is higher than the Zoid’s reaction, it has a 10% (1d100<=9) to freeze the target, but does no damage. Frozen targets may reroll at the end of their turn to shake off the effect.
+Acid/Defense: Acid/Defense attacks are made against the target’s Reaction rather than Armor. They deal no damage to HP, but instead reduce the target’s defense by an amount equal to the damage. The target’s armor is also reduced by 3.
+Homing: Homing attack rolls that miss may be rerolled vs. the target’s Reaction rather than Armor. If they hit in this way, the damage dealt (before applying armor) is halved.
+Piercing: Ignores Shields. Attacks made with piercing weapons bypass shields, doing damage to the Zoid without affecting the shield.

@@ -87,7 +87,9 @@ class StatsTests(unittest.TestCase):
         self.assertTrue(overloaded["overloaded"])
         self.assertEqual(overloaded["base"]["speed"], 153)
         self.assertEqual(overloaded["weapons"][0]["base_to_hit"], 11)
-        self.assertEqual(overloaded["weapons"][4]["base_to_hit"], 16)
+        self.assertEqual(exact["weapons"][4]["base_to_hit"], 16)
+        self.assertEqual(overloaded["weapons"][4]["base_to_hit"], 10)
+        self.assertEqual(overloaded["weapons"][4]["to_hit"], 13)
 
     def test_frame_upgrade_units_and_order(self):
         result = self.calc(abilities=(), upgrades=Upgrades(speed=2, reaction=2, defense=2, capacity=2))
@@ -196,9 +198,19 @@ class StatsTests(unittest.TestCase):
 
     def test_organoid_hit_percentage_applies_to_all_eight_slots_when_active(self):
         result = self.calc(equipment=("Particle Cannon",) * 4, organoid_enabled=True, organoid_level=5, organoid_color="Black")
-        # Overloaded fixed bases: 11, 8, 0, 10. Removable bases: 16.
+        # Overloaded fixed bases: 11, 8, 0, 10. Removable bases: ceil(16 * .6) = 10.
         # Pilot 25% + Black level 5 Organoid 25% => multiplier 1.5.
-        self.assertEqual([w["to_hit"] for w in result["weapons"]], [17, 12, 0, 15, 24, 24, 24, 24])
+        self.assertEqual([w["to_hit"] for w in result["weapons"]], [17, 12, 0, 15, 15, 15, 15, 15])
+
+    def test_normal_os_rounds_down_and_uses_derived_level_for_all_bonuses(self):
+        for pilot, expected in ((1, 0), (19, 9), (20, 10), (21, 10), (100, 40)):
+            for color in ("White", "Red", "Blue", "Black"):
+                with self.subTest(pilot=pilot, color=color):
+                    normal = replace(self.example, pilot_level=pilot, abilities=(), normal_os=True,
+                                     organoid_enabled=True, organoid_color=color, organoid_level=37)
+                    manual = replace(normal, normal_os=False, organoid_level=expected)
+                    self.assertEqual(normal.effective_organoid_level, expected)
+                    self.assertEqual(calculate_stats(normal, self.catalog), calculate_stats(manual, self.catalog))
 
     def test_organoid_hit_stacks_with_size_before_flat_fixed_upgrades(self):
         result = self.calc(abilities=("Lion Type 1", "Small Expert"), organoid_enabled=True, organoid_color="Black", organoid_level=5, upgrades=Upgrades(accuracy=2))

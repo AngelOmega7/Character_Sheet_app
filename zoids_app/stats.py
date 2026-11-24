@@ -85,13 +85,18 @@ class CharacterBuild:
     inactive_abilities: tuple[str, ...] = ()
     armor_up: int = 0
     armor_down: int = 0
+    normal_os: bool = False
+
+    @property
+    def effective_organoid_level(self):
+        return min(40, self.pilot_level // 2) if self.normal_os else self.organoid_level
 
     def __post_init__(self):
         if len(self.abilities) > 6:
             raise RuleError("At most six active abilities are supported")
         if any(len(v) != 4 for v in (self.equipment, self.equipment_active, self.fixed_active)):
             raise RuleError("Exactly four fixed and removable equipment slots are required")
-        for value in (*self.equipment_active, *self.fixed_active, self.organoid_enabled):
+        for value in (*self.equipment_active, *self.fixed_active, self.organoid_enabled, self.normal_os):
             if type(value) is not bool:
                 raise RuleError("Activation flags must be Booleans")
         for name in ("pilot_level", "mental", "organoid_level", "defense_up", "defense_down", "shield_adjustment", "armor_up", "armor_down"):
@@ -185,7 +190,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         colors = {"White": 2, "Red": 7, "Blue": 12, "Black": 17}
         if build.organoid_color not in colors:
             raise RuleError(f"Unknown Organoid color: {build.organoid_color}")
-        record = catalog.find("organoids", str(build.organoid_level))
+        record = catalog.find("organoids", str(build.effective_organoid_level))
         start = colors[build.organoid_color]
         for offset, stat in enumerate(("health", "armor", "speed", "range", "to_hit")):
             org[stat] = n(record, start + offset)
@@ -221,7 +226,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     ]
     pilot["health"] += sum(e.get("maximum_health_bonus", 0) for e, enabled in zip(equipment, equipment_enabled) if enabled)
     maximum_energy = (zoid["energy"] + build.pilot_level
-                      + (build.organoid_level if build.organoid_enabled else 0)
+                      + (build.effective_organoid_level if build.organoid_enabled else 0)
                       + sum(e.get("maximum_energy_bonus", 0) for e, enabled in zip(equipment, equipment_enabled) if enabled))
     # Only fixed slots 2 and 3 have these stat-modifier fields in the source.
     fixed_modifiers_enabled = [
@@ -279,6 +284,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
         })
     for slot, e in zip(("back", "left", "right", "chest"), equipment):
         raw_damage = col(e, 2)
+        base_hit = sheet_roundup(n(e, 5) * penalty)
         if isinstance(raw_damage, str):
             damage_bonus = None
             warnings.append(f"{slot}: textual damage {raw_damage!r} requires adjudication; spreadsheet arithmetic is invalid")
@@ -289,7 +295,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
             "base_damage": raw_damage, "damage_bonus": damage_bonus,
             "damage_upgrade": 0, "damage_percent": org["damage"],
             "damage_note": damage_note(e, 2),
-            "base_to_hit": n(e, 5), "to_hit": sheet_round(n(e, 5) * (1 + n(progression, 6) + all_stats + org["to_hit"]) + hit_bonus + weapon_skill_bonus(col(e, 3))) + (u.accuracy if raw_damage is not None else 0),
+            "base_to_hit": base_hit, "to_hit": sheet_round(base_hit * (1 + n(progression, 6) + all_stats + org["to_hit"]) + hit_bonus + weapon_skill_bonus(col(e, 3))) + (u.accuracy if raw_damage is not None else 0),
             "energy_cost": equipment_energy_cost(e),
             "energy_restore": e.get("energy_restore", 0) if e else 0,
         })

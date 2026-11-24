@@ -79,7 +79,7 @@
       },
       "fields": {
         "name": "Pit Stop",
-        "description": "It only takes you half as many rounds to complete a CAS swap during combat."
+        "description": "Spend only one action to perform a CAS swap during combat. You may reenter battle on your next turn."
       },
       "dynamic_fields": {},
       "handling": "player_managed"
