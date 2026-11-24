@@ -132,7 +132,7 @@ class StatsTests(unittest.TestCase):
     def test_passive_equipment_and_base_defense_skill(self):
         result = self.calc(equipment=("Extension Armor", None, None, None), abilities=("Lion Type 1", "Iron Defense"))
         self.assertEqual(result["current"]["armor"], 26)
-        self.assertEqual(result["current"]["defense"], 18)
+        self.assertEqual(result["current"]["defense"], 23)
 
     def test_only_activated_thruster_adds_reaction(self):
         equipment = ("Thruster", "Thruster", None, None)

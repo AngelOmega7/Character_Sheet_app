@@ -376,6 +376,18 @@ class CharacterEditor:
         except RuleError as exc:
             self.message(str(exc), True)
 
+    def adjust_stat(self, stat, delta):
+        try:
+            candidate = self.profile_candidate()
+            modifier = getattr(candidate.build, f"{stat}_up") - getattr(candidate.build, f"{stat}_down") + delta
+            build = replace(candidate.build, **{f"{stat}_up": max(0, modifier), f"{stat}_down": max(0, -modifier)})
+            self.character = validate_character(replace(candidate, build=build), self.catalog)
+            self.dirty = True
+            self.render()
+            self.message(f"Temporary {stat} modifier: {modifier:+d}. Resets on Rest. Unsaved changes.")
+        except RuleError as exc:
+            self.message(str(exc), True)
+
     def rest(self, event=None):
         try:
             self.commit_combat(rest(self.profile_candidate(), self.catalog))
@@ -1166,9 +1178,18 @@ class CharacterEditor:
                        "Defense": stats["current"]["defense"], "Speed": stats["current"]["speed"],
                        "Reaction": stats["current"]["reaction"], "Range (m)": stats["current"]["range"],
                        "Shields remaining": max(0, stats["shields"]), "Carry": f"{stats['carry_load']} / {stats['carry_capacity']}"} if stats else {}
-        tiles = [ft.Container(ft.Column([ft.Text(label, size=11, color="#AAC0D6"), ft.Text(str(value), size=20)], spacing=2),
-                              padding=8, bgcolor="#213349", border_radius=8, col={"xs": 6, "sm": 3})
-                 for label, value in stat_values.items()]
+        tiles = []
+        for label, value in stat_values.items():
+            controls = [ft.Text(label, size=11, color="#AAC0D6"), ft.Text(str(value), size=20)]
+            if label in ("Armor", "Defense"):
+                controls.append(ft.Row([
+                    ft.IconButton(ft.Icons.REMOVE, tooltip=f"Decrease {label.lower()} by 1 (until Rest)",
+                                  on_click=lambda e, s=label.lower(): self.adjust_stat(s, -1)),
+                    ft.IconButton(ft.Icons.ADD, tooltip=f"Increase {label.lower()} by 1 (until Rest)",
+                                  on_click=lambda e, s=label.lower(): self.adjust_stat(s, 1)),
+                ], spacing=0, wrap=True))
+            tiles.append(ft.Container(ft.Column(controls, spacing=2),
+                                      padding=8, bgcolor="#213349", border_radius=8, col={"xs": 6, "sm": 3}))
         notes = []
         if not stats:
             notes.append("No playable Zoid is currently owned. Obtain a Zoid to start a new loadout.")

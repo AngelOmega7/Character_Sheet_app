@@ -114,12 +114,13 @@ def start_turn(character, catalog=None):
 
 
 def rest(character, catalog=None):
-    """Set the active chassis to half its equipped maximum, rounded down."""
+    """Reset temporary armor/defense and set energy to half its maximum."""
     catalog = catalog or Catalog()
     character = validate_character(character, catalog)
     stats, _ = combat_snapshot(character, catalog)
     energy = stats["energy"] // 2
-    character = replace(character, current_energy=energy)
+    character = replace(character, current_energy=energy,
+                        build=replace(character.build, armor_up=0, armor_down=0, defense_up=0, defense_down=0))
     return CombatResult(validate_character(character, catalog), f"Rested. Energy set to {energy} / {stats['energy']}.")
 
 

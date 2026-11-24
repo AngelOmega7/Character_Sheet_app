@@ -59,14 +59,14 @@ class RuleReviewTests(unittest.TestCase):
         self.assertTrue(base["ranged"])
         expert = calculate_attack(replace(build, abilities=("Laser Expert 4", "Sniper 4")), "back",
                                   current_health=100, range_band="long", catalog=self.catalog)
-        self.assertEqual(expert["to_hit"], base["to_hit"] + 8)
+        self.assertEqual(expert["to_hit"], base["to_hit"] + 13)
         rs = self.catalog.find("zoids", "Zaber Fang RS")
         self.assertEqual(weapon_tags(self.catalog.column(rs, 50)), {"ranged", "laser"})
         self.assertEqual(rs["corrections"]["damage_type_50"]["original"], "Energy")
 
     def test_laser_expert_requires_laser_not_retained_melee_energy(self):
         armament = self.catalog.find("armaments", "Particle Cannon")
-        for tags, expected in (("Melee, Energy", 0), ("Ranged, Energy", 0), ("Ranged, Particle", 0), ("Ranged, Laser", 4)):
+        for tags, expected in (("Melee, Energy", 0), ("Ranged, Energy", 0), ("Ranged, Particle", 0), ("Ranged, Laser", 5)):
             armament["fields"]["damage_type"] = tags
             build = CharacterBuild("Saberlion", equipment=(None, "Particle Cannon", None, None))
             base = calculate_stats(build, self.catalog)["weapons"][5]["to_hit"]
@@ -84,6 +84,6 @@ class RuleReviewTests(unittest.TestCase):
         self.assertIn("Killer Saber", weapons[3]["name"])
         self.assertEqual((weapons[3]["base_damage"], weapons[3]["base_to_hit"]), (140, 13))
         boosted = calculate_stats(replace(build, abilities=("Laser Expert 4", "Particle Expert 3")), self.catalog)["weapons"]
-        self.assertEqual(boosted[1]["to_hit"] - weapons[1]["to_hit"], 3)
-        self.assertEqual(boosted[2]["to_hit"] - weapons[2]["to_hit"], 4)
+        self.assertEqual(boosted[1]["to_hit"] - weapons[1]["to_hit"], 4)
+        self.assertEqual(boosted[2]["to_hit"] - weapons[2]["to_hit"], 5)
         self.assertEqual(boosted[3]["to_hit"], weapons[3]["to_hit"])

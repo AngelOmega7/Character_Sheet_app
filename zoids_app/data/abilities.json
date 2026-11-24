@@ -3104,7 +3104,7 @@
       },
       "fields": {
         "name": "Melee Multi Attack 2",
-        "description": "Gain a second extra melee attack per turn",
+        "description": "Gain a second extra melee attack per turn. Only 2 melee attacks may be made against a single target with a single action. Additional attacks must have a new target.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3136,7 +3136,7 @@
       },
       "fields": {
         "name": "Melee Multi Attack 3",
-        "description": "Gain a third extra melee attack per turn",
+        "description": "Gain a third extra melee attack per turn. Only 2 melee attacks may be made against a single target with a single action. Additional attacks must have a new target.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3168,7 +3168,7 @@
       },
       "fields": {
         "name": "Melee Multi Attack 4",
-        "description": "Gain a fourth extra melee attack per turn",
+        "description": "Gain a fourth extra melee attack per turn. Only 2 melee attacks may be made against a single target with a single action. Additional attacks must have a new target.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3232,7 +3232,7 @@
       },
       "fields": {
         "name": "Ranged Multi Attack 2",
-        "description": "Gain a second extra ranged attack per turn. ",
+        "description": "Gain a second extra ranged attack per turn. Each ranged weapon can only be fired twice with one action. Additional ranged attacks must be made with a different ranged weapon.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3264,7 +3264,7 @@
       },
       "fields": {
         "name": "Ranged Multi Attack 3",
-        "description": "Gain a third extra ranged attack per turn. ",
+        "description": "Gain a third extra ranged attack per turn. Each ranged weapon can only be fired twice with one action. Additional ranged attacks must be made with a different ranged weapon.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3296,7 +3296,7 @@
       },
       "fields": {
         "name": "Ranged Multi Attack 4",
-        "description": "Gain a fourth ranged attack roll per turn. ",
+        "description": "Gain a fourth ranged attack roll per turn. Each ranged weapon can only be fired twice with one action. Additional ranged attacks must be made with a different ranged weapon.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -3328,12 +3328,12 @@
       },
       "fields": {
         "name": "Laser Expert 1",
-        "description": "Weapons with the Laser tag gain 1 to Hit.",
+        "description": "Weapons with the Laser tag gain +2 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 1,
+        "to_hit_bonus": 2,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3371,12 +3371,12 @@
       },
       "fields": {
         "name": "Laser Expert 2",
-        "description": "Weapons with the Laser tag gain 2 to Hit.",
+        "description": "Weapons with the Laser tag gain +3 to Hit. Attacks with these weapons score a critical hit on a roll of 19.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 2,
+        "to_hit_bonus": 3,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3414,12 +3414,12 @@
       },
       "fields": {
         "name": "Laser Expert 3",
-        "description": "Weapons with the Laser tag gain 3 to Hit.",
+        "description": "Weapons with the Laser tag gain +4 to Hit. Attacks with these weapons score a critical hit on a roll of 18.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 3,
+        "to_hit_bonus": 4,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3457,12 +3457,12 @@
       },
       "fields": {
         "name": "Laser Expert 4",
-        "description": "Weapons with the Laser tag gain 4 to Hit.",
+        "description": "Weapons with the Laser tag gain +5 to Hit. Attacks with these weapons score a critical hit on a roll of 18. Critical hits with these weapons deal double damage.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 4,
+        "to_hit_bonus": 5,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3500,12 +3500,12 @@
       },
       "fields": {
         "name": "Missile Expert 1",
-        "description": "Weapons that deal explosive damage gain 1 to Hit. ",
+        "description": "Weapons that deal explosive damage gain +2 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 1,
+        "to_hit_bonus": 2,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3531,12 +3531,12 @@
       },
       "fields": {
         "name": "Missile Expert 2",
-        "description": "Weapons that deal explosive damage gain 2 to Hit. ",
+        "description": "Weapons that deal explosive damage gain +3 to Hit. Attacks with these weapons score a critical hit on a roll of 19.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 2,
+        "to_hit_bonus": 3,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3562,12 +3562,12 @@
       },
       "fields": {
         "name": "Missile Expert 3",
-        "description": "Weapons that deal explosive damage gain 3 to Hit. ",
+        "description": "Weapons that deal explosive damage gain +4 to Hit. Attacks with these weapons score a critical hit on a roll of 18.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 3,
+        "to_hit_bonus": 4,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3600,12 +3600,12 @@
       },
       "fields": {
         "name": "Missile Expert 4",
-        "description": "Weapons that deal explosive damage gain 4 to Hit. ",
+        "description": "Weapons that deal explosive damage gain +5 to Hit. Attacks with these weapons score a critical hit on a roll of 18. Critical hits with these weapons deal double damage.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 4,
+        "to_hit_bonus": 5,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3638,12 +3638,12 @@
       },
       "fields": {
         "name": "Particle Expert 1",
-        "description": "Weapons that deal particle damage gain 1 to Hit. ",
+        "description": "Weapons that deal particle damage gain +2 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 1,
+        "to_hit_bonus": 2,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3669,12 +3669,12 @@
       },
       "fields": {
         "name": "Particle Expert 2",
-        "description": "Weapons that deal particle damage gain 2 to Hit. ",
+        "description": "Weapons that deal particle damage gain +3 to Hit. Attacks with these weapons score a critical hit on a roll of 19.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 2,
+        "to_hit_bonus": 3,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3700,12 +3700,12 @@
       },
       "fields": {
         "name": "Particle Expert 3",
-        "description": "Weapons that deal particle damage gain 3 to Hit. ",
+        "description": "Weapons that deal particle damage gain +4 to Hit. Attacks with these weapons score a critical hit on a roll of 18.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 3,
+        "to_hit_bonus": 4,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3738,12 +3738,12 @@
       },
       "fields": {
         "name": "Particle Expert 4",
-        "description": "Weapons that deal particle damage gain 4 to Hit. ",
+        "description": "Weapons that deal particle damage gain +5 to Hit. Attacks with these weapons score a critical hit on a roll of 18. Critical hits with these weapons deal double damage.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 4,
+        "to_hit_bonus": 5,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3776,12 +3776,12 @@
       },
       "fields": {
         "name": "Melee Expert ",
-        "description": "Melee weapons gain 1 to Hit. ",
+        "description": "Melee weapons gain +2 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 1,
+        "to_hit_bonus": 2,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3807,12 +3807,12 @@
       },
       "fields": {
         "name": "Melee Expert 2",
-        "description": "Melee weapons gain 2 to Hit. ",
+        "description": "Melee weapons gain +3 to Hit. Attacks with these weapons score a critical hit on a roll of 19.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 2,
+        "to_hit_bonus": 3,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3838,12 +3838,12 @@
       },
       "fields": {
         "name": "Melee Expert 3",
-        "description": "Melee weapons gain 3 to Hit. ",
+        "description": "Melee weapons gain +4 to Hit. Attacks with these weapons score a critical hit on a roll of 18.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 3,
+        "to_hit_bonus": 4,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3876,12 +3876,12 @@
       },
       "fields": {
         "name": "Melee Expert 4",
-        "description": "Melee weapons gain 4 to Hit. ",
+        "description": "Melee weapons gain +5 to Hit. Attacks with these weapons score a critical hit on a roll of 18. Critical hits with these weapons deal double damage.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 4,
+        "to_hit_bonus": 5,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3914,12 +3914,12 @@
       },
       "fields": {
         "name": "Rifle Expert ",
-        "description": "Ranged weapons that deal Bullet damage gain 1 to Hit. ",
+        "description": "Ranged weapons that deal Bullet damage gain +2 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 1,
+        "to_hit_bonus": 2,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3952,12 +3952,12 @@
       },
       "fields": {
         "name": "Rifle Expert 2",
-        "description": "Ranged weapons that deal Bullet damage gain 2 to Hit. ",
+        "description": "Ranged weapons that deal Bullet damage gain +3 to Hit. Attacks with these weapons score a critical hit on a roll of 19.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 2,
+        "to_hit_bonus": 3,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -3990,12 +3990,12 @@
       },
       "fields": {
         "name": "Rifle Expert 3",
-        "description": "Ranged weapons that deal Bullet damage gain 3 to Hit. ",
+        "description": "Ranged weapons that deal Bullet damage gain +4 to Hit. Attacks with these weapons score a critical hit on a roll of 18.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 3,
+        "to_hit_bonus": 4,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -4028,12 +4028,12 @@
       },
       "fields": {
         "name": "Rifle Expert 4",
-        "description": "Ranged weapons that deal Bullet damage gain 4 to Hit. ",
+        "description": "Ranged weapons that deal Bullet damage gain +5 to Hit. Attacks with these weapons score a critical hit on a roll of 18. Critical hits with these weapons deal double damage.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 4,
+        "to_hit_bonus": 5,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
@@ -4066,23 +4066,24 @@
       },
       "fields": {
         "name": "Anti-Air Pro",
-        "description": "If the weapon possess the Anti-Air tag gain +2 to Hit",
+        "description": "All attacks made against flying Zoids gain +2 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 2,
+        "to_hit_bonus": null,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
         "damage_bonus": null,
         "shield_bonus": null,
         "equipment_defense_bonus": null,
-        "damage_type": "Anti-Air",
+        "damage_type": null,
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "anti_air_pro",
+      "handling": "player_managed",
       "rank": 1,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4097,23 +4098,24 @@
       },
       "fields": {
         "name": "Anti-Air Pro 2",
-        "description": "If the weapon possess the Anti-Air tag gain +3 to Hit",
+        "description": "All attacks made against flying Zoids gain +3 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 3,
+        "to_hit_bonus": null,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
         "damage_bonus": null,
         "shield_bonus": null,
         "equipment_defense_bonus": null,
-        "damage_type": "Anti-Air",
+        "damage_type": null,
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "anti_air_pro",
+      "handling": "player_managed",
       "rank": 2,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4128,23 +4130,24 @@
       },
       "fields": {
         "name": "Anti-Air Pro 3 ",
-        "description": "If the weapon possess the Anti-Air tag gain +4 to Hit",
+        "description": "All attacks made against flying Zoids gain +4 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 4,
+        "to_hit_bonus": null,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
         "damage_bonus": null,
         "shield_bonus": null,
         "equipment_defense_bonus": null,
-        "damage_type": "Anti-Air",
+        "damage_type": null,
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "anti_air_pro",
+      "handling": "player_managed",
       "rank": 3,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4159,23 +4162,24 @@
       },
       "fields": {
         "name": "Anti-Air Pro 4",
-        "description": "If the weapon possess the Anti-Air tag gain +5 to Hit",
+        "description": "All attacks made against flying Zoids gain +5 to Hit.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
         "armor_bonus": null,
-        "to_hit_bonus": 5,
+        "to_hit_bonus": null,
         "speed_bonus": null,
         "range_bonus": null,
         "reaction_bonus": null,
         "damage_bonus": null,
         "shield_bonus": null,
         "equipment_defense_bonus": null,
-        "damage_type": "Anti-Air",
+        "damage_type": null,
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "anti_air_pro",
+      "handling": "player_managed",
       "rank": 4,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4221,7 +4225,7 @@
       },
       "fields": {
         "name": "Fleet Footed 2",
-        "description": "Your Zoid gains +100 to speed.",
+        "description": "Your Zoid gains +100 to speed. Speed boosting equipment may be activated as a bonus action.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4252,7 +4256,7 @@
       },
       "fields": {
         "name": "Fleet Footed 3",
-        "description": "Your Zoid gains +150 to speed.",
+        "description": "Your Zoid gains +150 to speed. Speed boosting equipment may be activated as a bonus action.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4275,15 +4279,16 @@
     },
     {
       "id": "abilities:fleet_footed_4",
-      "name": "FLeet Footed 4",
+      "name": "Fleet Footed 4",
+      "legacy_names": ["FLeet Footed 4"],
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
         "row": 126
       },
       "fields": {
-        "name": "FLeet Footed 4",
-        "description": "Your Zoid gains +200 to speed.",
+        "name": "Fleet Footed 4",
+        "description": "Your Zoid gains +200 to speed. Speed boosting equipment may be activated as a bonus action.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4602,7 +4607,7 @@
       },
       "fields": {
         "name": "Iron Defense",
-        "description": "Gain +5 to Zoids Defense ",
+        "description": "Gain +10 to Zoids Defense",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4615,7 +4620,7 @@
         "shield_bonus": null,
         "equipment_defense_bonus": null,
         "damage_type": null,
-        "base_defense_bonus": 5
+        "base_defense_bonus": 10
       },
       "dynamic_fields": {},
       "family": "iron_defense",
@@ -4633,7 +4638,7 @@
       },
       "fields": {
         "name": "Iron Defense 2",
-        "description": "Gain +10 to Zoids Defense ",
+        "description": "Gain +20 to Zoids Defense",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4646,7 +4651,7 @@
         "shield_bonus": null,
         "equipment_defense_bonus": null,
         "damage_type": null,
-        "base_defense_bonus": 10
+        "base_defense_bonus": 20
       },
       "dynamic_fields": {},
       "family": "iron_defense",
@@ -4664,7 +4669,7 @@
       },
       "fields": {
         "name": "Iron Defense 3",
-        "description": "Gain +15 to Zoids Defense ",
+        "description": "Gain +30 to Zoids Defense",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4677,7 +4682,7 @@
         "shield_bonus": null,
         "equipment_defense_bonus": null,
         "damage_type": null,
-        "base_defense_bonus": 15
+        "base_defense_bonus": 30
       },
       "dynamic_fields": {},
       "family": "iron_defense",
@@ -4695,7 +4700,7 @@
       },
       "fields": {
         "name": "Iron Defense 4",
-        "description": "Gain +20 to Zoids Defense ",
+        "description": "Gain +40 to Zoids Defense",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4708,7 +4713,7 @@
         "shield_bonus": null,
         "equipment_defense_bonus": null,
         "damage_type": null,
-        "base_defense_bonus": 20
+        "base_defense_bonus": 40
       },
       "dynamic_fields": {},
       "family": "iron_defense",
@@ -4726,38 +4731,6 @@
       },
       "fields": {
         "name": "Sniper 1",
-        "description": "Gain +1 to Hit on attacks beyond 1/2 your Zoids max Range",
-        "bonus_levels": null,
-        "zoid_sizes": null,
-        "all_stats_bonus": null,
-        "armor_bonus": null,
-        "to_hit_bonus": null,
-        "speed_bonus": null,
-        "range_bonus": null,
-        "reaction_bonus": null,
-        "damage_bonus": null,
-        "shield_bonus": null,
-        "equipment_defense_bonus": null,
-        "damage_type": null,
-        "base_defense_bonus": null
-      },
-      "dynamic_fields": {},
-      "family": "sniper",
-      "rank": 1,
-      "eligible_types": [],
-      "eligible_sizes": [],
-      "long_range_to_hit_bonus": 1
-    },
-    {
-      "id": "abilities:sniper_2",
-      "name": "Sniper 2",
-      "kind": "record",
-      "source": {
-        "sheet": "Zoid Abilities",
-        "row": 140
-      },
-      "fields": {
-        "name": "Sniper 2",
         "description": "Gain +2 to Hit on attacks beyond 1/2 your Zoids max Range",
         "bonus_levels": null,
         "zoid_sizes": null,
@@ -4775,53 +4748,21 @@
       },
       "dynamic_fields": {},
       "family": "sniper",
-      "rank": 2,
+      "rank": 1,
       "eligible_types": [],
       "eligible_sizes": [],
       "long_range_to_hit_bonus": 2
     },
     {
-      "id": "abilities:sniper_3",
-      "name": "Sniper 3",
+      "id": "abilities:sniper_2",
+      "name": "Sniper 2",
       "kind": "record",
       "source": {
         "sheet": "Zoid Abilities",
-        "row": 141
+        "row": 140
       },
       "fields": {
-        "name": "Sniper 3",
-        "description": "Gain +3 to Hit on attacks beyond 1/2 your Zoids max Range",
-        "bonus_levels": null,
-        "zoid_sizes": null,
-        "all_stats_bonus": null,
-        "armor_bonus": null,
-        "to_hit_bonus": null,
-        "speed_bonus": null,
-        "range_bonus": null,
-        "reaction_bonus": null,
-        "damage_bonus": null,
-        "shield_bonus": null,
-        "equipment_defense_bonus": null,
-        "damage_type": null,
-        "base_defense_bonus": null
-      },
-      "dynamic_fields": {},
-      "family": "sniper",
-      "rank": 3,
-      "eligible_types": [],
-      "eligible_sizes": [],
-      "long_range_to_hit_bonus": 3
-    },
-    {
-      "id": "abilities:sniper_4",
-      "name": "Sniper 4",
-      "kind": "record",
-      "source": {
-        "sheet": "Zoid Abilities",
-        "row": 142
-      },
-      "fields": {
-        "name": "Sniper 4",
+        "name": "Sniper 2",
         "description": "Gain +4 to Hit on attacks beyond 1/2 your Zoids max Range",
         "bonus_levels": null,
         "zoid_sizes": null,
@@ -4839,10 +4780,74 @@
       },
       "dynamic_fields": {},
       "family": "sniper",
-      "rank": 4,
+      "rank": 2,
       "eligible_types": [],
       "eligible_sizes": [],
       "long_range_to_hit_bonus": 4
+    },
+    {
+      "id": "abilities:sniper_3",
+      "name": "Sniper 3",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 141
+      },
+      "fields": {
+        "name": "Sniper 3",
+        "description": "Gain +6 to Hit on attacks beyond 1/2 your Zoids max Range",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "sniper",
+      "rank": 3,
+      "eligible_types": [],
+      "eligible_sizes": [],
+      "long_range_to_hit_bonus": 6
+    },
+    {
+      "id": "abilities:sniper_4",
+      "name": "Sniper 4",
+      "kind": "record",
+      "source": {
+        "sheet": "Zoid Abilities",
+        "row": 142
+      },
+      "fields": {
+        "name": "Sniper 4",
+        "description": "Gain +8 to Hit on attacks beyond 1/2 your Zoids max Range",
+        "bonus_levels": null,
+        "zoid_sizes": null,
+        "all_stats_bonus": null,
+        "armor_bonus": null,
+        "to_hit_bonus": null,
+        "speed_bonus": null,
+        "range_bonus": null,
+        "reaction_bonus": null,
+        "damage_bonus": null,
+        "shield_bonus": null,
+        "equipment_defense_bonus": null,
+        "damage_type": null,
+        "base_defense_bonus": null
+      },
+      "dynamic_fields": {},
+      "family": "sniper",
+      "rank": 4,
+      "eligible_types": [],
+      "eligible_sizes": [],
+      "long_range_to_hit_bonus": 8
     },
     {
       "id": "abilities:true_tank",
@@ -4854,7 +4859,7 @@
       },
       "fields": {
         "name": "True Tank",
-        "description": "Defensive equpiment gains an additional +5 efficiancy",
+        "description": "For every 10 points of Defense you gain from removable equipment, increase your armor by 1, up to a maximum of 5.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4865,12 +4870,13 @@
         "reaction_bonus": null,
         "damage_bonus": null,
         "shield_bonus": null,
-        "equipment_defense_bonus": 5,
+        "equipment_defense_bonus": null,
         "damage_type": null,
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "true_tank",
+      "equipment_defense_armor_cap": 5,
       "rank": 1,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4885,7 +4891,7 @@
       },
       "fields": {
         "name": "True Tank 2",
-        "description": "Defensive equpiment gains an additional +10 efficiancy",
+        "description": "For every 10 points of Defense you gain from removable equipment, increase your armor by 1, up to a maximum of 10.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4896,12 +4902,13 @@
         "reaction_bonus": null,
         "damage_bonus": null,
         "shield_bonus": null,
-        "equipment_defense_bonus": 10,
+        "equipment_defense_bonus": null,
         "damage_type": null,
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "true_tank",
+      "equipment_defense_armor_cap": 10,
       "rank": 2,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4916,7 +4923,7 @@
       },
       "fields": {
         "name": "True Tank 3",
-        "description": "Defensive equpiment gains an additional +15 efficiancy",
+        "description": "For every 10 points of Defense you gain from removable equipment, increase your armor by 1, up to a maximum of 15.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4927,12 +4934,13 @@
         "reaction_bonus": null,
         "damage_bonus": null,
         "shield_bonus": null,
-        "equipment_defense_bonus": 15,
+        "equipment_defense_bonus": null,
         "damage_type": null,
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "true_tank",
+      "equipment_defense_armor_cap": 15,
       "rank": 3,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4947,7 +4955,7 @@
       },
       "fields": {
         "name": "True Tank 4",
-        "description": "Defensive equpiment gains an additional +20 efficiancy",
+        "description": "For every 10 points of Defense you gain from removable equipment, increase your armor by 1, up to a maximum of 20.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4958,12 +4966,13 @@
         "reaction_bonus": null,
         "damage_bonus": null,
         "shield_bonus": null,
-        "equipment_defense_bonus": 20,
+        "equipment_defense_bonus": null,
         "damage_type": null,
         "base_defense_bonus": null
       },
       "dynamic_fields": {},
       "family": "true_tank",
+      "equipment_defense_armor_cap": 20,
       "rank": 4,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4978,7 +4987,7 @@
       },
       "fields": {
         "name": "Armor Breaker",
-        "description": "While this ability is active, each time a weapon reduces a target's Armor, increase that Armor reduction by 1. This bonus does not increase Defense reduction.",
+        "description": "When you make an attack, you may make the attack versus the target's reaction. If the attack hits, it does not deal damage. Instead it reduces the target's armor by 1.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5010,7 +5019,7 @@
       },
       "fields": {
         "name": "Armor Breaker 2",
-        "description": "While this ability is active, each time a weapon reduces a target's Armor, increase that Armor reduction by 2. This bonus does not increase Defense reduction.",
+        "description": "When you make an attack, you may make the attack versus the target's reaction. If the attack hits, it does not deal damage. Instead it reduces the target's armor by 2.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5042,7 +5051,7 @@
       },
       "fields": {
         "name": "Armor Breaker 3",
-        "description": "While this ability is active, each time a weapon reduces a target's Armor, increase that Armor reduction by 3. This bonus does not increase Defense reduction.",
+        "description": "When you make an attack, you may make the attack versus the target's reaction. If the attack hits, it does not deal damage. Instead it reduces the target's armor by 3.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5074,7 +5083,7 @@
       },
       "fields": {
         "name": "Armor Breaker 4",
-        "description": "While this ability is active, each time a weapon reduces a target's Armor, increase that Armor reduction by 4. This bonus does not increase Defense reduction.",
+        "description": "When you make an attack, you may make the attack versus the target's reaction. If the attack hits, it does not deal damage. Instead it reduces the target's armor by 4.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5106,7 +5115,7 @@
       },
       "fields": {
         "name": "Evasion Master",
-        "description": "While active, each enabled item that boosts Reaction also adds 1 Armor.",
+        "description": "Attacks that would be made against your Reaction have a minus 4 penalty to hit you.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5129,10 +5138,10 @@
       "corrections": {
         "description": {
           "original": "Equipment that boosts Reaction gains a +2 boost",
-          "reason": "Owner changed effect to armor per reaction-boosting item"
+          "reason": "Owner changed effect to a rank-based to-hit penalty for attacks against Reaction"
         }
       },
-      "armor_per_reaction_item": 1
+      "handling": "player_managed"
     },
     {
       "id": "abilities:evasion_master_2",
@@ -5144,7 +5153,7 @@
       },
       "fields": {
         "name": "Evasion Master 2",
-        "description": "While active, each enabled item that boosts Reaction also adds 2 Armor.",
+        "description": "Attacks that would be made against your Reaction have a minus 8 penalty to hit you.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5167,10 +5176,10 @@
       "corrections": {
         "description": {
           "original": "Equipment that boosts Reaction gains a +4 boost",
-          "reason": "Owner changed effect to armor per reaction-boosting item"
+          "reason": "Owner changed effect to a rank-based to-hit penalty for attacks against Reaction"
         }
       },
-      "armor_per_reaction_item": 2
+      "handling": "player_managed"
     },
     {
       "id": "abilities:evasion_master_3",
@@ -5182,7 +5191,7 @@
       },
       "fields": {
         "name": "Evasion Master 3",
-        "description": "While active, each enabled item that boosts Reaction also adds 3 Armor.",
+        "description": "Attacks that would be made against your Reaction have a minus 12 penalty to hit you.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5205,10 +5214,10 @@
       "corrections": {
         "description": {
           "original": "Equipment that boosts Reaction gains a +6 boost",
-          "reason": "Owner changed effect to armor per reaction-boosting item"
+          "reason": "Owner changed effect to a rank-based to-hit penalty for attacks against Reaction"
         }
       },
-      "armor_per_reaction_item": 3
+      "handling": "player_managed"
     },
     {
       "id": "abilities:evasion_master_4",
@@ -5220,7 +5229,7 @@
       },
       "fields": {
         "name": "Evasion Master 4",
-        "description": "While active, each enabled item that boosts Reaction also adds 4 Armor.",
+        "description": "Attacks that would be made against your Reaction have a minus 16 penalty to hit you.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5243,10 +5252,10 @@
       "corrections": {
         "description": {
           "original": "Equipment that boosts Reaction gains a +8 boost",
-          "reason": "Owner changed effect to armor per reaction-boosting item"
+          "reason": "Owner changed effect to a rank-based to-hit penalty for attacks against Reaction"
         }
       },
-      "armor_per_reaction_item": 4
+      "handling": "player_managed"
     },
     {
       "id": "abilities:shield_master",
@@ -5258,7 +5267,7 @@
       },
       "fields": {
         "name": "Shield Master",
-        "description": "Durabilatiy of shields increases by 25",
+        "description": "Durability of shields increases by 100",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5268,7 +5277,7 @@
         "range_bonus": null,
         "reaction_bonus": null,
         "damage_bonus": null,
-        "shield_bonus": 25,
+        "shield_bonus": 100,
         "equipment_defense_bonus": null,
         "damage_type": null,
         "base_defense_bonus": null
@@ -5289,7 +5298,7 @@
       },
       "fields": {
         "name": "Shield Master 2",
-        "description": "Durabilatiy of shields increases by 50",
+        "description": "Durability of shields increases by 150. Shields can be activated as a bonus action.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5299,7 +5308,7 @@
         "range_bonus": null,
         "reaction_bonus": null,
         "damage_bonus": null,
-        "shield_bonus": 50,
+        "shield_bonus": 150,
         "equipment_defense_bonus": null,
         "damage_type": null,
         "base_defense_bonus": null
@@ -5320,7 +5329,7 @@
       },
       "fields": {
         "name": "Shield Master 3",
-        "description": "Durabilatiy of shields increases by 75",
+        "description": "Durability of shields increases by 200. Shields can be activated as a bonus action. Apply 1/2 Defense to damage done to shields.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5330,7 +5339,7 @@
         "range_bonus": null,
         "reaction_bonus": null,
         "damage_bonus": null,
-        "shield_bonus": 75,
+        "shield_bonus": 200,
         "equipment_defense_bonus": null,
         "damage_type": null,
         "base_defense_bonus": null
@@ -5351,7 +5360,7 @@
       },
       "fields": {
         "name": "Shield Master 4",
-        "description": "Durabilatiy of shields increases by 100",
+        "description": "Durability of shields increases by 250. Shields can be activated as a bonus action. Apply 1/2 Defense to damage done to shields. Weapons with the Piercing tag do not ignore your shields.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5361,7 +5370,7 @@
         "range_bonus": null,
         "reaction_bonus": null,
         "damage_bonus": null,
-        "shield_bonus": 100,
+        "shield_bonus": 250,
         "equipment_defense_bonus": null,
         "damage_type": null,
         "base_defense_bonus": null
@@ -5382,7 +5391,7 @@
       },
       "fields": {
         "name": "Smoke Master",
-        "description": "Smoke units cover an additonal 15m",
+        "description": "Smoke units cover an additional 15m. Smoke units last twice as long.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5414,7 +5423,7 @@
       },
       "fields": {
         "name": "Smoke Master 2",
-        "description": "Smoke units cover an additonal 20m",
+        "description": "Smoke units cover an additional 20m. Smoke units last twice as long. Smoke Units can be activated as a bonus action.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5446,7 +5455,7 @@
       },
       "fields": {
         "name": "Smoke Master 3",
-        "description": "Smoke units cover an additonal 30m",
+        "description": "Smoke units cover an additional 30m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. The effects of Smoke persist for 1 round after you leave the Smoke.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5478,7 +5487,7 @@
       },
       "fields": {
         "name": "Smoke Master 4",
-        "description": "Smoke units cover an additonal 40m",
+        "description": "Smoke units cover an additional 40m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. The effects of Smoke persist for 1 round after you leave the Smoke. Smoke units protect from AoE attacks.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5574,7 +5583,7 @@
       },
       "fields": {
         "name": "Economized Shooting",
-        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 2, to a minimum of 0.",
+        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 2, to a minimum of 2.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5678,7 +5687,7 @@
       },
       "fields": {
         "name": "Economized Shooting 2",
-        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 4, to a minimum of 0.",
+        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 4, to a minimum of 2.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5709,7 +5718,7 @@
       },
       "fields": {
         "name": "Economized Shooting 3",
-        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 6, to a minimum of 0.",
+        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 6, to a minimum of 2.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5740,7 +5749,7 @@
       },
       "fields": {
         "name": "Economized Shooting 4",
-        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 8, to a minimum of 0.",
+        "description": "While active, reduce the Energy Cost of weapons with the Ranged tag by 8, to a minimum of 2.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,

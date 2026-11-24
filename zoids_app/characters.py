@@ -62,6 +62,8 @@ class OwnedZoid:
     shield_adjustment: int = 0
     defense_up: int = 0
     defense_down: int = 0
+    armor_up: int = 0
+    armor_down: int = 0
     weapon_conditions: tuple[FixedWeaponCondition, ...] = ()
     fusion_components: tuple["OwnedZoid", ...] | None = None
     current_energy: int | None = None
@@ -166,7 +168,8 @@ def _project(pilot_build, owned, form, catalog):
                    upgrades=replace(owned.frame, damage=tuple(w.damage for w in points),
                                     to_hit=tuple(w.to_hit for w in points)),
                    shield_adjustment=owned.shield_adjustment,
-                   defense_up=owned.defense_up, defense_down=owned.defense_down)
+                   defense_up=owned.defense_up, defense_down=owned.defense_down,
+                   armor_up=owned.armor_up, armor_down=owned.armor_down)
 
 
 def _capture(character, owned, catalog):
@@ -183,7 +186,8 @@ def _capture(character, owned, catalog):
     return replace(owned, forms=tuple(_loadout(build, f.equipment_ids, f.build_parts) if f.zoid == build.zoid else f for f in owned.forms),
                    frame=replace(build.upgrades, damage=(0,) * 4, to_hit=(0,) * 4),
                    weapons=tuple(weapons.values()), current_health=character.current_health, current_energy=character.current_energy,
-                   shield_adjustment=build.shield_adjustment, defense_up=build.defense_up, defense_down=build.defense_down)
+                   shield_adjustment=build.shield_adjustment, defense_up=build.defense_up, defense_down=build.defense_down,
+                   armor_up=build.armor_up, armor_down=build.armor_down)
 
 
 def _owned_energy_maximum(pilot_build, owned, catalog):
@@ -309,7 +313,7 @@ def validate_character(character, catalog=None):
             raise RuleError("Each owned Zoid must have a unique instance ID")
         seen_ids.add(owned.id)
         seen_bases.add(base["id"])
-        for name in ("current_health", "shield_adjustment", "defense_up", "defense_down"):
+        for name in ("current_health", "shield_adjustment", "defense_up", "defense_down", "armor_up", "armor_down"):
             _nonnegative(getattr(owned, name), name)
         if any(owned.frame.damage) or any(owned.frame.to_hit):
             raise RuleError("Frame upgrades cannot contain weapon-slot upgrades")
@@ -436,7 +440,7 @@ def acquire_zoid(character, zoid, catalog=None, *, host_id=None):
     else:
         fresh_build = replace(character.build, zoid=base, equipment=form.equipment,
                               equipment_active=(False,) * 4, fixed_active=(False,) * 4,
-                              upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0)
+                              upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0, armor_up=0, armor_down=0)
         health = calculate_stats(fresh_build, catalog)["pilot"]["health"]
         owned = OwnedZoid(str(uuid4()), base, (form,), base, Upgrades(), (), health)
         owned = replace(owned, current_energy=calculate_stats(fresh_build, catalog)["energy"] // 2)
@@ -527,7 +531,7 @@ def restore_roster_selection(character, catalog):
     return replace(character, active_zoid_id="", current_health=0, current_energy=0,
                    build=replace(character.build, zoid="", equipment=(None,) * 4,
                                  equipment_active=(False,) * 4, fixed_active=(False,) * 4,
-                                  upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0))
+                                  upgrades=Upgrades(), shield_adjustment=0, defense_up=0, defense_down=0, armor_up=0, armor_down=0))
 
 
 def migrate_equipment_inventory(character, catalog):

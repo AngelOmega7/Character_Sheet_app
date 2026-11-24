@@ -44,7 +44,7 @@ class ConditionalAbilityTests(unittest.TestCase):
             build = replace(base, abilities=(f"Sniper {rank}",))
             for band in ("close", "normal", "long"):
                 actual = self.attack(build, slot="back", band=band)
-                self.assertEqual(actual["sniper_bonus"], rank if band == "long" else 0)
+                self.assertEqual(actual["sniper_bonus"], 2 * rank if band == "long" else 0)
                 self.assertEqual(actual["to_hit"], baseline["to_hit"] + actual["sniper_bonus"])
             self.assertEqual(self.attack(build, band="long")["sniper_bonus"], 0)
             self.assertIsNone(self.attack(build, band="long")["range_band"])

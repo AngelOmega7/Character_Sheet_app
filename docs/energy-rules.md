@@ -106,7 +106,7 @@ listed weapon/system's cost.
 
 | Option | Previous effect | Current rules |
 | --- | --- | --- |
-| Economized Shooting (ability) | +1 maximum heat for each heat-rated weapon while active; originally a one-use overheating exception | Four ranks reduce Ranged-tagged weapon Energy Cost by 2/4/6/8 while active, minimum 0. Applies to fixed, generic, and Zoid-specific equipment. Higher ranks replace lower ranks in the same family. Existing selections remain rank 1. |
+| Economized Shooting (ability) | +1 maximum heat for each heat-rated weapon while active; originally a one-use overheating exception | Four ranks reduce Ranged-tagged weapon Energy Cost by 2/4/6/8 while active, minimum 2 (costs already below 2 are unchanged). Applies to fixed, generic, and Zoid-specific equipment. Higher ranks replace lower ranks in the same family. Existing selections remain rank 1. |
 | Demolitionist (feat) | Vent 2 heat instead of 1 from one selected weapon | Player-tracked: “Once per Rest, you may completely fill your Zoid's Energy.” Set current Energy to its displayed maximum when using the feat, and track the once-per-Rest limit at the table. |
 
 Inactive Economized Shooting does not reduce costs. Demolitionist has no

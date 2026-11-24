@@ -83,6 +83,8 @@ class CharacterBuild:
     defense_down: int = 0
     shield_adjustment: int = 0
     inactive_abilities: tuple[str, ...] = ()
+    armor_up: int = 0
+    armor_down: int = 0
 
     def __post_init__(self):
         if len(self.abilities) > 6:
@@ -92,7 +94,7 @@ class CharacterBuild:
         for value in (*self.equipment_active, *self.fixed_active, self.organoid_enabled):
             if type(value) is not bool:
                 raise RuleError("Activation flags must be Booleans")
-        for name in ("pilot_level", "mental", "organoid_level", "defense_up", "defense_down", "shield_adjustment"):
+        for name in ("pilot_level", "mental", "organoid_level", "defense_up", "defense_down", "shield_adjustment", "armor_up", "armor_down"):
             value = getattr(self, name)
             if type(value) is not int or value < 0:
                 raise RuleError(f"{name} must be a nonnegative integer")
@@ -233,14 +235,12 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     def active_bonus(equipment_column, fixed_columns):
         return equipment_bonus(equipment_column) + sum((n(zoid, c) for c, enabled in zip(fixed_columns, fixed_modifiers_enabled) if enabled), Decimal(0))
 
-    defensive_items = sum(enabled and n(e, 6) > 0 for e, enabled in zip(equipment, equipment_enabled))
-    reaction_items = sum(enabled and n(e, 10) > 0 for e, enabled in zip(equipment, equipment_enabled))
-    reaction_items += sum(enabled and n(zoid, column) > 0 for column, enabled in zip((27, 38), fixed_modifiers_enabled))
-    evasion_rank = sum(a.get("armor_per_reaction_item", 0) for a in abilities if a)
+    tank_cap = max((a.get("equipment_defense_armor_cap", 0) for a in abilities if a), default=0)
+    tank_armor = min(tank_cap, max(0, equipment_bonus(6)) // 10)
 
     current = {
-        "armor": sheet_round(pilot["armor"] + equipment_bonus(7) + reaction_items * evasion_rank),
-        "defense": sheet_round(pilot["defense"] + equipment_bonus(6) + total(13) * defensive_items + total(15) + build.defense_up - build.defense_down),
+        "armor": sheet_round(pilot["armor"] + equipment_bonus(7) + tank_armor + build.armor_up - build.armor_down),
+        "defense": sheet_round(pilot["defense"] + equipment_bonus(6) + total(15) + build.defense_up - build.defense_down),
         "speed": pilot["speed"] + active_bonus(11, (25, 36)) + total(8),
         "reaction": sheet_round(pilot["reaction"] + active_bonus(10, (27, 38)) + total(10)),
         "range": pilot["range"] + active_bonus(9, (28, 39)),
@@ -256,10 +256,7 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
     def weapon_skill_bonus(damage_type):
         tags = weapon_tags(damage_type)
         eligible = [a for a in abilities if a and weapon_tags(col(a, 14)) and weapon_tags(col(a, 14)) <= tags]
-        # Anti-Air Pro is additive; other Expert families compete for one bonus.
-        strongest = max((n(a, 7) for a in eligible if a["family"] != "anti_air_pro"), default=Decimal(0))
-        anti_air = sum((n(a, 7) for a in eligible if a["family"] == "anti_air_pro"), Decimal(0))
-        return strongest + anti_air
+        return max((n(a, 7) for a in eligible if a.get("handling") != "player_managed"), default=Decimal(0))
 
     weapons = []
     for i, (name_col, damage_col, type_col, hit_col, effect_col) in enumerate(((13, 15, 16, 17, 14), (19, 21, 22, 23, 20), (30, 32, 33, 34, 31), (41, 43, 44, 45, 42))):
@@ -303,8 +300,8 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
             points = u.melee_damage if "melee" in tags else u.ranged_damage if "ranged" in tags else 0
             weapon["damage_upgrade"] = 20 * points
             weapon["damage_bonus"] += weapon["damage_upgrade"]
-        if weapon["energy_cost"] is not None and "ranged" in tags:
-            weapon["energy_cost"] = max(0, weapon["energy_cost"] - energy_reduction)
+        if energy_reduction and weapon["energy_cost"] is not None and "ranged" in tags:
+            weapon["energy_cost"] = min(weapon["energy_cost"], max(2, weapon["energy_cost"] - energy_reduction))
     return {
         "ruleset": "energy-v17", "zoid_id": zoid["id"],
         "energy": maximum_energy,

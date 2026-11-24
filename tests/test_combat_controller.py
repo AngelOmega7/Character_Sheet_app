@@ -128,7 +128,7 @@ class CombatControllerTests(unittest.TestCase):
         before = character
         normal = attack_preview(character, "left", range_band="normal", catalog=self.catalog)
         long = attack_preview(character, "left", range_band="long", catalog=self.catalog)
-        self.assertEqual(long["to_hit"], normal["to_hit"] + 4)
+        self.assertEqual(long["to_hit"], normal["to_hit"] + 8)
         self.assertEqual(long["damage"], 78)
         self.assertEqual(character, before)
         self.roll.assert_not_called()

@@ -8,7 +8,7 @@ from tools.convert_reference_data import clean_weapon_tags
 
 
 class WeaponExpertTests(unittest.TestCase):
-    def test_strongest_expert_plus_anti_air_independent_of_order(self):
+    def test_strongest_expert_and_manual_anti_air_independent_of_order(self):
         catalog = Catalog()
         zoid = catalog.find("zoids", "Saberlion")
         for column in (16, 22, 33, 44):
@@ -20,9 +20,9 @@ class WeaponExpertTests(unittest.TestCase):
         for order in (abilities, tuple(reversed(abilities))):
             actual = calculate_stats(replace(build, abilities=order), catalog)
             for before, after in zip(baseline["weapons"], actual["weapons"]):
-                self.assertEqual(after["to_hit"] - before["to_hit"], 9)
+                self.assertEqual(after["to_hit"] - before["to_hit"], 5)
 
-    def test_anti_air_requires_tag_and_active_ability(self):
+    def test_anti_air_is_manual_with_or_without_tag(self):
         catalog = Catalog()
         zoid = catalog.find("zoids", "Saberlion")
         key = catalog.tables["zoids"]["columns"][15]
@@ -32,6 +32,8 @@ class WeaponExpertTests(unittest.TestCase):
         without_tag = calculate_stats(replace(build, abilities=("Laser Expert 2", "Anti-Air Pro 4")), catalog)
         self.assertEqual(without_tag["weapons"][0]["to_hit"], baseline["weapons"][0]["to_hit"])
         zoid["fields"][key] = "Melee, Laser, Anti-Air"
+        active = calculate_stats(replace(build, abilities=("Laser Expert 2", "Anti-Air Pro 4")), catalog)
+        self.assertEqual(active["weapons"][0]["to_hit"], baseline["weapons"][0]["to_hit"])
         inactive = calculate_stats(replace(build, inactive_abilities=("Anti-Air Pro 4",)), catalog)
         self.assertEqual(inactive["weapons"][0]["to_hit"], baseline["weapons"][0]["to_hit"])
 
@@ -42,8 +44,8 @@ class WeaponExpertTests(unittest.TestCase):
         build = CharacterBuild("Saberlion", equipment=("Particle Cannon", None, None, None))
         baseline = calculate_stats(build, catalog)
         actual = calculate_stats(replace(build, abilities=("Laser Expert 4", "Melee Expert 2"), inactive_abilities=("Anti-Air Pro 4",)), catalog)
-        self.assertEqual(actual["weapons"][0]["to_hit"] - baseline["weapons"][0]["to_hit"], 4)
-        self.assertEqual(actual["weapons"][1]["to_hit"] - baseline["weapons"][1]["to_hit"], 2)
+        self.assertEqual(actual["weapons"][0]["to_hit"] - baseline["weapons"][0]["to_hit"], 5)
+        self.assertEqual(actual["weapons"][1]["to_hit"] - baseline["weapons"][1]["to_hit"], 3)
         self.assertEqual(actual["weapons"][4]["to_hit"], baseline["weapons"][4]["to_hit"])
 
     def test_tied_experts_do_not_stack_with_each_other(self):
@@ -53,7 +55,7 @@ class WeaponExpertTests(unittest.TestCase):
         build = CharacterBuild("Saberlion")
         baseline = calculate_stats(build, catalog)
         actual = calculate_stats(replace(build, abilities=("Laser Expert 2", "Melee Expert 2")), catalog)
-        self.assertEqual(actual["weapons"][0]["to_hit"] - baseline["weapons"][0]["to_hit"], 2)
+        self.assertEqual(actual["weapons"][0]["to_hit"] - baseline["weapons"][0]["to_hit"], 3)
 
     def test_owner_tag_cleanup_deduplicates_and_preserves_unrelated_tags(self):
         self.assertEqual(clean_weapon_tags("Melee, Freeze, Slashing, Lighting"), "Melee, Electrical")
@@ -73,7 +75,7 @@ class WeaponExpertTests(unittest.TestCase):
                     key = catalog.tables[dataset]["columns"][column - 1]
                     self.assertFalse(weapon_tags(record["fields"][key]) & retired)
 
-    def test_corrected_anti_air_tag_receives_expert_bonus(self):
+    def test_corrected_anti_air_tag_does_not_automatically_add_bonus(self):
         catalog = Catalog()
         base = CharacterBuild("Saberlion", pilot_level=100)
         catalog.find("zoids", "Saberlion")["fields"][catalog.tables["zoids"]["columns"][15]] = clean_weapon_tags("Melee, Anti-Ait")
@@ -81,10 +83,10 @@ class WeaponExpertTests(unittest.TestCase):
         expert = calculate_stats(replace(base, abilities=("Anti-Air Pro",)), catalog)
         index = 0
         self.assertIn("anti-air", weapon_tags(baseline["weapons"][index]["damage_type"]))
-        self.assertEqual(expert["weapons"][index]["to_hit"], baseline["weapons"][index]["to_hit"] + 2)
+        self.assertEqual(expert["weapons"][index]["to_hit"], baseline["weapons"][index]["to_hit"])
 
     def test_all_expert_families_apply_to_every_eligible_slot(self):
-        for ability, tags, bonus in (("Laser Expert 4", "Laser, Ranged", 4), ("Missile Expert 3", "Ranged, Explosive", 3), ("Particle Expert 2", "Ranged, Particle", 2), ("Melee Expert", "Melee, Piercing", 1), ("Rifle Expert 4", " Bullet, Laser, RANGED ", 4), ("Anti-Air Pro 4", "Ranged, Anti-Air", 5)):
+        for ability, tags, bonus in (("Laser Expert 4", "Laser, Ranged", 5), ("Missile Expert 3", "Ranged, Explosive", 4), ("Particle Expert 2", "Ranged, Particle", 3), ("Melee Expert", "Melee, Piercing", 2), ("Rifle Expert 4", " Bullet, Laser, RANGED ", 5), ("Anti-Air Pro 4", "Ranged, Anti-Air", 0)):
             with self.subTest(ability=ability):
                 catalog = Catalog()
                 zoid = catalog.find("zoids", "Saberlion")
@@ -112,6 +114,12 @@ class WeaponExpertTests(unittest.TestCase):
         for record in catalog.tables["abilities"]["records"]:
             if record.get("family") in {"laser_expert", "missile_expert", "particle_expert", "melee_expert", "rifle_expert"}:
                 self.assertNotIn("advantage", record["fields"]["description"].lower())
+                self.assertEqual(record["fields"]["to_hit_bonus"], record["rank"] + 1)
+                if record["rank"] >= 2:
+                    threshold = 19 if record["rank"] == 2 else 18
+                    self.assertIn(f"score a critical hit on a roll of {threshold}.", record["fields"]["description"])
+                self.assertEqual("Critical hits with these weapons deal double damage." in record["fields"]["description"],
+                                 record["rank"] == 4)
                 if record["family"] == "rifle_expert":
                     self.assertEqual(weapon_tags(record["fields"]["damage_type"]), {"ranged", "bullet"})
 

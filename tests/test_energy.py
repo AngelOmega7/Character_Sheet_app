@@ -88,7 +88,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
                 rested = store.save(rest(loaded, self.catalog).character)
                 self.assertEqual(store.load(rested.id).current_energy, 13)
 
-    def test_all_economized_ranks_reduce_only_ranged_costs_to_zero(self):
+    def test_all_economized_ranks_reduce_only_ranged_costs_to_minimum_two(self):
         build = CharacterBuild("Berserk Fury", equipment=("Particle Cannon", "Mini Laser", "Energy Container", None))
         baseline = calculate_stats(build, self.catalog)
         for rank in range(1, 5):
@@ -97,7 +97,7 @@ class EnergyDataAndMigrationTests(unittest.TestCase):
             for old, new in zip(baseline["weapons"], actual["weapons"]):
                 cost = old["energy_cost"]
                 if cost is not None and "ranged" in weapon_tags(old["damage_type"]):
-                    cost = max(0, cost - rank * 2)
+                    cost = min(cost, max(2, cost - rank * 2))
                 self.assertEqual(new["energy_cost"], cost)
             disabled = calculate_stats(replace(build, inactive_abilities=(name,)), self.catalog)
             self.assertEqual(disabled, baseline)

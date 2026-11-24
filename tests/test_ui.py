@@ -65,6 +65,28 @@ class EditorTests(unittest.TestCase):
         self.editor.character = established_character(catalog)
         self.editor.render()
 
+    def test_temporary_stats_survive_save_and_reset_on_rest(self):
+        editor = self.editor
+        baseline = calculate_stats(editor.character.build, editor.catalog)["current"]
+        editor.adjust_stat("armor", -1)
+        editor.adjust_stat("armor", -1)
+        editor.adjust_stat("defense", 1)
+        editor.adjust_stat("defense", 1)
+        editor.adjust_stat("defense", -1)
+        editor.save()
+        saved = self.store.load(editor.character.id)
+        stats = calculate_stats(saved.build, editor.catalog)["current"]
+        self.assertEqual(stats["armor"], baseline["armor"] - 2)
+        self.assertEqual(stats["defense"], baseline["defense"] + 1)
+        editor.character = saved
+        editor.render()
+        editor.rest()
+        stats = calculate_stats(editor.character.build, editor.catalog)["current"]
+        self.assertEqual(stats["armor"], baseline["armor"])
+        self.assertEqual(stats["defense"], baseline["defense"])
+        owned = editor.character.owned_zoids[0]
+        self.assertEqual((owned.armor_up, owned.armor_down, owned.defense_up, owned.defense_down), (0, 0, 0, 0))
+
     def test_create_equip_activate_save_and_reopen(self):
         editor = self.editor
         editor.name.value = "Test pilot"
@@ -779,7 +801,7 @@ class EditorTests(unittest.TestCase):
         normal = editor.attack_previews["left"]
         target = combat_snapshot(editor.character, editor.catalog)[1]["left"]
         editor.change_attack_range(target["identity"], "long")
-        self.assertEqual(editor.attack_previews["left"]["to_hit"], normal["to_hit"] + 4)
+        self.assertEqual(editor.attack_previews["left"]["to_hit"], normal["to_hit"] + 8)
         self.assertEqual(editor.attack_previews["left"]["damage"], 78)
         self.assertEqual(editor.character.current_energy, 20)
         self.assertNotIn("fixed_1", editor.range_controls)  # Melee has no range selector.

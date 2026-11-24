@@ -31,7 +31,7 @@ class EquipmentRuleTests(unittest.TestCase):
                                organoid_enabled=True, organoid_color="White", organoid_level=5,
                                abilities=("Shield Master",))
         white = self.catalog.column(self.catalog.find("organoids", "5"), 22)
-        self.assertEqual(calculate_stats(build, self.catalog)["shields"], 150 + 800 + white + 25)
+        self.assertEqual(calculate_stats(build, self.catalog)["shields"], 150 + 800 + white + 100)
 
     def test_only_white_generates_shields_using_organoid_level(self):
         for color in ("White", "Red", "Blue", "Black"):
