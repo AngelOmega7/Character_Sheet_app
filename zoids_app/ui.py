@@ -337,7 +337,8 @@ class CharacterEditor:
             text = ft.Text(description or "", size=12, selectable=True, visible=bool(selected))
             self.feat_slots.append(dropdown)
             self.feat_descriptions.append(text)
-            controls.extend([dropdown, text])
+            controls.append(ft.Column([dropdown, text], spacing=4,
+                                      horizontal_alignment=ft.CrossAxisAlignment.STRETCH))
         return card("Pilot feats", controls)
 
     def apply_resources(self, event=None):
@@ -445,7 +446,7 @@ class CharacterEditor:
         self.energy_bar = ft.ProgressBar(value=min(1, (character.current_energy or 0) / maximum_energy) if maximum_energy else 0,
                                         color="#68BFFF", bgcolor="#213349", height=12)
         return card("Combat resources", [ft.Text(text, size=16), self.health_bar,
-            ft.Text(f"Energy {character.current_energy or 0} / {maximum_energy} · EPT {stats['energy_recharge'] if stats else 0}", size=16),
+            ft.Text(f"Energy {character.current_energy or 0} / {maximum_energy} · EPT {stats['energy_recharge'] if stats else 0} · Upkeep {stats['energy_upkeep'] if stats else 0}/turn", size=16),
             self.energy_bar, self.health_input, self.energy_input, self.shield_damage_input,
             ft.Button("Apply resources", on_click=self.apply_resources),
             self.health_repair_points,
@@ -533,10 +534,12 @@ class CharacterEditor:
                 options=[option("", "Empty / deactivate"), *choices],
                 on_select=lambda e, i=slot: self.change_ability_slot(i, e.control.value))
             self.ability_slots.append(dropdown)
-            slot_controls.append(dropdown)
+            slot_content = [dropdown]
             if current:
                 handling = "Player-managed. " if current.get("handling") == "player_managed" else ""
-                slot_controls.append(ft.Text(handling + (current["fields"]["description"] or ""), size=12, selectable=True))
+                slot_content.append(ft.Text(handling + (current["fields"]["description"] or ""), size=12, selectable=True))
+            slot_controls.append(ft.Column(slot_content, spacing=4,
+                                           horizontal_alignment=ft.CrossAxisAlignment.STRETCH))
         return card("Abilities", [
             self.ability_to_learn, self.ability_description,
             ft.Button("Learn / upgrade", on_click=self.learn_selected_ability, disabled=not learnable),
@@ -1264,9 +1267,26 @@ class CharacterEditor:
             weapon_card = card(f"{index + 1}. {weapon['name'] or 'Empty'}", controls)
             weapon_card.col = {"xs": 12, "md": 6}
             weapon_cards.append(weapon_card)
+        for panel in (abilities, feats, pilot_notes, general_inventory, database):
+            panel.padding = 16
+            panel.content.spacing = 10
+            panel.content.horizontal_alignment = ft.CrossAxisAlignment.STRETCH
+        # Independent columns let shorter cards sit together without waiting for
+        # a long ability/feat description to finish a shared grid row.
+        pilot_layout = ft.ResponsiveRow([
+            ft.Container(abilities, col={"xs": 12, "md": 6, "xl": 5}),
+            ft.Container(feats, col={"xs": 12, "md": 6, "xl": 3}),
+            ft.Container(ft.ResponsiveRow([
+                ft.Container(pilot_notes, col={"xs": 12, "md": 6, "xl": 12}),
+                ft.Column([general_inventory, database], spacing=12,
+                          horizontal_alignment=ft.CrossAxisAlignment.STRETCH,
+                          col={"xs": 12, "md": 6, "xl": 12}),
+            ], spacing=12, run_spacing=12, vertical_alignment=ft.CrossAxisAlignment.START),
+                col={"xs": 12, "xl": 4}),
+        ], spacing=12, run_spacing=12, vertical_alignment=ft.CrossAxisAlignment.START)
         self.page_cards = {"Overview": [profile, organoid, roster], "Combat": [resources, ft.ResponsiveRow(weapon_cards)],
             "Upgrades": [upgrades_card, inventory_card, equipment_card],
-            "Pilot": [abilities, feats, pilot_notes, general_inventory, database], "Transport": transport_cards}
+            "Pilot": [pilot_layout], "Transport": transport_cards}
         self.navigation.controls = [ft.Button(name, bgcolor="#213349" if name == self.view else None,
             on_click=lambda e, n=name: self.switch_page(n)) for name in self.page_cards]
         self.body.controls = ([] if self.view == "Transport" else [summary]) + self.page_cards[self.view]

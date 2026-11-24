@@ -41,7 +41,7 @@ All seven feats have saved selection slots and visible descriptions in the Pilot
 - Fleet Footed's four confirmed speed bonuses while active.
 - Sniper grants +2/+4/+6/+8 to hit for active skills on Long Range ranged attack previews.
 - Comeback rank-based 20/30/40/50% damage at <=20% current maximum health.
-- True Tank adds 1 Armor per full 10 total Defense from enabled removable equipment, capped at 5/10/15/20 by rank. It does not add Defense or count fixed equipment, upgrades, or temporary Defense modifiers.
+- True Tank adds 1 Armor per full 10 total Defense from enabled removable equipment, capped at 5/10/10/10 by rank. It does not add Defense or count fixed equipment, upgrades, or temporary Defense modifiers. Rank 3 subtracts half your Defense from critical-hit damage taken; rank 4 subtracts your full Defense, resolved at the table.
 - Shield Master adds its flat bonus once to combined positive Shield HP, from any active ability slot and any contributing source. It does not create a shield by itself.
 - Evasion Master imposes a minus 4/8/12/16 penalty to hit on attacks against your Reaction. This incoming-attack effect is player-managed and grants no Armor or Reaction bonus.
 - Energy rules replace Heat and Vent entirely. Economized Shooting applies automatic cost reduction; Demolitionist is tracked at the table.

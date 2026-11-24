@@ -2166,7 +2166,7 @@
       },
       "fields": {
         "name": "Small Expert 2",
-        "description": "When piloting a Small sized Zoid stats are increased by 15%",
+        "description": "When piloting a Small sized Zoid stats are increased by 15%. Enemies of Size L or larger lose the benefits of Critical Hits against you.",
         "bonus_levels": null,
         "zoid_sizes": "Small",
         "all_stats_bonus": 0.15,
@@ -2232,7 +2232,7 @@
       },
       "fields": {
         "name": "Small Expert 4",
-        "description": "When piloting a Small sized Zoid stats are increased by 25%",
+        "description": "When piloting a Small sized Zoid stats are increased by 25%. When making an attack against a target of size LL or XL, you subtract 2 from your critical hit range.",
         "bonus_levels": null,
         "zoid_sizes": "Small",
         "all_stats_bonus": 0.25,
@@ -2364,7 +2364,7 @@
       },
       "fields": {
         "name": "Medium Expert 4",
-        "description": "When piloting a Medium sized Zoid stats are increased by 25%",
+        "description": "When piloting a Medium sized Zoid stats are increased by 25%. When making an attack against a target of size LL or XL, you subtract 2 from your critical hit range.",
         "bonus_levels": null,
         "zoid_sizes": "Medium",
         "all_stats_bonus": 0.25,
@@ -2499,7 +2499,7 @@
       },
       "fields": {
         "name": "Medium Under Expert 4",
-        "description": "When piloting a Medium or Small sized Zoid stats are increased by 25%",
+        "description": "When piloting a Medium or Small sized Zoid stats are increased by 25%. When making an attack against a target of size LL or XL, you subtract 2 from your critical hit range.",
         "bonus_levels": null,
         "zoid_sizes": "Medium, Small",
         "all_stats_bonus": 0.25,
@@ -4827,7 +4827,7 @@
       },
       "fields": {
         "name": "Sniper 4",
-        "description": "Gain +8 to Hit on attacks beyond 1/2 your Zoids max Range",
+        "description": "Gain +8 to Hit on attacks beyond 1/2 your Zoids max Range. Your critical range is reduced by 1.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4923,7 +4923,7 @@
       },
       "fields": {
         "name": "True Tank 3",
-        "description": "For every 10 points of Defense you gain from removable equipment, increase your armor by 1, up to a maximum of 15.",
+        "description": "For every 10 points of Defense you gain from removable equipment, increase your armor by 1, up to a maximum of 10. 1/2 of your defense is subtracted from the damage you take from Critical Hits.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4940,7 +4940,7 @@
       },
       "dynamic_fields": {},
       "family": "true_tank",
-      "equipment_defense_armor_cap": 15,
+      "equipment_defense_armor_cap": 10,
       "rank": 3,
       "eligible_types": [],
       "eligible_sizes": []
@@ -4955,7 +4955,7 @@
       },
       "fields": {
         "name": "True Tank 4",
-        "description": "For every 10 points of Defense you gain from removable equipment, increase your armor by 1, up to a maximum of 20.",
+        "description": "For every 10 points of Defense you gain from removable equipment, increase your armor by 1, up to a maximum of 10. Your defense is subtracted from the damage you take from Critical Hits.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -4972,7 +4972,7 @@
       },
       "dynamic_fields": {},
       "family": "true_tank",
-      "equipment_defense_armor_cap": 20,
+      "equipment_defense_armor_cap": 10,
       "rank": 4,
       "eligible_types": [],
       "eligible_sizes": []
@@ -5455,7 +5455,7 @@
       },
       "fields": {
         "name": "Smoke Master 3",
-        "description": "Smoke units cover an additional 30m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. The effects of Smoke persist for 1 round after you leave the Smoke.",
+        "description": "Smoke units cover an additional 30m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. Smoke Master Applies to Invisibility as well.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,
@@ -5487,7 +5487,7 @@
       },
       "fields": {
         "name": "Smoke Master 4",
-        "description": "Smoke units cover an additional 40m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. The effects of Smoke persist for 1 round after you leave the Smoke. Smoke units protect from AoE attacks.",
+        "description": "Smoke units cover an additional 40m. Smoke units last twice as long. Smoke Units can be activated as a bonus action. Smoke Master Applies to Invisibility as well. The effects of Smoke persist for 1 round after you leave the Smoke.",
         "bonus_levels": null,
         "zoid_sizes": null,
         "all_stats_bonus": null,

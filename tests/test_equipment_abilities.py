@@ -45,7 +45,7 @@ class EquipmentAbilityTests(unittest.TestCase):
                 name = "True Tank" if rank == 1 else f"True Tank {rank}"
                 actual = calculate_stats(replace(base, abilities=(name,)), catalog)
                 self.assertEqual(actual["current"]["armor"] - baseline["current"]["armor"],
-                                 5 * rank if expected is None else expected)
+                                 (5 if rank == 1 else 10) if expected is None else expected)
                 self.assertEqual(actual["current"]["defense"], baseline["current"]["defense"])
                 self.assertEqual(calculate_stats(replace(base, inactive_abilities=(name,)), catalog), baseline)
         catalog.find("armaments", "Thruster")["fields"]["defense"] = 20

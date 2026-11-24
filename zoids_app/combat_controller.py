@@ -103,14 +103,18 @@ def weapon_action(character, slot, action, *, confirmed=False, catalog=None):
 
 
 def start_turn(character, catalog=None):
-    """Apply one turn's recharge to the active chassis, capped at total energy."""
+    """Recharge to the cap, then pay active shield/invisibility upkeep atomically."""
     catalog = catalog or Catalog()
     character = validate_character(character, catalog)
     stats, _ = combat_snapshot(character, catalog)
     energy = min(stats["energy"], character.current_energy + stats["energy_recharge"])
     restored = energy - character.current_energy
+    upkeep = stats["energy_upkeep"]
+    if energy < upkeep:
+        raise RuleError(f"Not enough Energy for active shield/invisibility upkeep: need {upkeep}, have {energy} after recharge. Deactivate equipment before starting the turn.")
+    energy -= upkeep
     character = replace(character, current_energy=energy)
-    return CombatResult(validate_character(character, catalog), f"Turn started. Restored {restored} energy.")
+    return CombatResult(validate_character(character, catalog), f"Turn started. Restored {restored} energy; spent {upkeep} on shield/invisibility upkeep.")
 
 
 def rest(character, catalog=None):

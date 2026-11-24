@@ -88,6 +88,24 @@ class CombatControllerTests(unittest.TestCase):
         self.assertEqual(capped.current_energy, 21)
         self.assertEqual(start_turn(capped, self.catalog).character, capped)
 
+    def test_start_turn_recharges_before_upkeep_and_rejects_unaffordable_upkeep(self):
+        character = acquire_zoid(new_character(), "Shield Liger", self.catalog)
+        character = replace(character, build=replace(character.build, fixed_active=(False, True, False, False)))
+        maximum = combat_snapshot(character, self.catalog)[0]["energy"]
+        character = replace(character, current_energy=maximum)
+        result = start_turn(character, self.catalog).character
+        self.assertEqual(result.current_energy, maximum - 2)
+        result = start_turn(replace(character, current_energy=0), self.catalog).character
+        self.assertEqual(result.current_energy, 1)  # Recharge 3, then upkeep 2.
+        character = acquire_zoid(new_character(), "Diablo Tiger", self.catalog)
+        character = replace(character, current_energy=0,
+                            build=replace(character.build, fixed_active=(False, False, True, False)))
+        stats = combat_snapshot(character, self.catalog)[0]
+        self.assertGreater(stats["energy_upkeep"], stats["energy_recharge"])
+        with self.assertRaisesRegex(RuleError, "Deactivate equipment"):
+            start_turn(character, self.catalog)
+        self.assertEqual(character.current_energy, 0)
+
     def test_economized_reduces_spending_demolitionist_is_manual_and_vent_is_rejected(self):
         character = self.pilot()
         baseline = combat_snapshot(character, self.catalog)[0]

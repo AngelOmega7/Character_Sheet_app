@@ -33,6 +33,27 @@ class EquipmentRuleTests(unittest.TestCase):
         white = self.catalog.column(self.catalog.find("organoids", "5"), 22)
         self.assertEqual(calculate_stats(build, self.catalog)["shields"], 150 + 800 + white + 100)
 
+    def test_upkeep_counts_active_shields_and_invisibility_but_not_organoid_or_smoke(self):
+        build = CharacterBuild("Shield Liger", pilot_level=100,
+            equipment=("E-Shield Generator", "Optical Camouflage", "Smokescreen Generator", None),
+            fixed_active=(False, True, False, False),
+            equipment_active=(True, True, True, False),
+            organoid_enabled=True, organoid_color="White", organoid_level=5)
+        stats = calculate_stats(build, self.catalog)
+        shield = next(w for w in stats["weapons"][:4] if w["name"] and "Shield" in w["name"])
+        self.assertEqual(stats["energy_upkeep"], shield["energy_cost"] + 3 + 3)
+        disabled = replace(build, fixed_active=(False,) * 4, equipment_active=(False,) * 4)
+        self.assertEqual(calculate_stats(disabled, self.catalog)["energy_upkeep"], 0)
+        self.assertGreater(calculate_stats(disabled, self.catalog)["shields"], 0)
+        self.assertEqual(calculate_stats(replace(build, organoid_enabled=False), self.catalog)["energy_upkeep"], stats["energy_upkeep"])
+
+    def test_fixed_and_zoid_specific_invisibility_upkeep(self):
+        fixed = CharacterBuild("Atak Kat", fixed_active=(False, True, False, False))
+        self.assertEqual(calculate_stats(fixed, self.catalog)["energy_upkeep"], 3)
+        removable = CharacterBuild("Shadow Fox", equipment=("armaments:zoid_equipment_slot_4", None, None, None),
+                                   equipment_active=(True, False, False, False))
+        self.assertEqual(calculate_stats(removable, self.catalog)["energy_upkeep"], 3)
+
     def test_only_white_generates_shields_using_organoid_level(self):
         for color in ("White", "Red", "Blue", "Black"):
             for level in (0, 5, 40):

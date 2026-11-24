@@ -302,8 +302,21 @@ def calculate_stats(build: CharacterBuild, catalog: Catalog | None = None):
             weapon["damage_bonus"] += weapon["damage_upgrade"]
         if energy_reduction and weapon["energy_cost"] is not None and "ranged" in tags:
             weapon["energy_cost"] = min(weapon["energy_cost"], max(2, weapon["energy_cost"] - energy_reduction))
+    upkeep = 0
+    for index, weapon in enumerate(weapons):
+        if index < 4:
+            active = fixed_modifiers_enabled[index - 1] if index in (1, 2) else build.fixed_active[index]
+            shield_hp = n(zoid, {1: 24, 2: 35}[index]) if index in (1, 2) else 0
+        else:
+            active = equipment_enabled[index - 4]
+            shield_hp = n(equipment[index - 4], 14)
+        text = f"{weapon['name'] or ''} {weapon['effect'] or ''}".casefold()
+        invisible = "invisib" in text or "optical cam" in text
+        if active and weapon["name"] and (shield_hp > 0 or invisible):
+            upkeep += weapon["energy_cost"] or 0
     return {
         "ruleset": "energy-v17", "zoid_id": zoid["id"],
+        "energy_upkeep": upkeep,
         "energy": maximum_energy,
         "energy_recharge": zoid["energy_recharge"] + u.ept + (build.mental if build.organoid_enabled else 0),
         "size_bonus": all_stats,
