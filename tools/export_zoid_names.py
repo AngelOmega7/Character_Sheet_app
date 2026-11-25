@@ -11,7 +11,7 @@ def export():
     catalog = Catalog()
     names = sorted({r["name"] for dataset in ("zoids", "transports")
                     for r in catalog.tables[dataset]["records"] if r["kind"] == "record"}, key=str.casefold)
-    path = ROOT / "assets/ZoidNames.txt"
+    path = ROOT / "source/assets/ZoidNames.txt"
     path.write_text("\n".join(names) + "\n", encoding="utf-8", newline="\n")
     print(f"Wrote {len(names)} names to {path}")
 

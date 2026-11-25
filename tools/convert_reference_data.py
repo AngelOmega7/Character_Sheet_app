@@ -397,7 +397,7 @@ def build():
         (output / f"{dataset}.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
         counts[dataset] = dict(records=len(records), selectable=sum(r["kind"] == "record" for r in records), excluded_empty_rows=sum(r["reason"] == "empty" for r in excluded), excluded_retired_rows=sum(r["reason"].startswith("Owner retired") for r in excluded), moved_rows=sum(r["reason"].startswith("Moved to") for r in excluded))
     manifest = {"schema_version": 1, "data_version": "workflow-v15", "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "datasets": counts, "review_items": issues}
-    manifest["workflow_sources"] = {name: hashlib.sha256((ROOT / "assets" / name).read_bytes()).hexdigest()
+    manifest["workflow_sources"] = {name: hashlib.sha256((ROOT / "source/assets" / name).read_bytes()).hexdigest()
                                     for name in ("zoid_cost.csv", "CAU_expand.txt", "CAU_expand_2.txt")}
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
     from tools.import_energy import apply_energy

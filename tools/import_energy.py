@@ -128,7 +128,7 @@ def apply_energy(output=None, companion=True):
         manifest["datasets"][name]["records"] = len(table["records"])
         manifest["datasets"][name]["selectable"] = sum(r["kind"] == "record" for r in table["records"])
     manifest["energy_sources"] = {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
-                                  for p in (ROOT / "docs/Energy_Addition.ods", ROOT / "docs/Generic_Energy.ods")}
+                                  for p in (ROOT / "source/docs/Energy_Addition.ods", ROOT / "source/docs/Generic_Energy.ods")}
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
     if companion:
         update_companion(tables)
@@ -145,7 +145,7 @@ def apply_energy(output=None, companion=True):
 
 
 def update_companion(tables):
-    path = ROOT / "ZOIDS_Companion.txt"
+    path = ROOT / "Rules/ZOIDS_Companion.txt"
     text = path.read_text()
     text = re.sub(r" \| Required level: [^\n|]+", "", text)
     zoids = [r for r in tables["zoids"]["records"] if r["kind"] == "record"]

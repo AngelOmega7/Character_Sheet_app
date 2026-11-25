@@ -72,10 +72,10 @@ def rules(text, heading):
 def refresh():
     catalog = Catalog()
     update_companion(catalog.tables)
-    path = ROOT / 'ZOIDS_Companion.txt'
+    path = ROOT / 'Rules/ZOIDS_Companion.txt'
     path.write_text(rules(path.read_text(), 'CONTENTS - BASE ZOID FAMILIES'))
 
-    path = ROOT / 'Equipment_Guide.txt'
+    path = ROOT / 'Rules/Equipment_Guide.txt'
     text = path.read_text()
     text = text.replace('91 catalog weapons; 7 Zoid-specific removable weapon entries.',
                         '91 catalog weapons; 9 Zoid-specific removable weapon entries.')

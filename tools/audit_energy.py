@@ -18,8 +18,8 @@ def normalize(value):
 
 
 def workbook_rows(filename=None):
-    path = next((ROOT / "docs" / name for name in ((filename,) if filename else ("Energy_Additions.ods", "Energy_Addition.ods"))
-                 if (ROOT / "docs" / name).exists()))
+    path = next((ROOT / "source/docs" / name for name in ((filename,) if filename else ("Energy_Additions.ods", "Energy_Addition.ods"))
+                 if (ROOT / "source/docs" / name).exists()))
     with zipfile.ZipFile(path) as archive:
         root = ET.fromstring(archive.read("content.xml"))
     rows = []

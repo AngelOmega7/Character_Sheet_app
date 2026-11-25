@@ -56,7 +56,7 @@ def main():
                     record["fields"][key] = revised
                     count += 1
         path.write_text(json.dumps(table, indent=2, ensure_ascii=False) + "\n")
-    for name in ("ZOIDS_Companion.txt", "Equipment_Guide.txt"):
+    for name in ("Rules/ZOIDS_Companion.txt", "Rules/Equipment_Guide.txt"):
         update_guide(ROOT / name)
     print(f"Updated {count} smoke/invisibility descriptions and both guides.")
 

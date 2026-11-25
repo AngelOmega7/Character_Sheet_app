@@ -30,3 +30,6 @@ saves/
 *.db
 *.db-wal
 *.db-shm
+
+# Local source/reference archives
+/source/

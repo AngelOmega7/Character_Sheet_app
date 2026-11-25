@@ -17,7 +17,7 @@ def apply_workflow(records, keys, root, existing_families):
     families = dict(existing_families)
     for filename in ("CAU_expand.txt", "CAU_expand_2.txt"):
         base = None
-        for line in (root / "assets" / filename).read_text(encoding="utf-8-sig").splitlines()[5:]:
+        for line in (root / "source/assets" / filename).read_text(encoding="utf-8-sig").splitlines()[5:]:
             line = line.strip()
             if not line:
                 continue
@@ -89,7 +89,7 @@ def write_purchases(output, records, root):
         for name in [r["name"], r["name"].removesuffix(" (CAU)"), *r.get("legacy_names", [])]:
             lookup[name.casefold()] = r
     converted = []
-    with (root / "assets/zoid_cost.csv").open(encoding="utf-8-sig", newline="") as stream:
+    with (root / "source/assets/zoid_cost.csv").open(encoding="utf-8-sig", newline="") as stream:
         reader = csv.DictReader(stream)
         blox_columns = sorted((key for key in reader.fieldnames if re.fullmatch(r"BLOX \d+", key)),
                               key=lambda key: int(key.split()[1]))
