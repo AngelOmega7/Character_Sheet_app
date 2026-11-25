@@ -1,0 +1,49 @@
+name: Publish Rules
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - Rules/**
+      - .github/workflows/publish-rules.yml
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-rules
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out current rules
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Archive Rules folder
+        run: |
+          mkdir -p dist
+          python -m zipfile -c dist/Rules.zip Rules
+
+      - name: Update every published release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api --paginate "repos/$GH_REPO/releases?per_page=100" \
+            --jq '.[] | select(.draft == false) | .tag_name' > dist/releases.txt
+          while IFS= read -r tag; do
+            gh release upload "$tag" dist/Rules.zip --clobber
+          done < dist/releases.txt

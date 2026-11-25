@@ -2,6 +2,10 @@ CREDIT TO u/AdChemical1651 for the building blocks of this
 
 Install Current Release: Download Release and Extract
 
+Each release also provides Rules.zip, containing the Rules folder and its four
+rulebooks. This download is refreshed automatically when Rules changes on main
+or a new release is published, independently of the app builds.
+
 Build: Python and Flet. See docs/packaging.md for local builds and GitHub Actions.
 
 Windows CI builds: Actions > Build Windows > select a successful run > download the Windows artifact. Extract the entire ZIP before running the app.
